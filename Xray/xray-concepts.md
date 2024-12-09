@@ -1,6 +1,6 @@
 # Xray Concepts
 
-## General Xray
+## General
 
 - **Scans** - The process by which Xray examines artifacts and their dependencies to identify security vulnerabilities, license compliance issues, and operational risks. Scans can be performed on various artifact types, including Docker images and Git repositories.
 

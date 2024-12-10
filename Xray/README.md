@@ -36,35 +36,67 @@ JFrog Xray is a universal software composition analysis (SCA) solution that nati
 
 Xray currently supports the following package formats with new formats added regularly.
 
-| Package             | Extensions                             | Description                                                                                                       |
-|---------------------|----------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| **Go**              | None                                   | Scans and indexes Go Registries, Modules, and packages; includes recursive analysis and component graph integration. |
-| **Conda**           | conda                                  | Scans Conda packages for security vulnerabilities and operational risks.                                         |
-| **PHP**             | All archive types                      | Recursively scans Composer packages and their dependencies for potential issues.                                  |
-| **Maven**           | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | Scans Maven project dependencies directly within IntelliJ IDE.                                                  |
-| **Bower**           | All archive types                      | Scans packages, performing impact analysis to monitor compliance.                                               |
-| **Gradle**          | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | Recursively scans Gradle packages and integrates with the component graph.                                       |
-| **Ivy**             | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | Conducts recursive scans and impact analysis on Ivy packages.                                                    |
-| **SBT**             | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | Scans packages and monitors for new vulnerabilities.                                                             |
-| **npm**             | All archive types                      | Analyzes JavaScript files within npm packages to ensure usage safety.                                           |
-| **NuGet**           | nupkg, DLL, exe, all archive types     | Scans NuGet packages and their dependencies for vulnerabilities.                                                |
-| **PyPI**            | whl, egg, all archive types            | Recursively checks Python packages for vulnerabilities.                                                          |
-| **Docker**          | Not identified by extension            | Identifies components in Docker images and layers for vulnerabilities.                                          |
-| **OCI**             | Not identified by extension            | Scans components in OCI images similar to Docker.                                                                |
-| **Debian**          | deb                                    | Detects and scans Debian packages for issues in Docker/OCI containers.                                          |
-| **RPM**             | rpm                                    | Identifies RPM packages in containers and checks for vulnerabilities.                                           |
-| **RubyGems**        | gem                                    | Scans RubyGems packages for security issues recursively.                                                         |
-| **Alpine**          | apk                                    | Scans Alpine’s repositories and packages for vulnerabilities.                                                    |
-| **Conan**           | conanmanifest.txt                     | Scans Conan packages for vulnerabilities.                                                                        |
-| **Cargo**           | crate                                  | Scans Rust Cargo packages, providing insights on vulnerabilities.                                               |
-| **CRAN**            | All archive types                      | Scans R packages for security vulnerabilities and risks.                                                        |
-| **Hugging Face ML** | Not identified by extension            | Scans ML models for licenses and malicious content.                                                              |
-| **Terraform State** | Not identified by extension            | Scans Terraform state for cloud service configuration issues.                                                    |
-| **Chainguard Images** | Not identified by extension          | Scans Chainguard images for SBOM and SCA.                                                                       |
-| **CycloneDX SBOM**  | cdx.json, cdx.xml                    | Scans CycloneDX files and populates vulnerability data.                                                          |
-| **Machine Learning Model** | Various binary formats         | Scans various ML model binaries for vulnerabilities in Docker and Generic repositories.                          |
-| **CocoaPods**       | podspec                               | Scans CocoaPods packages for security vulnerabilities and compliance.                                            |
+### Software Packages
 
+| Package         | Extensions                             | Description                                                                                                       |
+|------------------|----------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Go**           | None                                   | Scans and indexes Go Registries, Modules, and packages; includes recursive analysis and component graph integration. |
+| **Conda**        | conda                                  | Scans Conda packages for security vulnerabilities and operational risks.                                         |
+| **PHP**          | All archive types                      | Recursively scans Composer packages and their dependencies for potential issues.                                  |
+| **Maven**        | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | Scans Maven project dependencies directly within IntelliJ IDE.                                                  |
+| **Bower**        | All archive types                      | Scans packages, performing impact analysis to monitor compliance.                                               |
+| **Gradle**       | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | Recursively scans Gradle packages and integrates with the component graph.                                       |
+| **Ivy**          | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | Conducts recursive scans and impact analysis on Ivy packages.                                                    |
+| **SBT**          | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | Scans packages and monitors for new vulnerabilities.                                                             |
+| **npm**          | All archive types                      | Analyzes JavaScript files within npm packages to ensure usage safety.                                           |
+| **NuGet**        | nupkg, DLL, exe, all archive types     | Scans NuGet packages and their dependencies for vulnerabilities.                                                |
+| **PyPI**         | whl, egg, all archive types            | Recursively checks Python packages for vulnerabilities.                                                          |
+| **RubyGems**     | gem                                    | Scans RubyGems packages for security issues recursively.                                                         |
+| **CocoaPods**    | podspec                               | Scans CocoaPods packages for security vulnerabilities and compliance.                                            |
+| **Conan**                 | conanmanifest.txt    | Scans Conan packages for vulnerabilities.                        |
+| **Cargo**                 | crate                | Scans Rust Cargo packages, providing insights on vulnerabilities.  |
+| **CRAN**                  | All archive types    | Scans R packages for security vulnerabilities and risks.         |
+---
+
+### OS Packages
+
+| Package         | Extensions         | Description                                                      |
+|------------------|--------------------|------------------------------------------------------------------|
+| **Debian**        | deb                | Detects and scans Debian packages for issues in Docker/OCI containers. |
+| **RPM**           | rpm                | Identifies RPM packages in containers and checks for vulnerabilities.       |
+| **Alpine**        | apk                | Scans Alpine’s repositories and packages for vulnerabilities.              |
+
+---
+
+### Containers
+
+| Package            | Extensions                    | Description                                                  |
+|--------------------|-------------------------------|--------------------------------------------------------------|
+| **Docker**          | Not identified by extension    | Identifies components in Docker images and layers for vulnerabilities. |
+| **OCI**             | Not identified by extension    | Scans components in OCI images similar to Docker.            |
+| **Chainguard Images** | Not identified by extension  | Scans Chainguard images for SBOM and SCA.                   |
+
+---
+
+### ML Models
+
+| Package                   | Extensions           | Description                                                                      |
+|---------------------------|----------------------|----------------------------------------------------------------------------------|
+| **Hugging Face ML**      | Not identified by extension | Scans ML models for licenses and malicious content.                              |
+| **Machine Learning Model**| Various binary formats | Scans various ML model binaries for vulnerabilities in Docker and Generic repositories.  |
+
+---
+
+### Others
+
+| Package                   | Extensions           | Description                                                      |
+|---------------------------|----------------------|------------------------------------------------------------------|
+| **CycloneDX SBOM**       | cdx.json, cdx.xml    | Scans CycloneDX files and populates vulnerability data.          |
+| **Terraform State**       | Not identified by extension | Scans Terraform state for cloud service configuration issues.   |
+
+
+
+## Archive Support
 
 | Type                          | Supported                                    |
 |-------------------------------|----------------------------------------------|

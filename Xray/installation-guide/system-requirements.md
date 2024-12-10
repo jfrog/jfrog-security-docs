@@ -1,3 +1,5 @@
+# System Requirements
+
 Xray system requirements depend on the size of your environment.
 
 | **Number of Indexed Artifacts**                   | **Processor**                               | **Memory**                       | **Disk Space**                        |
@@ -7,6 +9,8 @@ Xray system requirements depend on the size of your environment.
 | Up to 2M indexed artifacts, and 20k artifacts/builds per day | Xray (x3 nodes): 6 cores<br>DB: 16 cores   | JFrog Advanced Security (x4 nodes): 24 GB | Xray (x3 nodes): 300 GB<br>DB: 1 TB (SSD, 3000 IOPS) |
 | Up to 10M indexed artifacts, and 50k artifacts/builds per day | Xray (x3 nodes): 8 cores<br>DB: 16 cores   | JFrog Advanced Security (x8 nodes): 24 GB | Xray (x3 nodes): 300 GB<br>DB: 2.5 TB (SSD, 3000 IOPS) |
 | Over 10M indexed artifacts, and 50k artifacts/builds per day | Contact JFrog Support for sizing requirements. |                                  |                                       |
+
+$~$
 
 > The number of nodes in the table refers to high availability (HA) setups, not disaster recovery.
 

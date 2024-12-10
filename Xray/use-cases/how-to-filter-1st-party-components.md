@@ -1,5 +1,7 @@
 # How to Filter Out Your 1st Party Components in CycloneDX SBOM report
 
+> Feature is supported in Xray Version 3.108 or later.
+
 ## Via UI 
 
 ### Creating Filter Property Set

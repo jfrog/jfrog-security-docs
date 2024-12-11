@@ -9,15 +9,6 @@ To configure these settings, in the Administration module, go to Xray Security a
 
 The following advanced configurations are available:
 
-Basic Settings: allows enabling Xray, configuring the behaviour when it is unavailable and for blocked artifacts.
-
-System Parameters: (Self-Hosted only) provides system settings.
-
-Queue Workers: (Self-Hosted only) provides several parameters for tweaking Xray performance by changing the number of workers performing the different tasks. Starting from Artifactory version 7.12 and above, the Queue Workers setting is no longer available through the UI, and is only supported through REST API.
-
-> Adjusting these parameters may affect your system's performance, please contact JFrog Support for additional information.
-
-
 ## Basic Settings
 
 | **Field**                                         | **Description**                                                                                                                                                                 |
@@ -50,3 +41,5 @@ Queue Workers: (Self-Hosted only) provides several parameters for tweaking Xray 
 | Impact Analysis                                   | Number of workers involved in Impact Analysis to determine how a component with a reported issue impacts others in the system.                                                  |
 | Notification                                      | Number of workers managing notifications.                                                                                                                                       |
 | Queue Message Max TTL                             | Number of retries to be accepted in the Message Queue system.                                                                                                                  |
+
+> Adjusting these parameters may affect your system's performance, please contact JFrog Support for additional information.

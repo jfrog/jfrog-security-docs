@@ -4,24 +4,29 @@ JFrog Xray is a universal software composition analysis (SCA) solution that nati
 
 > Jfrog Xray is supported on the Cloud platform with an Enterprise X or Enterprise+ license, and on the Self-Hosted platform.
 
-## Main Features and Functionality
+## Main Features
 
-* Early Detection: Xray identifies security vulnerabilities and license violation as early as the dependency declaration stage and blocks builds with security issues from development. Automated and continuous governance and auditing of software artifacts and dependencies throughout the software development lifecycle from code to production.
-* Self-hosted, Cloud, Hybrid or Multi-Cloud Solution: Xray is available self-hosted (self-managed) and on the cloud. Xray Cloud is hosted on your choice of Amazon Web Services, Google Cloud Platform, or Microsoft Azure, allowing you to maintain infrastructure with automated server backups, free updates and guaranteed uptime.
-* Deep Recursive Scanning: Xray recursively scans artifacts, builds and Release Bundles in your system, drilling down to analyze even the smallest binary component that affects your software. For example, when analyzing a Docker image, if Xray finds that it contains a Java application it will also analyze all the .jar files used in this application.
-* Continuous Impact Analysis: Xray analyzes how an issue in one component affects all others in your company and displays the chain of impact in a component graph, allowing you to have a clear understanding of the impact one component has on another. It is continuously updated with new security vulnerabilities, performing an impact analysis to determine all artifacts affected by the issue.
-* Native Integration with Artifactory: Xray is the only security scanning tool that is natively integrated with JFrog Artifactory. As a complementary product to JFrog Artifactory, Xray has access to the wealth of metadata Artifactory stores which, combined with deep recursive scanning, puts Xray in a unique position to analyze the relationships between binary artifacts and provide radical transparency into your component architecture to reveal the impact that a vulnerability in one component has on any other.
-* Vulnerability Database: Xray comes with JFrog’s vulnerabilities database on OSS components, to which integrates data from Vulnerability databases and security advisories including NVD, GitHub, Ubuntu, Debian, Red Hat, PHP and enriched by the JFrog Security Research team to give more specific and detailed information on the vulnerability, its use cases and options for mitigations.
-* Custom API-Driven Automation: Through an open REST API, Xray lets you define a custom regimen of automated analysis for all components in your system.
-* Dependencies Scan: Scan your sources' dependenciesusing the JFrog CLI for vulnerabilities and licenses violations.
-* On-Demand Binary Scan: Point to a binary in your local file system and receive a report that contains a list of vulnerabilities and licenses for that binary using the JFrog CLI.
-* SBOM: Enable DevSecOps engineers to understand and analyze the dependencies of their components. To learn more, see Xray SBOM Report
-* JFrog Security CVE Research and Enrichment: JFrog's security research team helps you with enhanced analysis on CVE findings in a way that allows you to focus on the most important issues with the capability of finding the best resources invested in fixing them. For more information, see JFrog Security CVE Research and Enrichment
-* Component's Operational Risk: Provides you with additional data on OSS components that will help you gain insights into the risk level of the components in use. For more information, see Components Operational Risk
-* JFrog Advanced Scans: Includes IaC security, secrets detection, contextual analysis and detection of OSS library and services misconfiguration or misuse. For more information, see JFrog Advanced Security
-* Universal Artifact Analysis: In line with JFrog’s universal approach, JFrog Xray performs artifact analysis for all major package formats across the CI/CD pipeline. Xray understands each package type, knows how to unpack it and what every underlying layer contains.
+#### General
 
-Xray currently supports the following package formats with new formats added regularly.
+* **Flexible Deployment Options** : Available as self-hosted, cloud, hybrid, or multi-cloud solutions on AWS, Google Cloud, and Microsoft Azure.
+* **Native Integration with Artifactory** : Provides enhanced analysis through integration with JFrog Artifactory, leveraging shared metadata.
+* **On-Demand Binary Scan** : Enables instant vulnerability reports for specific binaries through local file system scans.
+* **Aggregated Reporting Features** : Xray provides an integrated view of findings from JFrog Security products, enabling organizations to generate customizable reports that encompass vulnerabilities, licensing compliance, policy violations, and operational risks. Each report allows users to define specific scopes and apply advanced filters for tailored insights, ensuring a comprehensive understanding of security and compliance across artifacts, builds, and release bundles. All reports are accessible through the JFrog Platform and REST API, facilitating easy integration into existing workflows.
+* **JIRA Integration**: Seamlessly integrates with JIRA to streamline issue tracking and resolution processes, allowing security vulnerabilities and policy violations detected by Xray to be automatically logged as JIRA tickets. This integration facilitates collaboration between development and security teams, ensuring timely remediation and enhanced project management.
+
+#### SBOM
+
+* **Vulnerability Detection -** Identifies security vulnerabilities inside your binaries - enriched by world-class database of OSS vulnerabilities from multiple sources, facilitating informed risk management.
+* **License Detection and Management - Identify software licenses //TODO**
+* **Operational Risk Insights** : Assesses OSS components to provide insights into their risk levels for informed decision-making.
+* **Dependency Detection -** Understand dependency relationship between software components in your binaries - facilitating direct-source fixes and better contextual understanding of your software.
+* **SBOM Standards Compliant Reports** : Generates Software Bill of Materials (SBOM) reports that comply with industry standards and are available in CycloneDX and SPDX formats. These reports can also incorporate Vulnerability Exploitability eXchange (VEX) information to provide detailed insights into the exploitability of identified vulnerabilities.
+
+#### SDLC Policy Management
+
+* **Comprehensive Rule-based Policy** : Implements customizable, rule-based policies to enforce security and compliance standards throughout the software development lifecycle, ensuring that builds meet organizational guidelines before deployment.
+* **Extensible Policy Scoping (Watches)** : Allows users to define granular policy scopes, known as "Watches," that can monitor specific artifacts , repositories, builds and release bundles, enabling a tailored approach to policy enforcement based on organizational needs.
+* **Intricate Waiver Mechanism (Ignore Rules)** : Provides a sophisticated waiver mechanism allowing teams to temporarily ignore certain policy violations under specific conditions, facilitating flexibility while maintaining overall compliance and security objectives.
 
 ## Xray Support Matrix
 

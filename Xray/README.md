@@ -1,4 +1,4 @@
-# What is JFrog Xray?
+# JFrog Xray
 
 JFrog Xray is a universal software composition analysis (SCA) solution that natively integrates with Artifactory, giving developers and DevSecOps teams an easy way to proactively identify vulnerabilities on open source and license compliance violations, before they manifest in production releases.
 
@@ -27,42 +27,17 @@ Xray currently supports the following package formats with new formats added reg
 
 ### Software Packages
 
-| Programming Language | Package       | Extensions                                                       | Vulnerabilities | License Detection | Malicious Packages | Operational Risk | Dependencies |
-| -------------------- | ------------- | ---------------------------------------------------------------- | --------------- | ----------------- | ------------------ | ---------------- | ------------ |
-| Go                   | **Go**        | None                                                             | ✔               | ✔                 | ✔                  |                  | ✔            |
-| PHP                  | **PHP**       | All archive types                                                | ✔               | ✔                 | ✔                  |                  | ✔            |
-| Java                 | **Maven**     | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | ✔               | ✔                 | ✔                  | ✔                | ✔            |
-| Java                 | **Gradle**    | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | ✔               | ✔                 |                    | ✔                | ✔            |
-| Java                 | **Ivy**       | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | ✔               | ✔                 |                    | ✔                | ✔            |
-| Scala                | **SBT**       | jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types | ✔               | ✔                 |                    | ✔                | ✔            |
-| JavaScript           | **npm**       | All archive types                                                | ✔               | ✔                 | ✔                  | ✔                | ✔            |
-| JavaScript           | **Bower**     | All archive types                                                | ✔               | ✔                 | ✔                  |                  | ✔            |
-| .NET                 | **NuGet**     | nupkg, DLL, exe, all archive types                               | ✔               | ✔                 | ✔                  |                  | ✔            |
-| Python               | **PyPI**      | whl, egg, all archive types                                      | ✔               | ✔                 | ✔                  |                  | ✔            |
-| Python               | **Conda**     | conda                                                            | ✔               | ✔                 | ✔                  |                  | ✔            |
-| Ruby                 | **RubyGems**  | gem                                                              | ✔               | ✔                 | ✔                  |                  | ✔            |
-| Objective-C          | **CocoaPods** | podspec                                                          | ✔               | ✔                 |                    |                  | ✔            |
-| C/C++                | **Conan**     | conanmanifest.txt                                                | ✔               | ✔                 | ✔                  |                  | ✔            |
-| Rust                 | **Cargo**     | crate                                                            | ✔               | ✔                 | ✔                  |                  | ✔            |
-| R                    | **CRAN**      | All archive types                                                | ✔               | ✔                 | ✔                  |                  | ✔            |
+<table data-full-width="true"><thead><tr><th>Programming Language</th><th>Package</th><th>Extensions</th><th>Vulnerabilities</th><th>License Detection</th><th>Malicious Packages</th><th>Operational Risk</th><th>Dependencies</th></tr></thead><tbody><tr><td>Go</td><td><strong>Go</strong></td><td>None</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>PHP</td><td><strong>PHP</strong></td><td>All archive types</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>Java</td><td><strong>Maven</strong></td><td>jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>Java</td><td><strong>Gradle</strong></td><td>jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types</td><td>✔</td><td>✔</td><td></td><td>✔</td><td>✔</td></tr><tr><td>Java</td><td><strong>Ivy</strong></td><td>jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types</td><td>✔</td><td>✔</td><td></td><td>✔</td><td>✔</td></tr><tr><td>Scala</td><td><strong>SBT</strong></td><td>jar, war, ear, nupkg, sar, har, hpi, cpa, jpi, all archive types</td><td>✔</td><td>✔</td><td></td><td>✔</td><td>✔</td></tr><tr><td>JavaScript</td><td><strong>npm</strong></td><td>All archive types</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td>JavaScript</td><td><strong>Bower</strong></td><td>All archive types</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>.NET</td><td><strong>NuGet</strong></td><td>nupkg, DLL, exe, all archive types</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>Python</td><td><strong>PyPI</strong></td><td>whl, egg, all archive types</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>Python</td><td><strong>Conda</strong></td><td>conda</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>Ruby</td><td><strong>RubyGems</strong></td><td>gem</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>Objective-C</td><td><strong>CocoaPods</strong></td><td>podspec</td><td>✔</td><td>✔</td><td></td><td></td><td>✔</td></tr><tr><td>C/C++</td><td><strong>Conan</strong></td><td>conanmanifest.txt</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>Rust</td><td><strong>Cargo</strong></td><td>crate</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr><tr><td>R</td><td><strong>CRAN</strong></td><td>All archive types</td><td>✔</td><td>✔</td><td>✔</td><td></td><td>✔</td></tr></tbody></table>
 
 ### OS Packages
 
-| Package    | Extensions | Vulnerabilities | License Detection | Malicious Packages | Operational Risk | Dependencies |
-| ---------- | ---------- | --------------- | ----------------- | ------------------ | ---------------- | ------------ |
-| **Debian** | deb        | ✔               | ✔                 | ✔                  | ✔                | ✔            |
-| **RPM**    | rpm        | ✔               | ✔                 | ✔                  | ✔                | ✔            |
-| **Alpine** | apk        | ✔               | ✔                 | ✔                  | ✔                | ✔            |
+<table data-full-width="true"><thead><tr><th>Package</th><th>Extensions</th><th>Vulnerabilities</th><th>License Detection</th><th>Malicious Packages</th><th>Operational Risk</th><th>Dependencies</th></tr></thead><tbody><tr><td><strong>Debian</strong></td><td>deb</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><strong>RPM</strong></td><td>rpm</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><strong>Alpine</strong></td><td>apk</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr></tbody></table>
 
 ***
 
 ### Containers
 
-| Package               | Extensions                  | Vulnerabilities | License Detection | Malicious Packages | Operational Risk | Dependencies |
-| --------------------- | --------------------------- | --------------- | ----------------- | ------------------ | ---------------- | ------------ |
-| **Docker**            | Not identified by extension | ✔               | ✔                 | ✔                  | ✔                | ✔            |
-| **OCI**               | Not identified by extension | ✔               | ✔                 | ✔                  | ✔                | ✔            |
-| **Chainguard Images** | Not identified by extension | ✔               | ✔                 | ✔                  | ✔                | ✔            |
+<table data-full-width="true"><thead><tr><th>Package</th><th>Extensions</th><th>Vulnerabilities</th><th>License Detection</th><th>Malicious Packages</th><th>Operational Risk</th><th>Dependencies</th></tr></thead><tbody><tr><td><strong>Docker</strong></td><td>Not identified by extension</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><strong>OCI</strong></td><td>Not identified by extension</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><strong>Chainguard Images</strong></td><td>Not identified by extension</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr></tbody></table>
 
 ***
 
@@ -77,10 +52,7 @@ Xray currently supports the following package formats with new formats added reg
 
 ### Others
 
-| Package             | Extensions                  | Vulnerabilities | License Detection | Malicious Packages | Operational Risk | Dependencies |
-| ------------------- | --------------------------- | --------------- | ----------------- | ------------------ | ---------------- | ------------ |
-| **CycloneDX SBOM**  | cdx.json, cdx.xml           | ✔               | ✔                 | ✔                  | ✔                | ✔            |
-| **Terraform State** | Not identified by extension |                 |                   |                    |                  |              |
+<table data-full-width="true"><thead><tr><th>Package</th><th>Extensions</th><th>Vulnerabilities</th><th>License Detection</th><th>Malicious Packages</th><th>Operational Risk</th><th>Dependencies</th></tr></thead><tbody><tr><td><strong>CycloneDX SBOM</strong></td><td>cdx.json, cdx.xml</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr><td><strong>Terraform State</strong></td><td>Not identified by extension</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
 
 ## Archive Support
 

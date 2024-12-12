@@ -15,6 +15,7 @@
     * [SBOM Report](Xray/sbom/sbom-report.md)
   * [Use Cases](xray/use-cases/README.md)
     * [How to Filter Out Your 1st Party Components in CycloneDX SBOM report](Xray/use-cases/how-to-filter-1st-party-components.md)
+    * [How to Detect Malicious AI Models using Xray](xray/use-cases/how-to-detect-malicious-ai-models-using-xray.md)
   * [Xray Management](xray/xray-management/README.md)
     * [Advanced Settings](Xray/xray-management/advanced-settings.md)
     * [Custom Software Licenses](Xray/xray-management/custom-licenses.md)

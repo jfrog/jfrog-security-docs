@@ -67,9 +67,9 @@ It's crucial to understand that not all Hugging Face models that are marked “D
 
 Example of a model not marked as “Dangerous” by HuggingFace, while having malicious content:
 
+<figure><img src="../../.gitbook/assets/malicious_package_gif.gif" alt=""><figcaption></figcaption></figure>
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Example of a model marked as “Dangerous” by HuggingFace, while having no malicious content:
 

@@ -7,6 +7,7 @@
     * [IDE Integration](Xray/Integrations/ide-integration.md)
     * [Configuring Webhooks in Xray](Xray/Integrations/webhooks.md)
     * [CI/CD Integration](xray/integrations/ci-cd-integration.md)
+    * [Jira Integration](xray/integrations/jira-integration.md)
   * [Installing JFrog Xray](Xray/installation-guide/README.md)
     * [System Requirements](Xray/installation-guide/system-requirements.md)
   * [Xray Reports](Xray/reports/README.md)

@@ -24,3 +24,5 @@
     * [Set a Retention Period for Xray Indexed Resources](Xray/xray-management/retention-period.md)
     * [System Monitoring](Xray/xray-management/system-monitoring.md)
     * [TLS Certificates](Xray/xray-management/tls-certificates.md)
+  * [SDLC Policy Mangement](xray/sdlc-policy-mangement/README.md)
+    * [Policies](xray/sdlc-policy-mangement/policies.md)

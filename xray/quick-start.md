@@ -5,7 +5,7 @@
 To quickly Get Started With Jfrog Xray you need :
 
 * [Have Xray Installed ](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-xray)
-* Have the Proper Permissions
+* Have "Manage Xray Data" Permission
 
 ## 1. Add Resources to Xray&#x20;
 

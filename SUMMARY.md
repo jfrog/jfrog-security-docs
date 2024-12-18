@@ -27,3 +27,5 @@
     * [Ignore Rules](xray/sdlc-policy-mangement/ignore-rules.md)
     * [Watches](xray/sdlc-policy-mangement/watches.md)
   * [Quick Start](xray/quick-start.md)
+  * [Release Notes ](https://jfrog.com/help/r/xray-release-information/xray-release-notes)
+  * [REST API](https://jfrog.com/help/r/xray-rest-apis/introduction-to-the-xray-rest-apis)

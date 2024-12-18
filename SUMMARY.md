@@ -26,3 +26,4 @@
     * [Policies](xray/sdlc-policy-mangement/policies.md)
     * [Ignore Rules](xray/sdlc-policy-mangement/ignore-rules.md)
     * [Watches](xray/sdlc-policy-mangement/watches.md)
+  * [Quick Start](xray/quick-start.md)

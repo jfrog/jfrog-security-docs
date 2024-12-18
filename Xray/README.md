@@ -48,10 +48,10 @@ JFrog Xray is a universal software composition analysis (SCA) solution that nati
 
 ### ML Models
 
-| Package                    | Extensions                  | Vulnerabilities | License Detection    | Malicious Packages   | Operational Risk |
-| -------------------------- | --------------------------- | --------------- | -------------------- | -------------------- | ---------------- |
-| **Hugging Face ML**        | Not identified by extension |                 | :white\_check\_mark: | :white\_check\_mark: |                  |
-| **Machine Learning Model** | Various binary formats      |                 |                      |                      |                  |
+| Package                    | Extensions                                                                                                                                           | Vulnerabilities | License Detection    | Malicious Packages   | Operational Risk     |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------- | -------------------- | -------------------- |
+| **Hugging Face ML**        | Not identified by extension                                                                                                                          |                 | :white\_check\_mark: | :white\_check\_mark: |                      |
+| **Machine Learning Model** | bin, ckpt, dill, flax, ggml, gguf, h5, hdf5, joblib, keras, mpk, msgpack, nemo, npy, npz, onnx, pb, pdparams, pkl, pt, pth, safetensors, tflite, zip |                 |                      |                      | :white\_check\_mark: |
 
 ***
 

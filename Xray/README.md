@@ -48,10 +48,7 @@ JFrog Xray is a universal software composition analysis (SCA) solution that nati
 
 ### ML Models
 
-| Package                    | Extensions                                                                                                                                           | Vulnerabilities | License Detection    | Malicious Packages   | Operational Risk     |
-| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------- | -------------------- | -------------------- |
-| **Hugging Face ML**        | Not identified by extension                                                                                                                          |                 | :white\_check\_mark: | :white\_check\_mark: |                      |
-| **Machine Learning Model** | bin, ckpt, dill, flax, ggml, gguf, h5, hdf5, joblib, keras, mpk, msgpack, nemo, npy, npz, onnx, pb, pdparams, pkl, pt, pth, safetensors, tflite, zip |                 |                      |                      | :white\_check\_mark: |
+<table data-full-width="true"><thead><tr><th>Package</th><th>Extensions</th><th>Vulnerabilities</th><th>License Detection</th><th>Malicious Packages</th><th>Operational Risk</th></tr></thead><tbody><tr><td><strong>Hugging Face ML</strong></td><td>Not identified by extension</td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td></td></tr><tr><td><strong>Machine Learning Model</strong></td><td>bin, ckpt, dill, flax, ggml, gguf, h5, hdf5, joblib, keras, mpk, msgpack, nemo, npy, npz, onnx, pb, pdparams, pkl, pt, pth, safetensors, tflite, zip</td><td></td><td></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
 
 ***
 

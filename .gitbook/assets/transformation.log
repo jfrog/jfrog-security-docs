@@ -1,0 +1,99 @@
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] ############################################################
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] # Output Factory initiated (msword)
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] # Building output for: JFrog Advanced Security Export
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] # URL /document/edit/789597
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] # User: Lina Daher
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] # Time: Thu, 26 Dec 2024 12:27:09 +0000
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] # Server: ip-172-31-33-223.eu-west-1.compute.internal
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] ############################################################
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Group: system
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Type: msword
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Transformation: $apppath/lib/docbook/xsl/msword/msword.xsl
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] File found: $apppath/lib/docbook/xsl/msword/msword.xsl
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] ############################################################
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Building output for: msword
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Using stylesheet: $apppath/lib/docbook/xsl/msword/msword.xsl
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Parameters for this build: []
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Environment variables for this build: []
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Building output for languages: ["en"]
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Building multilang: no
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] Building preview: no
+[26/Dec/2024 12:27:09 Europe/Dublin] [Info] ############################################################
+[26/Dec/2024 12:27:10 Europe/Dublin] [Info] Using build directory: $local_tmp/production-676d4b9c92b393.93149268/789597-JFrog_Advanced_Security_Export-msword
+[26/Dec/2024 12:27:10 Europe/Dublin] [Info] -- Generating source files
+[26/Dec/2024 12:27:10 Europe/Dublin] [Info] -- Propagating taxonomies: false
+[26/Dec/2024 12:27:11 Europe/Dublin] [Info] -- Source files have been generated
+[26/Dec/2024 12:27:11 Europe/Dublin] [Info] -- Publication has no unresolved dependencies.
+[26/Dec/2024 12:27:11 Europe/Dublin] [Info] Parsing processing instructions
+[26/Dec/2024 12:27:11 Europe/Dublin] [Info] -- Generating source files complete.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] Localizing: publication-789597.xml
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] Language: en
+[26/Dec/2024 12:27:12 Europe/Dublin] [Warning] Resolving some links failed
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[2]/*[5]/*[2]/*[1]] An outgoing link in <a href="/document/edit/642087">Create a Security Policy with Advanced Scans Rules</a> could not be resolved. The link points to <a href="/document/edit/361196">Configuring Xray Watches</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[2]/*[5]/*[2]/*[2]] An outgoing link in <a href="/document/edit/642087">Create a Security Policy with Advanced Scans Rules</a> could not be resolved. The link points to <a href="/document/edit/625848">Creating Xray Policies and Rules</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[2]/*[5]/*[4]/*[1]] An outgoing link in <a href="/document/edit/642087">Create a Security Policy with Advanced Scans Rules</a> could not be resolved. The link points to <a href="/document/edit/551896">Xray Scans List</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[2]/*[5]/*[4]/*[2]] An outgoing link in <a href="/document/edit/642087">Create a Security Policy with Advanced Scans Rules</a> could not be resolved. The link points to <a href="/document/edit/361938">Examine Violations on a Watch</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[2]/*[5]/*[5]/*[2]/*[6]/*[1]/*] An outgoing link in <a href="/document/edit/642087">Create a Security Policy with Advanced Scans Rules</a> could not be resolved. The link points to <a href="/document/edit/625848">Creating Xray Policies and Rules</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[2]/*[6]/*[3]/*[1]/*/*] An outgoing link in <a href="/document/edit/642088">JFrog Advanced Security REST API SUPPORT</a> could not be resolved. The link points to <a href="/document/edit/514290">Xray REST APIs</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[2]/*[6]/*[3]/*[1]/*/*[1]/*] An outgoing link in <a href="/document/edit/642088">JFrog Advanced Security REST API SUPPORT</a> could not be resolved. The link points to <a href="/meta/locate/514330/true">Create Policy</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] The link (/*/*[2]/*[6]/*[3]/*[2]/*/*[@href=urn:resource:component:514345]) could not be resolved. The resource is missing.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[3]/*[9]/*[2]/*[1]/*/*] An outgoing link in <a href="/document/edit/642105">Repository / Artifact Advanced Scan REST API Support</a> could not be resolved. The link points to <a href="/document/edit/586629">Repository Advanced Scans</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[3]/*[9]/*[2]/*[2]/*/*] An outgoing link in <a href="/document/edit/642105">Repository / Artifact Advanced Scan REST API Support</a> could not be resolved. The link points to <a href="/document/edit/586828">Get Repository Advanced Scan Status</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[3]/*[9]/*[2]/*[3]/*/*] An outgoing link in <a href="/document/edit/642105">Repository / Artifact Advanced Scan REST API Support</a> could not be resolved. The link points to <a href="/document/edit/586901">Cancel Repository Advanced Scans</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[3]/*[9]/*[2]/*[4]/*/*] An outgoing link in <a href="/document/edit/642105">Repository / Artifact Advanced Scan REST API Support</a> could not be resolved. The link points to <a href="/document/edit/551885">Scan Artifact for Contextual Analysis</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[3]/*[9]/*[2]/*[5]/*/*] An outgoing link in <a href="/document/edit/642105">Repository / Artifact Advanced Scan REST API Support</a> could not be resolved. The link points to <a href="/document/edit/551624">Scan Artifact for Exposures</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[4]/*[4]/*[7]/*] An outgoing link in <a href="/document/edit/642110">Ignore an Exposures Violation</a> could not be resolved. The link points to <a href="/document/edit/514432">IGNORE RULES</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[4]/*[5]/*[3]/*/*/*] An outgoing link in <a href="/document/edit/642111">Advanced Security Scan Results REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514435">Create Ignore Rule</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[3]/*[2]] An outgoing link in <a href="/document/edit/552327">Vulnerability Contextual Analysis</a> could not be resolved. The link points to <a href="/document/edit/361955">JFrog Security CVE Research and Enrichment</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[11]/*[4]/*[4]/*[1]/*] An outgoing link in <a href="/document/edit/642118">Enable/Disable Contextual Analysis</a> could not be resolved. The link points to <a href="/document/edit/625776">Indexing Xray Resources</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[11]/*[5]/*[6]/*] An outgoing link in <a href="/document/edit/642119">Contextual Analysis Statuses and Results</a> could not be resolved. The link points to <a href="/document/edit/551896">Xray Scans List</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[12]/*[3]/*[1]/*/*] An outgoing link in <a href="/document/edit/642114">Contextual Analysis REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514377">Get Contextual Analysis per Vulnerability V1</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[12]/*[3]/*[2]/*/*] An outgoing link in <a href="/document/edit/642114">Contextual Analysis REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514424">Artifact Summary</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[12]/*[3]/*[3]/*/*] An outgoing link in <a href="/document/edit/642114">Contextual Analysis REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514423">Build Summary</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[12]/*[3]/*[5]/*/*] An outgoing link in <a href="/document/edit/642114">Contextual Analysis REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514439">List Ignored Violations</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[12]/*[3]/*[6]/*/*] An outgoing link in <a href="/document/edit/642114">Contextual Analysis REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514363">Scan Build V1</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[12]/*[3]/*[7]/*/*[1]] An outgoing link in <a href="/document/edit/642114">Contextual Analysis REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514360">Get Repositories Configurations</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[5]/*[12]/*[3]/*[8]/*/*[1]] An outgoing link in <a href="/document/edit/642114">Contextual Analysis REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514359">Update Repositories Configurations</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[6]/*[11]/*[18]/*] An outgoing link in <a href="/document/edit/732769">Secrets Scans</a> could not be resolved. The link points to <a href="/document/edit/733722">Enable Token Validation for Secrets</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[6]/*[12]/*[3]/*[1]/*/*] An outgoing link in <a href="/document/edit/642137">Exposure Scans REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514378">Exposures Scanning - Get Results List</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[6]/*[12]/*[3]/*[2]/*/*] An outgoing link in <a href="/document/edit/642137">Exposure Scans REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514379">Exposures Scanning - Get Results Details</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[6]/*[12]/*[3]/*[3]/*/*] An outgoing link in <a href="/document/edit/642137">Exposure Scans REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514380">Exposures Scanning - Get Findings</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[6]/*[12]/*[3]/*[4]/*/*] An outgoing link in <a href="/document/edit/642137">Exposure Scans REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514381">Exposures Scanning - Get Evidence</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[6]/*[12]/*[3]/*[5]/*/*] An outgoing link in <a href="/document/edit/642137">Exposure Scans REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514382">Exposures Scanning - Get Rows</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[6]/*[12]/*[3]/*[6]/*/*] An outgoing link in <a href="/document/edit/642137">Exposure Scans REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514360">Get Repositories Configurations</a> which is not part of this publication.
+[26/Dec/2024 12:27:12 Europe/Dublin] [Info] [/*/*[6]/*[12]/*[3]/*[7]/*/*] An outgoing link in <a href="/document/edit/642137">Exposure Scans REST API Support</a> could not be resolved. The link points to <a href="/document/edit/514359">Update Repositories Configurations</a> which is not part of this publication.
+[26/Dec/2024 12:27:13 Europe/Dublin] [Info] Variable sets found: 0
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Inserting image links.
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found 22 image(s).
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180128450.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180128619.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180128620.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image 'Artifact_Scan_Now.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image 'Artifact_Scan_Now_Results.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image 'Repo_Advanced_Scan_Menu.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image 'Repo_Advanced_Scan.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180128454.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180128456.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image 'Doc.svg'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '144802628.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '144802630.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '144802631.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '144802633.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180127293.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180127294.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '158564801.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '158564803.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180127300.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image '180127301.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image 'Screenshot_2024-12-10_at_12_47_26.png'
+[26/Dec/2024 12:27:14 Europe/Dublin] [Info] Found image 'TokenValidation.png'
+[26/Dec/2024 12:27:15 Europe/Dublin] [Info] Profiling parameters: []
+[26/Dec/2024 12:27:15 Europe/Dublin] [Info] Profiling customisation: $user_dir/xsl/profile.xsl (not found)
+[26/Dec/2024 12:27:15 Europe/Dublin] [Info] Transformation: publication-789597--en.org.xml -> publication-789597--en.xml [profile.xsl]
+[26/Dec/2024 12:27:15 Europe/Dublin] [Info] Transformation: publication-789597--en.xml -> publication-789597--en.xml [internal-xref.xsl]
+[26/Dec/2024 12:27:16 Europe/Dublin] [Info] Transformation: A-filelist.xml -> B-sorted.xml [IO.document.sortlang.xsl]
+[26/Dec/2024 12:27:16 Europe/Dublin] [Info] Transformation: B-sorted.xml -> C-concatenated.xml [IO.document.concat.xsl]
+[26/Dec/2024 12:27:16 Europe/Dublin] [Info] Transformation: B-sorted.xml -> index-en.xml [IO.document.head.xsl]
+[26/Dec/2024 12:27:16 Europe/Dublin] [Info] Template found: $apppath/lib/docbook/xsl/msword/msword.docx
+[26/Dec/2024 12:27:16 Europe/Dublin] [Info] Filter found: $apppath/lib/docbook/xsl/msword/msword.lua
+[26/Dec/2024 12:27:17 Europe/Dublin] [Info] # Took 7.316339 seconds to render.

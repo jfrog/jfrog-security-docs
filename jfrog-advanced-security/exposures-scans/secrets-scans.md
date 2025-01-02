@@ -15,7 +15,11 @@ JFrog Secret detection currently supports the following scenarios:
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
 | <p>In the JFrog Platform both binaries and text files are being scanned for secrets.</p><p>In the IDE and Frogbot only text files are scanned.</p><p>In the CLI there are commands such as ‘jf audit’ that scan source code and look for secrets in text files, and other commands such as ‘jf docker scan’ that scan both binary and text files.</p> |      |
 
-**Supported Secrets Types**
+## **Supported Secrets Types**
+
+
+
+
 
 JFrog Secrets detection can detect the following types of secrets:
 
@@ -24,7 +28,9 @@ JFrog Secrets detection can detect the following types of secrets:
 * [High entropy secrets](about:blank/UUID-f780f7a6-4776-ff09-3ef1-b60e8908dd36.html#UUID-f780f7a6-4776-ff09-3ef1-b60e8908dd36_N1722188849592)
 * [URL secrets](about:blank/UUID-f780f7a6-4776-ff09-3ef1-b60e8908dd36.html#UUID-f780f7a6-4776-ff09-3ef1-b60e8908dd36_N1722188859111)
 
-**Access Tokens**
+### **Access Tokens**
+
+
 
 This scanner detects access tokens with a well-defined structure, in either text or binary files. For example:
 
@@ -36,7 +42,7 @@ This scanner detects access tokens with a well-defined structure, in either text
 | npm      | `npm_1234567890abcdefgh`                                                    |
 | Slack    | `xoxp-123234234235-123234234235-123234234235-adedce74748c3844747aed48499bb` |
 
-**Token Validation**
+#### **Token Validation**
 
 Verify the validity of detected tokens by enabling Token Validation. This feature allows you to distinguish between active and inactive tokens by authenticating against the token provider.
 
@@ -153,7 +159,7 @@ The following access keys will not raise an alert by the scanners
   * .\*1111111.\*
   * .\*0000000.\*
 
-**Certificates/Private keys**
+### **Certificates/Private keys**
 
 JFrog Secret detection can detect issues in X.509 PEM (textual) and DER (binary) certificates and private keys :
 
@@ -194,7 +200,7 @@ JFrog employs several heuristics to avoid false positive results. The following 
   * .\*example.\*
   * .\*sample.\*
 
-**URL Secrets**
+### **URL Secrets**
 
 JFrog Secret detection can detect secrets in textual files where the secret is embedded in a URL (for example; https://myuser:mypass@somedomain.com)
 

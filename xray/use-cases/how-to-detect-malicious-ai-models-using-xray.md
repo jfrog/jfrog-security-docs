@@ -5,7 +5,7 @@ JFrog’s Xray detects malicious machine learning models based on artifact scann
 \
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Example of a found malicious package: MustEr/gpt2-elite
 
@@ -76,5 +76,5 @@ Example of a model marked as “Dangerous” by HuggingFace, while having no mal
 \
 
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -8,15 +8,15 @@ Creating an Xray Policy involves the following primary steps:
 2. Provide a name for the Policy.
 3.  Select the **Policy Type**; **Security**, **License**, or **Operational Risk**. For more information, see [Trigger Violations Using Xray Policy Rules](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/6HGKZw6F3lnul8K12To_IQ)&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 4.  **Click Next**.
 
     The **Policy Rules List** appears.
 5. Define the rules and actions depending on what you have selected. The various options are outlined in [Trigger Violations Using Xray Policy Rules](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/6HGKZw6F3lnul8K12To_IQ) and [Policy Violation Automatic Actions](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/ytBDSmiGVVseDRMOLK0qtQ).
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

@@ -4,6 +4,8 @@
 * [JFrog Xray](Xray/README.md)
   * [Xray Concepts](Xray/xray-concepts.md)
   * [Quick Start](xray/quick-start.md)
+  * [SCA](xray/sca/README.md)
+    * [JFrog Security Research](xray/sca/jfrog-security-research.md)
   * [SBOM](xray/sbom/README.md)
     * [SBOM Report](Xray/sbom/sbom-report.md)
   * [SDLC Policy Mangement](xray/sdlc-policy-mangement/README.md)

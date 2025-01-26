@@ -13,7 +13,7 @@ To quickly Get Started With Jfrog Xray you need :
 2. Press The "Add/Remove to Xray" Button
 3. Choose the resource type you want to scan.
 
-<div data-full-width="false"><figure><img src="../.gitbook/assets/GettingStarted_1.png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../../../.gitbook/assets/GettingStarted_1.png" alt=""><figcaption></figcaption></figure></div>
 
 4. Done! Now Every artifact added will be automatically scanned by Xray
 
@@ -25,7 +25,7 @@ To quickly Get Started With Jfrog Xray you need :
 2. Press the Xray Tab
 3. Press "Scan Now"
 
-<figure><img src="../.gitbook/assets/GettingStarted_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/GettingStarted_2.png" alt=""><figcaption></figcaption></figure>
 
 ## 2. View Artifact Vulnerabilities
 
@@ -34,7 +34,7 @@ To quickly Get Started With Jfrog Xray you need :
 3. Press The "Vulnerabilities" tab under  "Security Issues" &#x20;
 4. Done! Now you can see all the vulnerabilities in your artifact
 
-<figure><img src="../.gitbook/assets/GettingStarted_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/GettingStarted_3.png" alt=""><figcaption></figcaption></figure>
 
 ## Export your Scan Findings to an SBOM file
 
@@ -47,7 +47,7 @@ Now that you indexed your repository, scanned your artifact and saw the results 
 5. Press "Export"
 6. Done! the scanned artifact SBOM report (with the VEX) is downloaded to your computer.
 
-<figure><img src="../.gitbook/assets/GettingStarted4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/GettingStarted4.png" alt=""><figcaption></figcaption></figure>
 
 
 

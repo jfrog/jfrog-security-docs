@@ -17,7 +17,7 @@ Xray allows you to export your artifact scan results for multiple use cases incl
 
 Press the \[...] Button at the scan result screen and press "Export Scan Data" and choose your export type.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2025-01-20 at 10.11.24.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-01-20 at 10.11.24.png" alt=""><figcaption></figcaption></figure>
 
 ## Security Export
 

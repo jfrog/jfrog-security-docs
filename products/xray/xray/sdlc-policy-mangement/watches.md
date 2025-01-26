@@ -28,7 +28,7 @@ When scanning an artifact, Xray completes the following steps for each resource 
 
 &#x20;
 
-<figure><img src="../../.gitbook/assets/watch_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/watch_1.png" alt=""><figcaption></figcaption></figure>
 
 ### Assign Resources to the Watch
 
@@ -49,7 +49,7 @@ To assign resources on a watch:
 
 * In the **Manage Resources** section, access each resource type and select the resources to be monitored.
 
-<figure><img src="../../.gitbook/assets/watch_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/watch_2.png" alt=""><figcaption></figcaption></figure>
 
 *   Select the resources to be included within each resource type. You have a number of options to select the resources to be included:
 
@@ -77,7 +77,7 @@ You can define any number of filters for a resource, and only artifacts that pas
 
     In the following example, you set a filter to trigger a violation for application/JSONs if their performance value is set to false in the docker-local repo.
 
-<figure><img src="../../.gitbook/assets/watch_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/watch_3.png" alt=""><figcaption></figcaption></figure>
 
 ### Assign Policies to a Watch
 
@@ -99,11 +99,11 @@ Once a **Watch** is created, it will scan artifacts in the specified resources w
 >
 > You can only manually invoke a Watch on existing content if the Watch is defined on specific resources and not on All Repositories or All Builds
 
-<figure><img src="../../.gitbook/assets/watch_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/watch_4.png" alt=""><figcaption></figcaption></figure>
 
 Clicking the button pops up a dialog that lets you specify which of the resources assigned to the watch should be scanned, and a date range that defines when the artifact was last scanned by Xray.
 
 For example, selecting **Last 7 days** will only scan artifacts that have been scanned in the last 7 days.
 
-<figure><img src="../../.gitbook/assets/watch_5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/watch_5.png" alt=""><figcaption></figcaption></figure>
 

@@ -50,7 +50,7 @@ You can access the CVE data in **Xray > Scans List**\
 JFrog research enriched CVEs are indicated by an icon in the list.\
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 Once you click on the CVE, the CVE details are displayed in the right panel. The JFrog research enriched CVE will include the following additional details:
 
@@ -62,24 +62,24 @@ The severity given by the JFrog security research team after the manual analysis
 
 Displays fixed versions for the issue if any, or recommendations such as upgrading and mitigations.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Research Summary <a href="#uuid-dc0b29e7-6fa4-48f7-26c0-89dc94c89200_bridgehead-idm4516531026246433995482647284" id="uuid-dc0b29e7-6fa4-48f7-26c0-89dc94c89200_bridgehead-idm4516531026246433995482647284"></a>
 
 A summary of the issue in the CVE based on JFrog's security analysis .
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Research Details <a href="#uuid-dc0b29e7-6fa4-48f7-26c0-89dc94c89200_bridgehead-idm4556731672585633995483117023" id="uuid-dc0b29e7-6fa4-48f7-26c0-89dc94c89200_bridgehead-idm4556731672585633995483117023"></a>
 
 A detailed description of the issue that provides more insights on the vulnerability, based on JFrog's security analysis.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### JFrog Research Severity Reasons <a href="#uuid-dc0b29e7-6fa4-48f7-26c0-89dc94c89200_bridgehead-idm4516527383160033995483484104" id="uuid-dc0b29e7-6fa4-48f7-26c0-89dc94c89200_bridgehead-idm4516527383160033995483484104"></a>
 
 The reasons behind the JFrog research severity.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 \

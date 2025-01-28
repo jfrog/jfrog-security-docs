@@ -52,6 +52,7 @@ jobs:
       - name: List directory contents
         run: |
           ls -l $WORK_DIR
+          ls -l $WORK_DIR/gitbook-content
         env:
           WORK_DIR: ${{ env.WORK_DIR }}
 

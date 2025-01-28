@@ -1,25 +1,24 @@
 # Table of contents
 
-## JFrog Security
+## Get Started
 
-* [Get Started](README.md)
-* [What is JFrog Security?](jfrog-security/what-is-jfrog-security.md)
-* [Supported Technologies](jfrog-security/supported-technologies.md)
-* [Requirements](jfrog-security/requirements.md)
-* [End-to-End Experience: JFrog Security Timeline](jfrog-security/end-to-end-experience-jfrog-security-timeline.md)
-* [Concepts](jfrog-security/concepts/README.md)
-  * [Glossary](jfrog-security/concepts/glossary.md)
-  * [Workshop](jfrog-security/concepts/workshop/README.md)
-    * [Part 1: Secure Your Code with JFrog SAST](jfrog-security/concepts/workshop/part-1-secure-your-code-with-jfrog-sast.md)
-    * [Part 2: Control Dependencies with JFrog Curation](jfrog-security/concepts/workshop/part-2-control-dependencies-with-jfrog-curation.md)
-    * [Part 3: Scan Artifacts with JFrog Xray](jfrog-security/concepts/workshop/part-3-scan-artifacts-with-jfrog-xray.md)
-    * [Part 4: Deep Security with JFrog Advanced Security](jfrog-security/concepts/workshop/part-4-deep-security-with-jfrog-advanced-security.md)
-    * [Part 5: Monitor and Protect with JFrog Runtime Security](jfrog-security/concepts/workshop/part-5-monitor-and-protect-with-jfrog-runtime-security.md)
-    * [Wrap-Up](jfrog-security/concepts/workshop/wrap-up.md)
-* [Guides](jfrog-security/guides/README.md)
-  * [Use Case 1](jfrog-security/guides/use-case-1.md)
-  * [Use Case 2](jfrog-security/guides/use-case-2.md)
-  * [Use Case 3](jfrog-security/guides/use-case-3.md)
+* [What is JFrog Security?](README.md)
+* [Concepts](get-started/concepts/README.md)
+  * [Workshop](get-started/concepts/workshop/README.md)
+    * [Part 1: Secure Your Code with JFrog SAST](get-started/concepts/workshop/part-1-secure-your-code-with-jfrog-sast.md)
+    * [Part 2: Control Dependencies with JFrog Curation](get-started/concepts/workshop/part-2-control-dependencies-with-jfrog-curation.md)
+    * [Part 3: Scan Artifacts with JFrog Xray](get-started/concepts/workshop/part-3-scan-artifacts-with-jfrog-xray.md)
+    * [Part 4: Deep Security with JFrog Advanced Security](get-started/concepts/workshop/part-4-deep-security-with-jfrog-advanced-security.md)
+    * [Part 5: Monitor and Protect with JFrog Runtime Security](get-started/concepts/workshop/part-5-monitor-and-protect-with-jfrog-runtime-security.md)
+    * [Wrap-Up](get-started/concepts/workshop/wrap-up.md)
+  * [Knowledge Center](get-started/concepts/knowledge-center.md)
+* [Guides](get-started/guides/README.md)
+  * [Common Use Cases](get-started/guides/common-use-cases/README.md)
+    * [Use Case 1](get-started/guides/common-use-cases/use-case-1.md)
+    * [Use Case 2](get-started/guides/common-use-cases/use-case-2.md)
+    * [Use Case 3](get-started/guides/common-use-cases/use-case-3.md)
+  * [Admin Use Cases](get-started/guides/admin-use-cases.md)
+  * [Developer Use Cases](get-started/guides/developer-use-cases.md)
 
 ## Products
 
@@ -110,6 +109,12 @@
 * [CLI for JFrog Security](developers/cli-for-jfrog-security.md)
 * [IDE](developers/ide.md)
 * [API](developers/api.md)
+* [Frogbot](developers/frogbot.md)
+* [CI/CD](developers/ci-cd.md)
+
+## Admin
+
+* [Jira Integration](admin/jira-integration.md)
 
 ## Release Notes
 

@@ -41,6 +41,7 @@
       * [Disconnect Curated Repositories](products/curation/manage-curation/manage-repositories/disconnect-curated-repositories.md)
       * [View the Active Policies for a Repository](products/curation/manage-curation/manage-repositories/view-the-active-policies-for-a-repository.md)
     * [Manage Policies](products/curation/manage-curation/manage-policies.md)
+    * [Audit Events](products/curation/manage-curation/audit-events.md)
     * [Manage Custom Conditions](products/curation/manage-curation/manage-custom-conditions.md)
   * [How-Tos](products/curation/how-tos.md)
 * [Xray](products/xray/README.md)

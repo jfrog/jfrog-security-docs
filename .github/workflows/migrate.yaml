@@ -105,7 +105,7 @@ jobs:
         run: |
                 curl -X POST "${{ env.FLUID_TOPICS_BASE_URL }}/api/admin/khub/sources/${{ env.FLUID_TOPICS_SOURCE_ID }}/upload" \
                 -H "Authorization: Bearer ${{ env.FLUID_TOPICS_API_KEY }}" \
-                -F "file=@${{ env.DOCS_FOLDER }}/gitbook-content.zip"
+                -F "file=@${{ env.DOCS_FOLDER }}/documentation.zip"
                 
       # Step 8: Cleanup temporary directories
       - name: Cleanup temporary directories

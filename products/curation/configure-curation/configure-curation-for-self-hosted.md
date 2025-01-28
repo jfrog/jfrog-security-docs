@@ -1,22 +1,20 @@
 # Configure Curation for Self Hosted
 
-### Configure Curation for Self Hosted <a href="#uuid-85e52c1f-4cff-e905-384d-2c78ad3f0085" id="uuid-85e52c1f-4cff-e905-384d-2c78ad3f0085"></a>
-
 The following steps will help you validate if your self hosted JFrog Platform is correctly configured and ready with the JFrog Curation service.
 
 In case it is not ready the below document will help you configure your JFrog platform and have the  JFrog Curation service ready.
 
-|                                                                           | Note |
-| ------------------------------------------------------------------------- | ---- |
-| JFrog Curation in SaaS is automatically deployed and configured by JFrog. |      |
+{% hint style="info" %}
+JFrog Curation in SaaS is automatically deployed and configured by JFrog.
+{% endhint %}
 
 JFrog Curation is installed as part of the Xray installation. There are no additional Curation installation steps needed. This document assumes you have a running JFrog Platform instance with Xray service installed and running, where you wish to enable Curation service on.
 
-|                                                                       | Note |
-| --------------------------------------------------------------------- | ---- |
-| In the case of an Xray cluster apply the steps for each cluster node. |      |
+{% hint style="info" %}
+In the case of an Xray cluster apply the steps for each cluster node.
+{% endhint %}
 
-#### Validate your Curation Readiness <a href="#bridgehead-idm4648426719136034000966786087" id="bridgehead-idm4648426719136034000966786087"></a>
+### Validate your Curation Readiness <a href="#bridgehead-idm4648426719136034000966786087" id="bridgehead-idm4648426719136034000966786087"></a>
 
 Starting in Xray version 3.86.x we have added a dedicated Curation health check page which will help you see the aspects working as needed or missing for your Curation service to run.
 
@@ -38,16 +36,16 @@ Indications you will see:
 
 If everything works you could skip the below sections. Your Curation service is ready to go. Otherwise please follow the below sections to add the needed configuration.
 
-#### Pre-configuration Requirements <a href="#bridgehead-idm4524929761630433995544389135" id="bridgehead-idm4524929761630433995544389135"></a>
+### Pre-configuration Requirements <a href="#bridgehead-idm4524929761630433995544389135" id="bridgehead-idm4524929761630433995544389135"></a>
 
-**JFrog Curation service compatibility**
+#### **JFrog Curation service compatibility**
 
 JFrog Curation is currently available for the following JFrog subscriptions:
 
 * Enterprise X
 * Enterprise +
 
-**Ensure Xray minimal version with Curation is in use**
+#### **Ensure Xray minimal version with Curation is in use**
 
 The Xray version (that includes Curation) is:
 
@@ -83,7 +81,7 @@ Example of a valid result:&#x20;
    }
 ```
 
-**Configuring JFrog Catalog Central for the First Time**
+### **Configuring JFrog Catalog Central for the First Time**
 
 This section assumes JFrog Catalog Central service was not yet configured in your JFrog Platform instance.
 
@@ -107,13 +105,13 @@ catalog:
    * `jcs.jfrog.io` JFrog license service
    * `https://Jfrogxraycatalog.jfrog.io` JFrog Catalog service
 
-**Have the needed JFrog Catalog Central service credentials at hand**
+#### **Have the needed JFrog Catalog Central service credentials at hand**
 
 JFrog Curation is using the JFrog Catalog Central service as a critical component for its package blocking assessment. To be able to communicate with the JFrog Catalog Central service the JFrog platform admin should have a username and password for the instance to be able to communicate with it.
 
 If you do not have these credentials at hand please, contact your JFrog sales representative.
 
-**Ensure your JFrog Platform instance is entitled for Curation**
+#### **Ensure your JFrog Platform instance is entitled for Curation**
 
 Perform the following steps to check that Curation is available in your JFrog Platform environment:
 
@@ -141,7 +139,7 @@ If you got an empty result please refer to:troubleshooting jfconnect micro servi
 
 If you got the entitlement information but you are lacking the Curation one in the returned data, it probably means you were not assigned the needed Curation entitlement by JFrog. Please contact your JFrog sales representative or JFrog support
 
-**Troubleshooting jfconnect micro service JFConnect service is up and running**
+### **Troubleshooting jfconnect micro service JFConnect service is up and running**
 
 JFConnect microservice acts as the JPD (JFrog Deployment) entitlements service and enables dynamic entitlement allocation for the connected products, based on account/subscription changes in JFrog’s main entitlements server.
 
@@ -176,7 +174,7 @@ For more information on the service, see JFConnect Microservice.
 
     In case the service is not running as expected please contact your JFrog technical support representative
 
-#### Curation Health-Check Endpoint <a href="#bridgehead-idm4582704491404834049508728909" id="bridgehead-idm4582704491404834049508728909"></a>
+### Curation Health-Check Endpoint <a href="#bridgehead-idm4582704491404834049508728909" id="bridgehead-idm4582704491404834049508728909"></a>
 
 This endpoint checks the availability of all components that Curation integrates with and which Curation cannot be started without:
 

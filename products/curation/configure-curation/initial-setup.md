@@ -1,42 +1,31 @@
 # Initial Setup
 
-Before using JFrog Curation, ensure the system meets the following requirements:
+1. **Enable the Curation Service**:
+   1. Log in to the JFrog Platform as an admin.
+   2. Navigate to **Administration > Curation > General**.
+   3. Toggle the **Curation** switch to "On."
+2.  **Configure Notifications**:&#x20;
 
-1. **Validate Compatibility**:
-   * Ensure the minimum versions of JFrog components are in use:
-     * Xray: `3.78.2` (or `3.82.11` for proxy setups).
-     * Artifactory: `7.63.5`.
-   *   Use the following API to verify your Xray version:
+    Notification set here will be triggered on any package blocked/approved event in the system and will result in an email sent to the defined email addresses or the package requester's email. Note that one package blocked event might be due to one or multiple violated policies.
 
-       ```ruby
-       rubyCopyEditcurl -u<username>:<password> https://<domain>/xray/api/v1/system/version
-       ```
-   *   Use this API to check the Artifactory version:
+    1. In the **Administration** tab, select **Curation > General**:\
+       **Notify Requester**: Sends a violation notification by email to the authenticated developer who attempted to download a package in violation of the policy. (This option does not support curated remote repositories that allow anonymous access.)\
+       **Notify by Email**: Sends an email to additional addresses that you define, for example, your security officer.
+3. **Set the Policy Engine Behavior**: \
+   This setting determines how the system handles situations where a package is pending an update. This occurs when the system detects that a package used in your repositories requires an update, and the policy engine needs to decide what action to take. \
+   Available options:&#x20;
+   * Block Always (Default): This is the default and most secure option. It ensures that any pendingpackage update is blocked until the update is reviewed and allowed.&#x20;
+   * Allow if no blocking policy on remote: This options allows pending updated to proceed only if no block policy exists on the remote repository.&#x20;
+   * Allow always: This option allows all pending updates to proceed without any restrictions, regardless of the policy. \
+     \
 
-       ```ruby
-       rubyCopyEditcurl -u<username>:<password> https://<domain>/artifactory/api/system/version
-       ```
-2. **Enable JFConnect Microservice**:
-   * Open the `system.yaml` configuration file located at `$JFROG_HOME/xray/var/etc`.
-   *   Add the following settings:
 
-       ```yaml
-       yamlCopyEditjfconnect:
-         enabled: true
-       ```
-   *   If operating behind a proxy, include these proxy settings:
+\
 
-       ```yaml
-       yamlCopyEditenv:
-         http_proxy: "http://<proxy_address>"
-         https_proxy: "http://<proxy_address>"
-         no_proxy: "localhost,127.0.0.1"
-       ```
-   * Restart the JFrog Platform for changes to take effect.
-3. **Validate JFConnect and Entitlements**:
-   *   Call the entitlement endpoint to check for Curation availability:
 
-       ```ruby
-       rubyCopyEditcurl -u<username>:<password> https://<domain>/ui/api/v1/jfconnect/entitlements
-       ```
-   * Confirm that the response includes `"name": "curation"`. If not, contact JFrog support.
+
+
+
+
+
+

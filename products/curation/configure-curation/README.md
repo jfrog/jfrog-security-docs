@@ -4,7 +4,7 @@ Key configuration tasks required for JFrog Curation:
 
 {% stepper %}
 {% step %}
-[**Configure Curation Service**](broken-reference) **for Self-Hosted**:
+[**Configure Curation Service for Self-Hosted**](configure-curation-for-self-hosted.md):
 
 * Ensure compatibility with Xray and Artifactory versions.
 * Validate entitlements using the JFConnect microservice.
@@ -18,7 +18,7 @@ Key configuration tasks required for JFrog Curation:
 {% endstep %}
 
 {% step %}
-[**Manage Repositories**](manage-repositories.md):
+[**Manage Repositories**](broken-reference):
 
 * Connect remote repositories to the Curation service.
 * Enable pass-through on specific repositories if needed.
@@ -28,15 +28,7 @@ Key configuration tasks required for JFrog Curation:
 [**Create Policies**](create-policies.md):
 
 * Define policy scope, conditions, and waivers.
-* Configure actions (e.g., block or dry-run) and notifications.
-{% endstep %}
-
-{% step %}
-**Health Checks**:
-
-* Use the Curation health-check endpoint to verify component availability.
-
-
+* Configure actions (e.g., block or dry-run) and notifications
 {% endstep %}
 {% endstepper %}
 

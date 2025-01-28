@@ -29,7 +29,6 @@
     * [Configure Curation for Self Hosted](products/curation/configure-curation/configure-curation-for-self-hosted.md)
     * [Initial Setup](products/curation/configure-curation/initial-setup.md)
     * [Set User Roles and Permissions](products/curation/configure-curation/set-user-roles-and-permissions.md)
-    * [Manage Repositories](products/curation/configure-curation/manage-repositories.md)
     * [Create Policies](products/curation/configure-curation/create-policies.md)
   * [How-Tos](products/curation/how-tos.md)
 * [Xray](products/xray/README.md)

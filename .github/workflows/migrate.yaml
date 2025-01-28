@@ -1,9 +1,9 @@
 name: SH Migrate Documentation to Fluid Topics
 
 on:
-#  push: # Automatically triggers on every commit
-#    branches:
-#      - main # Trigger the workflow on commits to the 'main' branch
+  push: # Automatically triggers on every commit
+    branches:
+      - main # Trigger the workflow on commits to the 'main' branch
   workflow_dispatch:
     inputs:
       COMMIT_HASH:

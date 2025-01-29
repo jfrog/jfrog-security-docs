@@ -1,2 +1,2 @@
-# What is JFrog Security?
+# Get Started
 

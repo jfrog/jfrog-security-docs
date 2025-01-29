@@ -1,8 +1,15 @@
 # Curation
 
-### **Introduction**
-
 In today's software development landscape, organizations rely heavily on open-source and third-party packages to accelerate development. However, this introduces risks such as security vulnerabilities, license compliance issues, and supply chain attacks. JFrog Curation addresses these concerns by providing an automated, policy-driven approach to controlling software package usage.
+
+#### **Where JFrog Curation Sits in the Security Timeline**
+
+JFrog Curation is **the first line of defense** in securing an organization’s software supply chain. It operates at the **package acquisition stage**, preventing risky dependencies from entering repositories before they are even used in development, testing, or production.
+
+**JFrog Curation (🔍 Pre-Download OSS Governance)**
+
+* When? **As OSS packages are fetched for use.**
+* Purpose? **Automate the enforcement of security and compliance policies.**
 
 ***
 
@@ -39,17 +46,6 @@ JFrog Curation is designed to:\
 | **Unapproved Open-Source Usage** | Allows only pre-approved or vendor-certified packages using allowlist policies.                   |
 | **Aging and Abandoned Packages** | Prevents the use of outdated, unmaintained, or deprecated dependencies.                           |
 | **Operational Instability**      | Ensures that only stable and secure package versions are used in production.                      |
-
-***
-
-#### **Benefits of Using JFrog Curation**
-
-✅ **Stronger Security Posture**: Blocks known security risks, reducing the attack surface for software supply chain threats.\
-✅ **Automated Compliance**: Ensures only license-compliant packages enter the repository, reducing legal risks.\
-✅ **Efficiency for Security & DevOps Teams**: Eliminates the need for manual reviews and package approvals.\
-✅ **Developer-Friendly Workflow**: Provides instant feedback on package approval status, reducing project delays.\
-✅ **Seamless Integration with JFrog Platform**: Works alongside Artifactory and Xray for complete software supply chain protection.\
-✅ **Auditability & Reporting**: Logs all package decisions for security audits and compliance tracking.
 
 ***
 

@@ -70,7 +70,6 @@
     * [Manage Xray](products/xray/xray-management/README.md)
       * [Advanced Settings](products/xray/xray-management/advanced-settings.md)
       * [Custom Software Licenses](products/xray/xray-management/custom-licenses.md)
-      * [Xray <--> Jfrog External DB Sync](products/xray/xray-management/db-sync.md)
       * [Set a Retention Period for Xray Indexed Resources](products/xray/xray-management/retention-period.md)
       * [System Monitoring](products/xray/xray-management/system-monitoring.md)
       * [TLS Certificates](products/xray/xray-management/tls-certificates.md)

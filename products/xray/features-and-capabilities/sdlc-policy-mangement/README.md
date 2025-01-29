@@ -43,10 +43,10 @@ Policies are **linked to Watches** to enforce security at specific stages of the
 #### **3. Automated Enforcement**
 
 When an artifact **matches a policy rule**, Xray automatically:\
-🚨 **Creates a violation** – Flags a security, compliance, or risk issue.\
-❌ **Blocks artifact downloads** – Prevents vulnerable components from entering production.\
-🔔 **Triggers alerts** – Notifies developers and security teams via email, Jira, or Slack.\
-🚀 **Fails builds** – Stops deployments that don’t meet security standards.
+**Creates a violation** – Flags a security, compliance, or risk issue.\
+**Blocks artifact downloads** – Prevents vulnerable components from entering production.\
+**Triggers alerts** – Notifies developers and security teams via email, Jira, or Slack.\
+**Fails builds** – Stops deployments that don’t meet security standards.
 
 ***
 
@@ -120,6 +120,8 @@ SDLC policies are enforced **throughout the software lifecycle**:
 ### **Conclusion**
 
 JFrog Xray’s SDLC policies provide a **proactive and automated approach** to **securing software** throughout the **development lifecycle**. By enforcing **security, compliance, and operational risk policies**, Xray ensures that **only safe and compliant software components** make it to **production.**
+
+Would you like a **step-by-step guide on creating a Policy** in Xray? See
 
 \
 

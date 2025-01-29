@@ -88,3 +88,5 @@ A vulnerability is detected in a **staging environment**, but **does not exist i
 
 Xray’s **Ignore Rules** provide a **flexible way to manage security and compliance violations** without compromising software security. By allowing teams to **temporarily or permanently suppress violations**, Xray helps reduce noise, streamline workflows, and focus on **genuinely critical threats**.
 
+Would you like a **step-by-step guide on creating Ignore Rules** in Xray? See
+

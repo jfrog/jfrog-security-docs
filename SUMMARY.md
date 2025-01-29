@@ -61,7 +61,7 @@
       * [Xray Reports](products/xray/features-and-capabilities/reports.md)
     * [Quick Start](products/xray/quick-start.md)
     * [Configure Xray](products/xray/configure-xray/README.md)
-      * [Xray <--> Jfrog External DB Sync](products/xray/configure-xray/xray-less-than-greater-than-jfrog-external-db-sync.md)
+      * [Xray <--> JFrog External DB Sync](products/xray/configure-xray/xray-less-than-greater-than-jfrog-external-db-sync.md)
       * [Index Xray Resources](products/xray/configure-xray/index-xray-resources/README.md)
         * [Configure Indexing in JFrog Xray](products/xray/configure-xray/index-xray-resources/configure-indexing-in-jfrog-xray.md)
       * [Configure Scans](products/xray/configure-xray/configure-scans.md)

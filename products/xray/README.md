@@ -1,8 +1,67 @@
 # Xray
 
-JFrog Xray is a universal software composition analysis (SCA) solution that natively integrates with Artifactory, giving developers and DevSecOps teams an easy way to proactively identify vulnerabilities on open source and license compliance violations, before they manifest in production releases.
+JFrog Xray is a **universal software composition analysis (SCA) and security solution** that provides **deep security, compliance, and operational risk insights** across the **entire software development lifecycle (SDLC)**. Integrated seamlessly with **JFrog Artifactory**, Xray enables organizations to **proactively detect vulnerabilities, enforce compliance policies, and manage software supply chain risks** before applications reach production.
 
-> Jfrog Xray is supported on the Cloud platform with an Enterprise X or Enterprise+ license, and on the Self-Hosted platform.
+Xray is a **core component of the JFrog Security Suite**, playing a **critical role in DevSecOps** by helping developers, security teams, and compliance officers identify and mitigate security issues **as early as possible in the development pipeline**.
+
+***
+
+### **Where Xray Fits in the JFrog Security Timeline**
+
+Security in the software development process must be **continuous**, spanning from **code development to deployment and beyond**. JFrog Xray integrates into multiple stages of the software lifecycle, ensuring that security is **proactive rather than reactive**.
+
+#### **JFrog Security Timeline: Key Stages & Xray’s Role**
+
+| **Stage**                                        | **What Happens Here?**                                                      | **Xray's Role**                                                                                    |
+| ------------------------------------------------ | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Code Development (Shift Left)**                | Developers write and commit code, often using **open-source dependencies**. | ✅ **Scans dependencies in IDEs & CLI** before committing code.                                     |
+| **Build & Package (CI/CD Security)**             | CI/CD pipelines generate builds, pulling in libraries and dependencies.     | ✅ **Scans builds in CI/CD pipelines** to detect vulnerabilities before artifacts are stored.       |
+| **Artifact Management (Repository Security)**    | Software components are stored in JFrog Artifactory.                        | ✅ **Continuously scans Artifactory repositories** for security, compliance, and operational risks. |
+| **Release Validation (Pre-Deployment Security)** | Release bundles are created and prepared for deployment.                    | ✅ **Scans release bundles** before distribution to ensure compliance and security.                 |
+| **Production & Runtime Security**                | Software is deployed to production environments.                            | ✅ **Monitors for newly discovered vulnerabilities** in already deployed artifacts.                 |
+
+### **Business Needs for JFrog Xray**
+
+Organizations face increasing challenges in securing their software supply chain. Key concerns include:
+
+#### **🔹 Preventing Supply Chain Attacks**
+
+* Attackers exploit **open-source registries** to distribute **malicious packages**.
+* Xray detects and blocks **compromised components** before they enter the development pipeline.
+
+#### **🔹 Managing Open-Source Risks**
+
+* Dependencies introduce **security vulnerabilities, license restrictions, and operational risks**.
+* Organizations require **automated scanning and policy enforcement** to control third-party software usage.
+
+#### **🔹 Ensuring Regulatory Compliance & Governance**
+
+* Security regulations (e.g., **NIST, GDPR, HIPAA, SOC 2**) demand strict control over software dependencies.
+* Xray ensures **only compliant and secure components** enter production environments.
+
+#### **🔹 Reducing Security Overhead**
+
+* Security teams struggle with **manual dependency reviews** and **reactive fixes**.
+* Xray automates security checks, **freeing teams to focus on high-priority threats**.
+
+#### **🔹 Improving Development Efficiency**
+
+* Developers unknowingly introduce **vulnerable or non-compliant dependencies**.
+* Xray **proactively prevents risky components** from entering projects, reducing costly rework.
+
+***
+
+### **Purpose of JFrog Xray**
+
+JFrog Xray is designed to:
+
+✔ **Continuously scan software artifacts** for vulnerabilities and compliance issues\
+✔ **Block insecure, outdated, or non-compliant dependencies** before they are used\
+✔ **Automate governance** using predefined and custom security policies\
+✔ **Provide real-time risk analysis** at the repository, build, and release levels\
+✔ **Seamlessly integrate with JFrog Artifactory and CI/CD pipelines** for end-to-end security
+
+***
 
 ## Main Features
 
@@ -12,7 +71,7 @@ JFrog Xray is a universal software composition analysis (SCA) solution that nati
 * **Native Integration with Artifactory** : Provides enhanced analysis through integration with JFrog Artifactory, leveraging shared metadata.
 * **On-Demand Binary Scan** : Enables instant vulnerability reports for specific binaries through local file system scans.
 * **Aggregated Reporting Features** : Xray provides an integrated view of findings from JFrog Security products, enabling organizations to generate customizable reports that encompass vulnerabilities, licensing compliance, policy violations, and operational risks. Each report allows users to define specific scopes and apply advanced filters for tailored insights, ensuring a comprehensive understanding of security and compliance across artifacts, builds, and release bundles. All reports are accessible through the JFrog Platform and REST API, facilitating easy integration into existing workflows.
-* **JIRA Integration**: Seamlessly integrates with JIRA to streamline issue tracking and resolution processes, allowing security vulnerabilities and policy violations detected by Xray to be automatically logged as JIRA tickets. This integration facilitates collaboration between development and security teams, ensuring timely remediation and enhanced project management.
+* **JIRA Integration**: Seamlessly integrates with Jira to streamline issue tracking and resolution processes, allowing security vulnerabilities and policy violations detected by Xray to be automatically logged as JIRA tickets. This integration facilitates collaboration between development and security teams, ensuring timely remediation and enhanced project management.
 
 #### SBOM
 

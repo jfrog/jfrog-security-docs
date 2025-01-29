@@ -1,2 +1,0 @@
-# Malicious Package Detection
-

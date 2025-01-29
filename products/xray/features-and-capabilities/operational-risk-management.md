@@ -1,2 +1,0 @@
-# Operational Risk Management
-

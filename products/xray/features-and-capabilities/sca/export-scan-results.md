@@ -1,92 +1,129 @@
 # Export Scan Results
 
-Xray allows you to export your artifact scan results for multiple use cases including:
+JFrog Xray allows you to **export artifact scan results** for various **security, compliance, and operational** use cases. This enables organizations to **analyze vulnerabilities, enforce policies, and generate detailed reports** for auditing and compliance.
 
-* Security&#x20;
-  * Vulnerabilities&#x20;
-  * Secret detection (JFrog Advanced Security)
-  * Application misconfigurations (JFrog Advanced Security)
-* Legal Compliance&#x20;
-* General SBOM&#x20;
-* Policy Violations
-* Operational risk of software components
+#### **Use Cases for Exporting Scan Results**
 
+You can export scan results for multiple scenarios, including:
 
+* **Security Analysis** – Identify vulnerabilities and security risks.
+* **Secret Detection** _(Available in JFrog Advanced Security)_ – Detect sensitive data leaks.
+* **Application Misconfigurations** _(Available in JFrog Advanced Security)_ – Identify security weaknesses.
+* **Legal Compliance** – Review and manage open-source licenses.
+* **SBOM (Software Bill of Materials)** – Gain visibility into software components and dependencies.
+* **Policy Violations** – Export violations related to security, compliance, and operational policies.
+* **Operational Risk** – Assess the **stability, maintenance, and lifecycle** of software components.
 
-## How to Export Scan Result
+***
 
-Press the \[...] Button at the scan result screen and press "Export Scan Data" and choose your export type.
+### **How to Export Scan Results**
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2025-01-20 at 10.11.24.png" alt=""><figcaption></figcaption></figure>
+1. Navigate to the **scan result screen** in Xray.
+2. Click the **\[...] (More Options) button**.
+3. Select **"Export Scan Data"** and choose the desired **export type**.
 
-## Security Export
+***
 
-The Security Export Include the following fields about your artifact detected vulnerabilities:
+### **Types of Scan Result Exports**
 
-* CVE
-* Severity
-* JFrog Severity
-* Component Physical Path
-* Infected Component
-* Infected Version
-* Edited Time
-* Applicability (For JFrog Advanced Security Users)
+#### **1. Security Export**
 
-## Legal Compliance Report
+The **Security Export** report provides details about detected vulnerabilities in scanned artifacts.
 
-The legal compliance report allows users to review their software components licenses - including local-file detected licenses and 3rd-party externally enriched licenses.
+**Included Fields:**
 
-the Supported fields for the legal compliance report are :&#x20;
+* **CVE ID** – Unique identifier for the vulnerability.
+* **Severity** – The standard **CVSS-based severity rating**.
+* **JFrog Research Severity** – Adjusted severity based on **JFrog’s advanced security research**.
+* **Component Physical Path** – The exact location of the affected component.
+* **Infected Component** – The specific package or library impacted.
+* **Infected Version** – The version of the affected component.
+* **Edited Time** – The timestamp of the latest scan result update.
+* **Applicability** _(For JFrog Advanced Security Users)_ – Indicates whether the vulnerability is **actually exploitable** in real-world scenarios.
 
-* Component Name
-* Licenses
-* License Links
-* Package Type
-* Component ID
-* Package ID
-* Version
+***
 
+#### **2. Legal Compliance Report**
 
+This report provides an overview of **software licenses** associated with your components, including **internally detected** and **externally enriched** licenses.
 
-## Violations Report
+**Included Fields:**
 
-The Violations report allows you to export all policy violations associated with your artifact SCA scan .
+* **Component Name** – Name of the software component.
+* **Licenses** – Detected open-source licenses associated with the component.
+* **License Links** – Links to legal references for each license.
+* **Package Type** – The software package format (e.g., npm, Maven, PyPI).
+* **Component ID** – A unique identifier for the component.
+* **Package ID** – The ID of the package in the repository.
+* **Version** – The specific version of the component.
 
-The violations report fields are:&#x20;
+***
 
-* Violation Summary
-* Severity
-* Violation Type&#x20;
-* Watch Name (Policy Scope)
-* Component Physical Path
-* Component
-* Created Date
-* Policy which created the violation
-* Applicability (For JFrog Advanced Security Users)
+#### **3. Violations Report**
 
-## SBOM Report
+The **Violations Report** provides a detailed list of **policy violations** associated with the **SCA (Software Composition Analysis) scan** of an artifact.
 
-SBOM is a readable inventory of software components and dependencies. The report will include SBOM data of your components, including unidentified components and open-source software. This enables you to:
+**Included Fields:**
 
-* Understand components and code dependencies.
-* Gain visibility into open-source licenses for the components in use.
-* Be aware of the end-of-life of components, and which components need to be updated.
-* Identify vulnerable components or recently identified vulnerabilities.
-* Enforce organizational compliance and policies.
+✔ **Violation Summary** – A brief description of the policy violation.\
+✔ **Severity** – Risk level of the violation (e.g., Minor, Major, Critical).\
+✔ **Violation Type** – The category of violation (e.g., Security, License, Operational Risk).\
+✔ **Watch Name** – The policy scope applied to the violation.\
+✔ **Component Physical Path** – Location of the affected artifact.\
+✔ **Component** – The specific component that triggered the violation.\
+✔ **Created Date** – Timestamp of when the violation was detected.\
+✔ **Policy Triggered** – The policy rule that caused the violation.\
+✔ **Applicability** _(For JFrog Advanced Security Users)_ – Indicates whether the violation is **applicable in the current environment**.
 
-### How it Works
+***
 
-After performing an Xray scan, you can export the scan data as an SBOM report using one of the two supported SBOM formats:
+#### **4. SBOM (Software Bill of Materials) Report**
 
-* **SPDX**: Software Package Data Exchange (SPDX) is a standard format for communicating the components of software packages, including information about license copyrights. It includes several mechanisms that are especially useful for open-source software.
-  * Supported formats:
-    * tag:value
-    * JSON
-    * xlsx
-* **CycloneDX**: CycloneDX is a lightweight SBOM specification designed specifically for software security requirements and related risk analysis. Starting with Xray version 3.67.x and above, the SBOM also includes VEX information, such as vulnerability details, exploitability, and detailed analysis. CycloneDX designed to be flexible, easily adaptable, with implementations for popular build systems.
-  * Supported formats:
-    * JSON
-    * XML
+The **SBOM report** provides a **comprehensive inventory** of software components and dependencies. This report helps organizations:\
+✔ **Understand software composition** and dependencies.\
+✔ **Gain visibility into open-source licenses** and compliance requirements.\
+✔ **Identify outdated components** or software reaching end-of-life.\
+✔ **Detect vulnerable components** and recently disclosed CVEs.\
+✔ **Enforce software security policies** based on risk factors.
+
+**How to Export an SBOM Report**
+
+After an **Xray scan**, you can export an **SBOM report** using one of two industry-standard formats:
+
+#### **Supported SBOM Formats**
+
+**1. SPDX (Software Package Data Exchange)**
+
+SPDX is an industry-standard format for **communicating software components and license metadata**.\
+✔ Useful for **license management** and **compliance tracking**.\
+✔ Supports **open-source compliance reporting**.
+
+**SPDX Export Formats:**
+
+* **Tag:Value**
+* **JSON**
+* **XLSX (Excel format)**
+
+**2. CycloneDX**
+
+CycloneDX is a **lightweight SBOM format** designed for **software security and risk analysis**.\
+✔ Focuses on **security, vulnerability tracking, and exploitability**.\
+✔ As of **Xray version 3.67.x and above**, CycloneDX SBOMs also include **VEX (Vulnerability Exploitability Exchange)** data, providing:
+
+* **Vulnerability details**
+* **Exploitability status**
+* **Technical analysis of risks**
+
+**CycloneDX Export Formats:**
+
+* **JSON**
+* **XML**
+
+***
+
+#### **Conclusion**
+
+Exporting scan results in Xray allows organizations to **gain deep security insights**, **enforce compliance**, and **track vulnerabilities** effectively. By leveraging **Security, Compliance, Violations, and SBOM reports**, teams can improve **software supply chain security** and **regulatory compliance** while ensuring **operational resilience**.
 
 
 

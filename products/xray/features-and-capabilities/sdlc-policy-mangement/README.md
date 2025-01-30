@@ -117,10 +117,6 @@ SDLC policies are enforced **throughout the software lifecycle**:
 
 ***
 
-### **Conclusion**
-
-JFrog Xray’s SDLC policies provide a **proactive and automated approach** to **securing software** throughout the **development lifecycle**. By enforcing **security, compliance, and operational risk policies**, Xray ensures that **only safe and compliant software components** make it to **production.**
-
 Would you like a **step-by-step guide on creating a Policy** in Xray? See
 
 \

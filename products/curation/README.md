@@ -25,17 +25,6 @@ Organizations face increasing challenges in managing the security and compliance
 
 ***
 
-#### &#x20;**Purpose of JFrog Curation**
-
-JFrog Curation is designed to:\
-✔ **Ensure software packages are vetted before they enter your development pipeline**\
-✔ **Prevent the use of insecure, outdated, or non-compliant third-party dependencies**\
-✔ **Automate governance through predefined and custom policies**\
-✔ **Provide real-time decision-making at the repository level**\
-✔ **Seamlessly integrate with JFrog Artifactory and Xray for a complete security solution**
-
-***
-
 #### **Key Issues JFrog Curation Resolves**
 
 | **Issue**                        | **How JFrog Curation Solves It**                                                                  |
@@ -46,12 +35,3 @@ JFrog Curation is designed to:\
 | **Unapproved Open-Source Usage** | Allows only pre-approved or vendor-certified packages using allowlist policies.                   |
 | **Aging and Abandoned Packages** | Prevents the use of outdated, unmaintained, or deprecated dependencies.                           |
 | **Operational Instability**      | Ensures that only stable and secure package versions are used in production.                      |
-
-***
-
-#### **How JFrog Curation Works**
-
-1️⃣ **Enable Curation**: Activate curation at the repository level in the JFrog Platform.\
-2️⃣ **Define Policies**: Configure security, licensing, and operational rules that determine package approval.\
-3️⃣ **Enforce Governance**: Automatically approve or block packages based on predefined conditions.\
-4️⃣ **Monitor & Audit**: Track package decisions, view audit logs, and refine policies as needed.

@@ -115,8 +115,4 @@ When a Watch detects a **policy violation**, Xray can:\
 
 ***
 
-### **Conclusion**
-
-Watches in JFrog Xray enable organizations to **continuously monitor and enforce security, compliance, and operational policies** across **repositories, builds, and release bundles**.
-
 Would you like a **step-by-step guide** on setting up Watches? See

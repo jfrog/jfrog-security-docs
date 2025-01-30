@@ -85,12 +85,3 @@
 4. **Developers fix vulnerabilities before pushing code**.
 5. **JFrog CLI scans before merging changes** in CI/CD pipelines.
 
-***
-
-### **The Bottom Line**
-
-✔ **Proactive security**: Find and fix issues **before** deployment.\
-✔ **Developer-first approach**: Reduces security friction in workflows.\
-✔ **Seamless IDE & CLI integration**: No need to leave coding environments.\
-✔ **Automated shift-left scanning**: Security becomes a **natural part of development**.
-

@@ -119,12 +119,6 @@ CycloneDX is a **lightweight SBOM format** designed for **software security and 
 * **JSON**
 * **XML**
 
-***
-
-#### **Conclusion**
-
-Exporting scan results in Xray allows organizations to **gain deep security insights**, **enforce compliance**, and **track vulnerabilities** effectively. By leveraging **Security, Compliance, Violations, and SBOM reports**, teams can improve **software supply chain security** and **regulatory compliance** while ensuring **operational resilience**.
-
 
 
 

@@ -62,8 +62,4 @@ JFrog’s **Security Research Team** actively analyzes and reports **newly disco
 
 ***
 
-### **Conclusion**
-
-Malicious packages pose a serious risk to software security. JFrog Xray’s **real-time threat intelligence and automated scanning** help teams detect and block compromised dependencies **before they reach production**.
-
 Would you like a **step-by-step guide on configuring malicious package detection** in Xray? See

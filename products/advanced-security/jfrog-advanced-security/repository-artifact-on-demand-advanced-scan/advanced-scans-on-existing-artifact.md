@@ -8,8 +8,8 @@ Do the following:
 2. Navigate to the artifact you want.
 3.  Click the **Actions Menu** next to the artifact, and select **Run Contextual Analysis** or **Scan for Exposures**.
 
-    ![Artifact\_Scan\_Now.png](<../../../../.gitbook/assets/uuid caf9fb4a 5887 6540 98cb 16186b69d1c5.png>)
+    ![Artifact\_Scan\_Now.png](../../../../.gitbook/assets/existing_jas_on_demand1.png)
 
 The results appear under Security Issues.
 
-![Artifact\_Scan\_Now\_Results.png](<../../../../.gitbook/assets/uuid 615d7683 dcac c772 7c46 98e9112ac317.png>)
+![Artifact\_Scan\_Now\_Results.png](../../../../.gitbook/assets/existing_jas_on_demand2.png)

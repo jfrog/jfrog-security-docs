@@ -50,13 +50,13 @@ The Dynamic Token Validation feature can be enabled both through the JFrog Platf
 
 To enable this feature from the JFrog Platform navigate to **Administration > Xray Settings > General > Advanced Security** and check the **Enable dynamic token validation** checkbox.
 
-![Screenshot\_2024-12-10\_at\_12\_47\_26.png](<../../../../.gitbook/assets/uuid f9429f9e 278f 13c9 3fe2 73fa4f68eb31.png>)
+![Screenshot\_2024-12-10\_at\_12\_47\_26.png](../../../../.gitbook/assets/Secrets_Scans1.png)
 
 To enable through REST API, run the following REST API: [Enable Token Validation for Secrets](https://about/document/preview/733722#UUID-8dd54c7b-d9d2-8dda-8894-d468d91e6007).
 
 Once enabled, the results are presented in the violation's details under the **Findings** tab. To learn more about results, see View Exposure Scan Statuses and Results.
 
-![TokenValidation.png](<../../../../.gitbook/assets/uuid d4e470bf 03d4 7d6d 3680 8d0db4152e35.png>)
+![TokenValidation.png](../../../../.gitbook/assets/Secrets_Scans2.png)
 
 The **Token Validation** column statuses are:
 

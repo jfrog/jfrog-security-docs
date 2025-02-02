@@ -9,7 +9,7 @@ You can export scan results for multiple scenarios, including:
 * **Security Analysis** – Identify vulnerabilities and security risks.
 * **Secret Detection** _(Available in JFrog Advanced Security)_ – Detect sensitive data leaks.
 * **Application Misconfigurations** _(Available in JFrog Advanced Security)_ – Identify security weaknesses.
-* **Legal Compliance** – Review and manage open-source licenses.
+* **Legal Compliance** – Review and your software licenses and legal obligations.
 * **SBOM (Software Bill of Materials)** – Gain visibility into software components and dependencies.
 * **Policy Violations** – Export violations related to security, compliance, and operational policies.
 * **Operational Risk** – Assess the **stability, maintenance, and lifecycle** of software components.

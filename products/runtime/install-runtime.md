@@ -35,3 +35,24 @@ kubectl apply -f <installation-snippet>
 
 1. Check the Sensor Management tab to ensure all clusters and nodes report correctly.
 2. Ensure runtime data is flowing into the JFrog Platform for analysis.
+
+## **Uninstalling Sensors**
+
+To uninstall a sensor from a cluster:
+
+```sh
+shCopyEdithelm uninstall jf-sensors -n <Namespace>
+```
+
+## **Reinstalling Runtime Sensors**
+
+1.  Retrieve the **Cluster ID** before uninstalling:
+
+    ```sh
+    shCopyEditkubectl -n <NAMESPACE> get configmaps runtime-config-configmap -o custom-columns='clusterId:data.clusterId'
+    ```
+2.  During reinstallation, set the retrieved **Cluster ID** to preserve monitoring data:
+
+    ```sh
+    shCopyEdit--set clusterID=<retrieved-cluster-id>
+    ```

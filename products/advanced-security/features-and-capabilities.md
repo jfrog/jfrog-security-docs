@@ -94,15 +94,30 @@ Security teams often focus on **known vulnerabilities (CVEs)** while overlooking
 
 ## **Secret Detection & Compliance**
 
-#### **Secrets Scanning**
+One of the most overlooked but **high-risk security threats** in software development is the **accidental exposure of secrets**—API keys, authentication tokens, encryption keys, passwords, and other credentials embedded in code or configuration files. A single exposed secret can lead to **unauthorized access, data breaches, and compromised systems**, making secrets management a critical aspect of **software supply chain security**.
 
-* **What it does:** Identifies exposed secrets such as API keys, credentials, and private keys within artifacts.
-* **Why it matters:** Prevents accidental exposure of sensitive information, reducing the risk of credential leaks and unauthorized access.
+JFrog **Secrets Scans** proactively identify and mitigate these risks by **scanning artifacts, source code, and configuration files for exposed secrets** before they reach production.
 
-#### **Token Validation**
+**What Secrets Scans Do**
 
-* **What it does:** Differentiates between active and inactive access tokens using provider validation.
-* **Why it matters:** Prevents unnecessary alerts for expired credentials while highlighting actively exploitable secrets.
+* **Detect Hardcoded Secrets**: Identifies API tokens, database credentials, SSH keys, and private certificates embedded in **text files, binaries, and source code**.
+* **Validate Detected Secrets**: Goes beyond pattern-based scanning by verifying whether detected secrets are **active and exploitable** using **dynamic token validation** with certain providers (e.g., AWS, GitHub, Slack).
+* **Classify & Prioritize Risks**: Flags exposed secrets based on **sensitivity, provider, and validation results**, helping teams **prioritize remediation efforts**.
+* **Identify Weak & Expired Certificates**: Detects **self-signed, expired, and weak certificates** that could pose security risks.
+* **Enforce Secure Development Practices**: Helps teams **adopt best practices** by providing visibility into insecure credential management.
+
+**Why Secrets Scanning Matters**
+
+* **Prevents Credential Leaks**: Exposed secrets in code repositories, logs, or configuration files can be exploited by attackers, leading to **data breaches and system takeovers**.
+* **Minimizes Attack Surface**: Even if a secret is not actively used in an application, it can still be **leveraged for lateral movement** by attackers. Detecting and revoking leaked credentials early significantly reduces security risks.
+* **Supports Compliance & Governance**: Many security frameworks (e.g., **SOC 2, ISO 27001, NIST, GDPR**) mandate **strong secrets management**. Secrets Scans help enforce these compliance requirements.
+* **Integrates with DevSecOps Workflows**: By embedding **Secrets Scans into CI/CD pipelines and repositories**, teams **prevent security misconfigurations before deployment**.
+
+#### **Business & Operational Impact**
+
+* **Prevents Costly Breaches**: Avoids financial losses, regulatory fines, and reputational damage caused by **exposed credentials**.
+* **Reduces Developer Burden**: Instead of relying on **manual security reviews**, Secrets Scans **automate detection** and provide **actionable remediation steps**.
+* **Enhances Security Posture**: Ensures that organizations are **proactively securing** sensitive credentials **before attackers can exploit them**.
 
 ## **Integration & Automation**
 

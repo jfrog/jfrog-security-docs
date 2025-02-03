@@ -1,6 +1,6 @@
 # Repository/Artifact On-Demand Advanced Scan
 
-Repositories can be configured to automatically scan for **JFrog Advanced Security (JAS)**, as outlined in the **Set Up JFrog Advanced Security** section. Additionally, administrators can run **Contextual Analysis** and **Exposure Scans** on-demand for specific repositories and artifacts.
+Repositories can be configured to automatically scan for **JFrog Advanced Security**, as outlined in the **Set Up JFrog Advanced Security** section. Additionally, administrators can run **Contextual Analysis** and **Exposure Scans** on-demand for specific repositories and artifacts.
 
 * **From Xray version 3.66.x and above**, you can run **Contextual Analysis** or **Exposure Scans** on existing artifacts.
 * **From Xray version 3.73.x and above**, you can run **Contextual Analysis** and **Exposure Scans** per repository as needed.

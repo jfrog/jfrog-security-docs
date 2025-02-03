@@ -2,7 +2,7 @@
 
 After running an **Advanced Security** scan, results can be accessed from the **Scans List** page. For detailed insights, refer to the relevant sections on **Exposure Scans** and **Contextual Analysis** to understand scan findings and available actions.
 
-The following topics outline how to manage **JFrog Advanced Security (JAS)** scan results and next steps:
+The following topics outline how to manage **JFrog Advanced Security** scan results and next steps:
 
 *   #### **Ignoring an Exposures Violation**
 

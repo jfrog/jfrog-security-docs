@@ -7,7 +7,7 @@ Repositories can be configured to automatically scan for **JFrog Advanced Securi
 
 This flexibility ensures that both newly added and existing artifacts are continuously evaluated for security risks.
 
-#### **Advanced Scans on an Existing Artifact**
+## **Advanced Scans on an Existing Artifact**
 
 1. Navigate to **Scans List** > **Repositories** tab.
 2. Select the repository containing the artifact you want to scan.
@@ -15,7 +15,7 @@ This flexibility ensures that both newly added and existing artifacts are contin
    * **Run Contextual Analysis** – to analyze vulnerabilities within the artifact’s context.
    * **Scan for Exposures** – to detect potential security misconfigurations or leaks.
 
-#### **Advanced Scans per Repository**
+## **Advanced Scans per Repository**
 
 1. Navigate to **Scans List** > **Repositories** tab.
 2. Locate the repository you want to scan.

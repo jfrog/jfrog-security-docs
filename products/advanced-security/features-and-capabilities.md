@@ -4,7 +4,7 @@ JFrog Advanced Security provides **comprehensive protection** for software suppl
 
 ## **Advanced Scanning & Analysis**
 
-**Contextual Analysis**
+### **Contextual Analysis**
 
 Traditional security scanners often generate large lists of vulnerabilities, many of which may not be relevant or exploitable in the specific environment where an artifact is used. **Contextual Analysis** in JFrog Advanced Security takes a more **intelligent approach** by examining how vulnerabilities function **within the context** of an artifact rather than treating all security issues as equal threats.
 
@@ -31,10 +31,32 @@ Contextual Analysis **understands these nuances** and ensures that only **releva
 * **Strengthens Security Posture**: Organizations can **enforce risk-based vulnerability management**, focusing resources on critical issues rather than addressing every CVE blindly.
 * **Integrates Seamlessly**: Works alongside other JFrog Advanced Security features to provide **comprehensive protection** across repositories, CI/CD pipelines, and runtime environments.
 
-#### **Exposures Scanning**
+### **Exposures Scans**
 
-* **What it does:** Detects security misconfigurations, weak authentication, excessive privileges, and other non-code vulnerabilities.
-* **Why it matters:** Secures applications beyond just code vulnerabilities by covering security risks in configurations and infrastructure.
+Security is more than just identifying known vulnerabilities in software packages. Many breaches occur due to **misconfigurations, weak authentication, excessive privileges, and insecure development practices**—issues that traditional vulnerability scanning tools often overlook. **Exposures Scans** in JFrog Advanced Security fill this critical gap by detecting security flaws in **configurations, infrastructure, and open-source dependencies**, helping organizations **proactively prevent security incidents** before they happen.
+
+**What Exposures Scans Do**
+
+* **Detect Misconfigurations**: Exposures Scans analyze artifact configurations for **insecure settings** that could leave applications vulnerable, such as missing authentication, unencrypted communications, or overly permissive access controls.
+* **Identify Security Weaknesses**: They flag **non-CVE-related risks**, such as hardcoded credentials, publicly accessible admin interfaces, or weak cryptographic algorithms.
+* **Ensure Secure Open-Source Usage**: Many security risks stem from **improperly implemented** open-source libraries. Exposures Scans detect insecure usage patterns, such as executing untrusted scripts or failing to validate external inputs.
+* **Provide Actionable Insights**: Instead of just listing issues, Exposures Scans **categorize risks based on severity** and **provide remediation guidance**, helping teams understand what needs to be fixed and why.
+
+**Why Exposures Scanning Matters**
+
+Security teams often focus on **known vulnerabilities (CVEs)** while overlooking misconfigurations and poor security practices, which account for a **large percentage of breaches**. Some key security risks that Exposures Scans address include:
+
+* **Unsecured Secrets & Credentials**: Detects API keys, access tokens, and passwords embedded in code or configuration files.
+* **Weak Authentication & Authorization**: Identifies missing access controls, excessive privileges, and improper authentication mechanisms.
+* **Insecure Communication**: Flags improper use of HTTP instead of HTTPS, weak TLS versions, and missing encryption.
+* **Exposed Services & Admin Interfaces**: Ensures that web servers, proxies, and databases are **properly configured and secured** against unauthorized access.
+* **Improper Use of Open-Source Libraries**: Checks whether commonly used OSS components are being **implemented securely** within applications.
+
+**Business & Operational Impact**
+
+* **Reduces Attack Surface**: By securing configurations and dependencies, organizations **proactively prevent security breaches** rather than just reacting to vulnerabilities.
+* **Strengthens Compliance & Governance**: Many regulatory frameworks (e.g., **NIST, ISO 27001, SOC 2**) require securing configurations and access controls—Exposures Scans **help enforce these best practices**.
+* **Improves Development Efficiency**: Instead of waiting for penetration tests or audits to uncover misconfigurations, teams get **real-time feedback** on security issues within their repositories and CI/CD pipelines.
 
 #### **On-Demand & Automated Scanning**
 

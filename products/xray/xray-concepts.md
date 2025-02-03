@@ -1,4 +1,4 @@
-# Xray Concepts
+# Glossary
 
 ## General
 
@@ -7,6 +7,7 @@
 * **Vulnerabilities** - Security flaws or weaknesses in software components that can be exploited by attackers. Xray detects known vulnerabilities in scanned artifacts by comparing them against a continually updated database of security advisories and CVEs (Common Vulnerabilities and Exposures).
 * **Malicious Packages** - Software components that are identified as containing harmful or malicious content, potentially designed to perform unauthorized actions, steal data, or compromise systems. Xray can flag these packages to prevent their usage in the SDLC.
 * **Components** - Individual parts or libraries within an artifact that can include various versions and their dependencies. Xray evaluates these components to determine their security posture and compliance status.
+* **Release Bundle** -&#x20;
 
 ## SBOM
 

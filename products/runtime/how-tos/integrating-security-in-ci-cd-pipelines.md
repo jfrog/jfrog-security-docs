@@ -1,7 +1,3 @@
----
-description: This workflow integrates runtime security into the DevOps lifecycle.
----
-
 # Integrating Security in CI/CD Pipelines
 
 ## **Pre-Deployment Validation**

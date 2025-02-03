@@ -1,9 +1,3 @@
----
-description: >-
-  This workflow provides steps to investigate and mitigate vulnerabilities in
-  real time.
----
-
 # Investigating and Resolving Vulnerabilities
 
 ## **Detect Vulnerabilities**

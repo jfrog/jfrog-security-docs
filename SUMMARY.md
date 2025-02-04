@@ -80,6 +80,7 @@
     * [How-Tos](products/xray/how-tos/README.md)
       * [How to Filter Out Your 1st Party Components in CycloneDX SBOM report](products/xray/how-tos/how-to-filter-1st-party-components.md)
       * [How to Detect Malicious AI Models using Xray](products/xray/how-tos/how-to-detect-malicious-ai-models-using-xray.md)
+      * [How to Assign Supplier to your resources in SBOM reports](products/xray/how-tos/how-to-assign-supplier-to-your-resources-in-sbom-reports.md)
   * [Advanced Security](products/advanced-security/README.md)
     * [Supported Technologies](products/advanced-security/supported-technologies.md)
     * [Features and Capabilities](products/advanced-security/features-and-capabilities.md)

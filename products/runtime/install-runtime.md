@@ -1,58 +1,119 @@
 # Install Runtime
 
-## Prepare the Environment
+## Installation Guide for JFrog Runtime Security
 
-1. Ensure `kubectl` and `helm` are configured for your Kubernetes cluster.
-2. Set up an ingress controller with TLS (Nginx is recommended).
-3. Verify that Artifactory and Xray are installed on the JFrog Platform.
+### Prerequisites
 
-## Install Runtime Service
+Before proceeding with the installation, ensure the following requirements are met:
 
-1. Add the JFrog Helm repository:
+* **Kubernetes Cluster Access:** Ensure your `kubectl` and `helm` clients can access the Kubernetes cluster where you intend to install the Runtime Service.
+* **Ingress Controller:** JFrog officially supports the Nginx controller configured with TLS. Other ingress controllers may work if they support GRPC communication.
+* **JFrog Platform:** JFrog Runtime Security must be installed on a pre-existing JFrog platform.
 
-```
+### Step 1: Prepare the JFrog Platform
+
+#### Before Installing
+
+Ensure you have the following details ready:
+
+* **JFrog platform join key:** `<join-key>`
+* **JFrog platform domain name:** `<add-your-public-domain-here>`
+* **Artifactory Kubernetes service name (used for installing Xray):** `<artifactory-service-url>`
+
+#### Add and Update JFrog Helm Chart Repository
+
+Run the following command to add and update the JFrog Helm chart repository in your local configuration:
+
+```sh
 helm repo add jfrog https://charts.jfrog.io --force-update
 ```
 
-2. Create a `runtime-values.yaml` file with your environment details (e.g., ingress domain and database configuration).
-3. Deploy the Runtime Service:
+#### Configure Artifactory for Ingress Controller
 
+If your platform is not yet configured to work with an ingress controller, update your Artifactory configuration. Modify the Helm chart values by setting the following parameters in a `values.yaml` file:
+
+```yaml
+# Standalone nginx server (not ingress-controller)
+nginx:
+  enabled: false
+
+ingress:
+  enabled: true
+  defaultBackend:
+    enabled: true
+  hosts:
+    - <add-your-public-domain-here>
+  routerPath: /
+  disableRouterBypass: true
+  artifactoryPath: /artifactory/
+  className: "nginx"
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/rewrite-target: "/"
+  tls:
+    - secretName: artifactory-tls-secret
+      hosts:
+        - <add-your-public-domain-here>
 ```
+
+### Step 2: Install the Runtime Service
+
+#### Create a Configuration File
+
+Create a new file named `runtime-values.yaml` with the following content:
+
+```yaml
+global:
+  deployEnv: onprem
+  jfrogUrl: <add-your-public-domain-here>
+
+postgresql:
+  enabled: true
+
+# Use external database if needed
+# database:
+#   url: postgres://<host>:5432/runtime
+#   user: runtime
+#   password: <password>
+
+ingress:
+  grpc:
+    tlsSecretName: runtime-tls-secret
+    securedBackendProtocol: false
+
+router:
+  jfrogUrl: <artifactory-service-url> # Example: http://artifactory:8082
+
+runtime:
+  joinKey: <join-key> # Same join key from Artifactory
+  image:
+    registry: releases-docker.jfrog.io
+```
+
+#### Install JFrog Runtime Service
+
+Run the following command to install the runtime service:
+
+```sh
 helm upgrade --install runtime -f runtime-values.yaml
 ```
 
-## **Install Sensors (for Runtime Impact Mode)**
+### Step 3: Install Runtime Sensors
 
-1. Go to **Sensor Management** in the JFrog Platform UI.
-2. Click **Install Runtime**, select a cluster, and configure the namespace.
-3. Copy and run the installation snippet on your jump server:
+To install Runtime Sensors:
 
-```
-kubectl apply -f <installation-snippet>
-```
+1. Navigate to **Sensor Management** under the **Runtime** section in the JFrog Platform Administration tab.
+2. Click the **Install Runtime** button to open the Sensor Installation Wizard.
+3. Follow the provided instructions to generate an installation snippet and apply it to your Kubernetes cluster.
 
-## **Verify Installation**
+#### Bypassing Certificate Verification (Optional)
 
-1. Check the Sensor Management tab to ensure all clusters and nodes report correctly.
-2. Ensure runtime data is flowing into the JFrog Platform for analysis.
-
-## **Uninstalling Sensors**
-
-To uninstall a sensor from a cluster:
+If you are using a self-signed certificate, modify the sensor installation snippet to bypass certificate verification:
 
 ```sh
-shCopyEdithelm uninstall jf-sensors -n <Namespace>
+--set tlsInsecureSkipVerify=true
 ```
 
-## **Reinstalling Runtime Sensors**
-
-1.  Retrieve the **Cluster ID** before uninstalling:
-
-    ```sh
-    shCopyEditkubectl -n <NAMESPACE> get configmaps runtime-config-configmap -o custom-columns='clusterId:data.clusterId'
-    ```
-2.  During reinstallation, set the retrieved **Cluster ID** to preserve monitoring data:
-
-    ```sh
-    shCopyEdit--set clusterID=<retrieved-cluster-id>
-    ```
+**Note:** This setup should be carefully considered in production environments based on your organization's security policies.

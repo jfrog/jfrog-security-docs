@@ -6,9 +6,6 @@ JFrog Runtime Security provides real-time monitoring, risk assessment, and autom
 
 * Continuous security enforcement for running workloads.
 * Visibility into runtime vulnerabilities and misconfigurations.
-* Automated remediation to prevent security threats from escalating.
-* Compliance with security policies and industry regulations.
-* Seamless integration with DevOps workflows.
 
 #### **Purpose of JFrog Runtime Security**
 

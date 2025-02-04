@@ -2,7 +2,7 @@
 
 In today's software development landscape, organizations rely heavily on open-source and third-party packages to accelerate development. However, this introduces risks such as security vulnerabilities, license compliance issues, and supply chain attacks. JFrog Curation addresses these concerns by providing an automated, policy-driven approach to controlling software package usage.
 
-#### **Where JFrog Curation Sits in the Security Timeline**
+**Where JFrog Curation Sits in the Security Timeline**
 
 JFrog Curation is **the first line of defense** in securing an organization’s software supply chain. It operates at the **package acquisition stage**, preventing risky dependencies from entering repositories before they are even used in development, testing, or production.
 
@@ -13,7 +13,7 @@ JFrog Curation is **the first line of defense** in securing an organization’s 
 
 ***
 
-#### **Business Needs for JFrog Curation**
+**Business Needs for JFrog Curation**
 
 Organizations face increasing challenges in managing the security and compliance of their software supply chain. These include:
 
@@ -25,7 +25,7 @@ Organizations face increasing challenges in managing the security and compliance
 
 ***
 
-#### **Key Issues JFrog Curation Resolves**
+**Key Issues JFrog Curation Resolves**
 
 | **Issue**                        | **How JFrog Curation Solves It**                                                                  |
 | -------------------------------- | ------------------------------------------------------------------------------------------------- |

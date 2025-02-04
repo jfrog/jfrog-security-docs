@@ -2,10 +2,6 @@
 
 JFrog Runtime Security provides real-time monitoring, risk assessment, and automated remediation for vulnerabilities in running applications. It ensures that software artifacts, containers, and workloads remain secure in dynamic environments like Kubernetes.
 
-#### **Business Needs for JFrog Curation**
-
-With the rise of cloud-native architectures, organizations face an increasing number of security threats at runtime. Traditional security measures, such as static analysis and pre-deployment scanning, are insufficient to protect against active threats. Businesses need a solution that continuously monitors runtime environments, detects anomalies, and prevents potential breaches before they cause damage.
-
 **Key Business Needs:**
 
 * Continuous security enforcement for running workloads.

@@ -1,7 +1,5 @@
 # Install Runtime
 
-## Installation Guide for JFrog Runtime Security
-
 ### Prerequisites
 
 Before proceeding with the installation, ensure the following requirements are met:
@@ -24,7 +22,7 @@ Ensure you have the following details ready:
 
 Run the following command to add and update the JFrog Helm chart repository in your local configuration:
 
-```sh
+```
 helm repo add jfrog https://charts.jfrog.io --force-update
 ```
 
@@ -32,7 +30,7 @@ helm repo add jfrog https://charts.jfrog.io --force-update
 
 If your platform is not yet configured to work with an ingress controller, update your Artifactory configuration. Modify the Helm chart values by setting the following parameters in a `values.yaml` file:
 
-```yaml
+```
 # Standalone nginx server (not ingress-controller)
 nginx:
   enabled: false
@@ -64,7 +62,7 @@ ingress:
 
 Create a new file named `runtime-values.yaml` with the following content:
 
-```yaml
+```
 global:
   deployEnv: onprem
   jfrogUrl: <add-your-public-domain-here>
@@ -96,24 +94,81 @@ runtime:
 
 Run the following command to install the runtime service:
 
-```sh
+```
 helm upgrade --install runtime -f runtime-values.yaml
 ```
 
 ### Step 3: Install Runtime Sensors
 
-To install Runtime Sensors:
+The JFrog Runtime has two installation options depending on what you have purchased:
 
-1. Navigate to **Sensor Management** under the **Runtime** section in the JFrog Platform Administration tab.
-2. Click the **Install Runtime** button to open the Sensor Installation Wizard.
-3. Follow the provided instructions to generate an installation snippet and apply it to your Kubernetes cluster.
+* **Runtime Integrity:** Default option with Runtime Controller only.
+* **Runtime Impact:** Includes Runtime Controller and Runtime Sensors.
+
+#### Installing Runtime Sensors
+
+To install a runtime sensor on a cluster:
+
+1. Navigate to **Administration > Runtime > Sensor Management**.
+2. Click **Install Runtime** to open the installation wizard.
+3. Provide the environment details:
+   * **Cluster name:** Used as the cluster name in management.
+   * **Namespace:** Specify where the JFrog Runtime component will run.
+4. Select the installation type: Controller only or Controller and Sensors.
+5. Copy and execute the provided command in your terminal.
+6. The status of controllers and sensors can be monitored in **Sensor Management**.
+
+#### Installation for OpenShift Users
+
+If using OpenShift, grant necessary permissions after sensor installation:
+
+```
+oc adm policy add-scc-to-user privileged system:serviceaccount:jfrog-runtime:jf-sensors-sensors-service-account
+```
+
+This ensures the Runtime Sensor has the required security context in OpenShift.
+
+#### Uninstalling Sensors
+
+To uninstall sensors from a cluster, set the `kubectl` context to the desired cluster and run:
+
+```
+helm uninstall jf-sensors -n <Namespace>
+```
+
+#### Reinstalling Runtime Sensors
+
+To reinstall sensors:
+
+1. Reapply the installation snippet.
+2. If updating, the sensors will upgrade automatically.
+3. If sensors were uninstalled, reinstalling will generate a new Cluster ID. To preserve data, retrieve the Cluster ID before uninstalling:
+
+```
+kubectl -n <NAMESPACE> get configmaps runtime-config-configmap -o custom-columns='clusterId:data.clusterId'
+```
+
+**Output Example:**
+
+```
+clusterId
+225c8bec-1a85-4099-ac8e-144b81ac99e8
+```
+
+4. Reinstall the sensors using:
+
+```
+--set clusterID=225c8bec-1a85-4099-ac8e-144b81ac99e8
+```
+
+This preserves historical monitoring data and merges it with new data.
 
 #### Bypassing Certificate Verification (Optional)
 
-If you are using a self-signed certificate, modify the sensor installation snippet to bypass certificate verification:
+If using a self-signed certificate, modify the installation snippet:
 
-```sh
+```
 --set tlsInsecureSkipVerify=true
 ```
 
-**Note:** This setup should be carefully considered in production environments based on your organization's security policies.
+**Note:** Carefully assess this option for production environments.

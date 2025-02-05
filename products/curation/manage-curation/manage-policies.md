@@ -12,12 +12,12 @@ The Policies Management window enables administrators to view the details of eac
 In the **Policies Management** window, policies are organized into two tabs:
 
 * **Active**: Displays policies currently applied to one or more remote repositories.
-* **Inactive**: Lists policies not assigned to any repositories.
+* **Inactive**: Lists policies not assigned to any repositories. (Curetly there is no way to revive inactive repositories).&#x20;
 
 Each policy entry includes the following details:
 
 * **Policy Name**: The designated name of the policy.
-* **Repositories**: The repositories to which the policy applies (visible in the Active tab).
+* **Scope**: The repositories to which the policy applies (visible in the Active tab).
 * **Policy Condition**: The specific criteria or conditions defined in the policy.
 * **Policy Action**: The action taken when the policy's conditions are met (e.g., Block or Dry Run).
 

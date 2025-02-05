@@ -23,13 +23,7 @@ Key configuration tasks required for JFrog Curation:
 [**Configure Repositories**](configure-repositories/)
 
 * Connect remote repositories to the Curation service.
-* Enable pass-through on specific repositories if needed.
-{% endstep %}
-
-{% step %}
-### [Create Custom Conditions](create-custom-conditions.md)
-
-
+* Enable pass-through on specific repositories if needed.r
 {% endstep %}
 
 {% step %}

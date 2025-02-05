@@ -9,6 +9,8 @@ Curation can be used only on remote repositories that have a cache enabled (a mi
 Do the following:
 
 1. Log in to the JFrog Platform.
-2. Navigate to **Administration > Curation > Curated Repositories**.
-3. Locate the repository in the list and toggle the **Activity** switch to enable curation.
-4. Confirm the action in the popup dialog, which lists the policies to be applied.&#x20;
+2. Navigate to **Administration > Curation > Remote Repositories**.
+3. Locate the repository type in the list and toggle the **Activity** switch to Connect curation.
+4. You can connect by typing "one by one." To do so, click on Type and select the desired repositories.&#x20;
+5. Connecting "Type" will ensure all future repositories are connected as well.&#x20;
+6. The connected type also ensures that any disconnected repository will be notified by email to the stake holders.&#x20;

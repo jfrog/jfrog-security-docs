@@ -2,7 +2,7 @@
 
 
 
-JFrog Curation's Pass-Through feature allows certain package managers, like Maven, to download and audit packages that would typically be blocked due to policy violations, without storing these packages in Artifactory. This ensures that while developers can perform necessary audits, the violating packages do not reside in the repository, maintaining security and compliance.
+JFrog Curation's Pass-Through feature allows certain package managers, like Maven, to download and audit packages that would typically be blocked due to policy violations without storing them in Artifactory. This ensures that while developers can perform necessary audits, the violating packages do not reside in the repository, maintaining security and compliance.
 
 **When to Enable Curation Pass-Through**
 
@@ -17,6 +17,8 @@ Curation Pass-Through is compatible with the following deployment configurations
 
 **Steps to Enable Curation Pass-Through**
 
+Pass-through is enabled by default when you connect the repository type; you can disable this in the Remote repository configuration.&#x20;
+
 1. **Access Artifactory**:
    * Log in to your Artifactory instance.
 2. **Navigate to the Desired Remote Repository**:
@@ -25,7 +27,7 @@ Curation Pass-Through is compatible with the following deployment configurations
 3. **Configure Pass-Through**:
    * Scroll to the bottom of the repository's settings page.
    * Locate the **Enable Curation Pass-Through** option.
-   * Toggle the switch to **On** to activate the feature.
+   * Toggle the switch to **On of OFF** acording to your needs.
 
 **Additional Configuration for Smart Remote Repositories**
 
@@ -41,7 +43,6 @@ If your setup includes a Smart Remote repository that connects to a curated remo
 
 **Important Considerations**
 
-* **Security**: While Curation Pass-Through allows the download of packages that violate policies for auditing purposes, these packages are not stored in Artifactory, ensuring they don't inadvertently become part of your development or production environments.
+* **Security**: While Curation Pass-Through allows the download of packages that violate policies for auditing purposes, these packages **are not stored in Artifactory,** ensuring they don't inadvertently become part of your development or production environments.
 * **Compatibility**: Currently, Maven is identified as a build system that requires this pass-through capability for effective auditing.
 
-By configuring Curation Pass-Through appropriately, you can maintain a balance between necessary auditing processes and strict adherence to security and compliance policies within your software development lifecycle.

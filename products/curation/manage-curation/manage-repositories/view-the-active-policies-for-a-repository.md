@@ -3,7 +3,7 @@
 To view the active curation policies applied to a specific remote repository in JFrog Curation, follow these steps:
 
 1. **Access the Curated Repositories Table**:
-   1. Navigate to the **Curated Repositories** section within your JFrog Platform.
+   1. Navigate to the **Remote Repositories** section within your JFrog Platform.
    2. Locate and select the desired remote repository.
 2. **Access the Actions Menu**:
    * Click on the actions menu ( represented by three dots ) associated with the selected repository.

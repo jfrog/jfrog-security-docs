@@ -3,7 +3,8 @@
 To disconnect a remote repository from the JFrog Curation service, follow these steps:
 
 1. **Access the Curated Repositories Table**:
-   * Navigate to the **Curated Repositories** section within your JFrog Platform.
+   * Navigate to the **Remote Repositories** section within your JFrog Platform.
+   * Click on the repository type to see the full list of repositories from this type
 2. **Disable Curation for the Desired Repository**:
    * Locate the specific remote repository you wish to disconnect.
    * Click the toggle switch next to the repository's name to turn it off.

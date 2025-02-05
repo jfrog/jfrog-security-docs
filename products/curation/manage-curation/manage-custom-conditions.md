@@ -1,2 +1,0 @@
-# Manage Custom Conditions
-

@@ -105,6 +105,7 @@
     * [Configure Runtime](products/runtime/configure-runtime.md)
     * [Manage Runtime](products/runtime/manage-runtime.md)
     * [How-Tos](products/runtime/how-tos/README.md)
+      * [Detecting Active Artifacts in Runtime](products/runtime/how-tos/detecting-active-artifacts-in-runtime.md)
   * [Catalog](products/catalog/README.md)
     * [Supported Technologies](products/catalog/supported-technologies.md)
     * [Features and Capabilities](products/catalog/features-and-capabilities.md)

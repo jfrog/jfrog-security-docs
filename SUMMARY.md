@@ -105,7 +105,7 @@
     * [Quick Start](products/runtime/quick-start.md)
     * [Install Runtime](products/runtime/install-runtime.md)
     * [Configure Runtime](products/runtime/configure-runtime.md)
-    * [How-Tos](products/runtime/how-tos.md)
+    * [How-Tos](products/runtime/how-tos/README.md)
   * [Catalog](products/catalog/README.md)
     * [Supported Technologies](products/catalog/supported-technologies.md)
     * [Features and Capabilities](products/catalog/features-and-capabilities.md)

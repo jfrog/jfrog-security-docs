@@ -22,7 +22,6 @@
   * [Curation](products/curation/README.md)
     * [Supported Technologies](products/curation/supported-technologies.md)
     * [Features and Capabilities](products/curation/features-and-capabilities.md)
-    * [Quick Start](products/curation/quick-start.md)
     * [Configure Curation](products/curation/configure-curation/README.md)
       * [Initial Setup](products/curation/configure-curation/initial-setup/README.md)
         * [Configure Curation for Self Hosted](products/curation/configure-curation/initial-setup/configure-curation-for-self-hosted.md)

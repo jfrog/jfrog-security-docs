@@ -1,25 +1,38 @@
 # Quick Start
 
-## **Enabling/Disabling Runtime Sensors**
+## **Enabling and Disabling Runtime Sensors**
 
-Runtime sensors are deployed as a **DaemonSet** and are installed by default on each cluster node. After installation, they can be enabled or disabled as needed.
+| Value                 | Description                                                                               |
+| --------------------- | ----------------------------------------------------------------------------------------- |
+| <`node_name>`         | A single node, e.g., `kubectl label nodes my_node disable_jfrog_runtime=true`             |
+| <`node1 node2 node3>` | A list of nodes, e.g., `kubectl label nodes node1 node2 node3 disable_jfrog_runtime=true` |
+| `--all`               | All nodes, e.g., `kubectl label nodes --all disable_jfrog_runtime=true`                   |
 
-| Parameter     | Description                                                                                                                                                                                                                                                                                                          |
-| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<node-name>` | <p></p><ul><li>A single node: <code>kubectl label nodes &#x3C;my_node> disable_jfrog_runtime=true</code></li><li>Multiple nodes: <code>kubectl label nodes &#x3C;node1 node2 node3> disable_jfrog_runtime=true</code></li><li>All nodes: <code>kubectl label nodes --all disable_jfrog_runtime=true</code></li></ul> |
+**Enable Runtime Sensors**
 
-*   Disable on specific nodes:
+To enable runtime sensors that were previously disabled, run:
 
-    ```sh
-    shCopyEditkubectl label nodes <node-name> disable_jfrog_runtime=true
-    ```
-*   Enable sensors:
+```
+kubectl label nodes <nodes> disable_jfrog_runtime-
+```
 
-    ```sh
-    shCopyEditkubectl label nodes <node-name> disable_jfrog_runtime-
-    ```
+Replace `<nodes>` with one of the following:
 
-## **Monitoring & Verification**
+* A single node, e.g., `kubectl label nodes my_node disable_jfrog_runtime-`
+* A list of nodes, e.g., `kubectl label nodes node1 node2 node3 disable_jfrog_runtime-`
+* All nodes, e.g., `kubectl label nodes --all disable_jfrog_runtime-`
 
-* Navigate to **Sensor Management** in the JFrog UI to verify sensor deployment.
-* Use **Live Assessment** to check runtime security insights, risks, and workloads.
+**Disable Runtime Sensors**&#x20;
+
+Sensors are deployed as a DaemonSet and installed by default on each of the cluster’s nodes. After installation using Helm, runtime sensors can be disabled on demand. To disable runtime sensors, run the following command:
+
+```
+kubectl label nodes <nodes> disable_jfrog_runtime=true
+```
+
+Replace `<nodes>` with one of the following:
+
+* A single node, e.g., `kubectl label nodes my_node disable_jfrog_runtime=true`
+* A list of nodes, e.g., `kubectl label nodes node1 node2 node3 disable_jfrog_runtime=true`
+* All nodes, e.g., `kubectl label nodes --all disable_jfrog_runtime=true`
+

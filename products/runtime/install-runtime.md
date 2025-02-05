@@ -1,6 +1,6 @@
 # Install Runtime
 
-### Prerequisites
+## Prerequisites
 
 Before proceeding with the installation, ensure the following requirements are met:
 

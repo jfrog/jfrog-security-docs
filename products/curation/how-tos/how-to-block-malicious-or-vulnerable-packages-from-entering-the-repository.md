@@ -12,7 +12,7 @@ A security team wants to prevent developers from downloading packages containing
    * Toggle the switch to **Enable Curation** for this repository.
 2. **Create a Security-Based Curation Policy**
    * Go to **Administration > Curation > Policies Management** and click **Create Policy**.
-   * Name the policy: e.g., **Block Malicious & Vulnerable Packages**.
+   * Name the policy: e.g., **Block Malicious or  Vulnerable Packages**.
    * Under **Policy Scope**, select the repository or choose **All Curated** to apply it universally.
 3. **Define a Security Condition**
    * In the **Policy Condition** step, choose one of the following conditions:

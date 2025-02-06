@@ -14,10 +14,10 @@ Ignoring a violation **does not remove it from the database**—it simply **hide
 
 #### **Why Use Ignore Rules?**
 
-✔ **Reduce Noise** – Suppress **non-actionable** vulnerabilities and violations.\
-✔ **Improve Efficiency** – Allow teams to **focus on high-risk issues**.\
-✔ **Avoid False Positives** – Ignore vulnerabilities **that do not apply** to the specific environment.\
-✔ **Mitigated Vulnerabilities** – Suppress CVEs that are **already patched** via **configurations, network controls, or runtime mitigations**.
+**Reduce Noise** – Suppress **non-actionable** vulnerabilities and violations.\
+**Improve Efficiency** – Allow teams to **focus on high-risk issues**.\
+**Avoid False Positives** – Ignore vulnerabilities **that do not apply** to the specific environment.\
+**Mitigated Vulnerabilities** – Suppress CVEs that are **already patched** via **configurations, network controls, or runtime mitigations**.
 
 ***
 
@@ -40,22 +40,22 @@ Ignored violations remain **visible in audit logs** but **do not trigger alerts,
 
 **Use Case:** When a **fix is planned** for a later release.
 
-✔ Suppresses violations for a **defined period** (e.g., **30 days**).\
-✔ The violation **automatically reactivates** after the expiration date.\
-✔ Useful for vulnerabilities that are **not currently exploitable** but will be addressed in a future update.
+Suppresses violations for a **defined period** (e.g., **30 days**).\
+The violation **automatically reactivates** after the expiration date.\
+Useful for vulnerabilities that are **not currently exploitable** but will be addressed in a future update.
 
 **Example:**\
 A development team is aware of a **CVE in a library**, but a **patched version will be released in 2 weeks**. They apply an **ignore rule for 14 days** to prevent unnecessary alerts.
 
 ***
 
-#### **2. Permanent Ignore** _(No Expiration)_
+#### **Permanent Ignore** _(No Expiration)_
 
 &#x20;**Use Case:** When a **vulnerability is not applicable** or is already mitigated.
 
-✔ **Permanently suppresses** a violation.\
-✔ Useful when a **CVE does not affect the actual usage** of the component.\
-✔ Can be **manually removed** later if needed.
+**Permanently suppresses** a violation.\
+Useful when a **CVE does not affect the actual usage** of the component.\
+Can be **manually removed** later if needed.
 
 **Example:**\
 A security vulnerability **only affects a deprecated function** in a library that the team **does not use**. Since the function is never called in production, the violation is **ignored permanently**.
@@ -66,9 +66,9 @@ A security vulnerability **only affects a deprecated function** in a library tha
 
 **Use Case:** When a violation should be ignored **only in a specific context**.
 
-✔ Allows ignoring violations for a **specific repository, project, or build**.\
-✔ Prevents unnecessary enforcement actions in **low-risk environments** (e.g., dev/staging).\
-✔ Ensures that the **same violation is still enforced elsewhere** (e.g., in production).
+Allows ignoring violations for a **specific repository, project, or build**.\
+Prevents unnecessary enforcement actions in **low-risk environments** (e.g., dev/staging).\
+Ensures that the **same violation is still enforced elsewhere** (e.g., in production).
 
 **Example:**\
 A vulnerability is detected in a **staging environment**, but **does not exist in production**. The team applies an ignore rule **only for the staging repository**, ensuring security policies remain strict in production.
@@ -77,10 +77,10 @@ A vulnerability is detected in a **staging environment**, but **does not exist i
 
 ### **Best Practices for Using Ignore Rules in Xray**
 
-✔ **Set Expiration Dates for Temporary Ignores** – Ensure violations are **reevaluated periodically**.\
-✔ **Document Ignore Reasons** – Maintain transparency for **security audits and compliance**.\
-✔ **Use Scope-Based Ignores** – Avoid **suppressing violations globally** unless necessary.\
-✔ **Review Ignored Violations Regularly** – Periodically check **which vulnerabilities are ignored** and **reassess risks**.
+**Set Expiration Dates for Temporary Ignores** – Ensure violations are **reevaluated periodically**.\
+**Document Ignore Reasons** – Maintain transparency for **security audits and compliance**.\
+**Use Scope-Based Ignores** – Avoid **suppressing violations globally** unless necessary.\
+**Review Ignored Violations Regularly** – Periodically check **which vulnerabilities are ignored** and **reassess risks**.
 
 ***
 

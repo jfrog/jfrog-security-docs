@@ -33,30 +33,15 @@ Xray supports indexing at **three levels**:
 
 ### **How Indexing Works in Xray**
 
-#### **1. Indexing Repositories**
+#### **1. Indexing Repositories/Builds/ Release Bundles**
 
-* Xray does **not automatically index all repositories**—you must **enable indexing** for specific repositories.
+* Xray does **not automatically index all resources**—you must **enable indexing** for a specific resource.
 * Indexed repositories allow Xray to scan artifacts **as they are uploaded or modified**.
-* Supports **recursive scanning**, meaning Xray analyzes **all layers and dependencies** inside a package.
-
-**Example:** A team enables indexing on a **Maven repository**. Every new JAR file uploaded is **automatically scanned** for vulnerabilities and compliance risks.
 
 ***
 
-#### **2. Indexing Builds**
-
-* Indexing builds allows Xray to scan **both direct and transitive dependencies** of a build.
-* Helps in **tracking security risks from build-time dependencies**.
-* Ensures that **CI/CD pipelines enforce security and compliance policies**.
-
-**Example:** A **Jenkins build** is indexed in Xray. The build dependencies are scanned, and Xray detects a **critical vulnerability** in a third-party library before deployment.
+#### **2. Configure**&#x20;
 
 ***
 
-#### **3. Indexing Release Bundles**
-
-* Used to **scan final software packages before distribution**.
-* Ensures that software releases are **secure, compliant, and free from operational risks**.
-* Helps track **component versions and their security status** over time.
-
-**Example:** A company is about to **release a new version of its software**. Xray indexes the **release bundle**, ensuring it **meets security and licensing requirements** before shipping to customers.
+#### 3. Set a Retention Period

@@ -5,7 +5,7 @@
 #### **Step 1: Access the Policy Configuration**
 
 1. Log in to the **JFrog Platform**.
-2. Navigate to **Xray → Policies**.
+2. Navigate to **Xray → Watches \&Policies**.
 3. Click **New Policy**.
 
 ***

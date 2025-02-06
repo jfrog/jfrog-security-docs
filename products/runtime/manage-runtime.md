@@ -1,6 +1,6 @@
 # Manage Runtime
 
-## **Sensor Management**
+## Manage **Sensors**
 
 The Runtime Sensor Management enables users to install Runtime Controller and Sensors on their clusters, view the clusters that have been installed, and access detailed information about the clusters, nodes, and sensors that monitor them. This capability also provides users with the health status of their sensors and allows them to determine if their environment is being monitored correctly and easily. To access Sensor Management, navigate to the "Sensor Management" section under the "Runtime" menu.
 
@@ -22,7 +22,7 @@ The Sensor Management capability includes a convenient feature that allows users
 5. Copy and execute the provided snippet from a jump server where the `kubectl` context is set to the required cluster.
 6. Once the sensor is deployed successfully, a new entry indicating the sensor deployment will appear under Sensor Management.
 
-## **Cluster Inventory**
+## **View Cluster Status**
 
 The Runtime Sensor Management **Cluster Inventory** allows users to view the status of clusters monitored by JFrog Runtime.
 
@@ -32,7 +32,7 @@ The Runtime Sensor Management **Cluster Inventory** allows users to view the sta
 2. Once the Controller has been installed, view the list displaying the monitored clusters and their status.
 3. Use this information to track cluster health and take proactive steps to address any potential issues.
 
-## **Cluster Detailed View**
+## **Inspect Cluster**
 
 The **Cluster Detailed View** in the Runtime Sensor Management feature provides detailed information about the selected cluster and its monitored nodes.
 

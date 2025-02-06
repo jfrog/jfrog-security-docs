@@ -34,18 +34,21 @@ kubectl label nodes <nodes> disable_jfrog_runtime-
 
 This guide provides instructions on how to inspect live software components using the Runtime **Live Assessment** capability. This feature enables you to view and search live runtime information, identify potential security risks, and monitor the health of their runtime environments.
 
-**Active Components Runtime Inspects:**
-
-* **Workloads:** Applications and services actively running in Kubernetes clusters, managed by resources like Deployments, StatefulSets, or DaemonSets.
-* **Processes:** Individual executable instances within workloads, detailed with vulnerability data for monitoring and risk management.
-* **Images:** Packaged files containing code and configurations needed to run applications, traceable to their source in JFrog Artifactory.
-
-#### **Risk Runtime Alerts From:**&#x20;
+#### **Risk Runtime Alerts Against:**&#x20;
 
 * **Malicious Packages:** Detects harmful code within software components.
 * **Untrusted Images:** Identifies images from unverified registries.
 * **Critical Applicable CVEs:** Highlights critical vulnerabilities identified through contextual analysis.
 * **Integrity Violations:** Flags discrepancies between Artifactory images and running cluster binaries.
+
+**Active Components Runtime Inspects:**
+
+|                       |                                                                                                                                        |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| **Runtime Component** | **Description**                                                                                                                        |
+| **Workloads**         | Applications and services actively running in Kubernetes clusters, managed by resources like Deployments, StatefulSets, or DaemonSets. |
+| **Processes**         | Individual executable instances within workloads, detailed with vulnerability data for monitoring and risk management.                 |
+| **Images**            | Packaged files containing code and configurations needed to run applications, traceable to their source in JFrog Artifactory.          |
 
 #### **Images**
 

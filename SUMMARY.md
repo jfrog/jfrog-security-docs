@@ -140,6 +140,7 @@
     * [Installation](developers/scanning-source-code-repositories/installation.md)
     * [Key Features](developers/scanning-source-code-repositories/key-features.md)
     * [Configure Frogbot](developers/scanning-source-code-repositories/configure-frogbot.md)
+    * [How To](developers/scanning-source-code-repositories/how-to.md)
   * [CI/CD](developers/ci-cd.md)
 * [Admin](admin/README.md)
   * [Jira Integration](admin/jira-integration.md)

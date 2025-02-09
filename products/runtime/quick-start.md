@@ -62,9 +62,9 @@ This guide provides instructions on how to inspect live software components usin
 |                       |                                                                                                                                        |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | **Runtime Component** | **Description**                                                                                                                        |
+| **Images**            | Packaged files containing code and configurations needed to run applications, traceable to their source in JFrog Artifactory.          |
 | **Workloads**         | Applications and services actively running in Kubernetes clusters, managed by resources like Deployments, StatefulSets, or DaemonSets. |
 | **Processes**         | Individual executable instances within workloads, detailed with vulnerability data for monitoring and risk management.                 |
-| **Images**            | Packaged files containing code and configurations needed to run applications, traceable to their source in JFrog Artifactory.          |
 
 ## **Inspecting Images in Runtime**
 
@@ -72,65 +72,34 @@ Gain comprehensive visibility into runtime images by tracing them back to their 
 
 #### **Accessing Image Information**
 
-1. From the JFrog Platform, under Runtime, select **Live Assessment**.
-2. In the Live **Assessment** screen, click on the **Images** tab to view all detected images.
+Image information includes number of associated workloads, cluster and namespace details, image path in Artifactory, associated deployer information, and list of vulnerabilities
 
-#### **Viewing Image Tags Detailed View**
-
-1. Click on the desired image tag from the Images tab.
-2. View detailed information, including:
-   * Number of associated workloads
-   * Cluster and namespace details
-   * Image path in Artifactory
-   * Associated deployer information
-   * List of vulnerabilities
+1. From the JFrog Platform, under **Runtime**, select **Live Assessment**.
+2. In the **Live Assessment** screen, click on the **Images** tab to view all detected images.
+3. Select an image.
+4. Click on the desired image tag from the Images tab.
 
 ## **Inspecting Workloads in Runtime**
 
-This guide helps you inspect workloads in your runtime environment using the Runtime Live Assessment capability in JFrog. You can monitor active applications and services, identify security risks, and gain insights into workloads running across your infrastructure.
+Inspect workloads in your runtime environment with Runtime Live Assessment to monitor active applications, identify security risks, and gain infrastructure-wide insights. Workloads, managed by Kubernetes resources like Deployments, StatefulSets, DaemonSets, or Jobs, consist of containers linked to images and running processes. The Workloads Table highlights risks such as integrity violations, untrusted registries, critical CVEs, and malicious packages, along with total vulnerabilities, workload status, and location details across clusters, nodes, and namespaces to help you quickly detect and address security issues.
 
 #### **Accessing Workloads in Runtime Live Assessment**
 
-1. **Navigate to the Runtime Menu:**
-   * Open the JFrog Platform.
-   * Select **Live Assessment** under the **Runtime** menu.
-2. **Access the Workloads Tab:**
-   * In the Live Assessment section, click on the **Workloads** tab to view all detected workloads.
+1. From the JFrog Platform, under **Runtime**, select **Live Assessment**.
+2. In the **Live Assessment** screen, click on the **Workloads** tab to view all detected workloads.
+3. Select a workload.
+4. Click on a specific process to see detailed information.
 
-#### **Understanding Workloads**
+## **Inspecting Processes in Runtime**
 
-* **Definition:** A workload consists of one or more containers or applications running in your environment. Workloads can be managed by Kubernetes resources like Deployments, StatefulSets, DaemonSets, or Jobs.
-* **Components:** Each workload is linked to an image and has associated running processes.
+**Before You Begin:**
 
-#### **Viewing the Workloads List**
+* It is essential you have Runtime Impact (Controller + Sensors)
 
-1. **Review Detected Workloads:**
-   * The Workloads List displays all workloads currently active in your runtime environment.
-2. **Key Data in the Workloads Table:**
-   * **Risk Column:** Shows risks such as Integrity Violations, Untrusted Registries, Critical CVEs, and Malicious Packages.
-   * **Vulnerability Column:** Displays the total number of vulnerabilities linked to each workload.
-   * **Status Column:** Indicates whether the workload is running or stopped.
-   * **Cluster, Node, and Namespace Columns:** Help you locate where issues exist within your environment.
-
-#### **Inspecting Workload's Process Group Details** _(Controller + Sensors Mode Only)_
-
-1. **Expand the Workload:**
-   * Click on the workload to expand and view its process groups.
-2. **View Process Details:**
-   * Click on a specific process to see detailed information, including vulnerabilities and its link to the associated image in Artifactory.
-
-#### **Managing Risks in Workloads**
-
-* **Integrity Violations:** Identifies discrepancies between stored and running images.
-* **Untrusted Registries:** Flags workloads sourced from registries without verified trust.
-* **Critical Applicable CVEs:** Highlights critical vulnerabilities within the workload.
-* **Malicious Packages:** Detects harmful code within running processes.
-
-#### **Processes**_(Runtime Impact: Controller + Sensors)_
-
-* **Process Grouping:** Based on executable, location, command arguments, image, and workload.
-* **Key Data Fields:** Process name, risks, vulnerabilities, status, arguments, path, and identifiers.
-* **Filtering Options:** Apply filters to focus on specific processes or vulnerabilities.
+1. From the JFrog Platform, under **Runtime**, select **Live Assessment**.
+2. In the **Live Assessment** screen, click on the **Processes** tab to view all detected workloads.
+3. Review the **Processes** Table.
+4. Apply filters to narrow down processes based on specific criteria (e.g., risk level, vulnerabilities).
 
 
 

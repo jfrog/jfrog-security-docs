@@ -26,6 +26,22 @@ To enable runtime sensors that were previously disabled, run:
 kubectl label nodes <nodes> disable_jfrog_runtime-
 ```
 
+## Detecting Active Artifacts in Runtime
+
+Detect artifacts in Artifactory that are currently running in runtime, assess their security status, and take necessary actions to mitigate potential risks.
+
+1. Navigate to the **Artifactory** Artifacts Tree.
+
+If an artifact from the selected repository is actively running in runtime, a **detection button** will appear in the upper right corner of the page.
+
+The button will also indicate whether any detected artifacts have vulnerabilities.
+
+2. Click the **detection button** to view more information about the artifact.
+
+You will be redirected to the **Runtime Live Assessment** page.
+
+3. Examine details such as the artifact's location, where it is currently running, and any associated security risks.
+
 ## Inspecting Live Software Components
 
 **Before You Begin:**
@@ -52,45 +68,22 @@ This guide provides instructions on how to inspect live software components usin
 
 ## **Inspecting Images in Runtime**
 
-You can trace images back to their source in JFrog Artifactory, evaluate their usage, and identify associated security risks.
+Gain comprehensive visibility into runtime images by tracing them back to their JFrog Artifactory source, evaluating usage, and identifying security risks. Quickly spot untrusted sources, integrity violations, and critical CVEs, with key details like the highest risk level, total vulnerabilities, and tag-specific insights to prioritize remediation. By detecting discrepancies between Artifactory images and running binaries, you can proactively mitigate risks and strengthen your runtime security.
 
 #### **Accessing Image Information**
 
-1. **Navigate to the Runtime Menu:**
-   * Open the JFrog Platform.
-   * Select **Live Assessment** under the **Runtime** menu.
-2. **Access the Images Tab:**
-   * In the Live Assessment screen, click on the **Images** tab to view all detected images.
-
-#### **Key Image Details**
-
-* **Risk Column:** Displays the highest risk level detected among all image tags. If image tags vary by architecture, the riskiest tag will determine the displayed risk.
-* **Vulnerabilities Column:** Shows the total number of vulnerabilities associated with the riskiest image tag.
-* **Image Tags:** Provides granular information on each image tag, helping identify risks and vulnerabilities at a more detailed level.
+1. From the JFrog Platform, under Runtime, select **Live Assessment**.
+2. In the Live **Assessment** screen, click on the **Images** tab to view all detected images.
 
 #### **Viewing Image Tags Detailed View**
 
-1. **Select an Image Tag:**
-   * Click on the desired image tag from the Images tab.
-2. **Review Tag-Specific Data:**
-   * View detailed information, including:
-     * Number of associated workloads
-     * Cluster and namespace details
-     * Image path in Artifactory
-     * Associated deployer information
-     * List of vulnerabilities
-
-#### **Risk Assessment for Images**
-
-* **Untrusted Images:** Identifies images sourced from unverified registries.
-* **Integrity Violations:** Highlights discrepancies between Artifactory images and running cluster binaries.
-* **Critical Applicable CVEs:** Flags critical vulnerabilities identified through contextual analysis.
-
-#### **Using Image Data for Security Management**
-
-* **Traceability:** Easily track images back to their Artifactory source.
-* **Vulnerability Insights:** Identify and prioritize vulnerabilities for remediation.
-* **Risk Mitigation:** Take proactive steps to address security risks, ensuring the integrity and safety of your runtime environment.
+1. Click on the desired image tag from the Images tab.
+2. View detailed information, including:
+   * Number of associated workloads
+   * Cluster and namespace details
+   * Image path in Artifactory
+   * Associated deployer information
+   * List of vulnerabilities
 
 ## **Inspecting Workloads in Runtime**
 

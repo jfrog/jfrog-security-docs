@@ -39,6 +39,7 @@ The **Cluster Detailed View** in the Runtime Sensor Management feature provides 
 #### To access the Cluster Detailed View:
 
 1. Click on a cluster in the **Cluster Inventory** pane.
-2. View detailed information, including the list of nodes running under the cluster and their corresponding Runtime Sensor statuses.
-   * In **Controller Only** mode, node-level sensor details will not be available.
+2.  View detailed information, including the list of nodes running under the cluster and their corresponding Runtime Sensor statuses.
+
+    In **Controller Only** mode, node-level sensor details will not be available.
 3. Use this capability to track the health of sensors and quickly identify any potential problems or issues with the cluster infrastructure.

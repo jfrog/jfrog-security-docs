@@ -57,7 +57,7 @@
           * [Malicious Package Detection](products/xray/features-and-capabilities/sca/security/malicious-package-detection.md)
           * [Builds](products/xray/features-and-capabilities/sca/security/builds/README.md)
             * [Builds Security Overview](products/xray/features-and-capabilities/sca/security/builds/builds-security-overview.md)
-            * [Comparing Build Versions](products/xray/features-and-capabilities/sca/security/builds/comparing-build-versions.md)
+            * [Comparing Build Versions](products/xray/features-and-capabilities/sca/security/builds/comparing-build-versions-for-security-diff.md)
         * [Legal](products/xray/features-and-capabilities/sca/legal.md)
         * [Operational Risk](products/xray/features-and-capabilities/sca/operational-risk/README.md)
           * [How Xray Determines Operational Risk Severity](products/xray/features-and-capabilities/sca/operational-risk/how-xray-determines-operational-risk-severity.md)

@@ -1,4 +1,4 @@
-# Comparing Build Versions for Security Diff
+# Comparing Build Versions
 
 This feature allows users to compare two versions of a scanned build and see the security differences between them, such as any new CVEs that have been introduced. With this feature you will be able to:
 

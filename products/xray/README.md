@@ -63,7 +63,7 @@ JFrog Xray is designed to:
 
 ***
 
-## Main Features
+### Main Features
 
 #### General
 

@@ -31,5 +31,3 @@ Before proceeding with the installation, ensure the following requirements are m
 * **Kubernetes Cluster Access:** Ensure your `kubectl` and `helm` clients can access the Kubernetes cluster where you intend to install the Runtime Service.
 * **Ingress Controller:** JFrog officially supports the Nginx controller configured with TLS. Other ingress controllers may work if they support GRPC communication.
 * **JFrog Platform:** JFrog Runtime Security must be installed on a pre-existing JFrog platform.
-
-###

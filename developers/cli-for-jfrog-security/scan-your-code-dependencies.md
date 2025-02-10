@@ -48,12 +48,9 @@ When the **Advanced Security Package** is enabled on your JFrog Platform instanc
 
 _To enable the Advanced Security Package,_ [_contact us_](https://jfrog.com/advanced-security-contact-us/)_._
 
-## Command
-
-**Command:**\
-`jf audit` (alias: `jf aud`)
-
 ## **Command Options**
+
+Command: `jf audit` (alias: `jf aud`)
 
 | **Option**                      | **Required** | **Default**                          | **Description**                                                                                                                                                                                           |
 | ------------------------------- | ------------ | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

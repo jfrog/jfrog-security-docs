@@ -1,16 +1,16 @@
-# Self-Hosted
+# Self-Hosted Installation
 
-### Prepare the JFrog Platform
+## Before Installing
 
-#### Before Installing
+It is essential that you have:
 
-Ensure you have the following details ready:
+* JFrog platform join key: `<join-key>`
+* JFrog platform domain name: `<add-your-public-domain-here>`
+* Artifactory Kubernetes service name (used for installing Xray): `<artifactory-service-url>`
 
-* **JFrog platform join key:** `<join-key>`
-* **JFrog platform domain name:** `<add-your-public-domain-here>`
-* **Artifactory Kubernetes service name (used for installing Xray):** `<artifactory-service-url>`
+## Prepare the JFrog Platform
 
-#### Add and Update JFrog Helm Chart Repository
+### Add and Update JFrog Helm Chart Repository
 
 Run the following command to add and update the JFrog Helm chart repository in your local configuration:
 
@@ -18,7 +18,7 @@ Run the following command to add and update the JFrog Helm chart repository in y
 helm repo add jfrog https://charts.jfrog.io --force-update
 ```
 
-#### Configure Artifactory for Ingress Controller
+### Configure Artifactory for Ingress Controller
 
 If your platform is not yet configured to work with an ingress controller, update your Artifactory configuration. Modify the Helm chart values by setting the following parameters in a `values.yaml` file:
 
@@ -48,9 +48,9 @@ ingress:
         - <add-your-public-domain-here>
 ```
 
-### Step 2: Install the Runtime Service (SH)
+## Install the Runtime Service
 
-#### Create a Configuration File
+### Create a Configuration File
 
 Create a new file named `runtime-values.yaml` with the following content:
 
@@ -82,7 +82,7 @@ runtime:
     registry: releases-docker.jfrog.io
 ```
 
-#### Install JFrog Runtime Service
+### Install JFrog Runtime Service
 
 Run the following command to install the runtime service:
 
@@ -90,16 +90,14 @@ Run the following command to install the runtime service:
 helm upgrade --install runtime -f runtime-values.yaml
 ```
 
-### Step 3: Install Runtime Sensors (SaaS + SH)
+## Install Runtime Sensors
 
 The JFrog Runtime has two installation options depending on what you have purchased:
 
-* **Runtime Integrity:** Default option with Runtime Controller only.
-* **Runtime Impact:** Includes Runtime Controller and Runtime Sensors.
+* Runtime **Integrity:** Default option with Runtime Controller only.
+* Runtime **Impact:** Includes Runtime Controller and Runtime Sensors.
 
-#### Installing Runtime Sensors
-
-To install a runtime sensor on a cluster:
+### Installing Runtime Sensors
 
 1. Navigate to **Administration > Runtime > Sensor Management**.
 2. Click **Install Runtime** to open the installation wizard.
@@ -110,7 +108,7 @@ To install a runtime sensor on a cluster:
 5. Copy and execute the provided command in your terminal.
 6. The status of controllers and sensors can be monitored in **Sensor Management**.
 
-#### Installation for OpenShift Users
+## Installation for OpenShift Users
 
 If using OpenShift, grant necessary permissions after sensor installation:
 
@@ -122,12 +120,14 @@ This ensures the Runtime Sensor has the required security context in OpenShift.
 
 This preserves historical monitoring data and merges it with new data.
 
-#### Bypassing Certificate Verification (Optional)
+## Bypassing Certificate Verification (Optional)
+
+{% hint style="warning" %}
+Carefully assess this option for production environments.
+{% endhint %}
 
 If using a self-signed certificate, modify the installation snippet:
 
 ```
 --set tlsInsecureSkipVerify=true
 ```
-
-**Note:** Carefully assess this option for production environments.

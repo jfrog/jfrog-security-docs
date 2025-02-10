@@ -1,15 +1,13 @@
-# SaaS
+# SaaS Installation
 
 ## Install Runtime Sensors
 
 The JFrog Runtime has two installation options depending on what you have purchased:
 
-* **Runtime Integrity:** Default option with Runtime Controller only.
-* **Runtime Impact:** Includes Runtime Controller and Runtime Sensors.
+* Runtime **Integrity:** Default option with Runtime Controller only.
+* Runtime **Impact:** Includes Runtime Controller and Runtime Sensors.
 
-#### Installing Runtime Sensors
-
-To install a runtime sensor on a cluster:
+### Installing Runtime Sensors
 
 1. Navigate to **Administration > Runtime > Sensor Management**.
 2. Click **Install Runtime** to open the installation wizard.
@@ -20,7 +18,7 @@ To install a runtime sensor on a cluster:
 5. Copy and execute the provided command in your terminal.
 6. The status of controllers and sensors can be monitored in **Sensor Management**.
 
-#### Installation for OpenShift Users
+## Installation for OpenShift Users
 
 If using OpenShift, grant necessary permissions after sensor installation:
 
@@ -30,7 +28,7 @@ oc adm policy add-scc-to-user privileged system:serviceaccount:jfrog-runtime:jf-
 
 This ensures the Runtime Sensor has the required security context in OpenShift.
 
-#### Uninstalling Sensors
+## Uninstalling Sensors
 
 To uninstall sensors from a cluster, set the `kubectl` context to the desired cluster and run:
 
@@ -38,9 +36,7 @@ To uninstall sensors from a cluster, set the `kubectl` context to the desired cl
 helm uninstall jf-sensors -n <Namespace>
 ```
 
-#### Reinstalling Runtime Sensors
-
-To reinstall sensors:
+## Reinstalling Runtime Sensors
 
 1. Reapply the installation snippet.
 2. If updating, the sensors will upgrade automatically.
@@ -57,7 +53,7 @@ clusterId
 225c8bec-1a85-4099-ac8e-144b81ac99e8
 ```
 
-4. Reinstall the sensors using:
+Reinstall the sensors using:
 
 ```
 --set clusterID=225c8bec-1a85-4099-ac8e-144b81ac99e8
@@ -65,12 +61,14 @@ clusterId
 
 This preserves historical monitoring data and merges it with new data.
 
-#### Bypassing Certificate Verification (Optional)
+## Bypassing Certificate Verification (Optional)
+
+{% hint style="warning" %}
+Carefully assess this option for production environments.
+{% endhint %}
 
 If using a self-signed certificate, modify the installation snippet:
 
 ```
 --set tlsInsecureSkipVerify=true
 ```
-
-**Note:** Carefully assess this option for production environments.

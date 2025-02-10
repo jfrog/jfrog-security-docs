@@ -1,7 +1,5 @@
 # Quick Start
 
-##
-
 ## Detecting Active Artifacts in Runtime
 
 Detect artifacts in Artifactory that are currently running in runtime, assess their security status, and take necessary actions to mitigate potential risks.
@@ -48,7 +46,7 @@ Gain comprehensive visibility into runtime images by tracing them back to their 
 
 #### **Accessing Image Information**
 
-Image information includes number of associated workloads, cluster and namespace details, image path in Artifactory, associated deployer information, and list of vulnerabilities
+Image information includes a number of associated workloads, cluster and namespace details, image path in Artifactory, associated deployer information, and a list of vulnerabilities
 
 1. From the JFrog Platform, under **Runtime**, select **Live Assessment**.
 2. In the **Live Assessment** screen, click on the **Images** tab to view all detected images.
@@ -70,7 +68,7 @@ Inspect workloads in your runtime environment with Runtime Live Assessment to mo
 
 **Before You Begin:**
 
-* It is essential you have Runtime Impact (Controller + Sensors)
+* It is essential you have Runtime **Impact** (Controller + Sensors)
 
 1. From the JFrog Platform, under **Runtime**, select **Live Assessment**.
 2. In the **Live Assessment** screen, click on the **Processes** tab to view all detected workloads.

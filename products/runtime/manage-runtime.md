@@ -22,6 +22,65 @@ The Sensor Management capability includes a convenient feature that allows users
 5. Copy and execute the provided snippet from a jump server where the `kubectl` context is set to the required cluster.
 6. Once the sensor is deployed successfully, a new entry indicating the sensor deployment will appear under Sensor Management.
 
+## **Enabling and Disabling Runtime Sensors**
+
+Sensors are deployed as a DaemonSet and installed by default on each cluster’s nodes. After installation using Helm, runtime sensors can be disabled on demand.
+
+| **Value**             | **Description** | **Example**                                                        |
+| --------------------- | --------------- | ------------------------------------------------------------------ |
+| <`node_name>`         | A single node   | `kubectl label nodes my_node disable_jfrog_runtime=true`           |
+| <`node1 node2 node3>` | A list of nodes | `kubectl label nodes node1 node2 node3 disable_jfrog_runtime=true` |
+| `--all`               | All nodes       | `kubectl label nodes --all disable_jfrog_runtime=true`             |
+
+**Disable Runtime Sensors**&#x20;
+
+&#x20;To disable runtime sensors, run the following command:
+
+```
+kubectl label nodes <nodes> disable_jfrog_runtime=true
+```
+
+**Enable Runtime Sensors**
+
+To enable runtime sensors that were previously disabled, run:
+
+```
+kubectl label nodes <nodes> disable_jfrog_runtime-
+```
+
+#### Uninstalling Sensors
+
+To uninstall sensors from a cluster, set the `kubectl` context to the desired cluster and run:
+
+```
+helm uninstall jf-sensors -n <Namespace>
+```
+
+#### Reinstalling Runtime Sensors
+
+To reinstall sensors:
+
+1. Reapply the installation snippet.
+2. If updating, the sensors will upgrade automatically.
+3. If sensors were uninstalled, reinstalling will generate a new Cluster ID. To preserve data, retrieve the Cluster ID before uninstalling:
+
+```
+kubectl -n <NAMESPACE> get configmaps runtime-config-configmap -o custom-columns='clusterId:data.clusterId'
+```
+
+**Output Example:**
+
+```
+clusterId
+225c8bec-1a85-4099-ac8e-144b81ac99e8
+```
+
+4. Reinstall the sensors using:
+
+```
+--set clusterID=225c8bec-1a85-4099-ac8e-144b81ac99e8
+```
+
 ## **View Cluster Status**
 
 The Runtime Sensor Management **Cluster Inventory** allows users to view the status of clusters monitored by JFrog Runtime.

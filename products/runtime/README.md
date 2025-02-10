@@ -2,6 +2,13 @@
 
 JFrog Runtime provides in-depth security and operational insights for Kubernetes cluster environments. It detects vulnerabilities, integrity violations, and untrusted registries in real time. By continuously monitoring the runtime state of workloads and containers, it enables security and DevOps teams to identify and mitigate threats dynamically. The platform integrates with JFrog Artifactory and Xray, allowing for a comprehensive security posture that spans both pre-deployment and live runtime environments.
 
+## Before You Begin
+
+It is essential you have:
+
+* Artifactory version 7.77.20
+* Xray version 3.104.08
+
 ## **How JFrog Runtime Collects Information**
 
 JFrog Runtime acquires its data through two primary mechanisms: the JFrog Platform and dedicated sensors deployed within customer clusters.

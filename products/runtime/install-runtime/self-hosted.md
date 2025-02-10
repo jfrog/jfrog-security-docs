@@ -1,14 +1,6 @@
-# Install Runtime
+# Self-Hosted
 
-## Prerequisites
-
-Before proceeding with the installation, ensure the following requirements are met:
-
-* **Kubernetes Cluster Access:** Ensure your `kubectl` and `helm` clients can access the Kubernetes cluster where you intend to install the Runtime Service.
-* **Ingress Controller:** JFrog officially supports the Nginx controller configured with TLS. Other ingress controllers may work if they support GRPC communication.
-* **JFrog Platform:** JFrog Runtime Security must be installed on a pre-existing JFrog platform.
-
-### Step 1: Prepare the JFrog Platform
+### Prepare the JFrog Platform
 
 #### Before Installing
 
@@ -56,7 +48,7 @@ ingress:
         - <add-your-public-domain-here>
 ```
 
-### Step 2: Install the Runtime Service
+### Step 2: Install the Runtime Service (SH)
 
 #### Create a Configuration File
 
@@ -98,7 +90,7 @@ Run the following command to install the runtime service:
 helm upgrade --install runtime -f runtime-values.yaml
 ```
 
-### Step 3: Install Runtime Sensors
+### Step 3: Install Runtime Sensors (SaaS + SH)
 
 The JFrog Runtime has two installation options depending on what you have purchased:
 
@@ -127,39 +119,6 @@ oc adm policy add-scc-to-user privileged system:serviceaccount:jfrog-runtime:jf-
 ```
 
 This ensures the Runtime Sensor has the required security context in OpenShift.
-
-#### Uninstalling Sensors
-
-To uninstall sensors from a cluster, set the `kubectl` context to the desired cluster and run:
-
-```
-helm uninstall jf-sensors -n <Namespace>
-```
-
-#### Reinstalling Runtime Sensors
-
-To reinstall sensors:
-
-1. Reapply the installation snippet.
-2. If updating, the sensors will upgrade automatically.
-3. If sensors were uninstalled, reinstalling will generate a new Cluster ID. To preserve data, retrieve the Cluster ID before uninstalling:
-
-```
-kubectl -n <NAMESPACE> get configmaps runtime-config-configmap -o custom-columns='clusterId:data.clusterId'
-```
-
-**Output Example:**
-
-```
-clusterId
-225c8bec-1a85-4099-ac8e-144b81ac99e8
-```
-
-4. Reinstall the sensors using:
-
-```
---set clusterID=225c8bec-1a85-4099-ac8e-144b81ac99e8
-```
 
 This preserves historical monitoring data and merges it with new data.
 

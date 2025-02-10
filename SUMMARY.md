@@ -130,7 +130,7 @@
       * [How to Compare and Select the Best OSS Package for Your Project](products/catalog/how-tos/how-to-compare-and-select-the-best-oss-package-for-your-project.md)
 * [Developers](developers/README.md)
   * [CLI for JFrog Security](developers/cli-for-jfrog-security/README.md)
-    * [Download Updates for Xray's Database](developers/cli-for-jfrog-security/download-updates-for-xrays-database.md)
+    * [Download Updates for Xray's Vulnerability Database](developers/cli-for-jfrog-security/download-updates-for-xrays-vulnerability-database.md)
     * [Scan your code dependencies](developers/cli-for-jfrog-security/scan-your-code-dependencies.md)
     * [Scan your Binaries](developers/cli-for-jfrog-security/scan-your-binaries.md)
     * [Enrich your SBOM JSONs & XMLs](developers/cli-for-jfrog-security/enrich-your-sbom-jsons-and-xmls.md)

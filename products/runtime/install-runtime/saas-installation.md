@@ -1,5 +1,20 @@
 # SaaS Installation
 
+## Before You Begin
+
+It is essential you have:
+
+* Artifactory version 7.77.20
+* Xray version 3.104.08
+
+## System Requirements <a href="#kernel-operating-systems-support" id="kernel-operating-systems-support"></a>
+
+|                      |                                   |                   |
+| -------------------- | --------------------------------- | ----------------- |
+| **Technology**       | **Supported**                     | **Not Supported** |
+| Container technology | Kubernetes 1.21+, OpenShift 1.21+ |                   |
+| Kernel OS            | Linux Kernel 4.18+                | Windows Kernel    |
+
 ## Install Runtime Sensors
 
 The JFrog Runtime has two installation options depending on what you have purchased:

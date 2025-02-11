@@ -20,6 +20,7 @@
     * [Developer Use Cases](get-started/guides/developer-use-cases.md)
 * [Products](products/README.md)
   * [Curation](products/curation/README.md)
+    * [Overview](products/curation/overview.md)
     * [Supported Technologies](products/curation/supported-technologies.md)
     * [Features and Capabilities](products/curation/features-and-capabilities.md)
     * [Configure Curation](products/curation/configure-curation/README.md)

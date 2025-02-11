@@ -17,7 +17,7 @@ Xray’s policies focus on:\
 ✔ **Compliance** – Enforcing open-source license policies and regulatory standards.\
 ✔ **Operational Risk** – Managing outdated, deprecated, or unmaintained dependencies.
 
-These policies **automate decision-making** by triggering **violations, alerts, and preventive actions** whenever a policy rule is met.
+These policies **automate decision-making** by triggering **violations, alerts, and preventive actions** (e.g. blocking actions) whenever a policy rule is met.
 
 ***
 
@@ -27,24 +27,25 @@ These policies **automate decision-making** by triggering **violations, alerts, 
 
 Organizations create policies based on **security, compliance, and risk requirements**. Policies include:
 
-* **Rules** – Conditions that trigger violations (e.g., CVE severity, banned licenses).
-* **Actions** – Automated responses when a rule is met (e.g., block downloads, send alerts).
+* **Rules** – Conditions that trigger violations (e.g. CVE severity, banned licenses).
+* **Actions** – Automated responses when a rule is met (e.g. block downloads, send alerts).
 
 #### **2. Apply Policies to Watches**
 
 A **Watch** is a security scope that monitors:
 
-* **Repositories** (e.g., scanning all artifacts in a Maven repository).
-* **Builds** (e.g., ensuring CI/CD builds are free of vulnerabilities).
-* **Release Bundles** (e.g., verifying security before software distribution).
+* **Repositories**&#x20;
+* **Builds**&#x20;
+* **Release Bundles**
+* **Projects**&#x20;
 
-Policies are **linked to Watches** to enforce security at specific stages of the **SDLC**.
+Policies are **linked to Watches** to enforce rules at specific stages of the **SDLC**.
 
 #### **3. Automated Enforcement**
 
 When an artifact **matches a policy rule**, Xray automatically:\
 **Creates a violation** – Flags a security, compliance, or risk issue.\
-**Trigger alerts** – Notifies developers and security teams via email, Jira, or Slack.
+**Trigger actions** –  e.g. notify developers and security teams via email or Jira.
 
 ***
 
@@ -54,7 +55,7 @@ Xray provides three primary **policy types**, each serving a **different aspect 
 
 #### **1. Security Policies**
 
-Security policies help teams detect and **prevent vulnerabilities from entering software** by scanning artifacts and dependencies.\
+A Security Rule allows you to create a set of rules around security vulnerabilities \
 **Common Security Rules:**\
 Block artifacts with **critical CVEs** (Common Vulnerabilities and Exposures).\
 Prevent downloads of **malicious packages**.\
@@ -65,7 +66,7 @@ Enforce **Exploitability Awareness** _(available in JFrog Advanced Security)_ �
 
 #### **2. Compliance Policies**
 
-Compliance policies enforce **open-source licensing regulations** and **corporate software usage policies**.\
+A license Rule allows you to create a set of rules around license compliance. There are three possible criteria\
 **Common Compliance Rules:**\
 **Banned License Enforcement** – Prevents the use of **GPL-licensed** components in proprietary software.\
 **License Allowlist** – Restricts usage to **approved open-source licenses**.\
@@ -87,12 +88,11 @@ Operational risk policies **assess the reliability and maintainability** of soft
 
 SDLC policies are enforced **throughout the software lifecycle**:
 
-| **SDLC Phase**                       | **How Xray Applies Policies**                              | **Example Use Case**                                                              |
-| ------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **Builds**                           | Xray scans dependencies in Builds                          | A **build fails** due to a **critical CVE** in an npm package.                    |
-| **Artifact Storage (Repositories)**  | Prevents risky artifacts from being stored in Artifactory. | A **Maven package with a banned license** is **blocked from upload**.             |
-| **Pre-Deployment (Release Bundles)** | Ensures software is secure before deployment.              | A **Docker image** with a **vulnerable base layer** is **rejected from staging**. |
-| **Production Monitoring**            | Detects emerging security threats in deployed software.    | A deployed component becomes vulnerable due to a **newly discovered CVE**.        |
+| SDLC Phase                           | Example Use Case                                                                                                |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| **Artifact Storage (Repositories)**  | A **Maven package with a banned license** is **blocked from upload**.                                           |
+| **Builds**                           | A **build fails** due to a **critical CVE** in an npm package.                                                  |
+| **Pre-Deployment (Release Bundles)** | A **Docker image within a Release Bundle** with a **vulnerable base layer** will be blocked from distribution.  |
 
 ***
 
@@ -100,12 +100,14 @@ SDLC policies are enforced **throughout the software lifecycle**:
 
 \
 **Automate CI/CD Enforcement** – Use Xray to **fail builds** that introduce security risks.\
-**Define Policy Scopes Carefully** – Assign policies **to relevant repositories and builds**. **Enable Continuous Monitoring** – Keep policies **updated with the latest threat intelligence**.\
+**Define Policy Scopes Carefully** – Assign policies **to relevant repositories, builds and release bundles**. \
+Block Promotion/Distribution of Release Bundles - \
+**Enable Continuous Monitoring** – Keep policies **updated with the latest threat intelligence**.\
 **Use Advanced Security Features** – Utilize **Exploitability Awareness and Applicability Scanning** _(available in JFrog Advanced Security)_ to **reduce false positives**.
 
 ***
 
-Would you like a **step-by-step guide on creating a Policy** in Xray? See
+Would you like a **step-by-step guide on creating a Policy** in Xray? See&#x20;
 
 \
 

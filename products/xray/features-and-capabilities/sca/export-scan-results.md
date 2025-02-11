@@ -18,9 +18,10 @@ You can export scan results for multiple scenarios, including:
 
 ### **How to Export Scan Results**
 
-1. Navigate to the **scan result screen** in Xray.
-2. Click the **\[...] (More Options) button**.
-3. Select **"Export Scan Data"** and choose the desired **export type**.
+1. Navigate to the **Scans List** in Xray.
+2. Select a resource version scan from the list.
+3. Click the **\[...] (More Options) button**.
+4. Select **"Export Scan Data"** and choose the desired **export type**.
 
 ***
 

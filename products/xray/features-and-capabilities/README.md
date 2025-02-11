@@ -112,21 +112,5 @@ Seamlessly integrates with **CI/CD tools** to scan software **before deployment*
 * **Automated Build Scanning:** Prevents vulnerable builds by indicating that the build job should fail.
 
 **Why it matters:**\
-Shifts security **left in the development lifecycle**, reducing remediation costs.
-
-***
-
-### [**API & Webhooks for Custom Security Automation**](broken-reference)
-
-**What it does:**\
-Provides **extensive APIs and webhook support** for integrating Xray into custom security workflows.
-
-**Key Capabilities:**
-
-* **REST APIs:** Automate scans, generate reports, and retrieve security insights.
-* **Custom Webhooks:** Trigger actions on security violations (e.g., Slack notifications, SIEM alerts).
-* **Custom Integrations:** Connect with third-party security tools and threat intelligence feeds.
-
-**Why it matters:**\
-Enables **automated security monitoring and response**.
+Secure the CI/CD Pipeline and reduce remediation costs.&#x20;
 

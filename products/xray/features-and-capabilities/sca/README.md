@@ -12,6 +12,6 @@ JFrog Xray is a **universal SCA solution** that integrates **natively with JFrog
 
 Xray scans software components against its **continuously updated vulnerability database**, including:
 
-* **Public CVE databases** (National Vulnerability Database, MITRE)
+* **Public CVE databases** (National Vulnerability Database, MITRE, and more)
 * **JFrog Security Research Team’s enriched vulnerability insights**
 * **Malicious package detection for compromised open-source libraries**

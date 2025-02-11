@@ -48,6 +48,7 @@
       * [How to Utilize JFrog Catalog for Curation](products/curation/how-tos/how-to-utilize-jfrog-catalog-for-curation.md)
       * [How to Manage Virtual Repository Behavior and Curation in JFrog Xray](products/curation/how-tos/how-to-manage-virtual-repository-behavior-and-curation-in-jfrog-xray.md)
   * [Xray](products/xray/README.md)
+    * [Overview](products/xray/overview.md)
     * [AsafC Test](products/xray/asafc-test.md)
     * [Glossary](products/xray/xray-concepts.md)
     * [Supported Technologies](products/xray/supported-technologies.md)

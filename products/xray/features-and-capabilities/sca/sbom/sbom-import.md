@@ -23,3 +23,9 @@ Xray allows you to import SBOM's into the platform - allowing multiple use cases
 1. add the ".cdx.json" or ".cdx.xml" SBOM file to the scanned artifact (Docker,Archive etc.)
 2. Done! the refernced information in the SBOM will now be added to your artifact scan results
 
+
+
+## How to Enrich SBOM with Data using the JFrog CLI
+
+Go to [Enrich your SBOM ](../../../../../developers/cli-for-jfrog-security/enrich-your-sbom-jsons-and-xmls.md)
+

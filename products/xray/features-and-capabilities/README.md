@@ -1,14 +1,12 @@
 # Features and Capabilities
 
-JFrog Xray is a **Software Composition Analysis (SCA) and security tool** that enables organizations to secure their software supply chain by detecting vulnerabilities, license compliance issues, and operational risks. Below is an in-depth explanation of its key features.
-
-### &#x20;[**Software Composition Analysis (SCA)**](sca/)
+### [**Software Composition Analysis (SCA)**](sca/)
 
 **What it does:**\
-Xray performs deep analysis of **artifacts, dependencies, and software components** to identify security vulnerabilities and compliance violations.
+Xray performs deep analysis of **artifacts, builds, and Release Bundles** to identify security issues, license compliance, and operational risk.
 
 **Why it matters:**\
-Developers and security teams can proactively identify vulnerabilities in open-source and proprietary code before releasing software.&#x20;
+Organizations need to proactively identify vulnerabilities, license compliance, and code quality in their open-source and proprietary code before releasing software.&#x20;
 
 ***
 
@@ -24,16 +22,16 @@ For **developers and DevOps engineers**, JFrog Xray provides CLI-based security 
 ### **Deep Recursive Scanning**
 
 **What it does:**\
-Unlike traditional scanners, Xray **recursively scans all layers** of software artifacts, including **zip, tar, Docker images, and compiled binaries**.
+Unlike traditional scanners, Xray **recursively scans all layers** of software artifacts.
 
 **Key Capabilities:**
 
 * **File-based Analysis:** Extracts and scans all files within an artifact.
-* **Recursive Layer Inspection:** Ensures no hidden vulnerabilities exist at any layer.
-* **OS and Container Security:** Scans **Docker, OCI, Debian, RPM, and Alpine packages**.
+* **Recursive Layer Inspection:** Ensures all artifact layers are covered.
+* **OS and Container Security:** Scans multiple package types. For the full list, see [Supported Technologies](../supported-technologies.md).&#x20;
 
 **Why it matters:**\
-Provides **greater visibility into software components**, ensuring no vulnerabilities are overlooked.
+Provides **greater visibility into software components.**
 
 ***
 
@@ -56,10 +54,10 @@ Reduces false positives and **prioritizes vulnerabilities** that pose the most r
 ### [**Policy-Based Security Enforcement**](sdlc-policy-mangement/)
 
 **What it does:**\
-Allows organizations to define security and compliance policies that enforce governance across software development and deployment.
+Allows organizations to define security, compliance, and operational risk policies that enforce governance across software development and deployment.
 
 **Why it matters:**\
-Automatically **blocks non-compliant or vulnerable artifacts** before they reach production.
+Trigger automatic actions regarding security issues, compliance, and operational risk before they progress in the SDLC process.&#x20;
 
 ***
 
@@ -76,10 +74,10 @@ Ensures that **unmaintained** software does not introduce security risks.
 ### [**Malicious Package Detection**](./#malicious-package-detection)
 
 **What it does:**\
-Identifies and blocks **intentionally harmful** open-source packages and machine-learning models.
+Identifies **intentionally harmful** open-source packages and machine-learning models.
 
 **Why it matters:**\
-Prevents **supply chain attacks** caused by malicious dependencies.
+Prevents **supply chain attacks** caused by malicious components.
 
 ***
 
@@ -96,23 +94,22 @@ Provides **full visibility into software supply chains** for compliance and secu
 ### [**Advanced Reporting**](reports.md)
 
 **What it does:**\
-Generates **detailed security and compliance reports** to track vulnerabilities, license violations, and risk exposure.
+Generates **detailed security, compliance, and operational risk reports** to track vulnerabilities, license violations, and risk exposure.
 
 **Why it matters:**\
-Helps **executives and security teams** track security posture over time.
+Helps **organizations** track security posture over time.
 
 ***
 
-### [**Integration with CI/CD Pipelines**](broken-reference)
+### [ **CI/CD Pipelines**](broken-reference) **Integration**
 
 **What it does:**\
 Seamlessly integrates with **CI/CD tools** to scan software **before deployment**.
 
 **Key Capabilities:**
 
-* **Jenkins, GitHub Actions, GitLab CI, Azure DevOps Integration.**
-* **Automated Build Scanning:** Prevents vulnerable builds from being promoted.
-* **Fail Fast Mechanisms:** Stops insecure components from entering production.
+* **Jenkins, GitHub Actions, GitLab CI, Azure DevOps Integration, Bamboo, TeamCity, and the JFrog CLI.**&#x20;
+* **Automated Build Scanning:** Prevents vulnerable builds by indicating that the build job should fail.
 
 **Why it matters:**\
 Shifts security **left in the development lifecycle**, reducing remediation costs.

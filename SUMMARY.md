@@ -123,7 +123,7 @@
     * [Manage Runtime](products/runtime/manage-runtime.md)
     * [How-Tos](products/runtime/how-tos/README.md)
       * [Reducing Noise in Risk Management](products/runtime/how-tos/reducing-noise-in-risk-management.md)
-      * [Faster Window Exposure Closing](products/runtime/how-tos/faster-window-exposure-closing.md)
+      * [Fast Exposure Window Closing](products/runtime/how-tos/fast-exposure-window-closing.md)
       * [Strengthening Runtime Trust Through Image Verification](products/runtime/how-tos/strengthening-runtime-trust-through-image-verification.md)
   * [Catalog](products/catalog/README.md)
     * [Supported Technologies](products/catalog/supported-technologies.md)

@@ -9,11 +9,10 @@ It is essential you have:
 
 ## System Requirements <a href="#kernel-operating-systems-support" id="kernel-operating-systems-support"></a>
 
-|                      |                                   |                   |
-| -------------------- | --------------------------------- | ----------------- |
-| **Technology**       | **Supported**                     | **Not Supported** |
-| Container technology | Kubernetes 1.21+, OpenShift 1.21+ |                   |
-| Kernel OS            | Linux Kernel 4.18+                | Windows Kernel    |
+| Technology           | Supported                         | Not Supported  |
+| -------------------- | --------------------------------- | -------------- |
+| Container technology | Kubernetes 1.21+, OpenShift 1.21+ |                |
+| Kernel OS            | Linux Kernel 4.18+                | Windows Kernel |
 
 ## Install Runtime Sensors
 

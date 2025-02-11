@@ -1,5 +1,14 @@
 # Install Runtime
 
+## Before You Begin
+
+* It is essential you have:
+  * Artifactory version 7.77.20
+  * Xray version 3.104.08
+* Ensure your `kubectl` and `helm` clients can access the Kubernetes cluster where you intend to install the Runtime Service.
+* JFrog officially supports the Nginx controller configured with TLS. Other ingress controllers may work if they support GRPC communication.
+* JFrog Runtime Security must be installed on a pre-existing JFrog platform.
+
 ## System Requirements for Self-Hosted Installation
 
 Type of supported database: Postgres16
@@ -26,8 +35,3 @@ Nodes are considered to run an average of 100 pods.
 | ---------- | --------- |
 | 1.21+      | 1.21+     |
 
-Before proceeding with the installation, ensure the following requirements are met:
-
-* **Kubernetes Cluster Access:** Ensure your `kubectl` and `helm` clients can access the Kubernetes cluster where you intend to install the Runtime Service.
-* **Ingress Controller:** JFrog officially supports the Nginx controller configured with TLS. Other ingress controllers may work if they support GRPC communication.
-* **JFrog Platform:** JFrog Runtime Security must be installed on a pre-existing JFrog platform.

@@ -1,24 +1,7 @@
 # Scanning Source Code Repositories
 
-JFrog **Frogbot** is a powerful Git bot designed to scan your Git repositories for security vulnerabilities, enhancing your software's security at the development stage. Frogbot operates by scanning pull requests as soon as they are opened, but before they are merged. This proactive approach helps identify and notify developers of potential vulnerabilities, preventing security issues from being introduced into the codebase.
+JFrog **Frogbot** is an advanced Git-based bot designed to elevate software development security by automatically scanning source code in Git repositories for various vulnerabilities. Acting as a vigilant **project gatekeeper**, Frogbot continuously monitors your code to detect potential security threats.
 
-In addition to scanning pull requests in real-time, Frogbot periodically scans your Git repository and automatically creates pull requests with fixes for detected vulnerabilities, making vulnerability management easier and more efficient.
+Frogbot conducts thorough scans that uncover a range of concerns, including Static Application Security Testing (SAST) vulnerabilities, Software Composition Analysis (SCA) findings, secrets exposure, and CVE Contextual Analysis. When new security issues are identified in pull requests, Frogbot proactively comments to alert developers, ensuring that only secure code is merged. Furthermore, it can automatically generate pull requests with proposed fixes for SCA vulnerabilities, streamlining the remediation process and helping teams maintain secure and compliant dependencies.
 
-##
-
-## Supported Git Providers
-
-* **Azure Repos**
-* **Bitbucket Server**
-* **GitHub**
-* **GitLab**
-
-#### Requirements for Advanced Features
-
-* **SAST, Vulnerability Contextual Analysis, Secrets Detection, and Infrastructure as Code scans** require the JFrog Advanced Security Package.
-
-By integrating JFrog Frogbot into your development process, you can ensure that security is maintained at every stage, from dependency management to infrastructure configurations, all while streamlining vulnerability resolution.
-
-
-
-4o mini
+Integrating Frogbot into your development lifecycle allows you to proactively enforce security policies, thereby protecting your project from the outset. While Frogbot plays a critical role in maintaining security at the repository level, it is advisable for developers to also scan their code within their IDEs before committing changes. This complementary approach enables teams to identify and address vulnerabilities early, leading to a more robust security posture.

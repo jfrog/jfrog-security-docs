@@ -1,89 +1,319 @@
 # Configure Frogbot
 
-The `frogbot-config.yml` file is a configuration file that allows you to define project-specific settings for Frogbot's scanning process. It plays an essential role when you want to manually control the structure of your project or specify specific package manager commands needed to list the project's dependencies. This file contains details about the repository's directory structure and can be used to configure how Frogbot scans and processes your project's dependencies.
+## Using GitLab CI
 
-## **Create the frogbot-config.yml File**
+### **Prepare GitLab to Work with Frogbot**
 
-The `frogbot-config.yml` file encompasses project-related configurations used by Frogbot's scanning. This includes details about the repository's directory structure and may additionally encompass package manager commands necessary for Frogbot to list the project's dependencies.
+#### **Step 1: Provide Connection Details**
 
-1. Create a new file named `frogbot-config.yml` in the root directory of your repository.
-2. Define your project configurations, including directory paths and package manager commands.
+In your GitLab repository settings, save the following JFrog connection details as repository secrets:
 
-## **Determine if the frogbot-config.yml File is Needed**
+| **Purpose**         | **Secret Name**   | **Notes**                                                                              |
+| ------------------- | ----------------- | -------------------------------------------------------------------------------------- |
+| JFrog Platform URL  | `JF_URL`          |                                                                                        |
+| JFrog Access Token  | `JF_ACCESS_TOKEN` | Alternatively, use`JF_USER + JF_PASSWORD`. Ensure tokens are not set as protected.     |
+| GitLab Access Token | `USER_TOKEN`      | Ensure it has the required permissions (api, read\_api, read\_user, read\_repository). |
 
-The file isn't mandatory. In most cases, Frogbot can understand the structure of the projects in the repository and list the project's dependencies without the file. If your project doesn't use a `frogbot-config.yml` file, all the configuration Frogbot requires should be provided as variables as part of the Frogbot workflows.
+#### **2. Add Frogbot to Your .gitlab-ci.yml File**
 
-1. Assess if your project has complex dependencies or if you require custom configurations.
-2. If no custom configurations are needed, you can skip the `frogbot-config.yml` file and provide configurations via Frogbot workflows instead.
+Add the following job to your `.gitlab-ci.yml` file:
 
-## **Configure frogbot-config.yml for Repository Scanning**
+{% code overflow="wrap" %}
+```yaml
+frogbot-scan:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+      when: manual
+      variables:
+        FROGBOT_CMD: "scan-pull-request"
+        JF_GIT_BASE_BRANCH: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME
+    - if: $CI_COMMIT_BRANCH $CI_DEFAULT_BRANCH || $CI_PIPELINE_SOURCE == "schedule"
+      variables:
+        FROGBOT_CMD: "scan-repository"
+        JF_GIT_BASE_BRANCH: $CI_COMMIT_BRANCH
+  variables:
+    JF_URL: $JF_URL
+    JF_ACCESS_TOKEN: $JF_ACCESS_TOKEN
+    JF_GIT_TOKEN: $USER_TOKEN
+    JF_GIT_PROVIDER: gitlab
+    JF_GIT_OWNER: $CI_PROJECT_NAMESPACE
+    JF_GIT_REPO: $CI_PROJECT_NAME
+    JF_GIT_PULL_REQUEST_ID: $CI_MERGE_REQUEST_IID
+    JF_INSTALL_DEPS_CMD: ""
+  script:
+    - |
+      getFrogbotScriptPath=$(if [ -z "$JF_RELEASES_REPO" ]; then echo "https://releases.jfrog.io"; else echo "${JF_URL}/artifactory/${JF_RELEASES_REPO}"; fi)
+      curl -fLg "$getFrogbotScriptPath/artifactory/frogbot/v2/[RELEASE]/getFrogbot.sh" | sh
+      ./frogbot ${FROGBOT_CMD}
+```
+{% endcode %}
 
-Frogbot relies on the project's descriptor files, such as `package.json` and `pom.xml`, to identify the project's dependencies. It scans the repository for these descriptor files and utilizes the appropriate package manager, such as npm or Maven, to compile a list of dependencies for the project. If you desire manual control over the project structure or the package manager commands, you can achieve this by creating a `frogbot-config.yml` file. In the provided example, we outline two subprojects located at `path/to/project-1` and `path/to/project-2` for Frogbot to include in its scanning process.
+### Setup Frogbot Using Jenkins
 
-1. Identify your project descriptor files (e.g., `package.json`, `pom.xml`, etc.).
-2. If needed, configure Frogbot to scan specific directories by defining the correct paths in the `frogbot-config.yml` file.
-3. Customize the package manager commands in the `frogbot-config.yml` if necessary.
+#### **1. Install the Required Jenkins Plugin**
+
+1. Navigate to **Manage Jenkins** > **Manage Plugins** from your Jenkins dashboard.
+2. Select the **Available** tab and search for **Generic Webhook Trigger** .
+3. Install the plugin. Learn more about the plugin.
+
+#### **2. Set Up a Webhook**
+
+You need to configure a webhook for your Git provider to trigger the Jenkins job for Frogbot.
+
+**GitHub**
+
+* Go to your repository **Settings** > **Webhooks** > **Add webhook** .
+* Set the URL to: `https://[your-jenkins-domain]/generic-webhook-trigger/invoke`.
+
+**Bitbucket Server**
+
+* Go to **Repository settings** > **Webhooks** > **Create new webhook** .
+* Set the webhook URL: `https://[your-jenkins-domain]/generic-webhook-trigger/invoke`.
+
+**GitLab**
+
+* Go to **Project Settings** > **Webhooks** > **Add webhook** .
+* Set the URL: `https://[your-jenkins-domain]/generic-webhook-trigger/invoke`.
+* Enable **Merge request events** .
+
+**Azure Repos**
+
+* Follow this guide to set up the webhook using the same URL pattern: `https://[your-jenkins-domain]/generic-webhook-trigger/invoke`.
+
+#### Configuring Frogbot for Jenkins
+
+**API Token for Webhooks**
+
+To ensure your Frogbot webhook only triggers specific Jenkins jobs:
+
+1. Generate a **dedicated API token** in your Git provider.
+2. Add this token to the webhook URL: `https://[your-jenkins-domain]/generic-webhook-trigger/invoke?token=[your-token]`. Refer to the Jenkins documentation for more details on triggering specific jobs.
+
+**Jenkins Credentials**
+
+Configure the following credentials as **Secret Text** in Jenkins:
+
+| **Purpose**        | **Secret Name**   | **Notes**                                                                          |
+| ------------------ | ----------------- | ---------------------------------------------------------------------------------- |
+| JFrog Platform URL | `JF_URL`          |                                                                                    |
+| JFrog Access Token | `JF_ACCESS_TOKEN` | Alternatively, use`JF_USER + JF_PASSWORD`. Ensure tokens are not set as protected. |
+| Git Access Token   | `JF_GIT_TOKEN`    | Git access token with read/write permissions.                                      |
+
+Ensure your Jenkins agent has the necessary package managers (e.g., npm, Go, Python) installed.
+
+#### Jenkins Pipeline Job Configuration
+
+**Generic Webhook Trigger Setup**
+
+Enable **Generic Webhook Trigger** for your Jenkins job and use the following **Pipeline script template** :
 
 ```yaml
-yamlCopyEdit- params:
-    git:
-      repoName: my-git-repo-name
-      branches:
-        - master
-    scan:
-      projects:
-        - workingDirs:
-            - path/to/npm/project-1
-            - path/to/npm/project-2
+// Define your CRON schedule here
+CRON_SETTINGS = '''0 0 * * *''' // Runs once a day at midnight
+
+pipeline {
+    agent any
+
+    triggers {
+        cron(CRON_SETTINGS)
+        GenericTrigger(
+            genericVariables: [
+                // Define your Git provider-specific variables here
+                // Uncomment and customize as needed
+            ],
+            causeString: 'Triggered by Pull Request',
+            printContributedVariables: false,
+            token: 'MyJobToken'
+        )
+    }
+
+    environment {
+        JF_GIT_PROVIDER = "CHOOSE_ONE_OF_THE_FOLLOWING" // Select your git provider
+        JF_URL = credentials("JF_URL")
+        JF_ACCESS_TOKEN = credentials("JF_ACCESS_TOKEN")
+        JF_GIT_TOKEN = credentials("JF_GIT_TOKEN")
+    }
+
+    stages {
+        stage('Check Trigger') {
+            steps {
+                script {
+                    if (env.TRIGGER_KEY != null && env.TRIGGER_KEY != 'synchronize') {
+                        error('Invalid trigger event for PR. Aborting pipeline.')
+                    }
+                }
+            }
+        }
+
+        stage('Download Frogbot') {
+            steps {
+                script {
+                    if (env.JF_RELEASES_REPO == "") {
+                        sh """ curl -fLg "https://releases.jfrog.io/artifactory/frogbot/v2/[RELEASE]/getFrogbot.sh" | sh """
+                    } else {
+                        sh """ curl -fLg "$env.JF_URL/artifactory/$env.JF_RELEASES_REPO/artifactory/frogbot/v2/[RELEASE]/getFrogbot.sh" | sh """
+                    }
+                }
+            }
+        }
+
+        stage('Scan Pull Request or Repository') {
+            steps {
+                script {
+                    if (env.TRIGGER_KEY != null) {
+                        sh "./frogbot scan-pull-request"
+                    } else {
+                        sh "./frogbot scan-repo"
+                    }
+                }
+            }
+        }
+    }
+}
 ```
 
-## **Use One frogbot-config.yml File for Multiple Git Repositories**
+## Using Azure Pipelines
 
-You have the option of using a single `frogbot-config.yml` file for scanning multiple Git repositories in the same organization if one of the following platforms is used:
+## **Before You Begin**
 
-* GitHub with Jenkins or JFrog Pipelines
-* Bitbucket Server
-* Azure Repos\
-  The file can be placed in any repository if it's in the same organization as all the repositories referenced in the file. Here's an example of a `frogbot-config.yml` referencing multiple repositories.
+Configure the following environment variables:
 
-1. Identify the Git repositories to be scanned in your organization.
-2. Place the `frogbot-config.yml` file in one of the repositories within the organization.
-3. Reference other repositories in the `frogbot-config.yml` file by specifying their names and branches.
+| **Purpose**        | **Secret Name**   | **Notes**                                                                          |
+| ------------------ | ----------------- | ---------------------------------------------------------------------------------- |
+| JFrog Platform URL | `JF_URL`          |                                                                                    |
+| JFrog Access Token | `JF_ACCESS_TOKEN` | Alternatively, use`JF_USER + JF_PASSWORD`. Ensure tokens are not set as protected. |
+| Git Access Token   | `JF_GIT_TOKEN`    | Git access token with read/write permissions.                                      |
+
+### **Setup**
+
+1. **Navigate to Azure Pipelines**\
+   Open your Azure Pipelines project and add a new pipeline.
+2. **Select Azure Repos Git as the Code Source**\
+   Choose the repository where the Frogbot pipeline will reside.
+3. **Select Starter Pipeline**\
+   Name the pipeline `frogbot`.
+4. **Configure the Pipeline**\
+   Use the template below to set up the pipeline configuration. Ensure that the mandatory variables are properly edited.
+
+#### **Pipeline Configuration Example**
 
 ```yaml
-yamlCopyEdit- params:
-    git:
-      repoName: repo-1
-      branches:
-        - master
-- params:
-    git:
-      repoName: repo-2
-      branches:
-        - master
-        - dev
-- params:
-    git:
-      repoName: repo-3
-      branches:
-        - master
-    scan:
-      projects:
-        - pipRequirementsFile: requirements.txt
+schedules:
+  - cron: '0 0 * * *'
+    displayName: Daily midnight build
+    branches:
+      include:
+        - main
+
+pr: none
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+    # Predefined Azure Pipelines variables. There's no need to modify them.
+    JF_GIT_PROJECT: $(System.TeamProject)
+    JF_GIT_REPO: $(Build.Repository.Name)
+    JF_GIT_API_ENDPOINT: $(System.CollectionUri)
+    JF_GIT_BASE_BRANCH: $(Build.SourceBranchName)
+    JF_GIT_OWNER: $(System.TeamProject)
+    JF_GIT_PROVIDER: 'azureRepos'
+
+jobs:
+  - job:
+      displayName: "Frogbot Scan Repository and Fix"
+      steps:
+        - task: CmdLine@2
+          displayName: 'Download and Run Frogbot'
+          env:
+            # [Mandatory]
+            # JFrog platform URL (This functionality requires version 3.29.0 or above of Xray)
+            JF_URL: $(JF_URL)
+
+            # [Mandatory if JF_USER and JF_PASSWORD are not provided]
+            JF_ACCESS_TOKEN: $(JF_ACCESS_TOKEN)
+
+            # [Mandatory if JF_ACCESS_TOKEN is not provided]
+            # JF_USER: $JF_USER
+            # JF_PASSWORD: $JF_PASSWORD
+
+            # [Mandatory]
+            JF_GIT_TOKEN: $(JF_GIT_TOKEN)
+
+            # [Optional]
+            # JF_RELEASES_REPO: ""
+
+            # [Mandatory if project uses yarn 2, NuGet, or .NET and installCommand isn't set in frogbot-config.yml]
+            # JF_INSTALL_DEPS_CMD: ""
+
+            # [Optional, default: "."]
+            # JF_WORKING_DIR: maven
+
+            # [Default: "*.git*;*node_modules*;*target*;*venv*;*test*"]
+            # JF_PATH_EXCLUSIONS: "*.git*;*node_modules*;*target*;*venv*;*test*"
+
+            # [Optional]
+            # JF_WATCHES: <watch-1>,<watch-2>...<watch-n>
+
+            # [Optional]
+            # JF_PROJECT: <project-key>
+
+            # [Optional, Default: "FALSE"]
+            # JF_INCLUDE_ALL_VULNERABILITIES: "TRUE"
+
+            # [Optional, Default: "FALSE"]
+            # JF_AVOID_PREVIOUS_PR_COMMENTS_DELETION: "TRUE"
+
+            # [Optional, Default: "TRUE"]
+            # JF_FAIL: "FALSE"
+
+            # [Optional, Default: "FALSE"]
+            # JF_REQUIREMENTS_FILE: ""
+
+            # [Optional, Default: "TRUE"]
+            # JF_USE_WRAPPER: "FALSE"
+
+            # [Optional]
+            # JF_DEPS_REPO: ""
+
+            # [Optional]
+            # JF_BRANCH_NAME_TEMPLATE: "frogbot-${IMPACTED_PACKAGE}-${BRANCH_NAME_HASH}"
+
+            # [Optional]
+            # JF_COMMIT_MESSAGE_TEMPLATE: "Upgrade ${IMPACTED_PACKAGE} to ${FIX_VERSION}"
+
+            # [Optional]
+            # JF_PULL_REQUEST_TITLE_TEMPLATE: "[🐸 Frogbot] Upgrade ${IMPACTED_PACKAGE} to ${FIX_VERSION}"
+
+            # [Optional, Default: "FALSE"]
+            # JF_GIT_AGGREGATE_FIXES: "FALSE"
+
+            # [Optional, Default: "FALSE"]
+            # JF_FIXABLE_ONLY: "TRUE"
+
+            # [Optional]
+            # JF_MIN_SEVERITY: ""
+
+            # [Optional, Default: eco-system+frogbot@jfrog.com]
+            # JF_GIT_EMAIL_AUTHOR: ""
+
+            # [Optional]
+            # JF_ALLOWED_LICENSES: "MIT, Apache-2.0"
+
+            # [Optional]
+            # JF_AVOID_EXTRA_MESSAGES: "TRUE"
+
+            # [Optional]
+            # JF_PR_COMMENT_TITLE: ""
+
+          inputs:
+            script: |
+              getFrogbotScriptPath=$(if [ -z "$JF_RELEASES_REPO" ]; then echo "https://releases.jfrog.io"; else echo "${JF_URL}/artifactory/${JF_RELEASES_REPO}"; fi)
+              curl -fLg "$getFrogbotScriptPath/artifactory/frogbot/v2/[RELEASE]/getFrogbot.sh" | sh
+              ./frogbot cfpr
 ```
 
-***
+\
 
-## **Place the frogbot-config.yml File in the Correct Directory**
 
-Frogbot expects the `frogbot-config.yml` file to be in the following path from the root of the Git repository: `.frogbot/frogbot-config.yml`.\
-**IMPORTANT:** The `frogbot-config.yml` file must be pushed to the target branch before it can be used by Frogbot. This means that if, for example, a pull request includes the `frogbot-config.yml` and the target branch doesn't, the file will be ignored.
-
-1. Ensure the `frogbot-config.yml` file is located in `.frogbot/` directory at the root of the repository.
-2. Push the file to the target branch where Frogbot is expected to use it.
-3. Verify that the file is available before initiating the scan.\
-   The `frogbot-config.yml` file should be located at:
-
-```arduino
-arduinoCopyEdit.frogbot/frogbot-config.yml
-```

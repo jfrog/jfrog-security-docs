@@ -81,7 +81,7 @@ Prevents **supply chain attacks** caused by malicious components.
 
 ***
 
-### [**Software Bill of Materials (SBOM)**](sca/export-scan-results.md)
+### [**Software Bill of Materials (SBOM)**](export-scan-results/)
 
 **What it does:**\
 Generates an **SBOM (Software Bill of Materials)**, listing all software components and dependencies.
@@ -91,7 +91,7 @@ Provides **full visibility into software supply chains** for compliance and secu
 
 ***
 
-### [**Advanced Reporting**](reports.md)
+### [**Advanced Reporting**](export-scan-results/reports.md)
 
 **What it does:**\
 Generates **detailed security, compliance, and operational risk reports** to track vulnerabilities, license violations, and risk exposure.

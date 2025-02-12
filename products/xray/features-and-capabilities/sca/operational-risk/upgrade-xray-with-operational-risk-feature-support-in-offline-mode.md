@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Upgrade Xray with Operational Risk Feature Support in Offline Mode
 
 If you are working in an offline mode, you need to manually sync the database to download components data and enable Operational Risk detection.

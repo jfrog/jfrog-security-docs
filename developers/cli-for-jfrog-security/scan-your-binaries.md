@@ -17,15 +17,15 @@ It is essential you have:
 
 ### Commands Parameters
 
-| `--server-id`   | Optional       | Server ID configured using `jf c add`. Defaults to the configured server if not specified.                   |
-| --------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
-| `--spec`        | Optional       | Path to a file specifying files to scan. Cannot be used with the `pattern` argument.                         |
-| `--project`     | Optional       | JFrog project key for security violations. Mutually exclusive with `--repo-path` and `--watches`.            |
-| `--repo-path`   | Optional       | Artifactory repository path for determining violations. Mutually exclusive with `--project` and `--watches`. |
-| `--watches`     | Optional       | Comma-separated list of Xray watches. Mutually exclusive with `--project` and `--repo-path`.                 |
-| `--licenses`    | Default: false | Display license information.                                                                                 |
-| `--format=json` | Optional       | Outputs scan results in JSON format.                                                                         |
-| `--vuln`        | Optional       | Display all vulnerabilities, regardless of Xray policy settings.                                             |
+| `--server-id`   | Optional         | Server ID configured using `jf c add`. Defaults to the configured server if not specified.                   |
+| --------------- | ---------------- | ------------------------------------------------------------------------------------------------------------ |
+| `--spec`        | Optional         | Path to a file specifying files to scan. Cannot be used with the `pattern` argument.                         |
+| `--project`     | Optional         | JFrog project key for security violations. Mutually exclusive with `--repo-path` and `--watches`.            |
+| `--repo-path`   | Optional         | Artifactory repository path for determining violations. Mutually exclusive with `--project` and `--watches`. |
+| `--watches`     | Optional         | Comma-separated list of Xray watches. Mutually exclusive with `--project` and `--repo-path`.                 |
+| `--licenses`    | Default: `false` | Display license information.                                                                                 |
+| `--format=json` | Optional         | Outputs scan results in JSON format.                                                                         |
+| `--vuln`        | Optional         | Display all vulnerabilities, regardless of Xray policy settings.                                             |
 
 ### **Arguments**
 
@@ -83,15 +83,15 @@ It is essential you have:
 
 ### Commands Parameters
 
-| `--server-id`        | Optional       | Configured server ID.                                   |
-| -------------------- | -------------- | ------------------------------------------------------- |
-| `--project`          | Optional       | JFrog project key for security violations.              |
-| `--repo-path`        | Optional       | Artifactory repository path for determining violations. |
-| `--watches`          | Optional       | Comma-separated list of Xray watches.                   |
-| `--licenses`         | Default: false | Display license information.                            |
-| `--validate-secrets` | Default: false | Validate detected secrets.                              |
-| `--format=json`      | Optional       | Outputs scan results in JSON format.                    |
-| `--vuln`             | Optional       | Show all vulnerabilities.                               |
+| `--server-id`        | Optional         | Configured server ID.                                   |
+| -------------------- | ---------------- | ------------------------------------------------------- |
+| `--project`          | Optional         | JFrog project key for security violations.              |
+| `--repo-path`        | Optional         | Artifactory repository path for determining violations. |
+| `--watches`          | Optional         | Comma-separated list of Xray watches.                   |
+| `--licenses`         | Default: `false` | Display license information.                            |
+| `--validate-secrets` | Default: `false` | Validate detected secrets.                              |
+| `--format=json`      | Optional         | Outputs scan results in JSON format.                    |
+| `--vuln`             | Optional         | Show all vulnerabilities.                               |
 
 ### **Arguments**
 

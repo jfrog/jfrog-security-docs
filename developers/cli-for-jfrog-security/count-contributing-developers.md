@@ -1,14 +1,6 @@
 # Count Contributing Developers
 
-## Before You Begin
-
-It is essential that you have:
-
-* JFrog CLI 2.60.0
-
-The `git count-contributors` command allows JFrog users to easily determine the number of Git developers contributing to their code. The counts indicate the number of contributing developers to the **default branch**.&#x20;
-
-The command counts the contributing developers for all commits performed within a specified time range. The results are based on email addresses, thus giving you a specific number of unique developers.&#x20;
+The `git count-contributors` command in JFrog CLI allows users to easily determine the number of Git developers contributing to their code. This is based on unique email addresses from commit history, providing an accurate count of individual contributors.
 
 We provide several options to obtain the developer count:
 
@@ -16,68 +8,50 @@ We provide several options to obtain the developer count:
 * **Across a project/group**: Analyze multiple repositories organized under a project/group by providing the owner command option.
 * **Across multiple Git servers**: Analyze repositories across various Git servers by providing a YAML file as an input file with the required parameters outlined below.
 
-This information can be helpful when purchasing an Advanced Security subscription, as the number of developers is often a key factor in pricing.
+**Command**: `git count-contributors`, `git cc`
 
-Supported Git providers:
+## Before You Begin
 
-* GitHub
-* GitLab
-* Bitbucket
+* It is essential that you have:
+  * JFrog CLI 2.60.0
+  * One of the following supported git providers: GitHub, GitLab, Bitbucket
 
-{% hint style="info" %}
-The CLI outputs may include an estimation of the contributing developers based on the input provided by the user. They may be based on third-party resources and databases and JFrog does not guarantee that the CLI outputs are accurate and/or complete. The CLI outputs are not legal advice and you are solely responsible for your use of it. CLI outputs are provided "as is" and any representation or warranty of or concerning any third-party technology is strictly between the user and the third-party owner or distributor of the third-party technology.
-{% endhint %}
+## Command Parameters
 
-### Usage
+| `--scm-type`         | Mandatory                 | The type of SCM for analysis. Supported values: `github`, `gitlab`, `bitbucket`. Example: `--scm-type=github` |
+| -------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `--scm-api-url`      | Mandatory                 | Base URL of the SCM system's API endpoint. Example: `--scm-api-url=https://api.github.com`                    |
+| `--token`            | Mandatory                 | Authentication token for accessing the SCM system's API. Example: `--token=your_access_token`                 |
+| `--owner`            | Mandatory                 | Owner or organization of the repositories. Example: `--owner=your-organization`                               |
+| `--repo-name`        | Optional                  | Semicolon-separated list of repositories. Example: `--repo-name=repo1;repo2`                                  |
+| `--months`           | Optional (Default: 1)     | Number of months to analyze. Example: `--months=6`                                                            |
+| `--detailed-summary` | Optional (Default: false) | Generates a detailed summary of contributors. Example: `--detailed-summary=true`                              |
+| `--input-file`       | Optional                  | Path to a YAML file with multiple Git providers. Example: `--input-file="/path/to/input.yaml"`                |
+| `--verbose`          | Optional                  | Enables verbose output for detailed information.                                                              |
 
-The `git count-contributors` command can be run from the JFrog CLI with the following syntax:
+## Examples <a href="#example-commands" id="example-commands"></a>
+
+### **Single Repository**
 
 ```
-git count-contributors [command options]
+git cc --scm-type=github --scm-api-url=https://api.github.com --token=<token> --repo-name=repo1
 ```
 
-| --scm-type         | Mandatory                                      | <p>The type of SCM to use for the analysis. </p><p>Supported Values: <code>github, gitlab, bitbucket</code> Example: <code>--scm-type=github</code></p>                                                                                                                                                                                                                                                                                                                                                         |
-| ------------------ | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| --scm-api-url      | Mandatory                                      | <p>The base URL of the SCM system's API endpoint. </p><p>Format: The full URL, including the protocol Example: <code>--scm-api-url=https://api.github.com</code></p>                                                                                                                                                                                                                                                                                                                                            |
-| --token            | Mandatory                                      | The authentication token required to access the SCM system's API. In the absence of a flag, tokens should be passed in the `JF_GIT_TOKEN` environment variable, or the corresponding environment variables `JFROG_CLI_GITLAB_TOKEN`, `JFROG_CLI_GITHUB_TOKEN`, or `JFROG_CLI_BITBUCKET_TOKEN` Example: `--token:your_access_token`                                                                                                                                                                              |
-| --owner            | Mandatory                                      | The owner or organization of the repositories to be analyzed. Format: Depending on the Git provider. On GitHub and GitLab, the owner is typically an individual or an organization, On Bitbucket, the owner can also be a project. In the case of a private instance on Bitbucket, the individual or organization name should be prefixed with `~`. When using this option without a specific repository name, all repositories will be analyzed at the group/project level. Example: `owner=your-organization` |
-| --months           | <p>Optional<br>Default: <code>1</code></p>     | The number of months to analyze for developer activity. Example: `--months=6`                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| --detailed-summary | <p>Optional<br>Default: <code>false</code></p> | Generates a more detailed summary of the contributors. Example: `--detailed-summary=true`                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| --repo-name        | Optional                                       | List of semicolon-separated(;) repositories names to analyze, If not provided all repositories related to the provided owner will be analyzed. Example: `--repo-name=repo1;repo2`                                                                                                                                                                                                                                                                                                                               |
-| --input-file       | Optional                                       | The path to an input file in YAML format that contains multiple git providers. Example: `--input-file="/Users/path/to/file/input.yaml"`                                                                                                                                                                                                                                                                                                                                                                         |
-| --verbose          | Optional                                       | Enables verbose output, providing more detailed information.                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+### **Group/Project Level**
 
-#### Examples <a href="#example-commands" id="example-commands"></a>
-
-**Single Repository**
-
-```javascript
-git cc --scm-type=github --scm-api-url=https://api.github.com --token=<token> --owner=jfrog --months=4 --detailed-summary=false --repo-name=cli-core
+```
+git cc --scm-type=gitlab --scm-api-url=https://git.vdoo.io --token=<token> --owner=my-group
 ```
 
-Required Parameters:
+### **Multiple Git Servers (YAML File)**
 
-* \--scm-type
-* \--scm-api-url
-* \--token
-* \--repo-name
-
-**Group/Project**
-
-```javascript
-git cc --scm-type=gitlab --scm-api-url=https://git.vdoo.io --token=<token> --owner=vdoo --months=3 --detailed-summary
+```
+git cc --input-file="/Users/path/to/input.yaml"
 ```
 
-Required Parameters:
+### **Sample YAML File**
 
-* \--scm-type
-* \--scm-api-url
-* \--token
-* \--owner
-
-**Multiple Git Servers- YAML File**
-
-```javascript
+```
 git-servers-list:
   - scm-type: bitbucket
     scm-api-url: "https://api.bitbucket.url"
@@ -87,136 +61,30 @@ git-servers-list:
       - "repo1"
       - "repo2"
   - scm-type: gitlab
-    scm-api-url: "https://api.github.com"
+    scm-api-url: "https://api.gitlab.com"
     token: "token"
     owner: "owner"
 ```
 
-Sample Output:
+### Sample Output
 
-<pre><code>{
-  "total_unique_contributors": 4,	-	        <a data-footnote-ref href="#user-content-fn-1">The number of unique developers (dedup)</a>
-  "total_commits": 4,				-	<a data-footnote-ref href="#user-content-fn-2">The number of commits examined on the default branch (total)</a>
-  "scanned_repos": [				-	<a data-footnote-ref href="#user-content-fn-3">The repositories that were scanned</a>
-    "test-go",
-    "test-cli-core"
-  ],
-  "report_date": "2024-07-22T12:08:04+03:00",	-	<a data-footnote-ref href="#user-content-fn-4">The report date</a>
-  "number_of_months": "5",			-	<a data-footnote-ref href="#user-content-fn-5">The time range specified</a>
-  "unique_contributors_list": [			-	<a data-footnote-ref href="#user-content-fn-6">The evidence of the last seen developer</a>
-    {
-      "email": "dev1@users.noreply.github.com",
-      "name": "`Developer 1",
-      "last_commit": {
-        "repo": "test-cli-core",
-        "date": "2024-02-22T14:21:55Z",
-        "hash": "3463b55aa453fb5dd3d5e7c6ebf45a3e33710e72"
-      }
-    },
-    {
-      "email": "dev2@users.noreply.github.com",
-      "name": "Developer 2",
-      "last_commit": {
-        "repo": "test-go",
-        "date": "2024-03-24T07:56:17Z",
-        "hash": "8b102603458044b434689fc3832e12d30af12d15"
-      }
-    },
-    {
-      "email": "dev3@jfrog.com",
-      "name": "Developer 3",
-      "last_commit": {
-        "repo": "test-cli-core",
-        "date": "2024-02-25T15:15:19Z",
-        "hash": "de88b95a38242b9984877a8e928ceafedb147843"
-      }
-    }
-  ],
-  "detailed_contributors_list": {		-	<a data-footnote-ref href="#user-content-fn-7">With verbose; detailed evidence per user</a>
-    "dev2@users.noreply.github.com": [
-      {
-        "repo_path": "test-go",
-        "last_commit": {
-          "date": "2024-03-24T07:56:17Z",
-          "hash": "8b102603458044b434689fc3832e12d30af12d15"
-        }
-      },
-      {
-        "repo_path": "test-cli-core",
-        "last_commit": {
-          "date": "2024-02-25T12:40:40Z",
-          "hash": "0941c5ce1007501c2793efa0e09b0e9531b8d503"
-        }
-      }
-    ],
-    "dev3@jfrog.com": [
-      {
-        "repo_path": "test-cli-core",
-        "last_commit": {
-          "date": "2024-02-25T15:15:19Z",
-          "hash": "de88b95a38242b9984877a8e928ceafedb147843"
-        }
-      }
-    ],
-    "dev1@users.noreply.github.com": [
-      {
-        "repo_path": "test-cli-core",
-        "last_commit": {
-          "date": "2024-02-22T14:21:55Z",
-          "hash": "3463b55aa453fb5dd3d5e7c6ebf45a3e33710e72"
-        }
-      }
-    ]
-  },
-  "detailed_repos_list": { -	<a data-footnote-ref href="#user-content-fn-8">With verbose; detailed evidence per repo</a>
-    "test-go": [
-      {
-        "email": "dev2@users.noreply.github.com",
-        "last_commit": {
-          "date": "2024-03-24T07:56:17Z",
-          "hash": "8b102603458044b434689fc3832e12d30af12d15"
-        }
-      }
-    ],
-    "test-cli-core": [
-      {
-        "email": "dev3@jfrog.com",
-        "last_commit": {
-          "date": "2024-02-25T15:15:19Z",
-          "hash": "de88b95a38242b9984877a8e928ceafedb147843"
-        }
-      },
-      {
-        "email": "dev2@users.noreply.github.com",
-        "last_commit": {
-          "date": "2024-02-25T12:40:40Z",
-          "hash": "0941c5ce1007501c2793efa0e09b0e9531b8d503"
-        }
-      },
-      {
-        "email": "dev1@users.noreply.github.com",
-        "last_commit": {
-          "date": "2024-02-22T14:21:55Z",
-          "hash": "3463b55aa453fb5dd3d5e7c6ebf45a3e33710e72"
-        }
-      }
-    ]
-  }
+```
+{
+  "total_unique_contributors": 4,
+  "total_commits": 4,
+  "scanned_repos": ["repo1", "repo2"],
+  "report_date": "2024-07-22T12:08:04+03:00",
+  "number_of_months": "5",
+  "unique_contributors_list": [
+    { "email": "dev1@github.com", "name": "Developer 1" },
+    { "email": "dev2@github.com", "name": "Developer 2" }
+  ]
 }
-</code></pre>
+```
 
-[^1]: 
+This output includes:
 
-[^2]: 
-
-[^3]: 
-
-[^4]: 
-
-[^5]: 
-
-[^6]: 
-
-[^7]: 
-
-[^8]: 
+* **Total Unique Contributors:** Count of distinct contributors.
+* **Total Commits:** Number of commits analyzed.
+* **Scanned Repositories:** List of repositories scanned.
+* **Contributor Details:** Names and emails of contributors.

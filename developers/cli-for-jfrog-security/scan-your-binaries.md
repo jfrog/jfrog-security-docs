@@ -1,253 +1,190 @@
 # Scan your Binaries
 
-The [on-demand binary scanning](https://jfrog.com/help/r/jfrog-security-documentation/xray-on-demand-binary-scan) enables you to point to a binary in your local file system and receive a report that contains a list of vulnerabilities, licenses, and policy violations for that binary prior to uploading the binary or build to Artifactory.
+The on-demand binary scanning enables you to point to a binary in your local file system and receive a report containing a list of vulnerabilities, licenses, and policy violations for that binary before uploading the binary or build to Artifactory.
 
-### Scanning Files on the Local File System
+## Scanning Files on the Local File System
 
-This _**jf scan**_ command scans files on the local file system with Xray.
+Use the `jf scan` command to scan files on your local file system with JFrog Xray.
 
-***
+### **Before You Begin**
 
-**Note**
+It is essential you have:
 
-> This command requires:
+* Xray 3.29.0
+* JFrog CLI 2.1.0
 
-* Version 3.29.0 or above of Xray
-* Version 2.1.0 or above of JFrog CLI
+**Command**: `scan`, `s`
 
-***
+### Commands Parameters
 
-#### Commands Params
+| `--server-id`   | Optional       | Server ID configured using `jf c add`. Defaults to the configured server if not specified.                   |
+| --------------- | -------------- | ------------------------------------------------------------------------------------------------------------ |
+| `--spec`        | Optional       | Path to a file specifying files to scan. Cannot be used with the `pattern` argument.                         |
+| `--project`     | Optional       | JFrog project key for security violations. Mutually exclusive with `--repo-path` and `--watches`.            |
+| `--repo-path`   | Optional       | Artifactory repository path for determining violations. Mutually exclusive with `--project` and `--watches`. |
+| `--watches`     | Optional       | Comma-separated list of Xray watches. Mutually exclusive with `--project` and `--repo-path`.                 |
+| `--licenses`    | Default: false | Display license information.                                                                                 |
+| `--format=json` | Optional       | Outputs scan results in JSON format.                                                                         |
+| `--vuln`        | Optional       | Display all vulnerabilities, regardless of Xray policy settings.                                             |
 
-|                       |                                                                                                                                                                                                                                                                                                                 |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Command name**      | scan                                                                                                                                                                                                                                                                                                            |
-| **Abbreviation**      | s                                                                                                                                                                                                                                                                                                               |
-| **Command options**   |                                                                                                                                                                                                                                                                                                                 |
-| `--server-id`         | <p>[Optional]<br>Server ID configured using the <em>jf c add</em> command. If not specified, the default configured server is used.</p>                                                                                                                                                                         |
-| `--spec`              | <p>[Optional]<br>Path to a file specifying the files to scan. If the pattern argument is provided to the command, this option should not be provided.</p>                                                                                                                                                       |
-| `--project`           | <p>[Optional]<br>JFrog project key, to enable Xray to determine security violations accordingly. The command accepts this option only if the --repo-path and --watches options are not provided. If none of the three options are provided, the command will show all known vulnerabilities.</p>                |
-| `--repo-path`         | <p>[Optional]<br>Artifactory repository path, to enable Xray to determine violations accordingly. The command accepts this option only if the --project and --watches options are not provided. If none of the three options are provided, the command will show all known vulnerabilities.</p>                 |
-| `--watches`           | <p>[Optional]<br>A comma-separated(,) list of Xray watches, to enable Xray to determine violations accordingly. The command accepts this option only if the --project and --repo-path options are not provided. If none of the three options are provided, the command will show all known vulnerabilities.</p> |
-| `--licenses`          | <p>[Default: false]<br>Set if you also require the list of licenses to be displayed.</p>                                                                                                                                                                                                                        |
-| --format=json         | <p>[Optional]<br>Produces a JSON file containing the scan results.</p>                                                                                                                                                                                                                                          |
-| `--vuln`              | <p>[Optional]<br>Set if you'd like to receive all vulnerabilities, regardless of the policy configured in Xray.</p>                                                                                                                                                                                             |
-| **Command arguments** |                                                                                                                                                                                                                                                                                                                 |
-| **Pattern**           | Specifies the local file system path to artifacts to be scanned. You can specify multiple files by using wildcards.                                                                                                                                                                                             |
+### **Arguments**
 
-#### Example 1
+| `Pattern` | Specifies the file system path to artifacts. Supports wildcards. |
+| --------- | ---------------------------------------------------------------- |
 
-Scans all the files located at the path/ti/files/ file-system directory using the watch1 watch defined in Xray.
+### Examples
+
+**Scan with a specific watch:** Scans all files at `path/to/files/` using the `watch1` defined in Xray.
 
 ```
 jf s "path/to/files/" --watches "watch1"
 ```
 
-#### Example 2
-
-Scans all the files located at the path/ti/files/ file-system directory using the _watch1_ and _watch2_ Watches defined in Xray.
+**Scan with multiple watches:** Scans files using `watch1` and `watch2` defined in Xray.
 
 ```
 jf s "path/to/files/" --watches "watch1,watch2"
 ```
 
-#### Example 3
-
-Scans all the zip files located at the path/ti/files/ file-system directory using the _watch1_ and _watch2_ Watches defined in Xray.
+**Scan specific file types:** Scans `.zip` files using `watch1` and `watch2`.
 
 ```
 jf s "path/to/files/*.zip" --watches "watch1,watch2"
 ```
 
-#### Example 4
-
-Scans all the tgz files located at the path/ti/files/ file-system directory using the policies defined for project-1.
+**Scan with project policies:** Scans `.tgz` files using policies defined for `project-1`.
 
 ```
 jf s "path/to/files/*.tgz" --project "project-1"
 ```
 
-#### Example 5
-
-Scans all the tgz files located in the current directory using the policies defined for the libs-local/release-artifacts/ path in Artifactory.
+**Scan with repository path:** Scans `.tgz` files using policies for `libs-local/release-artifacts/`.
 
 ```
 jf s "*.tgz" --repo-path "libs-local/release-artifacts/"
 ```
 
-#### Example 6
-
-Scans all the tgz files located at the current directory. Show all known vulnerabilities, regardless of the policies defined in Xray.
+**Scan without specific policies:** Shows all known vulnerabilities for `.tgz` files.
 
 ```
 jf s "*.tgz"
 ```
 
-### Scanning Docker Containers on the Local File System
+## Scanning Docker Containers on the Local File System
 
-This _**jf docker scan**_ command scans docker containers located on the local file-system using the _**docker client**_ and _**JFrog Xray**_. The containers don't need to be deployed to Artifactory or any other container registry before it can be scanned.
+Use `jf docker scan` to scan Docker containers locally using the Docker client and JFrog Xray.
 
-***
+### **Before You Begin**
 
-**Note**
+It is essential you have:
 
-> This command requires:
+* Xray 3.40.0 or above
+* JFrog CLI 2.11.0 or above
 
-* Version 3.40.0 or above of Xray
-* Version 2.11.0 or above of JFrog CLI
+### Commands Parameters
 
-***
+| `--server-id`        | Optional       | Configured server ID.                                   |
+| -------------------- | -------------- | ------------------------------------------------------- |
+| `--project`          | Optional       | JFrog project key for security violations.              |
+| `--repo-path`        | Optional       | Artifactory repository path for determining violations. |
+| `--watches`          | Optional       | Comma-separated list of Xray watches.                   |
+| `--licenses`         | Default: false | Display license information.                            |
+| `--validate-secrets` | Default: false | Validate detected secrets.                              |
+| `--format=json`      | Optional       | Outputs scan results in JSON format.                    |
+| `--vuln`             | Optional       | Show all vulnerabilities.                               |
 
-#### Commands Params
+### **Arguments**
 
-|                       |                                                                                                                                                                                                                                                                                                                   |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Command name**      | docker scan                                                                                                                                                                                                                                                                                                       |
-| **Abbreviation**      |                                                                                                                                                                                                                                                                                                                   |
-| **Command options**   |                                                                                                                                                                                                                                                                                                                   |
-| `--server-id`         | <p>[Optional]<br>Server ID configured using the <em>jf c add</em> command. If not specified, the default configured server is used.</p>                                                                                                                                                                           |
-| `--project`           | <p>[Optional]<br>JFrog project key, to enable Xray to determine security violations accordingly. The command accepts this option only if the --repo-path and --watches options are not provided. If none of the three options are provided, the command will show all known vulnerabilities.</p>                  |
-| `--repo-path`         | <p>[Optional]<br>Artifactory repository path, to enable Xray to determine violations accordingly. The command accepts this option only if the --project and --watches options are not provided. If none of the three options are provided, the command will show all known vulnerabilities.</p>                   |
-| `--watches`           | <p>[Optional]<br>A comma-separated(,) list of Xray watches, to enable Xray to determine violations accordingly. The command accepts this option only if the --repo-path and --repo-path options are not provided. If none of the three options are provided, the command will show all known vulnerabilities.</p> |
-| `--licenses`          | <p>[Default: false]<br>Set if you also require the list of licenses to be displayed.</p>                                                                                                                                                                                                                          |
-| `--validate-secrets`  | \[Default: false] Triggers token validation on found secrets                                                                                                                                                                                                                                                      |
-| --format=json         | <p>[Optional]<br>Produces a JSON file containing the scan results.</p>                                                                                                                                                                                                                                            |
-| `--vuln`              | <p>[Optional]<br>Set if you'd like to receive all vulnerabilities, regardless of the policy configured in Xray.</p>                                                                                                                                                                                               |
-| **Command arguments** |                                                                                                                                                                                                                                                                                                                   |
-| **Pattern**           | Specifies the local file system path to artifacts to be scanned. You can specify multiple files by using wildcards.                                                                                                                                                                                               |
+| `Pattern` | Specifies the file system path to artifacts. Supports wildcards. |
+| --------- | ---------------------------------------------------------------- |
 
-#### Example 1
+### **Examples**
 
-Scan the local _reg1/repo1/img1:1.0.0_ container and show all known vulnerabilities, regardless of the policies defined in Xray.
+**Scan all vulnerabilities:** Scans `img1:1.0.0` and displays all known vulnerabilities.
 
 ```
-$ docker images
-REPOSITORY           TAG       IMAGE ID       CREATED         SIZE
-reg1/repo1/img1   1.0.0     6446ea57df7b   19 months ago   5.57MB
-$ 
-$ jf docker scan reg1/repo1/img1:1.0.0
+jf docker scan reg1/repo1/img1:1.0.0
 ```
 
-#### Example 2
-
-Scan the local _reg1/repo1/img1:1.0.0_ container and show all violations according to the policy associated with _my-project_ JFrog project.
+**Scan with project policies:** Displays violations for `my-project`.
 
 ```
-$ docker images
-REPOSITORY           TAG       IMAGE ID       CREATED         SIZE
-reg1/repo1/img1   1.0.0     6446ea57df7b   19 months ago   5.57MB
-$ 
-$ jf docker scan reg1/repo1/img1:1.0.0 --project my-project
+jf docker scan reg1/repo1/img1:1.0.0 --project my-project
 ```
 
-#### Example 3
-
-Scan the local _reg1/repo1/img1:1.0.0_ container and show all violations according to the policy associated with _my-watch_ Xray Watch.
+**Scan with Xray watch:** Shows violations based on `my-watch`.
 
 ```
-$ docker images
-REPOSITORY           TAG       IMAGE ID       CREATED         SIZE
-reg1/repo1/img1   1.0.0     6446ea57df7b   19 months ago   5.57MB
-$ 
-$ jf docker scan reg1/repo1/img1:1.0.0 --watches my-watch
+jf docker scan reg1/repo1/img1:1.0.0 --watches my-watch
 ```
 
-#### Example 4
-
-Scan the local _reg1/repo1/img1:1.0.0_ container and show all violations according to the policy associated with the _releases-local/app1/_ path in Artifactory.
+**Scan with repository path:** Displays violations for `releases-local/app1/`.
 
 ```
-$ docker images
-REPOSITORY           TAG       IMAGE ID       CREATED         SIZE
-reg1/repo1/img1   1.0.0     6446ea57df7b   19 months ago   5.57MB
-$ 
-$ jf docker scan reg1/repo1/img1:1.0.0 --repo-path releases-local/app1/
+jf docker scan reg1/repo1/img1:1.0.0 --repo-path releases-local/app1/
 ```
 
-### Scanning Image Tarballs on the Local File System
+## Scanning Image Tarballs on the Local File System
 
-The ‘`scan`’ command can be used to scan tarballs of Docker and OCI images on the local file system.
+Use the `scan` command to scan tarballs of Docker and OCI images saved on the local file system.
 
-It requires saving the image on the file system as an uncompressed tarball using a compliant tool, and then scanning it with the ‘`jf s`’ command. The image must be saved to the file system uncompressed, in a `<name>.tar` file name.
+It requires saving the image on the file system as an uncompressed tarball using a compliant tool and then scanning it with the `jf s` command. The image must be saved to the file system uncompressed, in a `<name>.tar` file name.
 
-***
+### **Before You Begin**
 
-**Note**
+It is essential you have:
 
-> This command requires:
+* Xray 3.61.5 or above
+* JFrog CLI 2.14.0 or above
 
-* Version 3.61.5 or above of Xray.
-* Version 2.14.0 or above of JFrog CLI.
+### Examples
 
-***
+#### **Using Docker**
 
-#### Docker Client
-
-Use Docker client ‘`docker save`’ command to save the image to the file system for scanning.
-
-**Example**:
+**Save and scan an image:**
 
 ```
-$ docker images
-REPOSITORY TAG IMAGE ID CREATED SIZE
-my-image 1.0.0 aaaaabbcccddd 2 months ago 1.12MB
-
-$ docker save --output my-image-docker.tar my-image:1.0.0
-$ jf s my-image-docker.tar
+docker save --output my-image-docker.tar my-image:1.0.0
+jf s my-image-docker.tar
 ```
 
-#### Skopeo
+#### **Using Skopeo**
 
-Use Skopeo CLI to save an image to the file system. Output image can be either OCI or Docker format.
-
-**Example**:
+**Scan Docker format:**
 
 ```
-$ docker images
-REPOSITORY TAG IMAGE ID CREATED SIZE
-my-image 1.0.0 aaaaabbcccddd 2 months ago 1.12MB
-
-// Scan an image in Docker format
-$ skopeo copy docker-daemon:my-image:1.0.0 docker-archive:my-image-docker.tar
-$ jf s my-image-docker.tar
-
-// Scan an image in OCI format
-$ skopeo copy docker-daemon:my-image:1.0.0 oci-archive:my-image-oci.tar
-$ jf s my-image-oci.tar
+skopeo copy docker-daemon:my-image:1.0.0 docker-archive:my-image-docker.tar
+jf s my-image-docker.tar
 ```
 
-#### Podman
-
-Use Podman CLI to save an image to the file system. Output image can be either OCI or Docker format.
-
-**Example**:
+**Scan OCI format:**
 
 ```
-$ podman images
-REPOSITORY TAG IMAGE ID CREATED SIZE
-my-image 1.0.0 aaaaabbcccddd 2 months ago 1.12MB
-
-// Scan an image in Docker format
-$ podman save --format=docker-archive -o my-image-docker.tar my-image:1.0.0
-$ jf s my-image-docker.tar
-
-// Scan an image in OCI format
-$ podman save --format=oci -o my-image-oci.tar my-image:1.0.0
-$ jf s my-image-oci.tar
+skopeo copy docker-daemon:my-image:1.0.0 oci-archive:my-image-oci.tar
+jf s my-image-oci.tar
 ```
 
-#### Kaniko
+#### **Using Podman**
 
-Use Kaniko ‘`--tarPath’` flag to save built images to the file system, and later scan them with JFrog CLI. The example below is running Kaniko in Docker.
-
-**Example**:
+**Scan Docker format:**
 
 ```
-$ cat Dockerfile
+podman save --format=docker-archive -o my-image-docker.tar my-image:1.0.0
+jf s my-image-docker.tar
+```
 
-FROM alpine:3.16
+**Scan OCI format:**
 
-$ docker run -it --rm -v $(pwd):/workspace gcr.io/kaniko-project/executor:v1.8.1-debug -f Dockerfile --no-push --tarPath my-image.tar -d my-image:1.0 -c . --cleanup
+```
+podman save --format=oci -o my-image-oci.tar my-image:1.0.0
+jf s my-image-oci.tar
+```
 
-$ jf s my-image.tar
+#### **Using Kaniko**
+
+**Build and scan an image:**
+
+```
+docker run -it --rm -v $(pwd):/workspace gcr.io/kaniko-project/executor:v1.8.1-debug -f Dockerfile --no-push --tarPath my-image.tar -d my-image:1.0 -c . --cleanup
+jf s my-image.tar
 ```

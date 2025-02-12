@@ -1,41 +1,32 @@
 # Enrich your SBOM JSONs & XMLs
 
-The sbom enrichment command takes an exported SBOM file in XML/JSON format and enriches your file with package vulnerabilities found by XRAY.CommentThis _**jf sbom enrich \<file\_path>**_ command enriches a file that is found on file\_path.Comment
+The `sbom-enrich` command takes an exported SBOM file in XML or JSON format and enriches it with package vulnerabilities identified by Xray.
 
-***
+## Before You Begin
 
-Comment**Note**Comment
+It is essential you have:
 
-> This command requires:Comment
+* Xray 3.101.3 or above
+* JFrog CLI 2.60.0 or above
 
-* Version 3.101.3 or above of XrayComment
-* Version 2.60.0 or above of JFrog CLIComment
+**Command**: `jf sbom-enrich`, `jf se`
 
-Comment
+## Command Parameters
 
-***
+| `--server-id` | \[Optional] Server ID configured using the `jf c add` command. If not specified, the default configured server is used. | Optional |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------- | -------- |
+| `file_path`   | The path to the SBOM file you want to enrich.                                                                           | Required |
 
-Comment
+### Examples
 
-**Commands Params**
+Enrich an XML file
 
-Comment
+```
+jf se "path/to/file.xml"
+```
 
-| **Command name**      | sbom-enrich                                                                                                             |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| **Abbreviation**      | se                                                                                                                      |
-| **Command options**   | ​                                                                                                                       |
-| `--server-id`         | \[Optional] Server ID configured using the _jf c add_ command. If not specified, the default configured server is used. |
-| **Command arguments** | ​                                                                                                                       |
-| `file_path`           | the sbom file path.                                                                                                     |
+Enrich a JSON file
 
-Comment
-
-**Example 1**
-
-CommentEnriches an XML fileCommentjf se "path/to/file.xml"Comment
-
-**Example 2**
-
-CommentEnriches a JSON fileCommentjf se "path/to/files/file.json"Comment[\
-](https://app.gitbook.com/o/qA7lOLzSLvqlPYMcxj0G/s/HtpcI8sApaH537Ph5QxY/jfrog-applications/jfrog-cli/cli-for-jfrog-security/how-tos/scan-your-binaries)
+```
+jf se "path/to/files/file.json"
+```

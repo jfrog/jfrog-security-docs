@@ -47,9 +47,3 @@ Security policies help define rules for detecting vulnerabilities and enforcing 
    * Select **"Contextual Analysis"** as the rule type.
    * Enable **"Skip Not Applicable CVEs"** (this prevents violations for non-exploitable vulnerabilities).
 3. **Save the Policy**.
-
-### **Next Steps**
-
-* **Run an Advanced Scan on an Artifact**: Navigate to **Scans List** → Select an artifact → **Run Contextual Analysis or Exposure Scan**.
-* **Monitor Security Violations**: Review violations under **Scans List** → **Policy Violations Tab**.
-* **Integrate with CI/CD Pipelines**: Automate security scanning using **JFrog Advanced Security REST APIs**.

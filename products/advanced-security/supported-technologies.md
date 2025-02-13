@@ -1,23 +1,5 @@
 # Supported Technologies
 
-## **Supported Package Types for Vulnerability & Exposure Scanning**
-
-| **Package Type**                    | **Supported in Xray Version** |
-| ----------------------------------- | ----------------------------- |
-| **Docker**                          | 3.59.4+                       |
-| **OCI (Open Container Initiative)** | 3.59.4+                       |
-| **Maven**                           | 3.78.9+                       |
-| **npm**                             | 3.78.9+                       |
-| **PyPI**                            | 3.78.9+                       |
-| **Gradle**                          | Supported                     |
-| **Go Modules**                      | Supported                     |
-| **Alpine**                          | Supported                     |
-| **Debian**                          | Supported                     |
-| **RPM**                             | Supported                     |
-| **NuGet**                           | Supported                     |
-| **RubyGems**                        | Supported                     |
-| **Generic Artifacts**               | Supported                     |
-
 ## **Supported Technologies for Contextual Analysis**
 
 | **Repository Type** | **Supported Languages Inside Containers**                                         | **Supported Languages in Source Code Analysis** |
@@ -32,13 +14,7 @@
 * **Rust binaries require Xray 3.79.x+.**
 * **.NET binaries require Xray 3.95.4+.**
 
-## **Supported Infrastructure-as-Code (IaC) Scanning**
 
-| **Cloud Provider** | **Scanned Configurations**                                                                    |
-| ------------------ | --------------------------------------------------------------------------------------------- |
-| **AWS**            | IAM Policies, S3 Buckets, RDS, API Gateway, Lambda, EC2, ECS, CloudTrail, Kinesis, Glue, etc. |
-| **Azure**          | Storage Accounts, Key Vaults, Networking, Virtual Machines, RBAC, Logging, etc.               |
-| **Google Cloud**   | IAM Policies, Cloud Storage, Kubernetes, Compute Engine, Cloud Functions, etc.                |
 
 ***
 

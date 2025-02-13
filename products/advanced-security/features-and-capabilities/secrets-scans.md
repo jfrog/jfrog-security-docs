@@ -1,36 +1,21 @@
 # Secrets Scans
 
-Detects any secret left exposed in the artifacts stored in Artifactory to stop any accidental leak of internal tokens or credentials. Xray scans your configuration, text, and binary files for plaintext credentials, private keys, tokens, and similar secrets. Xray uses a constantly updated list of more than 150 specific types of credentials. In addition, Xray uses a proprietary generic secrets matcher, for the best coverage possible. Xray also scans for issues in the certificates used in the software, such as expired or weak certificates.
+JFrog **Secrets Scans** provide comprehensive protection against exposed credentials, supporting a wide range of platforms, tools, and secret types. It detects exposed secrets in artifacts stored in **Artifactory**, preventing accidental leaks of internal tokens or credentials.
 
-### Supported Scenarios <a href="#uuid-9380cbae-3ae5-b761-96d0-64b171ecd499_bridgehead-idm234436377042885" id="uuid-9380cbae-3ae5-b761-96d0-64b171ecd499_bridgehead-idm234436377042885"></a>
+## Supported Scenarios
 
-JFrog Secrets detection currently supports the following scenarios:
+Secrets detection currently supports the following environments:
 
-* JFrog Platform: Docker, Maven, npm, PyPI, NuGet, Gradle, RPM, Debian, Alpine, Go, RubyGems and Generic.
-* Developer tools: [IDE](https://docs.jfrog-applications.jfrog.io/jfrog-applications/ide), [CLI](https://docs.jfrog-applications.jfrog.io/jfrog-applications/jfrog-cli/cli-for-jfrog-security), [Git (Frogbot)](https://docs.jfrog-applications.jfrog.io/jfrog-applications/frogbot).
+### JFrog Platform
 
-#### Note
+* **Package Types:** Docker, Maven, npm, PyPI, NuGet, Gradle, RPM, Debian, Alpine, Go, RubyGems, Generic
+* **Scan Targets:** Both binaries and text files
 
-In the JFrog Platform, both binaries and text files are being scanned for secrets.
+## Supported Secret Types
 
-In the IDE and Frogbot, only text files are scanned.
+### Access Tokens (Keys)
 
-In the CLI, commands such as&#x20;
-
-`jf audit`, scan source code and look for secrets in text files, and other commands such as `jf docker scan`, scan both binary and text files.
-
-#### Supported Secrets Types <a href="#uuid-9380cbae-3ae5-b761-96d0-64b171ecd499_bridgehead-idm234436383558364" id="uuid-9380cbae-3ae5-b761-96d0-64b171ecd499_bridgehead-idm234436383558364"></a>
-
-JFrog Secrets detection can detect the following types of secrets:
-
-* [Access tokens (keys)](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/9wGJsqb~chJSbw~zb__7fg?section=UUID-9380cbae-3ae5-b761-96d0-64b171ecd499_bridgehead-idm234747554815673)
-* [Certificates/private keys](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/9wGJsqb~chJSbw~zb__7fg?section=UUID-9380cbae-3ae5-b761-96d0-64b171ecd499_bridgehead-idm234443765322601)
-* [High entropy secrets](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/9wGJsqb~chJSbw~zb__7fg?section=UUID-9380cbae-3ae5-b761-96d0-64b171ecd499_bridgehead-idm234443765880209)
-* [URL secrets](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/9wGJsqb~chJSbw~zb__7fg?section=UUID-9380cbae-3ae5-b761-96d0-64b171ecd499_bridgehead-idm234443769010947)
-
-**Access Tokens**
-
-This scanner detects access tokens with a well-defined structure, in either text or binary files. For example:
+Detects structured access tokens in text or binary files. For example:
 
 | Platform | Example Token                                                               |
 | -------- | --------------------------------------------------------------------------- |
@@ -40,38 +25,30 @@ This scanner detects access tokens with a well-defined structure, in either text
 | npm      | `npm_1234567890abcdefgh`                                                    |
 | Slack    | `xoxp-123234234235-123234234235-123234234235-adedce74748c3844747aed48499bb` |
 
-**Token Validation**
+### **Token Validation**
 
-Verify the validity of detected tokens by enabling Token Validation. This feature allows you to distinguish between active and inactive tokens by authenticating against the token provider.
+Enable **Token Validation** to verify the validity of detected tokens, distinguishing between active and inactive tokens by authenticating against the token provider.
 
-The Dynamic Token Validation feature can be enabled both through the JFrog Platform and through Xray’s REST API.
+* Available through both the **JFrog Platform** and **Xray’s REST API**.
+* To enable in the **JFrog Platform**:
+  * Navigate to **Administration > Xray Settings > General > Advanced Security**
+  * Check the **Enable dynamic token validation** checkbox
+* To enable via **REST API**, use the "Enable Token Validation for Secrets" API.
 
-To enable this feature from the JFrog Platform navigate to **Administration > Xray Settings > General > Advanced Security** and check the **Enable dynamic token validation** checkbox.
+### **Validation Results**
 
-| [![Screenshot\_2024-12-10\_at\_12\_47\_26.png](https://jfrog.com/help/api/khub/maps/6nte66fuu2ZQMB2dfriysg/resources/vcmkePe20DNvy60nZL42fw-6nte66fuu2ZQMB2dfriysg/content?v=bae3f20f4f67b70f)](https://jfrog.com/help/viewer/attachment/6nte66fuu2ZQMB2dfriysg/vcmkePe20DNvy60nZL42fw-6nte66fuu2ZQMB2dfriysg) |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+Once enabled, results appear under **Findings** in violation details. The **Token Validation** column indicates:
 
-To enable through REST API, run the following REST API: [Enable Token Validation for Secrets](https://jfrog.com/help/access?ft:clusterId=UUID-8dd54c7b-d9d2-8dda-8894-d468d91e6007).
+* **Active:** Token is valid and poses a security risk if compromised.
+* **Inactive:** Token is no longer in use.
+* **Unsupported:** Token provider does not support validation.
+* **Unavailable:** Unable to validate due to unknown reasons.
 
-Once enabled, the results are presented in the violation's details under the **Findings** tab. To learn more about results, see [View Exposure Scan Statuses and Results](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/wkwr63UVYxevMEHskT6KsQ).
+Some providers attach metadata to secrets (e.g., AWS includes a **Token ID** with the **Token Secret**). This metadata is displayed in the **Metadata** column.
 
-| [![TokenValidation.png](https://jfrog.com/help/api/khub/maps/6nte66fuu2ZQMB2dfriysg/resources/hr7OOdQvfE54H83BM1ToHw-6nte66fuu2ZQMB2dfriysg/content?v=334e3d0cd4a71b76)](https://jfrog.com/help/viewer/attachment/6nte66fuu2ZQMB2dfriysg/hr7OOdQvfE54H83BM1ToHw-6nte66fuu2ZQMB2dfriysg) |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+#### Supported Providers
 
-The **Token Validation** column statuses are:
-
-* **Active**: Token is valid and usable. It poses a potentially higher security risk if compromised.
-* **Inactive**: Token is inactive. For tokens associated with Self Hosted providers, our validation cannot determine their activity status.
-* **Unsupported**: Token provider is currently unsupported for validation.
-* **Unavailable**: Cannot validate due to unknown reasons.
-
-The **Metadata** column:
-
-For several providers, additional identification is coupled to the secret token (AWS has a Token ID associated with the Token Secret). Our scanners detect this additional identification and output it to the Metadata column.
-
-**Supported Providers**
-
-These are all the providers currently supported by this scanner. Some providers also support JFrog’s Token Validation.
+Below are supported providers and whether they support **Token Validation**:
 
 | Supported Provider  | Token Validation Support |
 | ------------------- | ------------------------ |
@@ -139,104 +116,72 @@ These are all the providers currently supported by this scanner. Some providers 
 | Typeform            | Yes                      |
 | Ubidots             | Yes                      |
 
-**Detection Exceptions**
+#### Detection Exceptions
 
-The following access keys will not raise an alert by the scanners
+Some access keys will not trigger alerts:
 
-* Public example keys (AWS example -  ANPAI65L554VRJ33ECQS6)
-* Keys in files residing in documentation directories (ex. "/usr/local/share/")
-* Keys that match any of the following case-insensitive patterns
-  * .\*xxxx.\*
-  * .\*test.\*
-  * .\*sample.\*
-  * .\*example.\*
-  * .\*token.\*
-  * \*123456.\*
-  * .\*abcdef.\*
-  * .\*foobar.\*
-  * .\*deadbeef.\*
-  * .\*xxxxxx.\*
-  * .\*1111111.\*
-  * .\*0000000.\*
+* **Public example keys** (e.g., AWS example: `ANPAI65L554VRJ33ECQS6`)
+* **Keys in documentation directories** (e.g., `/usr/local/share/`)
+* **Keys matching common test patterns:**
+  * `.*xxxx.*`, `.*test.*`, `.*sample.*`, `.*example.*`
+  * `.*token.*`, `.*123456.*`, `.*abcdef.*`, `.*foobar.*`
 
-**Certificates/Private keys**
+### Certificate & Private Key Detection
 
-JFrog Secret detection can detect issues in X.509 PEM (textual) and DER (binary) certificates and private keys :
+Detects issues in **X.509 PEM (text) and DER (binary) certificates**, including:
 
-* Certificates containing private keys or standalone PEM/DER private keys
-* Expired certificates
-* Self-signed certificates
+* Certificates **containing private keys**
+* **Expired certificates**
+* **Self-signed certificates**
 
-**High Entropy Textual Secrets**
+### High Entropy Textual Secrets
 
-JFrog Secret detection can detect secrets in the general form of  “key = value” in textual files (incl. source files and configuration files) where:
+Detects identifies high-entropy secrets in textual files (e.g., source code, config files) when:
 
-* “key” is a variable name indicative of a secret (for example “secret” or “password”)
-* “value” is a string with high entropy/randomness (ex. “d#@B2xN,Y}” and not “123123123”)
+* The **key** is indicative of a secret (e.g., `password`, `secret`)
+* The **value** has high randomness (e.g., `d#@B2xN,Y}`, not `123123123`)
 
-For example:
+**Example:**
 
-```
+```yaml
 my_password: "CorrectHorseBatteryStaple123!"
 ```
 
-⧉
+### Detection Exceptions
 
-**Detection Exceptions**
+False positives are minimized using heuristics. Secrets will **not** raise alerts if:
 
-JFrog employs several heuristics to avoid false positive results. The following textual secrets will not raise an alert by the scanners:
+* **Key is exactly "key"** (e.g., `key = d#@B2xN,Y}`)
+* **Value matches test patterns** (`.*xxxx.*`, `.*123456.*`, etc.)
+* **Value contains repeated/sequential characters** (e.g., `123456`)
+* **Secret is in documentation directories**
+* **Secret is in third-party files** (e.g., a third-party npm package)
 
-* The key completely matches the string “key” (ex. “key = d#@B2xN,Y}”)
-* The value matches any of the following case-insensitive patterns
-  * .\*xxxx.\*
-  * .\*test.\*
-  * .\*sample.\*
-  * .\*example.\*
-  * .\*123456.\*
-  * .\*abcdef.\*
-  * AKIA.\*
-* The value contains a 6-character long sequence of the same character or consecutive characters (ex. “123456”)
-* Secrets in files residing in documentation directories (ex. "/usr/local/share/")
-* Secrets in 3rd-party files (ex. A file belonging to a 3rd-party npm package)
-* Secrets in files where the file path matches any of the following case-insensitive patterns
-  * .\*example.\*
-  * .\*sample.\*
+### URL Secrets Detection
 
-**URL Secrets**
+Detects secrets embedded in URLs (e.g., `https://myuser:mypass@somedomain.com`).
 
-JFrog Secret detection can detect secrets in textual files where the secret is embedded in a URL (for example; https://myuser:mypass@somedomain.com)
+#### Detection Exceptions
 
-**Detection Exceptions**
+Some URLs will not trigger alerts:
 
-The following URLs will not raise an alert by the scanners:
+* **URLs matching test patterns:** `.*example.*`, `.*foo.*`, `.*bar.*`
+* **Authentication parts with common placeholders:** `.*user:pass.*`, `.*username.*`, `.*anonymous.*`
+* **URLs referencing image files** (e.g., `.jpg`)
 
-* URLs that match any of the following case-insensitive patterns
-  * .\*example.\*
-  * .\*foo.\*
-  * .\*bar.\*
-  * .\*example.\*
-  * .\*sample.\*
-  * .\*some.host.\*
-  * .\*some.url.\*
-  * .\*site.com.\*
-  * .\*google.com.\*
-  * .\*url.com.\*
-  * .\*xyz.\*
-  * .\*abc.\*
-  * .\*domain.com.\*
-  * .\*host.com.\*
-  * .\*host.page.\*
-  * .\*codecov.\*
-  * .\*deepsource.\*
-  * .\*shields.io.\*
-* URLs where the authentication part matches any of the following case-insensitive patterns
-  * .\*user:pass.\*
-  * .\*username.\*
-  * .\*anonymous.\*
-  * .\*test.\*
-  * .\*foo.\*
-  * .\*bar.\*
-  * .\*example.\*
-  * .\*myuser.\*
-  * .\*baz.\*
-* URLs that reference an image file (ex. URL ends with “.jpg”)
+## Developer Tools
+
+### IDEs
+
+Only text files are scanned.
+
+### Command-Line Interface (CLI)
+
+Different commands scan different file types:
+
+* `jf audit` scans source code for secrets in text files
+* `jf docker scan` scans both binary and text files
+
+### Git (Frogbot)
+
+Only text files are scanned.

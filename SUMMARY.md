@@ -156,6 +156,7 @@
       * [Installation](developers/securing-your-code/vs-code/installation.md)
       * [Manage](developers/securing-your-code/vs-code/manage.md)
       * [Quick Start](developers/securing-your-code/vs-code/quick-start.md)
+      * [How-Tos](developers/securing-your-code/vs-code/how-tos.md)
     * [JetBrains](developers/securing-your-code/jetbrains.md)
     * [Eclipse](developers/securing-your-code/eclipse.md)
     * [Visual Studio](developers/securing-your-code/visual-studio.md)

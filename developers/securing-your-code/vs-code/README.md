@@ -32,4 +32,3 @@ _Requires JFrog Xray version 3.66.5 or higher and an Enterprise X / Enterprise+ 
 * Centralized security issue tracking in the JFrog tab.
 * One-click upgrade to fixed versions for resolvable security issues.
 * Continuous tracking of code security across the CI/CD pipeline.
-* Built-in JFrog File Spec JSON schema support for specific file patterns (`**/filespecs/*.json`, `filespec.json`, `.filespec`). Learn more.

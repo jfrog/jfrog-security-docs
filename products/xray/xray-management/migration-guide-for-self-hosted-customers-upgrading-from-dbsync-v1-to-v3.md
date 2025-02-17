@@ -36,7 +36,9 @@ Before you get started with the migration, please note the following:
 7.  Make sure to configure the Xray database to use the public schema during the migration.
 
     After migration, you can change the schema ownership as needed.
-8. **Warning**: Custom vulnerabilities you’ve created, with vulnerability IDs starting with "XRAY-" and the provider set to JFrog, will be lost during migration. It is unlikely that you have created custom issues with IDs beginning with "XRAY-". All other custom issues are migrated.
+8. **Warning**: Custom vulnerabilities you’ve created, with vulnerability IDs starting with "XRAY-" and the provider set to JFrog, will be lost during migration. It is unlikely that you have created custom issues with IDs beginning with "XRAY-". All other custom issues are migrated.\
+   \
+   As a precaution during the migration, if numerous vulnerabilities are detected, the migration may fail with a notification regarding custom vulnerabilities or components. If this occurs, contact [JFrog Support](mailto:support@jfrog.com) for assistance.
 9. **Rare case:** If you are still using the deprecated 3rd-party threat feed, please note that these will not be migrated.
 
 #### Steps to Migrate to DBSync v3 <a href="#uuid-3f10111b-8c7f-2e6a-868f-f13baa7126cc_bridgehead-idm234675017249971" id="uuid-3f10111b-8c7f-2e6a-868f-f13baa7126cc_bridgehead-idm234675017249971"></a>

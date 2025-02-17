@@ -1,25 +1,8 @@
 # Secrets Scans
 
-## **Enable Secrets Scanning**
+##
 
-This step ensures that repositories are configured to scan for **hardcoded secrets, exposed credentials, and sensitive information** within artifacts.
-
-1. Navigate to **Administration** → **Xray Settings** → **General**.
-2. Select **Indexed Resources** and choose the repository where you want to enable scanning.
-3. Enable **Secrets Scans** from the list of security scanning categories.
-4. Save the configuration.
-
-## **Run a Secrets Scan on an Artifact**
-
-This process triggers an **on-demand scan** for secrets within a specific artifact stored in a repository.
-
-1. Navigate to **Scans List** → **Repositories Tab**.
-2. Select the **repository** containing the artifact you want to scan.
-3. Locate the artifact and click the **Actions Menu**.
-4. Select **Scan for Secrets** to initiate the scan.
-5. Once completed, review results under **Security Issues**.
-
-## **Configure Secrets Ignore Rules**
+## **Ignoring Secrets Violations**
 
 Ignore rules helps **reduce noise** by filtering out **false positives or non-actionable violations** in secret detection results.
 

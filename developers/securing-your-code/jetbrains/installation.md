@@ -31,8 +31,6 @@ You can connect the plugin to your JFrog environment using one of the following 
 
 Once connected, you can start using the JFrog plugin within IntelliJ IDEA.
 
-***
-
 #### **Notes**
 
 * If your JFrog Platform instance uses a domain with a self-signed certificate, add the certificate to IntelliJ IDEA as described here.

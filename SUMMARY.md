@@ -168,6 +168,7 @@
       * [Manage](developers/securing-your-code/jetbrains/manage.md)
       * [Quick Start](developers/securing-your-code/jetbrains/quick-start.md)
       * [How-Tos](developers/securing-your-code/jetbrains/how-tos.md)
+      * [Troubleshooting](developers/securing-your-code/jetbrains/troubleshooting.md)
     * [Eclipse](developers/securing-your-code/eclipse/README.md)
       * [Prerequisites](developers/securing-your-code/eclipse/prerequisites.md)
       * [Supported Technologies](developers/securing-your-code/eclipse/supported-technologies.md)

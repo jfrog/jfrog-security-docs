@@ -193,3 +193,4 @@
     * [Frogbot Optional Configuration Parameters](developers/scanning-source-code-repositories/frogbot-optional-configuration-parameters.md)
     * [Offline Setup for Frogbot Executables](developers/scanning-source-code-repositories/offline-setup-for-frogbot-executables.md)
   * [CI/CD](developers/ci-cd.md)
+* [Install Xray with FIPS](install-xray-with-fips.md)

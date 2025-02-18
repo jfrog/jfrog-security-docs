@@ -1,6 +1,6 @@
-# Detecting Active Artifacts in Runtime
+# Detecting Your Live Artifacts in Artifactory
 
-Detect artifacts in Artifactory that are currently running in runtime, assess their security status, and take necessary actions to mitigate potential risks.&#x20;
+Detect artifacts in Artifactory that are currently running in runtime.
 
 1. Navigate to the **Artifactory** Artifacts Tree. \
    If an artifact from the selected repository is actively running in runtime, a **detection button** will appear in the upper right corner of the page. \

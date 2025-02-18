@@ -132,7 +132,7 @@
       * [Reducing Noise in Risk Management](products/runtime/how-tos/reducing-noise-in-risk-management.md)
       * [Fast Exposure Window Closing](products/runtime/how-tos/fast-exposure-window-closing.md)
       * [Strengthening Runtime Trust Through Image Verification](products/runtime/how-tos/strengthening-runtime-trust-through-image-verification.md)
-      * [Detecting Active Artifacts in Runtime](products/runtime/how-tos/detecting-active-artifacts-in-runtime.md)
+      * [Detecting Your Live Artifacts in Artifactory](products/runtime/how-tos/detecting-your-live-artifacts-in-artifactory.md)
   * [Catalog](products/catalog/README.md)
     * [Supported Technologies](products/catalog/supported-technologies.md)
     * [Features and Capabilities](products/catalog/features-and-capabilities.md)

@@ -1,7 +1,5 @@
 # Fast Exposure Window Closing
 
-##
-
 In this guide, we will demonstrate how to leverage the traceability capabilities of JFrog Runtime, specifically utilizing the **Build Owner** and **Deployed By** attributes in the detailed view of an image tag. We will also explain how to set up alarms based on worker events to ensure real-time notifications for relevant users and send runtime events to all pertinent tools.
 
 ### Accessing Image Tag Details

@@ -9,7 +9,7 @@
 | Computing platforms  | AWS, GCP, Azure, on-prem Kubernetes |                |
 | Kernel OS            | Linux Kernel 4.18+                  | Windows Kernel |
 
-## Runtime Impact <a href="#runtime-impact-recommended-postgres-database" id="runtime-impact-recommended-postgres-database"></a>
+## **Runtime Impact** <a href="#runtime-impact-recommended-postgres-database" id="runtime-impact-recommended-postgres-database"></a>
 
 | Component    | Supported                |
 | ------------ | ------------------------ |

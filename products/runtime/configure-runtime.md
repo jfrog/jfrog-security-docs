@@ -73,9 +73,9 @@ Granting the necessary privileged SCC ensures that the Runtime Sensor can:
 
 Without this privilege, the sensor may be unable to access required system resources, leading to incomplete security monitoring and reduced visibility into runtime threats.
 
-To grant SCC privileges, run:
+1. To grant SCC privileges, run:
 
-```sh
+```
 shCopyEditoc adm policy add-scc-to-user privileged system:serviceaccount:jfrog-runtime:jf-sensors-sensors-service-account
 ```
 

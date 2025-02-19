@@ -27,9 +27,10 @@ A Watch applies to specific **repositories, builds, or release bundles**.
 
 1. Click **Add Resources**.
 2. Select one or more of the following:
-   * **Repositories** – Monitors artifacts in Artifactory repositories.
-   * **Builds** – Monitors CI/CD-generated builds.
-   * **Release Bundles** – Ensures software is secure before deployment.
+   * **Repositories** &#x20;
+   * **Builds**&#x20;
+   * **Release Bundles**&#x20;
+   * **Projects**&#x20;
 3. Click **Apply**.
 
 &#x20;**Example:**\

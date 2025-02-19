@@ -82,7 +82,6 @@
     * [Configure Xray](products/xray/configure-xray/README.md)
       * [Index Xray Resources](products/xray/configure-xray/index-xray-resources/README.md)
         * [Configure Indexing in JFrog Xray](products/xray/configure-xray/index-xray-resources/configure-indexing-in-jfrog-xray.md)
-        * [Configure Scans](products/xray/configure-xray/index-xray-resources/configure-scans.md)
         * [Set a Retention Period for Xray Indexed Resources](products/xray/configure-xray/index-xray-resources/set-a-retention-period-for-xray-indexed-resources.md)
       * [Create Watches](products/xray/configure-xray/create-watches.md)
       * [Create Policies](products/xray/configure-xray/create-policies.md)

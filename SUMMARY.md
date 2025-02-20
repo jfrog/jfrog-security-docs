@@ -109,7 +109,7 @@
     * [Quick Start](products/advanced-security/quick-start.md)
     * [Configure Advanced Security](products/advanced-security/configure-advanced-security/README.md)
       * [Policies](products/advanced-security/configure-advanced-security/policies.md)
-      * [Resources Configurations](products/advanced-security/configure-advanced-security/resources-configurations.md)
+      * [Resource Configurations](products/advanced-security/configure-advanced-security/resources-configurations.md)
     * [How-Tos](products/advanced-security/how-tos/README.md)
       * [Applying Advanced Scans on Existing Resources](products/advanced-security/how-tos/applying-advanced-scans-on-existing-resources/README.md)
         * [Run Contextual Analysis on an Existing Artifact](products/advanced-security/how-tos/applying-advanced-scans-on-existing-resources/run-contextual-analysis-on-an-existing-artifact.md)

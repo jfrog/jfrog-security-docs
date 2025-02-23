@@ -47,11 +47,3 @@ Triggering one-time advanced scans is useful in scenarios where you need to perf
    * **Services**
    * **Applications**
    * **Vulnerabilities Contextual Analysis**
-
-## Create a Security Policy with Advanced Scan Rules
-
-Security policies enable you to define rules based on security criteria, with automatic actions triggered according to your needs. These policies are enforced when applied to Xray Watches. For guidance on creating policies, see _Creating Xray Policies and Rules_.
-
-It is recommended to create policies for a focused list of violations based on your security criteria. You can create policies specific to exposures and contextual analysis rules. A violation is issued when the criteria set in the policy are met. Violations can be viewed on either the _Scans List_ or _Watch Violations_ pages.
-
-###

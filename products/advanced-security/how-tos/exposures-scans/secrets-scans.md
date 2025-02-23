@@ -1,7 +1,5 @@
 # Secrets Scans
 
-##
-
 ## **Ignoring Secrets Violations**
 
 Ignore rules helps **reduce noise** by filtering out **false positives or non-actionable violations** in secret detection results.

@@ -13,9 +13,3 @@ The following topics outline how to manage **JFrog Advanced Security** scan resu
 
     For more details on managing ignore rules, refer to **Ignore Rules**. You can also configure, modify, or delete ignore rules as needed.
 
-#### **Advanced Security Scan Results REST API Support**
-
-To automate the management of **Exposures violations**, use the following **REST API**:
-
-* **Create Ignore Rule** – Allows you to programmatically define rules to ignore specific violations.
-

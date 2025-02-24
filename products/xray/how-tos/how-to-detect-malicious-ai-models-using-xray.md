@@ -19,7 +19,7 @@ This repository is chosen for its widespread use in the AI and machine learning 
 
 **Types of Models Scanned**
 
-Our scanners support the detection of malicious code in the following model types, with the following file extensions:
+Our scanners support the detection of malicious code in the following model types. The malicious model types are identified both via their binary header values and via their file extensions.
 
 * H5 (.h5, .hdf5)
 * Paddle (.pdparams)
@@ -29,6 +29,7 @@ Our scanners support the detection of malicious code in the following model type
 * JobLib (.joblib)
 * Dill (.dill)
 * SavedModel (.pb)
+* GGUF (.gguf)
 
 Each model type is associated with specific file extensions, and the processing functions are tailored to analyze the model's structure and content.
 

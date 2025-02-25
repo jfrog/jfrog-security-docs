@@ -4,11 +4,10 @@
 
 Advanced Scans apply only to newly added artifacts in the repository and run as ongoing, recurring scans. They are configured per repository and do not apply to existing artifacts.
 
-1. In Classic Navigation, go to **Administration** > **Xray Settings** > **General** > **Indexed Resources**.
-2. In New Navigation, go to **Administration** > **Xray Settings** > **Indexed Resources**.
-3. Select the repository or build and click **Configure**.\
+1. Navigate to **Administration** > **Xray Settings** > **Indexed Resources**.
+2. Select the repository or build and click **Configure**.\
    The **Scans Configuration** window opens.
-4. Under the **Advanced Security** category, select all or some of the following scans:
+3. Under the **Advanced Security** category, select all or some of the following scans:
 
 * **Vulnerabilities Contextual Analysis**
 * **Services**
@@ -31,11 +30,10 @@ Advanced Scans apply only to newly added artifacts in the repository and run as 
 
 Triggering one-time advanced scans is useful when you need to perform an immediate, on-demand security analysis of your artifacts, containers, or codebases without waiting for scheduled scans.
 
-1. In Classic Navigation, go to **Administration** > **Xray Settings** > **General** > **Indexed Resources**.
-2. In New Navigation, go to **Administration** > **Xray Settings** > **Indexed Resources**.
-3. Select a repository or build and click **Advanced Scans**.\
+1. Navigate to **Administration** > **Xray Settings** > **Indexed Resources**.
+2. Select a repository or build and click **Advanced Scans**.\
    The **Advanced Scans** window opens.
-4. Under **Select Date and Pattern** > **Date** and **Pattern**:
+3. Under **Select Date and Pattern** > **Date** and **Pattern**:
 
 * Choose **Deployed in** to scan artifacts that were deployed to Artifactory within a specified time range
 * Choose **Downloaded in** to scan artifacts that were downloaded from Artifactory within a specified time range

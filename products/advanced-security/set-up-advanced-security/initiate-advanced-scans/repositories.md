@@ -5,7 +5,7 @@
 Advanced Scans apply only to newly added artifacts in the repository and run as ongoing, recurring scans. They are configured per repository and do not apply to existing artifacts.
 
 1. Navigate to **Administration** > **Xray Settings** > **Indexed Resources**.
-2. Select the repository or build and click **Configure**.\
+2. Select a repository or build and click **Configure**.\
    The **Scans Configuration** window opens.
 3. Under the **Advanced Security** category, select all or some of the following scans:
 

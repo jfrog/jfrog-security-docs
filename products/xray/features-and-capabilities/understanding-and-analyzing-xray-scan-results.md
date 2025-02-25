@@ -2,7 +2,7 @@
 
 ### **Overview**
 
-Xray scans your **artifacts, builds, and repositories** for **vulnerabilities, license compliance issues, and security risks**. Once a scan is completed, Xray provides a **detailed report** with identified issues, their severity, affected components, and possible remediation steps.
+Xray scans your **artifacts, builds, and Release Bundles** for **vulnerabilities, license compliance issues, and operational risks**. Once a scan is completed, Xray provides a **detailed report** with identified issues, their severity, affected components, and possible remediation steps.
 
 This guide will help you **navigate, interpret, and act upon scan results** effectively.
 
@@ -12,24 +12,11 @@ This guide will help you **navigate, interpret, and act upon scan results** effe
 
 Xray scan results can be accessed in **multiple locations** depending on the scope of the scan:
 
-#### **1. Viewing Scan Results for an Artifact**
+#### &#x20;**Viewing Scan Results**
 
-* Navigate to **JFrog Platform** → **Artifactory**.
-* Select the **repository** containing the artifact.
-* Click on the **artifact** you want to analyze.
-* Go to the **Xray Data** tab to see vulnerability and license reports.
-
-#### **2. Viewing Scan Results for a Build**
-
-* Navigate to **Builds** → Select the build name.
-* Click the **Xray Violations** tab.
-* View a summary of security and license issues detected in the build’s dependencies.
-
-#### **3. Viewing Scan Results for a Repository**
-
-* Go to **Xray** → **Security & Compliance** → **Scans**.
-* Select the repository from the list.
-* Click on it to view **all detected vulnerabilities and compliance violations**.
+* Navigate to **Application -> Xray -> Scan List**.
+* Select the **resource (Git Repositories, Repositories, Builds, Release Bundles, Packages)**&#x20;
+* Click on the specific resource and select the particular version you want to analyze.
 
 ***
 
@@ -38,69 +25,50 @@ Xray scan results can be accessed in **multiple locations** depending on the sco
 #### **1. Overview of the Scan Summary**
 
 The **Xray Scan Dashboard** provides a high-level summary of issues found in the scanned entity. It includes:\
-✅ **Total Number of Issues** detected.\
-✅ **Severity Breakdown** (Critical, High, Medium, Low).\
-✅ **Types of Violations** (Security, License, or Operational).
+**General Artifact Data** (Last scan date, downloads, etc.)\
+**Total Number of Vulnerabilities** **by Severity** (Critical, High, Medium, Low).\
+**Total Number of Policy Violations** **by Severity** (Critical, High, Medium, Low).\
+**Type of Policy Violations** (Security, License, or Operational).\
+**SBOM Details** (Most common package types, most common licenses, etc.)
 
 ***
 
-#### **2. Security Violations Tab**
+#### **2. Policy Violations Tab**
 
-This tab displays all detected **security vulnerabilities** affecting your scanned artifacts.
+This tab displays all detected **violations** affecting your scanned resource.
 
-| Field                  | Description                                                                      |
-| ---------------------- | -------------------------------------------------------------------------------- |
-| **CVE ID**             | Unique identifier for the vulnerability (e.g., `CVE-2023-12345`).                |
-| **Severity**           | Categorized as **Critical, High, Medium, or Low**.                               |
-| **Impacted Component** | The specific artifact or dependency that is affected (e.g., `log4j-2.14.1.jar`). |
-| **Description**        | Explains the nature of the vulnerability and its potential impact.               |
-| **Fix Available**      | Indicates if a patched version exists and provides an upgrade recommendation.    |
+**Examples of Recommended Actions:**
 
-**Example Security Violation**
-
-```
-vbnetCopyEditCVE: CVE-2023-45678  
-Severity: Critical  
-Component: log4j:2.14.1  
-Impact: Remote Code Execution (RCE) vulnerability allowing attackers to execute arbitrary code.  
-Fix Available: Upgrade to log4j:2.17.1  
-```
-
-✅ **Recommended Actions:**
-
-* If a **fix is available**, upgrade to the latest secure version.
-* If a **fix is not available**, apply security mitigations (e.g., firewall rules, dependency patching).
-* If it’s a **false positive**, request an **exception** from the security team.
+* If a **fix is available for a security violation**, upgrade the component to the suggested fix version.
+* If a **violation is failing your build** and you need a grace period, request an ignore rule with an expiration date from the security team.&#x20;
+* If it’s a **false positive**, request an ignore rule from the security team.
 
 ***
 
-#### **3. License Compliance Tab**
+#### **3. SBOM Tab**
 
-This tab provides a list of **licenses** associated with scanned artifacts. It helps identify **restricted or unapproved licenses** that may pose legal risks.
+This tab provides a list of **components and licenses** associated with the scanned resource. Identifies the component list, their versions, their licenses, and operational risk data.&#x20;
 
-| Field                 | Description                                                       |
-| --------------------- | ----------------------------------------------------------------- |
-| **Package Name**      | The artifact containing the license.                              |
-| **License Type**      | The detected license (e.g., MIT, Apache-2.0, GPL-3.0).            |
-| **Compliance Status** | ✅ **Compliant** or ❌ **Non-Compliant** based on company policies. |
+**Examples of** **Recommended Actions:**
 
-**Example License Violation**
-
-```
-vbnetCopyEditComponent: openssl-1.0.1  
-License: OpenSSL License  
-Status: ❌ Restricted (not allowed for commercial distribution)  
-Action: Replace with an alternative package or obtain legal approval.  
-```
-
-✅ **Recommended Actions:**
-
+* Identify a risky component in your resource.&#x20;
 * **For restricted licenses**: Obtain legal approval or find an alternative package.
 * **For missing licenses**: Ensure the package includes a valid license declaration.
+* Identify which component is end-of-life and other operational risk information.&#x20;
 
 ***
 
-#### **4. Impact Analysis Tab**
+#### **4. Security Issues Tab ( Vulnerabilities and Malicious Packages)**
+
+The Vulnerabilities section displays detected vulnerabilities that affect the scanned resource including additional information on each vulnerability.&#x20;
+
+**Examples of** **Recommended Actions:**
+
+* If a **fix is available for a vulnerability**, upgrade the component to the suggested fix version.
+* Use the enriched data provided by the **JFrog Research Team** to understand the exploitability of the vulnerability.&#x20;
+* Understand which component version is vulnerable and what is the exact vulnerable path.&#x20;
+
+#### &#x20;**Impact Analysis**&#x20;
 
 The **Impact Analysis** section shows how detected vulnerabilities **affect other components in the software environment**.
 

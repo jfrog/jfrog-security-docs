@@ -2,7 +2,7 @@
 
 ## Run Contextual Analysis on an Existing Artifact
 
-Starting from Xray version 3.66.x and above, you can run contextual analysis on an existing artifact. Do the following:
+Starting from Xray version 3.66.x and above, you can run contextual analysis on an existing artifact.
 
 1. From the **Scans List** page, **Repositories** tab, select the repository.
 2. Navigate to the artifact you want.
@@ -11,7 +11,7 @@ Starting from Xray version 3.66.x and above, you can run contextual analysis on 
 
 ## Run an Exposure Scan on an Existing Artifact
 
-Starting from Xray version 3.66.x and above, you can scan for Exposures on an existing artifact. Do the following:
+Starting from Xray version 3.66.x and above, you can scan for Exposures on an existing artifact.
 
 1. From the **Scans List** page, **Repositories** tab, select the repository.
 2. Navigate to the artifact you want to scan.
@@ -22,7 +22,7 @@ Starting from Xray version 3.66.x and above, you can scan for Exposures on an ex
 
 This process triggers an **on-demand scan** for secrets within a specific artifact stored in a repository.
 
-1. Navigate to **Scans List** → **Repositories Tab**.
+1. Navigate to **Scans List** > **Repositories Tab**.
 2. Select the **repository** containing the artifact you want to scan.
 3. Locate the artifact and click the **Actions Menu**.
 4. Select **Scan for Secrets** to initiate the scan.

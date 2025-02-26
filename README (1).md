@@ -4,6 +4,8 @@
 
 JFrog Security provides a comprehensive solution to protect your software development lifecycle (SDLC) from emerging threats, vulnerabilities, and compliance risks. As part of JFrog’s end-to-end DevSecOps platform, JFrog Security integrates seamlessly into your development workflow, ensuring secure code, dependencies, and infrastructure from development to production.
 
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
 ### Why JFrog Security?
 
 * **End-to-End Protection:** Security is embedded throughout the SDLC, from OSS Firewall, source code analysis, and binary analysis to runtime monitoring.

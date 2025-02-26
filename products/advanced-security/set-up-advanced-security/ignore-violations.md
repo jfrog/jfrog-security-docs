@@ -27,3 +27,15 @@ There are many reasons why you might want to ignore a violation, you can read mo
 | For any Artifact                             | The rule will be applied on all artifacts that contain that violation in the Docker image.                                                                                         |
 
 Managing, deleting and other Ignore Rules related actions are described in [Ignore Rules](https://jfrog.com/help/access?ft:originId=UUID-dcb8d4a3-bb33-8f0f-7c8b-bc917b82cb9d\&ft:sourceId=pal).
+
+## **Ignoring Secrets Violations**
+
+Ignore rules helps **reduce noise** by filtering out **false positives or non-actionable violations** in secret detection results.
+
+1. Navigate to **Scans List** and locate the reported **Secrets Violation**.
+2. Open the violation details and review the flagged issue.
+3. Click **Ignore Violation** and configure an ignore rule using one of the following criteria:
+   * **Based on Secret Type** – Ignore a specific type of secret (e.g., API Key, SSH Private Key).
+   * **Based on File Path** – Ignore secrets found in a specific file or directory.
+   * **Based on Artifact Name** – Ignore secrets detected in a particular artifact version.
+4. Save the ignore rule to apply it to future scans.

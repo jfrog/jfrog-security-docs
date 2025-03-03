@@ -35,5 +35,14 @@ The Cluster Detailed View in the Runtime Sensor Management offers in-depth insig
 
 ## Policies
 
+Security policies define rules based on security criteria, triggering automatic actions when the conditions are met. In Runtime, you can set security policies by configuring Workers to detect Workload events. There are four types of built-in events that may occur in your workload that may be configured as policies that will trigger actions:&#x20;
+
+* Changes to the list of images deployed within the workload
+* Changes to Xray image information
+* Changes to an image integrity validation information
+* Changes to an images trust information
+
+
+
 
 

@@ -2,14 +2,16 @@
 
 JFrog Catalog provides security, compliance, and operational risk analysis through various features:
 
-**Search Capabilities:**
+**Search Capabilities**
+
+I added something here
 
 * **Package Search** – Find any supported package or Common Vulnerabilities and Exposures (CVEs).
 * **CVE Search (Upcoming Feature)** – Identify and analyze vulnerabilities augmented by JFrog’s Security Research.
 
-**Package Detail View:**
+**Package Detail View**
 
-* **Vulnerabilities**:
+* **Vulnerabilities**
   * **Non-transitive CVEs** – Risks related to the specific package.
   * **Transitive CVEs** – Risks inherited from dependencies.
   * **JFrog Enriched Data** – Additional insights on mitigating CVEs.

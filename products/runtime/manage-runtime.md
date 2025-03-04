@@ -33,27 +33,7 @@ The Cluster Detailed View in the Runtime Sensor Management offers in-depth insig
 
     In **Controller Only** mode, node-level sensor details will not be available.
 
-## Policies
 
-Security policies define rules based on security criteria, triggering automatic actions when the conditions are met. In Runtime, you can set security policies by configuring Workers to detect Workload events. There are four types of built-in events that may occur in your workload that may be configured as policies that will trigger actions:&#x20;
-
-* Changes to the list of images deployed within the workload
-* Changes to Xray image information
-* Changes to image integrity validation information
-* Changes to image trust information
-
-### Create a Runtime Policy
-
-1. Naviaget to **Administration** > **Workers**.
-2. Click on **New Worker** and, from the dropdown menu, select **New Event Driven Worker**.\
-   The **Create New Worker** window opens.&#x20;
-3. On the top left corner, from the dropdown menu, select **Runtime**.\
-   This will narrow down the selection to Workers relevant to Runtime.
-4. Add an **After Workload State Change** Worker. \
-   The **Add New Worker** window opens.
-5. Enter a **Worker** name.
-6. Adjust the script in the **TypeScript Editor**.
-7. &#x20;
 
 
 

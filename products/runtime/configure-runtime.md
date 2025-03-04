@@ -9,7 +9,7 @@ This guide applies **only to Runtime Impact** subscriptions, as Runtime Sensors 
 
 ## Sensors
 
-### Installing Sensors
+### Install Sensors
 
 1. Navigate to **Administration > Runtime > Sensor Management**.
 2. Click **Install Runtime** to open the installation wizard.
@@ -32,7 +32,7 @@ To uninstall sensors from a cluster, set the `kubectl` context to the desired cl
 helm uninstall jf-sensors -n <Namespace>
 ```
 
-### Reinstalling Sensors
+### Reinstall Sensors
 
 If sensors are uninstalled, reinstalling them will generate a new Cluster ID. To preserve historical monitoring data and merge it with new data, retrieve the existing Cluster ID before reinstalling the sensor.
 
@@ -61,7 +61,7 @@ If sensors are uninstalled, reinstalling them will generate a new Cluster ID. To
 1. Reapply the installation snippet.
 2. If updating, the sensors will upgrade automatically.
 
-## Granting OpenShift Security Context Constraints Privileges
+## Grant OpenShift Security Context Constraints Privileges
 
 In **OpenShift**, **Security Context Constraints (SCCs)** are enforced to restrict the permissions of running containers. By default, OpenShift applies strict security policies that limit container privileges, which can prevent the JFrog Runtime Sensor from collecting essential runtime security data.
 
@@ -90,3 +90,34 @@ If using a self-signed certificate, modify the installation snippet:
 ```
 --set tlsInsecureSkipVerify=true
 ```
+
+## Automation Service
+
+**Workers** is a JFrog platform service that allows you to extend and control your execution flows. It provides a serverless execution environment. You can create workers to enhance the platform's functionality. Workers are triggered automatically by events within the JFrog Platform, giving you the flexibility to address specific use cases. Read more about the JFrog platform Workers [here](https://jfrog.com/help/r/jfrog-platform-administration-documentation/workers).
+
+For Runtime, there are four types of built-in events that may occur in your **Workload** that may be configured to trigger actions:&#x20;
+
+* Changes to the list of images deployed within the workload
+* Changes to Xray image information
+* Changes to image integrity validation information
+* Changes to image trust information
+
+### Create a Runtime Policy
+
+1. Naviaget to **Administration** > **Workers**.
+2. Click on **New Worker** and, from the dropdown menu, select **New Event Driven Worker**.\
+   The **Create New Worker** window opens.&#x20;
+3. On the top left corner, from the dropdown menu, select **Runtime**.\
+   This will narrow down the selection to Workers relevant to Runtime.
+4. Add an **After Workload State Change** Worker. \
+   The **Add New Worker** window opens.
+5. Enter a **Worker** name.
+6. Adjust the script in the **TypeScript Editor**.
+7. You may use the Testing tab to add and change values, hit Run to test.&#x20;
+8. Enable/Disable
+9. check the troubleshooting tab to see results in the UI. If you dont, the worker will still run but and you will recieive notifications configured, but wont be able to see in the UI.
+10. In the troubleshooting tab you may see your images, and messages.&#x20;
+
+List of variables and valid values
+
+Code samples?&#x20;

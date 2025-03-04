@@ -102,22 +102,57 @@ For Runtime, there are four types of built-in events that may occur in your **Wo
 * Changes to image integrity validation information
 * Changes to image trust information
 
-### Create a Runtime Policy
+### Create a Runtime Automation
+
+#### Step 1: Create a New Worker
 
 1. Naviaget to **Administration** > **Workers**.
-2. Click on **New Worker** and, from the dropdown menu, select **New Event Driven Worker**.\
+2. From the **Add Worker** dropdown, select **New Event Driven Worker**.\
    The **Create New Worker** window opens.&#x20;
 3. On the top left corner, from the dropdown menu, select **Runtime**.\
    This will narrow down the selection to Workers relevant to Runtime.
 4. Add an **After Workload State Change** Worker. \
    The **Add New Worker** window opens.
-5. Enter a **Worker** name.
-6. Adjust the script in the **TypeScript Editor**.
-7. You may use the Testing tab to add and change values, hit Run to test.&#x20;
-8. Enable/Disable
-9. check the troubleshooting tab to see results in the UI. If you dont, the worker will still run but and you will recieive notifications configured, but wont be able to see in the UI.
-10. In the troubleshooting tab you may see your images, and messages.&#x20;
 
-List of variables and valid values
+#### Step 2: Configure the Worker
 
-Code samples?&#x20;
+1. Enter a **Worker** name.
+2. Enter or modify the script in the **TypeScript Editor**. \
+   Use the auto-complete function to improve efficiency while coding.
+3. Click the **Settings** icon from the top-right corner of the window, and then enter the details in the relevant fields:
+   1. **Description**: Enter a brief description of the worker.
+   2.  **Select Secrets**: Secrets are stored securely and not in plain text. The secret's clear-text value is never returned in an API or UI and will be masked from all the logs.
+
+       **To add a secret:**
+
+       1. Enter the **Name** and **Value** of the secret.
+       2. Click **+ Add secret** to add more secrets.
+       3. Click **Delete** icon to remove any secret.
+4. To see results in the UI, check the **Show status of successful executions in the Troubleshooting tab** box. \
+   If unchecked, the Worker will still run but won't show results in the UI.
+5. To enable the Worker, toggle the **Enable Worker** on.
+6. To save the Worker, Select **OK**.
+
+#### Step 3: Test
+
+1. In the **Testing** pane, edit the JSON payload used to simulate the worker's events.
+2. Click **Run** to test the worker.
+3. Review results in:
+   * **Execution Results** tab: for responses
+   * **Execution Logs** tab: for logs
+   * **Metrics** tab: for run time, memory, and CPU utilization details.
+
+#### Step 4: Save Your Configuration
+
+* Click **Save** to finalize the worker configuration.
+* To cancel the configuration, click **Close**, and then click **Discard** to discard changes.
+
+#### Step 5: Review Worker Events
+
+1. Navigate to the **Troubleshooting** tab.
+2. Select the **Worker** you wish to review.\
+   The **Run History** window opens.&#x20;
+3. Select an event.\
+   The **History Details** window opens.
+4. Under the **Summary** tab, review **Result** and **Payload**. &#x20;
+5. Under the **Logs** tab, review logs.

@@ -4,8 +4,6 @@ JFrog Xray is a **universal software composition analysis (SCA) and security sol
 
 Xray is a **core component of JFrog Security**, playing a **critical role in DevSecOps** by helping developers, security teams, and compliance officers identify and mitigate security issues **as early as possible in the SDLC**.
 
-***
-
 ### **Where Xray Fits in the JFrog Security Timeline**
 
 Security in the software development process must be **continuous**, spanning from **code development to deployment and beyond**. JFrog Xray integrates into multiple stages of the software lifecycle, ensuring that security is **proactive rather than reactive**.

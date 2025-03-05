@@ -17,4 +17,4 @@ JFrog Security provides a comprehensive solution to protect your software develo
 * **JFrog Xray (SCA):** Source code and Binary analysis to detect open-source package risks (vulnerabilities, Licenses, Operational risks, and Malicious packages), with an extensive Policy engine and Reporting capabilities.
 * **JFrog Advanced Security (SAST, Secrets, CVEs analysis, and IaC Security):** Source code and Binary advanced scans that go beyond SCA to expose 1st party code issues, and misconfiguration while reducing noise using CVEs contextual analysis.
 * **JFrog Curation:** Prevent risky dependencies by blocking them before they enter your Artifactory.
-* **JFrog Runtime Security:** Monitors running Kubernetes clusters for threats and integrity check.
+* **JFrog Runtime Security:** Monitors running Kubernetes clusters for threats and integrity checks.

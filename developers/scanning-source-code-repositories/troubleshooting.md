@@ -34,11 +34,3 @@ Ensure the following packages are available in your environment:
 * **Git**
 
 Note: The above packages are included in the standard base images (e.g., Ubuntu, RHEL), but if you are using lighter images like Alpine, you will need to ensure these packages are installed.
-
-**Frogbot Config vs. Apps Config**
-
-**Frogbot Config**\
-Handles the repository, pull request, and installation processes.
-
-**Apps Config**\
-Manages directories and scanners.

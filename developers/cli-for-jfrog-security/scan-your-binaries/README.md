@@ -6,13 +6,6 @@ The on-demand binary scanning enables you to point to a binary in your local fil
 
 Use the `jf scan` command to scan files on your local file system with JFrog Xray.
 
-### **Before You Begin**
-
-It is essential you have:
-
-* Xray 3.29.0
-* JFrog CLI 2.1.0
-
 **Command**: `scan`, `s`
 
 ### Commands Parameters
@@ -73,13 +66,6 @@ jf s "*.tgz"
 ## Scanning Docker Containers on the Local File System
 
 Use `jf docker scan` to scan Docker containers locally using the Docker client and JFrog Xray.
-
-### **Before You Begin**
-
-It is essential you have:
-
-* Xray 3.40.0 or above
-* JFrog CLI 2.11.0 or above
 
 ### Commands Parameters
 

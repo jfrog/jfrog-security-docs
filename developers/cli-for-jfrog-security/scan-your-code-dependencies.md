@@ -2,13 +2,6 @@
 
 The `jf audit` command scans your source code dependencies in the project's current directory for security vulnerabilities and license violations. It also allows scanning against your Xray policies. The command builds a deep dependency graph for your project, scans it with Xray, and displays the results. It uses the project’s package manager to construct the dependency graph.
 
-## **Before You Begin**
-
-It is essential you have:
-
-* Xray version 3.29.0 or above
-* JFrog CLI version 2.13.0 or above
-
 ## **Supported Package Managers**
 
 * **Maven (mvn)** – Requires version 3.1.0 or above

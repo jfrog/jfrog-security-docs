@@ -1,0 +1,196 @@
+html, body {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	width: 1024px;
+}
+body.paligo-preview .variable-content {
+    background-color: rgb(211,226,248);
+    color:rgb(36,75,101);
+}
+.navheader, .toc, body > section > .titlepage {
+	display: none;
+}
+
+.navfooter table td, .navfooter table th{
+    border: none !important;
+}
+
+table {
+	border-collapse: collapse;
+}
+table td, table th {
+	border:1px solid silver;
+	padding: 0.5rem;
+    text-align: left;
+}
+
+td.tableheader{
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.mediaobject table td, .mediaobject table th {
+	border:none!important;
+}
+
+.mediaobject {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.mediaobject img {
+    max-width: 100%;
+}
+
+.inlinemediaobject {
+	display: inline-block;
+	height: 1.5em;
+	vertical-align: -0.275em;
+}
+.inlinemediaobject img:not([height]):not([width]) {
+	height: 100%;
+	width: auto;
+}
+/* ASN: Special for callout icons */
+.calloutlist img, .co img {
+	width: 1em;
+	/*margin-top: 0.5em;*/
+}
+
+.co img {
+	margin-bottom: 0.5em;
+	margin-bottom: -0.2em;
+}
+
+/* ASN: If not using images for callouts, make sure the color of the callout number is not changed by the highlight plugin */
+.co span, .calloutlist span{
+    color:#54a1e5!important;
+}  
+.co span.unicode-callout {
+    font-size: 1.5em;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+a.co, .calloutlist a{
+    text-decoration: none;
+} 
+
+.co .fa-stack .text-primary span, .calloutlist .fa-stack .text-primary {
+    color: #fff!important;
+}
+
+strong.fa-stack-1x.text-primary {
+    color: #fff!important;
+}
+
+.co .fa-3x, .calloutlist .fa-3x{
+   font-size: 0.8em; 
+}
+
+/*Variation on this: https://stackoverflow.com/questions/4861224/how-to-use-css-to-surround-a-number-with-a-circle*/
+a.co:focus{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    margin-right: -20px;
+    border: 2px solid #666;
+    border: 2px solid rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+    outline:none;
+}
+
+.calloutlist span.unicode-callout {
+    font-size: 1.3em;
+    line-height: 1em;
+}
+
+span.plain-text-callout:before {
+    content: '(';
+}
+
+span.plain-text-callout:after {
+    content: ')';
+}
+
+/*Too  much space before the parenthesis if not reducing by negative margin*/
+.co span.plain-text-callout {
+    margin-left: -0.1em;
+}
+
+.calloutlist span.plain-text-callout {
+    margin-left: 25px;
+}
+
+span.linktextprovider {
+	display: none;
+}
+.simplelist > *::after {
+  content: ", ";
+}
+.simplelist .inlinemediaobject::after {
+  content: "";
+}
+.simplelist > *:last-child::after {
+  content: "";
+}
+
+
+.videoobject {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.videoobject iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container{
+    width: 60%;
+}
+
+.wistia_embed{
+    height: 349px;
+    width: 620px;
+}
+
+.cmdsynopsis {
+  font-family: monospace;
+}
+
+iframe.external {
+    width: 100%;
+    height: 100%;
+    border:1px solid #cccccc;
+}
+
+span.translation-changed{
+    background-color: #cfe8fc;
+    color: #1976D2;
+}
+
+/* PAL2-6297 added underline, strikethrough and overline */
+.underline {
+	text-decoration: underline;
+}
+
+.strikethrough {
+	text-decoration: line-through;
+}
+
+.overline {
+	text-decoration: overline;
+}

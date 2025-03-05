@@ -11,10 +11,10 @@ With thousands of vulnerabilities detected, developers often struggle to sort th
 Advanced Security helps address these challenges with its advanced capabilities:
 
 * **Vulnerability Contextual Analysis**: Minimize false positives and noise by understanding which CVEs apply to your application, ensuring you focus on relevant issues.
-* **Exposures**: Detect security risks in your configurations and open-source libraries, covering various forms of software supply chain attacks.
-* **SAST (Static Application Security Testing)**: Identify, fix, and learn about security issues in your code. JFrog SAST focuses on sensitive operations (e.g., database queries, OS commands, outgoing connections) that can be exploited by external attackers if not properly sanitized.
+* **Exposures:** Detect security risks in your configurations and open-source libraries, including infrastructure-as-code scanning, covering various forms of software supply chain attacks.
+* **SAST (Static Application Security Testing):** Identify, fix, and learn about security issues in your code. JFrog SAST focuses on sensitive operations (e.g., database queries, OS commands, outgoing connections) that can be exploited by external attackers if not properly sanitized. It offers fast, accurate, cross-file analysis and runs locally to ensure secure and efficient code scanning.
 
-## Our Research Team
+## Industry-Leading Security Research: The Foundation of JFrog's Solutions
 
 The JFrog Security research team continuously identifies and prioritizes CVEs, offering advanced security data and step-by-step remediation guidance. By providing contextual advice, the team helps developers focus on the most impactful CVEs.&#x20;
 

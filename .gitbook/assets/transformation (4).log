@@ -1,0 +1,50 @@
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] ############################################################
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] # Output Factory initiated (html)
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] # Building output for: Connect to a Jira Account
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] # URL /document/edit/642355
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] # User: Lina Daher
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] # Time: Tue, 04 Mar 2025 11:31:00 +0000
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] # Server: ip-172-31-41-76.eu-west-1.compute.internal
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] ############################################################
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Group: system
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Type: html
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Transformation: $apppath/lib/docbook/xsl/html/html.xsl
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] File found: $apppath/lib/docbook/xsl/html/html.xsl
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] ############################################################
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Building output for: html
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Using stylesheet: $apppath/lib/docbook/xsl/html/html.xsl
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Parameters for this build: []
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Environment variables for this build: []
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Building output for languages: ["en"]
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Building multilang: no
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Building preview: no
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] ############################################################
+[04/Mar/2025 11:31:00 Europe/Dublin] [Info] Using build directory: $local_tmp/production-67c6e4734a9639.51002033/642355-Connect_to_a_Jira_Account-html
+[04/Mar/2025 11:31:03 Europe/Dublin] [Info] -- Generating source files
+[04/Mar/2025 11:31:03 Europe/Dublin] [Info] -- Propagating taxonomies: false
+[04/Mar/2025 11:31:03 Europe/Dublin] [Info] -- Source files have been generated
+[04/Mar/2025 11:31:03 Europe/Dublin] [Info] -- Publication has no unresolved dependencies.
+[04/Mar/2025 11:31:03 Europe/Dublin] [Info] Parsing processing instructions
+[04/Mar/2025 11:31:03 Europe/Dublin] [Info] -- Generating source files complete.
+[04/Mar/2025 11:31:04 Europe/Dublin] [Info] Localizing: component-642355.xml
+[04/Mar/2025 11:31:04 Europe/Dublin] [Info] Language: en
+[04/Mar/2025 11:31:04 Europe/Dublin] [Warning] Resolving some links failed
+[04/Mar/2025 11:31:04 Europe/Dublin] [Info] [/*/*[3]/*[2]/*[3]] An outgoing link in <a href="/document/edit/642355">Connect to a Jira Account</a> could not be resolved. The link points to <a href="/document/edit/502657">JFrog Platform New UI (Beta) Quick Start Guide</a> which is not part of this publication.
+[04/Mar/2025 11:31:04 Europe/Dublin] [Info] [/*/*[14]/*[2]/*[4]/*[2]/*] An outgoing link in <a href="/document/edit/642355">Connect to a Jira Account</a> could not be resolved. The link points to <a href="/document/edit/642388">Create a Jira Configuration Profile</a> which is not part of this publication.
+[04/Mar/2025 11:31:04 Europe/Dublin] [Info] Variable sets found: 0
+[04/Mar/2025 11:31:05 Europe/Dublin] [Info] Inserting image links.
+[04/Mar/2025 11:31:05 Europe/Dublin] [Info] Found 2 image(s).
+[04/Mar/2025 11:31:05 Europe/Dublin] [Info] Found image '176260854.png'
+[04/Mar/2025 11:31:05 Europe/Dublin] [Info] Found image 'Screenshot_2024-03-27_at_16_42_40.png'
+[04/Mar/2025 11:31:07 Europe/Dublin] [Info] Profiling parameters: []
+[04/Mar/2025 11:31:07 Europe/Dublin] [Info] Profiling customisation: $user_dir/xsl/profile.xsl (not found)
+[04/Mar/2025 11:31:07 Europe/Dublin] [Info] Transformation: component-642355--en.org.xml -> component-642355--en.xml [profile.xsl]
+[04/Mar/2025 11:31:07 Europe/Dublin] [Info] Transformation: component-642355--en.xml -> component-642355--en.xml [internal-xref.xsl]
+[04/Mar/2025 11:31:07 Europe/Dublin] [Info] Transformation: A-filelist.xml -> B-sorted.xml [IO.document.sortlang.xsl]
+[04/Mar/2025 11:31:07 Europe/Dublin] [Info] Transformation: B-sorted.xml -> C-concatenated.xml [IO.document.concat.xsl]
+[04/Mar/2025 11:31:07 Europe/Dublin] [Info] Transformation: B-sorted.xml -> index-en.xml [IO.document.head.xsl]
+[04/Mar/2025 11:31:08 Europe/Dublin] [Info] Image copied: en/image/uuid-1c282f7f-ea1b-c37c-f996-4e3e0784a0aa.png
+[04/Mar/2025 11:31:08 Europe/Dublin] [Info] Image copied: en/image/uuid-895df6fc-5ef7-19c2-94fd-87b83c01849b.png
+[04-Mar-2025 11:31:08 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, fonts/*
+[04-Mar-2025 11:31:08 Europe/Dublin] Parsing manifest file: css/*, css/image/*, css/image/callouts/*, js/*, fonts/*
+[04/Mar/2025 11:31:09 Europe/Dublin] [Info] # Took 8.602811 seconds to render.

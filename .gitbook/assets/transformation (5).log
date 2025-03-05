@@ -1,0 +1,45 @@
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] ############################################################
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] # Output Factory initiated (msword)
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] # Building output for: View Jira Tickets Created with Xray Integration
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] # URL /document/edit/642346
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] # User: Lina Daher
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] # Time: Tue, 04 Mar 2025 11:39:26 +0000
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] # Server: ip-172-31-2-22.eu-west-1.compute.internal
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] ############################################################
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Group: system
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Type: msword
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Transformation: $apppath/lib/docbook/xsl/msword/msword.xsl
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] File found: $apppath/lib/docbook/xsl/msword/msword.xsl
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] ############################################################
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Building output for: msword
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Using stylesheet: $apppath/lib/docbook/xsl/msword/msword.xsl
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Parameters for this build: []
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Environment variables for this build: []
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Building output for languages: ["en"]
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Building multilang: no
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Building preview: no
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] ############################################################
+[04/Mar/2025 11:39:26 Europe/Dublin] [Info] Using build directory: $local_tmp/production-67c6e66d0f0bc7.29412356/642346-View_Jira_Tickets_Created_with_Xray_Integration-msword
+[04/Mar/2025 11:39:27 Europe/Dublin] [Info] -- Generating source files
+[04/Mar/2025 11:39:27 Europe/Dublin] [Info] -- Propagating taxonomies: false
+[04/Mar/2025 11:39:27 Europe/Dublin] [Info] -- Source files have been generated
+[04/Mar/2025 11:39:27 Europe/Dublin] [Info] -- Publication has no unresolved dependencies.
+[04/Mar/2025 11:39:27 Europe/Dublin] [Info] Parsing processing instructions
+[04/Mar/2025 11:39:27 Europe/Dublin] [Info] -- Generating source files complete.
+[04/Mar/2025 11:39:28 Europe/Dublin] [Info] Localizing: component-642346.xml
+[04/Mar/2025 11:39:28 Europe/Dublin] [Info] Language: en
+[04/Mar/2025 11:39:28 Europe/Dublin] [Info] Variable sets found: 0
+[04/Mar/2025 11:39:30 Europe/Dublin] [Info] Inserting image links.
+[04/Mar/2025 11:39:30 Europe/Dublin] [Info] Found 2 image(s).
+[04/Mar/2025 11:39:30 Europe/Dublin] [Info] Found image 'View_Jira_Tickets_Created_with_Xray_Integration_-_Figure_1.png'
+[04/Mar/2025 11:39:30 Europe/Dublin] [Info] Found image 'View_Jira_Tickets_Created_with_Xray_Integration_-_Figure_2.png'
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Profiling parameters: []
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Profiling customisation: $user_dir/xsl/profile.xsl (not found)
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Transformation: component-642346--en.org.xml -> component-642346--en.xml [profile.xsl]
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Transformation: component-642346--en.xml -> component-642346--en.xml [internal-xref.xsl]
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Transformation: A-filelist.xml -> B-sorted.xml [IO.document.sortlang.xsl]
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Transformation: B-sorted.xml -> C-concatenated.xml [IO.document.concat.xsl]
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Transformation: B-sorted.xml -> index-en.xml [IO.document.head.xsl]
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Template found: $apppath/lib/docbook/xsl/msword/msword.docx
+[04/Mar/2025 11:39:31 Europe/Dublin] [Info] Filter found: $apppath/lib/docbook/xsl/msword/msword.lua
+[04/Mar/2025 11:39:32 Europe/Dublin] [Info] # Took 5.804728 seconds to render.

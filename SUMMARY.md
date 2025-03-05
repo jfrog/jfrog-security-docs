@@ -148,7 +148,7 @@
     * [JFrog Curation](developers/cli-for-jfrog-security/jfrog-curation.md)
   * [Securing Your Code](developers/securing-your-code/README.md)
     * [VS Code](developers/securing-your-code/vs-code/README.md)
-      * [Prerequisites](developers/securing-your-code/vs-code/prerequisites.md)
+      * [Package Manager Prerequisites](developers/securing-your-code/vs-code/package-manager-prerequisites.md)
       * [Supported Technologies](developers/securing-your-code/vs-code/supported-technologies.md)
       * [Installation](developers/securing-your-code/vs-code/installation.md)
       * [Manage](developers/securing-your-code/vs-code/manage.md)

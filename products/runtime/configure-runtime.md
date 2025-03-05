@@ -14,11 +14,6 @@ layout:
 
 # Configure Runtime
 
-JFrog Runtime offers two deployment modes based on your subscription:
-
-* **Runtime Integrity** – The default option, which includes only the **Runtime Controller** and requires no additional configuration.
-* **Runtime Impact** – An advanced option that includes both the **Runtime Controller** and **Runtime Sensors** for deeper security insights.
-
 This guide applies **only to Runtime Impact** subscriptions, as Runtime Sensors require configuration.
 
 ## Sensors
@@ -107,7 +102,8 @@ If using a self-signed certificate, modify the installation snippet:
 
 ## Automation Service
 
-**Workers** is a JFrog platform service that allows you to extend and control your execution flows. It provides a serverless execution environment. You can create workers to enhance the platform's functionality. Workers are triggered automatically by events within the JFrog Platform, giving you the flexibility to address specific use cases. Read more about the JFrog platform Workers [here](https://jfrog.com/help/r/jfrog-platform-administration-documentation/workers).
+**Workers** is a JFrog platform service that allows you to extend and control your execution flows. It provides a serverless execution environment. You can create workers to enhance the platform's functionality. Workers are triggered automatically by events within the JFrog Platform, giving you the flexibility to address specific use cases. \
+Read more about the JFrog platform Workers [here](https://jfrog.com/help/r/jfrog-platform-administration-documentation/workers).
 
 For Runtime, there are four types of built-in events that may occur in your **Workload** that may be configured to trigger actions:&#x20;
 

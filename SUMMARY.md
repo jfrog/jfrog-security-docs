@@ -119,7 +119,6 @@
     * [Supported Technologies](products/runtime/supported-technologies.md)
     * [Features and Capabilities](products/runtime/features-and-capabilities.md)
     * [Configure Runtime](products/runtime/configure-runtime.md)
-    * [Quick Start](products/runtime/quick-start.md)
     * [Manage Runtime](products/runtime/manage-runtime.md)
     * [How-Tos](products/runtime/how-tos/README.md)
       * [Inspecting Live Software Components](products/runtime/how-tos/inspecting-live-software-components.md)

@@ -30,7 +30,6 @@ The extension uses severity icons to indicate the highest severity issue within 
 | ![](../../../.gitbook/assets/Low.png)                                                                                                                                                                                                                                   | Low            | Issue with low severity                 |
 | ![](../../../.gitbook/assets/Unknown.png)                                                                                                                                                                                                                               | Unknown        | Issue with unknown severity             |
 | ![](../../../.gitbook/assets/notApplicableCritical.png)![](../../../.gitbook/assets/notApplicableHigh.png)![](../../../.gitbook/assets/notApplicableMedium.png)![](../../../.gitbook/assets/notApplicableLow.png)![](../../../.gitbook/assets/notApplicableUnknown.png) | Not Applicable | CVE issue not applicable to source code |
-| ![](../../../.gitbook/assets/Normal.png)                                                                                                                                                                                                                                | Normal         | No issues (used only in CI view)        |
 
 ## **How Does It Work?**
 

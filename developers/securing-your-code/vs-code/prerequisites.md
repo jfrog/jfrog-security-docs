@@ -1,4 +1,4 @@
-# Prerequisites
+# Package Manager Prerequisites
 
 ## **Go Projects**
 

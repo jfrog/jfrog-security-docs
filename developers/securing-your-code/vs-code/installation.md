@@ -25,21 +25,3 @@ After installing the JFrog extension:
 ### **Connect Using JFrog CLI Connection Details**
 
 If **JFrog CLI** is installed and configured with your JFrog Platform details, a notification will appear on the **Sign-in page**, indicating automatic detection of credentials.
-
-### **Connect Using Environment Variables**
-
-You can configure connection details using environment variables before launching VS Code:
-
-**Required Environment Variables:**
-
-* `JFROG_IDE_URL` - JFrog URL
-* `JFROG_IDE_USERNAME` - JFrog username
-* `JFROG_IDE_PASSWORD` - JFrog password
-* `JFROG_IDE_ACCESS_TOKEN` - JFrog access token
-* `JFROG_IDE_STORE_CONNECTION` - Set to `true` to store connection details after reading them from environment variables.
-
-After setting these variables, a notification will appear on the **Sign-in page** confirming the configuration.
-
-{% hint style="warning" %}
-For security reasons, it is recommended to **unset** environment variables after launching VS Code.
-{% endhint %}

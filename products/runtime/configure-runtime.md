@@ -1,7 +1,5 @@
 # Configure Runtime
 
-This guide applies **only to Runtime Impact** subscriptions, as Runtime Sensors require configuration.
-
 ## Sensors
 
 ### Install Sensors

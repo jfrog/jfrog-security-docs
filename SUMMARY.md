@@ -184,5 +184,5 @@
     * [Configure Frogbot](developers/scanning-source-code-repositories/configure-frogbot.md)
     * [Troubleshooting](developers/scanning-source-code-repositories/troubleshooting.md)
     * [Frogbot Optional Configuration Parameters](developers/scanning-source-code-repositories/frogbot-optional-configuration-parameters.md)
-    * [Offline Setup for Frogbot Executables](developers/scanning-source-code-repositories/offline-setup-for-frogbot-executables.md)
+    * [Frogbot Offline](developers/scanning-source-code-repositories/frogbot-offline.md)
   * [CI/CD](developers/ci-cd.md)

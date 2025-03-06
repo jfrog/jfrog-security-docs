@@ -91,7 +91,7 @@ If using a self-signed certificate, modify the installation snippet:
 **Workers** is a JFrog platform service that allows you to extend and control your execution flows. It provides a serverless execution environment. You can create workers to enhance the platform's functionality. Workers are triggered automatically by events within the JFrog Platform, giving you the flexibility to address specific use cases. \
 Read more about the JFrog platform Workers [here](https://jfrog.com/help/r/jfrog-platform-administration-documentation/workers).
 
-For Runtime, there are four types of built-in events that may occur in your **Workload** that may be configured to trigger actions:&#x20;
+There are four types of built-in events that may occur in your **Workload** that may be configured to trigger actions:&#x20;
 
 * Changes to the list of images deployed within the workload
 * Changes to Xray image information

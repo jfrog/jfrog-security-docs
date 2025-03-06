@@ -1,17 +1,3 @@
----
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Configure Runtime
 
 This guide applies **only to Runtime Impact** subscriptions, as Runtime Sensors require configuration.

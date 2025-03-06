@@ -15,7 +15,7 @@ JFrog Runtime enhances visibility by **correlating runtime artifacts with their 
 
 * **Comprehensive runtime tracing** of images, workloads, and processes.
 * **Risk analysis across the infrastructure**, allowing teams to track vulnerabilities, security exposures, and compliance gaps.
-* **Contextual security insights** by integrating with JFrog Xray for enriched vulnerability detection.
+* **Contextual security insights** by integrating with JFrog Xray and Advanced Security for enriched vulnerability detection.
 * **Cluster-wide observability**, providing a clear picture of security risks across multiple Kubernetes nodes.
 
 ## Integrity

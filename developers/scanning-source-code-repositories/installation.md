@@ -4,7 +4,7 @@
 
 Frogbot relies on specific lock files, the presence of package manager executables, and proper configuration to accurately scan and secure your repositories.
 
-## General Requirements
+## SCA Requirements
 
 | **Requirement**                 | **Description**                                                                                   |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |

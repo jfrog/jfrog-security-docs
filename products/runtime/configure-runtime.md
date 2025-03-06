@@ -31,6 +31,10 @@ helm uninstall jf-sensors -n <Namespace>
 
 If sensors are uninstalled, reinstalling them will generate a new Cluster ID. To preserve historical monitoring data and merge it with new data, retrieve the existing Cluster ID before reinstalling the sensor.
 
+{% hint style="warning" %}
+Sensors are automatically upgraded during system updates.&#x20;
+{% endhint %}
+
 #### Reinstalling Sensor Preserving Data
 
 1.  Before uninstalling the sensor, retrieve the cluster ID :
@@ -54,7 +58,6 @@ If sensors are uninstalled, reinstalling them will generate a new Cluster ID. To
 #### Reinstalling Sensor Without Preserving Data
 
 1. Reapply the installation snippet.
-2. If updating, the sensors will upgrade automatically.
 
 ## Grant OpenShift Security Context Constraints Privileges
 

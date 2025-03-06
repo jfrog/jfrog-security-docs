@@ -23,6 +23,7 @@ Frogbot scanners support the following operating systems:
 
 * Ubuntu 18+
 * RHEL 8+
+* Windows
 
 #### **Required Packages**&#x20;
 

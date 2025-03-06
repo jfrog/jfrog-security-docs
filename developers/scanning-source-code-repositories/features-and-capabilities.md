@@ -1,6 +1,6 @@
 # Features and Capabilities
 
-JFrog Frogbot serves as an indispensable tool for enhancing security and compliance throughout the software development process. Several key attributes underscore its value:
+JFrog Frogbot serves as an indispensable tool for enhancing security and compliance throughout the software development process in SCMs. Several key attributes underscore its value:
 
 **Comprehensive Security Scanning**\
 Frogbot diligently assesses source code for a myriad of vulnerabilities. It addresses not only code vulnerabilities through SAST but also known issues in dependencies via SCA, as well as potential misconfigurations in Infrastructure as Code (IaC). Additionally, its CVE Contextual Analysis capability significantly reduces false positives while protecting against secrets exposure.

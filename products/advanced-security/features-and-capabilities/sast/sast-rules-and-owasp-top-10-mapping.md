@@ -1,4 +1,4 @@
-# SAST Rules and OWASP Mapping
+# SAST Rules and OWASP Top 10 Mapping
 
 JFrog SAST offers a comprehensive set of rules designed to identify security vulnerabilities across your codebase. These rules are mapped to the OWASP Top 10 vulnerabilities, as well as additional critical security issues beyond the OWASP Top 10. The mapping provides clear visibility into which specific vulnerabilities are being addressed and how they align with widely recognized security standards. In this section, you’ll find a detailed table of the SAST rules, and their corresponding OWASP categories, helping you better understand how JFrog SAST ensures your code is protected against the most critical security risks.
 

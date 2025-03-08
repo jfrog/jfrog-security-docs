@@ -99,7 +99,6 @@
       * [Secrets Scans](products/advanced-security/features-and-capabilities/secrets-scans.md)
       * [Misconfigurations Scans](products/advanced-security/features-and-capabilities/misconfigurations-scans.md)
       * [SAST](products/advanced-security/features-and-capabilities/sast.md)
-        * [SAST Rules and OWASP Top 10 Mapping](products/advanced-security/features-and-capabilities/sast/sast-rules-and-owasp-top-10-mapping.md)
     * [Set Up Advanced Security](products/advanced-security/set-up-advanced-security/README.md)
       * [Initiate Advanced Scans](products/advanced-security/set-up-advanced-security/initiate-advanced-scans/README.md)
         * [Repositories](products/advanced-security/set-up-advanced-security/initiate-advanced-scans/repositories.md)

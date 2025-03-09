@@ -1,6 +1,6 @@
 # Create Policies
 
-**This is a Step-by-Step Guide to Creating a Policy in Xray. To learn more about Policies, click** [**here**](../features-and-capabilities/sdlc-policy-mangement/)**.**
+**This is a Step-by-Step Guide to Creating a Policy in Xray. To learn more about Policies, click** [**here**](../xray-features-and-capabilities/sdlc-policy-mangement/)**.**
 
 #### **Step 1: Access the Policy Configuration**
 

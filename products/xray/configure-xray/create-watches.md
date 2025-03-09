@@ -1,6 +1,6 @@
 # Create Watches
 
-**This is a Step-by-Step Guide to Creating a Watch in Xray. To learn more about Watches, click** [**here**](../features-and-capabilities/sdlc-policy-mangement/watches.md)**.**&#x20;
+**This is a Step-by-Step Guide to Creating a Watch in Xray. To learn more about Watches, click** [**here**](../xray-features-and-capabilities/sdlc-policy-mangement/watches.md)**.**&#x20;
 
 #### **Step 1: Access the Watch Configuration**
 

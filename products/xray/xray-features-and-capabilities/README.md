@@ -1,4 +1,4 @@
-# Features and Capabilities
+# Xray Features and Capabilities
 
 ### [**Software Composition Analysis (SCA)**](sca/)
 
@@ -28,7 +28,7 @@ Unlike traditional scanners, Xray **recursively scans all layers** of software a
 
 * **File-based Analysis:** Extracts and scans all files within an artifact.
 * **Recursive Layer Inspection:** Ensures all artifact layers are covered.
-* **OS and Container Security:** Scans multiple package types. For the full list, see [Supported Technologies](../supported-technologies.md).&#x20;
+* **OS and Container Security:** Scans multiple package types. For the full list, see [Supported Technologies](../xray-supported-technologies.md).&#x20;
 
 **Why it matters:**\
 Provides **greater visibility into software components.**

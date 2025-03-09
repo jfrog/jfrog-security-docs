@@ -1,6 +1,6 @@
 # SCA
 
-Software Composition Analysis (SCA) identifies and manages open-source and third-party components within software applications. SCA solutions help organizations detect security vulnerabilities, license compliance issues, and operational risks associated with external dependencies.
+Software Composition Analysis (SCA) identifies and manages open-source and third-party components within software applications. SCA solutions help organizations detect security vulnerabilities, malicious packages, license compliance issues, and operational risks associated with external dependencies.
 
 JFrog Xray is a **universal SCA solution** that integrates **natively with JFrog Artifactory** to provide deep visibility into the composition of software artifacts, ensuring security and compliance throughout the software development lifecycle.
 

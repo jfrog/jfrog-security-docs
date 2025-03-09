@@ -1,6 +1,10 @@
-# Scan Your Code Dependencies
+# Scan Your Source Code
 
-The `jf audit` command scans your source code dependencies in the project's current directory for security vulnerabilities and license violations. It also allows scanning against your Xray policies. The command builds a deep dependency graph for your project, scans it with Xray, and displays the results. It uses the project’s package manager to construct the dependency graph.
+The `jf audit` command enables developers to perform **on-demand security scans** of their source code **directly from their terminal**, ensuring early detection of vulnerabilities, licenses, misconfigurations, and exposed secrets. By integrating seamlessly into the developer workflow, it helps catch security risks before code reaches production—reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
+
+
+
+Note: For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
 
 ## **Supported Package Managers**
 
@@ -19,27 +23,9 @@ The `jf audit` command scans your source code dependencies in the project's curr
 * **SwiftPM (swift)**
 * **Conan (C++)**
 
-The command automatically detects the package manager used by your project.
-
-## **Advanced Scans**
-
-When the **Advanced Security Package** is enabled on your JFrog Platform instance, `jf audit` also supports:
-
-* **Vulnerability Contextual Analysis:** Reduces false positives by analyzing code context. Supported for Python, Go, and JavaScript.
-* **Secrets Detection:** Identifies exposed secrets like tokens or credentials to prevent accidental leaks.
-* **Infrastructure as Code (IaC) Scans:** Detects misconfigurations in Terraform files for early cloud infrastructure risk identification.
-
 {% hint style="warning" %}
--   The `jf audit` command does not extract internal content of scanned dependencies. Embedded vulnerable components inside binaries may not be detected.
-
-
--   This differs from the `jf scan` command, which scans deeper into package content.
-
-
 - If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
 {% endhint %}
-
-_To enable the Advanced Security Package,_ [_contact us_](https://jfrog.com/advanced-security-contact-us/)_._
 
 ## **Command Options**
 

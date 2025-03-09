@@ -13,7 +13,6 @@ After installing the JFrog extension:
    * You can also choose alternative authentication methods:
      * **Single Sign-On (SSO)**
      * **JFrog CLI's Connection Details**
-     * **Environment Variables**
 
 ### **Connect Using SSO**
 

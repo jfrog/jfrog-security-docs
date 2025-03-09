@@ -24,5 +24,5 @@
 
 ## **Real-Time Alerting**
 
-* Automates security policy enforcement, allowing organizations to apply predefined security rules for compliance.
+* Automates security policy enforcement, allowing organizations to apply predefined security rules.
 

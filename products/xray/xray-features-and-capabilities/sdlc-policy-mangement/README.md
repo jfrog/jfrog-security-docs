@@ -2,15 +2,15 @@
 description: Enforcing Security and Compliance Throughout the Software Development Lifecyle
 ---
 
-# SDLC Policies in JFrog Xray
+# Policies in JFrog Xray
 
-In modern software development, security and compliance must be integrated **at every stage** of the **Software Development Lifecycle (SDLC)**. JFrog Xray enables organizations to define **SDLC policies** that enforce security, legal compliance, and operational governance. These policies help prevent vulnerabilities, manage open-source licenses, and ensure software quality.&#x20;
+In modern software development, security and compliance must be integrated **at every stage** of the **Software Development Lifecycle (SDLC)**. JFrog Xray enables organizations to define **policies** that enforce security, legal compliance, and operational governance. These policies help prevent vulnerabilities, manage open-source licenses, and ensure software quality.&#x20;
 
 ***
 
-### **Understanding SDLC Policies in Xray**
+### **Understanding Policies in Xray**
 
-SDLC policies in Xray are **configurable rules** that dictate **how software artifacts and dependencies** are assessed for security and compliance at different **SDLC phases**.
+Policies in Xray are **configurable rules** that dictate **how software artifacts and dependencies** are assessed for security and compliance at different **SDLC phases**.
 
 Xray’s policies focus on:\
 ✔ **Security** – Identifying vulnerabilities and threats in software components.\
@@ -21,7 +21,7 @@ These policies **automate decision-making** by triggering **violations, alerts, 
 
 ***
 
-### **How SDLC Policies Work in Xray**
+### **How Policies Work in Xray**
 
 #### **1. Define Policies**
 
@@ -49,7 +49,7 @@ When an artifact **matches a policy rule**, Xray automatically:\
 
 ***
 
-### **Types of SDLC Policies in Xray**
+### **Types of Policies in Xray**
 
 Xray provides three primary **policy types**, each serving a **different aspect of software security**:
 
@@ -86,7 +86,7 @@ Operational risk policies **assess the reliability and maintainability** of soft
 
 ### **SDLC Stages Where Xray Policies Are Applied**
 
-SDLC policies are enforced **throughout the software lifecycle**:
+Policies are enforced **throughout the software lifecycle**:
 
 | SDLC Phase                           | Example Use Case                                                                                                |
 | ------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
@@ -96,7 +96,7 @@ SDLC policies are enforced **throughout the software lifecycle**:
 
 ***
 
-### **Best Practices for Implementing SDLC Policies in Xray**
+### **Best Practices for Implementing Policies in Xray**
 
 \
 **Automate CI/CD Enforcement** – Use Xray to **fail builds** that introduce security risks.\

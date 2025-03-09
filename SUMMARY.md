@@ -41,7 +41,7 @@
           * [SBOM Import](products/xray/xray-features-and-capabilities/sca/sbom/sbom-import.md)
           * [SBOM Export](products/xray/xray-features-and-capabilities/sca/sbom/sbom-export.md)
         * [Shift-Left Security with Xray Scanning in IDEs and CLI](products/xray/xray-features-and-capabilities/sca/shift-left-security-with-xray-scanning-in-ides-and-cli.md)
-      * [SDLC Policies in JFrog Xray](products/xray/xray-features-and-capabilities/sdlc-policy-mangement/README.md)
+      * [Policies in JFrog Xray](products/xray/xray-features-and-capabilities/sdlc-policy-mangement/README.md)
         * [Watches in JFrog Xray](products/xray/xray-features-and-capabilities/sdlc-policy-mangement/watches.md)
         * [Ignoring Violations in JFrog Xray: Understanding Ignore Rules](products/xray/xray-features-and-capabilities/sdlc-policy-mangement/ignore-rules.md)
       * [Export Scan Results](products/xray/xray-features-and-capabilities/export-scan-results.md)

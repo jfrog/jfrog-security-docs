@@ -174,7 +174,7 @@
       * [How-Tos](developers/code-security-within-your-ide/visual-studio/how-tos.md)
   * [APIs](developers/apis.md)
   * [Scanning Source Code Repositories](developers/scanning-source-code-repositories/README.md)
-    * [Installation](developers/scanning-source-code-repositories/installation.md)
+    * [Package Manager Prerequisites](developers/scanning-source-code-repositories/package-manager-prerequisites.md)
     * [Features and Capabilities](developers/scanning-source-code-repositories/features-and-capabilities.md)
     * [Supported Technologies](developers/scanning-source-code-repositories/supported-technologies.md)
     * [Configure Frogbot](developers/scanning-source-code-repositories/configure-frogbot/README.md)

@@ -25,7 +25,7 @@ Xray scan results can be accessed in **multiple locations** depending on the sco
 #### **1. Overview of the Scan Summary**
 
 The **Xray Scan Dashboard** provides a high-level summary of issues found in the scanned entity. It includes:\
-**General Artifact Data** (Last scan date, downloads, etc.)\
+**General Scan Data** (Last scan date, downloads, etc.)\
 **Total Number of Vulnerabilities** **by Severity** (Critical, High, Medium, Low).\
 **Total Number of Policy Violations** **by Severity** (Critical, High, Medium, Low).\
 **Type of Policy Violations** (Security, License, or Operational).\

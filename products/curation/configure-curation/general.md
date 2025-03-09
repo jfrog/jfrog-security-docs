@@ -6,7 +6,7 @@
    3. Toggle the **Curation** switch to "On."
 2.  **Configure Notifications**:&#x20;
 
-    Notification set here will be triggered on any package blocked/approved event in the system and will result in an email sent to the defined email addresses or the package requester's email. Note that one package blocked event might be due to one or multiple violated policies.
+    Notifications set here will be triggered on any package blocked/approved event in the system and will result in an email sent to the defined email addresses or the package requester's email. Note that one package blocked event might be due to one or multiple violated policies.
 
     1. In the **Administration** tab, select **Curation > General**:
        * **Notify Requester**: Sends a violation notification by email to the authenticated developer who attempted to download a package in violation of the policy. (This option does not support curated remote repositories that allow anonymous access.)
@@ -20,13 +20,14 @@
     * **Allow always**: This option allows all pending updates to proceed without any restrictions, regardless of the policy.&#x20;
 
 
-4.  CLI configuration: \
-    Instal JF CLI in order to receive a full curation developer experience.\
-    JF CLI supports the Curation **JF CA** command, which inspects the blocked package and provides the developer with blocking reasons and suggestions. Some package types need a pass-through mechanism to enable the JF CA command.  \
-    \
-    **Curation Pass-Through**:
+4. **CLI configuration**: \
+   Instal JF CLI to receive a full curation developer experience.\
+   JF CLI supports the Curation **JF CA** command, which inspects the blocked package and provides the developer with blocking reasons and suggestions. Some package types need a pass-through mechanism to enable the JF CA command. &#x20;
+5.  **Curation Pass-Through**:
 
     Enable package downloads for audit purposes without storing them in Artifactory. Ensures violating packages are only temporarily accessible for evaluation without impacting the repository cache.\
+    \
+    \
     \
     \
 

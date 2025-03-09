@@ -10,7 +10,7 @@ Customers utilizing the Xray Jira Integration can now view the statuses of Jira 
 
 The ticket statuses will be periodically retrieved from the Jira instance to Xray every 8 hours and displayed in the UI under the Ticket Status column.
 
-![](<../../../../../.gitbook/assets/0 (3).png>)
+![](<../../../../../../.gitbook/assets/0 (3).png>)
 
 **Manual Ticket Retrieval**
 
@@ -20,7 +20,7 @@ By default, the ticket statuses will be retrieved periodically (every 8 hours) t
 2. Go to the Policy Violations page and select the violation for which you want to retrieve the status.
 3. Under the Tickets Info tab, click on the refresh button. The statuses for all the tickets associated with the violation would be refreshed and shown in the UI.
 
-![](<../../../../../.gitbook/assets/1 (3).png>)
+![](<../../../../../../.gitbook/assets/1 (3).png>)
 
 **Enable / Disable the ticket retrieval feature**
 

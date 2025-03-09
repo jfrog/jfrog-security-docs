@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Shift-Left Security with Xray Scanning in IDEs and CLI
 
 ### **Xray Scanning in IDE**

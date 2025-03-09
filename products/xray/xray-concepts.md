@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Glossary
 
 ## General

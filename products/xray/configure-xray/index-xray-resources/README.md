@@ -42,6 +42,8 @@ Xray supports indexing at **three levels**:
 
 #### **2. Narrow Down Scope (Optional)**
 
+***
+
 #### **2.  Set a Retention Period (Optional)**
 
 ***

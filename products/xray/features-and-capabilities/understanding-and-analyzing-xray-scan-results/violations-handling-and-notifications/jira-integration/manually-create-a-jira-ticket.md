@@ -34,13 +34,13 @@ If a ticket has already been created for the issue, you have the option of updat
 
 ### Jira Ticket Indicator
 
-Whenever a Jira ticket is manually created for a violation, it is indicated with an icon ![](<../../../../../.gitbook/assets/0 (2).png>). Hover over the icon to see the list of Jira tickets that have already been created for the violation. If there are multiple tickets, the last created ticket will be the leading ticket.
+Whenever a Jira ticket is manually created for a violation, it is indicated with an icon ![](<../../../../../../.gitbook/assets/0 (2).png>). Hover over the icon to see the list of Jira tickets that have already been created for the violation. If there are multiple tickets, the last created ticket will be the leading ticket.
 
-![](<../../../../../.gitbook/assets/1 (2).png>)
+![](<../../../../../../.gitbook/assets/1 (2).png>)
 
 The Jira indicator along with the Jira Id is also shown on the Details screen. Clicking on a Jira Id redirects you to the Jira page for that ticket.
 
-![](<../../../../../.gitbook/assets/2 (2).png>)
+![](<../../../../../../.gitbook/assets/2 (2).png>)
 
 To manually update a Jira ticket:
 

@@ -18,8 +18,6 @@ To set the retention period for a repository, do the following:
    *   **Any artifact from the last number of days**: The artifact will be retained for the number of days you set here, after it is scanned. This will apply to all artifacts in the repository.
 
 
-
-       <figure><img src="../../../../.gitbook/assets/retention-period-image-1.png" alt=""><figcaption></figcaption></figure>
    * **Scan all Artifacts**: This applies only to the selected subset of future artifacts uploaded to the repository.
    *   **Scan By Pattern**: This option enables you to set a more granular retention period by scanning future artifacts within a specific path, and setting a retention period for the historical data of artifacts after they are scanned. This applies only to the subset of future artifacts uploaded to the repository.
 

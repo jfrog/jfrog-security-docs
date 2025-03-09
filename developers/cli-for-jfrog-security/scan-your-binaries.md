@@ -1,6 +1,6 @@
-# Scan your Binaries
+# Scan Your Binaries
 
-The on-demand binary scanning enables you to point to a binary in your local file system and receive a report containing a list of vulnerabilities, licenses, and policy violations for that binary before uploading the binary or build to Artifactory.
+The `jf scan and jf docker scan` command enables developers to perform **on-demand security scans** of their binaries **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, and exposed secrets.. By integrating seamlessly into the developer workflow, it helps catch security risks of binaries before uploading them into JFrog Artifactory — reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
 
 ## Scanning Files on the Local File System
 
@@ -114,14 +114,7 @@ jf docker scan reg1/repo1/img1:1.0.0 --repo-path releases-local/app1/
 
 Use the `scan` command to scan tarballs of Docker and OCI images saved on the local file system.
 
-It requires saving the image on the file system as an uncompressed tarball using a compliant tool and then scanning it with the `jf s` command. The image must be saved to the file system uncompressed, in a `<name>.tar` file name.
-
-### **Before You Begin**
-
-It is essential you have:
-
-* Xray 3.61.5 or above
-* JFrog CLI 2.14.0 or above
+It requires saving the image as a tar file using a compliant tool and then scanning it with the `jf s` command.&#x20;
 
 ### Examples
 

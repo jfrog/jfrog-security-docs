@@ -138,7 +138,7 @@
       * [Download Updates for Xray's Vulnerability Database](developers/cli-for-jfrog-security/platform-maintenance/download-updates-for-xrays-vulnerability-database.md)
       * [Count Contributing Developers](developers/cli-for-jfrog-security/platform-maintenance/count-contributing-developers.md)
     * [Scan Your Source Code](developers/cli-for-jfrog-security/scan-your-source-code.md)
-    * [Scan your Binaries](developers/cli-for-jfrog-security/scan-your-binaries.md)
+    * [Scan Your Binaries](developers/cli-for-jfrog-security/scan-your-binaries.md)
     * [Scan Published Builds](developers/cli-for-jfrog-security/scan-published-builds.md)
     * [Enrich your SBOM JSONs & XMLs](developers/cli-for-jfrog-security/enrich-your-sbom-jsons-and-xmls.md)
     * [JFrog Curation](developers/cli-for-jfrog-security/jfrog-curation.md)

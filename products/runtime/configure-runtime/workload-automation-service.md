@@ -1,93 +1,4 @@
-# Configure Runtime
-
-## Sensors
-
-### Install Sensors
-
-1. Navigate to **Administration > Runtime > Sensor Management**.
-2. Click **Install Runtime** to open the installation wizard.
-3. Provide the environment details:
-   * **Cluster name:** Used as the cluster name in management.
-   * **Namespace:** Specify where the JFrog Runtime component will run.
-4. Select the installation type: Controller only or Controller and Sensors.
-5. Copy and execute the provided command in your terminal.
-6. The status of controllers and sensors can be monitored in **Sensor Management**.
-
-### Uninstalling Sensors
-
-{% hint style="warning" %}
-If sensors are uninstalled, reinstalling them will generate a new Cluster ID.&#x20;
-{% endhint %}
-
-To uninstall sensors from a cluster, set the `kubectl` context to the desired cluster and run:
-
-```
-helm uninstall jf-sensors -n <Namespace>
-```
-
-### Reinstall Sensors
-
-If sensors are uninstalled, reinstalling them will generate a new Cluster ID. To preserve historical monitoring data and merge it with new data, retrieve the existing Cluster ID before reinstalling the sensor.
-
-{% hint style="warning" %}
-Sensors are automatically upgraded during system updates.&#x20;
-{% endhint %}
-
-#### Reinstalling Sensor Preserving Data
-
-1.  Before uninstalling the sensor, retrieve the cluster ID :
-
-    ```
-    kubectl -n <NAMESPACE> get configmaps runtime-config-configmap -o custom-columns='clusterId:data.clusterId'
-    ```
-
-    #### Output Example
-
-    ```
-    clusterId
-    225c8bec-1a85-4099-ac8e-144b81ac99e8
-    ```
-2.  Reinstall the sensors using:
-
-    ```
-    --set clusterID=225c8bec-1a85-4099-ac8e-144b81ac99e8
-    ```
-
-#### Reinstalling Sensor Without Preserving Data
-
-1. Reapply the installation snippet.
-
-## Grant OpenShift Security Context Constraints Privileges
-
-In **OpenShift**, **Security Context Constraints (SCCs)** are enforced to restrict the permissions of running containers. By default, OpenShift applies strict security policies that limit container privileges, which can prevent the JFrog Runtime Sensor from collecting essential runtime security data.
-
-Granting the necessary privileged SCC ensures that the Runtime Sensor can:
-
-* **Monitor running workloads effectively** by accessing necessary kernel-level data.
-* **Collect real-time security insights** using **eBPF technology** to detect threats, integrity violations, and process activity.
-* **Transmit security data** from OpenShift nodes to the JFrog Platform for further analysis.
-
-Without this privilege, the sensor may be unable to access required system resources, leading to incomplete security monitoring and reduced visibility into runtime threats.
-
-1. To grant SCC privileges, run:
-
-```
-shCopyEditoc adm policy add-scc-to-user privileged system:serviceaccount:jfrog-runtime:jf-sensors-sensors-service-account
-```
-
-## Bypassing Certificate Verification (Optional)
-
-{% hint style="warning" %}
-Carefully assess this option for production environments.
-{% endhint %}
-
-If using a self-signed certificate, modify the installation snippet:
-
-```
---set tlsInsecureSkipVerify=true
-```
-
-## Workload Automation Service
+# Workload Automation Service
 
 **Workers** is a JFrog platform service that allows you to extend and control your execution flows. It provides a serverless execution environment. You can create workers to enhance the platform's functionality. Workers are triggered automatically by events within the JFrog Platform, giving you the flexibility to address specific use cases. \
 Read more about the JFrog platform Workers [here](https://jfrog.com/help/r/jfrog-platform-administration-documentation/workers).
@@ -99,9 +10,9 @@ There are four types of built-in events that may occur in your **Workload** that
 * Changes to image integrity validation information
 * Changes to image trust information
 
-### Create a Runtime Automation
+## Create a Runtime Automation
 
-#### Step 1: Create a New Worker
+### Step 1: Create a New Worker
 
 1. Naviaget to **Administration** > **Workers**.
 2. From the **Add Worker** dropdown, select **New Event Driven Worker**.\
@@ -111,7 +22,7 @@ There are four types of built-in events that may occur in your **Workload** that
 4. Add an **After Workload State Change** Worker. \
    The **Add New Worker** window opens.
 
-#### Step 2: Configure the Worker
+### Step 2: Configure the Worker
 
 1. Enter a **Worker** name.
 2. Enter or modify the script in the **TypeScript Editor**. \
@@ -130,7 +41,7 @@ There are four types of built-in events that may occur in your **Workload** that
 5. To enable the Worker, toggle the **Enable Worker** on.
 6. To save the Worker, Select **OK**.
 
-#### Step 3: Test Events
+### Step 3: Test Events
 
 1. In the **Testing** pane, edit the JSON payload used to simulate the worker's events.
 2. Click **Run** to test the worker.
@@ -139,7 +50,7 @@ There are four types of built-in events that may occur in your **Workload** that
    * **Execution Logs** tab: for logs
    * **Metrics** tab: for run time, memory, and CPU utilization details.
 
-**Event Sample**
+#### Event Sample
 
 ```
 {
@@ -202,12 +113,12 @@ There are four types of built-in events that may occur in your **Workload** that
 }
 ```
 
-#### Step 4: Save Your Configuration
+### Step 4: Save Your Configuration
 
 * Click **Save** to finalize the worker configuration.
 * To cancel the configuration, click **Close**, and then click **Discard** to discard changes.
 
-#### Step 5: Review Worker Events
+### Step 5: Review Worker Events
 
 1. Navigate to the **Troubleshooting** tab.
 2. Select the **Worker** you wish to review.\

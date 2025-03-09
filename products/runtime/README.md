@@ -35,20 +35,18 @@ JFrog Runtime offers two modes of deployment, each designed for different levels
 
 ### **Runtime Integrity** (Controller-only)
 
-**Runtime Integrity** is installed once per cluster as a Kubernetes Deployment. It tracks Kubernetes cluster activity, including resource execution and orchestration, and collects data on Nodes, Workloads, Pods, and Containers.
+**Runtime Integrity** enables communication with the Kubernetes API. It tracks Kubernetes cluster activity, including resource execution and orchestration, and collects data on Nodes, Workloads, Pods, and Containers.
 
-Runtime Integrity provides foundational security insights:
+Runtime Integrity provides foundational security insights by:
 
-* Includes a single sensor (the Runtime Controller) per monitored cluster.
-* Focuses on monitoring Kubernetes cluster resources such as Nodes, Workloads, Pods, and Containers.
-* Included in the base license without additional cost.
+* Communicating directly with the Kubernetes controller API.
+* Focusing on monitoring Kubernetes cluster resources such as Nodes, Workloads, Pods, and Containers.
 
 ### **Runtime Impact** (Controller + Sensors)
 
-**Runtime Impact** is installed on each node within a Kubernetes cluster and captures detailed runtime behavior at the process and file level using eBPF. It sends collected data to the Runtime Service for security analysis and is deployed via Kubernetes DaemonSets with host privileges.
+**Runtime Impact** installs on each node within a Kubernetes cluster an eBPF sensor for capturing detailed runtime behavior at the process and file level. It sends collected data to the Runtime Service for security analysis and is deployed via Kubernetes DaemonSets with host privileges.
 
-Runtime Impact delivers a granular and comprehensive runtime security assessment:
+Runtime Impact delivers a granular and comprehensive runtime security assessment by:
 
-* Deploys a sensor on every cluster node for deeper visibility.
-* Monitors container runtime behavior, process executions, and file interactions.
-* Sensors are purchased separately and account for most of the cost.
+* Deploying a sensor on every cluster node for deeper visibility.
+* Monitoring container runtime behavior, process executions, and file interactions.

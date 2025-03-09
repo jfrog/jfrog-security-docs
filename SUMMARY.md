@@ -186,4 +186,5 @@
     * [Troubleshooting](developers/scanning-source-code-repositories/troubleshooting.md)
     * [Frogbot Optional Configuration Parameters](developers/scanning-source-code-repositories/frogbot-optional-configuration-parameters.md)
     * [Frogbot Offline](developers/scanning-source-code-repositories/frogbot-offline.md)
+    * [Working in Air-Gapped Environments](developers/scanning-source-code-repositories/working-in-air-gapped-environments.md)
   * [CI/CD](developers/ci-cd.md)

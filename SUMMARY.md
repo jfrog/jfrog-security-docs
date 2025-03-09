@@ -141,7 +141,7 @@
     * [Scan Your Binaries](developers/cli-for-jfrog-security/scan-your-binaries.md)
     * [Scan Published Builds](developers/cli-for-jfrog-security/scan-published-builds.md)
     * [Enrich your SBOM JSONs & XMLs](developers/cli-for-jfrog-security/enrich-your-sbom-jsons-and-xmls.md)
-    * [JFrog Curation](developers/cli-for-jfrog-security/jfrog-curation.md)
+    * [Curation Compliance Check](developers/cli-for-jfrog-security/curation-compliance-check.md)
   * [Code Security Within Your IDE](developers/code-security-within-your-ide/README.md)
     * [Visual Studio Code](developers/code-security-within-your-ide/vs-code/README.md)
       * [Package Manager Prerequisites](developers/code-security-within-your-ide/vs-code/package-manager-prerequisites.md)

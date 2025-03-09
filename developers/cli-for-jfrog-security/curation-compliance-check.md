@@ -1,8 +1,8 @@
-# JFrog Curation
+# Curation Compliance Check
 
 JFrog Curation defends your software supply chain by enabling early detection and blocking of malicious or risky open-source packages before they enter your environment. It helps seamlessly identify harmful, vulnerable, or non-compliant packages, enhancing security, compliance, and developer productivity.
 
-The `curation-audit` command scans projects to identify third-party dependencies that violate Curation service restrictions. It provides detailed insights into policy violations and may suggest compliant package alternatives.
+The `curation-audit` command checks the project to identify third-party dependencies that violate Curation service restrictions. It provides detailed insights into policy violations and may suggest compliant package alternatives.
 
 Learn more about Curation Supported technologies [here](../../products/curation/curation-supported-technologies.md).
 

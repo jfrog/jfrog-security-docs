@@ -1,6 +1,6 @@
 # Export Scan Results
 
-JFrog Xray allows you to **export artifact scan results** for various **security, compliance, and operational** use cases. This enables organizations to **analyze vulnerabilities, enforce policies, and generate detailed reports** for auditing and compliance.
+JFrog Xray allows you to **export scan results** for various **security, compliance, and operational** use cases. This enables organizations to **analyze vulnerabilities, enforce policies, and generate detailed reports** for auditing and compliance.
 
 #### **Use Cases for Exporting Scan Results**
 

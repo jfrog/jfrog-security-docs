@@ -50,7 +50,12 @@ Command: `jf audit` (alias: `jf aud`)
 | `--sast`                        | No | `false`                              | <p><strong>Selective scanners mode</strong></p><p>Executes Static Application Security Testing (SAST) scans. Can be combined with <code>--sca</code>, <code>--secrets</code>, and <code>--iac</code>.</p> |
 | `--vuln`                        | No | —                                    | Displays all vulnerabilities, regardless of Xray policies.                                                                                                                                                |
 
-## **Examples**
+## Working in Air-Gapped Environments
+
+See [https://app.gitbook.com/o/qA7lOLzSLvqlPYMcxj0G/s/gce7YVzT9rwXa135GlZn/developers/scanning-source-code-repositories/working-in-air-gapped-environments](https://app.gitbook.com/o/qA7lOLzSLvqlPYMcxj0G/s/gce7YVzT9rwXa135GlZn/developers/scanning-source-code-repositories/working-in-air-gapped-environments) and use **JFROG\_CLI\_RELEASES\_REPO** environment variable\
+
+
+**Examples**
 
 A basic audit that shows all vulnerabilities, regardless of the policies set in Xray:
 

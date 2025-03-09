@@ -17,7 +17,7 @@ JFrog Runtime acquires its data through two primary mechanisms: the JFrog Platfo
 
 JFrog Runtime integrates with the broader JFrog Platform, which includes Artifactory, Xray, and Advanced Security. This integration allows it to:
 
-* Correlate runtime artifacts with their sources in Artifactory.
+* Correlate runtime artifacts with their sources in Artifactory for complete trust in your Runtime environment.
 * Enrich runtime data with security insights from Xray, identifying vulnerabilities and malicious packages.
 * Aggregate and analyze data for security triaging and prioritization.
 

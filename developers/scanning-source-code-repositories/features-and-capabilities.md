@@ -1,6 +1,6 @@
 # Features and Capabilities
 
-The Frogbot seamlessly integrates JFrog Xray and JFrog Advanced Security by automatically scanning source code stored in SCMs. Frogbot acts as a vigilant **gate**, as it scans Pull Requests before the merge, decorating it with only the newly aded security issues, and can be configured to block the merge until the issues are resolved or marked by Security Administrator as ones that can be ignored.
+The Frogbot seamlessly integrates JFrog Xray and JFrog Advanced Security by automatically scanning source code stored in SCMs. Frogbot acts as a vigilant **Security gate**, as it scans Pull Requests before the merge, decorating it with only the newly aded security issues, and can be configured to block the merge until the issues are resolved or marked by Security Administrator as ones that can be ignored.
 
 In addition, Frogbot can automatically remediate CVEs by creating Pull Requests with Autofix for vulnerable packages.
 

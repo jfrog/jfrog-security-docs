@@ -1,13 +1,11 @@
 # Working in Air-Gapped Environments
 
-By default, JFrog Shiftleft utilities (IDE, CLI and Frogbot) download JFrog engines directly from[ JFrog’s public releases repository](https://releases.jfrog.io). If your environment is without internet access, you can configure it to download these resources from a private Artifactory instance.
+By default, JFrog Shiftleft utilities (IDE, CLI, and Frogbot) download JFrog engines directly from[ JFrog’s public releases repository](https://releases.jfrog.io). If your environment is without internet access, you can configure it to download these resources from a private Artifactory instance.
 
 The instance should be configured with either:
 
 * Generic Remote Repository - which is a proxy to `https://releases.jfrog.io.`
 * Generic Local Repository
-
-
 
 ## Configure a Generic Remote Repository in Artifactory
 

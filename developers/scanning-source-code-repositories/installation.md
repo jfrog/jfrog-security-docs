@@ -1,4 +1,4 @@
-# Installation
+# Package Manager Prerequisites
 
 ## Before You Begin
 

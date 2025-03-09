@@ -1,6 +1,6 @@
 # Frogbot Offline
 
-By default, Frogbot downloads its executables and other required tools directly from[ JFrog’s public releases repository](https://releases.jfrog.io). If your Frogbot deployment runs in an environment without internet access, you can configure it to download these resources from a private Artifactory instance instead.
+By default, Frogbot downloads its executables and other required tools directly from[ JFrog’s public releases repository](https://releases.jfrog.io). If your Frogbot deployment runs in an environment without internet access, or if you want Frogbot to download resources via an Artifactory instance, you can configure it to download these resources from a private Artifactory instance.
 
 Follow the steps below to set up an Artifactory repository as the source for Frogbot downloads:
 

@@ -95,7 +95,7 @@
   * [Advanced Security](products/advanced-security/README.md)
     * [Supported Technologies](products/advanced-security/supported-technologies.md)
     * [Features and Capabilities](products/advanced-security/features-and-capabilities/README.md)
-      * [CVEs Contextual Analysis](products/advanced-security/features-and-capabilities/cves-contextual-analysis.md)
+      * [CVEs Contextual Analysis](products/advanced-security/features-and-capabilities/vulnerability-contextual-analysis.md)
       * [Secrets Scans](products/advanced-security/features-and-capabilities/secrets-scans.md)
       * [Misconfigurations Scans](products/advanced-security/features-and-capabilities/misconfigurations-scans.md)
       * [SAST](products/advanced-security/features-and-capabilities/sast.md)

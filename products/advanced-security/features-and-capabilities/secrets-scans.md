@@ -1,29 +1,19 @@
 # Secrets Scans
 
-JFrog **Secrets Scans** provide comprehensive protection against exposed credentials, supporting a wide range of platforms, tools, and secret types. It detects exposed secrets in artifacts stored in **Artifactory**, preventing accidental leaks of internal tokens or credentials.
+JFrog Advanced Security helps prevent the accidental exposure of secrets such as API keys, passwords, and tokens through its comprehensive **secrets detection and token validation capabilities**. By scanning both **source code** and **binary artifacts**, it ensures sensitive data is never exposed to unauthorized users, making it a powerful **secrets prevention** solution.
 
-## Supported Scenarios
+For **developers** and **security experts**, secrets detection is integrated into your **IDE**, **CLI**, **Frogbot**, and the **JFrog Platform**, providing real-time feedback to identify and address exposed secrets across the development pipeline.
 
-Secrets detection currently supports the following environments:
+### Supported Secret Types
 
-### JFrog Platform
-
-* **Package Types:** Docker, Maven, npm, PyPI, NuGet, Gradle, RPM, Debian, Alpine, Go, RubyGems, Generic
-* **Scan Targets:** Both binaries and text files
-
-## Supported Secret Types
-
-### Access Tokens (Keys)
-
-Detects structured access tokens in text or binary files. For example:
-
-| Platform | Example Token                                                               |
-| -------- | --------------------------------------------------------------------------- |
-| AWS      | `AKIAIOSFODNN7EXAMPLE`                                                      |
-| GitHub   | `gho_16C7e42F292c6912E7710c838347Ae178B4a`                                  |
-| GitLab   | `gplat-234hcand9q289rba89dghqa892agbd89arg2854`                             |
-| npm      | `npm_1234567890abcdefgh`                                                    |
-| Slack    | `xoxp-123234234235-123234234235-123234234235-adedce74748c3844747aed48499bb` |
+* **Access Tokens (Keys)**: Detects structured access tokens in both text and binary files, such as API keys, OAuth tokens, and private tokens.&#x20;
+  * **Token Validation** enhances secret detection by verifying the validity of detected tokens and distinguishing between active and inactive tokens by authenticating against the token provider.
+* **Certificate & Private Key Detection**: Identifies issues in X.509 PEM and DER certificates, including:
+  * Certificates containing private keys
+  * Expired certificates
+  * Self-signed certificates
+* **High Entropy Textual Secrets**: Detects high-entropy secrets in source code and config files, such as passwords and secret keys with high randomness.
+* **URL Secrets Detection**: Detects embedded credentials in URLs (e.g., `https://username:password@mydomain.com`).
 
 ### **Token Validation**
 
@@ -46,7 +36,21 @@ Once enabled, results appear under **Findings** in violation details. The **Toke
 
 Some providers attach metadata to secrets (e.g., AWS includes a **Token ID** with the **Token Secret**). This metadata is displayed in the **Metadata** column.
 
-#### Supported Providers
+## Details about Supported Secret Types
+
+### Access Tokens (Keys)
+
+Detects structured access tokens in text or binary files. **For example**:
+
+| Platform | Example Token                                                               |
+| -------- | --------------------------------------------------------------------------- |
+| AWS      | `AKIAIOSFODNN7EXAMPLE`                                                      |
+| GitHub   | `gho_16C7e42F292c6912E7710c838347Ae178B4a`                                  |
+| GitLab   | `gplat-234hcand9q289rba89dghqa892agbd89arg2854`                             |
+| npm      | `npm_1234567890abcdefgh`                                                    |
+| Slack    | `xoxp-123234234235-123234234235-123234234235-adedce74748c3844747aed48499bb` |
+
+### Supported Providers for token validation
 
 Below are supported providers and whether they support **Token Validation**:
 
@@ -116,7 +120,7 @@ Below are supported providers and whether they support **Token Validation**:
 | Typeform            | Yes                      |
 | Ubidots             | Yes                      |
 
-#### Detection Exceptions
+#### Access Tokens (Keys) Detection False positives Reduction
 
 Some access keys will not trigger alerts:
 
@@ -147,7 +151,7 @@ Detects identifies high-entropy secrets in textual files (e.g., source code, con
 my_password: "CorrectHorseBatteryStaple123!"
 ```
 
-### Detection Exceptions
+#### High Entropy Textual Secrets Detection False positives Reduction
 
 False positives are minimized using heuristics. Secrets will **not** raise alerts if:
 
@@ -161,27 +165,10 @@ False positives are minimized using heuristics. Secrets will **not** raise alert
 
 Detects secrets embedded in URLs (e.g., `https://myuser:mypass@somedomain.com`).
 
-#### Detection Exceptions
+#### URL Secrets Detection False positives Reduction
 
 Some URLs will not trigger alerts:
 
 * **URLs matching test patterns:** `.*example.*`, `.*foo.*`, `.*bar.*`
 * **Authentication parts with common placeholders:** `.*user:pass.*`, `.*username.*`, `.*anonymous.*`
 * **URLs referencing image files** (e.g., `.jpg`)
-
-## Developer Tools
-
-### IDEs
-
-Only text files are scanned.
-
-### Command-Line Interface (CLI)
-
-Different commands scan different file types:
-
-* `jf audit` scans source code for secrets in text files
-* `jf docker scan` scans both binary and text files
-
-### Git (Frogbot)
-
-Only text files are scanned.

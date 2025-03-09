@@ -1,24 +1,18 @@
 # Features and Capabilities
 
-JFrog Frogbot serves as an indispensable tool for enhancing security and compliance throughout the software development process in SCMs. Several key attributes underscore its value:
+The Frogbot seamlessly integrates JFrog Xray and JFrog Advanced Security by automatically scanning source code stored in SCMs. Frogbot acts as a vigilant **gate**, as it scans Pull Requests before the merge, decorating it with only the newly aded security issues, and can be configured to block the merge until the issues are resolved or marked by Security Administrator as ones that can be ignored.
 
-**Comprehensive Security Scanning**\
-Frogbot diligently assesses source code for a myriad of vulnerabilities. It addresses not only code vulnerabilities through SAST but also known issues in dependencies via SCA, as well as potential misconfigurations in Infrastructure as Code (IaC). Additionally, its CVE Contextual Analysis capability significantly reduces false positives while protecting against secrets exposure.
+In addition, Frogbot can automatically remediate CVEs by creating Pull Requests with Autofix for vulnerable packages.
 
-**Data Privacy**\
-One of Frogbot's critical advantages is its commitment to data privacy. The bot operates directly on your CI machine, ensuring that source code remains on-premises. Only essential metadata—such as filenames and line numbers—are sent to the JFrog platform, maintaining a high standard of data security.
+### Key Security Capabilities
 
-**Proactive Vulnerability Management**\
-By continuously monitoring code and scanning pull requests, Frogbot empowers developers by alerting them to emerging vulnerabilities before merging. This proactive approach helps maintain a secure codebase.
+* **Software Composition Analysis (SCA)** with **Contextual Analysis, including Autofix**
+* **Secrets Detection and Token Validation**
+* **Infrastructure as Code (IaC) Scanning**
+* **Static Application Security Testing (SAST)**
+* **Ability to fail the Pull Request job in case of security violations, that can block the merge.**
+* **Presentation of the security results in Xray Scans List**
 
-**Streamlined Remediation**\
-Frogbot’s ability to automatically generate pull requests with fixes for SCA vulnerabilities simplifies the remediation process, making it easier for development teams to address security issues swiftly.
 
-**Enhanced Collaboration**\
-Frogbot enhances collaboration by adding insightful comments on pull requests, keeping the entire team informed and engaged in security practices.
 
-**Compliance and Risk Mitigation**\
-As teams strive to meet compliance standards and reduce risks, Frogbot integrates seamlessly into the development lifecycle, reinforcing security at every stage.
-
-**Complementary Tool**\
-While Frogbot offers robust scanning capabilities, proactive security measures remain essential. Developers are encouraged to conduct additional scans within their IDEs prior to committing changes, further strengthening overall security.
+Integrating Frogbot into your development lifecycle allows you to proactively enforce security policies, thereby protecting your project from the outset. While Frogbot plays a critical role in maintaining security at the repository level, **it is advisable for developers to also scan their code within their IDEs before committing changes.** This complementary approach enables teams to identify and address vulnerabilities early, leading to a more robust security posture.

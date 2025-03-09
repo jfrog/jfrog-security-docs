@@ -87,7 +87,7 @@ If using a self-signed certificate, modify the installation snippet:
 --set tlsInsecureSkipVerify=true
 ```
 
-## Automation Service
+## Workload Automation Service
 
 **Workers** is a JFrog platform service that allows you to extend and control your execution flows. It provides a serverless execution environment. You can create workers to enhance the platform's functionality. Workers are triggered automatically by events within the JFrog Platform, giving you the flexibility to address specific use cases. \
 Read more about the JFrog platform Workers [here](https://jfrog.com/help/r/jfrog-platform-administration-documentation/workers).

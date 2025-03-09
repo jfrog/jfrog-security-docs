@@ -16,21 +16,6 @@ If your JFrog environment is behind an HTTP/S proxy:
 2. Set the proxy URL under **Proxy**.
 3. Ensure 'Proxy Support' is set to **override** or **on**. Alternatively, use the `HTTP_PROXY` and `HTTPS_PROXY` environment variables.
 
-## **Downloading External Resources Through Artifactory**
-
-If your machine lacks access to `https://releases.jfrog.io`, configure Artifactory to act as a proxy:
-
-1. Log in to the JFrog Platform UI as an admin.
-2. Create a **Remote Repository** with these settings:
-   * **Basic Tab:**
-     * Package Type: **Generic**
-     * Repository Key: **jfrog-releases-repository**
-     * URL: [**https://releases.jfrog.io**](https://releases.jfrog.io/)
-   * **Advanced Tab:**
-     * Uncheck **Store Artifacts Locally**.
-3. In the **JFrog VS Code Extension Settings**, enter the repository key you created.
-4. Alternatively, set the `JFROG_IDE_RELEASES_REPO` environment variable with the repository key.
-
 ## **Proxy Authorization**
 
 If your proxy server requires credentials:
@@ -47,6 +32,22 @@ If your proxy server requires credentials:
     ```json
     "http.proxyAuthorization": "Bearer [Access token]"
     ```
+
+## **Downloading External Resources Through Artifactory**
+
+If your machine lacks access to `https://releases.jfrog.io`, configure Artifactory to act as a proxy:
+
+1. Log in to the JFrog Platform UI as an admin.
+2. Create a **Remote Repository** with these settings:
+   * **Basic Tab:**
+     * Package Type: **Generic**
+     * Repository Key: **jfrog-releases-repository**
+     * URL: [**https://releases.jfrog.io**](https://releases.jfrog.io/)
+   * **Advanced Tab:**
+     * Uncheck **Store Artifacts Locally**.\
+       This reduces storage.
+3. In the **JFrog VS Code Extension Settings**, enter the repository key you created.
+4. Alternatively, set the `JFROG_IDE_RELEASES_REPO` environment variable with the repository key.
 
 ## **Xray Policies and Watches**
 

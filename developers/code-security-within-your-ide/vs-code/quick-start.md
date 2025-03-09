@@ -20,8 +20,6 @@ The JFrog VS Code Extension offers two modes: **Local** and **CI**. You can swit
 
 ## **Severity Icons**
 
-The extension uses severity icons to indicate the highest severity issue within a selected component and its transitive dependencies:
-
 | Icon                                                                                                                                                                                                                                                                    | Severity       | Description                             |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------------------------- |
 | ![](../../../.gitbook/assets/Critical.png)                                                                                                                                                                                                                              | Critical       | Issue with critical severity            |

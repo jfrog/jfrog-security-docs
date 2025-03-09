@@ -2,7 +2,7 @@
 
 ## **Visibility**
 
-* **Real-Time Monitoring**: Provides live status updates on images detected in monitored clusters.
+* **Real-Time Monitoring**: Provides live status updates on images and workloads detected in monitored clusters.
 * **Enhanced Visibility (Runtime Impact only)**: Offers deeper insights into running processes within clusters.
 
 ## **Trust Assessment**

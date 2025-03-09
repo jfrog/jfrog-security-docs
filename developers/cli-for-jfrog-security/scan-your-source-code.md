@@ -6,25 +6,8 @@ The `jf audit` command enables developers to perform **on-demand security scans*
 
 Note: For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
 
-## **Supported Package Managers**
-
-* **Maven (mvn)** – Requires version 3.1.0 or above
-* **Gradle (gradle)**
-* **npm (npm)**
-* **pnpm (pnpm)**
-* **Yarn (yarn)**
-* **Pip (pip)**
-* **Pipenv (pipenv)**
-* **Poetry (poetry)**
-* **Go Modules (go)**
-* **NuGet (nuget)**
-* **.NET Core CLI (dotnet)**
-* **CocoaPods (pod)**
-* **SwiftPM (swift)**
-* **Conan (C++)**
-
 {% hint style="warning" %}
-- If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
+* If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
 {% endhint %}
 
 ## **Command Options**

@@ -29,10 +29,6 @@ The JFrog VS Code Extension offers two modes: **Local** and **CI**. You can swit
 | ![](../../../.gitbook/assets/Unknown.png)                                                                                                                                                                                                                               | Unknown        | Issue with unknown severity             |
 | ![](../../../.gitbook/assets/notApplicableCritical.png)![](../../../.gitbook/assets/notApplicableHigh.png)![](../../../.gitbook/assets/notApplicableMedium.png)![](../../../.gitbook/assets/notApplicableLow.png)![](../../../.gitbook/assets/notApplicableUnknown.png) | Not Applicable | CVE issue not applicable to source code |
 
-## **How Does It Work?**
-
-The CI information displayed in VS Code is fetched from **JFrog Artifactory**. This information is stored as part of the **build-info**, which is published to Artifactory by the CI server. If JFrog Xray is configured to scan build-info, the JFrog VS Code Extension will display the results in the CI view.
-
 ## **Setting Up Your CI Pipeline**
 
 Before the CI View can display data, the CI pipeline must be configured correctly. Follow the guide on how to configure your CI pipeline to expose this data.

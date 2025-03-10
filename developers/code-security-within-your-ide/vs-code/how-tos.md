@@ -7,7 +7,7 @@
 The JFrog extension features a file tree displaying all vulnerabilities detected within the project. Each affected file appears as a tree node.
 
 * **Descriptor files** (e.g., `pom.xml` in Maven, `go.mod` in Go) outline available direct dependencies. If a direct dependency contains vulnerable child dependencies, the tree will display those, denoted with an **'(indirect)'** postfix.
-* Additional vulnerability nodes, such as **Contextual Analysis Vulnerabilities** or **hard-coded secrets**, may appear in other source files.
+* Additional vulnerability nodes, such as **Contextual Analysis Vulnerabilities** (when applicable), **hard-coded secrets**, and **SAST,** may appear in other source files.
 
 Each file node is interactive—click to expand and navigate to the corresponding file in the IDE. The extension highlights vulnerable lines for better visibility.
 

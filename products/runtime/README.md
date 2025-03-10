@@ -20,6 +20,9 @@ JFrog Runtime integrates with the broader JFrog Platform, which includes Artifac
 * Correlate runtime artifacts with their sources in Artifactory for complete trust in your Runtime environment.
 * Enrich runtime data with security insights from Xray, identifying vulnerabilities and malicious packages on an ongoing basis based on JFrog Catalog and JFrog research information.
 * Aggregate and analyze data for security triaging and prioritization.
+*
+
+    <figure><img src="../../.gitbook/assets/Diagram3.png" alt=""><figcaption></figcaption></figure>
 
 ### **Runtime Sensors Installed in Customer Clusters**
 
@@ -28,6 +31,9 @@ Within Kubernetes environments, JFrog Runtime deploys specialized sensors to col
 * Monitor running processes, file access, and kernel activity using eBPF technology.
 * Detect security threats and integrity violations in real time.
 * Transmit collected data securely to the Runtime Service within the JFrog Platform for further analysis.
+*
+
+    <figure><img src="../../.gitbook/assets/Diagram2.png" alt=""><figcaption></figcaption></figure>
 
 ## **Runtime Modes of Deployment**
 

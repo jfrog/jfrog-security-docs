@@ -57,20 +57,7 @@ Runtime Impact delivers a granular and comprehensive runtime security assessment
 
 ### Where Runtime Fits in the JFrog Security Timeline
 
-When:\
-After applications are running in production.
-
-Purpose:\
-Monitor and protect against runtime threats.
-
-Key Actions:
-
-* Detect live exploit attempts and runtime security risks.
-* Prevent unauthorized package execution.
-* Leverage JFrog Catalog vulnerability data to block high-risk behaviors.
-
-\
-
+<table><thead><tr><th>Stage</th><th>Runtime' Role</th><th width="250"></th></tr></thead><tbody><tr><td>Production &#x26; Runtime Security</td><td>Provides real-time monitoring of Kubernetes workloads, processes, and file activity using eBPF-based sensors. Detects running vulnerabilities, unauthorized processes, and integrity violations. Prioritizes security incidents by determining if vulnerable code is actively loaded into memory.</td><td></td></tr></tbody></table>
 
 ### Business Needs for JFrog Runtime
 

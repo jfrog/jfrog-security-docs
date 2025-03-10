@@ -19,12 +19,12 @@ Curation Pass-Through is compatible with the following deployment configurations
 
 Pass-through is enabled by default when you connect the repository type; you can disable this in the Remote repository configuration.&#x20;
 
-1. **Access Artifactory**:
+1. Access Artifactory:
    * Log in to your Artifactory instance.
-2. **Navigate to the Desired Remote Repository**:
+2. Navigate to the Desired Remote Repository:
    * Go to the **Repositories** section.
    * Select the remote repository you wish to configure for pass-through.
-3. **Configure Pass-Through**:
+3. Configure Pass-Through:
    * Scroll to the bottom of the repository's settings page.
    * Locate the **Enable Curation Pass-Through** option.
    * Toggle the switch to **On of OFF** acording to your needs.
@@ -33,11 +33,11 @@ Pass-through is enabled by default when you connect the repository type; you can
 
 If your setup includes a Smart Remote repository that connects to a curated remote:
 
-1. **Access the Smart Remote Repository Settings**:
+1. Access the Smart Remote Repository Settings:
    * Log in to your Artifactory instance.
    * Navigate to the **Repositories** section.
    * Select the Smart Remote repository in question.
-2. **Enable User Context for Curation**:
+2. Enable User Context for Curation:
    * Within the repository settings, find the **Add User Context for Curation** option.
    * Ensure this option is enabled to support pass-through functionality.
 

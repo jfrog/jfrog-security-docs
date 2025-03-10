@@ -2,7 +2,7 @@
 
 As Xray's indexed resources are retained in the system, this can result in large amounts of data being stored, impacting your storage and causing performance issues. Starting from Xray version 3.41.4, you can set retention periods for repositories and builds. The retention period defines how long Xray will retain artifact scan data, and after the set retention period, this data is deleted, thus improving performance and freeing up storage space. The default period is 90 days. You can change the default period using the `server.repo.defaultRetentionDaysForIndexedRepo` in the Xray System YAML.
 
-#### Note
+Note
 
 > The retention period is reset to the beginning of the configured retention once an artifact is downloaded.
 

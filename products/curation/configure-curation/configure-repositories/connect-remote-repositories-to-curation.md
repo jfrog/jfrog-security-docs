@@ -31,8 +31,6 @@ Instead of manually selecting repositories to curate, you can now connect a pack
 
 ### **Connect Repositories by Package Type**
 
-Do the following:
-
 1. Navigate to **Administration** **→ Curation → Remote Repositories.**
 2. From the list select the Package Type you want to curate.
 3.  Turn on the **Connect current and future** toggle that appears on the right of the package type row.

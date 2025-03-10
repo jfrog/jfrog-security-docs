@@ -2,35 +2,20 @@
 
 **This is a Step-by-Step Guide to Creating a Policy in Xray. To learn more about Policies, click** [**here**](../xray-features-and-capabilities/sdlc-policy-mangement/)**.**
 
-#### **Step 1: Access the Policy Configuration**
-
-1. Log in to the **JFrog Platform**.
-2. Navigate to **Xray → Watches \&Policies**.
-3. Click **New Policy**.
-
-***
-
-#### **Step 2: Define Policy Name and Type**
-
-1. Enter a **Policy Name** (e.g., "Production Security Policy").
-2. (Optional) Add a **Description** explaining the policy’s purpose.
-3. Choose the **Policy Type**:
+1. Navigate to **Xray → Watches & Policies**.
+2. Click **New Policy**.
+3. Enter a **Policy Name** (e.g., "Production Security Policy").
+4. (Optional) Add a **Description** explaining the policy’s purpose.
+5. Choose the **Policy Type**:
    * **Security Policy** – Detects **vulnerabilities** in artifacts.
    * **License Compliance Policy** – Enforces **open-source license rules**.
-   * **Operational Risk Policy** – Flags outdated, deprecated, or unmaintained dependencies.
-
-**Example:**\
-✔ **Policy Name:** `Critical Security Policy`\
-✔ **Policy Type:** `Security Policy`\
-✔ **Description:** `Blocks all artifacts with critical CVEs and enforces compliance.`
-
-***
-
-### **Step 3: Add Rules to the Policy**
-
-Each policy consists of **rules** that define the conditions and enforcement actions.
-
-Click **Add Rule** to create a new rule.
+   * **Operational Risk Policy** – Flags outdated, deprecated, or unmaintained dependencies. \
+     **Example:**\
+     **Policy Name:** `Critical Security Policy`\
+     **Policy Type:** `Security Policy`\
+     **Description:** `Blocks all artifacts with critical CVEs and enforces compliance.`
+6. Click **Add Rule** to create a new rule. Each policy consists of **rules** that define the conditions and enforcement actions.
+7. Click **Save & Apply**.
 
 #### **Security Policy Rules (For Vulnerability Detection)**
 

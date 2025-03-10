@@ -22,7 +22,7 @@ Key configuration tasks required for JFrog Curation:
 **Step 4:** [**Create Policies**](create-policies/)
 
 * Define policy scope, conditions, and waivers.
-* Configure actions (e.g., block or dry-run) and notifications
+* Configure actions (e.g., block or dry-run) and notifications.
 
 
 

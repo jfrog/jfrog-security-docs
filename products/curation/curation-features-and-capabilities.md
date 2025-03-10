@@ -37,16 +37,16 @@ Audit is a crucial function of Curation. Every package inspected in Curation has
 
 Curation User Audit: Any user action in Curation is lagged for regulations and documentation.&#x20;
 
-### **Integration with JFrog CLI**:
+### **Integration with JFrog CLI**
 
 Developers can use the CLI to
 
 * Check curation violations for a project.
 * View detailed policy decisions for specific packages.
 
-### **Curation-Catalog Integration**:
+### **Curation-Catalog Integration**
 
-* The Global Catalog serves as a metadata repository for package evaluation, enabling the Curation service to assess and block/approve packages in real time.
+* The Global Catalog serves as a metadata repository for package evaluation, enabling the Curation service to assess and block/approve packages in real-time.
 * Dynamic metadata updates ensure packages are evaluated against the latest security and licensing data.
 * Organizations can manage both public and private metadata through the catalog for tailored curation capabilities.
 * Use labels in the JFrog Catalog to group and manage packages based on organizational requirements. These labels can be applied to:
@@ -54,7 +54,7 @@ Developers can use the CLI to
   * **Blocklists**: Block specific packages or versions at scale.
   * **Waivers**: Exclude labeled packages from curation restrictions.
 
-### **Operational stats**:
+### **Operational stats**
 
 Minimal performance impact, with average evaluation times of \~100ms per package request
 

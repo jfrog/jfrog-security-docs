@@ -1,7 +1,5 @@
 # Audit Events
 
-## Guide to Curation Audit in JFrog Curation
-
 Curation Audit provides visibility and transparency into the package governance process, allowing users with curation permissions to understand how packages are managed within your organization. This guide outlines the sections of the Curation Audit, how to interpret the data, and how to export audit results.
 
 ### Overview of Curation Audit Sections

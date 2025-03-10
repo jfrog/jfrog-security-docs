@@ -8,7 +8,7 @@ As a developer, you want to check if the dependencies in your project comply wit
 
 #### **Workflow Steps**
 
-#### **1️⃣ Install and Configure JFrog CLI**
+**Step 1: Install and Configure JFrog CLI**
 
 First, ensure that you have the **JFrog CLI** installed and configured to connect to your JFrog instance.
 
@@ -29,7 +29,7 @@ First, ensure that you have the **JFrog CLI** installed and configured to connec
 
 ***
 
-#### **2️⃣ Run a Curation Audit on Your Project**
+#### **Step 2: Run a Curation Audit on Your Project**
 
 Use the **curation-audit** command to analyze your project dependencies and check for potential blocks.
 
@@ -59,7 +59,7 @@ This will:\
 
 ***
 
-#### **3️⃣ Review the Audit Results**
+#### **Step 3: Review the Audit Results**
 
 Once the command runs, the CLI will output a **curation summary** listing all evaluated packages. Example output:
 
@@ -80,7 +80,7 @@ markdownCopyEditCuration Audit Summary:
 
 ***
 
-#### **4️⃣ Take Action Based on the Results**
+#### **Step 4: Take Action Based on the Results**
 
 * **If a package is blocked:**
   * Check the reason for blocking (security, license, or operational issues).
@@ -92,7 +92,7 @@ markdownCopyEditCuration Audit Summary:
 
 ***
 
-#### **5️⃣ Verify Fixes & Rerun the Audit**
+#### **Step 5: Verify Fixes & Rerun the Audit**
 
 After making changes, rerun the **curation-audit** command to confirm that your project is now compliant:
 

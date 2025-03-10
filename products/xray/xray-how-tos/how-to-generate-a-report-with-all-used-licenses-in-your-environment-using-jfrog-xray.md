@@ -1,32 +1,8 @@
 # How to Generate a Report with All Used Licenses in Your Environment Using JFrog Xray
 
-This use case describes how to configure **Xray** to scan an environment and generate a **detailed license report**, helping teams ensure compliance, manage risks, and support legal audits.
+This use case describes how to configure **Xray** to scan an environment and generate a **detailed license report**, helping teams ensure compliance, manage risks, and support legal audits..
 
-***
 
-### &#x20;**Involved**
-
-* **Compliance Officer**: Reviews license usage to ensure legal and contractual adherence.
-* **Security Engineer**: Configures Xray policies for license compliance monitoring.
-* **DevOps Engineer**: Ensures CI/CD workflows respect license policies.
-
-***
-
-### **Trigger Event**
-
-The organization requires an **up-to-date license report** covering all artifacts, dependencies, and distributed software to ensure compliance with internal and external policies.
-
-***
-
-### **Preconditions**
-
-* JFrog Xray is **enabled** and scanning repositories and builds.
-* Artifacts and dependencies **contain license metadata**.
-* The organization has defined **license compliance policies**.
-
-***
-
-### **Flow of Events**
 
 #### **Step 1: Define a License Policy in Xray**
 
@@ -46,23 +22,6 @@ The organization requires an **up-to-date license report** covering all artifact
      * ✅ **Notify Compliance Team** (Email/Slack alerts for restricted licenses).
 5. Click **Save**.
 
-***
-
-#### **Step 2: Attach the Policy to a Watch**
-
-📌 **Goal:** Apply the policy to repositories, builds, and distributed software.
-
-1. Navigate to **Xray** → **Security & Compliance** → **Watches**.
-2. Click **"Create Watch"**.
-3. Define the **Scope**:
-   * **Repositories**: Select all repositories containing artifacts (e.g., `maven-central`, `npm-registry`).
-   * **Builds**: Select all builds to track dependencies.
-   * **Packages**: Apply to all components.
-4. Attach the `License Compliance Policy`.
-5. Save and activate the Watch.
-
-***
-
 #### **Step 3: Generate a License Report**
 
 📌 **Goal:** Run a scan and create a report listing all licenses used in the environment.
@@ -77,8 +36,6 @@ The organization requires an **up-to-date license report** covering all artifact
    * ✅ **Include all licenses** (Allowed, Restricted, Unknown).
    * ✅ **Export as CSV or JSON for external analysis**.
 5. Click **"Generate"** to create the report.
-
-***
 
 #### **Step 4: Review and Analyze the Report**
 
@@ -131,29 +88,3 @@ shCopyEditcurl -u user:password -X POST "https://artifactory.example.com/xray/ap
 * A **license compliance report is generated** for all scanned artifacts.
 * The report is **stored in Artifactory** for review.
 * If **non-compliant licenses** are found, the build **fails**, and the compliance team is notified.
-
-***
-
-### **Postconditions**
-
-* A **detailed license report is generated** covering all artifacts and dependencies.
-* The compliance team **reviews license usage** and ensures regulatory adherence.
-* Builds using **non-compliant licenses are flagged or blocked** before deployment.
-
-***
-
-### **Alternative Flows & Considerations**
-
-* **Scheduled Reports**: Set up **automated daily or weekly reports** for continuous monitoring.
-* **Integration with Legal Tools**: Export reports to **compliance management platforms**.
-* **Custom Severity Handling**:
-  * Block builds for **GPL-3.0 but allow LGPL-2.1**.
-  * Allow **non-standard licenses with legal approval**.
-
-***
-
-### **Business Impact**
-
-🔹 **Ensures legal compliance** by identifying all software licenses in use.\
-🔹 **Reduces legal risks** by preventing non-compliant software distribution.\
-🔹 **Supports security audits** by providing a centralized license report.

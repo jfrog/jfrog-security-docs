@@ -15,8 +15,6 @@ Indexing is a prerequisite for scanning—Xray does not automatically scan all r
 
 **Example:** If a new CVE is discovered, Xray automatically identifies all indexed artifacts (within the defined retention period) that contain the vulnerable package.
 
-***
-
 ### **Types of Indexable Resources in Xray**
 
 Xray supports indexing at three levels:
@@ -36,14 +34,8 @@ Xray supports indexing at three levels:
 * Xray does not automatically index all resources—you must enable indexing for a specific resource.
 * Indexed repositories allow Xray to scan artifacts as they are uploaded or modified.
 
-***
-
 #### **2. Narrow Down Scope (Optional)**
 
-***
-
 #### **2.  Set a Retention Period (Optional)**
-
-***
 
 #### 3. Trigger Indexing of Existing Artifacts&#x20;

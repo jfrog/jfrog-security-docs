@@ -6,7 +6,7 @@ JFrog Xray provides advanced malicious package detection, identifying and blocki
 
 ### **What Are Malicious Packages?**
 
-Malicious packages are **intentionally crafted** software components that:
+Malicious packages are intentionally crafted software components that:
 
 * Contains backdoors, trojans, or hidden exploits.
 * Exfiltrate sensitive data or inject harmful code into applications.
@@ -17,7 +17,7 @@ Malicious packages are **intentionally crafted** software components that:
 
 ### **How JFrog Xray Detects Malicious Packages**
 
-JFrog Xray continuously monitors **open-source registries and repositories**, using **threat intelligence and behavioral analysis** to detect:
+JFrog Xray continuously monitors open-source registries and repositories, using threat intelligence and behavioral analysis to detect:
 
 * **Backdoored and trojanized packages** – Identifies software components with malicious payloads.
 * **Typosquatting attacks** – Flags packages that mimic trusted libraries.

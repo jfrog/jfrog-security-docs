@@ -6,8 +6,6 @@ Xray scans your artifacts, builds, and Release Bundles for vulnerabilities, lice
 
 This guide will help you navigate, interpret, and act upon scan results effectively.
 
-***
-
 ### **Where to Find Xray Scan Results?**
 
 Xray scan results can be accessed in **multiple locations** depending on the scope of the scan:
@@ -17,8 +15,6 @@ Xray scan results can be accessed in **multiple locations** depending on the sco
 * Navigate to **Application -> Xray -> Scan List**.
 * Select the **resource (**&#x47;it Repositories, Repositories, Builds, Release Bundles, Packages)&#x20;
 * Click on the specific resource and select the particular version you want to analyze.
-
-***
 
 ### **Understanding Xray Scan Results**
 
@@ -42,8 +38,6 @@ This tab displays all detected **violations** affecting your scanned resource.
 * If a violation is failing your build and you need a grace period, request an ignore rule with an expiration date from the security team.&#x20;
 * If it’s a false positive, request an ignore rule from the security team.
 
-***
-
 #### **3. SBOM Tab**
 
 This tab provides a list of components and licenses associated with the scanned resource. Identifies the component list, their versions, their licenses, and operational risk data.&#x20;
@@ -54,8 +48,6 @@ This tab provides a list of components and licenses associated with the scanned 
 * For restricted licenses: Obtain legal approval or find an alternative package.
 * For missing licenses: Ensure the package includes a valid license declaration.
 * Identify which component is end-of-life and other operational risk information.&#x20;
-
-***
 
 #### **4. Security Issues Tab ( Vulnerabilities and Malicious Packages)**
 
@@ -83,8 +75,6 @@ The Impact Analysis section shows how detected vulnerabilities affect other comp
 * Prioritize fixes based on production vs. development environments.
 * Use SBOM (Software Bill of Materials) to track vulnerable dependencies.
 
-***
-
 ### **Filtering and Sorting Scan Results for Better Analysis**
 
 Xray provides **filters** to help narrow down scan results for better prioritization.
@@ -101,8 +91,6 @@ Search for vulnerabilities affecting a specific package (e.g., `log4j`).
 #### **3. Filter by Policy Violations**
 
 * Show only vulnerabilities that violate predefined security policies.
-
-***
 
 ### **Taking Action on Scan Results**
 

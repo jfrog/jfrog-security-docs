@@ -8,14 +8,13 @@ JFrog Xray provides Operational Risk Analysis, enabling organizations to detect 
 
 Operational risk refers to non-security-related issues that can affect a software component’s performance, reliability, or maintainability.
 
-Common operational risks include:\
-**End-of-Life (EOL) Software** – Components that no longer receive updates or security patches.\
-**Deprecated Dependencies** – Libraries marked as obsolete or replaced by newer versions.\
-**Unmaintained Open-Source Projects** – Software that hasn’t been updated for a long period, increasing the risk of compatibility issues.\
-**High-Impact Component Updates** – Major version changes that introduce breaking changes or API modifications.\
-**Abandoned Projects** – Open-source components with no active contributors or maintainers.
+Common operational risks include:
 
-***
+* **End-of-Life (EOL) Software** – Components that no longer receive updates or security patches.
+* **Deprecated Dependencies** – Libraries marked as obsolete or replaced by newer versions.
+* **Unmaintained Open-Source Projects** – Software that hasn’t been updated for a long period, increasing the risk of compatibility issues.
+* **High-Impact Component Updates** – Major version changes that introduce breaking changes or API modifications.
+* **Abandoned Projects** – Open-source components with no active contributors or maintainers.
 
 ### **How Xray Detects Operational Risks**
 
@@ -33,8 +32,6 @@ Xray continuously monitors software components in **repositories, builds, and re
 2. Attach Policy to Watch.
 3. View Operational Risk Data in the Xray > Scans List.
 4. View Operational Risk violations generated based on the Policy rules you set
-
-***
 
 ### **Mitigating Operational Risks with Xray**
 
@@ -57,8 +54,6 @@ Xray continuously monitors software components in **repositories, builds, and re
 
 * Regularly audit software dependencies for compatibility and lifecycle health.
 * Work with open-source communities to assess long-term viability.
-
-***
 
 ### How Xray Determines Operational Risk Severity
 

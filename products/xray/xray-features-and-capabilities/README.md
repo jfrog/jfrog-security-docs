@@ -8,16 +8,12 @@ Xray performs deep analysis of **artifacts, builds, and Release Bundles** to ide
 **Why it matters:**\
 Organizations need to proactively identify vulnerabilities, license compliance, and code quality in their open-source and proprietary code before releasing software.&#x20;
 
-***
-
 ### **Developer Experience & Shift-Left Security with Xray Scanning in IDEs and CLI**
 
 **What it does:**\
 JFrog Xray enables developers to identify and remediate security vulnerabilities **early in the development lifecycle** by integrating directly into IDEs and CLI tools. This **shift-left approach** ensures that security is addressed **before code is committed or built**.
 
 For **developers and DevOps engineers**, JFrog Xray provides CLI-based security scanning through **JFrog CLI**.
-
-***
 
 ### **Deep Recursive Scanning**
 
@@ -33,8 +29,6 @@ Unlike traditional scanners, Xray **recursively scans all layers** of software a
 **Why it matters:**\
 Provides **greater visibility into software components.**
 
-***
-
 ### **Impact Analysis**
 
 **What it does:**\
@@ -49,8 +43,6 @@ Analyzes how vulnerabilities impact different components in an organization’s 
 **Why it matters:**\
 Reduces false positives and **prioritizes vulnerabilities** that pose the most risk.
 
-***
-
 ### [**Policy-Based Security Enforcement**](sdlc-policy-mangement/)
 
 **What it does:**\
@@ -58,8 +50,6 @@ Allows organizations to define security, compliance, and operational risk polici
 
 **Why it matters:**\
 Trigger automatic actions regarding security issues, compliance, and operational risk before they progress in the SDLC process.&#x20;
-
-***
 
 ### [**Operational Risk Management**](./#operational-risk-management)
 
@@ -69,8 +59,6 @@ Detects **risks beyond security vulnerabilities**, such as outdated or deprecate
 **Why it matters:**\
 Ensures that **unmaintained** software does not introduce security risks.
 
-***
-
 ### [**Malicious Package Detection**](./#malicious-package-detection)
 
 **What it does:**\
@@ -78,8 +66,6 @@ Identifies **intentionally harmful** open-source packages and machine-learning m
 
 **Why it matters:**\
 Prevents **supply chain attacks** caused by malicious components.
-
-***
 
 ### [**Software Bill of Materials (SBOM)**](export-scan-results.md)
 
@@ -89,8 +75,6 @@ Generates an **SBOM (Software Bill of Materials)**, listing all software compone
 **Why it matters:**\
 Provides **full visibility into software supply chains** for compliance and security audits.
 
-***
-
 ### [**Advanced Reporting**](reports.md)
 
 **What it does:**\
@@ -98,8 +82,6 @@ Generates **detailed security, compliance, and operational risk reports** to tra
 
 **Why it matters:**\
 Helps **organizations** track security posture over time.
-
-***
 
 ### &#x20;**CI/CD Pipelines Integration**
 

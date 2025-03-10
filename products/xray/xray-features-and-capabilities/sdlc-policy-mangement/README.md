@@ -40,9 +40,10 @@ Policies are **linked to Watches** to enforce rules at specific stages of the **
 
 #### **3. Automated Enforcement**
 
-When an artifact **matches a policy rule**, Xray automatically:\
-**Creates a violation** – Flags a security, compliance, or risk issue.\
-**Trigger actions** –  e.g. notify developers and security teams via email or Jira.
+When an artifact **matches a policy rule**, Xray automatically:
+
+* **Creates a violation** – Flags a security, compliance, or risk issue.
+* **Trigger actions** –  e.g. notify developers and security teams via email or Jira.
 
 ### **Types of Policies in Xray**
 
@@ -51,27 +52,30 @@ Xray provides three primary **policy types**, each serving a **different aspect 
 #### **1. Security Policies**
 
 A Security Rule allows you to create a set of rules around security vulnerabilities \
-**Common Security Rules:**\
-Block artifacts with **critical CVEs** (Common Vulnerabilities and Exposures).\
-Prevent downloads of **malicious packages**.\
-Require a **fix version** before deployment.\
-Enforce **Exploitability Awareness** _(available in JFrog Advanced Security)_ – ensuring only exploitable vulnerabilities are flagged.
+**Common Security Rules:**
+
+* Block artifacts with critical CVEs (Common Vulnerabilities and Exposures).
+* Prevent downloads of malicious packages.
+* Require a fix version before deployment.
+* Enforce Exploitability Awareness _(available in JFrog Advanced Security)_ – ensuring only exploitable vulnerabilities are flagged.
 
 #### **2. Compliance Policies**
 
 A license Rule allows you to create a set of rules around license compliance. There are three possible criteria\
-**Common Compliance Rules:**\
-**Banned License Enforcement** – Prevents the use of **GPL-licensed** components in proprietary software.\
-**License Allowlist** – Restricts usage to **approved open-source licenses**.\
-**Multi-license Handling** – Defines policies when a package has **multiple licenses**.
+**Common Compliance Rules:**
+
+* **Banned License Enforcement** – Prevents the use of GPL-licensed components in proprietary software.
+* **License Allowlist** – Restricts usage to approved open-source licenses.
+* **Multi-license Handling** – Defines policies when a package has multiple licenses.
 
 #### **3. Operational Risk Policies**
 
 Operational risk policies **assess the reliability and maintainability** of software components.\
-**Common Operational Risk Rules:**\
-**End-of-Life Detection** – Alerts when a dependency is **no longer maintained**.\
-**Deprecated Package Monitoring** – Prevents the use of packages that are **no longer supported**.\
-**Unmaintained Library Warnings** – Flags components with **no updates in over 12 months**.
+**Common Operational Risk Rules:**
+
+* **End-of-Life Detection** – Alerts when a dependency is no longer maintained.
+* **Deprecated Package Monitoring** – Prevents the use of packages that are no longer supported.
+* **Unmaintained Library Warnings** – Flags components with no updates in over 12 months.
 
 ### **SDLC Stages Where Xray Policies Are Applied**
 
@@ -85,18 +89,10 @@ Policies are enforced **throughout the software lifecycle**:
 
 ### **Best Practices for Implementing Policies in Xray**
 
-\
-**Automate CI/CD Enforcement** – Use Xray to **fail builds** that introduce security risks.\
-**Define Policy Scopes Carefully** – Assign policies **to relevant repositories, builds and release bundles**. \
-Block Promotion/Distribution of Release Bundles - \
-**Enable Continuous Monitoring** – Keep policies **updated with the latest threat intelligence**.\
-**Use Advanced Security Features** – Utilize **Exploitability Awareness and Applicability Scanning** _(available in JFrog Advanced Security)_ to **reduce false positives**.
-
-***
+* **Automate CI/CD Enforcement** – Use Xray to fail builds that introduce security risks.
+* **Define Policy Scopes Carefully** – Assign policies to relevant repositories, builds and release bundles.&#x20;
+* **Block Promotion/Distribution of Release Bundles**&#x20;
+* **Enable Continuous Monitoring** – Keep policies updated with the latest threat intelligence.
+* **Use Advanced Security Features** – Utilize Exploitability Awareness and Applicability Scanning _(available in JFrog Advanced Security)_ to reduce false positives.
 
 Would you like a **step-by-step guide on creating a Policy** in Xray? See&#x20;
-
-\
-
-
-O

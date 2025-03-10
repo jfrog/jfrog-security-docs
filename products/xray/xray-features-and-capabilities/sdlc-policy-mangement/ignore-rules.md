@@ -4,8 +4,6 @@ In security and compliance management, not all violations require immediate acti
 
 JFrog Xray provides Ignore Rules, a feature that allows teams to temporarily or permanently suppress specific violations. This ensures that development teams can focus on critical issues while maintaining compliance and security standards.
 
-***
-
 ### **What Are Ignore Rules in Xray?**
 
 Ignore Rules are configurable exceptions that allow users to suppress violations under certain conditions. These rules prevent violations from blocking builds, failing deployments, or triggering alerts, while still keeping them logged for reference.
@@ -56,8 +54,6 @@ Can be manually removed later if needed.
 Allows ignoring violations for a specific watch, component, artifact, build, or release bundle.
 
 **Example:** When you do not want to block the download of a specific artifact, you can ignore all violations of that artifact.&#x20;
-
-***
 
 ### **Best Practices for Using Ignore Rules in Xray**
 

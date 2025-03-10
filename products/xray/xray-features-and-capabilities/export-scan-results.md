@@ -14,16 +14,12 @@ You can export scan results for multiple scenarios, including:
 * **Policy Violations** – Export violations related to security, compliance, and operational policies.
 * **Operational Risk** – Assess the **stability, maintenance, and lifecycle** of software components.
 
-***
-
 ### **How to Export Scan Results**
 
 1. Navigate to the **Scans List** in Xray.
 2. Select a resource version scan from the list.
 3. Click the **\[...] (More Options) button**.
 4. Select **"Export Scan Data"** and choose the desired **export type**.
-
-***
 
 ### **Types of Scan Result Exports**
 
@@ -42,8 +38,6 @@ The Security Export report provides details about detected vulnerabilities in sc
 * **Edited Time** – The timestamp of the latest scan result update.
 * **Applicability** _(For JFrog Advanced Security Users)_ – Indicates whether the vulnerability is actually exploitable in real-world scenarios.
 
-***
-
 #### **2. Legal Compliance Report**
 
 This report provides an overview of software licenses associated with your components, including internally detected and externally enriched licenses.
@@ -57,8 +51,6 @@ This report provides an overview of software licenses associated with your compo
 * **Component ID** – A unique identifier for the component.
 * **Package ID** – The ID of the package in the repository.
 * **Version** – The specific version of the component.
-
-***
 
 #### **3. Violations Report**
 

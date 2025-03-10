@@ -15,7 +15,7 @@ Given these challenges, organizations struggle to determine which vulnerabilitie
 
 #### **The JFrog Solution: CVE Research and Enrichment**
 
-JFrog’s **Security Research and Threat Intelligence teams** continuously analyze both **new and existing CVEs** to assess their **real-world exploitability** and impact. This analysis results in a **JFrog Research Severity Score**, which provides **deeper insights** into each CVE, including:
+JFrog’s **Security Research and Threat Intelligence teams** continuously analyze both new and existing CVEs to assess their real-world exploitability and impact. This analysis results in a **JFrog Research Severity Score**, which provides deeper insights into each CVE, including:
 
 * **Exploitability analysis** – How likely is the vulnerability to be weaponized?
 * **Real-world attack data** – Has this CVE been used in documented cyberattacks?

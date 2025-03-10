@@ -20,6 +20,7 @@
       * [View the Active Policies for a Repository](products/curation/manage-curation/view-the-active-policies-for-a-repository.md)
       * [Manage Policies](products/curation/manage-curation/manage-policies.md)
       * [Audit Events](products/curation/manage-curation/audit-events.md)
+      * [Waiver management in Curation](products/curation/manage-curation/waiver-management-in-curation.md)
     * [Curation How-Tos](products/curation/curation-how-tos/README.md)
       * [How to Block Malicious or Vulnerable Packages from Entering the Repository](products/curation/curation-how-tos/how-to-block-malicious-or-vulnerable-packages-from-entering-the-repository.md)
       * [How to Ensure Only Open-Source Packages with Approved Licenses Are Used](products/curation/curation-how-tos/how-to-ensure-only-open-source-packages-with-approved-licenses-are-used.md)

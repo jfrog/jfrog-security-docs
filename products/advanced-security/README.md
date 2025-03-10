@@ -24,14 +24,14 @@ Advanced Security helps prevent accidental exposure of **Secrets** such as API k
 
 ### Where Advanced Security Fits in the JFrog Security Timeline
 
-| Stage                                                  | Advanced Security's Role                                                                                                                                          |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Code Development (Developers)                          | Scans dependencies in IDEs & CLI before committing code                                                                                                           |
-| Code Merge (SCM)                                       | Scans dependencies using Frogbot to make sure pull requests do not introduce new security issues. It can also create Pull requests to auto-fix risky dependencies |
-| Build & Package (CI/CD Security)                       | Scans builds in CI/CD pipelines to detect vulnerabilities                                                                                                         |
-| Artifact Management (Repository Security)              | Continuously scans Artifactory repositories for security, compliance, and operational risks                                                                       |
-| Release Validation (Pre-Deployment Security)           | Scans release bundles before promotion or distribution to ensure compliance and security.                                                                         |
-| Production & Runtime Security (Requires JFrog Runtime) | Monitors for newly discovered vulnerabilities in already deployed artifacts                                                                                       |
+| Stage                                                  | Advanced Security's Role                                                                                                                                                                                                                                             |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Code Development (Developers)                          | Scans first-party code with **SAST** to detect vulnerabilities like SQL injection, command execution risks, and insecure authentication. Identifies **hardcoded secrets** and misconfigurations in code. Scans dependencies in IDEs & CLI before committing code.    |
+| Code Merge (SCM)                                       | Scans dependencies using **Frogbot** to ensure pull requests do not introduce security issues. Can auto-fix risky dependencies and identify **contextually relevant** vulnerabilities in third-party libraries.                                                      |
+| Build & Package (CI/CD Security)                       | Scans builds in CI/CD pipelines to detect vulnerabilities and malicious components. Performs **Contextual Analysis** to assess whether detected CVEs are exploitable within the specific application. Identifies secrets and infrastructure misconfigurations.       |
+| Artifact Management (Repository Security)              | Continuously scans **Artifactory repositories** for security, compliance, and operational risks. Enforces security policies, detects **malicious packages**, and verifies the integrity of stored artifacts.                                                         |
+| Release Validation (Pre-Deployment Security)           | Scans **release bundles** before promotion or distribution to ensure compliance, security, and integrity. Confirms that vulnerabilities are **not actively exploitable** in the final packaged software.                                                             |
+| Production & Runtime Security (Requires JFrog Runtime) | Monitors for newly discovered vulnerabilities in deployed artifacts. Validates **if vulnerable code is loaded into memory**, reducing false positives and prioritizing real threats. Detects integrity violations and **untrusted registries** in live environments. |
 
 
 

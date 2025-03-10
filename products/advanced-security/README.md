@@ -24,6 +24,24 @@ Advanced Security helps prevent accidental exposure of **Secrets** such as API k
 
 ### Where Advanced Security Fits in the JFrog Security Timeline
 
+| Stage                                                  | Advanced Security's Role                                                                                                                                          |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Code Development (Developers)                          | Scans dependencies in IDEs & CLI before committing code                                                                                                           |
+| Code Merge (SCM)                                       | Scans dependencies using Frogbot to make sure pull requests do not introduce new security issues. It can also create Pull requests to auto-fix risky dependencies |
+| Build & Package (CI/CD Security)                       | Scans builds in CI/CD pipelines to detect vulnerabilities                                                                                                         |
+| Artifact Management (Repository Security)              | Continuously scans Artifactory repositories for security, compliance, and operational risks                                                                       |
+| Release Validation (Pre-Deployment Security)           | Scans release bundles before promotion or distribution to ensure compliance and security.                                                                         |
+| Production & Runtime Security (Requires JFrog Runtime) | Monitors for newly discovered vulnerabilities in already deployed artifacts                                                                                       |
+
+
+
+* When? During software development, as code is built into artifacts and images.
+* Purpose? Ensure security at the source and container levels.
+* Key Actions:
+* Identify exposed secrets, misconfigurations, and malware.
+* Harden software against exploits before deployment.
+* Use JFrog Catalog insights to flag high-risk dependencies.
+
 ### Business Needs
 
 * **Business Needs for JFrog Advanced Security**\

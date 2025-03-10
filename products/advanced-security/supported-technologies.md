@@ -1,6 +1,6 @@
 # Supported Technologies
 
-## SAST (1st party code), CVEs Contextual analysis, and Secrets Detection
+## SAST, CVEs Contextual Analysis, and Secrets Detection
 
 Note: \* means support inside a  Docker image
 

@@ -27,5 +27,5 @@ Xray allows you to import SBOM's into the platform - allowing multiple use cases
 
 ## How to Enrich SBOM with Data using the JFrog CLI
 
-Go to [Enrich your SBOM ](../../../../../developers/cli-for-jfrog-security/enrich-your-sbom-jsons-and-xmls.md)
+Go to [Enrich your SBOM ](../../../../../developers/jfrog-security-cli/enrich-your-sbom-jsons-and-xmls.md)
 

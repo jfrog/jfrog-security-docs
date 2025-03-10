@@ -4,7 +4,7 @@ By default, JFrog Shiftleft utilities (IDE, CLI, and Frogbot) download JFrog eng
 
 The instance should be configured with either:
 
-* Generic Remote Repository - which is a proxy to `https://releases.jfrog.io.`
+* Generic Remote Repository: a proxy to `https://releases.jfrog.io`
 * Generic Local Repository
 
 ## Configure a Generic Remote Repository in Artifactory

@@ -1,6 +1,27 @@
 # Supported Technologies
 
-## JFrog Advanced Security Supported Technologies
+## SCM and CI Requirements
+
+### Operating System
+
+Frogbot scanners support the following operating systems:
+
+* Ubuntu 18+
+* RHEL 8+
+* Windows
+
+### Required Packages&#x20;
+
+Ensure the following packages are available in your environment:
+
+* **Unzip**
+* **Glibc-2.33+**
+* **curl**
+* **Git**
+
+Note: The above packages are included in the standard base images (e.g., Ubuntu, RHEL), but if you are using lighter images like Alpine, you will need to ensure these packages are installed.
+
+## Advanced Security Supported Technologies
 
 See Jfrog Advanced Security Supported Technologies section:
 
@@ -9,7 +30,7 @@ See Jfrog Advanced Security Supported Technologies section:
 * Secrets
 * IaC
 
-## **Software Composition Analysis (SCA)** Supported Technologies
+### **Software Composition Analysis (SCA)** Supported Technologies
 
 Note: For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
 

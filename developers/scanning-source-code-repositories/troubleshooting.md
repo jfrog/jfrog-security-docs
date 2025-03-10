@@ -14,24 +14,3 @@ Ensure that either `JF_USER + JF_PASSWORD` or `JF_ACCESS_TOKEN` is set, but not 
 
 When sending logs to support, please include the following environment variable to enable detailed logging:\
 &#xNAN;**`JFROG_CLI_LOG_LEVEL=DEBUG`** .
-
-### **Node Requirements**
-
-#### **Operating Systems Supported**
-
-Frogbot scanners support the following operating systems:
-
-* Ubuntu 18+
-* RHEL 8+
-* Windows
-
-#### **Required Packages**&#x20;
-
-Ensure the following packages are available in your environment:
-
-* **Unzip**
-* **Glibc-2.33+**
-* **curl**
-* **Git**
-
-Note: The above packages are included in the standard base images (e.g., Ubuntu, RHEL), but if you are using lighter images like Alpine, you will need to ensure these packages are installed.

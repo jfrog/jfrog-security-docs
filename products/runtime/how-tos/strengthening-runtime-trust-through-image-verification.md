@@ -1,7 +1,5 @@
 # Strengthening Runtime Trust Through Image Verification
 
-## How to Strengthen Runtime Trust Through Image Verification
-
 In this article, we will guide you on how to use the "Untrusted Registry" and "Integrity Violation" quick filters in JFrog Runtime to filter out unwanted images and ensure that only trusted sources are displayed in your results.
 
 Ensuring the integrity and trustworthiness of container images is crucial for maintaining a secure runtime environment. JFrog Runtime provides quick filters that allow you to easily identify and exclude images from untrusted sources or those that have integrity violations.

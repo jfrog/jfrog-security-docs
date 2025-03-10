@@ -48,9 +48,3 @@ The Curation Audit feature is divided into three main sections:
   2. Click on it to initiate the export process.
   3. The export will generate a CSV file containing only the data currently visible on the screen, filtered by any criteria you have applied.
   4. API and Webhooks are also available and described in the API section.&#x20;
-
-#### Conclusion
-
-The Curation Audit feature in JFrog Curation provides essential insights into the governance of your software packages. By leveraging the information in the Blocked and Approved Packages, Dry Run, and User Actions sections, you can better understand and manage the compliance of your software ecosystem.
-
-For additional information or to explore further functionalities, please refer to the [JFrog Documentation ](https://www.jfrog.com/confluence/)or reach out to JFrog customer support.

@@ -1,9 +1,5 @@
 # Manage Repositories
 
-## Guide to Managing Repositories in JFrog Curation
-
-This guide provides a step-by-step overview of how to manage your repositories within the Curation settings.
-
 ### Steps to Manage Repositories
 
 #### Step 1: Access the Remote Repository Page
@@ -32,8 +28,6 @@ This guide provides a step-by-step overview of how to manage your repositories w
 
 #### Step 5: Connecting or Disconnecting Repositories
 
-
-
 1. **Disconnecting Repositories**: If you want to remove one or more repositories from a package type:
    * Click on the package type name to view the full list of associated repositories.
    * From this list, select the repositories you wish to disconnect.
@@ -43,9 +37,3 @@ This guide provides a step-by-step overview of how to manage your repositories w
 #### Step 6: Notifications on Disconnection
 
 * When repositories are disconnected from a connected package type, an email notification will be sent to the designated state folder informing relevant parties of the disconnection. This ensures that stakeholders are updated on changes in repository governance.
-
-#### Conclusion
-
-You are now equipped with the necessary steps to manage your repositories effectively within JFrog Curation. Regularly review your connected and not connected repositories to maintain compliance, security, and oversight of your software packages.
-
-For further questions or detailed documentation, please refer to the [JFrog Documentation](https://www.jfrog.com/confluence/) or contact JFrog customer support for assistance.

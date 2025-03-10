@@ -1,4 +1,4 @@
-# Overview
+# Curation
 
 In today's software development landscape, organizations rely heavily on open-source and third-party packages to accelerate development. However, this introduces risks such as security vulnerabilities, license compliance issues, and supply chain attacks. JFrog Curation addresses these concerns by providing an automated, policy-driven approach to controlling software package usage.
 
@@ -6,7 +6,7 @@ In today's software development landscape, organizations rely heavily on open-so
 
 JFrog Curation is **the first line of defense** in securing an organization’s software supply chain. It operates at the **package acquisition stage**, preventing risky dependencies from entering repositories before they are even used in development, testing, or production.
 
-**JFrog Curation (🔍 Pre-Download OSS Governance)**
+**JFrog Curation ( Pre-Download OSS Governance)**
 
 * When? **As OSS packages are fetched for use.**
 * Purpose? **Automate the enforcement of security and compliance policies.**
@@ -27,7 +27,7 @@ Organizations face increasing challenges in managing the security and compliance
 
 ### **Key Issues JFrog Curation Resolves**
 
-| **Issue**                        | **How JFrog Curation Solves It**                                                                  |
+| Issue                            | How JFrog Curation Solves It                                                                      |
 | -------------------------------- | ------------------------------------------------------------------------------------------------- |
 | **Malicious Package Downloads**  | Blocks known malicious or compromised packages before they reach developers.                      |
 | **Security Vulnerabilities**     | Uses real-time metadata from the JFrog Catalog to prevent the use of packages with critical CVEs. |

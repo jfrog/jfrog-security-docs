@@ -2,8 +2,6 @@
 
 Creating custom conditions in JFrog Curation helps security managers manage software packages and ensure that they meet your organization's security and compliance standards better. This guide will walk you through the steps necessary to create and manage these conditions effectively.
 
-### Step-by-Step Instructions
-
 #### Step 1: Access Administration Settings
 
 1. Log in to your JFrog platform.
@@ -45,16 +43,8 @@ Creating custom conditions in JFrog Curation helps security managers manage soft
 1. Once all fields are configured, click the **Save** button.
 2. The new condition will be saved and listed under **Custom Conditions** in the Conditions table.
 
-
-
 #### Step 7: Manage Your Conditions
 
 * After saving, you can:
   * **Edit Conditions** : Click on an existing condition to modify its settings anytime.
   * **Create Policies** : Base new policies on your custom conditions to automate compliance and security checks.
-
-#### Conclusion
-
-You now have the necessary steps to create and manage custom conditions in JFrog Curation. You can return at any time to edit existing conditions or create new ones based on your evolving requirements. Implementing these custom conditions will help you maintain better security and compliance for your software packages.
-
-For further details or support, refer to the [JFrog Documentation ](https://www.jfrog.com/confluence/)or contact your JFrog customer support representative.

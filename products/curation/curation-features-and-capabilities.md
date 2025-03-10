@@ -1,15 +1,15 @@
-# Features and Capabilities
+# Curation Features and Capabilities
 
 JFrog Curation includes several core features to enforce security, compliance, and operational control:
 
-**Policy-Driven Package Governance**:
+### **Policy-Driven Package Governance**
 
 Define curation policies to enforce security, licensing, and operational rules on package downloads. Policies are evaluated at the repository level to ensure compliance. \
 Policies are based on different "Conditions", custom and predefined.&#x20;
 
 Policy actions: A policy can be blocking, blocking the developer from using the violation package, or dry-run policies. Dry-run policies are used to assess the policy impact on the organization before becoming blocking policies.&#x20;
 
-**Conditions, Custom Conditions, and Condition Templates**:
+### **Conditions, Custom Conditions, and Condition Templates**
 
 * **Predefined Conditions**: Out-of-the-box rules provided by JFrog to address common security, operational, and legal risks (e.g., block malicious packages, outdated versions, or licenses).
 * **Custom Conditions**: Templates allow admins to create tailored conditions. These allow organizations to address specific needs, such as blocking packages vulnerable to a specific CVE or requiring certain operational thresholds.&#x20;
@@ -19,7 +19,7 @@ Policy actions: A policy can be blocking, blocking the developer from using the 
   * Custom conditions provide granularity and adaptability for unique organizational requirements.
   * Conditions are pivotal to determining which packages are approved or blocked during evaluations.
 
-**Waivers**:
+### **Waivers**
 
 Exclude specific packages or versions from policy restrictions using waivers applied via catalog labels or manual configuration.
 
@@ -27,23 +27,24 @@ Waivers can be applied in 2 manners: \
 1\. Package version directly applied to the policy \
 2\. Catalog labels are used to mark the desired package versions, and then the label is attached to one or more policies. In case you intend to use waivers on a broader spectrum, this approach is your favorite, as it supports bulk actions and the re-usage of labels on other policies.&#x20;
 
-**Audit and Reporting**:\
+### **Audit and Reporting**
+
 Audit is a crucial function of Curation. Every package inspected in Curation has an audit event log. If the package is blocked or bypassed due to a policy relaxation condition, it is mentioned in the event log.&#x20;
 
 * View blocked/approved package events.
 * Run dry-run evaluations to simulate policy enforcement without blocking downloads.
 * Access detailed audit logs for compliance and troubleshooting.
 
-Curation User Audit: Any user action that occurs in Curation is lagged for regulations and documentation.&#x20;
+Curation User Audit: Any user action in Curation is lagged for regulations and documentation.&#x20;
 
-**Integration with JFrog CLI**:
+### **Integration with JFrog CLI**:
 
 Developers can use the CLI to
 
 * Check curation violations for a project.
 * View detailed policy decisions for specific packages.
 
-**Curation-Catalog Integration**:
+### **Curation-Catalog Integration**:
 
 * The Global Catalog serves as a metadata repository for package evaluation, enabling the Curation service to assess and block/approve packages in real time.
 * Dynamic metadata updates ensure packages are evaluated against the latest security and licensing data.
@@ -53,7 +54,7 @@ Developers can use the CLI to
   * **Blocklists**: Block specific packages or versions at scale.
   * **Waivers**: Exclude labeled packages from curation restrictions.
 
-**Operational stats**:
+### **Operational stats**:
 
 Minimal performance impact, with average evaluation times of \~100ms per package request
 

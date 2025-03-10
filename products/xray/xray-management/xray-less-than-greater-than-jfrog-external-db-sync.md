@@ -22,7 +22,7 @@ Xray offers two modes of database synchronization, depending on your organizatio
 
 ***
 
-### **Online Mode: Automatic Synchronization**
+### **Online Mode: Automatic Synchronization - Best Practice**
 
 By default, Xray operates in **Online Mode**, where it **automatically fetches security updates** from the JFrog global database.
 
@@ -32,7 +32,7 @@ By default, Xray operates in **Online Mode**, where it **automatically fetches s
 * The database is **incrementally updated**, ensuring minimal performance impact.
 * No user intervention is required—Xray stays **continuously up to date**.
 
-&#x20;**Best For:** Cloud-based and connected environments that need **real-time security intelligence**.
+
 
 ***
 
@@ -42,27 +42,29 @@ For **air-gapped networks** or organizations with **restricted internet access**
 
 #### **How It Works**
 
-1. Download the **latest database update package** from JFrog’s external source.
+1. Download the **latest database update package** from JFrog’s external source via **JFrog CLI**.
 2. Transfer the update package **to the offline Xray instance**.
-3. Apply the update using the **JFrog CLI or Admin Panel**.
+3. Apply the update using the **Admin Panel**.
 
 #### **Steps to Manually Sync in Offline Mode**
 
-**Step 1: Download the Security Database Update**
+**Step 1: Download the Security Database Update via JFrog CLI**&#x20;
 
 * Obtain the latest vulnerability database file from **JFrog’s security data source**.
 * Ensure that your **JFrog environment is authorized** to access the update package.
 
 **Step 2: Transfer the Update to the Offline System**
 
-* Move the package to the **isolated network** using secure file transfer.
+* Move the package to the Xray Server.
 
 **Step 3: Apply the Update to Xray**
 
-* Use **JFrog CLI** or the **JFrog Platform UI** to import the security database update.
+* Use the **JFrog Platform UI** to triger the security database update.
 * Verify that the synchronization was successful.
 
-&#x20;**Best For:** Enterprises with **restricted internet access** that require **controlled updates**.
+&#x20;It is not recommended. It's recommended only for Enterprises with **restricted internet access** that require **controlled updates**.&#x20;
+
+The offline sync operation should be preformed frequently.&#x20;
 
 ***
 
@@ -70,9 +72,5 @@ For **air-gapped networks** or organizations with **restricted internet access**
 
 To check the current synchronization status:
 
-1. Navigate to **Xray → Administration → Security & Compliance → Database Sync**.
-2. Verify the **last update timestamp** and sync frequency.
-3. Check for **any sync errors** or connectivity issues.
-
-For **offline mode**, ensure that the **latest update package** has been applied correctly.
-
+1. Navigate to **Administration → Xray Settings → DB Sync**.
+2. Verify the **last update timestamp and check the last sync status.**

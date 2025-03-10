@@ -1,8 +1,6 @@
 # Manage Waivers
 
-Here's a structured and simplified version of the documentation for the curation waiver approval flow:
-
-#### Curation Waivers Approval Flow
+### Curation Waivers Approval Flow
 
 **1. Policy Configuration (Step 5)**
 

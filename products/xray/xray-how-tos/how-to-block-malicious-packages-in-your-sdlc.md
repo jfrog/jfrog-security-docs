@@ -1,6 +1,6 @@
 # How to Block Malicious Packages in your SDLC
 
-This use case demonstrates how to configure Xray to enforce security policies that **block malicious packages before they are used in development, CI/CD, or production**.
+This use case demonstrates how to configure Xray to enforce security policies that block malicious packages before they are used in development, CI/CD, or production.
 
 #### **Step 1: Define a Security Policy in Xray**
 

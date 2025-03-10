@@ -8,8 +8,6 @@ Catalog Labels in JFrog Catalog allow users to organize and manage software pack
 * **Enforce Security & Compliance Policies** – Use labels to define allowlists and blocklists.
 * **Automate Workflow Integration** – Apply labels programmatically via GraphQL API.
 
-***
-
 ### **Label Management**
 
 #### **Creating a Label**
@@ -34,19 +32,17 @@ Catalog Labels in JFrog Catalog allow users to organize and manage software pack
 * Click the **(X)** next to the label to remove it.
 * Note: This action only removes the label from the package, not from the system.
 
-***
-
 ### **Using Labels in Curation Policies**
 
 Labels play a crucial role in **JFrog Curation Policies**, helping enforce package security and compliance.
 
 #### **Blocking Packages**
 
-Organizations can create policies to **block packages** that carry specific labels, preventing their use.
+Organizations can create policies to block packages that carry specific labels, preventing their use.
 
 #### **Allowing Pre-Approved Packages**
 
-Conversely, labels can be used to **allow only vetted packages**, ensuring only trusted software is used.
+Conversely, labels can be used to allow only vetted packages, ensuring only trusted software is used.
 
 #### **Applying Policy Conditions**
 
@@ -69,8 +65,3 @@ Administrators can programmatically manage labels using JFrog's **GraphQL API**.
 
 By leveraging automation, teams can scale their security and compliance workflows more efficiently.
 
-***
-
-#### **Conclusion**
-
-Catalog Labels in JFrog Catalog offer a powerful way to categorize, manage, and enforce security policies across your software ecosystem. Whether manually applied or automated via API, labels help maintain a secure and compliant software supply chain.

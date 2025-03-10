@@ -2,7 +2,8 @@
 
 In today’s rapidly evolving threat landscape, vulnerabilities are emerging faster than ever, making the security of your software supply chain increasingly critical. That’s why we’ve launched DBSync Version 3 (DBSync v3)—a faster, more reliable way to update threat intelligence across JFrog security products, ensuring you stay ahead of the latest risks.
 
-This guide is designed for users running **on-premise** or **self-hosted** installations of Artifactory and Xray. If you newly deployed an on-premise version of Artifactory and Xray in 2024, chances are you're already using DBSync v3. **Note:** If you are using the **SaaS** version of JFrog Xray and Artifactory, you can disregard this documentation, as the latest version of DBSync is already in use.
+This guide is designed for users running **on-premise** or **self-hosted** installations of Artifactory and Xray. If you newly deployed an on-premise version of Artifactory and Xray in 2024, chances are you're already using DBSync v3. \
+**Note:** If you are using the **SaaS** version of JFrog Xray and Artifactory, you can disregard this documentation, as the latest version of DBSync is already in use.
 
 DBSync is the protocol used to update the JFrog Catalog and Vulnerability Database in JFrog Xray. We strongly recommend that on-premise or self-hosted customers migrate to the latest DBSync v3 as soon as possible to ensure timely threat intelligence updates. DBSync v3 is enabled by default for all **new** on-premise installations starting with version 3.80. Please note that **DBSync v1 will reach end of life in mid-2025.**
 
@@ -16,9 +17,7 @@ Run the following command to identify your current DBSync version:
 curl -s -u<user:password> -H 'Content-Type: application/json' 'https://<instance-host-or-ip>/xray/ui/features' | jq | grep -i dbsync
 ```
 
-⧉
-
-**Output Examples:**
+**Output Examples:**
 
 * `<blank>`: You are running DBSync v1 and need to migrate.
 * `"FeatureDBSyncV3"`: You are already on the latest version; no action is required.
@@ -47,23 +46,12 @@ Before you get started with the migration, please note the following:
 
     If you are running version 3.107 LTS with patch 18 then you will see an informational message in “Scans List” asking you to upgrade to DBSync v3. Please click on this link
 
-    | [![image2.png](https://jfrog.com/help/api/khub/maps/6nte66fuu2ZQMB2dfriysg/resources/qY6UlewFZ3WfmDf_GlYhtw-6nte66fuu2ZQMB2dfriysg/content?v=b39792b85b0cdc71)](https://jfrog.com/help/viewer/attachment/6nte66fuu2ZQMB2dfriysg/qY6UlewFZ3WfmDf_GlYhtw-6nte66fuu2ZQMB2dfriysg) |
-    | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-
     Optionally, you can directly navigate to the migration screen from “**Administration**” tab-> **Xray Settings** and then click on **Database Sync**.
 2.  Select the "**Online**" option and click "**Migrate**" when ready.
 
-    For offline upgrades in air-gapped networks, follow the steps provided on the pop-up screen.
-
-    [![image4.png](https://jfrog.com/help/api/khub/maps/6nte66fuu2ZQMB2dfriysg/resources/R3z2EC8Bous5mYfaIckqhQ-6nte66fuu2ZQMB2dfriysg/content?v=74a8543371b7aeff)](https://jfrog.com/help/viewer/attachment/6nte66fuu2ZQMB2dfriysg/R3z2EC8Bous5mYfaIckqhQ-6nte66fuu2ZQMB2dfriysg)
-3.  On the pop-screen, please read the “Migration Details" and click on the “Migrate” button.
-
-    [![image5.png](https://jfrog.com/help/api/khub/maps/6nte66fuu2ZQMB2dfriysg/resources/~YgWLlVg32KoHCGsU52SZw-6nte66fuu2ZQMB2dfriysg/content?v=b8ec90560c03c23d)](https://jfrog.com/help/viewer/attachment/6nte66fuu2ZQMB2dfriysg/~YgWLlVg32KoHCGsU52SZw-6nte66fuu2ZQMB2dfriysg)
-4.  You should now see the upgrade status displayed on the screen. Here’s a screenshot:
-
-    [![image6.png](https://jfrog.com/help/api/khub/maps/6nte66fuu2ZQMB2dfriysg/resources/vIX72UmK5148k5TABU_pOw-6nte66fuu2ZQMB2dfriysg/content?v=c1467cad5112981e)](https://jfrog.com/help/viewer/attachment/6nte66fuu2ZQMB2dfriysg/vIX72UmK5148k5TABU_pOw-6nte66fuu2ZQMB2dfriysg)
+    For offline upgrades in air-gapped networks, follow the steps provided on the pop-up screen
+3. On the pop-screen, please read the “Migration Details" and click on the “Migrate” button
+4. You should now see the upgrade status displayed on the screen. Here’s a screenshot
 5.  After the migration is complete, upload a test artifact and scan it with Xray to verify that the functionality is working properly.
 
-    The **DBSync Implementation** status is now **V3**, as seen below:
-
-    [![image7.png](https://jfrog.com/help/api/khub/maps/6nte66fuu2ZQMB2dfriysg/resources/MVhPw8akIGN9Uvmgy_UiNQ-6nte66fuu2ZQMB2dfriysg/content?v=d55ca3b519705893)](https://jfrog.com/help/viewer/attachment/6nte66fuu2ZQMB2dfriysg/MVhPw8akIGN9Uvmgy_UiNQ-6nte66fuu2ZQMB2dfriysg)\
+    The **DBSync Implementation** status is now **V3**, as seen below.\

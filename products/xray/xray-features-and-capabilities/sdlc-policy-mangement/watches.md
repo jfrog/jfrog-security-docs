@@ -4,37 +4,34 @@ description: Monitoring Security and Compliance Across Your Software Artifacts
 
 # Watches in JFrog Xray
 
-Security and compliance in modern software development require **continuous monitoring** of dependencies, builds, and repositories. JFrog Xray uses **Watches** as a powerful mechanism to **track, analyze, and enforce policies** on software artifacts throughout the development lifecycle.
+Security and compliance in modern software development require continuous monitoring of dependencies, builds, and repositories. JFrog Xray uses Watches as a powerful mechanism to track, analyze, and enforce policies on software artifacts throughout the development lifecycle.
 
-By configuring Watches, organizations can **proactively detect security, compliance, and operational risk violations,** across their entire **software supply chain**.
-
-***
+By configuring Watches, organizations can proactively detect security, compliance, and operational risk violations, across their entire software supply chain.
 
 ### **What Are Watches in Xray?**
 
-A **Watch** in JFrog Xray is a **customizable security and compliance monitoring entity** that allows teams to track **specific repositories, builds, and release bundles**.
+A Watch in JFrog Xray is a customizable security and compliance monitoring entity that allows teams to track specific repositories, builds, and release bundles.
 
-Watches enable:\
-**Targeted Monitoring** – Focus on **specific artifacts, repositories, builds, release bundles or projects**.\
-**Automated Security & Compliance** – Apply **predefined policies** to trigger violations.\
-**Proactive Threat Detection** – Identify **security, compliance, and operational risk violations** before they become a risk.
+Watches enable:
 
-Watches allow users to **define what to monitor and how to respond**.
+* **Targeted Monitoring** – Focus on specific artifacts, repositories, builds, release bundles, or projects.
+* **Automated Security & Compliance** – Apply predefined policies to trigger violations.
+* **Proactive Threat Detection** – Identify security, compliance, and operational risk violations before they become a risk.
 
-***
+Watches allow users to define what to monitor and how to respond.
 
 ### **How Watches Work in Xray**
 
 #### **1. Define a Watch Scope**
 
-Watches let you specify **which components to monitor** by selecting:
+Watches let you specify which components to monitor by selecting:
 
 * **Repositories**&#x20;
 * **Builds**&#x20;
 * **Release Bundles**&#x20;
 * **Projects**&#x20;
 
-This enables teams to apply different policies to different stages of the **Software Development Lifecycle (SDLC)**.
+This enables teams to apply different policies to different stages of the Software Development Lifecycle (SDLC).
 
 ***
 
@@ -44,15 +41,13 @@ Watches enforce **policies** based on organizational security and compliance nee
 
 **Policy Types Applied to Watches**
 
-**Security Policies** – Detect **security issues** in open-source components.\
-**Compliance Policies** – Ensure software components comply with **license requirements**.\
-**Operational Risk Policies** – Identify outdated, deprecated, or unmaintained software components.
-
-***
+* **Security Policies** – Detect security issues in open-source components.
+* **Compliance Policies** – Ensure software components comply with license requirements.
+* **Operational Risk Policies** – Identify outdated, deprecated, or unmaintained software components.
 
 #### 3. Apply Watches on Existing Content
 
-Once a **Watch** is created, it will scan artifacts in the specified resources when a scan-triggering event happens, and issue Violations accordingly. However, until a scan-triggering event happens, artifacts already existing in the system will not be scanned by the Watch. So, to make sure a Watch is immediately applied to the relevant artifacts, you can invoke it manually by hovering over it and selecting **Apply on Existing Content**.
+Once a Watch is created, it will scan artifacts in the specified resources when a scan-triggering event happens, and issue Violations accordingly. However, until a scan-triggering event happens, artifacts already existing in the system will not be scanned by the Watch. So, to make sure a Watch is immediately applied to the relevant artifacts, you can invoke it manually by hovering over it and selecting Apply on Existing Content.
 
 Clicking the button pops up a dialog that lets you specify which of the resources assigned to the watch should be scanned, and a date range that defines when the artifact was last scanned by Xray.
 

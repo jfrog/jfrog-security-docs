@@ -1,8 +1,6 @@
 # How to Enforce Compliance Policies Using Catalog Labels
 
-
-
-📌 **Use Case:** A compliance team wants to ensure that only **approved OSS packages** are used in development and that high-risk packages are blocked.
+&#x20;**Use Case:** A compliance team wants to ensure that only **approved OSS packages** are used in development and that high-risk packages are blocked.
 
 **Steps:**
 

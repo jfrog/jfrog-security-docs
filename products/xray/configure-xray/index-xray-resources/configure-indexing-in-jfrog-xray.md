@@ -1,15 +1,10 @@
 # Configure Indexing in JFrog Xray
 
-### **Step 1: Access the Indexing Configuration**
+Navigate to **Administration → Xray → Indexed Resources** and do the following:&#x20;
 
-1. Log in to the **JFrog Platform**.
-2. Navigate to **Administration → Xray → Indexed Resources**.
+### **Indexing Repositories**
 
-***
-
-### **Step 2: Indexing Repositories**
-
-Repositories must be indexed to allow **continuous vulnerability and compliance scanning**.
+Repositories must be indexed to allow continuous vulnerability and compliance scanning.
 
 #### **How to Enable Repository Indexing:**
 
@@ -17,11 +12,9 @@ Repositories must be indexed to allow **continuous vulnerability and compliance 
 2. Select the repositories you want Xray to index.
 3. Click **Save** to start indexing.
 
-***
+### **Indexing Builds**
 
-### **Step 3: Indexing Builds**
-
-Indexing **builds** ensures that all **direct and transitive dependencies** used during CI/CD processes are scanned.
+Indexing builds ensure that all direct and transitive dependencies used during CI/CD processes are scanned.
 
 #### **How to Enable Build Indexing:**
 
@@ -29,11 +22,9 @@ Indexing **builds** ensures that all **direct and transitive dependencies** used
 2. Click **Add Builds** and select the relevant builds.
 3. Click **Save**.
 
-***
+### **Indexing Release Bundles**
 
-### **Step 4: Indexing Release Bundles**
-
-Before distributing software, it's important to **scan release bundles** to ensure they are **secure and compliant**.
+Before distributing software, it's important to scan release bundles to ensure they are secure and compliant.
 
 #### **How to Enable Release Bundle Indexing:**
 
@@ -41,10 +32,8 @@ Before distributing software, it's important to **scan release bundles** to ensu
 2. Click **Add Release Bundles** and select the bundles you want to scan.
 3. Click **Save** to start indexing.
 
-***
-
-### **Step 5: Verify Indexing Status**
+### **Verify Indexing Status**
 
 Once indexing is enabled:
 
-* Check if repositories, builds, and release bundles appear in the **indexed items list**.&#x20;
+* Check if repositories, builds, and Release Bundles appear in the **indexed items list**.&#x20;

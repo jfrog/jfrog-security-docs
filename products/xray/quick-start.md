@@ -6,9 +6,7 @@ To quickly get started with JFrog Xray, ensure you have the following:\
 ✅ **Xray Installed**\
 ✅ **"Manage Xray Data" Permission**
 
-***
-
-### **1️⃣ Add Resources to Xray for Automatic Scanning**
+### **Step 1: Add Resources to Xray for Automatic Scanning**
 
 Once Xray is set up, you need to add resources for continuous scanning.
 
@@ -20,9 +18,7 @@ Once Xray is set up, you need to add resources for continuous scanning.
 
 ✅ **Done!** From now on, every new artifact added to the selected resource will be **automatically scanned** by Xray.
 
-***
-
-### **🔹 Alternative: Scan Existing Artifacts in JFrog Artifactory**
+### **Alternative: Scan Existing Artifacts in JFrog Artifactory**
 
 If you want to scan an artifact that is **already stored in Artifactory**, follow these steps:
 
@@ -32,9 +28,7 @@ If you want to scan an artifact that is **already stored in Artifactory**, follo
 
 ✅ **Done!** The artifact is now scanned, and any security issues will be displayed.
 
-***
-
-### **2️⃣ View Artifact Vulnerabilities**
+### **Step 2: View Artifact Vulnerabilities**
 
 After scanning, you can view detected security issues for your artifacts.
 
@@ -47,9 +41,7 @@ After scanning, you can view detected security issues for your artifacts.
 
 ✅ **Done!** You can now see all vulnerabilities affecting your artifact.
 
-***
-
-### **3️⃣ Export Scan Findings to an SBOM File (Including VEX Data)**
+### **Step 3: Export Scan Findings to an SBOM File (Including VEX Data)**
 
 Once your artifact is scanned, you may want to **generate an SBOM report** containing the **entire scan results**, including **VEX (Vulnerability Exploitability Exchange)** information. This allows you to **share security insights outside the JFrog Platform**.
 
@@ -63,16 +55,14 @@ Once your artifact is scanned, you may want to **generate an SBOM report** conta
 
 ✅ **Done!** The SBOM report (including VEX data) is now downloaded to your computer.
 
-***
-
 ### **Summary: Xray Quick Start**
 
-✔ **Enable automatic scanning for new artifacts**\
-✔ **Manually scan existing artifacts in Artifactory**\
-✔ **View detected vulnerabilities for artifacts**\
-✔ **Export scan results as an SBOM report with VEX**
+* **Enable automatic scanning for new artifacts**
+* **Manually scan existing artifacts in Artifactory**
+* **View detected vulnerabilities for artifacts**
+* **Export scan results as an SBOM report with VEX**
 
-&#x20;**Now you’re ready to secure your software supply chain with JFrog Xray!**
+Now you’re ready to secure your software supply chain with JFrog Xray!
 
 
 

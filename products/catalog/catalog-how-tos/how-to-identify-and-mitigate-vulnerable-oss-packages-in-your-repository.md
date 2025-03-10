@@ -1,8 +1,6 @@
 # How to Identify and Mitigate Vulnerable OSS Packages in Your Repository
 
-
-
-📌 **Use Case:** A security team wants to ensure that no vulnerable open-source software (OSS) is used in their development pipeline.
+&#x20;**Use Case:** A security team wants to ensure that no vulnerable open-source software (OSS) is used in their development pipeline.
 
 **Steps:**
 
@@ -18,5 +16,6 @@
    * Use the **Package Compare feature** to evaluate **different versions** or **alternative packages**.
    * Check for a version with **no critical vulnerabilities**.
 4. **Implement Remediation**
-   * If an alternative version is available, **update your build system** to use the secure version.
-   * If no secure alternative exists, **apply security patches** as suggested by JFrog Security.
+   * If an alternative version is available, update your build system to use the secure version.
+   * If no secure alternative exists, apply security patches as suggested by JFrog Security.
+

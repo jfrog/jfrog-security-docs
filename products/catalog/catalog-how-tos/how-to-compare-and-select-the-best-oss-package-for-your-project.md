@@ -1,6 +1,6 @@
 # How to Compare and Select the Best OSS Package for Your Project
 
-📌 **Use Case:** A developer needs to choose between multiple versions of an OSS library and wants to compare **security, dependencies, and licensing information** before making a decision.
+**Use Case:** A developer needs to choose between multiple versions of an OSS library and wants to compare **security, dependencies, and licensing information** before making a decision.
 
 **Steps:**
 

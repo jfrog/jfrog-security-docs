@@ -1,18 +1,18 @@
 # Xray
 
-JFrog Xray is a **Software Composition Analysis (SCA) tool** that scans **source code and binaries** to detect vulnerabilities, malicious packages, license risks, and operational issues in many programming languages and LLM Models scanning. Powered by **JFrog Security Research**, Xray provides advanced threat information based on the group's enriched CVE information.
+JFrog Xray is a Software Composition Analysis (SCA) tool that scans source code and binaries to detect vulnerabilities, malicious packages, license risks, and operational issues in many programming languages and LLM Models scanning. Powered by JFrog Security Research, Xray provides advanced threat information based on the group's enriched CVE information.
 
-Xray integrates natively with **JFrog Artifactory**, enabling **binary scanning** with a single checkbox. For **source code**, **Frogbot and IDE plugins** provide immediate feedback and autofixes, while **build-info scanning** analyzes builds to catch risks introduced during the build process.
+Xray integrates natively with JFrog Artifactory, enabling binary scanning with a single checkbox. For source code, Frogbot and IDE plugins provide immediate feedback and autofixes, while build-info scanning analyzes builds to catch risks introduced during the build process.
 
-Xray’s **policies and watches** help enforce security and compliance thresholds by flagging risky components. With **continuous monitoring**, it tracks emerging threats and alerts teams to new vulnerabilities in existing components.
+Xray’s policies and watches help enforce security and compliance thresholds by flagging risky components. With continuous monitoring, it tracks emerging threats and alerts teams to new vulnerabilities in existing components.
 
 #### Comprehensive Security Coverage
 
-Combining **source code and binary scanning**, Xray delivers **shift-left security** for early detection and **binary-level validation** for final artifact safety. This ensures end-to-end protection across the entire software development lifecycle.
+Combining source code and binary scanning, Xray delivers shift-left security for early detection and binary-level validation for final artifact safety. This ensures end-to-end protection across the entire software development lifecycle.
 
 ### **Where Xray Fits in the JFrog Security Timeline**
 
-Security in the software development process must be **continuous**, spanning from **code development to deployment and beyond**. JFrog Xray integrates into multiple stages of the software lifecycle, ensuring that security is **proactive rather than reactive**.
+Security in the software development process must be continuous, spanning from code development to deployment and beyond. JFrog Xray integrates into multiple stages of the software lifecycle, ensuring that security is proactive rather than reactive.
 
 #### **JFrog Security Timeline: Key Stages & Xray’s Role**
 

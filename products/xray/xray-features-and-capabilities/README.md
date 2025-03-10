@@ -10,7 +10,7 @@ Organizations need to proactively identify vulnerabilities, license compliance, 
 
 ***
 
-### [**Developer Experience & Shift-Left Security with Xray Scanning in IDEs and CLI**](broken-reference)
+### **Developer Experience & Shift-Left Security with Xray Scanning in IDEs and CLI**
 
 **What it does:**\
 JFrog Xray enables developers to identify and remediate security vulnerabilities **early in the development lifecycle** by integrating directly into IDEs and CLI tools. This **shift-left approach** ensures that security is addressed **before code is committed or built**.
@@ -101,7 +101,7 @@ Helps **organizations** track security posture over time.
 
 ***
 
-### [ **CI/CD Pipelines**](broken-reference) **Integration**
+### &#x20;**CI/CD Pipelines Integration**
 
 **What it does:**\
 Seamlessly integrates with **CI/CD tools** to scan software **before deployment**.

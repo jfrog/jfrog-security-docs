@@ -19,7 +19,7 @@ A legal and compliance team wants to restrict developers from using open-source 
 4. Select an Action & Notifications
    * Choose **Block** to prevent package downloads.
    * Enable **Email notifications** for legal and compliance teams.
-5. **T**est Compliance
+5. Test Compliance
    * Try downloading a package with a prohibited license.
    * Confirm the request is blocked and an alert is sent.
    * View blocked package details under **Audit Logs**.

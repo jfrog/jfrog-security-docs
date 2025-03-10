@@ -1,22 +1,19 @@
 # Malicious Package Detection
 
-The rise of **supply chain attacks** has made malicious software packages a significant security risk. Attackers inject harmful code into **open-source packages**, **container images**, and **third-party dependencies**, which can lead to data breaches, unauthorized access, or system compromise.
+The rise of supply chain attacks has made malicious software packages a significant security risk. Attackers inject harmful code into open-source packages, container images, and third-party dependencies, which can lead to data breaches, unauthorized access, or system compromise.
 
-JFrog Xray provides **advanced malicious package detection**, identifying and blocking compromised packages **before they enter your development pipeline**.
-
-***
+JFrog Xray provides advanced malicious package detection, identifying and blocking compromised packages before they enter your development pipeline.
 
 ### **What Are Malicious Packages?**
 
-Malicious packages are **intentionally crafted** software components that:\
-✔ Contain **backdoors, trojans, or hidden exploits**.\
-✔ **Exfiltrate sensitive data** or inject harmful code into applications.\
-✔ Masquerade as **legitimate open-source libraries** to trick developers.\
-✔ Are **typosquatted** (named similarly to popular libraries to deceive users).
+Malicious packages are **intentionally crafted** software components that:
 
-🚀 **Example:** A package named `requests-plus` mimics the popular `requests` Python library but contains hidden **data-stealing malware**.
+* Contains backdoors, trojans, or hidden exploits.
+* Exfiltrate sensitive data or inject harmful code into applications.
+* Masquerade as legitimate open-source libraries to trick developers.
+* Are typosquatted (named similarly to popular libraries to deceive users).
 
-***
+**Example:** A package named `requests-plus` mimics the popular `requests` Python library but contains hidden data-stealing malware.
 
 ### **How JFrog Xray Detects Malicious Packages**
 

@@ -4,7 +4,7 @@ JFrog Curation defends your software supply chain by enabling early detection an
 
 The `curation-audit` command checks the project to identify third-party dependencies that violate Curation service restrictions. It provides detailed insights into policy violations and may suggest compliant package alternatives.
 
-Learn more about Curation Supported technologies [here](../../products/curation/curation-supported-technologies.md).
+Learn more about Curation Supported technologies [here](../../products/curation/supported-technologies.md).
 
 **Command**: `curation-audit`, `ca`
 

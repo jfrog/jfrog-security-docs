@@ -4,8 +4,6 @@
 
 As a developer, you want to check if the dependencies in your project comply with your organization’s security and licensing policies before attempting to build or deploy your application. You can use the **JFrog CLI** to scan your dependencies and determine if any packages will be blocked by JFrog Curation.
 
-***
-
 #### **Workflow Steps**
 
 **Step 1: Install and Configure JFrog CLI**
@@ -26,8 +24,6 @@ First, ensure that you have the **JFrog CLI** installed and configured to connec
     * Enter your **JFrog Platform URL**
     * Provide your **username and API key**
     * Confirm connection
-
-***
 
 #### **Step 2: Run a Curation Audit on Your Project**
 
@@ -51,13 +47,12 @@ shCopyEditjfrog curation-audit --package-type maven --project-dir .
 shCopyEditjfrog curation-audit --package-type pip --project-dir .
 ```
 
-This will:\
-✅ Scan all dependencies used in your project\
-✅ Check them against your organization's **curation policies**\
-✅ Identify **blocked** or **flagged** packages\
-✅ Provide **remediation suggestions** if available
+This will:
 
-***
+* Scan all dependencies used in your project
+* Check them against your organization's **curation policies**
+* Identify **blocked** or **flagged** packages
+* Provide **remediation suggestions** if available
 
 #### **Step 3: Review the Audit Results**
 
@@ -78,8 +73,6 @@ markdownCopyEditCuration Audit Summary:
 - react@17.0.2
 ```
 
-***
-
 #### **Step 4: Take Action Based on the Results**
 
 * **If a package is blocked:**
@@ -90,8 +83,6 @@ markdownCopyEditCuration Audit Summary:
   * Check with your legal/compliance team if it can be used.
   * Consider replacing it with an alternative dependency.
 
-***
-
 #### **Step 5: Verify Fixes & Rerun the Audit**
 
 After making changes, rerun the **curation-audit** command to confirm that your project is now compliant:
@@ -100,4 +91,4 @@ After making changes, rerun the **curation-audit** command to confirm that your 
 shCopyEditjfrog curation-audit --package-type npm --project-dir .
 ```
 
-If no **blocked** packages appear, your project is safe to use under your organization's policies!
+If no blocked packages appear, your project is safe to use under your organization's policies!

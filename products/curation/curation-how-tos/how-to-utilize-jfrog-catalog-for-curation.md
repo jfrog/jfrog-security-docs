@@ -10,10 +10,10 @@ As a security or DevOps team, you want to leverage **JFrog Catalog** to enhance 
 
 Ensure that JFrog Curation is enabled and configured to use JFrog Catalog:
 
-* Navigate to **Administration > Curation > General**.
-* Ensure the Curation application is **ON**.
-* Check that Catalog Integration is active in your environment.
-*   If needed, configure Catalog Central in the `system.yaml` file:
+1. Navigate to **Administration > Curation > General**.
+2. Ensure the Curation application is **ON**.
+3. Check that Catalog Integration is active in your environment.
+4.  If needed, configure Catalog Central in the `system.yaml` file:
 
     ```yaml
     yamlCopyEditcatalog:
@@ -24,7 +24,7 @@ Ensure that JFrog Curation is enabled and configured to use JFrog Catalog:
         username: <USERNAME>
         password: <PASSWORD>
     ```
-* Restart the Xray service for changes to take effect.
+5. Restart the Xray service for changes to take effect.
 
 #### **Step 2: Use Catalog Labels to Manage Packages**
 
@@ -59,8 +59,6 @@ Ensure that JFrog Curation is enabled and configured to use JFrog Catalog:
 7. Enable notifications to inform requesters when a package is blocked.
 8. Click **Save Policy**.
 
-***
-
 #### **Step 4: Apply Waivers Using Labels in Policies**
 
 Waivers allow exceptions for specific packages while still enforcing broader security policies.
@@ -72,9 +70,7 @@ Waivers allow exceptions for specific packages while still enforcing broader sec
 5. Add a **justification** for why these packages should be exempted.
 6. Save the policy.
 
-Packages tagged with the **waiver label** will now be allowed, even if they match a block condition.
-
-***
+Packages tagged with the waiver label will now be allowed, even if they match a block condition.
 
 #### **Step 5: Validate Your Curation Policies with JFrog CLI**
 

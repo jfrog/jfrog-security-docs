@@ -22,7 +22,7 @@ When a package that violates the curation policy is requested but does not exist
 | **One smart repository linked to a curated remote**              | Artifactory tries to resolve from this smart repository, but it gets **blocked** due to curation policy.                                                                                                                                                                                                                                                                                                 | 403 (Blocked)                              |
 | **Multiple remote repositories, including at least one curated** | <p>Artifactory follows the order of remotes:<br>- If an artifact is found in a remote repository and it is not blocked, Artifactory resolves and returns it (<strong>200 OK</strong>).<br>- If the artifact does not exist (<strong>404</strong>), Artifactory moves to the next remote.<br>- If the artifact is blocked by the curation policy, Artifactory returns <strong>403 (Blocked)</strong>.</p> | 403 (Blocked) / 200 (OK) / 404 (Not Found) |
 
-For a full matrix of supported package types, refer to [**JFrog Curation Support Matrix**](../curation-supported-technologies.md)
+For a full matrix of supported package types, refer to [**JFrog Curation Support Matrix**](../supported-technologies.md)
 
 ***
 

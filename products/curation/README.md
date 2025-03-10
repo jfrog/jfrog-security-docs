@@ -11,8 +11,6 @@ JFrog Curation is **the first line of defense** in securing an organization’s 
 * When? **As OSS packages are fetched for use.**
 * Purpose? **Automate the enforcement of security and compliance policies.**
 
-***
-
 ### **Business Needs for JFrog Curation**
 
 Organizations face increasing challenges in managing the security and compliance of their software supply chain. These include:
@@ -22,8 +20,6 @@ Organizations face increasing challenges in managing the security and compliance
 * **Regulatory Compliance & Governance**: Compliance frameworks (e.g., GDPR, HIPAA, SOC 2) require organizations to ensure that external dependencies meet security and licensing standards.
 * **Reducing Security Overhead**: Security teams often struggle with manual reviews of dependencies. Automated package curation reduces this burden and ensures continuous compliance.
 * **Enhancing Development Efficiency**: Developers lose productivity when they unknowingly introduce non-compliant or vulnerable packages and must later rework their code. Curation proactively prevents these issues.
-
-***
 
 ### **Key Issues JFrog Curation Resolves**
 

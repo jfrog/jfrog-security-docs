@@ -1,8 +1,6 @@
-# Waiver management in Curation
+# Manage Waivers
 
-Here's a structured and simplified version of the documentation for the curation waivers approval flow:
-
-***
+Here's a structured and simplified version of the documentation for the curation waiver approval flow:
 
 #### Curation Waivers Approval Flow
 
@@ -12,7 +10,7 @@ In the final stage of policy creation, you must configure the waiver request opt
 
 * **Not Allowed**: Waiver requests cannot be automatically made for this policy.
 * **Manually Approved**: All waiver requests will require manual review and approval from the policy owner.
-  * When this option is selected, you must designate a **Decision Owner**. This is a group of users who can review and approve or reject waiver requests. They will receive notifications when a waiver is requested.
+  * When this option is selected, you must designate a Decision Owner. This is a group of users who can review and approve or reject waiver requests. They will receive notifications when a waiver is requested.
 * **Automatically Approved**: The system automatically approves waiver requests. This option is typically used for "soft block" policies like operational risks or licenses that require an opt-in decision. No decision owner needs to be assigned for this option.
 
 **2. Waiver Request Flow Initiation**
@@ -39,9 +37,9 @@ A new section for managing waivers has been added to the platform:
   * Multiple policies can block a single package.
   * More than one owner may be required for a specific request (e.g., a legal team for one policy, a technical team for another).
 * **Closed Requests**:
-  * This section shows all approved, rejected, and automatically approved requests.
+  * This section shows all approved, rejected and automatically approved requests.
   * Users can audit the system to see detailed logs of who approved or rejected requests and when those actions were taken.
-  * Approved weiver is created as a label, which can be reused or reconfigured in the catalog.&#x20;
+  * Approved waiver is created as a label, which can be reused or reconfigured in the catalog.&#x20;
 
 ***
 

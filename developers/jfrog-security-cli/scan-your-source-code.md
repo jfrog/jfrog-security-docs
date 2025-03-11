@@ -6,9 +6,7 @@ The `jf audit` command enables developers to perform **on-demand security scans*
 
 Note: For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
 
-{% hint style="warning" %}
-* If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
-{% endhint %}
+**Note**: If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
 
 ## **Command Options**
 

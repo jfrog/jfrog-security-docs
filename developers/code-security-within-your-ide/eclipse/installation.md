@@ -16,9 +16,7 @@
 4. Choose the **plugin zip file** you downloaded and click **Add**.
 5. Click **Next** to complete the installation.
 
-{% hint style="info" %}
-If JFrog Xray is behind an **HTTP proxy**, configure the proxy settings as described [here](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-net-preferences.htm). (Supported since version 1.1.0 of the JFrog Eclipse Plugin.)
-{% endhint %}
+**Note**: If JFrog Xray is behind an **HTTP proxy**, configure the proxy settings described [here](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-net-preferences.htm). (Supported since version 1.1.0 of the JFrog Eclipse Plugin.)
 
 ## **Configure the Plugin**
 

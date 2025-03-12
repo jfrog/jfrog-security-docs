@@ -5,42 +5,53 @@
 1. Go to **Settings** > **Secrets and variables** > **Actions**.
 2. Add the following secrets:
 
-| Secret Name       | Purpose                      | Notes                                        |
-| ----------------- | ---------------------------- | -------------------------------------------- |
-| `JF_URL`          | JFrog platform URL           | Required for authentication                  |
-| `JF_ACCESS_TOKEN` | JFrog access token           | Alternative: Use `JF_USER` and `JF_PASSWORD` |
-| `USER_TOKEN`      | GitHub personal access token | Must have `repo` and `read:packages` scopes  |
+| Secret Name       | Purpose                      | Notes                                       |
+| ----------------- | ---------------------------- | ------------------------------------------- |
+| `JF_URL`          | JFrog platform URL           | Required for authentication                 |
+| `JF_ACCESS_TOKEN` | JFrog access token           | Recommended: Use OIDC                       |
+| `USER_TOKEN`      | GitHub personal access token | Must have `repo` and `read:packages` scopes |
 
 #### Step 2: Create a GitHub Actions Workflow
 
-1. Navigate to `.github/workflows` in your repository.
-2. Create a new YAML file, e.g., `frogbot.yml`.
-3.  Add the following workflow configuration:
+1. Create a new YAML workflow file `.github/workflows/frogbot.yml`.
+2.  Add the following workflow configuration and commit changes:
 
-    ```
-    name: Frogbot Scan
+    ```yaml
+    name: "Frogbot Security Scan"
+
     on:
-      pull_request:
+      pull_request_target:
+        types: [opened, synchronize]
       push:
         branches:
           - main
+          - master
+      schedule:
+        - cron: "0 0 * * *"   # The repository will be scanned once a day at 00:00 GMT.
+
+    permissions:
+      pull-requests: write
+      contents: write
+      security-events: write
+      # [Mandatory If using OIDC authentication protocol instead of JF_ACCESS_TOKEN]
+      # id-token: write
+
     jobs:
-      frogbot_scan:
+      security-scan:
         runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            # The repository scanning will be triggered periodically on the following branches.
+            branch: ["main"]
         steps:
-          - name: Checkout Code
-            uses: actions/checkout@v3
-          - name: Set up JFrog CLI
-            run: |
-              curl -fL https://getcli.jfrog.io | sh
-              chmod +x jfrog
-              mv jfrog /usr/local/bin/
-          - name: Download and Run Frogbot
-            run: |
-              curl -fLg "https://releases.jfrog.io/artifactory/frogbot/v2/latest/getFrogbot.sh" | sh
-              ./frogbot scan-repository --jfrog-url $JF_URL --jfrog-access-token $JF_ACCESS_TOKEN --git-token $USER_TOKEN
+          - uses: jfrog/frogbot@v2
+            # [Mandatory if using OIDC authentication protocol instead of JF_ACCESS_TOKEN]
+            # Insert to oidc-provider-name the 'Provider Name' defined in the OIDC integration configured in the JPD
+            # with:
+            #   oidc-provider-name: ""
+            env:
+              JF_URL: ${{ secrets.JF_URL }}
+              JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
+              JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              JF_GIT_BASE_BRANCH: ${{ matrix.branch }}    # For repository scan action
     ```
-
-#### Step 3: Commit and Push Changes
-
-* Push the file to your repository. The workflow will now trigger scans automatically on pull requests and pushes.

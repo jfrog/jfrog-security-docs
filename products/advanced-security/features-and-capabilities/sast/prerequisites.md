@@ -22,4 +22,10 @@ Understanding the dependencies in the code (call flow, type propagation, constan
 
 ### Querying capabilities (custom queries)
 
-Can construct queries based on types, constants, external API names, data reachability, control flow dependencies, etc. of unlimited complexity.
+
+
+{% hint style="info" %}
+This feature is in Beta and subject to changes.
+{% endhint %}
+
+Ability to construct code queries based on types, constants, external API names, data reachability, control flow dependencies, etc. of unlimited complexity.

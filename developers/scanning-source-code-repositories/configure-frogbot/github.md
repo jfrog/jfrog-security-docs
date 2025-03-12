@@ -7,7 +7,7 @@
 
 | Secret Name       | Purpose                      | Notes                                       |
 | ----------------- | ---------------------------- | ------------------------------------------- |
-| `JF_URL`          | JFrog platform URL           | Required for authentication                 |
+| `JF_URL`          | JFrog platform URL           |                                             |
 | `JF_ACCESS_TOKEN` | JFrog access token           | Recommended: Use OIDC                       |
 | `USER_TOKEN`      | GitHub personal access token | Must have `repo` and `read:packages` scopes |
 

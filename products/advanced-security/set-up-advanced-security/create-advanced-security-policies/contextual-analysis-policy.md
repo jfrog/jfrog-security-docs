@@ -1,5 +1,8 @@
 # Contextual Analysis Policy
 
+Contextual Analysis evaluates security vulnerabilities within the broader system, application, or environment. Instead of flagging issues in isolation, it assesses real-world exploitability based on system configurations, dependencies, and runtime conditions. It also considers the potential impact within the specific environment and examines vulnerabilities in the full artifact, including the build, release bundle, or deployment state.\
+Read more about [Contextual Analysis](contextual-analysis-policy.md).
+
 1. Navigate to **Application** > **Xray** > **Watches & Policies**.
 2. In the **Policies** tab, click **New Policy**.
 3. Enter a **Policy Name**.

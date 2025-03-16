@@ -4,7 +4,7 @@ Ignore rules allow you to whitelist and ignore security violation rules, in orde
 
 There are many reasons why you might want to ignore a violation, you can read more about it here [Ignore Rules](https://www.jfrog.com/confluence/display/JFROG/Ignore+Rules).
 
-### **Ignoring Secrets Violations**
+### Ignoring Secrets Violations
 
 Ignore rules helps **reduce noise** by filtering out **false positives or non-actionable violations** in secret detection results.
 

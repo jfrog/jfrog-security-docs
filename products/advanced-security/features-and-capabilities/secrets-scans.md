@@ -15,7 +15,7 @@ For **developers** and **security experts**, secrets detection is integrated int
 * **High Entropy Textual Secrets**: Detects high-entropy secrets in source code and config files, such as passwords and secret keys with high randomness.
 * **URL Secrets Detection**: Detects embedded credentials in URLs (e.g., `https://username:password@mydomain.com`).
 
-### **Token Validation**
+### Token Validation
 
 Enable **Token Validation** to verify the validity of detected tokens, distinguishing between active and inactive tokens by authenticating against the token provider.
 
@@ -25,7 +25,7 @@ Enable **Token Validation** to verify the validity of detected tokens, distingui
   * Check the **Enable dynamic token validation** checkbox
 * To enable via **REST API**, use the "Enable Token Validation for Secrets" API.
 
-### **Validation Results**
+### Validation Results
 
 Once enabled, results appear under **Findings** in violation details. The **Token Validation** column indicates:
 
@@ -36,9 +36,9 @@ Once enabled, results appear under **Findings** in violation details. The **Toke
 
 Some providers attach metadata to secrets (e.g., AWS includes a **Token ID** with the **Token Secret**). This metadata is displayed in the **Metadata** column.
 
-## Details about Supported Secret Types
+### Details about Supported Secret Types
 
-### Access Tokens (Keys)
+#### Access Tokens (Keys)
 
 Detects structured access tokens in text or binary files. **For example**:
 
@@ -50,7 +50,7 @@ Detects structured access tokens in text or binary files. **For example**:
 | npm      | `npm_1234567890abcdefgh`                                                    |
 | Slack    | `xoxp-123234234235-123234234235-123234234235-adedce74748c3844747aed48499bb` |
 
-### Supported Providers for token validation
+#### Supported Providers for token validation
 
 Below are supported providers and whether they support **Token Validation**:
 

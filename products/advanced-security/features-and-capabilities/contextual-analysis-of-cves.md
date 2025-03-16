@@ -1,4 +1,4 @@
-# CVEs Contextual Analysis
+# Contextual Analysis of CVEs
 
 When scanning for vulnerabilities, traditional tools often flag a large number of CVEs, overwhelming developers with irrelevant results. Developers must then sift through extensive lists to determine which vulnerabilities are relevant, a process that can be both time-consuming and error-prone. In many cases, vulnerabilities may not even impact your artifacts, making it difficult to know where to start.
 
@@ -16,7 +16,7 @@ The JFrog Security Research group which continuously performs CVE Research and E
 
 This ensures that our clients receive timely and relevant protection against the most significant security risks, with already more than 1,600+ high-profile CVEs.
 
-## Key Benefits
+### Key Benefits
 
 * **Reduces false positives** – Filters out vulnerabilities that don’t impact your software today.
 * **Provides actionable insights** – Highlights vulnerabilities with real-world impact. In the case of binary analysis, there is more context that allows for the analysis of the complete codebase from an attacker's perspective, identifying which issues are truly exploitable and what their potential impact is.
@@ -28,9 +28,9 @@ This ensures that our clients receive timely and relevant protection against the
 * **Rust binaries in Docker containers**: Supported in Xray **3.79.x and later**
 * **.NET binaries in Docker containers**: Supported in Xray **3.95.4 and later**
 
-## Contextual Analysis Statuses and Results
+### Contextual Analysis Statuses and Results
 
-**Vulnerability Contextual Analysis Statuses**
+#### Vulnerability Contextual Analysis Statuses
 
 * **Not Scanned**: Initial state, the scan wasn't invoked for the CVE.
 * **Applicable**: The vulnerability can be exploited in the context of the scanned code or artifact.
@@ -42,7 +42,7 @@ This ensures that our clients receive timely and relevant protection against the
 * **Missing Context**: Reachability analysis cannot determine the vulnerability’s applicability due to missing context. Applicability can be determined by scanning the artifact in a Docker repository in the JFrog Platform.
 * **Upgrade Required**: (Self-Hosted only) The Xray version needs to be updated to receive a new scanner for this CVE. Rescan is required after the upgrade.
 
-**Vulnerability Contextual Analysis Results**
+#### Vulnerability Contextual Analysis Results
 
 CVE Contextual Analysis results are available in:
 

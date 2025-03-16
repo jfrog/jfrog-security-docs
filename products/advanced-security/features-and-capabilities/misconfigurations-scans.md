@@ -2,7 +2,7 @@
 
 JFrog Advanced Security goes beyond detecting CVEs, 1st party SAST issues, and exposed secrets—it also identifies security misconfigurations that can leave your applications vulnerable. By scanning for misconfigurations across your infrastructure, services, and applications, JFrog Advanced Security helps you strengthen your security posture early in the development pipeline and ensures compliance at every stage.
 
-### **IaC Scans – Infrastructure as Code (IaC) Security Analysis**
+### IaC Scans – Infrastructure as Code (IaC) Security Analysis
 
 JFrog Advanced Security scans your **Terraform files** for cloud misconfigurations at different stages of the development pipeline. During development, it scans **Terraform Modules** and **Plan files** to catch issues early before deployment. Once the infrastructure is deployed, **Terraform State files** in Artifactory are scanned to ensure that cloud services remain securely configured. It supports cloud services from AWS, Azure, and GCP, enabling comprehensive coverage for all major cloud platforms.
 

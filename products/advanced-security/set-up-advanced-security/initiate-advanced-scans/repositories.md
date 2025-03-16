@@ -1,6 +1,6 @@
 # Repositories
 
-## Enable Advanced Scans for a Repository
+### Enable Advanced Scans for a Repository
 
 Advanced Scans apply only to newly added artifacts in the repository and run as ongoing, recurring scans. They are configured per repository and do not apply to existing artifacts.
 
@@ -27,7 +27,7 @@ Advanced Scans apply only to newly added artifacts in the repository and run as 
 * Toggling **Scan** on&#x20;
 * Configuring **All other Artifacts** within the repository that are excluded from the defined scan patterns with a data retention period of their own.&#x20;
 
-## Trigger a One-Time Advanced Scan for a Repository
+### Trigger a One-Time Advanced Scan for a Repository
 
 Triggering one-time advanced scans is useful when you need to perform an immediate, on-demand security analysis of your artifacts, containers, or codebases without waiting for scheduled scans.
 

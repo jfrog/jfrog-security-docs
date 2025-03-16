@@ -34,7 +34,7 @@ If a ticket has already been created for the issue, you have the option of updat
 
 ### Jira Ticket Indicator
 
-Whenever a Jira ticket is manually created for a violation, it is indicated with an icon <img src="../../../../../../.gitbook/assets/0 (2).png" alt="" data-size="line">. Hover over the icon to see the list of Jira tickets that have already been created for the violation. If there are multiple tickets, the last created ticket will be the leading ticket.
+Whenever a Jira ticket is manually created for a violation, it is indicated with an icon. Hover over the icon to see the list of Jira tickets that have already been created for the violation. If there are multiple tickets, the last created ticket will be the leading ticket.
 
 <figure><img src="../../../../../../.gitbook/assets/jiraticketscanslist.png" alt=""><figcaption></figcaption></figure>
 

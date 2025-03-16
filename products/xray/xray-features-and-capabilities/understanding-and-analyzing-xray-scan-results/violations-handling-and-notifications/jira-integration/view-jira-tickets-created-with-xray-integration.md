@@ -2,8 +2,10 @@
 
 When the tickets are created, you can see the Jira icons against the violation, and the details view in the UI.
 
-![](<../../../../../../.gitbook/assets/0 (5).png>)
+<figure><img src="../../../../../../.gitbook/assets/jiraticket.png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../../../../.gitbook/assets/1 (5).png>)
+
+
+<figure><img src="../../../../../../.gitbook/assets/jiraticket2.png" alt=""><figcaption></figcaption></figure>
 
 In Xray reports, the violations reports of Xray, also have the ticket ID wherever applicable.

@@ -1,6 +1,6 @@
 # Secrets Scans
 
-## **Enable Dynamic Token Validation**
+### Enable Dynamic Token Validation
 
 This feature checks whether detected secrets are **still active**, reducing false alarms for expired or inactive credentials.
 
@@ -8,7 +8,7 @@ This feature checks whether detected secrets are **still active**, reducing fals
 2. Locate the **Enable Dynamic Token Validation** option and enable it.
 3. Save the settings.
 
-## **View & Manage Secrets Scan Results**
+### View & Manage Secrets Scan Results
 
 This process helps security teams **review, assess, and act** on detected secrets to prevent credential leaks.
 

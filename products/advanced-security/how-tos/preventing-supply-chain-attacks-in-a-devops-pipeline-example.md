@@ -1,14 +1,12 @@
-# Preventing Supply Chain Attacks in a DevOps Pipeline (example)
-
-**Challenge:**
+# Preventing Supply Chain Attacks in a DevOps Pipeline - example
 
 A software development team is using multiple open-source dependencies in their applications. They need to ensure that no vulnerabilities, malicious code, or license compliance issues enter their supply chain during development, testing, and deployment.
 
-**JFrog Advanced Security Solution:**
+**JFrog Advanced Security Solution**
 
 JFrog’s advanced security capabilities integrate seamlessly into the SDLC, providing automated security scans, policy enforcement, and real-time threat detection.
 
-**Utilization Across the SDLC:**
+**Utilization Across the SDLC**
 
 1. **Code & Build Phase:**
    * JFrog Xray scans source code and dependencies for known vulnerabilities (CVEs) and malware.
@@ -24,6 +22,6 @@ JFrog’s advanced security capabilities integrate seamlessly into the SDLC, pro
    * Integrates with CI/CD pipelines to enforce security policies before deployment.
    * Monitors deployed applications for newly discovered vulnerabilities and provides actionable insights.
 
-**Outcome:**
+**Outcome**
 
 By using JFrog Advanced Security throughout the SDLC, the team prevents insecure components from reaching production, mitigates risks of supply chain attacks, and ensures compliance with industry standards.

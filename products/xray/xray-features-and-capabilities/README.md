@@ -51,7 +51,7 @@ Allows organizations to define security, compliance, and operational risk polici
 **Why it matters:**\
 Trigger automatic actions regarding security issues, compliance, and operational risk before they progress in the SDLC process.&#x20;
 
-### [**Operational Risk Management**](./#operational-risk-management)
+### [**Operational Risk Management**](sca/operational-risk.md)
 
 **What it does:**\
 Detects **risks beyond security vulnerabilities**, such as outdated or deprecated software components.
@@ -59,7 +59,7 @@ Detects **risks beyond security vulnerabilities**, such as outdated or deprecate
 **Why it matters:**\
 Ensures that **unmaintained** software does not introduce security risks.
 
-### [**Malicious Package Detection**](./#malicious-package-detection)
+### [**Malicious Package Detection**](sca/security/malicious-package-detection.md)
 
 **What it does:**\
 Identifies **intentionally harmful** open-source packages and machine-learning models.

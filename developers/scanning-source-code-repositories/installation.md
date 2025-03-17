@@ -2,7 +2,7 @@
 
 ## Before You Begin
 
-Frogbot relies on specific lock files, the presence of package manager executables, and proper configuration to accurately scan and secure your repositories.
+Frogbot relies on the presence of package manager executables and proper configuration to accurately scan and secure your repositories.
 
 ## SCA Requirements
 

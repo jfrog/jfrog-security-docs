@@ -10,14 +10,16 @@ The instance should be configured with either:
 ## Configure a Generic Remote Repository in Artifactory
 
 1. Under Administration, navigate to Repositories and select Create a Repository.&#x20;
-2. From the drop-down menu, select **Remote**. \
-   The Select Package Type window opens.
-3. Select **Generic**.\
+2. From the drop-down menu, select **Remote**.&#x20;
+
+&#x20;   The Select Package Type window opens.
+
+1. Select **Generic**.\
    The New Remote Repository window opens.
-4. Configure the desired **Repository Key - This should be used in the shift left utilities**
-5. Under the Basic tab, set the following URL address: \
+2. Configure the desired **Repository Key - This should be used in the shift left utilities**
+3. Under the Basic tab, set the following URL address: \
    `https://releases.jfrog.io`
-6. Under the Advanced tab, uncheck the Store Artifacts Locally box. \
+4. Under the Advanced tab, uncheck the Store Artifacts Locally box. \
    This reduces storage.
 
 ## Configure a Generic Local Repository in Artifactory

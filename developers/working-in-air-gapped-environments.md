@@ -12,7 +12,7 @@ The instance should be configured with either:
 1. Under Administration, navigate to Repositories and select Create a Repository.&#x20;
 2. From the drop-down menu, select **Remote**.&#x20;
 
-&#x20;   The Select Package Type window opens.
+&#x20;\&nbsp;\&nbsp;\&nbsp;\&nbsp;The Select Package Type window opens.
 
 1. Select **Generic**.\
    The New Remote Repository window opens.

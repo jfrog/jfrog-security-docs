@@ -55,3 +55,48 @@ Audit with multiple threads:
 ```
 jf curation-audit --threads=5
 ```
+
+Exclude specific packages or versions from policy restrictions using waivers:
+
+1. Execute the `jf-curation-audit` command:
+
+```
+jf curation-audit
+Found 4 blocked packages for project sample-node-project:1.0.0
+Curation
+┌────┬──────────────┬────────────┬──────────────┬─────────┬─────────┬──────────────┬──────────────┬──────────────┬──────────────┐
+│ ID │ DIRECT       │ DIRECT     │ BLOCKED      │ BLOCKED │ PACKAGE │ VIOLATED     │ VIOLATED CON │ EXPLANATION  │ RECOMMENDATI │
+│    │ DEPENDENCY   │ DEPENDENCY │ PACKAGE      │ PACKAGE │ TYPE    │ POLICY       │ DITION       │              │ ON           │
+│    │ PACKAGE      │ PACKAGE    │ NAME         │ VERSION │         │ NAME         │ NAME         │              │              │
+│    │ NAME         │ VERSION    │              │         │         │              │              │              │              │
+├────┼──────────────┼────────────┼──────────────┼─────────┼─────────┼──────────────┼──────────────┼──────────────┼──────────────┤
+│ 1  │ ansi-regex   │ 3.0.0      │ ansi-regex   │ 3.0.0   │ npm     │ High CVE     │ CVE with CVS │ Package vers │ Upgrade to t │
+│    │              │            │              │         │         │              │ S score betw │ ion contains │ he following │
+│    │              │            │              │         │         │              │ een 7.0 and  │ the followin │ version(s):  │
+│    │              │            │              │         │         │              │ 8.9 (with or │ g vulnerabil │ CVE-2021-380 │
+│    │              │            │              │         │         │              │ without a fi │ ity(s):      │ 7: 6.0.1; 5. │
+│    │              │            │              │         │         │              │ x version av │ CVE-2021-380 │ 0.1; 4.1.1;  │
+│    │              │            │              │         │         │              │ ailable)     │ 7: 7.5       │ 3.0.1        │
+└────┴──────────────┴────────────┴──────────────┴─────────┴─────────┴──────────────┴──────────────┴──────────────┴──────────────┘
+```
+
+2. Enter `y` as an answer to whether or not you want a waiver:
+
+```
+Do you want to request a waiver for any of the listed packages? (y/n) [n]? y
+```
+
+3. Enter table row numbers representing packages you want to exclude from policy restrictions:
+
+```
+Please enter the row number(s) for which you want to request a waiver (comma-separated for multiple, range, or “all”) [all]: all
+```
+
+4. Enter the reason for requesting a waiver:
+
+```
+Please enter the reason for the waiver request: Required packages
+```
+
+
+

@@ -1,3 +1,2 @@
-# Manage Xray1
+# Manage Xray
 
-This section is about managing Xray

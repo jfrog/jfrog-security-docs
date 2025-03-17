@@ -2,7 +2,7 @@
 
 ### Language support
 
-|            | Supported Frameworks                | Supported Libraries | Not Supported   |
+| Language   | Supported Frameworks                | Supported Libraries | Not Supported   |
 | ---------- | ----------------------------------- | ------------------- | --------------- |
 | Python     | Flask, Django                       | Sqlite3, Pymysql    | Python 1.x, 2.x |
 | Javascript | Angular, Express, Node              |                     | JSX             |
@@ -18,11 +18,9 @@ Understanding the dependencies in the code (call flow, type propagation, constan
 
 * Cross-functional
 * Cross-file
-* Cross-module&#x20;
+* Cross-module
 
 ### Querying capabilities (custom queries)
-
-
 
 {% hint style="info" %}
 This feature is in Beta and subject to changes.

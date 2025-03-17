@@ -50,8 +50,9 @@ Command: `jf audit` (alias: `jf aud`)
 
 ## Working in Air-Gapped Environments
 
-See [https://app.gitbook.com/o/qA7lOLzSLvqlPYMcxj0G/s/gce7YVzT9rwXa135GlZn/developers/scanning-source-code-repositories/working-in-air-gapped-environments](https://app.gitbook.com/o/qA7lOLzSLvqlPYMcxj0G/s/gce7YVzT9rwXa135GlZn/developers/scanning-source-code-repositories/working-in-air-gapped-environments) and use **JFROG\_CLI\_RELEASES\_REPO** environment variable\
+Follow the W[orking in Air-Gapped Environments](../working-in-air-gapped-environments.md) procedure.
 
+The environment variable to set the source code scan is `JFROG_CLI_RELEASES_REPO`.
 
 **Examples**
 

@@ -6,7 +6,7 @@
 
 It is essential you have:
 
-* Ensure `kubectl` and `helm` clients can access the Kubernetes cluster where you want to install the Runtime Service.
+* `kubectl` and `helm` clients granted access to the Kubernetes cluster where you want to install the Runtime Service.
 * An ingress controller (preferably configured with TLS).\
   JFrog officially supports the Nginx controller, while using other ingress controllers would work if they support GRPC communication.
 

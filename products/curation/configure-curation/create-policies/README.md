@@ -3,7 +3,7 @@
 Curation is based on a set of defined policies. To create a new curation policy, the Curation Admin must choose the remote repositories to which the policy applies, the policy condition (only 1 condition can be defined for each policy), and the action to be performed when the policy is violated. In addition, any exceptions to the policy can be defined in a waiver.
 
 {% hint style="info" %}
-This is a basic procedure outlining the steps to create a policy. In the [How-Tos ](../../curation-how-tos/)section we provide more scenario specific procedures for creating policies.&#x20;
+This is a basic procedure outlining the steps to create a policy. In the [How-Tos ](../../how-tos/)section we provide more scenario specific procedures for creating policies.&#x20;
 {% endhint %}
 
 Do the following:

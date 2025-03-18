@@ -1,6 +1,6 @@
 # Create Policies
 
-This is a Step-by-Step Guide to Creating a Policy in Xray. To learn more about Policies, click [here](../xray-features-and-capabilities/sdlc-policy-mangement/).
+This is a Step-by-Step Guide to Creating a Policy in Xray. To learn more about Policies, click [here](../features-and-capabilities/sdlc-policy-mangement/).
 
 1. Navigate to **Xray → Watches & Policies**.
 2. Click **New Policy**.

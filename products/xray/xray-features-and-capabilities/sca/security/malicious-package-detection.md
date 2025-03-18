@@ -18,8 +18,8 @@ An updated list of all packages that were discovered and disclosed by JFrog's sc
 
 In addition to JFrog's automated scanners, the Xray database is updated with malicious packages from two additional sources:
 
-1. Open-source malicious package DBs, such as the[ one curated by OpenSSF](https://github.com/ossf/malicious-packages).
-2. JFrog's dedicated malware research team performs a daily audit of all new malware attacks and third-party disclosures, to update the Xray DB with newly-discovered threats.
+* Open-source malicious package DBs, such as the[ one curated by OpenSSF](https://github.com/ossf/malicious-packages).
+* JFrog's dedicated malware research team performs a daily audit of all new malware attacks and third-party disclosures, to update the Xray DB with newly-discovered threats.
 
 ### Which malicious code patterns can be identified by JFrog's scanners? <a href="#w9t9tlyjem4a" id="w9t9tlyjem4a"></a>
 

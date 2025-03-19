@@ -4,7 +4,7 @@
 
 This feature checks whether detected secrets are **still active**, reducing false alarms for expired or inactive credentials.
 
-1. Navigate to **Administration** → **Xray Settings** → **Advanced Security**.
+1. Navigate to **Administration** > **Xray Settings** > **Advanced Security**.
 2. Locate the **Enable Dynamic Token Validation** option and enable it.
 3. Save the settings.
 
@@ -12,7 +12,7 @@ This feature checks whether detected secrets are **still active**, reducing fals
 
 This process helps security teams **review, assess, and act** on detected secrets to prevent credential leaks.
 
-1. Navigate to **Scans List** → **Repositories**.
+1. Navigate to **Scans List** > **Repositories**.
 2. Select the relevant **scan report** to view detected secrets.
 3. Review scan results, which include:
    * **Severity classification** (Critical, High, Medium, Low).

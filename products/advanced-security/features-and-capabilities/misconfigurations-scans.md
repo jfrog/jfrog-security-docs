@@ -1,10 +1,10 @@
 # Misconfigurations Scans
 
-JFrog Advanced Security goes beyond detecting CVEs, 1st party SAST issues, and exposed secrets—it also identifies security misconfigurations that can leave your applications vulnerable. By scanning for misconfigurations across your infrastructure, services, and applications, JFrog Advanced Security helps you strengthen your security posture early in the development pipeline and ensures compliance at every stage.
+JFrog Advanced Security goes beyond detecting CVEs, first-party SAST issues, and exposed secrets—it also identifies security misconfigurations that can leave your applications vulnerable. By scanning for misconfigurations across your infrastructure, services, and applications, JFrog Advanced Security helps you strengthen your security posture early in the development pipeline and ensures compliance at every stage.
 
 ### IaC Scans – Infrastructure as Code (IaC) Security Analysis
 
-JFrog Advanced Security scans your **Terraform files** for cloud misconfigurations at different stages of the development pipeline. During development, it scans **Terraform Modules** and **Plan files** to catch issues early before deployment. Once the infrastructure is deployed, **Terraform State files** in Artifactory are scanned to ensure that cloud services remain securely configured. It supports cloud services from AWS, Azure, and GCP, enabling comprehensive coverage for all major cloud platforms.
+JFrog Advanced Security scans your Terraform files for cloud misconfigurations at different stages of the development pipeline. During development, it scans Terraform Modules and Plan files to catch issues early before deployment. Once the infrastructure is deployed, Terraform State files in Artifactory are scanned to ensure that cloud services remain securely configured. It supports cloud services from AWS, Azure, and GCP, enabling comprehensive coverage for all major cloud platforms.
 
 A key differentiator of JFrog Advanced Security is its focus on real security risks in Infrastructure as Code (IaC) scanning. Unlike common IaC tools that report many low-severity issues with little impact, JFrog Advanced Security provides detailed severity ratings, allowing teams to identify and address actual security risks. By focusing on the most critical misconfigurations and providing severity ratings that other tools lack, it ensures that security efforts are directed toward genuine threats.
 
@@ -42,7 +42,7 @@ JFrog Advanced Security scans common OSS libraries and services in your containe
 
 #### Applications Scans - Application Libraries Misuse <a href="#uuid-58e1bcf7-4260-c0bf-5b4b-32c67d2757a7_bridgehead-idm4599339870576033995583152195" id="uuid-58e1bcf7-4260-c0bf-5b4b-32c67d2757a7_bridgehead-idm4599339870576033995583152195"></a>
 
-JFrog Advanced Security detects misconfigurations and insecure usage of libraries and services within your containers. Supporting **Python** and **Node.js**, JFrog Advanced Security scans for issues like excessive privileges, insecure communication, and unsafe cryptographic operations.
+JFrog Advanced Security detects misconfigurations and insecure usage of libraries and services within your containers. Supporting Python and Node.js, JFrog Advanced Security scans for issues like excessive privileges, insecure communication, and unsafe cryptographic operations.
 
 **Examples of Detected Issues**:
 

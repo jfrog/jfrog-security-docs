@@ -95,6 +95,7 @@
       * [Initiate Advanced Scans](products/advanced-security/set-up-advanced-security/initiate-advanced-scans/README.md)
         * [Repositories](products/advanced-security/set-up-advanced-security/initiate-advanced-scans/repositories.md)
         * [Artifacts](products/advanced-security/set-up-advanced-security/initiate-advanced-scans/artifacts.md)
+        * [Custom Secrets Scanner](products/advanced-security/set-up-advanced-security/initiate-advanced-scans/custom-secrets-scanner.md)
       * [Create Advanced Security Policies](products/advanced-security/set-up-advanced-security/create-advanced-security-policies/README.md)
         * [Contextual Analysis Policy](products/advanced-security/set-up-advanced-security/create-advanced-security-policies/contextual-analysis-policy.md)
         * [Exposures Policy](products/advanced-security/set-up-advanced-security/create-advanced-security-policies/exposures-policy.md)

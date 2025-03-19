@@ -21,7 +21,3 @@ JFrog’s advanced security capabilities integrate seamlessly into the SDLC, pro
 4. **Deployment & Runtime Security:**
    * Integrates with CI/CD pipelines to enforce security policies before deployment.
    * Monitors deployed applications for newly discovered vulnerabilities and provides actionable insights.
-
-**Outcome**
-
-By using JFrog Advanced Security throughout the SDLC, the team prevents insecure components from reaching production, mitigates risks of supply chain attacks, and ensures compliance with industry standards.

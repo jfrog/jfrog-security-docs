@@ -13,6 +13,10 @@ JFrog Catalog acts as the foundation for JFrog's security products, providing en
 * When? Before software components are introduced into development.
 * Purpose? Research, compare, and pre-approve open-source packages before they enter the CI/CD pipeline.
 
+**Install Catalog**
+
+The Catalog installation instructions can be found [here](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-catalog).&#x20;
+
 ### **Key Benefits of JFrog Catalog**
 
 #### **1. Comprehensive Software Visibility**

@@ -10,7 +10,7 @@ Xray’s policies and watches help enforce security and compliance thresholds by
 
 Combining source code and binary scanning, Xray delivers shift-left security for early detection and binary-level validation for final artifact safety. This ensures end-to-end protection across the entire software development lifecycle.
 
-### **Where Xray Fits in the JFrog Security Timeline**
+**Where Xray Fits in the JFrog Security Timeline**
 
 Security in the software development process must be continuous, spanning from code development to deployment and beyond. JFrog Xray integrates into multiple stages of the software lifecycle, ensuring that security is proactive rather than reactive.
 
@@ -25,7 +25,9 @@ Security in the software development process must be continuous, spanning from c
 | **Release Validation (Pre-Deployment Security)**           | ✅ **Scans release bundles** before promotion or distribution to ensure compliance and security.                                                                          |
 | **Production & Runtime Security (Requires JFrog Runtime)** | ✅ **Monitors for newly discovered vulnerabilities** in already deployed artifacts.                                                                                       |
 
-***
+**Install Xray**
+
+The Xray installation instructions can be found [here](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-xray).&#x20;
 
 ### **Business Needs for JFrog Xray**
 

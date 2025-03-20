@@ -6,7 +6,7 @@ JFrog Xray's License Management provides a comprehensive list of open-source lic
 
 See the list of available licenses in the **Administration** module under **Xray | Advanced | Manage Compliance Licenses**.
 
-![Custom License](../../../../.gitbook/assets/custom-license-image.png)
+![Custom License](../../../../../.gitbook/assets/custom-license-image.png)
 
 ## Create and Edit Custom Licenses
 

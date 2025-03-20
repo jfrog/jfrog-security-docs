@@ -134,7 +134,6 @@
       * [How to Enforce Compliance Policies Using Catalog Labels](products/catalog/how-tos/how-to-enforce-compliance-policies-using-catalog-labels.md)
       * [How to Compare and Select the Best OSS Package for Your Project](products/catalog/how-tos/how-to-compare-and-select-the-best-oss-package-for-your-project.md)
 * [Developers](developers/README.md)
-  * [APIs](developers/apis.md)
   * [Working in Air-Gapped Environments](developers/working-in-air-gapped-environments.md)
   * [JFrog Security CLI](developers/jfrog-security-cli/README.md)
     * [Platform Maintenance](developers/jfrog-security-cli/platform-maintenance/README.md)
@@ -188,4 +187,3 @@
     * [Troubleshooting](developers/scanning-source-code-repositories/troubleshooting.md)
     * [Frogbot Optional Configuration Parameters](developers/scanning-source-code-repositories/frogbot-optional-configuration-parameters.md)
     * [Frogbot Offline](developers/scanning-source-code-repositories/frogbot-offline.md)
-  * [CI/CD](developers/ci-cd.md)

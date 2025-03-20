@@ -33,6 +33,10 @@ Advanced Security helps prevent accidental exposure of Secrets such as API keys,
 | Release Validation (Pre-Deployment Security)           | Scans **release bundles** before promotion or distribution to ensure compliance, security, and integrity. Confirms that vulnerabilities are **not actively exploitable** in the final packaged software.                                                             |
 | Production & Runtime Security (Requires JFrog Runtime) | Monitors for newly discovered vulnerabilities in deployed artifacts. Validates **if vulnerable code is loaded into memory**, reducing false positives and prioritizing real threats. Detects integrity violations and **untrusted registries** in live environments. |
 
+**Install Advanced Security**
+
+The Advanced Security installation instructions can be found [here](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-jfrog-advanced-security).&#x20;
+
 ### Business Needs
 
 * **Business Needs for JFrog Advanced Security**\

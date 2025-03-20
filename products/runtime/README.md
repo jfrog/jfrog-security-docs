@@ -59,6 +59,10 @@ Runtime Impact delivers a granular and comprehensive runtime security assessment
 
 <table><thead><tr><th>Stage</th><th width="186.87890625">Runtime' Role</th><th width="187"></th><th></th></tr></thead><tbody><tr><td>Production &#x26; Runtime Security</td><td>Provides real-time monitoring of Kubernetes workloads, processes, and file activity using eBPF-based sensors. Detects running vulnerabilities, unauthorized processes, and integrity violations. Prioritizes security incidents by determining if vulnerable code is actively loaded into memory.</td><td></td><td></td></tr></tbody></table>
 
+**Install Runtime**
+
+The Runtime installation instructions can be found [here](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-jfrog-runtime-security).&#x20;
+
 ### Business Needs for JFrog Runtime
 
 As organizations increasingly adopt Kubernetes and cloud-native architectures, securing the runtime environment becomes as critical as pre-deployment protection. JFrog Runtime extends security into live environments, ensuring continuous monitoring, trust validation, and real-time threat detection. Key concerns include:

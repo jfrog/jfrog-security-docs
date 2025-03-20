@@ -157,6 +157,7 @@ Xray supports the below field types of Jira if you have any other type as a requ
 * Radio Buttons
 * Select List (multiple choices)
 * Select List (single choice)
+* Jira Components
 {% endhint %}
 
 **Macros**

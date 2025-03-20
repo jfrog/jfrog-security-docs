@@ -67,7 +67,7 @@ Identifies **intentionally harmful** open-source packages and machine-learning m
 **Why it matters:**\
 Prevents **supply chain attacks** caused by malicious components.
 
-### [**Software Bill of Materials (SBOM)**](export-scan-results.md)
+### [**Software Bill of Materials (SBOM)**](sca/export-scan-results.md)
 
 **What it does:**\
 Generates an **SBOM (Software Bill of Materials)**, listing all software components and dependencies.

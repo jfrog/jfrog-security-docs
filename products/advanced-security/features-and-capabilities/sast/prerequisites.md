@@ -31,25 +31,41 @@ Ability to construct code queries based on types, constants, external API names,
 ### Start of this
 
 {% hint style="info" %}
-This an info
+This an info line 1
+
+This an info line 2
+
+This an info line 3
 {% endhint %}
 
 ### Seperator
 
 {% hint style="warning" %}
-This is a warning
+This is a warning line 1
+
+This is a warning line 2
+
+This is a warning line 3
 {% endhint %}
 
 ### Seperator
 
 {% hint style="danger" %}
-This is a danger
+This is a dangerline 1
+
+This is a dangerline 2
+
+This is a dangerline 3
 {% endhint %}
 
 ### Seperator
 
 {% hint style="success" %}
-This is a success
+This is a success line 1
+
+This is a success line 2
+
+This is a success line 3
 {% endhint %}
 
 END OF THIS

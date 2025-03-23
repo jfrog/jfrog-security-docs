@@ -1,6 +1,8 @@
 # Scan Your Binaries
 
-The `jf scan and jf docker scan` command enables developers to perform **on-demand security scans** of their binaries **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, and exposed secrets.. By integrating seamlessly into the developer workflow, it helps catch security risks of binaries before uploading them into JFrog Artifactory — reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
+The `jf scan and jf docker scan` command enables developers to perform **on-demand security scans** of their binaries **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, and exposed secrets. By integrating seamlessly into the developer workflow, it helps catch security risks of binaries before uploading them into JFrog Artifactory — reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
+
+**Note**: On-demand scan results are retained for seven days before being automatically deleted.
 
 ## Scanning Files on the Local File System
 
@@ -10,8 +12,9 @@ Use the `jf scan` command to scan files on your local file system with JFrog Xra
 
 ### Commands Parameters
 
-| `--server-id`   | Optional         | Server ID configured using `jf c add`. Defaults to the configured server if not specified.                   |
+| Parameter       | Optional/Default | Description                                                                                                  |
 | --------------- | ---------------- | ------------------------------------------------------------------------------------------------------------ |
+| `--server-id`   | Optional         | Server ID configured using `jf c add`. Defaults to the configured server if not specified.                   |
 | `--spec`        | Optional         | Path to a file specifying files to scan. Cannot be used with the `pattern` argument.                         |
 | `--project`     | Optional         | JFrog project key for security violations. Mutually exclusive with `--repo-path` and `--watches`.            |
 | `--repo-path`   | Optional         | Artifactory repository path for determining violations. Mutually exclusive with `--project` and `--watches`. |
@@ -22,8 +25,9 @@ Use the `jf scan` command to scan files on your local file system with JFrog Xra
 
 ### **Arguments**
 
-| `Pattern` | Specifies the file system path to artifacts. Supports wildcards. |
+| Argument  | Description                                                      |
 | --------- | ---------------------------------------------------------------- |
+| `Pattern` | Specifies the file system path to artifacts. Supports wildcards. |
 
 ### Examples
 
@@ -69,8 +73,9 @@ Use `jf docker scan` to scan Docker containers locally using the Docker client a
 
 ### Commands Parameters
 
-| `--server-id`        | Optional         | Configured server ID.                                   |
+| Parameter            | Optional/Default | Description                                             |
 | -------------------- | ---------------- | ------------------------------------------------------- |
+| `--server-id`        | Optional         | Configured server ID.                                   |
 | `--project`          | Optional         | JFrog project key for security violations.              |
 | `--repo-path`        | Optional         | Artifactory repository path for determining violations. |
 | `--watches`          | Optional         | Comma-separated list of Xray watches.                   |
@@ -81,8 +86,9 @@ Use `jf docker scan` to scan Docker containers locally using the Docker client a
 
 ### **Arguments**
 
-| `Pattern` | Specifies the file system path to artifacts. Supports wildcards. |
+| Argument  | Description                                                      |
 | --------- | ---------------------------------------------------------------- |
+| `Pattern` | Specifies the file system path to artifacts. Supports wildcards. |
 
 ### **Examples**
 

@@ -8,23 +8,9 @@ Frogbot relies on the presence of package manager executables and proper configu
 
 | **Requirement**                 | **Description**                                                                                   |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
-| **Lock Files**                  | Ensure that relevant lock files are present in your repository for dependency management.         |
 | **Package Manager Executables** | Ensure the appropriate package manager is installed and operational in your environment.          |
 | **Network Access**              | Frogbot may need internet access to download dependencies based on your package manager settings. |
 | **Environment Configuration**   | Ensure that necessary environment variables, proxies, or custom configurations are properly set.  |
-
-### **Lock Files**
-
-The following common lock files are required per package manager:
-
-| **Package Manager** | **Lock File**                       | **Description**                                                                                                            |
-| ------------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| npm                 | `package-lock.json`                 | Automatically generated when running npm commands, ensuring consistent dependency installation.                            |
-| Yarn                | `yarn.lock`                         | Maintained by Yarn, this file locks dependencies to specific versions, ensuring consistency across different environments. |
-| Maven               | `pom.xml`                           | This Project Object Model file is essential for understanding and resolving dependencies.                                  |
-| Python (pip)        | `requirements.txt`                  | Lists required Python packages, typically including specific versions, to ascertain vulnerabilities.                       |
-| Golang (Go)         | `go.sum`                            | Automatically created with`go.mod`, detailing all dependencies and their exact versions.                                   |
-| .NET (NuGet)        | `.sln`,`packages.config`,`*.csproj` | Solution files organize projects in Visual Studio, while dependency files track project dependencies within .NET projects. |
 
 ## Technology-Specific Prerequisites
 

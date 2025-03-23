@@ -109,9 +109,9 @@ jobs:
           OUT_FOLDER: ${{ env.OUT_FOLDER }}
           FLUID_TOPICS_API_KEY: ${{ env.FLUID_TOPICS_API_KEY }}
           FLUID_TOPICS_BASE_URL: ${{ env.FLUID_TOPICS_BASE_URL }}
-          FLUID_TOPICS_SOURCE_ID: ${{ vars.FLUID_TOPICS_SOURCE_ID }}
+          FLUID_TOPICS_SOURCE_ID_FTML: ${{ vars.FLUID_TOPICS_SOURCE_ID_FTML }}
         run: |
-                curl -X POST "${{ env.FLUID_TOPICS_BASE_URL }}/api/admin/khub/sources/${{ env.FLUID_TOPICS_SOURCE_ID }}/upload" \
+                curl -X POST "${{ env.FLUID_TOPICS_BASE_URL }}/api/admin/khub/sources/${{ env.FLUID_TOPICS_SOURCE_ID_FTML }}/upload" \
                 -H "Authorization: Bearer ${{ env.FLUID_TOPICS_API_KEY }}" \
                 -F "file=@${{ env.OUT_FOLDER }}/documentation.zip"
                 

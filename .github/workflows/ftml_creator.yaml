@@ -92,6 +92,7 @@ jobs:
           OUT_FOLDER: ${{ env.OUT_FOLDER }}
           PUBLICATION_TITLE: ${{ vars.PUBLICATION_TITLE }}
         run: |
+          cp $WORK_DIR/Gitbook-to-FT/md2ftml/fix_folder_links.lua .
           python3 $WORK_DIR/Gitbook-to-FT/md2ftml/conv.py
 
       # Step 4: List directory contents

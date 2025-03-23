@@ -1,10 +1,10 @@
 # Package Manager Prerequisites
 
-## Before You Begin
+### Before You Begin
 
 Frogbot relies on the presence of package manager executables and proper configuration to accurately scan and secure your repositories.
 
-## SCA Requirements
+### SCA Requirements
 
 | **Requirement**                 | **Description**                                                                                   |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -12,11 +12,11 @@ Frogbot relies on the presence of package manager executables and proper configu
 | **Network Access**              | Frogbot may need internet access to download dependencies based on your package manager settings. |
 | **Environment Configuration**   | Ensure that necessary environment variables, proxies, or custom configurations are properly set.  |
 
-## Technology-Specific Prerequisites
+### Technology-Specific Prerequisites
 
 Each package manager and build tool may have unique prerequisites.
 
-### **npm (Node.js)**
+#### **npm (Node.js)**
 
 | **Requirement**       | **Details**                                                      |
 | --------------------- | ---------------------------------------------------------------- |
@@ -24,7 +24,7 @@ Each package manager and build tool may have unique prerequisites.
 | **Lock File**         | `package-lock.json`is required for accurate dependency scanning. |
 | **Environment Setup** | Run`npm install`to verify dependencies resolve correctly.        |
 
-### **Yarn**
+#### **Yarn**
 
 | **Requirement**       | **Details**                                                      |
 | --------------------- | ---------------------------------------------------------------- |
@@ -32,7 +32,7 @@ Each package manager and build tool may have unique prerequisites.
 | **Lock File**         | The`yarn.lock`file must be present.                              |
 | **Environment Setup** | Run`yarn install`to confirm that the setup works without errors. |
 
-### **Maven (Java)**
+#### **Maven (Java)**
 
 | **Requirement**       | **Details**                                            |
 | --------------------- | ------------------------------------------------------ |
@@ -40,7 +40,7 @@ Each package manager and build tool may have unique prerequisites.
 | **Lock File**         | The`pom.xml`file should be correctly configured.       |
 | **Environment Setup** | Execute`mvn install`to validate dependency resolution. |
 
-### **Python (pip)**
+#### **Python (pip)**
 
 | **Requirement**       | **Details**                                                                          |
 | --------------------- | ------------------------------------------------------------------------------------ |
@@ -48,7 +48,7 @@ Each package manager and build tool may have unique prerequisites.
 | **Lock File**         | The`requirements.txt`file should be present for dependency definitions.              |
 | **Environment Setup** | Run`pip install -r requirements.txt`to ensure dependencies are configured correctly. |
 
-### **Go**
+#### **Go**
 
 | **Requirement**       | **Details**                                                                              |
 | --------------------- | ---------------------------------------------------------------------------------------- |
@@ -56,7 +56,7 @@ Each package manager and build tool may have unique prerequisites.
 | **Lock File**         | The`go.sum`file must be present for accurate dependency scanning.                        |
 | **Environment Setup** | Run`go mod tidy`to ensure all dependencies are correctly listed and resolved in`go.sum`. |
 
-### **.NET (NuGet)**
+#### **.NET (NuGet)**
 
 | **Requirement**            | **Details**                                                                           |
 | -------------------------- | ------------------------------------------------------------------------------------- |

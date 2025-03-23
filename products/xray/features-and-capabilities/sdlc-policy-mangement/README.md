@@ -95,4 +95,4 @@ Policies are enforced **throughout the software lifecycle**:
 * **Enable Continuous Monitoring** – Keep policies updated with the latest threat intelligence.
 * **Use Advanced Security Features** – Utilize Exploitability Awareness and Applicability Scanning _(available in JFrog Advanced Security)_ to reduce false positives.
 
-Would you like a **step-by-step guide on creating a Policy** in Xray? See&#x20;
+Would you like a **step-by-step guide on creating a Policy** in Xray? See [Create Policies.](../../configure-xray/create-policies.md)&#x20;

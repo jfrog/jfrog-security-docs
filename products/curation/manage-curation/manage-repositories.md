@@ -12,13 +12,13 @@
 * **Connected Repository**: When a repository is connected, it indicates that JFrog Curation can start governing that repository. However, it does not imply that the repository is currently under the governance of a policy.
 * **Not Connected Repository**: Any repository that is not connected will not be governed by Curation policies.
 
-#### Step 4: Viewing Package Types
+#### Viewing Package Types
 
 * Below the overview section, you will see a table listing the different **Package Types** present in your organization.
 * When you connect a specific Package Type, all repositories under that package type are automatically connected to Curation.
 * This ensures that once a package type is connected, all NEW associated repositories automatically receive governance coverage.
 
-#### Step 5: Connecting or Disconnecting Repositories
+#### Connecting or Disconnecting Repositories
 
 Disconnecting Repositories: If you want to remove one or more repositories from a package type:
 

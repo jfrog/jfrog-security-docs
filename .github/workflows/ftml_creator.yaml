@@ -97,9 +97,9 @@ jobs:
       # Step 4: List directory contents
       - name: List directory contents
         run: |
-          ls -l $WORK_DIR
-          ls -l $WORK_DIR/gitbook-content
-          ls -l $WORK_DIR/output_folder
+          ls -la $WORK_DIR
+          ls -la $WORK_DIR/gitbook-content
+          ls -la $WORK_DIR/output_folder
         env:
           WORK_DIR: ${{ env.WORK_DIR }}
           

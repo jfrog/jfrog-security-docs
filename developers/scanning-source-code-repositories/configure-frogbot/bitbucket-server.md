@@ -1,6 +1,6 @@
 # Bitbucket Server
 
-#### Step 1: Configure Webhook
+Step 1: Configure Webhook
 
 1. Go to **Repository Settings** > **Webhooks**.
 2.  Add a new webhook with the following URL:
@@ -10,9 +10,7 @@
     ```
 3. Enable **Pull Request Events**.
 
-#### Step 2: Set Up Jenkins Integration (Optional)
-
-If using Jenkins:
+Step 2: Set Up Jenkins Integration (Optional)
 
 1. Install the **Generic Webhook Trigger** plugin.
 2.  Configure a Jenkins job with the following script:
@@ -36,7 +34,3 @@ If using Jenkins:
         }
     }
     ```
-
-***
-
-###

@@ -1,23 +1,23 @@
 # Jenkins
 
-## Step 1: Install Required Plugin
+Step 1: Install Required Plugin
 
 1. In Jenkins, go to **Manage Jenkins** > **Manage Plugins**.
-2. In the Available tab, search for the **Generic Webhook Trigger** plugin.
-3. Select Install.
+2. In the **Available** tab, search for the **Generic Webhook Trigger** plugin.
+3. Select **Install**.
 
-## Step 2: Configure Webhook
+Step 2: Configure Webhook
 
-1. Navigate to **Repository Settings** in your Git provider.
+1. In your Git provider, navigate to **Repository Settings**.
 2.  Add a new webhook with this URL:
 
     ```
     https://[your-jenkins-domain]/generic-webhook-trigger/invoke?token=[your-token]
     ```
 
-## Step 3: Configure Jenkins Pipeline
+Step 3: Configure Jenkins Pipeline
 
-Use the following Jenkinsfile:
+1. Use the following Jenkinsfile:
 
 ```
 pipeline {

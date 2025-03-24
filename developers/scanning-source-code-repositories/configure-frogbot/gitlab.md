@@ -1,6 +1,6 @@
 # GitLab
 
-#### Step 1: Set Up Repository Secrets
+Step 1: Set Up Repository Secrets
 
 1. Go to **Settings** > **CI/CD** > **Variables**.
 2. Add the following variables:
@@ -11,9 +11,11 @@
 | `JF_ACCESS_TOKEN` | JFrog access token                             | Alternative: Use `JF_USER` and `JF_PASSWORD`          |
 | `USER_TOKEN`      | GitLab personal access token (API permissions) | Must have `api`, `read_api`, `read_repository` scopes |
 
-#### Step 2: Modify `.gitlab-ci.yml`
+Step 2: Modify the YAML File
 
-Add the following job to your GitLab pipeline configuration:
+1. Open your GitLab YAML file:\
+   `.gitlab-ci.yml`
+2. Add the following job to your GitLab pipeline configuration:
 
 ```
 frogbot-scan:
@@ -30,6 +32,6 @@ frogbot-scan:
     USER_TOKEN: $USER_TOKEN
 ```
 
-#### Step 3: Commit and Push Changes
+Step 3: Commit and Push Changes
 
 * This will trigger a security scan each time changes are pushed.

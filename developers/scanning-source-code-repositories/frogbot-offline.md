@@ -4,9 +4,9 @@ By default, Frogbot downloads its executables and other required tools directly 
 
 Follow the steps below to set up an Artifactory repository as the source for Frogbot downloads:
 
-## Set Artifactory to be the Frogbot Executable Source
+### Set Artifactory to be the Frogbot Executable Source
 
-### Step 1: Create a Designated Repository in Artifactory
+#### Step 1: Create a Designated Repository in Artifactory
 
 1. Under Administration, navigate to Repositories and select Create a Repository.&#x20;
 2. From the drop-down menu, select Remote. \
@@ -18,7 +18,7 @@ Follow the steps below to set up an Artifactory repository as the source for Fro
 5. Under the Advanced tab, uncheck the Store Artifacts Locally box. \
    This reduces storage.
 
-### Step 2: Configure Frogbot to Use the New Repository
+#### Step 2: Configure Frogbot to Use the New Repository
 
 1. Go to Frogbot and navigate to Configuration
 2. Set the `JF_RELEASES_REPO` variable to be the Repository Key of the remote repository you created in step 1.

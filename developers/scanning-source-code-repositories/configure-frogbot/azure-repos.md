@@ -1,14 +1,14 @@
 # Azure Repos
 
-#### Step 1: Create a Pipeline in Azure DevOps
+Step 1: Create a Pipeline in Azure DevOps
 
-1. Navigate to **Pipelines** in Azure DevOps.
+1. In Azure DevOps, navigate to **Pipelines**.
 2. Click **New Pipeline**.
 3. Select **Azure Repos Git** as the source.
 
-#### Step 2: Add the Pipeline Configuration
+Step 2: Add the Pipeline Configuration
 
-Use the following YAML template:
+1. Use the following YAML template:
 
 ```
 trigger:
@@ -26,10 +26,6 @@ steps:
       JF_ACCESS_TOKEN: $(JF_ACCESS_TOKEN)
 ```
 
-#### Step 3: Save and Run the Pipeline
+Step 3: Save and Run the Pipeline
 
 * This will trigger a security scan whenever a push is made to the `main` branch.
-
-***
-
-###

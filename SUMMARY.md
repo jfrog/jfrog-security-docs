@@ -183,6 +183,6 @@
       * [Bitbucket Server](developers/scanning-source-code-repositories/configure-frogbot/bitbucket-server.md)
       * [Azure Repos](developers/scanning-source-code-repositories/configure-frogbot/azure-repos.md)
       * [Jenkins](developers/scanning-source-code-repositories/configure-frogbot/jenkins.md)
-    * [Troubleshooting](developers/scanning-source-code-repositories/troubleshooting.md)
     * [Frogbot Optional Configuration Parameters](developers/scanning-source-code-repositories/frogbot-optional-configuration-parameters.md)
     * [Frogbot Offline](developers/scanning-source-code-repositories/frogbot-offline.md)
+    * [Troubleshooting](developers/scanning-source-code-repositories/troubleshooting.md)

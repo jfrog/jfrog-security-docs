@@ -105,7 +105,6 @@
         * [Exposures Policy](products/advanced-security/set-up-advanced-security/create-advanced-security-policies/exposures-policy.md)
       * [Ignore Violations](products/advanced-security/set-up-advanced-security/ignore-violations.md)
     * [How-Tos](products/advanced-security/how-tos/README.md)
-      * [Vulnerability Contextual Analysis](products/advanced-security/how-tos/vulnerability-contextual-analysis.md)
       * [Scan Results and Post-Scan Actions](products/advanced-security/how-tos/scan-results-and-post-scan-actions.md)
       * [Create an Uber JAR for Contextual Analysis](products/advanced-security/how-tos/create-an-uber-jar-for-contextual-analysis.md)
       * [Secrets Scans](products/advanced-security/how-tos/secrets-scans.md)

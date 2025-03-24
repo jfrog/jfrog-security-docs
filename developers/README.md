@@ -4,5 +4,5 @@ This Developers section includes documentation for the JFrog Security CLI and in
 
 * [CLI](jfrog-security-cli/)
 * [IDEs](code-security-within-your-ide/)
-* [Source Code Repositories](scanning-source-code-repositories/)
+* [Source Code Repositories](scanning-source-code-repositories-with-frogbot/)
 

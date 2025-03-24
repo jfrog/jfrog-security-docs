@@ -1,11 +1,8 @@
-# How to Detect Malicious AI Models using Xray
+# Detect Malicious AI Models
 
 JFrog’s Xray detects malicious machine learning models based on artifact scanning. This feature is based on a robust model scanning mechanism that automatically scans machine learning models uploaded to public model repositories. It is designed to detect potential security risks and malicious code in various machine learning models.
 
-\
-
-
-<figure><img src="../../../.gitbook/assets/image_(5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image_(5).png" alt=""><figcaption></figcaption></figure>
 
 Example of a found malicious package: MustEr/gpt2-elite
 
@@ -68,14 +65,8 @@ It's crucial to understand that not all Hugging Face models that are marked “D
 
 Example of a model not marked as “Dangerous” by HuggingFace, while having malicious content:
 
-<figure><img src="../../../.gitbook/assets/malicious_package_gif.gif" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../../.gitbook/assets/malicious_package_gif.gif" alt=""><figcaption></figcaption></figure>
 
 Example of a model marked as “Dangerous” by HuggingFace, while having no malicious content:
 
-\
-
-
-<figure><img src="../../../.gitbook/assets/image_1.png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../../../../../.gitbook/assets/image_1.png" alt=""><figcaption></figcaption></figure>

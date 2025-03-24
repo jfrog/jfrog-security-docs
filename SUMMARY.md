@@ -77,6 +77,7 @@
         * [Trust Self Signed Certificates en](products/xray/xray-management/tls-certificates/trust-self-signed-certificates-en.md)
       * [System Messages](products/xray/xray-management/system-messages.md)
       * [CI-CD Integration with Xray](products/xray/xray-management/ci-cd-integration-with-xray.md)
+      * [Add Custom Xray Integrations](products/xray/xray-management/add-custom-xray-integrations.md)
     * [How-Tos](products/xray/how-tos/README.md)
       * [How to Filter Out Your 1st Party Components in CycloneDX SBOM report](products/xray/how-tos/how-to-filter-1st-party-components.md)
       * [How to Detect Malicious AI Models using Xray](products/xray/how-tos/how-to-detect-malicious-ai-models-using-xray.md)

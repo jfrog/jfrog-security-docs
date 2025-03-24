@@ -4,7 +4,7 @@ The sensitive connection details, such as the access token used by JFrog Frogbot
 
 ### JFrog Platform configuration <a href="#jfrog-platform-configuration" id="jfrog-platform-configuration"></a>
 
-Step 1: Configure an OIDC Integration&#x20;
+#### Step 1: Configure an OIDC Integration&#x20;
 
 This phase is integration between GitHub Actions and the JFrog platform.
 
@@ -19,7 +19,7 @@ This phase is integration between GitHub Actions and the JFrog platform.
       Does NOT represent the 'aud' claim that can be added to identity-mapping configured in the 'Claims JSON' (shown below). Only claims that are included in the 'Claims Json' created during step 2 will be validated.
    6. Token Issuer
 
-Step 2: Configure an Identity Mapping
+#### Step 2: Configure an Identity Mapping
 
 This phase is integration between a particular GitHub repository and the JFrog platform.
 
@@ -40,7 +40,7 @@ An identity mapping is a configuration object utilized by the JFrog Platform to 
 
 ### Workflow configuration <a href="#workflow-configuration" id="workflow-configuration"></a>
 
-Step 1: Set the Required Permissions
+#### Step 1: Set the Required Permissions
 
 During the protocol's execution, you must obtain a JSON Web Token (JWT) from GitHub's OIDC provider. To request this token, ensure that the workflow is configured with the required permission.
 
@@ -51,15 +51,17 @@ permissions:
     id-token: write
 ```
 
-Step 2: Pass the `oidc-provider-name` Input to the Action
+#### Step 2: Pass the `oidc-provider-name` Input
 
-The `oidc-provider-name` parameter specifies the OIDC configuration whose identity mapping should match the generated JWT claims. This value must correspond to the [Provider Name](openid-connect-authentication.md#jfrog-platform-configuration) set in the OIDC configuration within the JFrog Platform.
+The `oidc-provider-name` parameter specifies the OIDC configuration whose identity mapping should match the generated JWT claims.&#x20;
 
-Step 3: Pass the `oidc-audience` Input to the Action (Optional)
+1. Set the `oidc-provider-name` parameter to be the same as the [Provider Name](openid-connect-authentication.md#jfrog-platform-configuration) set in the OIDC configuration within the JFrog Platform.
 
-The `oidc-audience` input defines the intended recipients of an ID token (JWT), ensuring access is restricted to authorized recipients for the JFrog Platform. By default, it contains the URL of the GitHub repository owner. It enforces a condition, allowing only workflows within the designated repository/organization to request an access token. Read more about it [here](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect#customizing-the-audience-value).
+#### Step 3: (Optional) Specify the `oidc-audience` Input
 
-### Example of OpenID Connect Usage <a href="#example-for-openid-connect-usage" id="example-for-openid-connect-usage"></a>
+The `oidc-audience` input defines the intended recipients of the ID token (JWT), restricting access to authorized recipients within the JFrog Platform. By default, it is set to the GitHub repository owner's URL. This ensures that only workflows within the specified repository or organization can request an access token. Read more about it [here](https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect#customizing-the-audience-value).
+
+### Usage Example <a href="#example-for-openid-connect-usage" id="example-for-openid-connect-usage"></a>
 
 ```
 - uses: jfrog/frogbot@v2
@@ -72,6 +74,6 @@ The `oidc-audience` input defines the intended recipients of an ID token (JWT), 
 
 ### **Troubleshooting** <a href="#troubleshooting" id="troubleshooting"></a>
 
-#### Scan failures due to token expiration <a href="#scan-failures-due-to-token-expiration" id="scan-failures-due-to-token-expiration"></a>
+#### Scan Failures Due to Token Expiration
 
-When using OIDC integration, you might encounter failures in Xray scans or JFrog Advanced Security scans due to token expiration. If this occurs, try extending the 'Token Expiration Time' in the 'Identity Mapping Configuration' phase to ensure the token remains valid until all scanners are triggered, which may vary depending on the project's size.
+When using OIDC integration, Xray or JFrog Advanced Security scans may fail if the token expires before the scans are complete. To prevent this, consider increasing the **Token Expiration Time** in the **Identity Mapping Configuration** to ensure the token remains valid for the entire scanning process. The required duration may vary based on the project's size.

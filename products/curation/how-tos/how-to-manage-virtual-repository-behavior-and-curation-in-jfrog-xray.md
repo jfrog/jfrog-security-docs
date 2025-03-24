@@ -50,8 +50,6 @@ To optimize your virtual repository behavior and prevent security risks:
 * Avoid backdoor access to the internet by ensuring that only one remote repository is configured.
 * Ensure all remote repositories are curated to prevent unauthorized package downloads.
 
-***
-
 ### **Troubleshooting**
 
 | **Issue**                     | **Possible Cause**                                                  | **Solution**                                                               |

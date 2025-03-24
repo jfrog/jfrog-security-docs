@@ -18,5 +18,3 @@ You must have Jira Admin permissions to be able to connect Jira to Xray. For the
 4. Issue type (bug, security, escalation, etc.).
 5. Jira labels (optional).
 6. Custom Field Mapping (optional).
-
-\

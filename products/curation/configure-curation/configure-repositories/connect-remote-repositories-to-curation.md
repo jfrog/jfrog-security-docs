@@ -38,5 +38,3 @@ Instead of manually selecting repositories to curate, you can now connect a pack
     This connects all current and future repositories of that package type.
 
 You can turn the connection off for individual repositories within that package type anytime, as described in Manually Disconnect Curated Repositories. To send notifications when a repository is disconnected, see Manage General Notifications.
-
-\

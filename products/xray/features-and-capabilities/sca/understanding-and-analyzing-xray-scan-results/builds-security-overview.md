@@ -53,7 +53,4 @@ Dashboard Navigation
 * Click on bar chart elements to drill down into version-specific security details.
 * Switch between Overview and Versions tabs for a broader or more detailed perspective.
 
-Watch our video to explore this feature:
-
-{% embed url="https://www.youtube.com/watch?embeds_referring_euri=https://jfrog.com/&source_ve_path=MjM4NTE&themeRefresh=1&v=VXo1CHUw1Vo" %}
-
+Watch our [video](https://www.youtube.com/watch?v=VXo1CHUw1Vo) to explore this feature.

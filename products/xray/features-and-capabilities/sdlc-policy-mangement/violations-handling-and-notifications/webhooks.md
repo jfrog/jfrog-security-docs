@@ -16,5 +16,3 @@ To add a webhook, click **New Webhook**.
 | Basic Auth         |                                                                                                                                                                                                                   |
 | User Name/Password | A username and password as required by the webhook.                                                                                                                                                               |
 | Custom Headers     | Any custom headers that may need to be added to invoke the webhook.                                                                                                                                               |
-
-\

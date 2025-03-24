@@ -7,7 +7,3 @@ This section includes all the Xray management tasks:
 * [Advanced Settings](advanced-settings.md)
 * [System Monitoring](system-monitoring.md)
 * [TLS Certificates](tls-certificates/)
-
-
-
-\

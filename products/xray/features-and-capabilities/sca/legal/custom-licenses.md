@@ -19,5 +19,3 @@ Using Manage Licenses, you can create custom licenses which can then be assigned
 | Description       | A description of the license.                                                                                                    |
 | References        | A list of fully qualified references to components that use this license.                                                        |
 | Aliases           | A list of aliases associated with the license. An alias needs to be unique and cannot be used more than once or across licenses. |
-
-> Aliases are Supported from Xray 2.10.0 The aliases will be scanned from version 2.10.0. If you want to add aliases to previous license versions, you need to reindex the relevant artifacts or repository.

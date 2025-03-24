@@ -1,20 +1,20 @@
 metadata:
   "products/curation/README.md":
     Products: "JFrog Curation"
-    Content_Type_custom: "User Guide"
+    Content_Type: "User Guide"
 
   "products/xray/README.md":
     Products: "JFrog Xray"
-    Content_Type_custom: "User Guide"
+    Content_Type: "User Guide"
   
   "products/advanced-security/README.md":
     Products: "JFrog Advanced Security"
-    Content_Type_custom: "User Guide"
+    Content_Type: "User Guide"
   
   "products/runtime/README.md":
     Products: "JFrog Runtime"
-    Content_Type_custom: "User Guide"
+    Content_Type: "User Guide"
   
   "products/catalog/README.md":
     Products: "JFrog Catalog"
-    Content_Type_custom: "User Guide"
+    Content_Type: "User Guide"

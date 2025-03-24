@@ -292,3 +292,21 @@ error 20 at 0 depth lookup:unable to get local issuer certificate
 /opt/jfrog/xray/var/data/rabbitmq/certs/rabbitmq-server.crt: CN = rabbitmq
 error 20 at 0 depth lookup:unable to get local issuer certificate
 ```
+
+Troubleshoot RabbitMQ with TLS in Xray\
+​\
+If you encounter any errors or issues you might find the following troubleshooting tips helpful:
+
+* Ensure that you have the proper certificates and that their location is correct. The ​`$JFROG_HOME​` variable refers to the directory in which Xray is installed. The default is ​`/opt/jfrog`​​.
+* In some operating systems, the ​`openssl.cnf`​ file may be located in a different location than​`/etc/ssl/openssl.cnf`​​. Use the find command to find it in your system: `find / -name openssl.cnf`
+* Check that all the certificates are owned by the user and group `​xray`​​. If you are using a different user and group to run Xray, ensure this user is the owner of the files.
+* The YAML files must have proper indentation with the same amount of spaces across the entire file. Ensure the Xray ​`system.yaml​​` file is properly indented and that the syntax is correct. Also, check that the details are correct such as passwords, paths, and URLs are correct in the YAML file.
+* A successful REST API call requires an Artifactory admin user.
+* Check the logs to find additional information to help in further troubleshooting any issues. The logs directory is​​`$JFROG_HOME/xray/var/log`​​. The recommended logs to look at are the​ `console.log`​​, ​`xray-server-service.log`​​, and the `RabbitMQ` logs in the `rabbitmq` directory.
+
+
+
+\
+​\
+\
+​\

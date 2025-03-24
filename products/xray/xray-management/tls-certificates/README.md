@@ -6,7 +6,5 @@ The following options are available for setting up TLS certificates to enable en
 * ​​[Secure RabbitMQ with TLS Support on Xray](secure-rabbitmq-with-tls-support-on-xray.md)
 * [​​Trust Self-Signed Certificates](trust-self-signed-certificates-en.md)
 
-###
-
 
 

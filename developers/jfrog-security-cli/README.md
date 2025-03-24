@@ -2,7 +2,7 @@
 
 JFrog CLI is a powerful and efficient command-line tool designed to interact seamlessly with JFrog products such as Artifactory, Xray, Distribution, and Pipelines. It simplifies automation scripts, enhances readability, and improves maintainability while optimizing upload/download operations and supporting popular package managers and build tools.
 
-## Before You Begin
+### Before You Begin
 
 It is essential that you:
 

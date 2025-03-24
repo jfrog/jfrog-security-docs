@@ -5,11 +5,12 @@ Step 1: Set Up Repository Secrets
 1. Go to **Settings** > **Secrets and variables** > **Actions**.
 2. Add the following secrets:
 
-| Secret Name       | Purpose                      | Notes                                       |
-| ----------------- | ---------------------------- | ------------------------------------------- |
-| `JF_URL`          | JFrog platform URL           |                                             |
-| `JF_ACCESS_TOKEN` | JFrog access token           | Recommended: Use OIDC                       |
-| `USER_TOKEN`      | GitHub personal access token | Must have `repo` and `read:packages` scopes |
+| Secret Name               | Description                  | Notes                                       |
+| ------------------------- | ---------------------------- | ------------------------------------------- |
+| `JF_URL`                  | JFrog platform URL           |                                             |
+| `JF_ACCESS_TOKEN`         | JFrog access token           | Recommended: Use OIDC                       |
+| `USER_TOKEN`              | GitHub personal access token | Must have `repo` and `read:packages` scopes |
+| `JF_USER` + `JF_PASSWORD` | JFrog user name and password |                                             |
 
 Step 2: Create a GitHub Actions Workflow
 

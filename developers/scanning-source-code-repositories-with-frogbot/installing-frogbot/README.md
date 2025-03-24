@@ -1,6 +1,6 @@
-# Installing Frogbot
+# Set Up Frogbot by CI
 
-* [GitHub](github.md)
+* [GitHub](../set-up-frogbot-by-ci/github/)
 * [GitLab](gitlab.md)
 * [Bitbucket Server](bitbucket-server.md)
 * [Azure Repos](azure-repos.md)

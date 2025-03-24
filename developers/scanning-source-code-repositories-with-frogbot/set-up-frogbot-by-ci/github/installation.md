@@ -1,4 +1,4 @@
-# GitHub
+# Installation
 
 Step 1: Set Up Repository Secrets
 

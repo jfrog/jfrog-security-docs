@@ -42,15 +42,6 @@ JF CLI supports the Curation **JF CA** command, which inspects the blocked packa
 **Step 6: Curation Pass-Through**:
 
 Enable package downloads for audit purposes without storing them in Artifactory. Ensures violating packages are only temporarily accessible for evaluation without impacting the repository cache.\
-\
-\
-\
-\
-
-
-\
-
-
 
 
 

@@ -1,7 +1,3 @@
----
-description: Enforcing Security and Compliance Throughout the Software Development Lifecyle
----
-
 # Policies in JFrog Xray
 
 In modern software development, security and compliance must be integrated at every stage of the Software Development Lifecycle (SDLC). JFrog Xray enables organizations to define policies that enforce security, legal compliance, and operational governance. These policies help prevent vulnerabilities, manage open-source licenses, and ensure software quality.&#x20;

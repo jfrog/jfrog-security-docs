@@ -1,7 +1,3 @@
----
-description: Monitoring Security and Compliance Across Your Software Artifacts
----
-
 # Watches in JFrog Xray
 
 Security and compliance in modern software development require continuous monitoring of dependencies, builds, and repositories. JFrog Xray uses Watches as a powerful mechanism to track, analyze, and enforce policies on software artifacts throughout the development lifecycle.

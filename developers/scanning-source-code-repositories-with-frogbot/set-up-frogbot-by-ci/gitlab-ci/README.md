@@ -1,16 +1,21 @@
 # GitLab CI
 
-## Prepare GitLab to work with Frogbot
+### Configuring GitLab for Frogbot Integration
 
 {% hint style="info" %}
-* You can use **JF\_XRAY\_URL** and **JF\_ARTIFACTORY\_URL** instead of **JF\_URL**.
-* You can use **JF\_ACCESS\_TOKEN** instead of **JF\_USER** and **JF\_PASSWORD**.
+* You can use `JF_XRAY_URL` and `JF_ARTIFACTORY_URL` instead of `JF_URL`.
+* You can use `JF_ACCESS_TOKEN` instead of `JF_USER` and `JF_PASSWORD`.
 * Ensure that these tokens are **protected** in Gitlab.
 {% endhint %}
 
 1. Make sure you have the connection details of your JFrog environment.
-2. Go to your GitLab repository settings page and save the JFrog connection details as repository secrets with the following names - **JF\_URL**, **JF\_USER**, and **JF\_PASSWORD.**
-3. Add a job named **frogbot-scan** to your `.gitlab-ci.yml` file in your GitLab repository. Use the following for execution:
+2. Go to your GitLab repository settings page and save the JFrog connection details as repository secrets with the following names:
+
+* &#x20;`JF_URL, JF_USER`
+* `JF_PASSWORD`
+
+3. In your GitLab repository `.gitlab-ci.yml` file, add a job named `frogbot-scan`. \
+   Use the following for execution:
 
 ```
 frogbot-scan:
@@ -74,7 +79,7 @@ frogbot-scan:
 ```
 
 {% hint style="info" %}
-In the `gitlab-ci.yml` file, Make sure that either **JF\_USER** and **JF\_PASSWORD** or **JF\_ACCESS\_TOKEN** are set, **but not both**.
+In the `gitlab-ci.yml` file, make sure that either `JF_USER` and `JF_PASSWORD` or `JF_ACCESS_TOKEN` are set, but **not both**.
 {% endhint %}
 
 For more advanced configuration, see [GitLab full template](gitlab-full-template.md).

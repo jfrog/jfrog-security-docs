@@ -1,6 +1,6 @@
 # Scan Git Repository Full Template
 
-Here you can find the full template for Frogbot repository scan workflow:
+The full template for the Frogbot repository scan workflow:
 
 ```
 name: "Frogbot Scan Repository"

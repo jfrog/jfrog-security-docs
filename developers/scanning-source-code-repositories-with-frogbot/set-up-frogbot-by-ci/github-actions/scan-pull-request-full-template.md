@@ -1,6 +1,6 @@
 # Scan Pull Request Full Template
 
-Here you can find the full template for Frogbot pull request scan workflow:
+The full template for the Frogbot pull request scan workflow:
 
 ```
 name: "Frogbot Scan Pull Request"

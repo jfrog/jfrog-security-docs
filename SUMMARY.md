@@ -181,6 +181,8 @@
       * [GitHub Actions](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/README.md)
         * [Installation](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/installation.md)
         * [OpenID Connect Authentication](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/openid-connect-authentication.md)
+        * [Scan Git Repository Full Template](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/scan-git-repository-full-template.md)
+        * [Scan Pull Request Full Template](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/scan-pull-request-full-template.md)
       * [GitLab CI](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/gitlab-ci.md)
       * [Bitbucket Server](developers/scanning-source-code-repositories-with-frogbot/installing-frogbot/bitbucket-server.md)
       * [Azure DevOps](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/azure-devops.md)

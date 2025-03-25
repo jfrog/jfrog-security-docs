@@ -49,6 +49,3 @@ Before the **CI View** can display data, configure your CI pipeline to expose bu
    * Use `*` to view all builds published to Artifactory.
 5. Click **Apply**, then open the **CI Tab** in the JFrog panel.
 6. Click **Refresh** to fetch and display build details.
-
-###
-

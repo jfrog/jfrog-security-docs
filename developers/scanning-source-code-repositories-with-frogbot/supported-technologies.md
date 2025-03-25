@@ -19,7 +19,9 @@ Ensure the following packages are available in your environment:
 * **curl**
 * **Git**
 
-Note: The above packages are included in the standard base images (e.g., Ubuntu, RHEL), but if you are using lighter images like Alpine, you will need to ensure these packages are installed.
+{% hint style="info" %}
+The above packages are included in the standard base images (e.g., Ubuntu, RHEL). Still, if you are using lighter images like Alpine, you will need to ensure these packages are installed.
+{% endhint %}
 
 #### Advanced Security Supported Technologies
 
@@ -32,9 +34,10 @@ See Jfrog Advanced Security Supported Technologies section:
 
 #### **Software Composition Analysis (SCA)** Supported Technologies
 
-Note: For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
-
-**Note**: If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
+{% hint style="info" %}
+* For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
+* If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
+{% endhint %}
 
 #### **Supported Git Providers and CI**
 

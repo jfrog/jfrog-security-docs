@@ -10,10 +10,10 @@ The JFrog VS Code Extension scans all project dependencies, both direct and tran
 
 The extension builds the Maven dependencies tree by executing `mvn dependency:tree`. It enables developers to view licenses and top-issue severities directly from the `pom.xml`.
 
-**Important Notes:**
-
+{% hint style="info" %}
 * Ensure Maven is installed and that the `mvn` command is available in your system `PATH`.
 * If your project includes the Maven Dependency Plugin with include/exclude configurations, scanning will be disabled.
+{% endhint %}
 
 For example:
 
@@ -44,8 +44,8 @@ The extension builds the Yarn dependencies tree using `yarn list`, displaying li
 
 **Prerequisite:**
 
-* Ensure the Yarn CLI is installed and in your system `PATH`.
-* _Note:_ Yarn v2 is not yet supported.
+* Ensure the Yarn CLI is installed and in your system `PATH`
+* Yarn v2 is not yet supported
 
 ## **Pypi Projects**
 

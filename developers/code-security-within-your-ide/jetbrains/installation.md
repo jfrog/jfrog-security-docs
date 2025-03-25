@@ -25,16 +25,17 @@ You can connect the plugin to your JFrog environment using one of the following 
    * `JFROG_IDE_PLATFORM_URL` – JFrog Platform URL
    * You can provide basic authentication credentials or an access token.
 
-**Note:** For security reasons, it is recommended to unset environment variables after launching the IDE.
+{% hint style="info" %}
+For security reasons, it is recommended to unset environment variables after launching the IDE.
+{% endhint %}
 
 **Step 3: Start Using the Plugin**
 
 Once connected, you can start using the JFrog plugin within IntelliJ IDEA.
 
-#### **Notes**
-
+{% hint style="info" %}
 * If your JFrog Platform instance uses a domain with a self-signed certificate, add the certificate to IntelliJ IDEA as described here.
 * **Xray Permissions:**
   * **Xray 1.9 to 2.x:** Users must be granted the **"View Components"** action.
   * **Xray 3.x and later:** Users require **"Read"** permission to connect. More details here.
-
+{% endhint %}

@@ -21,7 +21,9 @@ It is essential you have:
 
 ## Uninstalling Sensors
 
-**Note**: If sensors are uninstalled, reinstalling them will generate a new Cluster ID.&#x20;
+{% hint style="info" %}
+If sensors are uninstalled, reinstalling them will generate a new Cluster ID.&#x20;
+{% endhint %}
 
 To uninstall sensors from a cluster, set the `kubectl` context to the desired cluster and run:
 
@@ -33,7 +35,9 @@ helm uninstall jf-sensors -n <Namespace>
 
 If sensors are uninstalled, reinstalling them will generate a new Cluster ID. To preserve historical monitoring data and merge it with new data, retrieve the existing Cluster ID before reinstalling the sensor.
 
-**Note**: Sensors are automatically upgraded during system updates.&#x20;
+{% hint style="info" %}
+Sensors are automatically upgraded during system updates.&#x20;
+{% endhint %}
 
 #### Reinstalling Sensor Preserving Data
 

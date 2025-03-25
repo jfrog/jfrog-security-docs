@@ -66,6 +66,4 @@ Before You Begin:
 
 3\. Review the Processes Table.&#x20;
 
-4\. (Optional) Apply filters to narrow down processes based on specific criteria.&#x20;
-
-\
+4\. (Optional) Apply filters to narrow down processes based on specific criteria.

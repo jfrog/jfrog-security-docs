@@ -8,11 +8,3 @@ Detect artifacts in Artifactory that are currently running in runtime.
 2. Click the **detection button** to view more information about the artifact. \
    You will be redirected to the **Runtime Live Assessment** page.&#x20;
 3. Examine details such as the artifact's location, where it is currently running, and any associated security risks.
-
-
-
-
-
-
-
-\

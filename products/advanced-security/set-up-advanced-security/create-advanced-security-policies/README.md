@@ -34,11 +34,3 @@ The following REST APIs support Exposures Scanning:
 * [Exposures Scanning-Get Rows](https://jfrog.com/help/access?ft:originId=UUID-3b796a13-c273-bb3c-2b3f-6db2ade879e9\&ft:sourceId=pal)
 * [Get Repositories Configurations](https://jfrog.com/help/access?ft:originId=UUID-17cacaed-1c94-02e8-c1f7-7206fa2f543d\&ft:sourceId=pal)
 * [Update Repositories Configurations](https://jfrog.com/help/access?ft:originId=UUID-c764573b-2406-2877-2979-799a2264e3fa\&ft:sourceId=pal)
-
-
-
-
-
-\
-
-

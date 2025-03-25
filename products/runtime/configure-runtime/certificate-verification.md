@@ -2,7 +2,9 @@
 
 ## Bypassing Certificate Verification (Optional)
 
-**Note**: Carefully assess this option for production environments.
+{% hint style="info" %}
+Carefully assess this option for production environments.
+{% endhint %}
 
 If using a self-signed certificate, modify the installation snippet:
 

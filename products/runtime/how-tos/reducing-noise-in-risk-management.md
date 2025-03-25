@@ -8,7 +8,7 @@ n today’s fast-paced development environment, managing vulnerabilities effecti
 
 JFrog Xray is your first line of defense, identifying vulnerabilities within your artifacts and ranking them by severity. This allows you to understand the potential risks associated with your packages.
 
-#### JFrog Advanced Security (JAS): Reducing Noise
+#### JFrog Advanced Security: Reducing Noise
 
 While Xray identifies vulnerabilities, JAS takes it a step further by filtering out noise. It reduces up to 80% of the irrelevant alerts by determining which vulnerabilities are applicable to your environment. This means you can focus on the vulnerabilities that truly impact your applications.
 

@@ -54,7 +54,7 @@ Follow the W[orking in Air-Gapped Environments](../working-in-air-gapped-environ
 
 The environment variable to set the source code scan is `JFROG_CLI_RELEASES_REPO`.
 
-### Examples
+#### Examples
 
 1. A basic audit that shows all vulnerabilities, regardless of the policies set in Xray:
 

@@ -12,8 +12,9 @@ See Jfrog Advanced Security Supported Technologies section:
 ## **Software Composition Analysis (SCA)** Supported Technologies
 
 {% hint style="info" %}
-* For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
-* &#x20;If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
+For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
+
+If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
 {% endhint %}
 
 JFrog supports the following package managers for Visual Studio Code:

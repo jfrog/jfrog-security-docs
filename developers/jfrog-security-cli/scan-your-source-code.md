@@ -59,7 +59,7 @@ The environment variable to set the source code scan is JFROG\_CLI\_RELEASES\_RE
 1. A basic audit that shows all vulnerabilities, regardless of the policies set in Xray:
 
 ```bash
-jf audit
+jf auditt
 ```
 
 2. Audit for Maven & npm projects that shows all vulnerabilities, regardless of the policies set in Xray:

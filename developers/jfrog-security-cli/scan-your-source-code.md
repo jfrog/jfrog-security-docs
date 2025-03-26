@@ -56,43 +56,43 @@ The environment variable to set the source code scan is `JFROG_CLI_RELEASES_REPO
 
 **Examples**
 
-A basic audit that shows all vulnerabilities, regardless of the policies set in Xray:
+1. A basic audit that shows all vulnerabilities, regardless of the policies set in Xray:
 
 ```bash
 jf audit
 ```
 
-Audit for Maven & npm projects that shows all vulnerabilities, regardless of the policies set in Xray:
+2. Audit for Maven & npm projects that shows all vulnerabilities, regardless of the policies set in Xray:
 
 ```bash
 jf audit --mvn --npm
 ```
 
-Audit using a defined Watch in Xray:
+3. Audit using a defined Watch in Xray:
 
 ```bash
 jf audit --watches "watch1"
 ```
 
-Audit using numerous defined Watches in Xray:
+4. Audit using numerous defined Watches in Xray:
 
 ```bash
 jf audit --watches "watch1,watch2"
 ```
 
-Audit using defined policies in a specific project:&#x20;
+5. Audit using defined policies in a specific project:&#x20;
 
 ```bash
 jf audit --project "project-1"
 ```
 
-Audit using defined policies in a specific Artifactory path:
+6. Audit using defined policies in a specific Artifactory path:
 
 ```bash
 jf audit --repo-path "libs-local/release-artifacts/"
 ```
 
-Excluding from audit all files inside a directory (`node_modules`) and files with a specific suffix (`to_exclude`):
+7. Excluding from audit all files inside a directory (`node_modules`) and files with a specific suffix (`to_exclude`):
 
 ```bash
 jf audit --exclusions "*node_modules*;*to_exclude"

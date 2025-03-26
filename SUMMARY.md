@@ -184,7 +184,6 @@
       * [GitLab CI](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/gitlab-ci.md)
       * [Bitbucket Server](developers/scanning-source-code-repositories-with-frogbot/installing-frogbot/bitbucket-server.md)
       * [Azure DevOps](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/azure-devops.md)
-      * [Jenkins](developers/scanning-source-code-repositories-with-frogbot/installing-frogbot/jenkins.md)
     * [Frogbot Optional Configuration Parameters](developers/scanning-source-code-repositories-with-frogbot/frogbot-optional-configuration-parameters.md)
     * [Frogbot Offline](developers/scanning-source-code-repositories-with-frogbot/frogbot-offline.md)
     * [Troubleshooting](developers/scanning-source-code-repositories-with-frogbot/troubleshooting.md)

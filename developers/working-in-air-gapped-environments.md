@@ -22,9 +22,9 @@ The instance should be configured with either:
 
 ## Configure a Generic Local Repository in Artifactory
 
-* Under Administration, navigate to Repositories and select Create a Repository.&#x20;
-* From the drop-down menu, select **Local**. \
-  The Select Package Type window opens.
-* Select **Generic**.\
-  The New Remote Repository window opens.
-* Configure the desired **Repository Key - This should be used in the shift left utilities**
+1. Under **Administration**, navigate to **Repositories** and select **Create a Repository**.&#x20;
+2. From the drop-down menu, select **Local**. \
+   The **Select Package Type** window opens.
+3. Select **Generic**.\
+   The **New Remote Repository** window opens.
+4. Configure the desired **Repository Key** to be used when configuring the CLI, any of the IDE plugins, and Frogbot.

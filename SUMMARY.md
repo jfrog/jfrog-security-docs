@@ -176,7 +176,7 @@
     * [Supported Technologies](developers/scanning-source-code-repositories-with-frogbot/supported-technologies.md)
     * [Package Manager Prerequisites](developers/scanning-source-code-repositories-with-frogbot/package-manager-prerequisites.md)
     * [Features and Capabilities](developers/scanning-source-code-repositories-with-frogbot/features-and-capabilities.md)
-    * [Configure Frogbot](developers/scanning-source-code-repositories-with-frogbot/configure-frogbot.md)
+    * [Advanced Frogbot Configuration (Optional)](developers/scanning-source-code-repositories-with-frogbot/advanced-frogbot-configuration-optional.md)
     * [Set Up Frogbot by CI](developers/scanning-source-code-repositories-with-frogbot/installing-frogbot/README.md)
       * [GitHub Actions](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/README.md)
         * [Installation](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/installation.md)

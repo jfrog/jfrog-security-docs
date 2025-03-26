@@ -67,7 +67,7 @@
       * [Create Watches](products/xray/configure-xray/create-watches.md)
       * [Create Policies](products/xray/configure-xray/create-policies.md)
     * [Manage Xray](products/xray/xray-management/README.md)
-      * [Xray <--> JFrog External DB Sync](products/xray/xray-management/xray-less-than-greater-than-jfrog-external-db-sync.md)
+      * [Xray and JFrog External DB Sync](products/xray/xray-management/xray-and-jfrog-external-db-sync.md)
       * [Migration Guide for Self-Hosted Customers: Upgrading from DBSync V1 to V3](products/xray/xray-management/migration-guide-for-self-hosted-customers-upgrading-from-dbsync-v1-to-v3.md)
       * [Advanced Settings](products/xray/xray-management/advanced-settings.md)
       * [System Monitoring](products/xray/xray-management/system-monitoring.md)

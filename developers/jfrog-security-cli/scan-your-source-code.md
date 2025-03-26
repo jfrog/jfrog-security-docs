@@ -52,49 +52,49 @@ Command: `jf audit` (alias: `jf aud`)
 
 ### Working in Air-Gapped Environments
 
-Follow the Working in Air-Gapped Environments procedure.
+Follow the [Working in Air-Gapped Environments](scan-your-source-code.md#working-in-air-gapped-environments) procedure.
 
-The environment variable to set the source code scan is JFROG\_CLI\_RELEASES\_REPO.
+The environment variable to set the source code scan is `JFROG_CLI_RELEASES_REPO`.
 
 #### Examples
 
-1. A basic audit that shows all vulnerabilities, regardless of the policies set in Xray:
+A basic audit that shows all vulnerabilities, regardless of the policies set in Xray:
 
 ```bash
 jf audit
 ```
 
-2. Audit for Maven & npm projects that shows all vulnerabilities, regardless of the policies set in Xray:
+Audit for Maven & npm projects that shows all vulnerabilities, regardless of the policies set in Xray:
 
 ```bash
 jf audit --mvn --npm
 ```
 
-3. Audit using a defined Watch in Xray:
+Audit using a defined Watch in Xray:
 
 ```bash
 jf audit --watches "watch1"
 ```
 
-4. Audit using numerous defined Watches in Xray:
+Audit using numerous defined Watches in Xray:
 
 ```bash
 jf audit --watches "watch1,watch2"
 ```
 
-5. Audit using defined policies in a specific project:&#x20;
+Audit using defined policies in a specific project:&#x20;
 
 ```bash
 jf audit --project "project-1"
 ```
 
-6. Audit using defined policies in a specific Artifactory path:
+Audit using defined policies in a specific Artifactory path:
 
 ```bash
 jf audit --repo-path "libs-local/release-artifacts/"
 ```
 
-7. Excluding from audit all files inside a directory (`node_modules`) and files with a specific suffix (`to_exclude`):
+Excluding from audit all files inside a directory (`node_modules`) and files with a specific suffix (`to_exclude`):
 
 ```bash
 jf audit --exclusions "*node_modules*;*to_exclude"

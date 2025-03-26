@@ -25,8 +25,6 @@ Xray supports indexing at three levels:
 | **Builds**          | Indexes CI/CD-generated builds, including all dependencies. |
 | **Release Bundles** | Indexes software packaged for distribution.                 |
 
-***
-
 ### **How Indexing Works in Xray**
 
 #### **1. Indexing Repositories/Builds/ Release Bundles**

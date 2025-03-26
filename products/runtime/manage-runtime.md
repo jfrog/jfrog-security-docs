@@ -8,7 +8,7 @@ The Runtime Sensor Management enables users to install Runtime Sensors on their 
 
 Sensors are deployed as a DaemonSet and installed by default on each cluster’s nodes. After installation using Helm, runtime sensors can be disabled on demand.
 
-| **Value**             | **Description** | **Example**                                                        |
+| Value                 | Description     | Example                                                            |
 | --------------------- | --------------- | ------------------------------------------------------------------ |
 | <`node_name>`         | A single node   | `kubectl label nodes my_node disable_jfrog_runtime=true`           |
 | <`node1 node2 node3>` | A list of nodes | `kubectl label nodes node1 node2 node3 disable_jfrog_runtime=true` |
@@ -32,10 +32,3 @@ The Cluster Detailed View in the Runtime Sensor Management offers in-depth insig
 2.  View detailed information, including the list of nodes running under the cluster and their corresponding Runtime Sensor statuses.
 
     In **Controller Only** mode, node-level sensor details will not be available.
-
-
-
-
-
-
-

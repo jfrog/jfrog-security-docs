@@ -35,12 +35,14 @@ Triggering one-time advanced scans is useful when you need to perform an immedia
    Alternatively, navigate to **Applications** > **Xray** > **Scans List**.
 2. Select a repository or build and click **Advanced Scans**.\
    The **Advanced Scans** window opens.
-3. Under **Select Date and Pattern** > **Date** and **Pattern**:
+3.  Under **Select Date and Pattern** > **Date** and **Pattern**:
+
+
 
 * Choose **Deployed in** to scan artifacts that were deployed to Artifactory within a specified time range
 * Choose **Downloaded in** to scan artifacts that were downloaded from Artifactory within a specified time range
 * Choose **Any time** to scan all artifacts currently present in the repository
-* Add path pattern (wildcard patterns for repository artifact paths should be specified **without a leading slash**. The system supports **Ant-style path expressions**, including `*`, `**`, and `?)`
+* Add path pattern (wildcard patterns for repository artifact paths should be specified **without a leading slash**. The system supports **Ant-style path expressions**, including `*`, `**`, and `?`)
 
 5. Under Select Scan Categories, select all or some of the following scans:
    * **Secrets**

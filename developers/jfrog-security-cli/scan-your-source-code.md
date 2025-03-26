@@ -8,7 +8,7 @@ The `jf audit` command enables developers to perform **on-demand security scans*
 * On-demand scan results are retained for seven days before being automatically deleted.
 {% endhint %}
 
-## **Command Options**
+### Command Options
 
 Command: `jf audit` (alias: `jf aud`)
 
@@ -48,13 +48,13 @@ Command: `jf audit` (alias: `jf aud`)
 | `--sast`                        | No | `false`                              | <p><strong>Selective scanners mode</strong></p><p>Executes Static Application Security Testing (SAST) scans. Can be combined with <code>--sca</code>, <code>--secrets</code>, and <code>--iac</code>.</p> |
 | `--vuln`                        | No | —                                    | Displays all vulnerabilities, regardless of Xray policies.                                                                                                                                                |
 
-## Working in Air-Gapped Environments
+### Working in Air-Gapped Environments
 
 Follow the W[orking in Air-Gapped Environments](../working-in-air-gapped-environments.md) procedure.
 
 The environment variable to set the source code scan is `JFROG_CLI_RELEASES_REPO`.
 
-**Examples**
+### Examples
 
 1. A basic audit that shows all vulnerabilities, regardless of the policies set in Xray:
 

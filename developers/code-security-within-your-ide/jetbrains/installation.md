@@ -34,8 +34,11 @@ For security reasons, it is recommended to unset environment variables after lau
 Once connected, you can start using the JFrog plugin within IntelliJ IDEA.
 
 {% hint style="info" %}
-* If your JFrog Platform instance uses a domain with a self-signed certificate, add the certificate to IntelliJ IDEA as described here.
-* **Xray Permissions:**
-  * **Xray 1.9 to 2.x:** Users must be granted the **"View Components"** action.
-  * **Xray 3.x and later:** Users require **"Read"** permission to connect. More details here.
+If your JFrog Platform instance uses a domain with a self-signed certificate, add the certificate to IntelliJ IDEA as described here.
+
+**Xray Permissions:**
+
+&#x20;          **Xray 1.9 to 2.x:** Users must be granted the **"View Components"** action.
+
+&#x20;          **Xray 3.x and later:** Users require **"Read"** permission to connect. More details here.
 {% endhint %}

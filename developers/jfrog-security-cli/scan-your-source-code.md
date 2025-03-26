@@ -1,6 +1,6 @@
 # Scan Your Source Code
 
-The `jf audit` command enables developers to perform **on-demand security scans** of their source code **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, [SAST](../../products/advanced-security/features-and-capabilities/sast/), [misconfigurations](../../products/advanced-security/features-and-capabilities/misconfigurations-scans.md), and exposed [secrets](../../products/advanced-security/features-and-capabilities/secrets-scans.md). By integrating seamlessly into the developer workflow, it helps catch security risks before code reaches production—reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility..
+The `jf audit` command enables developers to perform **on-demand security scans** of their source code **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, [SAST](../../products/advanced-security/features-and-capabilities/sast/), [misconfigurations](../../products/advanced-security/features-and-capabilities/misconfigurations-scans.md), and exposed [secrets](../../products/advanced-security/features-and-capabilities/secrets-scans.md). By integrating seamlessly into the developer workflow, it helps catch security risks before code reaches production—reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
 
 {% hint style="info" %}
 For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
@@ -9,10 +9,6 @@ If the project hasn’t been installed yet, the system will execute an install c
 
 On-demand scan results are retained for seven days before being automatically deleted.
 {% endhint %}
-
-Follow the Working in Air-Gapped Environments procedure.
-
-The environment variable to set the source code scan is JFROG\_CLI\_RELEASES\_REPO.
 
 ### Command Options
 
@@ -53,6 +49,12 @@ Command: `jf audit` (alias: `jf aud`)
 | `--validate-secrets`            | No | `false`                              | <p><strong>Selective scanners mode</strong></p><p>Validates detected secrets. Only applicable when using <code>--secrets</code>.</p>                                                                      |
 | `--sast`                        | No | `false`                              | <p><strong>Selective scanners mode</strong></p><p>Executes Static Application Security Testing (SAST) scans. Can be combined with <code>--sca</code>, <code>--secrets</code>, and <code>--iac</code>.</p> |
 | `--vuln`                        | No | —                                    | Displays all vulnerabilities, regardless of Xray policies.                                                                                                                                                |
+
+### Working in Air-Gapped Environments
+
+Follow the Working in Air-Gapped Environments procedure.
+
+The environment variable to set the source code scan is JFROG\_CLI\_RELEASES\_REPO.
 
 #### Examples
 

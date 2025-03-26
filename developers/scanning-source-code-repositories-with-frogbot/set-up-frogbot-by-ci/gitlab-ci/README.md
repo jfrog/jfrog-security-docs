@@ -3,9 +3,11 @@
 ### Configuring GitLab for Frogbot Integration
 
 {% hint style="info" %}
-* You can use `JF_XRAY_URL` and `JF_ARTIFACTORY_URL` instead of `JF_URL`.
-* You can use `JF_ACCESS_TOKEN` instead of `JF_USER` and `JF_PASSWORD`.
-* Ensure that these tokens are **protected** in Gitlab.
+You can use `JF_XRAY_URL` and `JF_ARTIFACTORY_URL` instead of `JF_URL`.
+
+You can use `JF_ACCESS_TOKEN` instead of `JF_USER` and `JF_PASSWORD`.
+
+Ensure that these tokens are **protected** in Gitlab.
 {% endhint %}
 
 1. Make sure you have the connection details of your JFrog environment.

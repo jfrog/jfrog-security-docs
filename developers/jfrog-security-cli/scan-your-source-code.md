@@ -8,8 +8,6 @@ The `jf audit` command enables developers to perform **on-demand security scans*
 * On-demand scan results are retained for seven days before being automatically deleted.
 {% endhint %}
 
-### Working in Air-Gapped Environments
-
 Follow the Working in Air-Gapped Environments procedure.
 
 The environment variable to set the source code scan is JFROG\_CLI\_RELEASES\_REPO.

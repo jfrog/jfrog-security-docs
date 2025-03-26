@@ -182,7 +182,6 @@
         * [Installation](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/installation.md)
         * [OpenID Connect Authentication](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/openid-connect-authentication.md)
       * [GitLab CI](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/gitlab-ci.md)
-      * [Bitbucket Server](developers/scanning-source-code-repositories-with-frogbot/installing-frogbot/bitbucket-server.md)
       * [Azure DevOps](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/azure-devops.md)
     * [Frogbot Optional Configuration Parameters](developers/scanning-source-code-repositories-with-frogbot/frogbot-optional-configuration-parameters.md)
     * [Frogbot Offline](developers/scanning-source-code-repositories-with-frogbot/frogbot-offline.md)

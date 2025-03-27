@@ -27,10 +27,10 @@ The following REST APIs support Contextual Analysis:
 
 The following REST APIs support Exposures Scanning:
 
-* [Exposures Scanning-Get Results List](https://jfrog.com/help/access?ft:originId=UUID-1eb2c456-4ad6-e124-4c74-bc522497f004\&ft:sourceId=pal)
-* [Exposures Scanning-Get Results Details](https://jfrog.com/help/access?ft:originId=UUID-077c67ab-1301-860b-7e0f-4a86f1004c67\&ft:sourceId=pal)
-* [Exposures Scanning-Get Findings](https://jfrog.com/help/access?ft:originId=UUID-a2450728-32c1-6ec5-2d91-1bbd671d7a2b\&ft:sourceId=pal)
-* [Exposures Scanning-Get Evidence](https://jfrog.com/help/access?ft:originId=UUID-9ef8a3da-f629-d4cd-61ec-9a24f809d6fc\&ft:sourceId=pal)
-* [Exposures Scanning-Get Rows](https://jfrog.com/help/access?ft:originId=UUID-3b796a13-c273-bb3c-2b3f-6db2ade879e9\&ft:sourceId=pal)
-* [Get Repositories Configurations](https://jfrog.com/help/access?ft:originId=UUID-17cacaed-1c94-02e8-c1f7-7206fa2f543d\&ft:sourceId=pal)
-* [Update Repositories Configurations](https://jfrog.com/help/access?ft:originId=UUID-c764573b-2406-2877-2979-799a2264e3fa\&ft:sourceId=pal)
+* [Exposures Scanning-Get Results List](https://jfrog.com/help/r/xray-rest-apis/exposures-scanning-get-results-list)
+* [Exposures Scanning-Get Results Details](https://jfrog.com/help/r/xray-rest-apis/exposures-scanning-get-results-details)
+* [Exposures Scanning-Get Findings](https://jfrog.com/help/r/xray-rest-apis/exposures-scanning-get-findings)
+* [Exposures Scanning-Get Evidence](https://jfrog.com/help/r/xray-rest-apis/exposures-scanning-get-evidence)
+* [Exposures Scanning-Get Rows](https://jfrog.com/help/r/xray-rest-apis/exposures-scanning-get-rows)
+* [Get Repositories Configurations](https://jfrog.com/help/r/xray-rest-apis/get-repositories-configurations)
+* [Update Repositories Configurations](https://jfrog.com/help/r/xray-rest-apis/update-repositories-configurations)

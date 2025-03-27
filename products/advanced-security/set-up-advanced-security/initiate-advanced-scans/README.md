@@ -13,8 +13,8 @@ The [Repositories](repositories.md) and [Artifacts](artifacts.md) guides explain
 
 The following REST APIs support Advanced Security Repository and Artifact actions:
 
-* [Repository Advanced Scans](https://jfrog.com/help/access?ft:clusterId=UUID-89c102f9-5e9b-ac33-f0c6-4c6d91909666)
-* [Get Repository Advanced Scan Status](https://jfrog.com/help/access?ft:clusterId=UUID-a7e9acd3-cda9-baa7-d2cd-ffe120dc7b78)
-* [Cancel Repository Advanced Scans](https://jfrog.com/help/access?ft:clusterId=UUID-319eb7e1-2ba3-7958-14e1-b1cf21b001c6)
-* [Scan Artifact for Contextual Analysis](https://jfrog.com/help/access?ft:clusterId=UUID-1894543d-8403-a343-52ae-3349b744d86d)
-* [Scan Artifact for Exposures](https://jfrog.com/help/access?ft:clusterId=UUID-ded1b0b1-80db-33f8-141c-5e0644c19627)
+* [Repository Advanced Scans](https://jfrog.com/help/r/xray-rest-apis/repository-advanced-scans)
+* [Get Repository Advanced Scan Status](https://jfrog.com/help/r/xray-rest-apis/get-repository-advanced-scan-status)
+* [Cancel Repository Advanced Scans](https://jfrog.com/help/r/xray-rest-apis/cancel-repository-advanced-scans)
+* [Scan Artifact for Contextual Analysis](https://jfrog.com/help/r/xray-rest-apis/scan-artifact-for-contextual-analysis)
+* [Scan Artifact for Exposures](https://jfrog.com/help/r/xray-rest-apis/scan-artifact-for-exposures)

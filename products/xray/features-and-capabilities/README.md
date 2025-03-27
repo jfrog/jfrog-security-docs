@@ -59,7 +59,7 @@ Detects **risks beyond security vulnerabilities**, such as outdated or deprecate
 **Why it matters:**\
 Ensures that **unmaintained** software does not introduce security risks.
 
-### [**Malicious Package Detection**](./#malicious-package-detection)
+### [**Malicious Package Detection**](sca/security/malicious-package-detection.md)
 
 **What it does:**\
 Identifies **intentionally harmful** open-source packages and machine-learning models.

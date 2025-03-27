@@ -2,7 +2,7 @@
 
 ### Trust Self-Signed Certificates
 
-When an Xray instance/node is configured to go through an **SSL proxy** that uses a **self-signed certificate**, you may encounter the following issue when performing tasks such as an [online database sync](https://about/document/preview/637838#UUID-34d31c76-0926-2715-c8aa-e25b0882dfaa):
+When an Xray instance/node is configured to go through an **SSL proxy** that uses a **self-signed certificate**, you may encounter the following issue when performing tasks such as an online database sync:
 
 2021-07-20T14:47:47.500Z \[33m\[jfxr ]\[0m \[1m\[31m\[ERROR]\[0m \[c080f44e606d159 ] \[samplers:91 ] \[main ] Failed to read response from jxrayUrl. Error: Get "https://jxray.jfrog.io/api/v1/system/ping": x509: certificate signed by unknown authority
 

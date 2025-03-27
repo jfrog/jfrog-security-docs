@@ -46,7 +46,7 @@ This ensures that our clients receive timely and relevant protection against the
 
 CVE Contextual Analysis results are available in:
 
-* **Scans List** in the JFrog Platform from [Scans List](https://about/document/preview/551896#UUID-82a35411-384b-423c-8aba-0b6796583862).
+* **Scans List** in the JFrog Platform from Scans List.
 * **Inline** in your IDE
 * **CLI** for immediate feedback
 * **Pull Request Decoration** with Frogbot

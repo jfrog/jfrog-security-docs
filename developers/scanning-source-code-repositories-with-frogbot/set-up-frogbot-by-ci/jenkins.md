@@ -282,8 +282,8 @@ pipeline {
    1. Create a new **Pipeline Job** in Jenkins.
    2. Use the following template for the pipeline:
 
-<pre><code><strong>// Run the job once a day
-</strong>CRON_SETTINGS = '''0 0 * * *'''
+```
+CRON_SETTINGS = '''0 0 * * *'''
 
 pipeline {
     agent any
@@ -360,11 +360,11 @@ pipeline {
 
         // [Optional]
         // Xray Watches. Learn more about them here: https://www.jfrog.com/confluence/display/JFROG/Configuring+Xray+Watches
-        // JF_WATCHES= &#x3C;watch-1>,&#x3C;watch-2>...&#x3C;watch-n>
+        // JF_WATCHES= <watch-1>,<watch-2>...<watch-n>
 
         // [Optional]
         // JFrog project. Learn more about it here: https://www.jfrog.com/confluence/display/JFROG/Projects
-        // JF_PROJECT= &#x3C;project-key>
+        // JF_PROJECT= <project-key>
 
         // [Optional, default: "FALSE"]
         // Displays all existing vulnerabilities, including the ones that were added by the pull request.
@@ -463,5 +463,4 @@ pipeline {
         }
     }
 }
-</code></pre>
-
+```

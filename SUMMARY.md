@@ -183,6 +183,7 @@
         * [OpenID Connect Authentication](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/github-actions/openid-connect-authentication.md)
       * [GitLab CI](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/gitlab-ci.md)
       * [Azure DevOps](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/azure-devops.md)
+      * [Jenkins](developers/scanning-source-code-repositories-with-frogbot/set-up-frogbot-by-ci/jenkins.md)
     * [Frogbot Optional Configuration Parameters](developers/scanning-source-code-repositories-with-frogbot/frogbot-optional-configuration-parameters.md)
     * [Frogbot Offline](developers/scanning-source-code-repositories-with-frogbot/frogbot-offline.md)
     * [Troubleshooting](developers/scanning-source-code-repositories-with-frogbot/troubleshooting.md)

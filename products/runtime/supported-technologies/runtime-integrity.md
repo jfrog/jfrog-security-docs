@@ -1,13 +1,4 @@
-# Supported Technologies
-
-## Required for Runtime Impact <a href="#runtime-impact-recommended-postgres-database" id="runtime-impact-recommended-postgres-database"></a>
-
-| Component    | Supported                |
-| ------------ | ------------------------ |
-| Database     | Postgres 16              |
-| Package Type | Java, Go, OS executables |
-
-## Required for Runtime Integrity and Impact
+# Runtime Integrity
 
 | Technology                     | Supported                           | Not Supported  |
 | ------------------------------ | ----------------------------------- | -------------- |

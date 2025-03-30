@@ -1,5 +1,7 @@
 # Runtime Integrity
 
+### System Architecture & Platform Compatibility
+
 | Technology                     | Supported                           | Not Supported  |
 | ------------------------------ | ----------------------------------- | -------------- |
 | Node architecture              | X86-64, ARM64                       |                |

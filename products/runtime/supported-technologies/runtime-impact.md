@@ -1,11 +1,13 @@
 # Runtime Impact
 
+### Database & Package Type Support
+
 | Component    | Supported                |
 | ------------ | ------------------------ |
 | Database     | Postgres 16              |
 | Package Type | Java, Go, OS executables |
 
-
+### System Architecture & Platform Compatibility
 
 | Technology           | Supported                           | Not Supported  |
 | -------------------- | ----------------------------------- | -------------- |

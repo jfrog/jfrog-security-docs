@@ -223,13 +223,3 @@ For more advanced configuration, click the Advanced Settings:
 *   **Create tickets for ignored violations**
 
     If you want tickets generated for ignored violations, turn this feature on. By default, JFrog Xray does not generate tickets for ignored violations.
-
-
-
-
-
-
-
-&#x20;​ ​ ​ ​ ​ ​&#x20;
-
-​​ ​

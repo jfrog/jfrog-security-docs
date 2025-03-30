@@ -18,11 +18,11 @@ Risks Runtime Alerts Against:
 
 ### Active Components Runtime Inspects
 
-| Runtime Component                                                                    | Description                                                                                                                             |
-| ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [Images ](inspecting-live-software-components.md#inspecting-images-in-runtime)       | Packaged files containing code and configurations needed to run applications, traceable to their source in JFrog Artifactory.           |
-| [Workloads](inspecting-live-software-components.md#inspecting-workloads-in-runtime)  | Applications and services actively running in Kubernetes clusters, managed by resources like Deployments, StatefulSets, or DaemonSets.  |
-|  [Processes](inspecting-live-software-components.md#inspecting-processes-in-runtime) | Individual executable instances within workloads, detailed with vulnerability data for monitoring and risk management.                  |
+| Runtime Component | Description                                                                                                                             |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| Images            | Packaged files containing code and configurations needed to run applications, traceable to their source in JFrog Artifactory.           |
+| Workloads         | Applications and services actively running in Kubernetes clusters, managed by resources like Deployments, StatefulSets, or DaemonSets.  |
+|  Processes        | Individual executable instances within workloads, detailed with vulnerability data for monitoring and risk management.                  |
 
 ### Inspecting Images in Runtime&#x20;
 

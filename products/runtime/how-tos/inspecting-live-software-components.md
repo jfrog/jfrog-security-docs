@@ -1,20 +1,20 @@
 # Inspecting Live Software Components
 
-This guide provides instructions on inspecting live software components using the Runtime **Live Assessment** capability. This enables you to view and search live runtime information, identify potential security risks, and monitor the health of your runtime environments.&#x20;
+This guide provides instructions on inspecting live software components using the Runtime **Live Assessment** capability. This enables you to view and search live runtime information, identify potential security risks, and monitor the health of your runtime environments.
+
+Risks Runtime Alerts Against:
+
+• Malicious Packages: Detects harmful code within software components.&#x20;
+
+• Untrusted Images: Identifies images from unverified registries.&#x20;
+
+• Critical Applicable CVEs: Highlights critical vulnerabilities identified through contextual analysis.&#x20;
+
+• Integrity Violations: Flags discrepancies between Artifactory images and running cluster binaries.&#x20;
 
 ### Before You Begin&#x20;
 
 • Data in the Live Assessment is retained for 10 days before deletion.&#x20;
-
-### Risks Runtime Alerts Against
-
-• **Malicious Packages**: Detects harmful code within software components.&#x20;
-
-• **Untrusted Images**: Identifies images from unverified registries.&#x20;
-
-• **Critical Applicable CVEs**: Highlights critical vulnerabilities identified through contextual analysis.&#x20;
-
-• **Integrity Violations**: Flags discrepancies between Artifactory images and running cluster binaries.&#x20;
 
 ### Active Components Runtime Inspects
 

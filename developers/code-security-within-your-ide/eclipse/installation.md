@@ -2,11 +2,11 @@
 
 ## **Download the JFrog Eclipse Plugin**
 
-| **Version** | **Download link**                                                                                                              | **Compatibility**   |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
-| 1.2.0       | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.2.0/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.33 |
-| 1.1.2       | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.1.2/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.20 |
-| 1.1.1       | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.1.1/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.10 - 4.19 |
+| Version | Download link                                                                                                                  | Compatibility       |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
+| 1.2.0   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.2.0/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.33 |
+| 1.1.2   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.1.2/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.20 |
+| 1.1.1   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.1.1/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.10 - 4.19 |
 
 ## **Install the JFrog Eclipse Plugin**
 

@@ -13,9 +13,10 @@ It is essential you have:
 
 ## Command Parameters
 
-| `--server-id` | \[Optional] Server ID configured using the `jf c add` command. If not specified, the default configured server is used. | Optional |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------- | -------- |
-| `file_path`   | The path to the SBOM file you want to enrich.                                                                           | Required |
+| Parameter     | Description                                                                                                             | Optional/Required |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| `--server-id` | \[Optional] Server ID configured using the `jf c add` command. If not specified, the default configured server is used. | Optional          |
+| `file_path`   | The path to the SBOM file you want to enrich.                                                                           | Required          |
 
 ### Examples
 

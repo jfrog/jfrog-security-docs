@@ -30,11 +30,12 @@ Learn more about Curation Supported technologies [here](../../products/curation/
 
 ### Commands Parameters
 
-| `--format`            | Optional | Defines the output format. Acceptable values: `table` (default) and `json`. |
-| --------------------- | -------- | --------------------------------------------------------------------------- |
-| `--working-dirs`      | Optional | A comma-separated list of directories to audit.                             |
-| `--threads`           | Optional | Number of parallel threads for checking package status. Default: `3`.       |
-| `--requirements-file` | Optional | \[Pip] Specifies the requirements file (e.g., `requirements.txt`).          |
+| Parameter             | Optional/Required | Description                                                                 |
+| --------------------- | ----------------- | --------------------------------------------------------------------------- |
+| `--format`            | Optional          | Defines the output format. Acceptable values: `table` (default) and `json`. |
+| `--working-dirs`      | Optional          | A comma-separated list of directories to audit.                             |
+| `--threads`           | Optional          | Number of parallel threads for checking package status. Default: `3`.       |
+| `--requirements-file` | Optional          | \[Pip] Specifies the requirements file (e.g., `requirements.txt`).          |
 
 ## Examples
 
@@ -97,6 +98,3 @@ Please enter the row number(s) for which you want to request a waiver (comma-sep
 ```
 Please enter the reason for the waiver request: Required packages
 ```
-
-
-

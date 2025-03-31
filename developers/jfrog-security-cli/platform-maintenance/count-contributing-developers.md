@@ -18,8 +18,9 @@ There are several options to obtain the developer count:
 
 ## Command Parameters
 
-| `--scm-type`         | Mandatory                 | The type of SCM for analysis. Supported values: `github`, `gitlab`, `bitbucket`. Example: `--scm-type=github` |
+| Parameter            | Optional/Default          | Description                                                                                                   |
 | -------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `--scm-type`         | Mandatory                 | The type of SCM for analysis. Supported values: `github`, `gitlab`, `bitbucket`. Example: `--scm-type=github` |
 | `--scm-api-url`      | Mandatory                 | Base URL of the SCM system's API endpoint. Example: `--scm-api-url=https://api.github.com`                    |
 | `--token`            | Mandatory                 | Authentication token for accessing the SCM system's API. Example: `--token=your_access_token`                 |
 | `--owner`            | Mandatory                 | Owner or organization of the repositories. Example: `--owner=your-organization`                               |

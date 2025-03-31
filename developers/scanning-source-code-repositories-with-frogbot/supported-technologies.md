@@ -48,18 +48,18 @@ JFrog Frogbot integrates seamlessly with various Git providers and Continuous In
 
 JFrog Frogbot is compatible with the following Git providers:
 
-| **Git Provider**                    | **Supported** |
-| ----------------------------------- | ------------- |
-| GitHub (Cloud and Self-Hosted)      | ✔️            |
-| GitLab (Cloud and Self-Hosted)      | ✔️            |
-| Azure Repos (Cloud and Self-Hosted) | ✔️            |
+| Git Provider                        | Supported |
+| ----------------------------------- | --------- |
+| GitHub (Cloud and Self-Hosted)      | ✔️        |
+| GitLab (Cloud and Self-Hosted)      | ✔️        |
+| Azure Repos (Cloud and Self-Hosted) | ✔️        |
 
 #### **Supported CI Systems**
 
 Frogbot can also integrate with multiple CI systems, enhancing your security scanning capabilities:
 
-| **CI System**   | **Supported** |
-| --------------- | ------------- |
-| GitHub Actions  | ✔️            |
-| GitLab CI       | ✔️            |
-| Azure Pipelines | ✔️            |
+| CI System       | Supported |
+| --------------- | --------- |
+| GitHub Actions  | ✔️        |
+| GitLab CI       | ✔️        |
+| Azure Pipelines | ✔️        |

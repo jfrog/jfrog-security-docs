@@ -6,7 +6,7 @@ Frogbot relies on the presence of package manager executables and proper configu
 
 ### SCA Requirements
 
-| **Requirement**                 | **Description**                                                                                   |
+| Requirement                     | Description                                                                                       |
 | ------------------------------- | ------------------------------------------------------------------------------------------------- |
 | **Package Manager Executables** | Ensure the appropriate package manager is installed and operational in your environment.          |
 | **Network Access**              | Frogbot may need internet access to download dependencies based on your package manager settings. |
@@ -18,7 +18,7 @@ Each package manager and build tool may have unique prerequisites.
 
 #### **npm (Node.js)**
 
-| **Requirement**       | **Details**                                                      |
+| Requirement           | Details                                                          |
 | --------------------- | ---------------------------------------------------------------- |
 | **Requirements**      | Ensure Node.js and npm are installed and available in your PATH. |
 | **Lock File**         | `package-lock.json`is required for accurate dependency scanning. |
@@ -26,7 +26,7 @@ Each package manager and build tool may have unique prerequisites.
 
 #### **Yarn**
 
-| **Requirement**       | **Details**                                                      |
+| Requirement           | Details                                                          |
 | --------------------- | ---------------------------------------------------------------- |
 | **Requirements**      | Install Yarn and verify it’s available in your PATH.             |
 | **Lock File**         | The`yarn.lock`file must be present.                              |
@@ -34,7 +34,7 @@ Each package manager and build tool may have unique prerequisites.
 
 #### **Maven (Java)**
 
-| **Requirement**       | **Details**                                            |
+| Requirement           | Details                                                |
 | --------------------- | ------------------------------------------------------ |
 | **Requirements**      | Ensure Maven (or the`mvnw`wrapper) is accessible.      |
 | **Lock File**         | The`pom.xml`file should be correctly configured.       |
@@ -42,7 +42,7 @@ Each package manager and build tool may have unique prerequisites.
 
 #### **Python (pip)**
 
-| **Requirement**       | **Details**                                                                          |
+| Requirement           | Details                                                                              |
 | --------------------- | ------------------------------------------------------------------------------------ |
 | **Requirements**      | Python and pip must be installed and available in the environment.                   |
 | **Lock File**         | The`requirements.txt`file should be present for dependency definitions.              |
@@ -50,7 +50,7 @@ Each package manager and build tool may have unique prerequisites.
 
 #### **Go**
 
-| **Requirement**       | **Details**                                                                              |
+| Requirement           | Details                                                                                  |
 | --------------------- | ---------------------------------------------------------------------------------------- |
 | **Requirements**      | Ensure Go is installed and available in your PATH.                                       |
 | **Lock File**         | The`go.sum`file must be present for accurate dependency scanning.                        |
@@ -58,7 +58,7 @@ Each package manager and build tool may have unique prerequisites.
 
 #### **.NET (NuGet)**
 
-| **Requirement**            | **Details**                                                                           |
+| Requirement                | Details                                                                               |
 | -------------------------- | ------------------------------------------------------------------------------------- |
 | **Requirements**           | Install the .NET SDK and ensure NuGet is available in your PATH.                      |
 | **Visual Studio Projects** | Ensure`.sln`files are present in your repository.                                     |

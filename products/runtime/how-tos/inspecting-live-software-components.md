@@ -2,19 +2,9 @@
 
 This guide provides instructions on inspecting live software components using the Runtime **Live Assessment** capability. This enables you to view and search live runtime information, identify potential security risks, and monitor the health of your runtime environments.
 
-Risks Runtime Alerts Against:
-
-• Malicious Packages: Detects harmful code within software components.&#x20;
-
-• Untrusted Images: Identifies images from unverified registries.&#x20;
-
-• Critical Applicable CVEs: Highlights critical vulnerabilities identified through contextual analysis.&#x20;
-
-• Integrity Violations: Flags discrepancies between Artifactory images and running cluster binaries.&#x20;
-
-### Before You Begin&#x20;
-
-• Data in the Live Assessment is retained for 10 days before deletion.&#x20;
+{% hint style="warning" %}
+Data in the Live Assessment is retained for 10 days before deletion.&#x20;
+{% endhint %}
 
 ### Active Components Runtime Inspects
 
@@ -23,6 +13,15 @@ Risks Runtime Alerts Against:
 | Images            | Packaged files containing code and configurations needed to run applications, traceable to their source in JFrog Artifactory.           |
 | Workloads         | Applications and services actively running in Kubernetes clusters, managed by resources like Deployments, StatefulSets, or DaemonSets.  |
 |  Processes        | Individual executable instances within workloads, detailed with vulnerability data for monitoring and risk management.                  |
+
+### Risks Runtime Alerts Against
+
+| Risk                     | Description                                                                  |
+| ------------------------ | ---------------------------------------------------------------------------- |
+| Malicious Packages       | Detects harmful code within software components.                             |
+| Untrusted Images         | Identifies images from unverified registries.                                |
+| Critical Applicable CVEs | Highlights critical vulnerabilities identified through contextual analysis.  |
+| Integrity Violations     | Flags discrepancies between Artifactory images and running cluster binaries. |
 
 ### Inspecting Images in Runtime&#x20;
 
@@ -58,7 +57,7 @@ Inspect workloads in your runtime environment with Runtime Live Assessment to mo
 
 Before You Begin:
 
-• It is essential you have Runtime Impact (Controller + Sensors)&#x20;
+Process inspection is available only with [Runtime Impact](../#runtime-modes-of-deployment) (Controller + Sensors).
 
 1\. From the JFrog Platform, under **Runtime**, select **Live Assessment**.&#x20;
 

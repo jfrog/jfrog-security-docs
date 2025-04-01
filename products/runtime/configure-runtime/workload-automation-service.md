@@ -115,8 +115,8 @@ There are four types of built-in events that may occur in your **Workload** that
 
 ### Step 4: Save Your Configuration
 
-* Click **Save** to finalize the worker configuration.
-* To cancel the configuration, click **Close**, and then click **Discard** to discard changes.
+1. Click **Save** to finalize the worker configuration.
+2. To cancel the configuration, click **Close** and then **Discard** to discard changes.
 
 ### Step 5: Review Worker Events
 

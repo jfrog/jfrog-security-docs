@@ -38,7 +38,7 @@ The following workflow shows how Xray scans your builds
 
 1. Install Xray.
 2. Set up indexing on the resources.
-3. For Xray to scan builds upon request by a CI server, you need to configure a [Watch](https://jfrog.com/help/r/6nte66fuu2ZQMB2dfriysg/P2kGNx4_axA~B5tzlCeN8Q) with the right filters that specify which artifacts and vulnerabilities should trigger an alert, and set a Fail Build Job Action for that Watch.
+3. For Xray to scan builds upon request by a CI server, you need to configure a [Watch](../configure-xray/create-watches.md) with the right filters that specify which artifacts and vulnerabilities should trigger an alert, and set a Fail Build Job Action for that Watch.
 
 **Configure your CI Server for Xray Integration**
 
@@ -61,12 +61,3 @@ This feature is supported in **Artifactory from v4.16** and above.
 ### Manage Builds Scanned with Xray
 
 Xray's build integration allows you to manage your build jobs and configure them with appropriate actions if build artifacts or dependencies with vulnerabilities are found in your builds. While the default action (in Jenkins) is to simply stop the build, you can actually configure your pipeline to do other things like send email notifications or even run a different build job.
-
-
-
-\
-
-
-\
-
-

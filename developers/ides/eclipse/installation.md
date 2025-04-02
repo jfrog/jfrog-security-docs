@@ -5,7 +5,6 @@
 | Version | Download link                                                                                                                  | Compatibility       |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
 | 1.2.0   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.2.0/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.33 |
-| 1.1.2   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.1.2/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.20 |
 | 1.1.1   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.1.1/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.10 - 4.19 |
 
 ## **Install the JFrog Eclipse Plugin**
@@ -16,7 +15,7 @@
 4. Choose the **plugin zip file** you downloaded and click **Add**.
 5. Click **Next** to complete the installation.
 
-**Note**: If JFrog Xray is behind an **HTTP proxy**, configure the proxy settings described [here](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-net-preferences.htm). (Supported since version 1.1.0 of the JFrog Eclipse Plugin.)
+**Note**: If JFrog Xray is behind an **HTTP proxy**, configure the proxy settings described [here](https://help.eclipse.org/latest/index.jsp?topic=%2Forg.eclipse.platform.doc.user%2Freference%2Fref-net-preferences.htm). (Supported in versions 1.1.1 and 1.2.0 of the JFrog Eclipse Plugin.)
 
 ## **Configure the Plugin**
 

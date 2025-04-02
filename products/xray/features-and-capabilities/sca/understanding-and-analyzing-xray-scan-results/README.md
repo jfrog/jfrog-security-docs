@@ -27,7 +27,6 @@ The **Xray Scan Dashboard** provides a high-level summary of issues found in the
 * **Total Number of Policy Violations** **by Severity** (Critical, High, Medium, Low).
 * **Type of Policy Violations** (Security, License, or Operational).
 * **SBOM Details** (Most common package types, most common licenses, etc.)
-* **Validated Runtime Risks** (Detected CVEs, Critical & Applicable CVEs, Malicious Packages, Integrity Violations)
 
 #### **2. Policy Violations Tab**
 

@@ -9,7 +9,7 @@ See Jfrog Advanced Security Supported Technologies section:
 * Secrets
 * IaC
 
-### **Software Composition Analysis (SCA)** Supported Technologies
+### Software Composition Analysis (SCA) Supported Technologies
 
 {% hint style="info" %}
 For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.

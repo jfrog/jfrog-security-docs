@@ -1,12 +1,12 @@
 # Package Manager Prerequisites
 
-## **Go Projects**
+### Go Projects
 
 **Prerequisite:** Ensure that the Go CLI is installed and accessible in your system `PATH`.
 
 The JFrog VS Code Extension scans all project dependencies, both direct and transitive, even if they are not explicitly declared in `go.mod`. To construct the Go dependencies tree, it runs `go mod graph` and intersects the results with `go list -f '{{with .Module}}{{.Path}} {{.Version}}{{end}}' all`.
 
-## **Maven Projects**
+### Maven Projects
 
 The extension builds the Maven dependencies tree by executing `mvn dependency:tree`. It enables developers to view licenses and top-issue severities directly from the `pom.xml`.
 
@@ -30,7 +30,7 @@ For example:
       </plugins>
 ```
 
-## **Npm Projects**
+### Npm Projects
 
 The extension builds the npm dependencies tree using `npm list`. It provides insights into licenses and top-issue severities directly from `package.json`.
 
@@ -39,7 +39,7 @@ The extension builds the npm dependencies tree using `npm list`. It provides ins
 * Ensure the npm CLI is installed and in your system `PATH`.
 * Dependencies must be installed using `npm install` before scanning.
 
-## **Yarn v1 Projects**
+### Yarn v1 Projects
 
 The extension builds the Yarn dependencies tree using `yarn list`, displaying license and security issue details from `yarn.lock`.
 
@@ -48,7 +48,7 @@ The extension builds the Yarn dependencies tree using `yarn list`, displaying li
 * Ensure the Yarn CLI is installed and in your system `PATH`
 * Yarn v2 is not yet supported
 
-## **Pypi Projects**
+### Pypi Projects
 
 The extension constructs the PyPi dependencies tree using `pipdeptree` your Python virtual environment. It also relies on the Python interpreter path configured in the VS Code Python extension.
 
@@ -61,7 +61,7 @@ The extension constructs the PyPi dependencies tree using `pipdeptree` your Pyth
   * **Windows:** `.<venv-dir>\Scripts\activate`
 * Install your project dependencies within the activated virtual environment.
 
-## **.NET Projects**
+### .NET Projects
 
 For .NET projects using NuGet packages, the extension visualizes the NuGet dependencies tree along with relevant details.
 

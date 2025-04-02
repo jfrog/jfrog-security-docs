@@ -2,12 +2,12 @@
 
 ### JFrog Advanced Security Supported Technologies
 
-See Jfrog Advanced Security Supported Technologies section:
+See Jfrog Advanced Security supported technologies for:
 
-* SAST
-* Contextual analysis&#x20;
-* Secrets
-* IaC
+* [SAST](../../../products/advanced-security/features-and-capabilities/sast/)
+* [Contextual Analysis ](../../../products/advanced-security/features-and-capabilities/contextual-analysis-of-cves.md)
+* [Secrets](../../../products/advanced-security/features-and-capabilities/secrets-scans.md)
+* [IaC](../../../products/advanced-security/features-and-capabilities/misconfigurations-scans.md)
 
 ### Software Composition Analysis (SCA) Supported Technologies
 

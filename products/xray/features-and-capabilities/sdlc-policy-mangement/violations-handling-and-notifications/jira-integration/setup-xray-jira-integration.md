@@ -143,8 +143,7 @@ This method is supported only for Self Managed Jira instances.
 
 After completing the connection between Jira and Xray, you need to create a Jira Configuration profile. As there are different Jira projects for different teams, the configuration profile enables you to define specific criteria for the issued Jira ticket per Jira project, such as labels and custom mappings defined in the Jira project.
 
-{% hint style="info" %}
-
+**Note**:&#x20;
 
 Xray supports the below field types of Jira if you have any other type as a required field, these issue types will not appear in the “Issue Type” list of the profile configuration page
 
@@ -158,7 +157,6 @@ Xray supports the below field types of Jira if you have any other type as a requ
 * Select List (multiple choices)
 * Select List (single choice)
 * Jira Components
-{% endhint %}
 
 **Macros**
 

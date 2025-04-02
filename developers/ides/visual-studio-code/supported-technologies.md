@@ -11,11 +11,7 @@ See Jfrog Advanced Security Supported Technologies section:
 
 ### Software Composition Analysis (SCA) Supported Technologies
 
-{% hint style="info" %}
-For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
-
-If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
-{% endhint %}
+For SCA, the command automatically detects your project's package manager and constructs the dependency graph; if the project hasn't been installed yet, the system executes an install command to generate the dependency tree for scanning.
 
 ### Supported Package Managers for Visual Studio Code:
 

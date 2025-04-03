@@ -6,7 +6,7 @@ There are many reasons why you might want to ignore a violation, you can read mo
 
 You can create an ignore rule for Exposures violation using the following REST API:
 
-* [Create Ignore Rule](https://jfrog.com/help/access?ft:clusterId=UUID-9e299865-7cb3-8415-bda6-87047e05cb09)
+* [Create Ignore Rule](https://jfrog.com/help/r/xray-rest-apis/create-ignore-rule)
 
 ### Ignoring Secrets Violations
 

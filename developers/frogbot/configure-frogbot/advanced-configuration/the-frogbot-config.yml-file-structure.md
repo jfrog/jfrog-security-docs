@@ -1,6 +1,4 @@
-# Advanced Frogbot Configuration (Optional)
-
-### The `frogbot-config.yml` File Structure
+# The frogbot-config.yml File Structure
 
 See the complete content and structure of the **frogbot-config.yml** file [here](https://github.com/jfrog/documentation/blob/main/jfrog-applications/frogbot/templates/.frogbot/frogbot-config.yml).
 

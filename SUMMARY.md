@@ -188,6 +188,6 @@
         * [Jenkins](developers/frogbot/configure-frogbot/set-up-frogbot-by-ci/jenkins.md)
       * [Advanced Frogbot Configuration (Optional)](developers/frogbot/configure-frogbot/advanced-frogbot-configuration-optional.md)
       * [Frogbot Configuration Parameters (Optional)](developers/frogbot/configure-frogbot/frogbot-configuration-parameters-optional.md)
-    * [Frogbot Offline](developers/frogbot/frogbot-offline.md)
+      * [Frogbot Offline](developers/frogbot/configure-frogbot/frogbot-offline.md)
     * [Troubleshooting](developers/frogbot/troubleshooting.md)
   * [Working in Air-Gapped Environments](developers/working-in-air-gapped-environments.md)

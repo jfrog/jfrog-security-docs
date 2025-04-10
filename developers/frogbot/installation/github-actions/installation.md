@@ -72,8 +72,4 @@ jobs:
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}    # For repository scan action
 ```
 
-3. Before setting up Frogbot, ensure all required tools and technologies are installed on your system and are available in your system's `$PATH`. \
-   This includes:
-   * **Git**
-   * **Node.js**
-   * **npm**
+3. Before setting up Frogbot, ensure all required tools and technologies are installed on your system and are available in your system's `$PATH`.&#x20;

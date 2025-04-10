@@ -2,15 +2,7 @@
 
 ### SCM and CI Requirements
 
-#### Operating System
-
-Frogbot scanners support the following operating systems:
-
-* Ubuntu 18+
-* RHEL 8+
-* Windows
-
-#### Required Packages&#x20;
+#### Required Packages
 
 Ensure the following packages are available in your environment:
 

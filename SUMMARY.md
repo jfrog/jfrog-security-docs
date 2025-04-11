@@ -87,6 +87,7 @@
       * [How to Send Email Notifications for Each Critical Vulnerability Found in Resource](products/xray/how-tos/how-to-send-email-notifications-for-each-critical-vulnerability-found-in-resource.md)
       * [How to Generate a Report with All Vulnerabilities in a Distributed Bundle](products/xray/how-tos/how-to-generate-a-report-with-all-vulnerabilities-in-a-distributed-bundle.md)
       * [How to Generate a Report with All Used Licenses in Your Environment Using JFrog Xray](products/xray/how-tos/how-to-generate-a-report-with-all-used-licenses-in-your-environment-using-jfrog-xray.md)
+      * [How to Exclude Specific File Names from Scans](products/xray/how-tos/how-to-exclude-specific-file-names-from-scans.md)
   * [Advanced Security](products/advanced-security/README.md)
     * [Supported Technologies](products/advanced-security/supported-technologies.md)
     * [Features and Capabilities](products/advanced-security/features-and-capabilities/README.md)

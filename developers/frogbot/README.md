@@ -10,4 +10,4 @@ Integrating Frogbot into your development lifecycle allows you to proactively en
 
 It is essential that you:
 
-* Meet the [system requirements](../#system-requirements)
+* Meet the [system requirements](../)

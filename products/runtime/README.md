@@ -57,7 +57,7 @@ Runtime Impact delivers a granular and comprehensive runtime security assessment
 
 ### Where Runtime Fits in the JFrog Security Timeline
 
-<table><thead><tr><th width="259.25390625">Stage</th><th width="486.3359375">Runtime' Role</th></tr></thead><tbody><tr><td>Production &#x26; Runtime Security</td><td>Provides real-time monitoring of Kubernetes workloads, processes, and file activity using eBPF-based sensors. Detects running vulnerabilities, unauthorized processes, and integrity violations. Prioritizes security incidents by determining if vulnerable code is actively loaded into memory.</td></tr></tbody></table>
+<table><thead><tr><th width="259.25390625">Stage</th><th width="486.3359375">Runtime' Role</th></tr></thead><tbody><tr><td>Production &#x26; Runtime Security</td><td>Provides real-time monitoring of your clusters for running images, workloads, and processes. Detects running vulnerabilities, unauthorized processes, and integrity violations. Prioritizes security incidents by determining if vulnerable code is actively loaded into memory.</td></tr></tbody></table>
 
 **Install Runtime**
 

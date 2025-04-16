@@ -33,8 +33,8 @@ If you selected **Security Policy**, configure the rule as follows:
    * Enable **Skip not applicable CVEs**to filter vulnerabilities that do not impact your environment.
    * From **Type** drop-down, select **Exposures**.  Select one or more exposure categories. This specifies that a violation is issued only for the selected categories
 4. **Define Enforcement Actions**:
-   * **Block downloads** of artifacts with high-risk vulnerabilities.
-   * **Fail builds** if vulnerabilities are detected.
+   * **Block downloads** of artifacts with high-risk vulnerabilities. Starting from Xray 3.118.3 and above, you can add a grace period before an artifact is blocked from downloading, giving teams time to address policy violations without immediate disruption.
+   * **Fail builds** if vulnerabilities are detected. Starting from Xray 3.118.3 and above, you can add a grace period before a build fails, giving teams time to address policy violations without immediate disruption.
    * **Trigger alerts** (Email, Slack, Jira).
 
 &#x20;**Example Security Rule:**\

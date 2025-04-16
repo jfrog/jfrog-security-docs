@@ -4,6 +4,7 @@
 
 | Version | Download link                                                                                                                  | Compatibility       |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
+| 2.0.0   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/2.0.0/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.33 |
 | 1.2.0   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.2.0/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.33 |
 | 1.1.1   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.1.1/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.10 - 4.19 |
 
@@ -22,14 +23,12 @@
 After installing the plugin, you need to connect it to **JFrog Xray**.
 
 1. Open **Eclipse Preferences** and go to **JFrog Xray**.
-2. Enter your **JFrog Platform URL** and **login credentials**.
-3. Click **Test Connection** to verify your setup.
+2. Enter your **JFrog Platform URL**, **Username**, and **Password**.
+3. (Optional) To generate debug logs, check the **Generate Debug Logs** box.&#x20;
+4. Click **Test Connection** to verify your setup.
 
 ## **Scan and View Xray Results**
 
 Once connected, you can start scanning Gradle projects with JFrog Xray.
 
 * **Run a scan** and view results directly in Eclipse.
-* **Filter scanned results** to focus on specific components.
-
-For detailed steps on scanning Gradle projects, see Scanning with the JFrog Eclipse Plugin.

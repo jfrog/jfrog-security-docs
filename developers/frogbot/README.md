@@ -8,6 +8,6 @@ Integrating Frogbot into your development lifecycle allows you to proactively en
 
 ### Before You Begin
 
-It is essential that you:
+It is essential that you::
 
 * Meet the [system requirements](../)

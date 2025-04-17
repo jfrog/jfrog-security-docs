@@ -83,6 +83,10 @@ Example of a valid result:&#x20;
 
 ### **Configuring JFrog Catalog Central for the First Time**
 
+{% hint style="info" %}
+These configuration steps are deprecated, follow the steps [here](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-catalog) for updated installation steps.&#x20;
+{% endhint %}
+
 This section assumes JFrog Catalog Central service was not yet configured in your JFrog Platform instance.
 
 The below configurations should be done in the Xray system.yaml (usually under $JFROG\_HOME/xray/var/etc).  In this configuration step you will be asked to use the Catalog credentials asked at the previous section.

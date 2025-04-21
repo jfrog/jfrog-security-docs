@@ -5,4 +5,4 @@
 
 ### Working in Air-Gapped Environments?
 
-Follow the [Working in Air-Gapped Environments](./#working-in-air-gapped-environments) procedure.
+Follow the [Working in Air-Gapped Environments](../../working-in-air-gapped-environments.md) procedure.

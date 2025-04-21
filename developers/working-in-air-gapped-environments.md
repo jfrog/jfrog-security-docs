@@ -19,8 +19,8 @@ After setting up the repository, you must configure your tools to pull all requi
 
 Use the appropriate **environment variable** depending on the tool:
 
-| Tool        | Environment Variable                                                                                                                                                                                                                                                                               |
-| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| JFrog CLI   | `JFROG_CLI_RELEASES_REPO`                                                                                                                                                                                                                                                                          |
-| Frogbot     | `JF_RELEASES_REPO`                                                                                                                                                                                                                                                                                 |
-| IDE Plugins | By default, the JFrog extension downloads tools from [https://releases.jfrog.io](https://releases.jfrog.io). If inaccessible, you can create a remote repository in Artifactory that proxies it and specify its name in your IDE's JFrog plugin settings, under **External Resources Repository**. |
+| Tool        | Environment Variable                                                                                                                         |
+| ----------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| JFrog CLI   | `JFROG_CLI_RELEASES_REPO`                                                                                                                    |
+| Frogbot     | `JF_RELEASES_REPO`                                                                                                                           |
+| IDE Plugins | Create a remote repository in Artifactory and specify its name in your IDE's JFrog plugin settings, under **External Resources Repository**. |

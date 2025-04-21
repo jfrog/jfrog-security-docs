@@ -52,11 +52,9 @@ Command: `jf audit` (alias: `jf aud`)
 | `--sast`                        | No       | `false`                                                      | <p><strong>Selective scanners mode</strong></p><p>Executes Static Application Security Testing (SAST) scans. Can be combined with <code>--sca</code>, <code>--secrets</code>, and <code>--iac</code>.</p>                                               |
 | `--vuln`                        | No       | —                                                            | Displays all vulnerabilities, regardless of Xray policies.                                                                                                                                                                                              |
 
-### Working in Air-Gapped Environments
+### Working in Air-Gapped Environments?
 
 Follow the [Working in Air-Gapped Environments](scan-your-source-code.md#working-in-air-gapped-environments) procedure.
-
-The environment variable to set the source code scan is `JFROG_CLI_RELEASES_REPO`.
 
 #### Examples
 

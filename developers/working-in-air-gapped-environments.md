@@ -1,30 +1,26 @@
 # Working in Air-Gapped Environments
 
-By default, JFrog Shiftleft utilities (IDE, CLI, and Frogbot) download JFrog engines directly from[ JFrog’s public releases repository](https://releases.jfrog.io). If your environment is without internet access, you can configure it to download these resources from a private Artifactory instance.
+Air-gapped environments are isolated from the public internet. To enable security scanning in such environments, you’ll need to configure a local Artifactory repository that mirrors [https://releases.jfrog.io](https://releases.jfrog.io), and update your tools to use this repository for downloading required components.
 
-The instance should be configured with either:
+### Set Up a Local Releases Repository
 
-* Generic Remote Repository: a proxy to `https://releases.jfrog.io`
-* Generic Local Repository
+1. In the **JFrog Platform**, go to **Administration > Repositories > Remote**.
+2. Click **Create a remote repository**.
+3. Set the following values:
+   * **Package Type**: _Generic_
+   * **Repository Key**: _e.g., `jfrog-releases-repo`_
+   * **URL**: `https://releases.jfrog.io`
+4. (Optional) Uncheck **Store Artifacts Locally** to save storage space.
+5. Click **Save & Finish**.
 
-## Configure a Generic Remote Repository in Artifactory
+### Configure Tools to Use Your Local Repo
 
-1. Under Administration, navigate to Repositories and select Create a Repository.&#x20;
-2. From the drop-down menu, select **Remote**. \
-   The Select Package Type window opens.
-3. Select **Generic**.\
-   The New Remote Repository window opens.
-4. Configure the desired **Repository Key - This should be used in the shift left utilities**
-5. Under the Basic tab, set the following URL address: \
-   `https://releases.jfrog.io`
-6. Under the Advanced tab, uncheck the Store Artifacts Locally box. \
-   This reduces storage.
+After setting up the repository, you must configure your tools to pull all required components, such as binaries, analyzer tools, or metadata, from your internal Artifactory instance instead of the public internet.
 
-## Configure a Generic Local Repository in Artifactory
+Use the appropriate **environment variable** depending on the tool:
 
-1. Under **Administration**, navigate to **Repositories** and select **Create a Repository**.&#x20;
-2. From the drop-down menu, select **Local**. \
-   The **Select Package Type** window opens.
-3. Select **Generic**.\
-   The **New Remote Repository** window opens.
-4. Configure the desired **Repository Key** to be used when configuring the CLI, any of the IDE plugins, and Frogbot.
+| Tool        | Environment Variable      |
+| ----------- | ------------------------- |
+| JFrog CLI   | `JFROG_CLI_RELEASES_REPO` |
+| Frogbot     | `JF_RELEASES_REPO`        |
+| IDE Plugins |                           |

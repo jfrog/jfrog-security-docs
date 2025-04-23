@@ -57,23 +57,7 @@ The Vulnerabilities section displays detected vulnerabilities that affect the sc
 
 * If a fix is available for a vulnerability, upgrade the component to the suggested fix version.
 * Use the enriched data provided by the JFrog Research Team to understand the exploitability of the vulnerability.&#x20;
-* Understand which component version is vulnerable and what is the exact vulnerable path.&#x20;
-
-**5. Impact Analysis**&#x20;
-
-The Impact Analysis section shows how detected vulnerabilities affect other components in the software environment.
-
-**Key Insights:**
-
-* Which artifacts and builds are impacted?
-* Which projects or microservices use the vulnerable component?
-* Which **environments** (Dev, Staging, Production) are at risk?
-
-**Recommended Actions:**
-
-* If the issue impacts multiple projects, coordinate a cross-team fix.
-* Prioritize fixes based on production vs. development environments.
-* Use SBOM (Software Bill of Materials) to track vulnerable dependencies.
+* Understand which component version is vulnerable and what is the exact vulnerable path.
 
 ### **Filtering and Sorting Scan Results for Better Analysis**
 

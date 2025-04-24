@@ -4,7 +4,7 @@
 
 | Version | Download link                                                                                                                  | Compatibility       |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------- |
-| 2.0.0   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/2.0.0/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.33 |
+| 2.0.1   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/2.0.1/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.33 |
 | 1.2.0   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.2.0/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.13 - 4.33 |
 | 1.1.1   | [Download](https://github.com/jfrog/jfrog-eclipse-plugin/releases/download/1.1.1/com.jfrog.ide.eclipse.releng.update-site.zip) | Eclipse 4.10 - 4.19 |
 

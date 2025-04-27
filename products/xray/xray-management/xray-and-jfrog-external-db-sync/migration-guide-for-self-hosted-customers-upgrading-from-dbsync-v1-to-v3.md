@@ -51,7 +51,7 @@ Before you get started with the migration, please note the following:
 
     For offline upgrades in air-gapped networks, follow the steps provided on the pop-up screen
 3. On the pop-screen, please read the “Migration Details" and click on the “Migrate” button
-4. You should now see the upgrade status displayed on the screen. Here’s a screenshot
+4. You should now see the upgrade status displayed on the screen.
 5.  After the migration is complete, upload a test artifact and scan it with Xray to verify that the functionality is working properly.
 
-    The **DBSync Implementation** status is now **V3**, as seen below.\
+    The **DBSync Implementation** status is now **V3.**\

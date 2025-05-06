@@ -39,25 +39,25 @@ Learn more about Curation Supported technologies [here](../../products/curation/
 
 ## Examples
 
-Audit the current directory:
+#### Audit the current directory:
 
 ```
 jf curation-audit
 ```
 
-Audit specific directories:
+#### Audit specific directories:
 
 ```
 jf curation-audit --working-dirs="/path/to/project/npm_project1,/path/to/project/npm_project2"
 ```
 
-Audit with multiple threads:
+#### Audit with multiple threads:
 
 ```
 jf curation-audit --threads=5
 ```
 
-Exclude specific packages or versions from policy restrictions using waivers:
+#### Exclude specific packages or versions from policy restrictions using waivers:
 
 1. Execute the `jf-curation-audit` command:
 

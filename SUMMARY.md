@@ -28,6 +28,7 @@
       * [How to Use JFrog Curation as a Developer with the JFrog CLI](products/curation/how-tos/how-to-use-jfrog-curation-as-a-developer-with-the-jfrog-cli.md)
       * [How to Utilize JFrog Catalog for Curation](products/curation/how-tos/how-to-utilize-jfrog-catalog-for-curation.md)
       * [How to Manage Virtual Repository Behavior and Curation in JFrog Xray](products/curation/how-tos/how-to-manage-virtual-repository-behavior-and-curation-in-jfrog-xray.md)
+      * [How to Assess and Optimize Your Curation Settings](products/curation/how-tos/how-to-assess-and-optimize-your-curation-settings.md)
   * [Xray](products/xray/README.md)
     * [Supported Technologies](products/xray/supported-technologies.md)
     * [Features and Capabilities](products/xray/features-and-capabilities/README.md)

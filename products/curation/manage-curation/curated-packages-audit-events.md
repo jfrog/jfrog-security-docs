@@ -1,48 +1,65 @@
-# Audit Events
+# Curated Packages Audit Events
 
-Curation Audit provides visibility and transparency into the package governance process, allowing users with curation permissions to understand how packages are managed within your organization. This guide outlines the sections of the Curation Audit, how to interpret the data, and how to export audit results.
+Audit Events provides visibility into package management activities, focusing on security, compliance, and governance transparency. It enables users with curation permissions to view, filter, analyze, and export audit data, helping to track how packages are managed within the organization. Audit data is retained for 30 days and can be accessed manually through the UI or via APIs and webhooks.
 
-### Overview of Curation Audit Sections
+Audit Events are divided into two main sections:
 
-The Curation Audit feature is divided into three main sections:
+* Search Bar
+* Results Table (Blocked, Approved, Dry Run, Passed Packages)
 
-1. **Blocked and Approved Packages**
-2. **Dry Run**
-3. **User Actions**
+### Search Bar
 
-#### Section 1: Blocked and Approved Packages
+The Search Bar allows users to filter and search audit events using:
 
-* This section displays all packages processed through the curation policies.
+* **Package Name**: Enter a package name to locate relevant audit events.
+* **Package Version**: Specify a version to narrow your search results further.
+* **Date Picker**: Adjust the time frame by selecting specific dates or a range of hours.
 
-**Blocked Packages**
+> **Note**: Searches are limited to available audit events. If a package does not appear in the results, it means it was not recorded in the audit and may still exist in the artifact repository.
 
-* Here, you'll find a list of all packages that have been blocked due to policy violations. For each blocked package, you can:
-  * **View Reasons for Blocking** : Get insights into the specific policies that were violated.
-  * **Drill Down for Details** : Click on any blocked package to see an exact explanation of the violation and specific recommendations. This may include links to fixed versions if available.
+### Results Table
 
-**Approved Packages**
+The Results Table is organized into four tabs that display audit results based on package status:
 
-* This list contains packages that successfully passed through the curation process. You may notice:
-  * **Bypass Indicators** : If a package appears as "bypassed", it indicates that the package should have been blocked due to a policy violation but was allowed through because of relaxed conditions. For more information on relaxed conditions, refer to the respective section in your curation settings.
+#### Blocked
 
-#### Section 2: Dry Run
+* Lists packages that have been blocked due to policy violations.
+* Clicking a package name reveals detailed information, including:
+  * **Validated Policies**: Policies that triggered the block.
+  * **Reason for Validation**: Explanation for why the package was blocked.
+  * **Package Information**: Metadata about the package.
+  * **Remediation Recommendations**: Suggested actions for resolution, such as links to fixed versions if available.
 
-* The Dry Run section simulates what would happen if a particular policy were applied without actually blocking any packages. This provides valuable data on:
-  * **Understanding Policy Impact** : You can see which packages would have been blocked if the policy were active.
-  * **No Real Impact on developers**: Note that the Dry Run does not create any real blockage; it merely serves as a predictive tool to help users assess the implications of changes to policies.
+#### Approved
 
-#### Section 3: User Actions
+* Displays packages that successfully passed curation.
+* Some packages may appear as "bypassed," indicating that although they violated a policy, they were allowed through under relaxed conditions.
 
-* This section logs all user interactions within the curation interface, including:
-  * **Changing Policies**
-  * **Removing or Editing Repositories**
-  * **Managing Conditions**
-* This log helps track governance actions taken by users, providing transparency and accountability.
+#### Dry Run
 
-#### Exporting Audit Data
+* Simulates the effect of policies without enforcing them.
+* Helps users:
+  * Assess the potential impact of proposed policy changes.
+  * Identify packages that _would_ have been blocked without disrupting workflows.
+* Dry Run entries are informational only and do not affect actual package availability.
 
-* You can export the data from both the Dry Run and Blocked/Approved Packages sections into a CSV format:
-  1. Locate the **Export** button in the top right corner of the Curation Audit screen.
-  2. Click on it to initiate the export process.
-  3. The export will generate a CSV file containing only the data currently visible on the screen, filtered by any criteria you have applied.
-  4. API and Webhooks are also available and described in the API section.&#x20;
+#### Passed
+
+* Shows packages that went through curation without being inspected by any policies.
+* It's important to monitor this tab, as unvalidated packages could pose risks if they contain unreviewed malicious or vulnerable components.
+
+### Exporting Audit Data
+
+Users can export visible audit data into a CSV file for further analysis or reporting:
+
+* Click the **Export to CSV** button located at the top right of the screen.
+* Only the currently visible, filtered data will be exported.
+
+Exports are available for all sections, including Blocked, Approved, Dry Run, and Passed results.
+
+### API and Webhook Integration
+
+For programmatic access and workflow automation:
+
+* Use the provided **APIs** to retrieve audit data.
+* Implement **webhooks** to listen for audit-related events and integrate updates into your systems.

@@ -4,7 +4,7 @@
 
 To quickly get started with JFrog Xray, ensure you have the following:\
 ✅ **Xray Installed**\
-✅ **"Manage Xray Data" Permission**
+✅ **"Administer Platform" Permission**
 
 ### **Step 1: Add Resources to Xray for Automatic Scanning**
 
@@ -63,12 +63,3 @@ Once your artifact is scanned, you may want to **generate an SBOM report** conta
 * **Export scan results as an SBOM report with VEX**
 
 Now you’re ready to secure your software supply chain with JFrog Xray!
-
-
-
-
-
-
-
-
-

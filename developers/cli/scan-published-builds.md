@@ -39,20 +39,6 @@ Scans build `18` of `my-build-name` using policies defined for `project-1`.
 jf bs my-build-name 18 --project project-1
 ```
 
-**Scan with repository path:**\
-Scans build `18` of `my-build-name` using policies from `libs-release-local/`.
-
-```
-jf bs my-build-name 18 --repo-path libs-release-local/
-```
-
-**Scan with Xray watches:**\
-Scans build `18` using defined Xray watches `watch1` and `watch2`.
-
-```
-jf bs my-build-name 18 --watches watch1,watch2
-```
-
 **Scan showing all vulnerabilities:**\
 Displays all vulnerabilities for build `18`.
 

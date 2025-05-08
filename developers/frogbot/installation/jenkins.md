@@ -12,7 +12,7 @@ In Jenkins, Frogbot automatically scans newly opened pull requests without waiti
       [Read more about the plugin](https://plugins.jenkins.io/generic-webhook-trigger/).
 2.  Set the webhook from your Git to Jenkins:
 
-    **BitBucket**:
+    **Bitbucket**:
 
     1. Go to **Repository settings**, select **Webhooks**, and create a new webhook.
     2. Set the webhook URL with this pattern: `https://[your-jenkins-domain]/generic-webhook-trigger/invoke`.

@@ -45,7 +45,7 @@ JFrog Frogbot is compatible with the following Git providers:
 | GitHub (Cloud and Self-Hosted)      | ✔️        |
 | GitLab (Cloud and Self-Hosted)      | ✔️        |
 | Azure Repos (Cloud and Self-Hosted) | ✔️        |
-| BitBucket                           | ✔️        |
+| Bitbucket Server                    | ✔️        |
 
 #### **Supported CI Systems**
 

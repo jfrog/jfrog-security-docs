@@ -191,6 +191,6 @@
       * [Advanced Configuration](developers/frogbot/configure-frogbot/advanced-configuration/README.md)
         * [The frogbot-config.yml File Structure](developers/frogbot/configure-frogbot/advanced-configuration/the-frogbot-config.yml-file-structure.md)
         * [Frogbot Configuration Parameters (Optional)](developers/frogbot/configure-frogbot/advanced-configuration/frogbot-configuration-parameters-optional.md)
-        * [frogbot-config.yml](developers/frogbot/configure-frogbot/advanced-configuration/frogbot-config.yml.md)
+        * [YAML File](developers/frogbot/configure-frogbot/advanced-configuration/yaml-file.md)
     * [Troubleshooting](developers/frogbot/troubleshooting.md)
   * [Working in Air-Gapped Environments](developers/working-in-air-gapped-environments.md)

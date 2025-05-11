@@ -1,6 +1,6 @@
 # The frogbot-config.yml File Structure
 
-See the complete content and structure of the **frogbot-config.yml** file [here](frogbot-config.yml.md).
+See the complete content and structure of the **frogbot-config.yml** file [here](yaml-file.md).
 
 ### Create The `frogbot-config.yml` File
 

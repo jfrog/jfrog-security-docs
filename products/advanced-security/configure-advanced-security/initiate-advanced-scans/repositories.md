@@ -31,6 +31,10 @@ Advanced Scans apply only to newly added artifacts in the repository and run as 
 
 Triggering one-time advanced scans is useful when you need to perform an immediate, on-demand security analysis of your artifacts, containers, or codebases without waiting for scheduled scans.
 
+{% hint style="info" %}
+Results from one-time scans are kept for 7 days.
+{% endhint %}
+
 1. Navigate to **Administration** > **Xray Settings** > **Indexed Resources**.\
    Alternatively, navigate to **Applications** > **Xray** > **Scans List**.
 2. Select a repository or build and click **Advanced Scans**.\

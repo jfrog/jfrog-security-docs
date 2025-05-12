@@ -29,10 +29,10 @@ If you selected **Security Policy**, configure one of the Rule Types
         * All Severities
       * **By the CVSS Score Range** (0-10)
       * **By specific CVE IDs**
-   2. Enable **Except if a Fix Version is not available** to filter vulnerabilities without fix version
-   3. Enable **Skip not applicable CVEs**to filter vulnerabilities that do not impact your environment. (JAS requiered)
+   2. Enable **Except if a Fix Version is not available** to filter vulnerabilities without a fix version.
+   3. Enable **Skip not applicable CVEs** to filter vulnerabilities that do not impact your environment. (JFrog Advanced Security required)
 2. **SAST**
-   1.
+   1. Detects SAST issues in 1st party source code
 3. **Malicious Packages**
    1. Detects 3rd party packages that the JFrog Security Research team has identified as malicious.
 4. **Exposures**
@@ -42,7 +42,11 @@ If you selected **Security Policy**, configure one of the Rule Types
    2. Type the package name
    3. Select the package versions&#x20;
 
-#### &#x20;**Example Security Rule:** Block downloads of artifacts with Critical CVEs. Fail builds if vulnerabilities have a CVSS score of 9 or higher. Send email notifications for newly discovered High and Critical vulnerabilities.
+#### **Example Security Rules:**
+
+* #### Block downloads of artifacts with Critical CVEs.
+* #### Fail builds if vulnerabilities have a CVSS score of 9 or higher.
+* #### Send email notifications for newly discovered High and Critical vulnerabilities.
 
 ### **License Compliance Policy Rules**
 
@@ -51,7 +55,11 @@ If you selected **License Compliance Policy**, configure the License Rule Type:
 * **Banned Licenses** – Prevents the use of specific licenses (e.g., GPL-3.0).
 * **Allowed Licenses** – Ensures artifacts only use approved licenses.
 
-#### **Example License Compliance Rule:** Notify the use of GPL-3.0 and AGPL in production. Allow only MIT, Apache 2.0, and BSD licenses. Fail builds if a banned license is detected.
+#### **Example License Compliance Rule:**
+
+* #### Notify the use of GPL-3.0 and AGPL in production.
+* #### Allow only MIT, Apache 2.0, and BSD licenses.
+* #### Fail builds if a banned license is detected.
 
 ### **Operational Risk Policy Rules**&#x20;
 
@@ -66,11 +74,12 @@ If you selected **Operational Risk Policy**, configure the Rule Category:
    * **Deprecated Components** – Detects libraries marked as obsolete.
    * **Unmaintained Open-Source Projects** – Flags packages with no updates in over 12 months.
    * **High-Impact Updates** – Identifies major version changes with breaking updates.
-   * **And more**
 
-#### **Example Operational Risk Rule:** Alert developers if a dependency has not been updated in 12+ months. Fail builds if a package is flagged as end-of-life. Block downloads of deprecated components.
+#### **Example Operational Risk Rule:**
 
-
+* #### Alert developers if a dependency has not been updated in 12+ months.
+* #### Fail builds if a package is flagged as end-of-life.
+* #### Block downloads of deprecated components.
 
 ### Set Enforcement Actions
 

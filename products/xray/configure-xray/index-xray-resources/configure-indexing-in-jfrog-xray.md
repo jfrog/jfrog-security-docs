@@ -12,6 +12,10 @@ Repositories must be indexed to allow continuous vulnerability and compliance sc
 2. Select the repositories you want Xray to index.
 3. Click **Save** to start indexing.
 
+{% hint style="info" %}
+Starting from Xray version 3.120.x and above, enable Xray indexing when creating a new repository by default. This is enabled by setting the Xray ​`system.yaml​​` `​server.enableXrayOnNewRepos​` parameter.
+{% endhint %}
+
 ### **Indexing Builds**
 
 Indexing builds ensure that all direct and transitive dependencies used during CI/CD processes are scanned.

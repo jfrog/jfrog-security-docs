@@ -12,5 +12,4 @@ Ensure that either `JF_USER + JF_PASSWORD` or `JF_ACCESS_TOKEN` is set, but not 
 
 #### **Debugging Frogbot Issues**
 
-When sending logs to support, please include the following environment variable to enable detailed logging:\
-&#xNAN;**`JFROG_CLI_LOG_LEVEL=DEBUG`** .
+When sending logs to support, please include the following environment variable to enable detailed logging: **`JFROG_CLI_LOG_LEVEL=DEBUG`** .

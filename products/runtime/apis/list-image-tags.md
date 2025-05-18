@@ -9,12 +9,13 @@
 
 #### Request body
 
-| Name       | Type      | Required/Optional | Description                                                          |
-| ---------- | --------- | ----------------- | -------------------------------------------------------------------- |
-| `limit`    | int       | optional          | Key-based pagination - number of rows per request. Default: 10       |
-| `next_key` | string    | optional          | Id from the previous request, empty on the first request             |
-| `order_by` | string    | optional          | Available options: `name`, `repository_path`, `registry`, `risks`    |
-| `filters`  | filterObj | optional          | Filter the results by the available filters listed in filter\_object |
+| Name       | Type           | Required/Optional | Description                                                                                                |
+| ---------- | -------------- | ----------------- | ---------------------------------------------------------------------------------------------------------- |
+| `limit`    | int            | optional          | Key-based pagination - number of rows per request. Default: 10                                             |
+| `next_key` | string         | optional          | Id from the previous request, empty on the first request                                                   |
+| `order_by` | string         | optional          | Available options: `name`, `repository_path`, `registry`, `risks`                                          |
+| `filters`  | filterObj      | optional          | Filter the results by the available filters listed in filter\_object                                       |
+| `cluster`  | array\[string] | optional          | A list of Kubernetes cluster names or IDs to filter the image tags by the clusters where the image exists. |
 
 **filterObj:**
 

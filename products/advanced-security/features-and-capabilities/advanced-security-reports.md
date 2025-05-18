@@ -8,7 +8,7 @@ The Exposures report identifies where components in your **code and binaries** a
 
 Unlike static vulnerability listings, this report shows where an exposure occurs in the context of your software’s execution, enabling more informed decisions about remediation. It includes severity ratings, impacted components, and evidence of invocation across your artifacts, builds, and release bundles.
 
-Read more about [Reports](../../xray/features-and-capabilities/reports.md) in the JFrog Security platform.
+Read about more [Report](../../xray/features-and-capabilities/reports.md) types in the JFrog Security platform.
 
 The following REST APIs support Advanced Security Reports:
 

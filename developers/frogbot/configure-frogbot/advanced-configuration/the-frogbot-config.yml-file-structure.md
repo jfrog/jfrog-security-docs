@@ -2,6 +2,10 @@
 
 See the complete content and structure of the **frogbot-config.yml** file [here](yaml-file.md).
 
+{% hint style="info" %}
+If your Git repository uses `main` instead of `master` as the default branch, be sure to update the `branches` field in your YAML file accordingly.
+{% endhint %}
+
 ### Create The `frogbot-config.yml` File
 
 #### What is the `frogbot-config.yml` File?

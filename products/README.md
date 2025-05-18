@@ -7,5 +7,5 @@ Here, you'll find documentation for all JFrog security products:&#x20;
 * [Advanced Security](advanced-security/)
 * [Runtime](runtime/)
 * [Catalog](catalog/)
-* [Developers](../developers/)
+* [Developers](../shift-left-on-security/)
 

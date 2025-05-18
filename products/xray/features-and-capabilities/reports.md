@@ -8,6 +8,7 @@ Current supported report types:
 * Legal (Licensing and Copyright)
 * Policy Violations
 * Operational
+* Exposures (Advanced Security customers only)&#x20;
 
 ### Vulnerabilities Report
 

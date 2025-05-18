@@ -95,6 +95,7 @@
       * [Contextual Analysis of CVEs](products/advanced-security/features-and-capabilities/contextual-analysis-of-cves.md)
       * [Secrets Scans](products/advanced-security/features-and-capabilities/secrets-scans.md)
       * [Misconfigurations Scans](products/advanced-security/features-and-capabilities/misconfigurations-scans.md)
+      * [Advanced Security Reports](products/advanced-security/features-and-capabilities/advanced-security-reports.md)
       * [SAST](products/advanced-security/features-and-capabilities/sast/README.md)
         * [Prerequisites](products/advanced-security/features-and-capabilities/sast/prerequisites.md)
         * [List of SAST Rules](products/advanced-security/features-and-capabilities/sast/list-of-sast-rules.md)

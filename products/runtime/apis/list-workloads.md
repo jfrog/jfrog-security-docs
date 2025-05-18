@@ -14,7 +14,7 @@
 
 | Name       | Type      | Required/Optional | Description                                                                              |
 | ---------- | --------- | ----------------- | ---------------------------------------------------------------------------------------- |
-| `limit`    | int       | required          | Key-based pagination - number of rows per request                                        |
+| `limit`    | int       | optional          | Key-based pagination - number of rows per request. Default: 10                           |
 | `next_key` | string    | optional          | Id from the previous request, empty on the first request                                 |
 | `order_by` | string    | optional          | Available options: name, cluster,runtime\_status ,vulnerabilties\_count, registry, risks |
 | `filters`  | filterObj | optional          | Filter the results by the available filters listed in filter\_object                     |

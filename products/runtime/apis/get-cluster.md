@@ -16,10 +16,10 @@
 
 **paginationObj:**
 
-| **Name**   | **Type** | **Description**                                          |
-| ---------- | -------- | -------------------------------------------------------- |
-| `limit`    | int      | Key-based pagination - number of rows per request        |
-| `next_key` | string   | Id from the previous request, empty on the first request |
+| **Name**   | **Type** | **Description**                                                |
+| ---------- | -------- | -------------------------------------------------------------- |
+| `limit`    | int      | Key-based pagination - number of rows per request. Default: 10 |
+| `next_key` | string   | Id from the previous request, empty on the first request       |
 
 **clusterObj:**
 

@@ -1,4 +1,6 @@
-# frogbot-config.yml
+# YAML File
+
+If your Git repository uses `main` instead of `master` as the default branch, be sure to update the `branches` field in your YAML file accordingly.
 
 ```
 # The "params" section includes the configuration of a single Git repository that needs to be scanned.

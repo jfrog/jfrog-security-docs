@@ -42,13 +42,7 @@ Some providers attach metadata to secrets (e.g., AWS includes a **Token ID** wit
 
 Detects structured access tokens in text or binary files. **For example**:
 
-| Platform | Example Token                                                               |
-| -------- | --------------------------------------------------------------------------- |
-| AWS      | `AKIAIOSFODNN7EXAMPLE`                                                      |
-| GitHub   | `gho_16C7e42F292c6912E7710c838347Ae178B4a`                                  |
-| GitLab   | `gplat-234hcand9q289rba89dghqa892agbd89arg2854`                             |
-| npm      | `npm_1234567890abcdefgh`                                                    |
-| Slack    | `xoxp-123234234235-123234234235-123234234235-adedce74748c3844747aed48499bb` |
+<table><thead><tr><th width="374">Platform</th><th>Example Token</th></tr></thead><tbody><tr><td>GitHub</td><td>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</td></tr><tr><td>GitLab</td><td>glpat-cV-J-ZMnAy4Ge6GWqGeX</td></tr><tr><td>npm</td><td>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</td></tr><tr><td>Slack</td><td>xoxp-6654659592213-6680360740176-6657496465043-78439636fa8af05cb14c83a0527a17f5</td></tr></tbody></table>
 
 #### Supported Providers for token validation
 

@@ -10,5 +10,3 @@ As a further resource, we suggest exploring our JFrog Academy courses to learn h
 Also check out this video:
 
 {% embed url="https://www.youtube.com/watch?v=DS11Divs5iQ" %}
-
-&#x20;[https://www.youtube.com/watch?v=DS11Divs5iQ](https://www.youtube.com/watch?v=DS11Divs5iQ)

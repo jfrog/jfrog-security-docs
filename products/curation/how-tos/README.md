@@ -6,7 +6,3 @@ As a further resource, we suggest exploring our JFrog Academy courses to learn h
 
 * [Getting Started with JFrog Curation](https://academy.jfrog.com/getting-started-with-jfrog-curation)
 * [Getting Started with JFrog Curation](https://academy.jfrog.com/getting-started-with-jfrog-curation)
-
-Also check out this video:
-
-{% embed url="https://www.youtube.com/watch?v=DS11Divs5iQ" %}

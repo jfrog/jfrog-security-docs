@@ -69,4 +69,3 @@ Update a vulnerable direct dependency to a fixed version directly from the vulne
 ## Ignore Findings
 
 If **Xray watches** are used, a **closed eye icon** will appear next to a vulnerability line. Clicking on it allows you to create an **Ignore Rule** in Xray.
-

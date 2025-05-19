@@ -13,8 +13,8 @@ See Jfrog Advanced Security supported technologies for:
 
 For SCA, the command automatically detects your project's package manager and constructs the dependency graph; if the project hasn't been installed yet, the system executes an install command to generate the dependency tree for scanning.
 
-### Supported Package Managers for Eclipse:
+### Supported Package Managers for Eclipse
 
-* **Maven**
-* **Gradle**
-* **npm**
+* Maven
+* Gradle
+* npm

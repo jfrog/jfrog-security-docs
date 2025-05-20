@@ -1,6 +1,6 @@
 # Git Repository Configuration
 
-To begin, an initial Frogbot scan must be executed. Scan results can then be viewed under **Xray → Indexed Resources**, where it's also possible to configure Git repository scanners. Configuration settings defined in the Frogbot YAML file and environment variables take precedence over any settings applied through the platform.
+To begin, an initial Frogbot scan must be executed. Scan results can then be viewed under **Xray → Scan Results**, where it's also possible to configure Git repository scanners. Configuration settings defined in the Frogbot YAML file and environment variables take precedence over any settings applied through the platform.
 
 ### Configuring Git Repositories
 

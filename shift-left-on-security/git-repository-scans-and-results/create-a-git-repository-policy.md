@@ -19,7 +19,7 @@ For self-hosted, available from version 3.111 and above.
 
 * **SAST**
 * **CVEs**
-* **Exposures**
+* **Exposures (Secrets only)**
 
 9. From the **Select minimal severity** dropdown, select the severity level to trigger the rule.
 10. Click **Save Rule** to create a new rule.

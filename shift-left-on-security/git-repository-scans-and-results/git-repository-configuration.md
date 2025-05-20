@@ -5,7 +5,7 @@ To begin, an initial Frogbot scan must be executed. Scan results can then be vie
 ### Configuring Git Repositories
 
 1. Navigate to **Administration** > **Xray Settings** > **Indexed Resources**, and select the **Git Repositories** tab.
-2. Select a Git Repository.
+2. Select one or more Git Repositories.
 3. From the actions menu, select **Configure**.\
    The **Scan Configurations** pop-up window opens.
 4. Select one or more types of scans you wish to run:

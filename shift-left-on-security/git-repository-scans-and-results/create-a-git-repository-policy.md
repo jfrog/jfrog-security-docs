@@ -11,7 +11,7 @@ For self-hosted, available from version 3.111 and above.
 3. Enter a **Policy Name** (e.g., "Production Security Policy").
 4. (Optional) Add a **Description** explaining the policy’s purpose.
 5. Choose the **Policy Type**:
-   * **Security Policy** – Detects vulnerabilities in artifacts.
+   * **Security Policy** – Detects vulnerabilities in Git repositories.
 6. Under the Policy Rules List tab, click on **Create New Rule**.\
    The **Create New Policy Rule** window opens.
 7. Enter a **Rule Name**.

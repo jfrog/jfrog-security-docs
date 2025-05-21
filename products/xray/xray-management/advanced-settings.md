@@ -12,12 +12,12 @@ The following advanced configurations are available:
 
 ## Basic Settings
 
-| Field                                                  | Description                                                                                                                                                                                                |
-| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Xray Enabled                                           | Indicates that Xray is enabled on the JFrog Platform and is set by default when Xray is installed.                                                                                                         |
-| Allow download and distribute when Xray is unavailable | Allows downloading artifacts from Artifactory and distributing Release Bundles to Edge Nodes when the Xray service is unavailable.                                                                         |
-| Allow downloads of blocked artifacts                   | Allows downloading all artifacts, including artifacts that have been blocked for download by Xray.                                                                                                         |
-| Block Unscanned Artifacts Download Timeout (Sec)       | <p>The max time a download request will be pending Xray to complete scanning the artifact. <br>Default value: 60 sec<br>Important: Make sure the client you are using has a high socket timeout value.</p> |
+| Field                                                  | Description                                                                                                                        |
+| ------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Xray Enabled                                           | Indicates that Xray is enabled on the JFrog Platform and is set by default when Xray is installed.                                 |
+| Allow download and distribute when Xray is unavailable | Allows downloading artifacts from Artifactory and distributing Release Bundles to Edge Nodes when the Xray service is unavailable. |
+| Allow downloads of blocked artifacts                   | Allows downloading all artifacts, including artifacts that have been blocked for download by Xray.                                 |
+| Block Unscanned Artifacts Download Timeout (Sec)       | <p>The max time a download request will be pending Xray to complete scanning the artifact. <br>Default value: 60 sec</p>           |
 
 ## System Parameters
 

@@ -94,9 +94,10 @@ This method is supported only for Self Managed Jira instances.
     read:issue-details:jira
     read:field.default-value:jira
     read:field.option:jira
+    read:issue-status:jira
     ```
 
-    Note: For Xray versions prior to 3.112.x,  `read:issue-details:jira`, `read:field.default-value:jira` and `read:field.option:jira` are not needed.
+    Note: For Xray versions prior to 3.112.x,  `read:issue-details:jira`, `read:field.default-value:jira`  `read:field.option:jira` and `read:issue-status:jira` are not needed.
 3.  From the Xray Jira wizard, copy the generated Client ID and Secret to the related boxes and click **Next**.
 
     A validation window appears with Jira validation

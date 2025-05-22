@@ -2,16 +2,15 @@
 
 Air-gapped environments are isolated from the public internet. To enable security scanning in such environments, you’ll need to configure a local Artifactory repository that mirrors [https://releases.jfrog.io](https://releases.jfrog.io), and update your tools to use this repository for downloading required components.
 
-### Set Up a Local Releases Repository
+**Before You Begin**
 
-1. In the **JFrog Platform**, go to **Administration > Repositories > Remote**.
-2. Click **Create a remote repository**.
-3. Set the following values:
-   * **Package Type**: _Generic_
-   * **Repository Key**: _e.g., `jfrog-releases-repo`_
-   * **URL**: `https://releases.jfrog.io`
-4. (Optional) Uncheck **Store Artifacts Locally** to save storage space.
-5. Click **Save & Finish**.
+Access the internet and download the necessary files from the following link: [Releases JFrog - Analyzer Manager ](https://releases.jfrog.io/artifactory/xsc-gen-exe-analyzer-manager-local/).
+
+### Create a Dedicated Air-Gapped Artifactory Repository&#x20;
+
+1. In your air-gapped environment, create a local **generic** Artifactory repository to store the required resources.
+2. Upload the downloaded resources to the local generic repository created in step 1.
+3. Set the environment variables in your CLI, IDE, or Frogbot to point to the local generic repository in your air-gapped Artifactory.
 
 ### Configure Tools to Use Your Local Repo
 

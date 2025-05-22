@@ -83,39 +83,21 @@ Example of a valid result:&#x20;
 
 ### **Configuring JFrog Catalog Central for the First Time**
 
-{% hint style="info" %}
-These configuration steps are deprecated, follow the steps [here](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-catalog) for updated installation steps.&#x20;
-{% endhint %}
+Catalog and Curation are interconnected products. Curation relies on the Catalog to access data about package vulnerabilities. Without the Catalog, Curation cannot function. Curation is a component of Xray. Curation is also installed when you install Xray. If you have the necessary Curation entitlement, you can enable it through the UI. Although part of the general Xray installation, the Catalog is installed separately on a SH environment.
 
-This section assumes JFrog Catalog Central service was not yet configured in your JFrog Platform instance.
+* **Prevention at Entry (Curation + Catalog)**: Before any OSS package is introduced into your development pipeline, Curation consults the Catalog to assess its risk profile. This proactive approach ensures that only vetted and approved packages are allowed entry, minimizing the chance of introducing vulnerabilities or non-compliant components.
+* **Continuous Monitoring (Xray)**: Once packages are part of your environment, Xray takes over by continuously scanning them for new vulnerabilities or compliance issues that may arise over time. This ensures that your software remains secure and compliant throughout its lifecycle.
 
-The below configurations should be done in the Xray system.yaml (usually under $JFROG\_HOME/xray/var/etc).  In this configuration step you will be asked to use the Catalog credentials asked at the previous section.
+In essence, Catalog provides the critical data, Curation acts as the initial filter to block risky components from entering your system, and Xray offers ongoing surveillance to detect and address issues in the components you are already using. This integrated approach fortifies your software supply chain, ensuring robust security and compliance from the outset and throughout the development process.
 
-```
-catalog:
-  enabled: true
-  central:
-    enabled: true
-    url: https://jfrogxraycatalog.jfrog.io/xray
-    username: <USERNAME>
-    password: <PASSWORD>
-```
+You can install JFrog Catalog by:
 
-1. Save the Xray system.yaml file
-2. Restart the Xray service
-3. Verify the JFrog Catalog Central is working as expected(Available only in Xray version 3.86.x or later) in URL:https://domain/xray/ui/curation/internal/health.
-4. Whitelist the following services in the firewall
-   * `jes.jfrog.io` JFrog license service
-   * `jcs.jfrog.io` JFrog license service
-   * `https://Jfrogxraycatalog.jfrog.io` JFrog Catalog service
+1. [Interactive Script](https://jfrog.com/help/r/9v7KIKaogmdGkAN6IUp6TA/~F0BuH3KXfi1jqn3PYM2iQ)
+2. [Helm and OpenShift](https://jfrog.com/help/r/9v7KIKaogmdGkAN6IUp6TA/Jz423yj17vl0~SPNAn5LcA)
 
-#### **Have the needed JFrog Catalog Central service credentials at hand**
 
-JFrog Curation is using the JFrog Catalog Central service as a critical component for its package blocking assessment. To be able to communicate with the JFrog Catalog Central service the JFrog platform admin should have a username and password for the instance to be able to communicate with it.
 
-If you do not have these credentials at hand please, contact your JFrog sales representative.
-
-#### **Ensure your JFrog Platform instance is entitled for Curation**
+### **Ensure your JFrog Platform instance is entitled for Curation**
 
 Perform the following steps to check that Curation is available in your JFrog Platform environment:
 

@@ -267,6 +267,7 @@ Example successful response
     "image_tags": [
         {
             "architecture": "arm64",
+            "image_digest": "35c2979c963e316314dee20bd3fadb197166f687567174d8c098a01ea29e96f2",
             "malicious_packages": [
                 {
                     "components": [

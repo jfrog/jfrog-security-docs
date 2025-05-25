@@ -4,7 +4,7 @@
 
 **Prerequisite:** Ensure that the Go CLI is installed and accessible in your system `PATH`.
 
-The JFrog VS Code Extension scans all project dependencies, both direct and transitive, even if they are not explicitly declared in `go.mod`. To construct the Go dependencies tree, it runs `go mod graph` and intersects the results with `go list -f '{{with .Module}}{{.Path}} {{.Version}}{{end}}' all`.
+The JFrog Cursor Extension scans all project dependencies, both direct and transitive, even if they are not explicitly declared in `go.mod`. To construct the Go dependencies tree, it runs `go mod graph` and intersects the results with `go list -f '{{with .Module}}{{.Path}} {{.Version}}{{end}}' all`.
 
 ### Maven Projects
 
@@ -50,13 +50,13 @@ The extension builds the Yarn dependencies tree using `yarn list`, displaying li
 
 ### Pypi Projects
 
-The extension constructs the PyPi dependencies tree using `pipdeptree` your Python virtual environment. It also relies on the Python interpreter path configured in the VS Code Python extension.
+The extension constructs the PyPi dependencies tree using `pipdeptree` your Python virtual environment. It also relies on the Python interpreter path configured in the Cursor Python extension.
 
 **Prerequisites:**
 
-* Install the VS Code Python extension.
+* Install the Cursor Python extension.
 * Ensure Python (2 or 3) is available in your system `PATH`.
-* Set up and activate a virtual environment following VS Code documentation:
+* Set up and activate a virtual environment following Cursor documentation:
   * **Mac/Linux:** `source <venv-dir>/bin/activate`
   * **Windows:** `.<venv-dir>\Scripts\activate`
 * Install your project dependencies within the activated virtual environment.

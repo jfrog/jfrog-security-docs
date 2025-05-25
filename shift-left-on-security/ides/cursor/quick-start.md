@@ -2,11 +2,11 @@
 
 ## **Modes of Operation**
 
-The JFrog VS Code Extension offers two modes: **Local** and **CI**. You can switch between them using the respective buttons next to the components tree.
+The JFrog Cursor Extension offers two modes: **Local** and **CI**. You can switch between them using the respective buttons next to the components tree.
 
 ### **Local View**
 
-* Displays information about the local code as it is being developed in VS Code.
+* Displays information about the local code as it is being developed in VCursor.
 * Enables continuous scanning of your workspace.
 * Shows security vulnerabilities in dependencies and source code before they become part of the final product.
 * To scan your workspace, click the **Scan/Rescan** button in the extension tab or select **Start Xray Scan** from the editor.

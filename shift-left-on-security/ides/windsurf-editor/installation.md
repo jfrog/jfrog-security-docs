@@ -1,8 +1,8 @@
 # Installation
 
-The extension can be installed from the VS Code Extensions Marketplace. Once installed, a JFrog tab will appear in the activity bar.
+The extension can be installed from the Windsurf Editor Extensions Marketplace. Once installed, a JFrog tab will appear in the activity bar.
 
-## **Connect VS Code to the JFrog Platform**
+## **Connect** Windsurf Editor **to the JFrog Platform**
 
 After installing the JFrog extension:
 
@@ -19,7 +19,7 @@ After installing the JFrog extension:
 1. On the sign-in page, click **Continue with SSO**.
 2. Enter your JFrog platform URL and click **Sign in With SSO**.
 3. You will be redirected to your SSO login page.
-4. Once authenticated, you will be signed in to VS Code.
+4. Once authenticated, you will be signed in to Windsurf Editor.
 
 ### **Connect Using JFrog CLI Connection Details**
 

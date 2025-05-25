@@ -46,12 +46,12 @@ If your machine lacks access to `https://releases.jfrog.io`, configure Artifacto
    * **Advanced Tab:**
      * Uncheck **Store Artifacts Locally**.\
        This reduces storage.
-3. In the **JFrog VS Code Extension Settings**, enter the repository key you created.
+3. In the **JFrog Cursor Extension Settings**, enter the repository key you created.
 4. Alternatively, set the `JFROG_IDE_RELEASES_REPO` environment variable with the repository key.
 
 ## **Xray Policies and Watches**
 
-You can configure JFrog VS Code Extension to enforce security policies set in Xray:
+You can configure JFrog Cursor Extension to enforce security policies set in Xray:
 
 ### **Using a JFrog Project**
 

@@ -203,6 +203,17 @@ Example request
 }
 ```
 
+```
+{
+  "filters": {
+    "cluster": [
+      "azprod-aue",
+      "gcprod-use4"
+    ]
+  }
+}
+```
+
 Example successful response
 
 `200 OK`

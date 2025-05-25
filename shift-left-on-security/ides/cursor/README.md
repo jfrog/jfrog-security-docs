@@ -1,0 +1,3 @@
+# Cursor
+
+The JFrog Extension for Cursor seamlessly integrates JFrog Xray and JFrog Advanced Security into the developer workflow, enabling security scanning and remediation directly within the IDE. By identifying vulnerabilities, exposed secrets, and infrastructure misconfigurations as you code, the extension helps developers address security issues before they reach production—reducing risk and remediation costs. Developers gain **inline security insights** with clear contextual information and impact assessments, along with **effortless remediation** through fix recommendations and one-click dependency upgrades.

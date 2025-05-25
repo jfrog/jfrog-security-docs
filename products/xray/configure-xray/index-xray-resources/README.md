@@ -32,10 +32,6 @@ Xray supports indexing at three levels:
 * Xray does not automatically index all resources—you must enable indexing for a specific resource.
 * Indexed repositories allow Xray to scan artifacts as they are uploaded or modified.
 
-{% hint style="info" %}
-Starting from Xray version 3.120.x and above, enable Xray indexing when creating a new repository by default. This is enabled by setting the Xray ​`system.yaml​​` `​server.enableXrayOnNewRepos​` parameter.
-{% endhint %}
-
 #### **2. Narrow Down Scope (Optional)**
 
 #### **2.  Set a Retention Period (Optional)**

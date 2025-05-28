@@ -1,5 +1,12 @@
 # How to Assign Supplier to your resources in SBOM reports
 
+
+
+{% hint style="info" %}
+this capability requires toggling the following feature flag in Xray's `system.yaml`\
+`reports.sbomExportConfigEnabled: true`
+{% endhint %}
+
 1. **Assign Supplier Information**
    *   Assign your supplier name (e.g "Acme Inc") to the following Artifactory property:
 

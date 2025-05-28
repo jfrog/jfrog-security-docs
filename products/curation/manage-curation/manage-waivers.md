@@ -39,7 +39,4 @@ A new section for managing waivers has been added to the platform:
   * Users can audit the system to see detailed logs of who approved or rejected requests and when those actions were taken.
   * Approved waiver is created as a label, which can be reused or reconfigured in the catalog.&#x20;
 
-{% hint style="info" %}
 Waiver management is supported on the JFrog CLI for Curation. For more information, see [here](../../../developers/cli/curation-compliance-check.md#exclude-specific-packages-or-versions-from-policy-restrictions-using-waivers).
-{% endhint %}
-

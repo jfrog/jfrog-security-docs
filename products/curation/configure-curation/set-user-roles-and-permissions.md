@@ -45,5 +45,5 @@ To assign these roles to users within the JFrog Platform:
    * Choose the user to whom you want to assign a role.
    * In the user’s profile, locate the **Roles** section.
    * Click on **Assign Roles**.
-   * From the list of available roles, select either **Curation Admin** or **Curation Developer**, depending on the user's responsibilities.
+   * From the list of available roles, select either **Administer platform** (for all privileges), **Manage policies** (for just policy control), or **Read polices** (for developers), depending on the user's responsibilities.
    * Save the changes to update the user's permissions.

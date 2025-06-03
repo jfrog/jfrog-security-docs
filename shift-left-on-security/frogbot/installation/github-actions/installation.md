@@ -68,7 +68,7 @@ jobs:
         env:
           JF_URL: ${{ secrets.JF_URL }}
           JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
-          JF_GIT_TOKEN: ${{ secrets.JF_GIT_TOKEN }}
+          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           JF_GIT_BASE_BRANCH: ${{ matrix.branch }}    # For repository scan action
 ```
 

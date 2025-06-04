@@ -22,7 +22,7 @@ Use the `jf scan` command to scan files on your local file system with JFrog Xra
 | `--repo-path`   | Optional         | Artifactory repository path for determining violations. Mutually exclusive with `--project` and `--watches`.                                                               |
 | `--watches`     | Optional         | Comma-separated list of Xray watches. Mutually exclusive with `--project` and `--repo-path`.                                                                               |
 | `--licenses`    | Default: `false` | Display license information.                                                                                                                                               |
-| `--format=json` | Optional         | Outputs scan results in JSON format.                                                                                                                                       |
+| `--format=json` | Optional         | Outputs scan results in `json`, `table`, `simple-json`, and `sarif` format.                                                                                                |
 | `--sbom`        | Default: `false` | Displays the Software Bill of Materials (SBOM) for the project when set to true. Only applicable if the `--sca` flag is also used and the output format is set to `table`. |
 | `--vuln`        | Optional         | Display all vulnerabilities, regardless of Xray policy settings.                                                                                                           |
 
@@ -84,7 +84,7 @@ Use `jf docker scan` to scan Docker containers locally using the Docker client a
 | `--watches`          | Optional         | Comma-separated list of Xray watches.                   |
 | `--licenses`         | Default: `false` | Display license information.                            |
 | `--validate-secrets` | Default: `false` | Validate detected secrets.                              |
-| `--format=json`      | Optional         | Outputs scan results in JSON format.                    |
+| `--format=<format>`  | Optional         | Outputs scan results in `json` format.                  |
 | `--vuln`             | Optional         | Show all vulnerabilities.                               |
 
 ### **Arguments**

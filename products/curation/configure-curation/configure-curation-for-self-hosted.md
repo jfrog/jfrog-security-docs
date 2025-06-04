@@ -33,6 +33,8 @@ Indications you will see:
 *   Central Catalog service availability&#x20;
 
     To troubleshoot see: Configuring JFrog Catalog Central for the First Time
+* JFConnect enabled in Artifactory\
+  Make sure JFConnect is enabled in Artifactory, for more details see [JFConnect Microservice](https://jfrog.com/help/r/jfrog-installation-setup-documentation/jfconnect-microservice).
 
 If everything works you could skip the below sections. Your Curation service is ready to go. Otherwise please follow the below sections to add the needed configuration.
 

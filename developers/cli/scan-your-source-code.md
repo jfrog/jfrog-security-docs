@@ -2,6 +2,8 @@
 
 The `jf audit` command enables developers to perform **on-demand security scans** of their source code **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, [SAST](../../products/advanced-security/features-and-capabilities/sast/), [misconfigurations](../../products/advanced-security/features-and-capabilities/misconfigurations-scans.md), and exposed [secrets](../../products/advanced-security/features-and-capabilities/secrets-scans.md). By integrating seamlessly into the developer workflow, it helps catch security risks before code reaches production—reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
 
+However, it's important to note that on-demand scanning is not a best practice for overall code security; it is typically used for specific cases where immediate feedback is needed. For comprehensive security, organizations should implement continuous scanning as part of their CI/CD pipeline, ensuring ongoing monitoring and threat detection throughout the software development lifecycle.
+
 {% hint style="info" %}
 For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
 

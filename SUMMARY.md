@@ -134,6 +134,7 @@
       * [Get Clusters List](products/runtime/apis/get-clusters-list.md)
       * [Get Cluster](products/runtime/apis/get-cluster.md)
       * [List Workloads](products/runtime/apis/list-workloads.md)
+    * [What's New in Runtime](products/runtime/whats-new-in-runtime.md)
   * [Catalog](products/catalog/README.md)
     * [Supported Technologies](products/catalog/supported-technologies.md)
     * [Features and Capabilities](products/catalog/features-and-capabilities.md)

@@ -1,5 +1,11 @@
 # Runtime Impact
 
+### Version 1.2
+
+#### Support in OpenShift
+
+Added [support for OpenShift](../supported-technologies/) containers in Self-Hosted and Cloud environments.
+
 ### Version 1.3
 
 #### Workload Automation Service

@@ -1,5 +1,23 @@
 # Runtime Integrity
 
+### Version 1.2
+
+#### Support in OpenShift
+
+Added [support for OpenShift](../supported-technologies/) containers in Self-Hosted and Cloud environments.
+
+#### New APIs
+
+Introduced a new REST API that retrieves a [list of Workloads](../apis/list-workloads.md).
+
+#### Image tag Investigation Improvement​​
+
+All image-relevant data is now in a single view for a better user experience.
+
+#### Runtime Node Status​​
+
+Added status for nodes running without a sensor in ​Sensor Management​​.
+
 ### Version 1.3
 
 #### Workload Automation Service

@@ -8,7 +8,7 @@ To begin, an initial Frogbot scan must be executed. Scan results can then be vie
 2. Select one or more Git Repositories.
 3. From the actions menu, select **Configure**.\
    The **Scan Configurations** pop-up window opens.
-4. Select one or more types of scans you wish to run:
+4. Select one or more types of scans you wish to run on the selected Git Repositories:
 
 * SCA
 *   Advanced Security:
@@ -23,4 +23,9 @@ To begin, an initial Frogbot scan must be executed. Scan results can then be vie
     (Optional for SAST only: [Exclude Rule](../../products/advanced-security/features-and-capabilities/sast/list-of-sast-rules.md))
 
 5. Click **Apply**.\
-   The list of folders in the Repository you configured opens.
+   The **Folder** table opens, displaying the:&#x20;
+
+* Folder names within the Git repository
+* Number of folders within each folder
+* Last time the folder was scanned
+* Configuration source, which may be the Git repository configuration (**Inherited**) or the folder itself (**custom**).

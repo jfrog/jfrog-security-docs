@@ -23,7 +23,7 @@ Data in the Live Assessment is retained for 10 days before deletion.&#x20;
 | Critical Applicable CVEs | Highlights critical vulnerabilities identified through contextual analysis.  |
 | Integrity Violations     | Flags discrepancies between Artifactory images and running cluster binaries. |
 
-### Inspecting Images in Runtime&#x20;
+### Inspecting Your Images
 
 Gain comprehensive visibility into runtime images by tracing them back to their JFrog Artifactory source, evaluating usage, and identifying security risks. Quickly spot untrusted sources, integrity violations, and critical CVEs, with key details like the highest risk level, total vulnerabilities, and tag-specific insights to prioritize remediation. By detecting discrepancies between Artifactory images and running binaries, you can proactively mitigate risks and strengthen your runtime security.&#x20;
 
@@ -39,7 +39,7 @@ Image information includes a number of associated workloads, cluster and namespa
 
 4\. Click on the desired image tag from the Images tab.&#x20;
 
-### Inspecting Workloads in Runtime&#x20;
+### Inspecting Your Workloads&#x20;
 
 Inspect workloads in your runtime environment with Runtime Live Assessment to monitor active applications, identify security risks, and gain infrastructure-wide insights. Workloads, managed by Kubernetes resources like Deployments, StatefulSets, DaemonSets, or Jobs, consist of containers linked to images and running processes. The Workloads Table highlights risks such as integrity violations, untrusted registries, critical CVEs, and malicious packages, along with total vulnerabilities, workload status, and location details across clusters, nodes, and namespaces to help you quickly detect and address security issues.&#x20;
 
@@ -53,7 +53,7 @@ Inspect workloads in your runtime environment with Runtime Live Assessment to mo
 
 4\. Click on a specific process to see detailed information.&#x20;
 
-### Inspecting Processes in Runtime&#x20;
+### Inspecting Your Processes
 
 Before You Begin:
 
@@ -66,3 +66,13 @@ Process inspection is available only with [Runtime Impact](../#runtime-modes-of-
 3\. Review the Processes Table.&#x20;
 
 4\. (Optional) Apply filters to narrow down processes based on specific criteria.
+
+### Identifying Risk Locations in Runtime by Mapping Vulnerable Images to Clusters and Workloads
+
+1. From the JFrog Platform, under **Runtime**, select **Live Assessment**.&#x20;
+2. Under the **Images** tab, select an image with detected risks.
+3. Select an image **Tag** with detected risks.\
+   The detailed view opens.
+4. To view the risks detected in the workloads running on vulnerable images, select the **Workloads** tab.
+5. To view the risks detected in the clusters containing workloads running on vulnerable images, select the **Clusters** tab.
+

@@ -28,6 +28,7 @@ Learn more about Curation Supported technologies [here](../../products/curation/
   * **Pip:** `jf pipc` inside the project directory.
   * **Go:** `jf goc` inside the project directory.
   * **Nuget**: `jf nugetc` inside the project directory.
+  * **Gradle**: `jf gradlec` inside the project directory.
 
 ### Commands Parameters
 

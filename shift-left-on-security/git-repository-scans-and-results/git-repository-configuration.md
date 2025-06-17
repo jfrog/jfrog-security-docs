@@ -1,11 +1,17 @@
 # Git Repository Configuration
 
-To begin, an initial Frogbot scan must be executed. Scan results can then be viewed under **Xray → Scan Results**, where it's also possible to configure Git repository scanners. Configuration settings defined in the Frogbot YAML file and environment variables take precedence over any settings applied through the platform.
+The Git repository configuration reflects the actual hierarchy in your Source Control Management (SCM) system. It supports inheriting settings for future repositories and folders. When both repositories and folders coexist in the hierarchy, the JFrog Platform represents them using a virtual folder. In this view, all repositories that exist alongside folders at the same level are grouped under “/”. You can configure scanners to scan either SCM and downstream automatically or target custom repositories and folders directly.
+
+#### Before You Begin
+
+An initial [Frogbot ](../frogbot/)scan must be executed.&#x20;
+
+Configuration settings defined in the [Frogbot YAML](../frogbot/configure-frogbot/) file and environment variables take precedence over any settings applied through the platform.
 
 ### Configuring Git Repositories
 
 1. Navigate to **Administration** > **Xray Settings** > **Indexed Resources**, and select the **Git Repositories** tab.
-2. Select one or more Git Repositories.
+2. Select one or more Git Repositories and folders.
 3. From the actions menu, select **Configure**.\
    The **Scan Configurations** pop-up window opens.
 4. Select one or more types of scans you wish to run on the selected Git Repositories:
@@ -23,7 +29,7 @@ To begin, an initial Frogbot scan must be executed. Scan results can then be vie
     (Optional for SAST only: [Exclude Rule](../../products/advanced-security/features-and-capabilities/sast/list-of-sast-rules.md))
 
 5. Click **Apply**.\
-   The **Folder** table opens, displaying the:&#x20;
+   The **Folder** table opens and displays the:&#x20;
 
 * Folder names within the Git repository
 * Number of folders within each folder

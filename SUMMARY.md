@@ -208,6 +208,7 @@
     * [Git Repository Configuration](shift-left-on-security/git-repository-scans-and-results/git-repository-configuration.md)
     * [Create a Git Repository Policy](shift-left-on-security/git-repository-scans-and-results/create-a-git-repository-policy.md)
     * [Create a Git Repository Watch](shift-left-on-security/git-repository-scans-and-results/create-a-git-repository-watch.md)
+    * [View Git Repository Scan Results](shift-left-on-security/git-repository-scans-and-results/view-git-repository-scan-results.md)
     * [Export Scan Results](shift-left-on-security/git-repository-scans-and-results/export-scan-results.md)
   * [Working in Air-Gapped Environments](shift-left-on-security/working-in-air-gapped-environments.md)
 * [Developers](developers/README.md)

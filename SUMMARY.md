@@ -210,6 +210,7 @@
     * [Create a Git Repository Watch](shift-left-on-security/git-repository-scans-and-results/create-a-git-repository-watch.md)
     * [View Git Repository Scan Results](shift-left-on-security/git-repository-scans-and-results/view-git-repository-scan-results.md)
     * [Export Scan Results](shift-left-on-security/git-repository-scans-and-results/export-scan-results.md)
+    * [Ignore Git Repository Violations](shift-left-on-security/git-repository-scans-and-results/ignore-git-repository-violations.md)
   * [Working in Air-Gapped Environments](shift-left-on-security/working-in-air-gapped-environments.md)
 * [Developers](developers/README.md)
   * [CLI](developers/cli/README.md)

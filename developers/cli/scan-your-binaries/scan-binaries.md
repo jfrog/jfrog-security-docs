@@ -1,16 +1,4 @@
-# Scan Your Binaries
-
-The `jf scan` and `jf docker scan` commands enable developers to perform **on-demand security scans** of their binaries **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, and exposed secrets. By integrating seamlessly into the developer workflow, it helps catch security risks of binaries before uploading them into JFrog Artifactory — reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
-
-However, it's important to note that on-demand scanning is not a best practice for overall binary security; it is typically used for specific cases where immediate feedback is needed. For comprehensive security, organizations should implement continuous scanning as part of their CI/CD pipeline, ensuring ongoing monitoring and threat detection throughout the software development lifecycle.
-
-{% hint style="info" %}
-On-demand scan results are retained for seven days before being automatically deleted.
-{% endhint %}
-
-{% hint style="info" %}
-C++ components might not be detected in on-demand scans
-{% endhint %}
+# Scan Binaries
 
 ## Scanning Files on the Local File System
 
@@ -28,7 +16,7 @@ Use the `jf scan` command to scan files on your local file system with JFrog Xra
 | `--repo-path`   | Optional         | Artifactory repository path for determining violations. Mutually exclusive with `--project` and `--watches`.                                                               |
 | `--watches`     | Optional         | Comma-separated list of Xray watches. Supported violations are CVEs and Licenses.  Mutually exclusive with `--project` and `--repo-path`.                                  |
 | `--licenses`    | Default: `false` | Display license information.                                                                                                                                               |
-| `--format=json` | Optional         | Outputs scan results in `json`, `table`, `simple-json`, and `sarif` format.                                                                                                |
+| `--format=json` | Default: `table` | Outputs scan results in `json`, `table`, `simple-json`, and `sarif` format.                                                                                                |
 | `--sbom`        | Default: `false` | Displays the Software Bill of Materials (SBOM) for the project when set to true. Only applicable if the `--sca` flag is also used and the output format is set to `table`. |
 | `--vuln`        | Optional         | Display all vulnerabilities, regardless of Xray policy settings.                                                                                                           |
 

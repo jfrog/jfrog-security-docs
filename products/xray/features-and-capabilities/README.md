@@ -13,7 +13,10 @@ Organizations need to proactively identify vulnerabilities, license compliance, 
 **What it does:**\
 JFrog Xray enables developers to identify and remediate security vulnerabilities **early in the development lifecycle** by integrating directly into IDEs and CLI tools. This **shift-left approach** ensures that security is addressed **before code is committed or built**.
 
-For **developers and DevOps engineers**, JFrog Xray provides CLI-based security scanning through **JFrog CLI**.
+For **developers and DevOps engineers**, JFrog Xray provides on-demand CLI-based security scanning through **JFrog CLI:**
+
+* [Source code scanning](../../../developers/cli/scan-your-source-code.md)
+* [Binary on-demand scanning](../../../developers/cli/scan-your-binaries/)
 
 ### **Deep Recursive Scanning**
 

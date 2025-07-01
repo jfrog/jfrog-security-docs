@@ -4,7 +4,8 @@ JFrog CLI is integrated with JFrog Xray and JFrog Artifactory, allowing you to h
 
 **Command**: `build-scan`, `bs`
 
-The `build-scan` command scans published builds for security vulnerabilities and license compliance issues.
+The `build-scan` command scans published builds for security vulnerabilities and license compliance issues.\
+**Note:** For the `build-scan` command to return meaningful results, the scanned build must be included in the scope of a Watch that is associated with a Policy containing a **Fail Build** action. This requirement applies to all command parameters **except for `--vuln`**, which can return vulnerability data independently of policy evaluation.
 
 ### Commands Parameters
 

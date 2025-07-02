@@ -3,13 +3,7 @@
 This is a step-by-step guide to creating a Git Repository Policy in Xray. To learn more about Policies, click [here](https://jfrog.com/help/r/_SD6R0PIfl9UZ1cNTXRYqw/WI2fDnZnwCEv49GKXl40Pg).
 
 {% hint style="info" %}
-Notifications are not supported for Git Repository policies. This means the following actions are not available:
-
-* Trigger webhook
-* Create Jira ticket
-* Notify watch recipients
-* Notify deployer
-* Notify email
+Notifications are not supported for Git Repository policies. This means the following actions are not available: **Trigger webhook**, **Create Jira ticket**, **Notify watch recipients**, **Notify deployer**, and **Notify email**
 {% endhint %}
 
 {% hint style="info" %}

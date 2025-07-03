@@ -1,6 +1,6 @@
 # Runtime
 
-JFrog **Runtime** delivers deep security and operational insights for Kubernetes environments. Powered by JFrog’s end-to-end security, it ensures that Artifactory remains the single source of truth for binary management. The platform detects vulnerabilities, integrity violations, and untrusted registries in real time, continuously monitoring workloads and containers to help security and DevOps teams mitigate threats. By flagging unauthorized images, it prevents unverified code execution. Seamless integration with JFrog Artifactory and Xray extends security from pre-deployment to live runtime environments.
+JFrog **Runtime** delivers deep security and operational insights for Kubernetes, OpenShift, and Fargate environments. Powered by JFrog’s end-to-end security, it ensures that Artifactory remains the single source of truth for binary management. The platform detects vulnerabilities, integrity violations, and untrusted registries in real time, continuously monitoring workloads and containers to help security and DevOps teams mitigate threats. By flagging unauthorized images, it prevents unverified code execution. Seamless integration with JFrog Artifactory and Xray extends security from pre-deployment to live runtime environments.
 
 ### **Before You Begin**
 

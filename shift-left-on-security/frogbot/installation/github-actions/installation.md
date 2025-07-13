@@ -17,7 +17,7 @@ Step 2: Allow Frogbot to open Pull Requests
 1. In GitHub, navigate to the **Settings** tab.&#x20;
 2. From the main menu, select **Actions** > **General** and check the **Allow GitHub Actions to create and approve pull requests** check box.
 
-Step 3: Create an Execution Environment (Open Source Projects Only)
+Step 3: Create an Execution Environment (Recommended for Open Source Projects Only)
 
 1. In GitHub, navigate to the **Settings** tab.
 2. From the main menu, select **Environments** and click on **New environment**.\
@@ -25,6 +25,7 @@ Step 3: Create an Execution Environment (Open Source Projects Only)
 3. Create a new [GitHub environment](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment#creating-an-environment) named **frogbot.**
 4. Add people or public teams as reviewers. \
    The chosen reviewers can trigger Frogbot scans on pull requests.
+5. If the environment is required for execution, specify it in the relevant job within the CI workflow.
 
 Step 4: Create a GitHub Actions Workflow
 

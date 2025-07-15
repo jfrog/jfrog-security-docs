@@ -21,7 +21,7 @@ Open Source Software (OSS) License Compliance is a crucial aspect of software de
 * The report includes all component identifiers, component versions, license identifiers, and full license text links.
 * Supported formats include PDF, JSON, and CSV
 
-### Coming Soon - Attribution Report
+### Attribution Report
 
 An attribution report is a concise document that outlines the open source components used in a software project, detailing their respective licenses and required attributions for compliance. This report is essential for organizations to fulfill obligations mandated by various OSS licenses, which often require proper credit given to original authors when their software is used, modified, or redistributed. Common examples of these licenses include the MIT License, which requires attribution but has minimal restrictions on usage, and the Apache License 2.0, which allows for modifications and redistribution but requires a separate NOTICE file that provides further acknowledgment and clarifies the use of the licensed components, ensuring compliance with attribution requirements.
 

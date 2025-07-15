@@ -39,6 +39,8 @@
           * [Detect Malicious AI Models](products/xray/features-and-capabilities/sca/security/how-to-detect-malicious-ai-models-using-xray.md)
         * [Legal](products/xray/features-and-capabilities/sca/legal/README.md)
           * [Custom Software Licenses](products/xray/features-and-capabilities/sca/legal/custom-licenses.md)
+          * [License Conclusion](products/xray/features-and-capabilities/sca/legal/license-conclusion.md)
+          * [License Attribution Report](products/xray/features-and-capabilities/sca/legal/license-attribution-report.md)
         * [Operational Risk](products/xray/features-and-capabilities/sca/operational-risk.md)
         * [SBOM](products/xray/features-and-capabilities/sca/sbom/README.md)
           * [SBOM Import](products/xray/features-and-capabilities/sca/sbom/sbom-import.md)

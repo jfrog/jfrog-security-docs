@@ -1,11 +1,11 @@
-# Setup Xray Jira Integration
+# Setup Integration
 
 The setup process for Xray Jira Integration involves four crucial stages that generate tickets based on policy violations: ​ ​ ​&#x20;
 
-* [Connect to a Jira account](setup-xray-jira-integration.md#uuid-80d581ca-426d-171e-0e50-13dc89dd14eb)
-* [Create Profiles​​ to map violations to Jira boards](setup-xray-jira-integration.md#uuid-26445b3a-38d7-7e7e-2122-bedfeba7bf98)
-* [Add Profiles to Watches​​ to define the resources](setup-xray-jira-integration.md#uuid-ffb9e3db-f2dc-6c8a-9624-25e5c111ab07)
-* [Configure Policy rules ​​to activate the ticket creation](setup-xray-jira-integration.md#uuid-2f862932-e821-27e8-9d33-9fe6f3ed9f05)
+* [Connect to a Jira account](setup-integration.md#uuid-80d581ca-426d-171e-0e50-13dc89dd14eb)
+* [Create Profiles​​ to map violations to Jira boards](setup-integration.md#uuid-26445b3a-38d7-7e7e-2122-bedfeba7bf98)
+* [Add Profiles to Watches​​ to define the resources](setup-integration.md#uuid-ffb9e3db-f2dc-6c8a-9624-25e5c111ab07)
+* [Configure Policy rules ​​to activate the ticket creation](setup-integration.md#uuid-2f862932-e821-27e8-9d33-9fe6f3ed9f05)
 
 ### Connect to a Jira Account <a href="#uuid-80d581ca-426d-171e-0e50-13dc89dd14eb" id="uuid-80d581ca-426d-171e-0e50-13dc89dd14eb"></a>
 
@@ -40,20 +40,29 @@ We recommend you use [OAuth](https://developer.atlassian.com/server/jira/platfor
 #### Connect Jira to Xray Using OAuth1 <a href="#id_xrayjiraintegration-connectingjiratoxrayusingoauth1" id="id_xrayjiraintegration-connectingjiratoxrayusingoauth1"></a>
 
 {% hint style="info" %}
-This method is supported only for Self Managed Jira instances.
+This method is supported only for Self Managedd Jira instances.
 {% endhint %}
 
-1.  Create a public key to input in Jira:
+OAuth1 is a two-way authentication process. Please ensure that both the Jira and Xray browser tabs remain open until the setup is complete.
 
-    For more information, see [https://developer.atlassian.com/server/jira/platform/oauth/#create-an-application-link](https://developer.atlassian.com/server/jira/platform/oauth/#create-an-application-link) (Step 1, Create Application link).
-2. Copy your Jira URL into the dedicated box and click **Generate Key**.
-3. In Atlassian: Copy and input the generated Key into your Jira "Link application" - Public Key. Your integration is ready for testing.
-4.  Click **Next**.
+Jira configuration:
 
-    A validation window will open with Jira validation that you need to allow to finish integration. If the window is not showing this message, go back to step 1.
+1. Create Application link in the Jira Atlassian. For more information, see [https://developer.atlassian.com/server/jira/platform/oauth/#create-an-application-link](https://developer.atlassian.com/server/jira/platform/oauth/#create-an-application-link)
+2. Please note down the configured 'Consumer Key' while creating application link to be used later in the Jfrog Xray configuration.
 
-    If the window does not appear, check your pop-up blocker settings, and then again try clicking on the Click here hyperlink shown in a modal window.
-5. After approving the connection, click Test **Integration**. If everything is correct, the **Finish Step** appears. You are advised to click **Next** to complete the Integration by creating a profile.
+JFrog Xray configuration:
+
+1. Create a public key to input in Jira:
+   1. Open Jira integration configuration window (create/edit integration).
+   2. After selecting “Server” as the Installation Type, select “OAuth1” as the Authentication Type, provide an integration name for future reference, and then click on “Next”.
+   3. Provide the “Consumer Key” that was configured in the application link details.
+   4. Please enter the “Jira URL”.
+   5. Click on “Generate” and copy the generated key.
+   6. In Atlassian: Enter the generated Key into your Jira "Link application" - Public Key. Your integration is ready for testing.
+   7. Click Next.
+2. A validation window will open with Jira validation that you need to allow to finish the integration. If the window is not showing this message, go back to step 1.\
+   If the window does not appear, check your pop-up blocker settings, and then again try clicking on the Click here hyperlink shown in a modal window.
+3. After approving the connection, click Test Integration. If everything is correct, the Finish Step appears. You are advised to click Next to complete the Integration by creating a profile.
 
 #### Connect Jira Cloud to Xray using OAuth2 <a href="#id_xrayjiraintegration-connectingjiratoxrayusingoauth2" id="id_xrayjiraintegration-connectingjiratoxrayusingoauth2"></a>
 
@@ -122,7 +131,7 @@ This method is supported only for Self Managed Jira instances.
 
        You will now be taken to the **Credentials** page where the **Client ID** and **Client Secret** will be shown. They will be needed in the next step.
 3. In the JFrog Platform:
-   1. Copy the **Client ID** and **Client Secret** from the previous step and paste them under the Client ID and Secret inputs in Xray. Add the base URL of the Jira instance under the **Jira URL**. Click **Next**.
+   1. Copy the **Client ID** and **Client Secret** from the previous step and paste them under the Client ID and Secret inputs in Xray. Add the base URL of the Jira instance under the **Jira URL**.  Click **Next**.
    2. A window opens asking for approval of the connection. Click **Allow**.
    3. After approving the connection, click **Test Integration**. If everything is correct, the **Finish Step** appears. You are advised to click **Next** to complete the Integration by creating a profile.
 

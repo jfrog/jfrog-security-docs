@@ -1,4 +1,8 @@
-# Ticket Status
+# View Jira Tickets
+
+When tickets are created or assigned, Jira icons appear next to the corresponding violations.
+
+To view detailed information, navigate to the violation details page (right pane) and open the Tickets Info tab to see all associated tickets.
 
 ### Ticket Status
 

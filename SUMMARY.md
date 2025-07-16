@@ -124,6 +124,7 @@
       * [OpenShift SCC](products/runtime/configure-runtime/openshift-scc.md)
       * [Certificate Verification](products/runtime/configure-runtime/certificate-verification.md)
       * [Workload Automation Service](products/runtime/configure-runtime/workload-automation-service.md)
+      * [ECS Task Scanning (Fargate Launch Type Supported)](products/runtime/configure-runtime/ecs-task-scanning-fargate-launch-type-supported.md)
     * [Manage Runtime](products/runtime/manage-runtime.md)
     * [How-Tos](products/runtime/how-tos/README.md)
       * [Inspecting Live Software Components](products/runtime/how-tos/inspecting-live-software-components.md)

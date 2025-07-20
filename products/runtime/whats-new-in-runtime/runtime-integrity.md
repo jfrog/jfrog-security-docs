@@ -34,4 +34,4 @@ Use the Live Assessment view to identify and remediate image-based vulnerabiliti
 
 #### AWS Fargate Support&#x20;
 
-JFrog Runtime now supports [AWS Fargate](../supported-technologies/), enabling serverless container execution without managing infrastructure.
+JFrog Runtime now supports [AWS Fargate](../configure-runtime/ecs-task-scanning-fargate-launch-type-supported.md), enabling serverless container execution without managing infrastructure.

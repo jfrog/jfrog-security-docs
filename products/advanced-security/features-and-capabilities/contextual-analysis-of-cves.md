@@ -40,7 +40,8 @@ This ensures that our clients receive timely and relevant protection against the
 * **Not Covered**: Scanner isn't available.
 * **Technology Unsupported**: The vulnerability’s package type is currently not supported.
 * **Missing Context**: Reachability analysis cannot determine the vulnerability’s applicability due to missing context. Applicability can be determined by scanning the artifact in a Docker repository in the JFrog Platform.
-* **Upgrade Required**: (Self-Hosted only) The Xray version needs to be updated to receive a new scanner for this CVE. Rescan is required after the upgrade.
+* **Upgrade Required**: _(Primarily for Self-Hosted)_ The Xray version needs to be updated to receive a new scanner for this CVE. A rescan is required after the upgrade is complete.\
+  &#xNAN;_(SaaS)_ In rare cases, SaaS customers might see this status before the new scanner version is fully deployed to the environment. No action is required from the customer side—the scanner will operate automatically once the update is available.
 
 #### Vulnerability Contextual Analysis Results
 

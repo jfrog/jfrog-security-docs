@@ -8,7 +8,7 @@ There are several options to obtain the developer count:
 * **Across a project/group**: Analyze multiple repositories organized under a project/group by providing the owner command option.
 * **Across multiple Git servers**: Analyze repositories across various Git servers by providing a YAML file as an input file with the required parameters outlined below.
 
-**Command**: `git count-contributors`, `git cc`
+**Command**: `jf git count-contributors`, `jf git cc`
 
 ## Before You Begin
 
@@ -34,20 +34,19 @@ There are several options to obtain the developer count:
 
 ### **Single Repository**
 
-```
-git cc --scm-type=github --scm-api-url=https://api.github.com --token=<token> --repo-name=repo1
-```
+<pre><code><strong>jf git cc --scm-type=github --scm-api-url=https://api.github.com --token=&#x3C;token> --repo-name=repo1
+</strong></code></pre>
 
 ### **Group/Project Level**
 
 ```
-git cc --scm-type=gitlab --scm-api-url=https://git.vdoo.io --token=<token> --owner=my-group
+jf git cc --scm-type=gitlab --scm-api-url=https://git.vdoo.io --token=<token> --owner=my-group
 ```
 
 ### **Multiple Git Servers (YAML File)**
 
 ```
-git cc --input-file="/Users/path/to/input.yaml"
+jf git cc --input-file="/Users/path/to/input.yaml"
 ```
 
 ### **Sample YAML File**

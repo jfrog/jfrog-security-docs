@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Add Custom Xray Integrations
 
 Xray integrations are configured in the **Administration** module in the **Integrations** page and displays the integrations you have configured and connected to.

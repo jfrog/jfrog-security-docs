@@ -2,7 +2,7 @@
 
 Key configuration tasks required for JFrog Xray:
 
-1. **Database Synchronization**:
+1. **(Self-Hosted) Database Synchronization**:
    * Xray syncs with JFrog’s global vulnerability database.
    * Available in Online (automatic) and Offline (manual sync) modes.
 2.  **Indexing Xray Resources**

@@ -45,23 +45,22 @@ This method is supported only for Self Managedd Jira instances.
 
 OAuth1 is a two-way authentication process. Please ensure that both the Jira and Xray browser tabs remain open until the setup is complete.
 
-Jira configuration:
+1. Jira configuration:
+   1. Create Application link in the Jira Atlassian. For more information, see [https://developer.atlassian.com/server/jira/platform/oauth/#create-an-application-link](https://developer.atlassian.com/server/jira/platform/oauth/#create-an-application-link)
+   2. Please note down the configured 'Consumer Key' while creating application link to be used later in the Jfrog Xray configuration.
+2. JFrog Xray configuration:
+   1. Create a public key to input in Jira:
+      1. Open jira integration configuration window (create/edit integration).
+      2. After selecting “Server” as Installation Type, select “Oauth1” as Authentication Type and provide integration name for future reference and click on “Next”.
+      3. Provide “Consumer Key” which was configured in application link details.
+      4. Please enter the “Jira URL”.
+      5. Skip Proxy (Optional): Select the skip proxy option to bypass global Jfrog proxy settings for the Xray-Jira integration. It is applicable only for self hosted customers.
+      6. Click on “Generate” and copy the generated key.
+      7. In Atlassian: Enter the generated Key into your Jira "Link application" - Public Key. Your integration is ready for testing.
+      8. Click Next.
+   2.  A validation window will open with Jira validation that you need to allow to finish integration. If the window is not showing this message, go back to step 1.
 
-1. Create Application link in the Jira Atlassian. For more information, see [https://developer.atlassian.com/server/jira/platform/oauth/#create-an-application-link](https://developer.atlassian.com/server/jira/platform/oauth/#create-an-application-link)
-2. Please note down the configured 'Consumer Key' while creating application link to be used later in the Jfrog Xray configuration.
-
-JFrog Xray configuration:
-
-1. Create a public key to input in Jira:
-   1. Open Jira integration configuration window (create/edit integration).
-   2. After selecting “Server” as the Installation Type, select “OAuth1” as the Authentication Type, provide an integration name for future reference, and then click on “Next”.
-   3. Provide the “Consumer Key” that was configured in the application link details.
-   4. Please enter the “Jira URL”.
-   5. Click on “Generate” and copy the generated key.
-   6. In Atlassian: Enter the generated Key into your Jira "Link application" - Public Key. Your integration is ready for testing.
-   7. Click Next.
-2. A validation window will open with Jira validation that you need to allow to finish the integration. If the window is not showing this message, go back to step 1.\
-   If the window does not appear, check your pop-up blocker settings, and then again try clicking on the Click here hyperlink shown in a modal window.
+       If the window does not appear, check your pop-up blocker settings, and then again try clicking on the Click here hyperlink shown in a modal window.
 3. After approving the connection, click Test Integration. If everything is correct, the Finish Step appears. You are advised to click Next to complete the Integration by creating a profile.
 
 #### Connect Jira Cloud to Xray using OAuth2 <a href="#id_xrayjiraintegration-connectingjiratoxrayusingoauth2" id="id_xrayjiraintegration-connectingjiratoxrayusingoauth2"></a>
@@ -131,7 +130,7 @@ JFrog Xray configuration:
 
        You will now be taken to the **Credentials** page where the **Client ID** and **Client Secret** will be shown. They will be needed in the next step.
 3. In the JFrog Platform:
-   1. Copy the **Client ID** and **Client Secret** from the previous step and paste them under the Client ID and Secret inputs in Xray. Add the base URL of the Jira instance under the **Jira URL**.  Click **Next**.
+   1. Copy the **Client ID** and **Client Secret** from the previous step and paste them under the Client ID and Secret inputs in Xray. Add the base URL of the Jira instance under the **Jira URL**.  Skip Proxy (Optional): Select the skip proxy option to bypass global JFrog proxy settings for the Xray-Jira integration. It is applicable only for self-hosted customers. Click **Next**.
    2. A window opens asking for approval of the connection. Click **Allow**.
    3. After approving the connection, click **Test Integration**. If everything is correct, the **Finish Step** appears. You are advised to click **Next** to complete the Integration by creating a profile.
 
@@ -145,6 +144,7 @@ JFrog Xray configuration:
    * The created API token
    * Jira URL
    * Your User Name"(email that Jira integration is registered)
+   * Skip Proxy (Optional): Select the skip proxy option to bypass global JFrog proxy settings for the Xray-Jira integration. It is applicable only for self-hosted customers.
 4.  Click **Next**.
 
     You are all set. Continue to the next step, [Profile Creation](https://about/document/preview/642388#UUID-26445b3a-38d7-7e7e-2122-bedfeba7bf98).

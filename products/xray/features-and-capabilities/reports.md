@@ -12,7 +12,19 @@ Current supported report types:
 
 ### Vulnerabilities Report
 
-The Vulnerabilities report provides information about vulnerabilities in your artifacts, builds, and release bundles. In addition to the information provided in the JFrog Platform on each of these entities, the report gives you a wider range of information such as vulnerabilities in multiple repositories, builds and release bundles. Criteria such as vulnerable component, CVE, cvss score, and severity are available in the report. You can define the information you want to see by defining a scope and advanced filters that provide you with a flexible vulnerabilities report, that is available both through the JFrog Platform and REST API.
+The Vulnerabilities Report provides deep visibility into security issues across your software supply chain, including artifacts, builds, and release bundles. It supplements the vulnerability data shown in individual entity views with a centralized, flexible reporting tool.
+
+The report is created using a guided wizard that lets you define the report scope—including repositories, builds, release bundles, and projects—and apply advanced filters such as vulnerability applicability or production environment status.
+
+Key capabilities include:
+
+* **Report scheduling** (daily, weekly, monthly)
+* **Report sharing** via email
+* **Interactive dashboards** that highlight vulnerability trends by severity and applicability, along with a top 10 vulnerabilities widget
+* **Detailed table views** with search, sort, and filter options
+* **Vulnerability drill-downs** with remediation guidance and contextual metadata
+
+Reports can be accessed from the JFrog Platform UI or retrieved using the REST API.
 
 ### Legal Report
 

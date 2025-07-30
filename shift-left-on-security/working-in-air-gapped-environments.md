@@ -23,7 +23,7 @@ Use the appropriate **environment variable** depending on the tool:
 1.  Define a JPD and server ID using:
 
     ```bash
-    bashCopyEditjf c add <server-id>
+    jf c add <server-id>
     ```
 2.  Set the environment variable `JFROG_CLI_RELEASES_REPO` using the following format:
 
@@ -37,7 +37,7 @@ Use the appropriate **environment variable** depending on the tool:
     And you configure the server ID as `skycloud`, and the remote repository is `jfrog-release-remote`, then:
 
     ```bash
-    bashCopyEditexport JFROG_CLI_RELEASES_REPO=skycloud/jfrog-release-remote
+    JFROG_CLI_RELEASES_REPO=skycloud/jfrog-release-remote
     ```
 
 #### Frogbot
@@ -46,7 +46,7 @@ Use the appropriate **environment variable** depending on the tool:
 2.  Set the `JF_RELEASES_REPO` environment variable with the **remote repository name only**:
 
     ```bash
-    bashCopyEditexport JF_RELEASES_REPO=jfrog-release-remote
+    JF_RELEASES_REPO=jfrog-release-remote
     ```
 
 #### IDE
@@ -56,5 +56,5 @@ Use the appropriate **environment variable** depending on the tool:
     or provide the environment variable:
 
     ```bash
-    bashCopyEditexport JFROG_IDE_RELEASES_REPO=jfrog-release-remote
+    JFROG_IDE_RELEASES_REPO=jfrog-release-remote
     ```

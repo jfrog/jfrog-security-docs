@@ -26,7 +26,7 @@ curl -s -u<user:password> -H 'Content-Type: application/json' 'https://<instance
 
 Before you get started with the migration, please note the following:
 
-1. **It is recommended that during migration the number of nodes** [**be reduced to 1**](https://jfrog.com/help/access?ft:clusterId=UUID-0a9fdb2f-b403-bb07-25f9-035735263fc3)**.**
+1. **It is recommended that during migration the number of nodes be** [**reduced to 1**](https://jfrog.com/help/r/jfrog-installation-setup-documentation/xray-ha-upgrade)**.**
 2. Initiate the DBSync v3 migration during **off-peak hours**, such as weekends or holidays, to ensure the system is not under heavy load.
 3. The migration process takes approximately **2 to 4 hours** to complete.
 4. Xray remains fully operational during the migration, with no downtime.

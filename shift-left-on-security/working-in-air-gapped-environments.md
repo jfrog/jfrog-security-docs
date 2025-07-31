@@ -4,7 +4,7 @@ Air-gapped environments are isolated from the public internet. To enable securit
 
 **Before You Begin**
 
-Access the internet and download the necessary files from the following link: [Releases JFrog - Analyzer Manager ](https://releases.jfrog.io/artifactory/xsc-gen-exe-analyzer-manager-local/).
+Access the internet and download the necessary files from the following link: [Releases JFrog - Analyzer Manager](https://releases.jfrog.io/artifactory/xsc-gen-exe-analyzer-manager-local/).
 
 ### Create a Dedicated Air-Gapped Artifactory Repository&#x20;
 
@@ -18,17 +18,17 @@ After setting up the repository, you must configure your tools to pull all requi
 
 Use the appropriate **environment variable** depending on the tool:
 
-#### CLI
+**CLI**
 
 1.  Define a JPD and server ID using:
 
-    ```bash
+    ```
     jf c add <server-id>
     ```
 2.  Set the environment variable `JFROG_CLI_RELEASES_REPO` using the following format:
 
     ```
-    php-templateCopyEdit<ServerID>/<RemoteRepo>
+    <server-id>/<remote-repo>
     ```
 
     **Example**:\
@@ -36,25 +36,25 @@ Use the appropriate **environment variable** depending on the tool:
     `https://artifactory-dev.us-east-1.d70888.aws.skycloud.gs/`\
     And you configure the server ID as `skycloud`, and the remote repository is `jfrog-release-remote`, then:
 
-    ```bash
+    ```
     JFROG_CLI_RELEASES_REPO=skycloud/jfrog-release-remote
     ```
 
-#### Frogbot
+**Frogbot**
 
 1. Set the standard Frogbot environment variables (e.g., `JF_URL`, `JF_ACCESS_TOKEN`, etc.) to connect to your JPD.
 2.  Set the `JF_RELEASES_REPO` environment variable with the **remote repository name only**:
 
-    ```bash
+    ```
     JF_RELEASES_REPO=jfrog-release-remote
     ```
 
-#### IDE
+**IDE**
 
 1. The connected JPD will be used as the server.
 2.  In the extension settings, set the `External Resources Repository` field to your repository name,\
     or provide the environment variable:
 
-    ```bash
+    ```
     JFROG_IDE_RELEASES_REPO=jfrog-release-remote
     ```

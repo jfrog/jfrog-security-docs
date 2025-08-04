@@ -8,6 +8,8 @@ For SCA, the command automatically detects the package manager used by your proj
 If the project hasn’t been installed yet, the system will execute an install command to generate the dependency tree for scanning.
 
 On-demand scan results are retained for seven days before being automatically deleted.
+
+By default, the environment variable `ENABLE_CUSTOM_SECRETS_SCANNER` is set to `true`, enabling [custom secrets scanning](../../products/advanced-security/configure-advanced-security/initiate-advanced-scans/custom-secrets-scanner.md) automatically as part of the audit.
 {% endhint %}
 
 ### Command Options

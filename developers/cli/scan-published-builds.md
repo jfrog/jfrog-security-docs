@@ -14,7 +14,7 @@ The `build-scan` command scans published builds for security vulnerabilities and
 | `--server-id` | Optional         | Server ID configured by the `jf c add` command. If not specified, the default configured server is used.                  |
 | `--vuln`      | Optional         | Set if you'd like to receive all vulnerabilities, regardless of the policy configured in Xray.                            |
 | `--fail`      | Default: true    | If fail build violations are found, it will return exit code of `3`. Set to `false` to see violations with exit code `0`. |
-| `--format`    | Default: table   | Defines the output format of the command. Accepted values: `table` and `json`.                                            |
+| `--format`    | Default: table   | Defines the output format of the command. Accepted values: `table`, `cyclonedx`, and `json`.                              |
 | `--project`   | Optional         | JFrog project key.                                                                                                        |
 | `--rescan`    | Default: false   | Set to true when scanning an already successfully scanned build, e.g., after adding an ignore rule.                       |
 

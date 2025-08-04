@@ -1,4 +1,4 @@
-# Xray <--> JFrog External DB Sync
+# Xray and JFrog External DB Sync
 
 To provide accurate and up-to-date vulnerability intelligence, JFrog Xray continuously synchronizes with its JFrog global security database. This database contains:
 
@@ -27,6 +27,8 @@ By default, Xray operates in Online Mode, where it automatically fetches securit
 * Xray checks for updates periodically.
 * The database is incrementally updated, ensuring minimal performance impact.
 * No user intervention is required—Xray stays continuously up to date.
+
+Refer to [JFrog Security External Resources](https://jfrog.com/help/r/jfrog-installation-setup-documentation/allowlisted-urls-and-air-gapped-environment-considerations) for the list of URLs that must be whitelisted
 
 ### **Offline Mode: Manual Synchronization**
 

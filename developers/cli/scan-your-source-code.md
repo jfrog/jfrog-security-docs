@@ -10,6 +10,8 @@ If the project hasn’t been installed yet, the system will execute an install c
 On-demand scan results are retained for seven days before being automatically deleted.
 
 By default, the environment variable `ENABLE_CUSTOM_SECRETS_SCANNER` is set to `true`, enabling [custom secrets scanning](../../products/advanced-security/configure-advanced-security/initiate-advanced-scans/custom-secrets-scanner.md) automatically as part of the audit.
+
+The grace period setting in the "fail build" policy is not applied during `​jf docker scan`​​ (on-demand Docker image scanning), resulting in the build failing immediately despite the configured grace period.
 {% endhint %}
 
 ### Command Options

@@ -11,6 +11,7 @@ In addition, Frogbot can automatically remediate CVEs by creating Pull Requests 
 * Infrastructure as Code (IaC) scanning
 * Static Application Security Testing (SAST)
 * Ability to fail the Pull Request job in case of security violations
+* Ability to scan full repositories
 * Presentation of the security results in [Xray Scans List](../../products/xray/features-and-capabilities/sca/understanding-and-analyzing-xray-scan-results/)
 
 Integrating Frogbot into your development lifecycle allows you to proactively enforce security policies, thereby protecting your project from the outset. While Frogbot plays a critical role in maintaining security at the repository level, it is advisable for developers to also [scan their code within their IDEs](../ides/) before committing changes. This complementary approach enables teams to identify and address vulnerabilities early, leading to a more robust security posture.

@@ -11,7 +11,11 @@ It performs comprehensive checks for:
 * **Secrets exposure**
 * **CVE Contextual Analysis**
 
-When new vulnerabilities are found in pull requests, Frogbot comments with detailed alerts and can even open pull requests with suggested fixes for SCA issues. This automates remediation, ensuring your dependencies remain secure and compliant.
+When new vulnerabilities are found in pull requests, Frogbot comments with detailed alerts. In addition, Frogbot can automatically open pull requests with suggested fixes for vulnerable dependencies (autofix), helping you remediate issues with minimal manual effort.
+
+{% hint style="info" %}
+**Note:** Autofix pull requests are only created during full repository scans—not during pull request scans.
+{% endhint %}
 
 By integrating Frogbot into your development workflow, you can enforce security policies from the start.
 

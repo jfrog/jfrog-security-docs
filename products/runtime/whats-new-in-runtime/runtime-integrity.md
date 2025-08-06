@@ -35,3 +35,7 @@ Use the Live Assessment view to identify and remediate image-based vulnerabiliti
 #### AWS Fargate Support&#x20;
 
 JFrog Runtime now supports [AWS Fargate](../configure-runtime/ecs-task-scanning-fargate-launch-type-supported.md), enabling serverless container execution without managing infrastructure.
+
+#### Installation options for non-gRPC environments
+
+Added support for configuring the Runtime Service with alternative ingress controllers and REST fallback, along with improved sensor [installation options for non-gRPC environments](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-jfrog-runtime-security) and self-signed certificates.

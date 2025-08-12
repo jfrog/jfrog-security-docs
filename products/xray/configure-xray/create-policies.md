@@ -15,6 +15,10 @@ This is a Step-by-Step Guide to Creating a Policy in Xray. To learn more about P
 8. Select an existing Watch.
 9. Click **Save & Apply**.
 
+{% hint style="info" %}
+Ant-Pattern style is supported
+{% endhint %}
+
 ### **Security Policy Rules**
 
 If you selected **Security Policy**, configure one of the Rule Types

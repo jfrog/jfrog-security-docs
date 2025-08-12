@@ -32,7 +32,7 @@ This ensures that our clients receive timely and relevant protection against the
 
 #### Vulnerability Contextual Analysis Statuses
 
-* **Not Scanned**: Initial state—the scan wasn't invoked for the CVE or in case of unsupported technology.
+* **Not Scanned**: Initial state—the scan wasn't invoked for the CVE.
 * **Applicable**: The vulnerability can be exploited in the context of the scanned code or artifact.
 * **Not Applicable**: The vulnerability cannot be exploited in the context of the scanned code or artifact.
 * **Undetermined:** The applicability cannot be determined by static analysis (e.g. the exploitation requires user interaction).

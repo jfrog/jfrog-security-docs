@@ -4,7 +4,7 @@ Attribution reports prerequisites:
 
 1. Catalog service is required for self-hosted instances -[ catalog installation guide](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-catalog)
 2. Set feature flag `sbom.retrieveCopyrightsFromCatalog: "true"` in Xray  `system.yaml`&#x20;
-3. Supported for REST API only: [Legal Attribution Report](license-attribution-report.md)
+3. Supported for REST API only: [Legal Attribution Report](https://jfrog.com/help/r/xray-rest-apis/license-attribution-report)
 
 The **License Attribution Report** (Starting from Xray version 3.124.x and above) is a compliance-focused document that lists all open-source components bundled in a specific artifact or release along with their respective license obligations and attribution requirements. It is designed to help organizations meet the legal obligations associated with using third-party open-source software.&#x20;
 

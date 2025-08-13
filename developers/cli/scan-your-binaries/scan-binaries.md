@@ -8,17 +8,18 @@ Use the `jf scan` command to scan files on your local file system with JFrog Xra
 
 ### Commands Parameters
 
-| Parameter       | Optional/Default | Description                                                                                                                                                                |
-| --------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--server-id`   | Optional         | Server ID configured using `jf c add`. Defaults to the configured server if not specified.                                                                                 |
-| `--spec`        | Optional         | Path to a file specifying files to scan. Cannot be used with the `pattern` argument.                                                                                       |
-| `--project`     | Optional         | JFrog project key for security violations. Mutually exclusive with `--repo-path` and `--watches`.                                                                          |
-| `--repo-path`   | Optional         | Artifactory repository path for determining violations. Mutually exclusive with `--project` and `--watches`.                                                               |
-| `--watches`     | Optional         | Comma-separated list of Xray watches. Supported violations are CVEs, Operational Risks, and Licenses.  Mutually exclusive with `--project` and `--repo-path`.              |
-| `--licenses`    | Default: `false` | Display license information.                                                                                                                                               |
-| `--format=json` | Default: `table` | Outputs scan results in `json`, `table`, `simple-json`, `cyclonedx`,and `sarif` format.                                                                                    |
-| `--sbom`        | Default: `false` | Displays the Software Bill of Materials (SBOM) for the project when set to true. Only applicable if the `--sca` flag is also used and the output format is set to `table`. |
-| `--vuln`        | Optional         | Display all vulnerabilities, regardless of Xray policy settings.                                                                                                           |
+| Parameter        | Optional/Default | Description                                                                                                                                                                |
+| ---------------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--server-id`    | Optional         | Server ID configured using `jf c add`. Defaults to the configured server if not specified.                                                                                 |
+| `--spec`         | Optional         | Path to a file specifying files to scan. Cannot be used with the `pattern` argument.                                                                                       |
+| `--project`      | Optional         | JFrog project key for security violations. Mutually exclusive with `--repo-path` and `--watches`.                                                                          |
+| `--repo-path`    | Optional         | Artifactory repository path for determining violations. Mutually exclusive with `--project` and `--watches`.                                                               |
+| `--insecure-tls` | Default: `false` | Set to true to skip TLS certificates verification.                                                                                                                         |
+| `--watches`      | Optional         | Comma-separated list of Xray watches. Supported violations are CVEs, Operational Risks, and Licenses.  Mutually exclusive with `--project` and `--repo-path`.              |
+| `--licenses`     | Default: `false` | Display license information.                                                                                                                                               |
+| `--format=json`  | Default: `table` | Outputs scan results in `json`, `table`, `simple-json`, `cyclonedx`,and `sarif` format.                                                                                    |
+| `--sbom`         | Default: `false` | Displays the Software Bill of Materials (SBOM) for the project when set to true. Only applicable if the `--sca` flag is also used and the output format is set to `table`. |
+| `--vuln`         | Optional         | Display all vulnerabilities, regardless of Xray policy settings.                                                                                                           |
 
 ### **Arguments**
 
@@ -75,6 +76,7 @@ Use `jf docker scan` to scan Docker containers locally using the Docker client a
 | `--server-id`        | Optional         | Configured server ID.                                                                                                                                                      |
 | `--project`          | Optional         | JFrog project key for security violations.                                                                                                                                 |
 | `--repo-path`        | Optional         | Artifactory repository path for determining violations.                                                                                                                    |
+| `--insecure-tls`     | Default: `false` | Set to true to skip TLS certificates verification.                                                                                                                         |
 | `--watches`          | Optional         | Comma-separated list of Xray watches.                                                                                                                                      |
 | `--licenses`         | Default: `false` | Display license information.                                                                                                                                               |
 | `--validate-secrets` | Default: `false` | Validate detected secrets.                                                                                                                                                 |

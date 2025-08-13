@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Count Contributing Developers
 
 The `git count-contributors` command in JFrog CLI allows users to easily determine the number of Git developers contributing to their code. This is based on unique email addresses from commit history, providing an accurate count of individual contributors.

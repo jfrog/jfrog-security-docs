@@ -220,7 +220,6 @@
   * [CLI](developers/cli/README.md)
     * [Platform Maintenance](developers/cli/platform-maintenance/README.md)
       * [Download Updates for Xray's Vulnerability Database](developers/cli/platform-maintenance/download-updates-for-xrays-vulnerability-database.md)
-      * [Count Contributing Developers](developers/cli/platform-maintenance/count-contributing-developers.md)
     * [Scan Your Source Code](developers/cli/scan-your-source-code.md)
     * [Scan Your Binaries](developers/cli/scan-your-binaries/README.md)
       * [Scan Binaries](developers/cli/scan-your-binaries/scan-binaries.md)

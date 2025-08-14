@@ -68,8 +68,8 @@ Each package manager and build tool may have unique prerequisites.
 
 #### Ruby
 
-| Requirement           | Details                                                                                         |
-| --------------------- | ----------------------------------------------------------------------------------------------- |
-| **Requirements**      | Ruby `2.6.0` must be installed.                                                                 |
-| **Lock File**         | The `Gemfile.lock` file must be present.                                                        |
-| **Environment Setup** | Ensure `bundle` is installed and run `bundle lock` to verify dependencies are locked correctly. |
+| Requirement           | Details                                                                 |
+| --------------------- | ----------------------------------------------------------------------- |
+| **Requirements**      | Ruby `2.6.0` or higher must be installed (includes Bundler by default). |
+| **Lock File**         | The `Gemfile.lock` file must be present.                                |
+| **Environment Setup** | Run `bundle lock` to verify dependencies are locked correctly.          |

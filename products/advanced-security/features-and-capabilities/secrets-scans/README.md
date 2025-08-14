@@ -2,6 +2,8 @@
 
 JFrog Advanced Security helps prevent the accidental exposure of secrets such as API keys, passwords, and tokens through its comprehensive secrets detection and token validation capabilities. By scanning both source code and binary artifacts, it ensures sensitive data is never exposed to unauthorized users, making it a powerful secrets prevention solution.
 
+Learn how to create a [Custom Secrets Scanner](custom-secrets-scanner.md)
+
 For developers and security experts, secrets detection is integrated into your IDE, CLI, Frogbot, and the JFrog Platform, providing real-time feedback to identify and address exposed secrets across the development pipeline.
 
 ### Supported Secret Types

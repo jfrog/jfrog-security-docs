@@ -1,6 +1,6 @@
 # Scan Your Source Code
 
-The `jf audit` command enables developers to perform **on-demand security scans** of their source code **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, [SAST](../../products/advanced-security/features-and-capabilities/sast/), [misconfigurations](../../products/advanced-security/features-and-capabilities/misconfigurations-scans.md), and exposed [secrets](../../products/advanced-security/features-and-capabilities/secrets-scans.md). By integrating seamlessly into the developer workflow, it helps catch security risks before code reaches production—reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
+The `jf audit` command enables developers to perform **on-demand security scans** of their source code **directly from their terminal**, ensuring early detection of CVEs, licenses, operational risk, [SAST](../../products/advanced-security/features-and-capabilities/sast/), [misconfigurations](../../products/advanced-security/features-and-capabilities/misconfigurations-scans.md), and exposed [secrets](../../products/advanced-security/features-and-capabilities/secrets-scans/). By integrating seamlessly into the developer workflow, it helps catch security risks before code reaches production—reducing remediation costs and enhancing software integrity. The scan results are displayed in the terminal for immediate feedback and are also available in the **JFrog Platform’s On-Demand Scans pane**, providing centralized visibility.
 
 {% hint style="info" %}
 For SCA, the command automatically detects the package manager used by your project and uses it to construct the dependency graph.
@@ -9,7 +9,7 @@ If the project hasn’t been installed yet, the system will execute an install c
 
 On-demand scan results are retained for seven days before being automatically deleted.
 
-By default, the environment variable `ENABLE_CUSTOM_SECRETS_SCANNER` is set to `true`, enabling [custom secrets scanning](../../products/advanced-security/configure-advanced-security/initiate-advanced-scans/custom-secrets-scanner.md) automatically as part of the audit.
+By default, the environment variable `ENABLE_CUSTOM_SECRETS_SCANNER` is set to `true`, enabling [custom secrets scanning](../../products/advanced-security/features-and-capabilities/secrets-scans/custom-secrets-scanner.md) automatically as part of the audit.
 
 The grace period setting in the "fail build" policy is not applied during `​jf docker scan`​​ (on-demand Docker image scanning), resulting in the build failing immediately despite the configured grace period.
 {% endhint %}

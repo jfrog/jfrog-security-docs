@@ -6,7 +6,7 @@ See Jfrog Advanced Security supported technologies for:
 
 * [SAST](../../../products/advanced-security/features-and-capabilities/sast/)
 * [Contextual Analysis ](../../../products/advanced-security/features-and-capabilities/contextual-analysis-of-cves.md)
-* [Secrets](../../../products/advanced-security/features-and-capabilities/secrets-scans.md)
+* [Secrets](../../../products/advanced-security/features-and-capabilities/secrets-scans/)
 * [IaC](../../../products/advanced-security/features-and-capabilities/misconfigurations-scans.md)
 
 ### Software Composition Analysis (SCA) Supported Technologies

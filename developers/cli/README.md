@@ -6,6 +6,6 @@ JFrog CLI is a powerful and efficient command-line tool designed to interact sea
 
 It is essential that you:
 
-* [Download](https://jfrog.com/getcli/) and [install](https://app.gitbook.com/s/HtpcI8sApaH537Ph5QxY/jfrog-applications/jfrog-cli/install#installation) the JFrog CLI&#x20;
+* [Download and install](https://app.gitbook.com/s/HtpcI8sApaH537Ph5QxY/jfrog-applications/jfrog-cli/install) the JFrog CLI&#x20;
 * [Authenticate](https://app.gitbook.com/s/HtpcI8sApaH537Ph5QxY/jfrog-applications/jfrog-cli/authentication)
 * Meet the [system requirements](../../shift-left-on-security/)

@@ -9,5 +9,5 @@ On-demand scan results are retained for seven days before being automatically de
 {% endhint %}
 
 {% hint style="info" %}
-C++ components might not be detected in on-demand scans
+On-demand scans may not detect certain components, such as C++ libraries or ELF files (e.g., `.so` files and compiled binaries), since these are not included in the CLI (`indexer-app`) analysis.
 {% endhint %}

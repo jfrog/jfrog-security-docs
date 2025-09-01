@@ -15,7 +15,7 @@ Notifications set here will be triggered on any package blocked/approved event i
 1. In the **Administration** tab, select **Curation > General**:
    * **Email Package Requester on Blocked Events**: Sends a violation notification by email to the authenticated developer who attempted to download a package in violation of the policy. (This option does not support curated remote repositories that allow anonymous access.)
    * **Email Package Requester on Dry Run Events**: Sends a dry run violation notification every hour by email to the authenticated developer who attempted to download a package in violation of the policy. (Aggregated email every 60 min)
-   * **Notify the Email List Regarding Blocked/Dry Run EvAggregatedents**: Sends an email daily at 8:00 local time for dry runs and blocked packages.to additional addresses that you define, for example, your security officer. &#x20;
+   * **Notify the Email List Regarding Blocked/Dry Run Aggregated Events**: Sends an email daily at 8:00 local time for dry runs and blocked packages.to additional addresses that you define, for example, your security officer. &#x20;
    * **Notify the email list regarding disconnected repositories**: Sends an email when a repository is disconnected from Curation.&#x20;
 
 **Step 3: Configure Webhooks:**

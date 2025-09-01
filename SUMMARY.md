@@ -196,6 +196,7 @@
     * [Features and Capabilities](shift-left-on-security/frogbot/features-and-capabilities.md)
     * [Installation](shift-left-on-security/frogbot/installation/README.md)
       * [GitHub Actions](shift-left-on-security/frogbot/installation/github-actions/README.md)
+        * [Integrate Frogbot with the JFrog GitHub App](shift-left-on-security/frogbot/installation/github-actions/integrate-frogbot-with-the-jfrog-github-app.md)
         * [Installation](shift-left-on-security/frogbot/installation/github-actions/installation.md)
         * [OpenID Connect Authentication](shift-left-on-security/frogbot/installation/github-actions/openid-connect-authentication.md)
       * [GitLab CI](shift-left-on-security/frogbot/installation/gitlab-ci.md)

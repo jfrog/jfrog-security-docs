@@ -13,8 +13,9 @@ General configuration tasks required for JFrog Curation.
 Notifications set here will be triggered on any package blocked/approved event in the system and will result in an email sent to the defined email addresses or the package requester's email. Note that one package blocked event might be due to one or multiple violated policies.
 
 1. In the **Administration** tab, select **Curation > General**:
-   * **Notify Requester**: Sends a violation notification by email to the authenticated developer who attempted to download a package in violation of the policy. (This option does not support curated remote repositories that allow anonymous access.)
-   * **Notify by Email**: Sends an email to additional addresses that you define, for example, your security officer.
+   * **Email Package Requester on Blocked Events**: Sends a violation notification by email to the authenticated developer who attempted to download a package in violation of the policy. (This option does not support curated remote repositories that allow anonymous access.)
+   * **Email Package Requester on Dry Run Events**: Sends a dry run violation notification every hour by email to the authenticated developer who attempted to download a package in violation of the policy. (Aggregated email every 60 min)
+   * **Notify the Email List Regarding Blocked/Dry Run EvAggregatedents**: Sends an email daily at 8:00 local time for dry runs and blocked packages.to additional addresses that you define, for example, your security officer. &#x20;
    * **Notify the email list regarding disconnected repositories**: Sends an email when a repository is disconnected from Curation.&#x20;
 
 **Step 3: Configure Webhooks:**

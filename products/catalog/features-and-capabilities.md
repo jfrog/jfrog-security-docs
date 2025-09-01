@@ -18,7 +18,8 @@ JFrog Catalog provides security, compliance, and operational risk analysis throu
   * **Graph View** – A visual dependency tree showing risk propagation.
 * **Licensing Information**:
   * Displays OSS license requirements for compliance.
-  * Helps legal teams assess software usage risks.
+  * Helps legal teams assess software usage risks.&#x20;
+  * Submit a review request for missing or incorrect package licenses directly from the Catalog UI. The JFrog research team validates the license, updates the Catalog, and notifies the user once the review is complete.
 * **OpenSSF Score**:
   * Evaluates open-source project security risks.
   * Enables informed decisions on accepting dependencies.

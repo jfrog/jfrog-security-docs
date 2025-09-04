@@ -16,7 +16,7 @@ All image-relevant data is now in a single view for a better user experience.
 
 #### Runtime Node Status​​
 
-Added status for nodes running without a sensor in ​Sensor Management​​.
+Added status for nodes running without a sensor in ​Cluster Management​​.
 
 ### Version 1.3
 

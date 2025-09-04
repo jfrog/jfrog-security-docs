@@ -2,7 +2,7 @@
 
 ## Sensors
 
-The Runtime Sensor Management enables users to install Runtime Sensors on their clusters, view the clusters that have been installed, and access detailed information about the clusters, nodes, and sensors that monitor them. This capability also provides users with the health status of their sensors and allows them to determine if their environment is being monitored correctly and easily. To access Sensor Management, navigate to the "Sensor Management" section under the "Runtime" menu.
+The Runtime Cluster Management enables users to install Runtime Sensors on their clusters, view the clusters that have been installed, and access detailed information about the clusters, nodes, and sensors that monitor them. This capability also provides users with the health status of their sensors and allows them to determine if their environment is being monitored correctly and easily. To access Cluster Management, navigate to the "Cluster Management" section under the "Runtime" menu.
 
 ### Enabling and Disabling Runtime Sensors
 
@@ -18,15 +18,15 @@ Sensors are deployed as a DaemonSet and installed by default on each cluster’s
 
 ### View Cluster Status
 
-The Runtime Sensor Management **Cluster Inventory** allows you to view the status of clusters monitored by JFrog Runtime.
+The Runtime Cluster Management **Cluster Inventory** allows you to view the status of clusters monitored by JFrog Runtime.
 
-1. Navigate to the **Sensor Management** section under the **Runtime** menu.
+1. Navigate to the **Cluster Management** section under the **Runtime** menu.
 2. Once the Controller has been installed, view the list displaying the monitored clusters and their status.
 3. Use this information to track cluster health and proactively address any potential issues.
 
 ### Inspect Cluster
 
-The Cluster Detailed View in the Runtime Sensor Management offers in-depth insights into the selected cluster and its monitored nodes, enabling you to track sensor health and swiftly detect potential infrastructure issues..
+The Cluster Detailed View in the Runtime Cluster Management offers in-depth insights into the selected cluster and its monitored nodes, enabling you to track sensor health and swiftly detect potential infrastructure issues..
 
 1. Click on a cluster in the **Cluster Inventory** pane.
 2.  View detailed information, including the list of nodes running under the cluster and their corresponding Runtime Sensor statuses.

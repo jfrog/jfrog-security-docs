@@ -1,4 +1,4 @@
-# Frogbot Configuration Parameters (Optional)
+# Frogbot Optional Configuration Parameters
 
 This page lists the optional configuration parameters for Frogbot that users can reference to customize their scans and fix actions. Each parameter is described along with its default value (if applicable) and usage guidance and can be set as an environment variable before executing Frogbot.
 
@@ -30,3 +30,5 @@ This page lists the optional configuration parameters for Frogbot that users can
 | `JF_AVOID_PREVIOUS_PR_COMMENTS_DELETION` | If set to `"true"`, retains old comments on pull requests from previous scans when adding new comments.                                                                         | `"false"`                                                    | <p><br></p> | ✔️          |
 | `JF_REQUIREMENTS_FILE`                   | Relative path to a Pip `requirements.txt` file. If not set, dependencies are determined using the `setup.py` file.                                                              | `"true"`                                                     | ✔️          | ✔️          |
 | `JF_USE_WRAPPER`                         | Use Gradle wrapper for builds.                                                                                                                                                  | `“true”`                                                     | ✔️          | ✔️          |
+| `JF_UPLOAD_SBOM_TO_VCS`                  | <p>Publish SBOM dependencies to GitHub Insights Dependency Graph. <br>The Dependency Graph must be enabled for the GitHub repository.</p>                                       | `“true”`                                                     | ✔️          |             |
+

@@ -17,6 +17,10 @@ It is essential that you have:
 * JFrog CLI 2.60.0
 * One of the following supported git providers: GitHub, GitLab, Bitbucket
 
+{% hint style="info" %}
+The `git count-contributors` command does not use JFrog Artifactory data. Counts are based only on Git commit history, so some repositories and developers included may not interact with JFrog products
+{% endhint %}
+
 ### Command Parameters
 
 | Option               | Required | Default | Description                                                    | Example                                |

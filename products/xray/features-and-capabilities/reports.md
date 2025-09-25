@@ -1,6 +1,6 @@
 # Xray Reports
 
-Xray reports allows you to generate an aggregarted view of JFrog Security products findings and results.
+Xray reports allow you to generate an aggregated view of JFrog Security products' findings and results.
 
 Current supported report types:
 

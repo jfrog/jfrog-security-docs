@@ -18,3 +18,13 @@ It is essential that you:
 * Secrets Detection and Token Validation
 * Infrastructure as Code (IaC) Scanning
 * Static Application Security Testing (SAST)
+
+### Choosing Between JFrog Extension and JFrog SAST MCP
+
+#### Use JFrog Extension
+
+Use JFrog extension if you want the full security experience—including **SCA, Secrets, IaC**, **Contextual Analysis**, and **SAST** and have the ability to view all findings, rerun scans, and get a richer UI. This setup is recommended for ongoing, in-depth use.
+
+#### Use JFrog SAST MCP
+
+Use JFrog SAST MCP if you're looking for a quick and simple experience focused only on **SAST** findings, and already have your IDE AI assistant installed. This approach requires MCP setup.

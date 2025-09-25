@@ -1,5 +1,9 @@
 # IDEs
 
+{% hint style="info" %}
+Local SAST _MCP is available with the Unified Security Bundle or the Ultimate Security Bundle_
+{% endhint %}
+
 This section provides documentation on integrating JFrog Security with popular IDEs. By embedding security analysis directly into the development workflow, developers can identify vulnerabilities, misconfigurations, and exposed secrets in real time. The guides cover installation, setup, and how to leverage JFrog's advanced security features for seamless, in-editor security scanning and remediation.
 
 ### Before You Begin

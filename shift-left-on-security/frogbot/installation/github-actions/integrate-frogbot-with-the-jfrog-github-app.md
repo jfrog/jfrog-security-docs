@@ -13,15 +13,15 @@ This integration is supported only for repositories under a GitHub Organization.
 
 ### Integration
 
-1. Navigate to Administration > Xray Settings > Indexed Resources, and open the Git Repositories tab.
-2. Select Add Git Repositories and choose how to integrate Frogbot with your repositories:
+1. Navigate to **Administration** > **Xray Settings** > **Indexed Resources**, and open the **Git Repositories** tab.
+2. Select **Add Git Repositories** and choose how to integrate Frogbot with your repositories:
 
 * **Automatic Integration**\
   Use the JFrog GitHub App to automatically configure Frogbot with GitHub Actions.
 * **Manual Integration**\
   Prefer to set things up yourself? Follow the Frogbot documentation for detailed instructions.
 
-3. Under the Select GitHub Repositories tab, choose the repositories you want Frogbot to integrate with and scan.\
+3. Under the Select **GitHub Repositories** tab, choose the repositories you want Frogbot to integrate with and scan.\
    JFrog will handle the setup automatically, including:
 
 * Opening a pull request in each selected repository with the Frogbot workflow YAML file.
@@ -32,8 +32,8 @@ This integration is supported only for repositories under a GitHub Organization.
 * If enabled, the workflow file will be merged automatically once the pull request is created.
 * If disabled, you will need to manually review and approve each pull request before Frogbot becomes active in the repository.
 
-5. Select Integrate Frogbot to begin the integration process.
-6. The View Pull Requests tab opens.\
+5. To begin the integration process, select **Integrate Frogbot**.
+6. The **View Pull Requests** tab opens.\
    Here, you can:
 
 * See whether each pull request was successfully merged or failed.

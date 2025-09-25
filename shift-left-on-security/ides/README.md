@@ -27,4 +27,4 @@ Use JFrog extension if you want the full security experience—including **SCA, 
 
 #### Use JFrog SAST MCP
 
-Use JFrog SAST MCP if you're looking for a quick and simple experience focused only on **SAST** findings, and already have your IDE AI assistant installed. This approach requires MCP setup.
+Use [JFrog SAST MCP](local-sast-mcp/) if you're looking for a quick and simple experience focused only on **SAST** findings, and already have your IDE AI assistant installed. This approach requires MCP setup.

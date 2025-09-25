@@ -4,7 +4,8 @@ This procedure guides you through integrating JFrog Frogbot with your GitHub rep
 
 ### Before You Begin
 
-Make sure the [JFrog GitHub App](https://jfrog.com/help/r/jfrog-platform-administration-documentation/integration-with-github) is installed
+* Make sure the [JFrog GitHub App](https://jfrog.com/help/r/jfrog-platform-administration-documentation/integration-with-github) is installed
+* Supported for Xray version 3.128.3 and above
 
 {% hint style="info" %}
 This integration is supported only for repositories under a GitHub Organization. Personal repositories under individual user accounts are not supported

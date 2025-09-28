@@ -50,8 +50,6 @@ The above scanners are used in conjunction to build a "maliciousness score" auto
 
 Currently, JFrog's malicious package scanners continuously scan public software repositories (see below) and do not run on packages uploaded to an Xray instance.
 
-An "On-Demand Scanning" capability is scheduled to be introduced to Xray in 2025, which will allow scanning for malicious code in arbitrary packages that are uploaded to Xray, without needing to upload these packages to any public repository.
-
 ### Supported Software Repositories <a href="#id-22u1iua6uj12" id="id-22u1iua6uj12"></a>
 
 JFrog currently supports alerting on malicious package usage from the following public repositories -

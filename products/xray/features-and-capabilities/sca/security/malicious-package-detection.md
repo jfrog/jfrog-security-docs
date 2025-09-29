@@ -46,10 +46,6 @@ In addition, scanners exist that identify malicious packages via the following m
 
 The above scanners are used in conjunction to build a "maliciousness score" automatically for each new public package.
 
-### Can Xray detect malicious code in packages not uploaded to public software repositories? <a href="#w1c2kvh32d3y" id="w1c2kvh32d3y"></a>
-
-Currently, JFrog's malicious package scanners continuously scan public software repositories (see below) and do not run on packages uploaded to an Xray instance.
-
 ### Supported Software Repositories <a href="#id-22u1iua6uj12" id="id-22u1iua6uj12"></a>
 
 JFrog currently supports alerting on malicious package usage from the following public repositories -

@@ -26,13 +26,17 @@ The Results Table is organized into four tabs that display audit results based o
 * Lists packages that have been blocked due to policy violations.
 * Clicking a package name reveals detailed information, including:
   * **Validated Policies**: Policies that triggered the block.
-  * **Reason for Validation**: Explanation for why the package was blocked.
+  * **Reason for Validation**: Explanation for why the package was blocked.&#x20;
+    * Package was blocked due to policy violation.&#x20;
+    * Package Pending Catalog Event: A package has not yet been cataloged, typically because developers have pulled the latest versions of the package. This can lead to a temporary state where the package is not immediately available for use within the organization's catalog. \
+      SLA for packages pending cataloging is up to four hours. Typically, these events generate updates in the Catalog database within two to three hours. \
+      To learn more about resolutions and recommended actions for this scenario, see [How to Manage “Package Pending Catalog” Events in JFrog Curation](../how-tos/how-to-manage-package-pending-catalog-events-in-jfrog-curation.md).
   * **Package Information**: Metadata about the package.
   * **Remediation Recommendations**: Suggested actions for resolution, such as links to fixed versions if available.
 
 #### Approved
 
-* Displays packages that successfully passed curation.
+* Displays packages that have been successfully inspected by Curation policies.
 * Some packages may appear as "bypassed," indicating that although they violated a policy, they were allowed through under relaxed conditions.
 
 #### Dry Run

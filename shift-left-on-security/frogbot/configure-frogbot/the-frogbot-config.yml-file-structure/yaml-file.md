@@ -77,7 +77,7 @@ If your Git repository uses `main` instead of `master` as the default branch, be
       projects:
       # [Mandatory if the two conditions below are met]
       # 1. The project uses yarn 2, NuGet or .NET Core to download its dependencies
-      # 2. The `installCommand` variable isn't set in your frogbot-config.yml file.
+      # 2. The - `installCommand` variable isn't set in your frogbot-config.yml file.
       #
       # The command that installs the project dependencies (e.g "nuget restore")
       # - installCommand: ""

@@ -114,7 +114,7 @@ paginationObj:
 | `name`         | string | Component name                                                                                     |
 | `version`      | string | Component version                                                                                  |
 
-**Response codes:**
+**Response Codes:**
 
 | Status code | Description                               |
 | ----------- | ----------------------------------------- |

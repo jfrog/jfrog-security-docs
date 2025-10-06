@@ -141,6 +141,8 @@
       * [Get Clusters List](products/runtime/apis/get-clusters-list.md)
       * [Get Cluster](products/runtime/apis/get-cluster.md)
       * [List Workloads](products/runtime/apis/list-workloads.md)
+      * [Get Registration Token](products/runtime/apis/get-registration-token.md)
+      * [Revoke and Create Registration Token](products/runtime/apis/revoke-and-create-registration-token.md)
     * [What's New in Runtime](products/runtime/whats-new-in-runtime/README.md)
       * [Runtime Integrity](products/runtime/whats-new-in-runtime/runtime-integrity.md)
       * [Runtime Impact](products/runtime/whats-new-in-runtime/runtime-impact.md)

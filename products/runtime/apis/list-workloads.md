@@ -10,6 +10,13 @@
 
 **Produces:** `application/json`
 
+\
+**Query Parameters**:
+
+|              |        |          |                                                                                |
+| ------------ | ------ | -------- | ------------------------------------------------------------------------------ |
+| `projectKey` | string | Optional | When included the REST API response as if executed from the scope of a project |
+
 #### Request body <a href="#d928slqmiyka" id="d928slqmiyka"></a>
 
 | Name       | Type      | Required/Optional | Description                                                                              |

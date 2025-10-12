@@ -7,6 +7,12 @@
 **Consumes:** `application/json`\
 **Produces:** `application/json`
 
+**Query Parameters**:
+
+|              |        |          |                                                                                |
+| ------------ | ------ | -------- | ------------------------------------------------------------------------------ |
+| `projectKey` | string | Optional | When included the REST API response as if executed from the scope of a project |
+
 #### Request body
 
 | Name       | Type           | Required/Optional | Description                                                                                                |

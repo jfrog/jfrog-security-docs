@@ -9,7 +9,7 @@ For developers and security experts, secrets detection is integrated into your I
 ### Supported Secret Types
 
 * **Access Tokens (Keys)**: Detects structured access tokens in both text and binary files, such as API keys, OAuth tokens, and private tokens.&#x20;
-  * **Token Validation** enhances secret detection by verifying the validity of detected tokens and distinguishing between active and inactive tokens by authenticating against the token provider.
+  * **Token Validation** (supports public SaaS endpoints only, e.g., `github.com`, `gitlab.com`) enhances secret detection by verifying the validity of detected tokens and distinguishing between active and inactive tokens by authenticating against the token provider.
 * **Certificate & Private Key Detection**: Identifies issues in X.509 PEM and DER certificates, including:
   * Certificates containing private keys
   * Expired certificates

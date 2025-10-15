@@ -9,7 +9,7 @@ For developers and security experts, secrets detection is integrated into your I
 ### Supported Secret Types
 
 * **Access Tokens (Keys)**: Detects structured access tokens in both text and binary files, such as API keys, OAuth tokens, and private tokens.&#x20;
-  * **Token Validation** (supports public SaaS endpoints only, e.g., `github.com`, `gitlab.com`) enhances secret detection by verifying the validity of detected tokens and distinguishing between active and inactive tokens by authenticating against the token provider.
+  * **Token Validation** enhances secret detection by verifying the validity of detected tokens and distinguishing between active and inactive tokens by authenticating against the token provider.
 * **Certificate & Private Key Detection**: Identifies issues in X.509 PEM and DER certificates, including:
   * Certificates containing private keys
   * Expired certificates
@@ -20,6 +20,10 @@ For developers and security experts, secrets detection is integrated into your I
 ### Token Validation
 
 Enable **Token Validation** to verify the validity of detected tokens, distinguishing between active and inactive tokens by authenticating against the token provider.
+
+{% hint style="info" %}
+Token Validation currently supports public SaaS endpoints only (e.g., `github.com`, `gitlab.com`). Self-hosted or custom-domain instances (e.g., `github.mycompany.com`, `gitlab.mycompany.com`) are not validated.
+{% endhint %}
 
 * Available through both the **JFrog Platform** and **Xray’s REST API**.
 * To enable in the **JFrog Platform**:

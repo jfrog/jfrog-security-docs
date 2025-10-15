@@ -18,10 +18,10 @@ The following REST APIs support Contextual Analysis:
 
 * [Get Contextual Analysis per Vulnerability](https://jfrog.com/help/access?ft:clusterId=UUID-00e06ac2-7e82-93d5-a26a-cc03a574e418)
 * [Artifact Summary](https://jfrog.com/help/access?ft:clusterId=UUID-9014965c-7895-9083-e723-0490dd12fe5f)
-* [Build Summary](https://jfrog.com/help/access?ft:clusterId=UUID-ef0d5caf-dbb3-59a4-5a96-16aabb944c87)
+* [Build Summary](https://jfrog.com/help/r/xray-rest-apis/build-summary)
 * [Get Violations](https://jfrog.com/help/r/xray-rest-apis/get-violations)
-* [List Ignored Violations](https://jfrog.com/help/access?ft:clusterId=UUID-f0ddd0eb-aef8-fbbb-2ff2-516caf185704)
-* [Scan Build V1](https://jfrog.com/help/access?ft:clusterId=UUID-d15877af-6a8b-6d0d-52c0-bf6970c20106)
+* [List Ignored Violations](https://jfrog.com/help/r/xray-rest-apis/list-ignored-violations)
+* [Scan Build V1](https://jfrog.com/help/r/xray-rest-apis/scan-build-v1)
 * [Get Repositories Configurations](https://jfrog.com/help/access?ft:clusterId=UUID-087c285b-3fb9-b97a-4a94-227c98ceae78)
 * [Update Repositories Configurations](https://jfrog.com/help/access?ft:clusterId=UUID-dfc289b8-5668-ed3d-c054-0c71a1a30b08)
 

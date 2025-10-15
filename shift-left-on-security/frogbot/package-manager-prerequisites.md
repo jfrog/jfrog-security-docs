@@ -65,11 +65,3 @@ Each package manager and build tool may have unique prerequisites.
 | **Other Dependency Files** | Files such as `packages.config` or  `*.csproj` should be present and correctly configured. |
 | **Lock File**              | Various files assist in tracking dependencies; specific files ensure completeness.         |
 | **Environment Setup**      | Run `dotnet restore` to confirm that all NuGet dependencies are resolved correctly.        |
-
-#### Ruby
-
-| Requirement           | Details                                                                 |
-| --------------------- | ----------------------------------------------------------------------- |
-| **Requirements**      | Ruby `2.6.0` or higher must be installed (includes Bundler by default). |
-| **Lock File**         | The `Gemfile.lock` file must be present.                                |
-| **Environment Setup** | Run `bundle lock` to verify dependencies are locked correctly.          |

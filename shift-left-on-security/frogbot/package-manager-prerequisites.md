@@ -1,7 +1,5 @@
 # Package Manager Prerequisites
 
-### Before You Begin
-
 Frogbot relies on the presence of package manager executables and proper configuration to accurately scan and secure your repositories.
 
 ### SCA Requirements

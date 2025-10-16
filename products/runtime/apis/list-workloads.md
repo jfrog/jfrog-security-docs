@@ -2,7 +2,7 @@
 
 **Description:** List of Workloads
 
-**Security:**&#x20;
+**Security:** Requires a valid user with a "Read" permission
 
 **Usage:** `POST /runtime/api/v1/workloads`
 
@@ -17,7 +17,7 @@
 | ------------ | ------ | -------- | ------------------------------------------------------------------------------ |
 | `projectKey` | string | Optional | When included the REST API response as if executed from the scope of a project |
 
-#### Request body <a href="#d928slqmiyka" id="d928slqmiyka"></a>
+**Request Body:**
 
 | Name       | Type      | Required/Optional | Description                                                                              |
 | ---------- | --------- | ----------------- | ---------------------------------------------------------------------------------------- |

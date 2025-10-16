@@ -32,9 +32,17 @@ The Legal report provides you with a list of components and artifacts and their 
 
 ### Violations Report
 
-> Violations report requires Artifactory version 7.10.6 and above.
+The Violations Report provides deep visibility into policy violations issues across your software supply chain, including artifacts, builds, and release bundles,. It supplements the policy violations data shown in individual entity views with a centralized, flexible reporting tool.\
+The report is created using a guided wizard that lets you define the report scope—including repositories, builds, release bundles, and projects—and apply advanced filters such as CVEs violations, applicability or production environment status.\
+Key capabilities include:\
 
-The Violations report provides you with information on security and license violations for each component in the selected scope. Violations information includes information such as type of violation, impacted artifacts, and severity. You can define the information you want to see by defining a scope and advanced filters that provide you with a flexible violations report, that is available both through the JFrog Platform and REST API.
+
+* Report scheduling (daily, weekly, monthly)
+* Report sharing via email
+* Interactive dashboards that highlight policy violations per type, severity and applicability, along with a top 10 CVEs violations widget
+* Detailed table
+
+Reports can be accessed from the JFrog Platform UI or retrieved using the REST API.
 
 ### Operational Risk Report
 

@@ -60,7 +60,7 @@ Command: `jf audit` (alias: `jf aud`)
 
 ### Working in Air-Gapped Environments?
 
-Follow the [Working in Air-Gapped Environments](scan-your-source-code.md#working-in-air-gapped-environments) procedure.
+Follow the [Working in Air-Gapped Environments](../../shift-left-on-security/working-in-air-gapped-environments.md) procedure.
 
 #### Examples
 

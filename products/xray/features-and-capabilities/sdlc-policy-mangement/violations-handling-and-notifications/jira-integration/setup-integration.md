@@ -7,6 +7,8 @@ The setup process for Xray Jira Integration involves four crucial stages that ge
 * [Add Profiles to Watches​​ to define the resources](setup-integration.md#uuid-ffb9e3db-f2dc-6c8a-9624-25e5c111ab07)
 * [Configure Policy rules ​​to activate the ticket creation](setup-integration.md#uuid-2f862932-e821-27e8-9d33-9fe6f3ed9f05)
 
+The Jira Integration setup is also supported through REST API for more information, see [https://jfrog.com/help/r/xray-rest-apis/jira-integration](https://jfrog.com/help/r/xray-rest-apis/jira-integration).
+
 ### Connect to a Jira Account <a href="#uuid-80d581ca-426d-171e-0e50-13dc89dd14eb" id="uuid-80d581ca-426d-171e-0e50-13dc89dd14eb"></a>
 
 Connect Jira to Xray through the Xray interface using one of the supported authentication methods. Navigate to **Administration > Xray > Settings > Integration**

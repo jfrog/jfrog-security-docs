@@ -58,46 +58,111 @@ Below are supported providers and whether they support **Token Validation**:
 | ------------------- | ------------------------ |
 | Adobe               | Yes                      |
 | Age File Encryption | No                       |
+| Aiven               | No                       |
 | Alibaba             | Yes                      |
+| Anthropic           | No                       |
 | Artifactory         | No                       |
+| Asana               | No                       |
+| Atlassian           | No                       |
+| Authress            | No                       |
 | AWS                 | Yes                      |
 | Azure               | Yes                      |
+| Beamer              | No                       |
+| Bitbucket           | No                       |
+| Bitrise             | No                       |
+| Block Protocol      | No                       |
+| Brevo               | No                       |
+| Buildkite           | No                       |
+| CFX Re              | No                       |
+| Chief Tools         | No                       |
+| CircleCI            | No                       |
 | Clojars             | No                       |
 | Cloudflare          | No                       |
+| CockroachDB         | No                       |
 | Contentful          | Yes                      |
+| Coveo               | No                       |
+| Crates.io           | No                       |
 | Databricks          | No                       |
+| Databento           | No                       |
+| DataStax            | No                       |
+| Datadog             | No                       |
+| Defined Networking  | No                       |
+| DevCycle            | No                       |
 | DigitalOcean        | Yes                      |
+| Discord             | No                       |
+| Docker              | No                       |
 | Doppler             | Yes                      |
 | Dropbox             | Yes                      |
 | Duffel              | Yes                      |
 | Dynatrace           | No                       |
+| EasyPost            | No                       |
+| eBay                | No                       |
 | Elastic             | No                       |
+| Facebook            | No                       |
 | Fastly              | Yes                      |
+| Figma               | No                       |
+| Firebase            | No                       |
 | Finicity            | No                       |
 | Flutterwave         | Yes                      |
+| Frame.io            | No                       |
 | GitHub              | Yes                      |
 | GitLab              | Yes                      |
+| GoCardless          | No                       |
 | Google              | Yes                      |
+| Grafana Cloud       | No                       |
+| Groq                | No                       |
+| Hashicorp Vault     | No                       |
 | Heroku              | Yes                      |
+| Highnote            | No                       |
 | Hubspot             | No                       |
+| Hugging Face        | No                       |
+| IBM Cloud           | No                       |
 | Intercom            | No                       |
+| Ionic               | No                       |
+| Iterative           | No                       |
 | Jenkins             | No                       |
+| LaunchDarkly        | No                       |
 | Linear              | Yes                      |
+| LinkedIn            | No                       |
+| Lob                 | No                       |
+| LocalStack          | No                       |
 | Mailchimp           | Yes                      |
+| Mailchimp Mandrill  | No                       |
+| Mailersend          | No                       |
 | Mailgun             | Yes                      |
 | Mapbox              | Yes                      |
+| MaxMind             | No                       |
+| Mergify             | No                       |
 | Messagebird         | No                       |
+| Midtrans            | No                       |
+| MongoDB             | No                       |
+| Neon                | No                       |
 | New Relic           | No                       |
+| Notion              | No                       |
 | npm                 | Yes                      |
 | NuGet               | No                       |
+| Octopus Deploy      | No                       |
+| Oculus              | No                       |
 | Okta                | No                       |
+| OpenAI              | No                       |
+| OpenRouter          | No                       |
+| PagerDuty           | No                       |
+| Pangea              | No                       |
 | PayPal              | Yes                      |
 | Planetscale         | No                       |
+| Plivo               | No                       |
 | Postman             | Yes                      |
 | Postmark            | Yes                      |
+| Prefect             | No                       |
 | Pulumi              | Yes                      |
 | PyPI                | No                       |
+| Readme              | No                       |
+| Redirect Pizza      | No                       |
+| Replicate           | No                       |
+| Rootly              | No                       |
 | Rubygems            | Yes                      |
+| RunPod              | No                       |
+| Samsara             | No                       |
 | Sauce               | No                       |
 | Searchgaurd         | No                       |
 | Sendgrid            | Yes                      |
@@ -109,16 +174,26 @@ Below are supported providers and whether they support **Token Validation**:
 | Slack               | Yes                      |
 | Snyk                | Yes                      |
 | Sonar               | No                       |
+| Sourcegraph         | No                       |
 | Square              | No                       |
+| SSLmate             | No                       |
 | StackHawk           | Yes                      |
 | Stripe              | Yes                      |
+| Supabase            | No                       |
+| Tableau             | No                       |
+| Tailscale           | No                       |
 | Telegram            | Yes                      |
+| Telnyx              | No                       |
 | Terraform           | Yes                      |
 | Travis CI           | No                       |
 | Trello              | No                       |
 | Twilio              | Yes                      |
 | Typeform            | Yes                      |
 | Ubidots             | Yes                      |
+| Unkey               | No                       |
+| WakaTime            | No                       |
+| XAI                 | No                       |
+| Zuplo               | No                       |
 
 #### Access Tokens (Keys) Detection False positives Reduction
 

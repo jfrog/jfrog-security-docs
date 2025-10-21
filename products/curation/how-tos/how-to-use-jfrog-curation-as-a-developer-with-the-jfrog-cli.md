@@ -13,12 +13,12 @@ First, ensure that you have the **JFrog CLI** installed and configured to connec
 *   **Install JFrog CLI** (if not already installed):
 
     ```sh
-    shCopyEditcurl -fL https://install-cli.jfrog.io | sh
+    curl -fL https://install-cli.jfrog.io | sh
     ```
 *   **Configure CLI with your JFrog instance**:
 
     ```sh
-    shCopyEditjfrog config add
+    jfrog config add
     ```
 
     * Enter your **JFrog Platform URL**
@@ -32,19 +32,19 @@ Use the **curation-audit** command to analyze your project dependencies and chec
 **For a Node.js (npm) Project:**
 
 ```sh
-shCopyEditjfrog curation-audit --package-type npm --project-dir .
+jfrog curation-audit --package-type npm --project-dir .
 ```
 
 **For a Java (Maven) Project:**
 
 ```sh
-shCopyEditjfrog curation-audit --package-type maven --project-dir .
+jfrog curation-audit --package-type maven --project-dir .
 ```
 
 **For a Python (pip) Project:**
 
 ```sh
-shCopyEditjfrog curation-audit --package-type pip --project-dir .
+jfrog curation-audit --package-type pip --project-dir .
 ```
 
 This will:
@@ -88,7 +88,7 @@ markdownCopyEditCuration Audit Summary:
 After making changes, rerun the **curation-audit** command to confirm that your project is now compliant:
 
 ```sh
-shCopyEditjfrog curation-audit --package-type npm --project-dir .
+jfrog curation-audit --package-type npm --project-dir .
 ```
 
 If no blocked packages appear, your project is safe to use under your organization's policies!

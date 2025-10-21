@@ -44,9 +44,9 @@ The following workflow shows how Xray scans your builds
 
 Xray CI/CD integration is supported for Jenkins, Azure DevOps, Bamboo and JFrog CLI.
 
-*   **Jenkins**: To **configure a build job** to request a scan, with the [JFrog Jenkins Plugin](https://plugins.jenkins.io/jfrog/) (v2.9.0 and above), you need to create a&#x20;
+*   **Jenkins**: To **configure a build job** to request a scan, with the [JFrog Jenkins Plugin](https://plugins.jenkins.io/jfrog/) (v2.9.0 and above), you need to run the jf build-scan command as described in [Scan published builds](https://jfrog.com/help/r/jfrog-security-user-guide/developers/cli/scan-published-builds).
 
-    `scanConfig` instance and and pass it to the `xrayScan` method in the Jenkins Pipeline.
+
 * **Azure DevOps**: To scan build artifacts for vulnerabilities in [Azure DevOps](https://github.com/jfrog/jfrog-azure-devops-extension#readme), you need to add the [Artifactory Xray Scan](https://jfrog.com/help/r/xray-rest-apis/scan-artifact) task after the [Artifactory Publish BuildInfo](https://jfrog.com/help/r/jfrog-integrations-documentation/jfrog-azure-devops-extension) task.
 * **Bamboo**: To scan build artifacts for vulnerabilities, with the [Bamboo Artifactory Plug-in](https://jfrog.com/help/r/jfrog-integrations-documentation/bamboo-artifactory-plug-in), you need to add the [Artifactory Xray Scan](https://jfrog.com/help/r/xray-rest-apis/scanning) task to your plan. The task should follow a previous task which publishes the build-info to Artifactory.
 * **TeamCity**: To [**scan build artifacts and dependencies**](https://jfrog.com/help/r/jfrog-integrations-documentation/teamcity-artifactory-plug-in)for vulnerabilities with the [TeamCity Artifactory Plug-in](https://jfrog.com/help/r/jfrog-integrations-documentation/teamcity-artifactory-plug-in), you need to enable the **Xray scan on build** and **Fail build options**, configured per build.

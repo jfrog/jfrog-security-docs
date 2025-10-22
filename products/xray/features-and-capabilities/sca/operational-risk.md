@@ -8,6 +8,8 @@ JFrog Xray provides Operational Risk Analysis, enabling organizations to detect 
 
 Operational risk refers to non-security-related issues that can affect a software component’s performance, reliability, or maintainability.
 
+**Currently supported**: NPM and Maven packages.&#x20;
+
 Common operational risks include:
 
 * **End-of-Life (EOL) Software** – Components that no longer receive updates or security patches.
@@ -82,8 +84,3 @@ Xray calculates the Operational Risk as High, Medium, Low, and None (no known ri
 | 7 | None | No Risk   | None, Low, Medium, High | High                    | **High**         | **Version Age and number of new versions (only when High)**       |
 | 8 | None | No Risk   | None, Low, Medium       | Medium                  | **Medium**       | **Version Age and number of new versions (only when Medium)**     |
 | 9 | None | No Risk   | None, Low               | Low                     | **Low**          | **Version Age and number of new versions (only when Low)**        |
-
-
-
-
-

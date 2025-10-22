@@ -12,9 +12,17 @@ In the **Fallback Behavior for Blocked Packages** section, configure the setting
 
 ## Enable Compliant Version
 
-**Note**: This feature is currently in a gradual rollout. To participate or gain early access, contact JFrog Support.\
+**Important Notes**:&#x20;
+
+* This feature is currently in a gradual rollout. To participate or gain early access, contact JFrog Support.
+* The remote repository must have cache enabled for the feature to work properly.
+
+\
 **Currently supported**: PyPI and NPM (Maven support coming soon).\
-**Scope**: Applies globally to all supported ecosystems and cannot be configured per ecosystem
+In the current version of NPM CVS, when a developer requests a locked version, the requested version may be removed by the CVS functionality if it is blocked, resulting in an Etargt error.
+
+\
+**Scope**: Applies globally to all supported ecosystems and cannot be configured per ecosystem.
 
 **Enable compliant version selection:** Toggle this option to return the highest version that complies with your policies instead of blocking the request.
 

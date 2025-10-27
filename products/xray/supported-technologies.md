@@ -10,7 +10,7 @@
 
 ## Containers
 
-<table data-full-width="true"><thead><tr><th>Package</th><th>SCA Source code scanning</th><th>SCA Binary scanning</th></tr></thead><tbody><tr><td><strong>Docker</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>OCI</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>Chainguard Images</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Package</th><th>SCA Source code scanning</th><th>SCA Binary scanning</th></tr></thead><tbody><tr><td><strong>Docker</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>OCI</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>Chainguard Images</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>Helm Charts</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
 
 ***
 

@@ -10,7 +10,7 @@
 
 ## Containers
 
-<table data-full-width="true"><thead><tr><th>Package</th><th>SCA Source code scanning</th><th>SCA Binary scanning</th></tr></thead><tbody><tr><td><strong>Docker</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>OCI</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>Chainguard Images</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>Helm Charts</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Package</th><th>SCA Source code scanning</th><th>SCA Binary scanning</th></tr></thead><tbody><tr><td><strong>Docker</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>OCI</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr><tr><td><strong>Chainguard Images</strong></td><td></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td></tr></tbody></table>
 
 ***
 
@@ -20,9 +20,13 @@
 
 ***
 
-## Others
+## IAC&#x20;
 
-<table data-full-width="true"><thead><tr><th>Package</th><th>SCA Source code scanning</th><th>SCA Binary scanning</th></tr></thead><tbody><tr><td><strong>CycloneDX SBOM</strong></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><br>cdx.json, cdx.xml</td></tr><tr><td><strong>Terraform</strong></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><br>Terraform Module, Terraform Plan</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><br>Terraform State</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th>Type </th><th>Details</th></tr></thead><tbody><tr><td><strong>Helm Charts</strong> </td><td>Scans referenced Docker/OCI images <strong>stored in JFrog Artifactory</strong></td></tr><tr><td><strong>Terraform State</strong></td><td>Not identified by extension</td></tr></tbody></table>
+
+## SBOM Formats
+
+<table data-full-width="true"><thead><tr><th>Format</th><th>Format</th></tr></thead><tbody><tr><td><strong>CycloneDX</strong> </td><td>JSON,XML</td></tr><tr><td><strong>SPDX</strong></td><td>JSON</td></tr></tbody></table>
 
 ## Archive Support in Generic Artifactory Repository
 

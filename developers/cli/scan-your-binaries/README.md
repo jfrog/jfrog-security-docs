@@ -11,3 +11,7 @@ On-demand scan results are retained for seven days before being automatically de
 {% hint style="info" %}
 On-demand scans may not detect certain components, such as C++ libraries or ELF files (e.g., `.so` files and compiled binaries), since these are not included in the CLI (`indexer-app`) analysis.
 {% endhint %}
+
+{% hint style="info" %}
+The grace period setting in the "fail build" policy is not applied during `​jf docker scan`​​ (on-demand Docker image scanning), resulting in the build failing immediately despite the configured grace period.
+{% endhint %}

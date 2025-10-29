@@ -6,5 +6,5 @@ As a further resource, we suggest exploring our JFrog Academy courses to learn h
 
 * [Getting Started with JFrog Curation](https://academy.jfrog.com/getting-started-with-jfrog-curation)
 * [JFrog Curation for Developers](https://academy.jfrog.com/developing-with-jfrog-curation)
-* [Administering JFrog-Curation](https://academy.jfrog.com/administering-jfrog-curation?ref=doc)
+* [Administering JFrog Curation](https://academy.jfrog.com/administering-jfrog-curation?ref=doc)
 

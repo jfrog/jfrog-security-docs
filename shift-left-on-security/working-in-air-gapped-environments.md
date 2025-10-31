@@ -33,7 +33,7 @@ Use the appropriate **environment variable** depending on the tool:
 
     **Example**:\
     If your JPD is:\
-    `https://artifactory-dev.us-east-1.d70888.aws.skycloud.gs/`\
+    `https://artifactory-dev.domain.com/`\
     And you configure the server ID as `skycloud`, and the remote repository is `jfrog-release-remote`, then:
 
     ```

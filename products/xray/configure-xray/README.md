@@ -17,8 +17,13 @@ Key configuration tasks required for JFrog Xray:
 
     * **Indexed resources retention period**:
       * Default: **90 days** (configurable via system YAML).
-      * Artifacts downloaded reset retention period.
-3. **Configure Scans**
+      * Artifacts downloaded reset the retention period.
+3. **Configure Scans** \
+   Define scan types and scope for each resource.&#x20;
+   * **Categories**: (JFrog Advanced Security) Choose which scans to run on the resource.&#x20;
+   * **Scope**: Define which artifacts will be scanned in the selected repository:
+     * **Scan all artifacts** – Scans all future artifacts uploaded to the selected repository.
+     * **Scan by pattern** – Scans only a subset of future artifacts that match defined patterns in the repository.
 4. **Create Watches and Policies ( Optional but recommended)**
    * Policies define security and compliance rules.
    * Watches monitor repositories, builds, and release bundles.

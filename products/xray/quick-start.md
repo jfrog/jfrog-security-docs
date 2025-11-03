@@ -4,7 +4,8 @@
 
 To quickly get started with JFrog Xray, ensure you have the following:\
 ✅ **Xray Installed**\
-✅ **"Administer Platform" Permission**
+✅ **"Administer Platform" Permission**\
+:white\_check\_mark:  **Trigger DB Sync**
 
 ### **Step 1: Add Resources to Xray for Automatic Scanning**
 

@@ -2,12 +2,13 @@
 
 Frogbot generates an SBOM for each scanned repository and publishes it to the repository’s Dependency graph in GitHub. This lets developers review direct and transitive dependencies within their native GitHub workflow.
 
-It is essential that you enable GitHub Dependency graph for the repositories you wish to publish SBOMs to.
+It is essential that you&#x20;
 
 **Before You Begin**
 
-* Enable [Dependency Graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph) in the repository settings.
-* To disable automatic SBOM results from being uploaded to GitHub, [set](../configure-frogbot/frogbot-optional-configuration-parameters.md) the `JF_UPLOAD_SBOM_TO_VCS` parameter to `false`.
+* Requires JFrog Advanced Security license
+* Enable GitHub [Dependency Graph](https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-the-dependency-graph) for the repositories you wish to publish SBOMs to
+* To disable automatic SBOM results from being uploaded to GitHub, [set](../configure-frogbot/frogbot-optional-configuration-parameters.md) the `JF_UPLOAD_SBOM_TO_VCS` parameter to `false`
 
 **Procedure**
 

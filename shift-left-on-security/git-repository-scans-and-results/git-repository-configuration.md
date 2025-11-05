@@ -4,9 +4,8 @@ The Git repository configuration reflects the actual hierarchy in your Source Co
 
 #### Before You Begin
 
-An initial [Frogbot ](../frogbot/)scan must be executed.&#x20;
-
-Configuration settings defined in the [Frogbot YAML](../frogbot/configure-frogbot/) file and environment variables take precedence over any settings applied through the platform.
+* An initial [Frogbot ](../frogbot/)scan must be executed.&#x20;
+* Configuration settings defined in the [Frogbot YAML](../frogbot/configure-frogbot/) file and environment variables take precedence over any settings applied through the platform.
 
 ### Configuring Git Repositories
 

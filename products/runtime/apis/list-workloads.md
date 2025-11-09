@@ -30,9 +30,9 @@
 
 | Name            | Type                       | Required/Optional | Description                                                                                                                                                           |
 | --------------- | -------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `time_period`   |                            | optional          | <p>Default - now<br>Options: now, 1 hour, 1 days, 3 days, 7 days, 10 days</p>                                                                                         |
+| `time_period`   |                            | optional          | <p>Default - now<br>Options: now, 1 hour, 24 hours, 3 days, 7 days, 10 days</p>                                                                                       |
 | `cve_id`        | array\[string]             | optional          | CVE identifier                                                                                                                                                        |
-| `risk`          | array                      | optional          | Malicious, untrusted\_registry, integrity\_violation, critical\_applicable                                                                                            |
+| `risk`          | array                      | optional          | malicious, untrusted\_registry, integrity\_violation, critical\_applicable                                                                                            |
 | `component`     | Array\[filterComponentObj] |                   | - all components                                                                                                                                                      |
 | `applicability` | Array of app\_enum         | optional          | <p>Contextual Analysis result.</p><p>Possible values: not_scanned, applicable,</p><p>not_applicable, undetermined, rescan_required, upgrade_required, not_covered</p> |
 | `severity`      | array\[string]             | optional          | <p>Contextual Analysis result.</p><p>Possible values: not_scanned, applicable,</p><p>not_applicable, undetermined, rescan_required, upgrade_required, not_covered</p> |
@@ -135,28 +135,30 @@ paginationObj:
 
 **Example request**
 
-```
+```json
 {
-"limit": "50",
-"last_key": "id123",
-    	
-	"filters": {
-		"severities": ["Critical", "High"],
-"registry" : untrusted_registry,
-"workloads": [{
-	"name": "corends",
-             "namespace":"jfs-production", 
-             "cluster":"jfs-production"
-}]
-
- 	}
- }
+  "limit": 50,
+  "last_key": "id123",
+  "filters": {
+    "severities": [
+      "Critical",
+      "High"
+    ],
+    "workloads": [
+      {
+        "name": "corends",
+        "namespace": "jfs-production",
+        "cluster": "jfs-production"
+      }
+    ]
+  }
+}
 ```
 
 **Example successful response**
 
 ```
-200 OK
+{
 "pagination": {
 "total_count": 105
 	"next_key": "87319827319827",
@@ -173,7 +175,7 @@ paginationObj:
 
 
 "risks": [
-"<risk-name>", // e.g. applicable_cves, critical_cves
+"<risk-name>"
 ],
 
 
@@ -191,7 +193,7 @@ paginationObj:
 "cluster":string
 }
 ]
-}]
+}]}
 
 ```
 

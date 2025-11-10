@@ -159,42 +159,61 @@ paginationObj:
 
 ```
 {
-"pagination": {
-"total_count": 105
-	"next_key": "87319827319827",
-"limit": 10
-},
-"workloads": [
-{
-"image_name": string,
-"tag": string, // e.g. "1.2.3"
-	"architecture": "arch_name", 
-"registry": string,
-"repository_path": string,
-"runtime_status": enum (`running` / `stopped` / `unknown`),  
-
-
-"risks": [
-"<risk-name>"
-],
-
-
-"vulnerabilities": [
-{
-"cve_id": string, 
-"applicability": "enum"
+  "pagination": {
+    "total_count": 105,
+    "next_key": "87319827319827",
+    "limit": 1
+  },
+  "workloads": [
+    {
+      "name": "demo-security",
+      "namespace": "my-namespace",
+      "cluster": "my-cluster",
+      "runtime_status": "running",
+      "nodes": [
+        "10-0-0-1",
+        "10-0-0-2"
+      ],
+      "architecture": "amd64",
+      "risks": [
+        "critical_applicable_cves"
+      ],
+      "vulnerabilities_count": 1,
+      "processes": [
+        {
+          "name": "my-process",
+          "arguments":"my-process-args",
+          "path":"/bin/my-process",
+          "runtime_status": "running",
+          "risks": [
+            "critical_applicable_cves"
+          ],
+          "vulnerabilities": [
+            {
+              "cve_id": "CVE-2022-1471",
+              "applicability": "applicable",
+              "components": [
+                {
+                  "id": "gav://org.yaml:snakeyaml:1.26",
+                  "name": "org.yaml:snakeyaml",
+                  "version": "1.26"
+                }
+              ],
+              "cve_id": "CVE-2022-1471",
+              "cvss_v2": "",
+              "cvss_v3": "9.8",
+              "severity": "Critical",
+              "xray_id": "<XRAY_ID>"
+            }
+          ],
+          "malicious_packages":[],
+          "image_digest":"<image_sha256>",
+          "process_hash":"<process_executable_sha256>"
+        }
+      ]
+    }
+  ]
 }
-],
-            
-	"workloads" : [
-{
-"name": string,
-"namespace": string, 
-"cluster":string
-}
-]
-}]}
-
 ```
 
 **Example error response:**

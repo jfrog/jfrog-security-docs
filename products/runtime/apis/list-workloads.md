@@ -70,17 +70,17 @@ paginationObj:
 
 **workloadObj:**
 
-| Name                    | Type                 | Description                                                                                                                                                                                               |
-| ----------------------- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name`                  | string               | Workload name                                                                                                                                                                                             |
-| `namespace`             | string               |                                                                                                                                                                                                           |
-| `cluster`               | string               |                                                                                                                                                                                                           |
-| `runtime_status`        | string               | Possible values: running, stopped, unknown                                                                                                                                                                |
-| `nodes`                 | Array of string      |                                                                                                                                                                                                           |
-| `architectures`         | Array of string      | Array of arch\_names                                                                                                                                                                                      |
-| `risks`                 | Array\[ risk\_enum]  | <p>Possible values: malicious, untrusted_registry, integrity_violation, critical_applicable_cves</p><p>untrusted_registry, integrity_violation inherent from images and rest aggregation from process</p> |
-| `vulnerabilities_count` | int                  | The sum of all vulnerabilities of the process                                                                                                                                                             |
-| `Processes`             | Array\[processesObj] |                                                                                                                                                                                                           |
+| Name                    | Type                | Description                                                                                                                                                                                               |
+| ----------------------- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`                  | string              | Workload name                                                                                                                                                                                             |
+| `namespace`             | string              |                                                                                                                                                                                                           |
+| `cluster`               | string              |                                                                                                                                                                                                           |
+| `runtime_status`        | string              | Possible values: running, stopped, unknown                                                                                                                                                                |
+| `nodes`                 | Array of string     |                                                                                                                                                                                                           |
+| `architecture`          | string              | arch\_names                                                                                                                                                                                               |
+| `risks`                 | Array\[ risk\_enum] | <p>Possible values: malicious, untrusted_registry, integrity_violation, critical_applicable_cves</p><p>untrusted_registry, integrity_violation inherent from images and rest aggregation from process</p> |
+| `vulnerabilities_count` | int                 | The sum of all vulnerabilities of the process                                                                                                                                                             |
+| `processes`             | Array\[processObj]  |                                                                                                                                                                                                           |
 
 **processesObj:**
 
@@ -93,6 +93,8 @@ paginationObj:
 | `malicious_packages` | Array\[maliciousObj] | An array of malicious packages detected on the image tag                   |
 | `arguments`          | string               |                                                                            |
 | `path`               | string               | File system path                                                           |
+| `process_hash`       | string               | The SHA-256 hash of the process executable file                            |
+| `image_digest`       | string               | The SHA-256 digest of the container image the process is running from      |
 
 **vulnObj:**
 

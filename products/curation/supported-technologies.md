@@ -10,5 +10,5 @@ To support Curation for remote Gradle plugins, you must use a virtual repository
 1. Maven Central remote repository, first repo.
 2. Gradle repository, under Maven
 
-This order is mandatory because the Gradle client automatically redirects to Maven Central for plugin binaries.
+This order is mandatory because the Gradle client automatically redirects to Maven Central for binaries.
 {% endhint %}

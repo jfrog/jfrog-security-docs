@@ -14,7 +14,7 @@ Workflow Steps
    Ensure your environment meets the following requirements:
    * **Artifactory Version:** 7.125.6 or later&#x20;
    * **Xray Version:** 3.131.15 or later&#x20;
-   * **Subscription:** **JFrog** **Ultimate Security Bundle**
+   * **Subscription:** **JFrog** **Ultimate or Unified Security Bundle**
 3. **Connect the Remote Repository in Curation**\
    In the JFrog Platform, go to **Administration > Curation > Remote Repositories**, and connect your newly created VS Code repository.\
    Once connected, it behaves like any other supported package type in Curation.

@@ -33,6 +33,7 @@
 | `component`     | Array\[filterComponentObj] | optional          | You can only filter by the components of the image's vulnerabilities.                                                                                            |
 | `applicability` | array\[string]             | optional          | Contextual Analysis result. Possible values: `not_scanned`, `applicable`, `not_applicable`, `undetermined`, `rescan_required`, `upgrade_required`, `not_covered` |
 | `severity`      | array\[string]             | optional          | Severity level of the issue (e.g., "High")                                                                                                                       |
+| `namespace`     | array\[string]             | optional          | Filters the results by namespace. Returns only images that belong to any of the namespaces listed.                                                               |
 
 **filterComponentObj:**
 

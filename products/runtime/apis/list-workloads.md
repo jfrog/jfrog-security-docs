@@ -37,6 +37,7 @@
 | `applicability` | Array of app\_enum         | optional          | <p>Contextual Analysis result.</p><p>Possible values: not_scanned, applicable,</p><p>not_applicable, undetermined, rescan_required, upgrade_required, not_covered</p> |
 | `severity`      | array\[string]             | optional          | <p>Contextual Analysis result.</p><p>Possible values: not_scanned, applicable,</p><p>not_applicable, undetermined, rescan_required, upgrade_required, not_covered</p> |
 | `workloads`     | Array\[filterWorkloadObj]  | optional          | If added return data only on workloads that are in the list                                                                                                           |
+| `namespace`     | array\[string]             | optional          | Filters the results by namespace. Returns only images that belong to any of the namespaces listed.                                                                    |
 
 **filterComponentObj:**
 

@@ -9,18 +9,18 @@
 
 #### Request body
 
-| Name       | Type           | Required/Optional | Description                                                                                                |
-| ---------- | -------------- | ----------------- | ---------------------------------------------------------------------------------------------------------- |
-| `limit`    | int            | optional          | Key-based pagination - number of rows per request. Default: 10                                             |
-| `next_key` | string         | optional          | Id from the previous request, empty on the first request                                                   |
-| `order_by` | string         | optional          | Available options: `name`, `repository_path`, `registry`, `risks`                                          |
-| `filters`  | filterObj      | optional          | Filter the results by the available filters listed in filter\_object                                       |
-| `cluster`  | array\[string] | optional          | A list of Kubernetes cluster names or IDs to filter the image tags by the clusters where the image exists. |
+| Name       | Type      | Required/Optional | Description                                                          |
+| ---------- | --------- | ----------------- | -------------------------------------------------------------------- |
+| `limit`    | int       | optional          | Key-based pagination - number of rows per request. Default: 10       |
+| `next_key` | string    | optional          | Id from the previous request, empty on the first request             |
+| `order_by` | string    | optional          | Available options: `name`, `repository_path`, `registry`, `risks`    |
+| `filters`  | filterObj | optional          | Filter the results by the available filters listed in filter\_object |
 
 **filterObj:**
 
 | Name            | Type                       | Required/Optional | Description                                                                                                                                                      |
 | --------------- | -------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cluster`       | array\[string]             | optional          | A list of Kubernetes cluster names to filter the image tags by the clusters where the image exists.                                                              |
 | `time_period`   | string                     | optional          | Default: now Available options: now, 1 hour, 24 hours, 3 days, 7 days, 10 days                                                                                   |
 | `cve_id`        | array\[string]             | optional          | CVE identifier                                                                                                                                                   |
 | `risk`          | array                      | optional          | Available filters: `malicious`, `untrusted_registry`, `integrity_violation`, `critical_applicable_cve`                                                           |

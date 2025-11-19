@@ -14,7 +14,7 @@ In the **Fallback Behavior for Blocked Packages** section, configure the setting
 
 **Important Notes**:&#x20;
 
-* This feature is currently in a gradual rollout. To participate or gain early access, contact JFrog Support.
+* This feature requires Xray version 3.131.x and above,  Artifactory version 7.125.x and above.
 * The remote repository must have cache enabled for the feature to work properly.
 
 \

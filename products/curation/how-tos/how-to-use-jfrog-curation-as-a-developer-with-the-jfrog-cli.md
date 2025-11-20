@@ -32,19 +32,19 @@ Use the **curation-audit** command to analyze your project dependencies and chec
 **For a Node.js (npm) Project:**
 
 ```sh
-jfrog curation-audit --package-type npm --project-dir .
+jfrog curation-audit --working-dirs .
 ```
 
 **For a Java (Maven) Project:**
 
 ```sh
-jfrog curation-audit --package-type maven --project-dir .
+jfrog curation-audit --working-dirs .
 ```
 
 **For a Python (pip) Project:**
 
 ```sh
-jfrog curation-audit --package-type pip --project-dir .
+jfrog curation-audit --working-dirs .
 ```
 
 This will:
@@ -88,7 +88,7 @@ markdownCopyEditCuration Audit Summary:
 After making changes, rerun the **curation-audit** command to confirm that your project is now compliant:
 
 ```sh
-jfrog curation-audit --package-type npm --project-dir .
+jfrog curation-audit --working-dirs .
 ```
 
 If no blocked packages appear, your project is safe to use under your organization's policies!

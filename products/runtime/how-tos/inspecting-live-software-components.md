@@ -16,28 +16,43 @@ Data in the Live Assessment is retained for 10 days before deletion.&#x20;
 
 ### Risks Runtime Alerts Against
 
-| Risk                     | Description                                                                  |
-| ------------------------ | ---------------------------------------------------------------------------- |
-| Malicious Packages       | Detects harmful code within software components.                             |
-| Untrusted Images         | Identifies images from unverified registries.                                |
-| Critical Applicable CVEs | Highlights critical vulnerabilities identified through contextual analysis.  |
-| Integrity Violations     | Flags discrepancies between Artifactory images and running cluster binaries. |
+| Risk                     | Description                                                               |
+| ------------------------ | ------------------------------------------------------------------------- |
+| **Malicious Packages**   | Detects harmful code within software components.                          |
+| **Untrusted Images**     | Identifies images originating from unverified registries.                 |
+| **Critical & High CVEs** | Highlights vulnerabilities by severity.                                   |
+| **Applicable CVEs**      | Indicates vulnerabilities confirmed as applicable by Contextual Analysis. |
+| **Running CVEs**         | Shows vulnerabilities detected in currently active workloads.             |
+| **Integrity Violations** | Flags discrepancies between Artifactory images and running binaries.      |
 
 ### Inspecting Your Images
 
-Gain comprehensive visibility into runtime images by tracing them back to their JFrog Artifactory source, evaluating usage, and identifying security risks. Quickly spot untrusted sources, integrity violations, and critical CVEs, with key details like the highest risk level, total vulnerabilities, and tag-specific insights to prioritize remediation. By detecting discrepancies between Artifactory images and running binaries, you can proactively mitigate risks and strengthen your runtime security.&#x20;
+Gain comprehensive visibility into runtime images by tracing them back to their JFrog Artifactory source, evaluating usage, and identifying security risks. Quickly spot untrusted sources, integrity violations, and critical CVEs, with key details like the highest risk level, total vulnerabilities, and tag-specific insights to prioritize remediation. By detecting discrepancies between Artifactory images and running binaries, you can proactively mitigate risks and strengthen your runtime security.
+
+Image information includes a number of associated workloads, cluster and namespace details, registry name, repository path, associated providers, and deployer information. The _Owners Info_ section lists the application owners associated with the image.
 
 #### Accessing Image Information&#x20;
 
-Image information includes a number of associated workloads, cluster and namespace details, image path in Artifactory, associated deployer information, and a list of vulnerabilities&#x20;
+1. From the JFrog Platform, under **Runtime**, select **Live Assessment**.
+2. Select the **Images** tab to view all detected images.
+3. Select an image to open the **Detailed View**.
 
-1\. From the JFrog Platform, under **Runtime**, select **Live Assessment**.&#x20;
+The detailed view presents risk and vulnerability insights through dedicated widgets and tables:
 
-2\. Select the **Images** tab to view all detected images.&#x20;
+* **Critical & High CVEs** – Displays the number of critical and high-severity vulnerabilities detected in the image.
+* **Running CVEs** – Shows vulnerabilities currently associated with running workloads.
+* **Applicable CVEs** – Indicates the subset of critical and high vulnerabilities determined as _applicable_ by Contextual Analysis.
 
-3\. Select an image.&#x20;
+If a malicious package is detected, a red banner appears at the top of the image details panel.
 
-4\. Click on the desired image tag from the Images tab.&#x20;
+Additional fields provide context on the image, including:
+
+* **Number of clusters**
+* **Registry name**
+* **Repository path**
+* **Providers**
+* **Owners Info** (application owners)
+* **Build** and **Deployed by** details
 
 ### Inspecting Your Workloads&#x20;
 

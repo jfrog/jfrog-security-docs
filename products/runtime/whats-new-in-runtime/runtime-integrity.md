@@ -50,4 +50,4 @@ Added support for configuring the Runtime Service with alternative ingress contr
 
 #### **Automatic Security Scanning for Runtime-Detected Images**
 
-JFrog Runtime now automatically scans any container image detected in a Kubernetes cluster. If a runtime-observed image lacks security data, the system automatically indexes and scans it using SCA and Advanced Security scanners. This ensures full, consistent security coverage across all cluster-running images with simple configuration
+Runtime now [automatically scans any container image detected](../manage-runtime.md#automatic-security-scanning) in a Kubernetes cluster. If a runtime-observed image lacks security data, the system automatically indexes and scans it using SCA and Advanced Security scanners. This ensures full, consistent security coverage across all cluster-running images with simple configuration

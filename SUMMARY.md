@@ -137,6 +137,7 @@
       * [Fast Exposure Window Closing](products/runtime/how-tos/fast-exposure-window-closing.md)
       * [Strengthening Runtime Trust Through Image Verification](products/runtime/how-tos/strengthening-runtime-trust-through-image-verification.md)
       * [Detecting Your Live Artifacts in Artifactory](products/runtime/how-tos/detecting-your-live-artifacts-in-artifactory.md)
+      * [Ensure Security Scanning for Runtime-Detected Images in a Cluster Use Case  A DevSecOps engineer](products/runtime/how-tos/ensure-security-scanning-for-runtime-detected-images-in-a-cluster-use-case-a-devsecops-engineer.md)
     * [APIs](products/runtime/apis/README.md)
       * [List Image Tags](products/runtime/apis/list-image-tags.md)
       * [Get Clusters List](products/runtime/apis/get-clusters-list.md)

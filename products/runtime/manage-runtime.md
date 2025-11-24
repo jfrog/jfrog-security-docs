@@ -32,3 +32,14 @@ The Cluster Detailed View in the Runtime Cluster Management offers in-depth insi
 2.  View detailed information, including the list of nodes running under the cluster and their corresponding Runtime Sensor statuses.
 
     In **Controller Only** mode, node-level sensor details will not be available.
+
+### Automatic Security Scanning
+
+Enable automatic security scanning for any container image detected through Runtime Visibility. When a cluster is configured for this capability, the system checks whether each runtime-observed image has corresponding security data. If not, it automatically triggers indexing and scanning based on repository characteristics.
+
+1. In the platform, under **Administration**, go to **Runtime > Cluster Management**.
+2. Under **Clusters**, hover over the cluster you wish to configure.
+3. From the cluster menu, select **Configure**.
+4. The **Scan Configuration** window opens.
+5. In the Scan Configuration window, select the scanners you want to enable for the cluster, including **SCA** and any **Advanced Security** scanners such as Vulnerabilities Contextual Analysis, Secrets, Applications, Services, or IaC.
+6. Click **Apply** to save the configuration.

@@ -39,3 +39,15 @@ JFrog Runtime now supports [AWS Fargate](../configure-runtime/ecs-task-scanning-
 #### Installation options for non-gRPC environments
 
 Added support for configuring the Runtime Service with alternative ingress controllers and REST fallback, along with improved sensor [installation options for non-gRPC environments](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-jfrog-runtime-security) and self-signed certificates.
+
+### Version 1.7
+
+#### **Live Assessment Enhancements**
+
+* Introducing clearer vulnerability segmentation, including **Critical & High CVEs**, **Applicable CVEs** (validated via Contextual Analysis), and **Running CVEs** for active workloads.
+* Previously combined CVE categories are now broken out to provide more actionable, severity-based insights.
+* Image details now include richer context such as associated workloads, cluster and namespace details, registry name, repository path, providers, deployer information, and **Owners Info** (application owners).
+
+#### **Automatic Security Scanning for Runtime-Detected Images**
+
+JFrog Runtime now automatically scans any container image detected in a Kubernetes cluster. If a runtime-observed image lacks security data, the system automatically indexes and scans it using SCA and Advanced Security scanners. This ensures full, consistent security coverage across all cluster-running images with simple configuration

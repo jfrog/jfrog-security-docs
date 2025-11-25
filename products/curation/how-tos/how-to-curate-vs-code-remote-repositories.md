@@ -9,7 +9,8 @@ Workflow Steps
 
 1. **Create a VS Code Remote Repository**\
    Before you can curate VS Code repositories, create a remote repository for AI Editor Extensions.\
-   Follow the setup instructions in the [AI Editor Extension Repositories](https://jfrog.com/help/r/jfrog-artifactory-documentation/ai-editor-extension-repositories) documentation.
+   Follow the setup instructions in the [AI Editor Extension Repositories](https://jfrog.com/help/r/jfrog-artifactory-documentation/ai-editor-extension-repositories) documentation.\
+   **When you create the repository, you must change the default URL to** [**https://open-vsx.org/vscode/gallery**](https://open-vsx.org/vscode/gallery)**.**&#x20;
 2. **Verify Environment Compatibility**\
    Ensure your environment meets the following requirements:
    * **Artifactory Version:** 7.125.6 or later&#x20;

@@ -51,5 +51,29 @@ CVE Contextual Analysis results are available in:
 * **CLI** for immediate feedback
 * **Pull Request Decoration** with Frogbot
 
+### Transitive Dependency Analysis
 
+The Transitive Dependency feature in JFrog Advanced Security enhances contextual analysis by identifying vulnerabilities that are not directly in your code but are introduced through transitive dependencies (dependencies of your dependencies).
 
+For each CVE, the analysis shows:
+
+* The call chain in your code that leads to the vulnerable function.
+* Whether the call is direct (in your code) or transitive (through another dependency).
+* A call graph button that visualizes the dependency path.
+* Highlighted functions and file paths where the vulnerable function is used.
+* A copy-to-clipboard option for evidence such as function names, file paths, and line numbers.
+
+This helps developers and security teams understand exactly _why a CVE is applicable_ in their project and where it is triggered.
+
+### Viewing Transitive Dependency Analysis
+
+1. Run a security scan on your repository or artifact.
+2. In the **Scan Results** page, select a CVE from the list.
+3. Open the **Contextual Analysis** tab.
+4. Switch between **Direct** and **Transitive** views:
+   * Direct shows direct calls in your code.
+   * Transitive shows calls leading to the vulnerability through transitive dependencies.
+5. Review the evidence:
+   * Path, line, and function calls are highlighted.
+   * Use the Call Graph button to view a visual graph of the dependency chain.
+   * Use the Copy icon to copy evidence details to your clipboard.

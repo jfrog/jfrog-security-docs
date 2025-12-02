@@ -1,6 +1,6 @@
 # Table of contents
 
-* [What is JFrog Security?](README.md)
+* [What is JFrog Security](README.md)
 * [Products](products/README.md)
   * [Curation](products/curation/README.md)
     * [Supported Technologies](products/curation/supported-technologies.md)
@@ -9,13 +9,14 @@
       * [Configure Curation for Self Hosted](products/curation/configure-curation/configure-curation-for-self-hosted.md)
       * [Set User Roles and Permissions](products/curation/configure-curation/set-user-roles-and-permissions.md)
       * [General](products/curation/configure-curation/general.md)
-      * [Fallback Behavior for Blocked Packages](products/curation/configure-curation/fallback-behavior-for-blocked-packages.md)
       * [Configure Repositories](products/curation/configure-curation/configure-repositories/README.md)
         * [Connect Remote Repositories to Curation](products/curation/configure-curation/configure-repositories/connect-remote-repositories-to-curation.md)
         * [Enable Pass-Through for Specific Repositories](products/curation/configure-curation/configure-repositories/enable-pass-through-for-specific-repositories.md)
       * [Create Policies](products/curation/configure-curation/create-policies/README.md)
         * [List of Available Conditions](products/curation/configure-curation/create-policies/list-of-available-conditions.md)
       * [Create Custom Conditions](products/curation/configure-curation/create-custom-conditions.md)
+      * [Fallback Behavior for Blocked Packages](products/curation/configure-curation/fallback-behavior-for-blocked-packages.md)
+      * [Block Downloads from Cached Remote Repositories](products/curation/configure-curation/block-downloads-from-cached-remote-repositories.md)
       * [Curation Webhooks](products/curation/configure-curation/curation-webhooks.md)
     * [Manage Curation](products/curation/manage-curation/README.md)
       * [Manage Repositories](products/curation/manage-curation/manage-repositories.md)

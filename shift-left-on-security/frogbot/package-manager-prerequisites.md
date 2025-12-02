@@ -26,7 +26,7 @@ Each package manager and build tool may have unique prerequisites.
 
 | Requirement           | Details                                                             |
 | --------------------- | ------------------------------------------------------------------- |
-| **Requirements**      | Install Yarn and verify it’s available in your PATH.                |
+| **Requirements**      | Install Yarn 3 and verify it’s available in your PATH.              |
 | **Lock File**         | The `yarn.lock` file must be present.                               |
 | **Environment Setup** | Run `yarn install`  to confirm that the setup works without errors. |
 

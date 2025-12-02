@@ -4,17 +4,17 @@
 
 Xray allows you to import SBOMs into the platform — enabling multiple use cases:
 
-* **Enrich SBOMs** generated from external tools with vulnerability (VEX) and license obligation information.
-* **Enrich artifacts** with SBOM data for aggregated SBOM and scan results.
+* Enrich SBOMs generated from external tools with vulnerability (VEX) and license obligation information.
+* Enrich artifacts with SBOM data for aggregated SBOM and scan results.
 
 ### How to Import SBOMs to Xray
 
-1. Upload an SBOM file in one of the supported formats to an **indexed generic repository**:
+1. Upload an SBOM file in one of the supported formats to an indexed generic repository:
    * **CycloneDX**: `.cdx.json` or `.cdx.xml`
    * **SPDX**: `.spdx.json` or `.spdx.xml`
 2. Once uploaded, Xray automatically indexes and scans the SBOM file.
 
-The scanned SBOM will now appear in your **Scans list**.
+The scanned SBOM will now appear in your **Scans List**.
 
 ### How to Aggregate Artifacts with SBOM Data
 

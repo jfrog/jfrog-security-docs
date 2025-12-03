@@ -10,7 +10,7 @@ This section provides documentation on integrating JFrog Security with popular I
 
 It is essential that you:
 
-* Meet the [system requirements](/broken/pages/98lIXYCabSW7C3cDKznj#system-requirements)
+* Meet the [system requirements](../#system-requirements)
 
 ### Key Security Capabilities
 

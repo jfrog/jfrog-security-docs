@@ -8,4 +8,4 @@ It is essential that you:
 
 * [Download and install](https://docs.jfrog-applications.jfrog.io/jfrog-applications/jfrog-cli/install) the JFrog CLI&#x20;
 * [Authenticate](https://docs.jfrog-applications.jfrog.io/jfrog-applications/jfrog-cli/authentication)
-* Meet the [system requirements](/broken/pages/98lIXYCabSW7C3cDKznj)
+* Meet the [system requirements](../../shift-left-on-security/)

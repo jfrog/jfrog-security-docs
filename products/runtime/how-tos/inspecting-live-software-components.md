@@ -72,7 +72,7 @@ Inspect workloads in your runtime environment with Runtime Live Assessment to mo
 
 Before You Begin:
 
-Process inspection is available only with [Runtime Impact](/broken/pages/7NIDatNJ02KvhIZILRf2#runtime-modes-of-deployment) (Controller + Sensors).
+Process inspection is available only with [Runtime Impact](../#runtime-modes-of-deployment) (Controller + Sensors).
 
 1\. From the JFrog Platform, under **Runtime**, select **Live Assessment**.&#x20;
 

@@ -19,5 +19,5 @@ By integrating Frogbot into your development workflow, you can enforce security 
 
 ### Before You Begin
 
-* It is essential that you meet the [system requirements](/broken/pages/98lIXYCabSW7C3cDKznj)
+* It is essential that you meet the [system requirements](../)
 * Frogbot does not require any special permissions&#x20;

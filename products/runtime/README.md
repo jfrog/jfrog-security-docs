@@ -1,5 +1,18 @@
 # Runtime
 
+JFrog **Runtime** delivers deep security and operational insights for Kubernetes, OpenShift, and Fargate environments. Powered by JFrog’s end-to-end security, it ensures that Artifactory remains the single source of truth for binary management. The platform detects vulnerabilities, integrity violations, and untrusted registries in real time, continuously monitoring workloads and containers to help security and DevOps teams mitigate threats. By flagging unauthorized images, it prevents unverified code execution. Seamless integration with JFrog Artifactory and Xray extends security from pre-deployment to live runtime environments.
+
+### **Before You Begin**
+
+It is essential you have:
+
+* Artifactory version 7.77.20
+* Xray version 3.104.08
+
+### **How JFrog Runtime Collects Information**
+
+JFrog Runtime acquires its data through two primary mechanisms: the JFrog Platform and dedicated sensors deployed within customer clusters.
+
 #### **JFrog Platform Integration**
 
 JFrog Runtime integrates with the broader JFrog Platform, which includes Artifactory, Xray, and Advanced Security. This integration allows it to:
@@ -8,7 +21,7 @@ JFrog Runtime integrates with the broader JFrog Platform, which includes Artifac
 * Enrich runtime data with security insights from Xray, identifying vulnerabilities and malicious packages on an ongoing basis based on JFrog Catalog and JFrog research information.
 * Aggregate and analyze data for security triaging and prioritization.
 
-<figure><img src="../../../.gitbook/assets/Diagram3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Diagram3.png" alt=""><figcaption></figcaption></figure>
 
 #### **Runtime Sensors Installed in Customer Clusters**
 
@@ -18,7 +31,7 @@ Within Kubernetes environments, JFrog Runtime deploys specialized sensors to col
 * Detect security threats and integrity violations in real time.
 * Transmit collected data securely to the Runtime Service within the JFrog Platform for further analysis.
 
-<figure><img src="../../../.gitbook/assets/Diagram2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Diagram2.png" alt=""><figcaption></figcaption></figure>
 
 ### **Runtime Modes of Deployment**
 

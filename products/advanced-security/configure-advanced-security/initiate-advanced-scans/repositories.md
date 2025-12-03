@@ -1,4 +1,6 @@
-# Enable Advanced Scans for Repositories
+# Repositories
+
+### Enable Advanced Scans for a Repository
 
 Advanced Scans apply only to newly added artifacts in the repository and run as ongoing, recurring scans. They are configured per repository and do not apply to existing artifacts.
 

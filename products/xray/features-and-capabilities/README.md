@@ -40,7 +40,7 @@ Analyzes how vulnerabilities impact different components in an organization’s 
 **Key Capabilities:**
 
 * **Dependency Tracking:** Identifies affected projects based on security issues.
-* **Contextual Analysis:** Determines **real-world exploitability** of vulnerabilities. (with [JFrog Advanced Security](/broken/pages/H96JzEiGTE6exJN4AFNy))
+* **Contextual Analysis:** Determines **real-world exploitability** of vulnerabilities. (with [JFrog Advanced Security](../../advanced-security/))
 * **Fix Version Detection:** Suggests available security patches for affected components.
 
 **Why it matters:**\

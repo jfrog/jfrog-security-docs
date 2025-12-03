@@ -65,7 +65,3 @@ Scan **Infrastructure as Code (Terraform)** files for early detection of cloud a
 ## Resolve Issues
 
 Update a vulnerable direct dependency to a fixed version directly from the vulnerable location in the editor using the **quick fix** feature.
-
-## Ignore Findings
-
-If **Xray watches** are used, a **closed eye icon** will appear next to a vulnerability line. Clicking on it allows you to create an **Ignore Rule** in Xray.

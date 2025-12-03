@@ -7,7 +7,6 @@ Each descriptor file (e.g., `pom.xml` for Maven, `go.mod` for Go) contains vulne
 1. Right-click a dependency to:
    * Jump to its declaration in the descriptor file.
    * Upgrade it to a fixed version (if available).
-   * Create an **Ignore Rule** in Xray (_requires a JFrog Project or Watch_).
 2. To view the details of a vulnerability, select one from the list.
 
 Vulnerability details include:

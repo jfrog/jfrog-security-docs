@@ -103,7 +103,3 @@ Ensure you have:
 1. In the **JFrog extension** pane, right-click a listed vulnerability under a specific file (SAST, Secrets, IaC, and CVEs) and select **Ask Copilot to Fix**.\
    A Copilot chat pre-filled with issue context opens and prompts Copilot to suggest a fix.\
    If Copilot proposes a dependency upgrade and remote MCP is enabled, it will only choose a version allowed by your Curation policy.
-
-## Ignore Findings
-
-If **Xray watches** are used, a **closed eye icon** will appear next to a vulnerability line. Clicking on it allows you to create an **Ignore Rule** in Xray.

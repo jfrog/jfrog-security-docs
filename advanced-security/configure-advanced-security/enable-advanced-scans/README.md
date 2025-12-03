@@ -1,6 +1,6 @@
 # Enable Advanced Scans
 
-The [Repositories](repositories.md) and [Artifacts](artifacts.md) guides explain how to initiate and configure both **ongoing** and **one-time** advanced scans to detect:
+The [Repositories](../../../products/advanced-security/configure-advanced-security/initiate-advanced-scans/repositories.md) and [Artifacts](../../../products/advanced-security/configure-advanced-security/initiate-advanced-scans/artifacts.md) guides explain how to initiate and configure both **ongoing** and **one-time** advanced scans to detect:
 
 * **Vulnerabilities through Contextual Analysis**
 * **Service risks**

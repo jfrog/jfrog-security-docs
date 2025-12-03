@@ -4,9 +4,9 @@ JFrog’s shift-left approach to security empowers developers to catch and fix i
 
 This guide offers comprehensive instructions and best practices to help secure your software development lifecycle using:
 
-* JFrog Security [CLI](../../source-code/developers/cli/)
-* Code security within your [IDEs](../../source-code/developers/ides/)
-* Repository scanning with [Frogbot](../../source-code/frogbot/)
+* JFrog Security [CLI](../../developers/cli/)
+* Code security within your [IDEs](../../shift-left-on-security/ides/)
+* Repository scanning with [Frogbot](../../shift-left-on-security/frogbot/)
 
 ### System Requirements
 
@@ -21,4 +21,4 @@ The system requirements for enabling security scans using the JFrog Security CLI
 
 ### Air-Gapped Environments
 
-[Air-gapped environments](../../source-code/working-in-air-gapped-environments.md) are physically isolated systems disconnected from unsecured networks, used to protect sensitive data from cyber threats, malware, and remote hacking.
+[Air-gapped environments](../../shift-left-on-security/working-in-air-gapped-environments.md) are physically isolated systems disconnected from unsecured networks, used to protect sensitive data from cyber threats, malware, and remote hacking.

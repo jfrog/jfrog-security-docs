@@ -21,8 +21,10 @@ In the **Fallback Behavior for Blocked Packages** section, configure the setting
 **Currently supported**: PyPI and NPM (Maven support coming soon).
 
 {% hint style="info" %}
-**Limitation**\
-In the current version of NPM CVS, when a developer requests a locked version, the requested version may be removed by the CVS functionality if it is blocked, resulting in an Etargt error.
+**Limitations**\
+In the current version of NPM CVS, when a developer requests a locked version, the requested version may be removed by the CVS functionality if it is blocked, resulting in an Etargt error.\
+\
+Version-based waivers are not supported with CVS. To ensure waivers function correctly, configure waivers using labels rather than explicit package versions.
 {% endhint %}
 
 \

@@ -6,25 +6,9 @@ As a security or DevOps team, you want to leverage **JFrog Catalog** to enhance 
 
 #### **Workflow Steps**
 
-#### **Step 1: Enable JFrog Curation and Catalog Integration**
+#### **Step 1: Install Catalog**
 
-Ensure that JFrog Curation is enabled and configured to use JFrog Catalog:
-
-1. Navigate to **Administration > Curation > General**.
-2. Ensure the Curation application is **ON**.
-3. Check that Catalog Integration is active in your environment.
-4.  If needed, configure Catalog Central in the `system.yaml` file:
-
-    ```yaml
-    yamlCopyEditcatalog:
-      enabled: true
-      central:
-        enabled: true
-        url: https://jfrogxraycatalog.jfrog.io/xray
-        username: <USERNAME>
-        password: <PASSWORD>
-    ```
-5. Restart the Xray service for changes to take effect.
+Ensure that JFrog Catalog is installed. For more information, see [Install Catalog](https://jfrog.com/help/r/jfrog-installation-setup-documentation/installing-catalog).&#x20;
 
 #### **Step 2: Use Catalog Labels to Manage Packages**
 

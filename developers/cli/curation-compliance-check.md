@@ -32,13 +32,14 @@ Learn more about Curation Supported technologies [here](../../products/curation/
 
 ### Commands Parameters
 
-| Parameter             | Optional/Required | Description                                                                 |
-| --------------------- | ----------------- | --------------------------------------------------------------------------- |
-| `--format`            | Optional          | Defines the output format. Acceptable values: `table` (default) and `json`. |
-| `--working-dirs`      | Optional          | A comma-separated list of directories to audit.                             |
-| `--insecure-tls`      | Default: `false`  | Set to true to skip TLS certificates verification.                          |
-| `--threads`           | Optional          | Number of parallel threads for checking package status. Default: `3`.       |
-| `--requirements-file` | Optional          | \[Pip] Specifies the requirements file (e.g., `requirements.txt`).          |
+| Parameter             | Optional/Required | Description                                                                                                     |
+| --------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------- |
+| `--format`            | Optional          | Defines the output format. Acceptable values: `table` (default) and `json`.                                     |
+| `--working-dirs`      | Optional          | A comma-separated list of directories to audit.                                                                 |
+| `--insecure-tls`      | Default: `false`  | Set to true to skip TLS certificates verification.                                                              |
+| `--threads`           | Optional          | Number of parallel threads for checking package status. Default: `3`.                                           |
+| `--requirements-file` | Optional          | \[Pip] Specifies the requirements file (e.g., `requirements.txt`).                                              |
+| `--solution-path`     | Optional          | Specifies the path to the .NET solution (.sln) file to use when the directory contains multiple solution files. |
 
 ## Examples
 

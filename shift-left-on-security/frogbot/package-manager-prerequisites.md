@@ -56,10 +56,10 @@ Each package manager and build tool may have unique prerequisites.
 
 #### **.NET (NuGet)**
 
-| Requirement                | Details                                                                                                                                                  |
-| -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Requirements**           | Install the .NET SDK and ensure NuGet is available in your PATH.                                                                                         |
-| **Visual Studio Projects** | Ensure `.sln` files are present in your repository.                                                                                                      |
-| **Other Dependency Files** | Files such as `packages.config` or  `*.csproj` should be present and correctly configured. Limitation: `Directory.Build.propsfile` is not supported.     |
-| **Lock File**              | Various files assist in tracking dependencies; specific files ensure completeness.                                                                       |
-| **Environment Setup**      | Run `dotnet restore` to confirm that all NuGet dependencies are resolved correctly.                                                                      |
+| Requirement                | Details                                                                                                                                                                                              |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Requirements**           | Install the .NET SDK and ensure NuGet is available in your PATH.                                                                                                                                     |
+| **Visual Studio Projects** | Ensure `.sln` files are present in your repository.                                                                                                                                                  |
+| **Other Dependency Files** | <p>Files such as <code>packages.config</code> or  <code>*.csproj</code> should be present and correctly configured. <br>Limitation: <code>Directory.Build.propsfile</code> is not supported.    </p> |
+| **Lock File**              | Various files assist in tracking dependencies; specific files ensure completeness.                                                                                                                   |
+| **Environment Setup**      | Run `dotnet restore` to confirm that all NuGet dependencies are resolved correctly.                                                                                                                  |

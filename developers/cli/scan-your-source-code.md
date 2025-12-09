@@ -57,7 +57,6 @@ Command: `jf audit` (alias: `jf aud`)
 | --without-contextual-analysis | No       | false                                             | **Selective scanners mode** Disables Contextual Analysis when using --sca.                                                                                                                                                                             |
 | --working-dirs                | No       | Root directory                                    | Comma-separated list of directories to audit. Defaults to recursive scan from the project root.                                                                                                                                                        |
 | --yarn                        | No       | false                                             | Audits a Yarn project.                                                                                                                                                                                                                                 |
-|                               |          |                                                   |                                                                                                                                                                                                                                                        |
 
 ### Working in Air-Gapped Environments?
 

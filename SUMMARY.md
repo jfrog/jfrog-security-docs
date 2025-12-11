@@ -96,6 +96,7 @@
       * [How to Generate a Report with All Used Licenses in Your Environment Using JFrog Xray](products/xray/how-tos/how-to-generate-a-report-with-all-used-licenses-in-your-environment-using-jfrog-xray.md)
       * [How to Exclude Specific File Names from Scans](products/xray/how-tos/how-to-exclude-specific-file-names-from-scans.md)
       * [How to Enable and Monitor SBOM Migration in Xray](products/xray/how-tos/how-to-enable-and-monitor-sbom-migration-in-xray.md)
+      * [How to View and Modify Licenses in the SBOM Tab](products/xray/how-tos/how-to-view-and-modify-licenses-in-the-sbom-tab.md)
   * [Advanced Security](products/advanced-security/README.md)
     * [Supported Technologies](products/advanced-security/supported-technologies.md)
     * [Features and Capabilities](products/advanced-security/features-and-capabilities/README.md)

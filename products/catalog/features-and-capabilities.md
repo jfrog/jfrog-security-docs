@@ -23,6 +23,10 @@ JFrog Catalog provides security, compliance, and operational risk analysis throu
 * **OpenSSF Score**:
   * Evaluates open-source project security risks.
   * Enables informed decisions on accepting dependencies.
+* **Public Labels**
+  * JFrog Catalog now includes **Public Labels**, predefined labels created by JFrog Security Research team to classify and highlight important package groups. Public labels are read-only, applied automatically, and help customers filter and evaluate packages across ecosystems.&#x20;
+  * **New Public Label – MCP Servers**\
+    A new public label, **MCP Servers**, identifies packages originating from MCP (Model Context Protocol) servers. Identifier: `mcp_servers`.
 
 **Comparison & Automation:**
 

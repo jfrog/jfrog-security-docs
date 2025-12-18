@@ -2,19 +2,19 @@
 
 ### SAST, CVEs Contextual Analysis, and Secrets Detection
 
-| Programming Language | Source Code SAST (1st party) | Source Code CVEs Contextual Analysis | Binary CVEs Contextual Analysis             | Secrets Detection |
-| -------------------- | ---------------------------- | ------------------------------------ | ------------------------------------------- | ----------------- |
-| Go                   | ✅                            | ✅                                    | Inside Docker                               | ✅                 |
-| Java                 | ✅                            | ✅                                    | Limited (Maven & Gradle only)               | ✅                 |
-| Kotlin               |                              | ✅                                    | Inside Docker                               | ✅                 |
-| JavaScript           | ✅                            | ✅                                    | Inside Docker                               | ✅                 |
-| TypeScript           | ✅                            | ✅                                    | Inside Docker                               | ✅                 |
-| C# .NET              | ✅                            | ✅                                    | Inside Docker                               | ✅                 |
-| Python               | ✅                            |                                      | Inside Docker                               | ✅                 |
-| C/C++                | ✅                            |                                      | Inside Docker                               | ✅                 |
-| Rust                 | :white\_check\_mark:         |                                      | Inside Docker                               | ✅                 |
-| Docker               |                              |                                      | Conditional (depends on contained language) |                   |
-| Terraform (IaC)      | ✅                            |                                      |                                             | ✅                 |
+| Programming Language | Source Code SAST (1st party) | Source Code CVEs Contextual Analysis | Binary CVEs Contextual Analysis               | Secrets Detection |
+| -------------------- | ---------------------------- | ------------------------------------ | --------------------------------------------- | ----------------- |
+| Go                   | ✅                            | ✅                                    | Inside Docker                                 | ✅                 |
+| Java                 | ✅                            | ✅                                    | Limited (Maven & Gradle — Uber/Fat JARs only) | ✅                 |
+| Kotlin               |                              | ✅                                    | Inside Docker                                 | ✅                 |
+| JavaScript           | ✅                            | ✅                                    | Inside Docker                                 | ✅                 |
+| TypeScript           | ✅                            | ✅                                    | Inside Docker                                 | ✅                 |
+| C# .NET              | ✅                            | ✅                                    | Inside Docker                                 | ✅                 |
+| Python               | ✅                            |                                      | Inside Docker                                 | ✅                 |
+| C/C++                | ✅                            |                                      | Inside Docker                                 | ✅                 |
+| Rust                 | :white\_check\_mark:         |                                      | Inside Docker                                 | ✅                 |
+| Docker               |                              |                                      | Conditional (depends on contained language)   |                   |
+| Terraform (IaC)      | ✅                            |                                      |                                               | ✅                 |
 
 ### Misconfigurations
 

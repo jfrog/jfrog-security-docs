@@ -51,3 +51,31 @@ Added support for configuring the Runtime Service with alternative ingress contr
 #### **Automatic Security Scanning for Runtime-Detected Images**
 
 Runtime now [automatically scans any container image detected](../manage-runtime.md#automatic-security-scanning) in a Kubernetes cluster. If a runtime-observed image lacks security data, the system automatically indexes and scans it using SCA and Advanced Security scanners. This ensures full, consistent security coverage across all cluster-running images with simple configuration
+
+### Version 1.8
+
+#### Runtime Role-Based Access Control (RBAC)
+
+JFrog Runtime Security now enforces project-scoped [Role-Based Access Control ](../features-and-capabilities.md#access-control)(RBAC) for all runtime-detected container images.
+
+Every image observed at runtime is associated with one or more JFrog Projects based on repository assignment or administrative configuration.
+
+This ensures:
+
+* **Platform Admins** maintain full visibility across all runtime assets and projects
+* **Project Admins** control access to runtime assets within their assigned projects
+* **Project Members** view only images and runtime data related to their project scope
+
+RBAC significantly reduces cross-team data exposure, enforces least-privilege access, and aligns runtime visibility with organizational ownership boundaries.
+
+#### AWS ECS Fargate Runtime Scanning Enhancements
+
+JFrog Runtime Security expands its [AWS Fargate integration](../configure-runtime/configure-aws-ecs-fargate.md) to support secure discovery and runtime scanning of ECS workloads running on both Fargate and EC2 launch types.
+
+Runtime now connects to AWS using dedicated IAM credentials to automatically:
+
+* Discover ECS clusters and running tasks
+* Analyze runtime workloads for vulnerabilities and security exposures
+* Present centralized visibility across all Fargate-based environments
+
+This enhancement extends runtime security coverage into fully serverless container environments while maintaining least-privilege cloud access and centralized governance.

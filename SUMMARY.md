@@ -126,7 +126,7 @@
     * [Supported Technologies](products/runtime/supported-technologies/README.md)
       * [Runtime Integrity](products/runtime/supported-technologies/runtime-integrity.md)
       * [Runtime Impact](products/runtime/supported-technologies/runtime-impact.md)
-    * [Features and CapabilitiesRBAC](products/runtime/features-and-capabilities.md)
+    * [Features and Capabilities](products/runtime/features-and-capabilities.md)
     * [Configure Runtime](products/runtime/configure-runtime/README.md)
       * [Sensor](products/runtime/configure-runtime/sensor.md)
       * [OpenShift SCC](products/runtime/configure-runtime/openshift-scc.md)

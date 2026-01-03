@@ -162,6 +162,7 @@
       * [How to Enforce Compliance Policies Using Catalog Labels](products/catalog/how-tos/how-to-enforce-compliance-policies-using-catalog-labels.md)
       * [How to Compare and Select the Best OSS Package for Your Project](products/catalog/how-tos/how-to-compare-and-select-the-best-oss-package-for-your-project.md)
       * [How to Request a License Review in JFrog Catalog](products/catalog/how-tos/how-to-request-a-license-review-in-jfrog-catalog.md)
+      * [How to Migrate to the Standalone JFrog Catalog Service](products/catalog/how-tos/how-to-migrate-to-the-standalone-jfrog-catalog-service.md)
 * [Shift Left on Security](shift-left-on-security/README.md)
   * [IDEs](shift-left-on-security/ides/README.md)
     * [Visual Studio Code](shift-left-on-security/ides/visual-studio-code/README.md)

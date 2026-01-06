@@ -15,7 +15,7 @@ In the final stage of policy creation, you must configure the waiver request opt
 
 Once the policy is configured, the waiver flow is initiated by the developer:
 
-* If a package is blocked by specific policies, the developer runs the `JF CA` command.
+* If a package is blocked by specific policies, the developer runs the `jf ca` command.
 * The command will list all blocked packages and prompt the developer to request a waiver.
 * The developer must specify which packages to request waivers for and describe why they want this package.
 

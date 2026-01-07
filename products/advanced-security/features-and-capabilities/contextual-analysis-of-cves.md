@@ -53,6 +53,10 @@ CVE Contextual Analysis results are available in:
 
 ### Transitive Dependency Analysis
 
+{% hint style="info" %}
+Transitive dependency analysis capabilities are available for **Ultimate Security** customers.
+{% endhint %}
+
 The Transitive Dependency feature in JFrog Advanced Security enhances contextual analysis by identifying vulnerabilities that are not directly in your code but are introduced through transitive dependencies (dependencies of your dependencies).
 
 For each CVE, the analysis shows:

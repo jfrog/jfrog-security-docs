@@ -36,5 +36,5 @@ Each License Attribution Report includes the following elements for each compone
 * **Full License Text**: Complete, unmodified license text as provided in the original open-source package.
 * **(Coming Soon)**: **Required Notices** – For licenses like Apache-2.0 that mandate a NOTICE file, this section will capture and display the content of that file.
 
-> **Current Output Format**: The report is generated in **PDF format** only.
+**Current Output Format**: The report is generated in **PDF and Text format** only.
 

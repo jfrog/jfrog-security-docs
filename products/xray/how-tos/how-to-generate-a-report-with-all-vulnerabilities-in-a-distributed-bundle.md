@@ -21,7 +21,7 @@ This use case outlines how to configure **Xray** to scan a **distributed bundle*
      * ✅ **Fail Deployment** (Optional: Blocks distribution if critical vulnerabilities exist).
 5. Click **Save**.
 
-#### **Step 3: Generate a Vulnerability Report for a Distributed Bundle**
+#### **Step 2: Generate a Vulnerability Report for a Distributed Bundle**
 
 📌 **Goal:** Run a security scan and generate a vulnerability report.
 
@@ -38,7 +38,7 @@ This use case outlines how to configure **Xray** to scan a **distributed bundle*
 
 ***
 
-#### **Step 4: Review and Analyze the Report**
+#### **Step 3: Review and Analyze the Report**
 
 📌 **Goal:** Examine vulnerabilities and plan remediation before distribution.
 
@@ -58,7 +58,7 @@ This use case outlines how to configure **Xray** to scan a **distributed bundle*
 
 ***
 
-#### **Step 5: Automate Report Generation in CI/CD**
+#### **Step 4: Automate Report Generation in CI/CD**
 
 📌 **Goal:** Ensure security reports are automatically generated during build pipelines.
 

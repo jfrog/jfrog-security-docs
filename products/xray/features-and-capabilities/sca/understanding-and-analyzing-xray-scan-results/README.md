@@ -94,3 +94,9 @@ Search for vulnerabilities affecting a specific package (e.g., `log4j`).
 
 * Click "Export Report" → Select format CSV, JSON, or PDF.
 * Share with security, DevOps, and compliance teams for risk assessment.
+
+#### 4. Actions from Impact Search Results
+
+* **Export to CSV** – Download the complete list of affected resources for offline analysis or reporting.
+* **Set Xray Policy** – Navigate directly to the [Create Policy](../../sdlc-policy-mangement/) screen to define a new security policy based on your findings.
+  * This action does not automatically generate a policy from the search results; it simply opens the policy creation workflow with Impact Search as your investigative context.

@@ -86,6 +86,7 @@
       * [System Messages](products/xray/xray-management/system-messages.md)
       * [CI-CD Integration with Xray](products/xray/xray-management/ci-cd-integration-with-xray.md)
     * [How-Tos](products/xray/how-tos/README.md)
+      * [How to Identify Artifacts Affected by Specific Vulnerabilities](products/xray/how-tos/how-to-identify-artifacts-affected-by-specific-vulnerabilities.md)
       * [How to Filter Out Your 1st Party Components in CycloneDX SBOM report](products/xray/how-tos/how-to-filter-1st-party-components.md)
       * [How to Assign Supplier to your resources in SBOM reports](products/xray/how-tos/how-to-assign-supplier-to-your-resources-in-sbom-reports.md)
       * [How to Block Malicious Packages in your SDLC](products/xray/how-tos/how-to-block-malicious-packages-in-your-sdlc.md)

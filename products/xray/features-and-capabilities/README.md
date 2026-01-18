@@ -46,6 +46,22 @@ Analyzes how vulnerabilities impact different components in an organization’s 
 **Why it matters:**\
 Reduces false positives and **prioritizes vulnerabilities** that pose the most risk.
 
+### Impact Search
+
+**What it does**\
+Impact Search enables you to quickly [identify which artifacts in your environment are affected by specific vulnerabilities or contain particular components](../how-tos/how-to-identify-artifacts-affected-by-specific-vulnerabilities.md). The feature provides a centralized way to assess the blast radius of security issues across your software supply chain.
+
+**Key capabilities**
+
+* Search by vulnerability identifier (CVE or XRAY ID).
+* Search by package name, type, and version.
+* Correlate vulnerabilities to affected artifacts across repositories.
+* Support ad-hoc investigations and incident response workflows.
+* Provide consistent results aligned with Xray’s New SBOM data model.
+
+**Why it matters**\
+When a critical vulnerability is disclosed, security and DevOps teams must rapidly understand where it exists in their estate. Impact Search reduces manual investigation by allowing targeted queries across all Xray-scanned resources, helping teams prioritize remediation and risk mitigation.
+
 ### [**Policy-Based Security Enforcement**](sdlc-policy-mangement/)
 
 **What it does:**\

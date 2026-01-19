@@ -1,6 +1,6 @@
 # Advanced Security
 
-_Advanced Security is available with the **Enterprise X** or **Enterprise+** license, along with the **Advanced Security Add-on**._
+The _**Advanced Security Add-on** is available with the **Enterprise X** or **Enterprise+** license._
 
 ***
 

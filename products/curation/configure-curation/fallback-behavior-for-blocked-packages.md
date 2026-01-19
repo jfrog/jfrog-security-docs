@@ -16,7 +16,7 @@ In the **Fallback Behavior for Blocked Packages** section, configure the setting
 
 * This feature requires Xray version 3.131.x and above,  Artifactory version 7.125.x and above.
 * The remote repository must have cache enabled for the feature to work properly.
-* In the current version of NPM CVS, when a developer requests a locked version, the requested version may be removed by the CVS functionality if it is blocked, resulting in an Etargt error.
+* In the current version of NPM CVS, when a developer requests a locked version, the requested version may be removed by the CVS functionality if it is blocked, resulting in an Etargt error. **This issue has been resolved in Xray 3.136 and above.**&#x20;
 * Version-based waivers are not supported with CVS. To ensure waivers function correctly, configure waivers using labels rather than explicit package versions.
 
 \

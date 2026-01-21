@@ -149,7 +149,7 @@ OAuth1 is a two-way authentication process. Please ensure that both the Jira and
    * Skip Proxy (Optional): Select the skip proxy option to bypass global JFrog proxy settings for the Xray-Jira integration. It is applicable only for self-hosted customers.
 4.  Click **Next**.
 
-    You are all set. Continue to the next step, [Profile Creation](https://about/document/preview/642388#UUID-26445b3a-38d7-7e7e-2122-bedfeba7bf98).
+    You are all set. Continue to the next step, [#uuid-26445b3a-38d7-7e7e-2122-bedfeba7bf98](setup-integration.md#uuid-26445b3a-38d7-7e7e-2122-bedfeba7bf98 "mention").
 
 ### Create a Jira Configuration Profile <a href="#uuid-26445b3a-38d7-7e7e-2122-bedfeba7bf98" id="uuid-26445b3a-38d7-7e7e-2122-bedfeba7bf98"></a>
 
@@ -177,6 +177,7 @@ Xray provides a list of Macros, which you can map to your Custom Fields or Label
 * Impacted Artifact        &#x20;
 * Impacted Component
 * Package Type
+* Package Version
 * Vulnerability ID
 * Violation Type
 * Severity
@@ -213,6 +214,14 @@ Consider you have a Jira Project called “Xray” and would like to configure t
 7. You could select one of the Xray Macros or type in a static text or both. Note that white spaces are not allowed in Jira Labels, these will be replaced by \_ (underscores)  in the Jira ticket.
 8. To validate your configurations, try “Creating a test ticket.”
 9. Save your profile.
+
+You can also configure personalized labels. Personalized labels allow you to create custom, flexible labels by combining static text with pre-existing macros. They enable you to construct label formats that will resolve to actual values at the time of ticket creation based on the violation data.
+
+For example, you can see from the below screenshots that, if the configured label is cvss-score-v2-${CVSS V2 Score}-v3-${CVSS V3 Score}; here, CVSS V2 Score and CVSS V3 Score are the macros. If the violation has CVSS V2 Score as 7.5 and CVSS V3 Score as 9.8, then the resulting label would be cvss-score-v2-3.1-v3-4.12. Similarly, we can see that the configured label package-${Package Type}-${Package Version} is resolved to package-maven-2.0, where package type is maven and package version is 2.0.&#x20;
+
+<figure><img src="../../../../../../.gitbook/assets/unknown (1).png" alt="" width="375"><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../../.gitbook/assets/unknown (2).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Configure the Jira Policy Rules <a href="#uuid-2f862932-e821-27e8-9d33-9fe6f3ed9f05" id="uuid-2f862932-e821-27e8-9d33-9fe6f3ed9f05"></a>
 

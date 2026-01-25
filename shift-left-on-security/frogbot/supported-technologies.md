@@ -11,10 +11,6 @@ Ensure the following packages are available in your environment:
 * **curl**
 * **Git**
 
-{% hint style="info" %}
-The above packages are included in the standard base images (e.g., Ubuntu, RHEL). Still, if you are using lighter images like Alpine, you will need to ensure these packages are installed.
-{% endhint %}
-
 #### Advanced Security Supported Technologies
 
 See Jfrog Advanced Security Supported Technologies section:

@@ -12,12 +12,13 @@ This guide offers comprehensive instructions and best practices to help secure y
 
 The system requirements for enabling security scans using the JFrog Security CLI, IDE plugins, and Frogbot are:
 
-| Operating System | Supported Versions                | Minimum Required Version |
-| ---------------- | --------------------------------- | ------------------------ |
-| RHEL             | 8 and above                       | 8                        |
-| CentOS           | 9 and above                       | 9                        |
-| Ubuntu           | 18.04, 20.04, 22.04               | 18.04                    |
-| Windows          | All versions supported by Windows |                          |
+| Operating System | Supported Versions             |
+| ---------------- | ------------------------------ |
+| RHEL             | 8 and above                    |
+| CentOS           | 9 and above                    |
+| Ubuntu           | 18.04, 20.04, 22.04            |
+| Windows          | All supported Windows versions |
+| macOS            | All supported macOS versions   |
 
 ### Air-Gapped Environments
 

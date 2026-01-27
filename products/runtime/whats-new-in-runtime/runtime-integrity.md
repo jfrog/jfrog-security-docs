@@ -79,3 +79,25 @@ Runtime now connects to AWS using dedicated IAM credentials to automatically:
 * Present centralized visibility across all Fargate-based environments
 
 This enhancement extends runtime security coverage into fully serverless container environments while maintaining least-privilege cloud access and centralized governance.
+
+### Version 1.9
+
+#### Runtime Token Expirtion
+
+Token expiration has been extended from **1 year to 2 years**, reducing renewal frequency and improving user experience, with corresponding updates to token validation logic.
+
+#### gRPC Gateway
+
+Enable gRPC gateway by default.
+
+#### Runtime Integrity Added to JFrog Advanced Security Bundle
+
+**Runtime Integrity** has been added to the **Advanced Security** bundle, expanding the suite’s runtime protection and security coverage.
+
+#### Helm Charts
+
+Helm Chart Published to the JFrog GitHub Repository.
+
+#### Automatic Registration Token Updates Without Manual Restarts
+
+Registration tokens mounted from Kubernetes secrets are now refreshed automatically across sensors and controller when the secret changes, eliminating the need for manual restarts.

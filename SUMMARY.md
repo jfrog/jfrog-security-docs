@@ -251,3 +251,4 @@
     * [Scan Published Builds](developers/cli/scan-published-builds.md)
     * [Enrich your SBOM JSONs & XMLs](developers/cli/enrich-your-sbom-jsons-and-xmls.md)
     * [Curation Compliance Check](developers/cli/curation-compliance-check.md)
+    * [Runtime](developers/cli/runtime.md)

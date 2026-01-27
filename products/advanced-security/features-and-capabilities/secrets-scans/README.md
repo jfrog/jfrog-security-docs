@@ -2,6 +2,9 @@
 
 JFrog Advanced Security helps prevent the accidental exposure of secrets such as API keys, passwords, and tokens through its comprehensive secrets detection and token validation capabilities. By scanning both source code and binary artifacts, it ensures sensitive data is never exposed to unauthorized users, making it a powerful secrets prevention solution.
 
+Secret scan results can be fine-tuned by ignoring specific findings that are known and accepted within the organization.\
+Ignore rules can be applied at various levels — from entire scanner types to individual secret findings — enabling targeted noise reduction and clearer reporting.
+
 Learn how to create a [Custom Secrets Scanner](custom-secrets-scanner.md)
 
 For developers and security experts, secrets detection is integrated into your IDE, CLI, Frogbot, and the JFrog Platform, providing real-time feedback to identify and address exposed secrets across the development pipeline.
@@ -29,7 +32,12 @@ Token Validation currently supports public SaaS endpoints only (e.g., `github.co
 * To enable in the **JFrog Platform**:
   * Navigate to **Administration > Xray Settings > General > Advanced Security**
   * Check the **Enable dynamic token validation** checkbox
-* To enable via **REST API**, use the "Enable Token Validation for Secrets" API.
+* To enable via **REST API**, use the [Enable Token Validation for Secrets](https://jfrog.com/help/r/xray-rest-apis/enable-token-validation-for-secrets?tocId=F8_ALL~ayDxGJx8cF3FW~g) API.
+
+When a secret has been reviewed and determined as acceptable or a false positive, it can be excluded from future results by creating an **ignore rule** for that finding.\
+The rule is bound to the secret’s finding and can apply to its specific file, artifact, build, or release bundle scope.
+
+See [Ignore Violations](../../configure-advanced-security/ignore-violations.md) for instructions on creating and managing ignore rules for secret findings.
 
 ### Validation Results
 

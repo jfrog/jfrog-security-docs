@@ -1,6 +1,9 @@
-# Ignore Advanced Security Violations
+# Ignore Violations
 
 Ignore rules allow you to whitelist and ignore security violation rules, in order to filter out unwanted violation noise. For example, you might be running Advanced Scans on a testing repository and don’t want these violations to hinder your testing, or you might have instilled strict actions if a violation is found that is a blocker for continuing your development. You want to ignore the specific violation for the time being.
+
+Ignore rules suppress specific violations so they are not shown in future scans.\
+You can ignore by category, scanner, file path, or individual finding, and define the scope by artifact, build, release bundle, or watch.
 
 There are many reasons why you might want to ignore a violation, you can read more about it here [Ignore Rules](https://www.jfrog.com/confluence/display/JFROG/Ignore+Rules).
 
@@ -10,25 +13,28 @@ You can create an ignore rule for Exposures violation using the following REST A
 
 ### Ignoring Secrets Violations
 
-Ignore rules helps **reduce noise** by filtering out **false positives or non-actionable violations** in secret detection results.
+You can ignore a Secrets violation by creating a **Secrets Ignore Rule**, which defines the exact conditions under which a secret should be suppressed in future scans. Use this when a secret is a false positive, non-actionable, or intentionally present in a specific location or artifact.
 
-1. Navigate to **Scans List** and locate the reported **Secrets Violation**.
-2. Open the violation details and review the flagged issue.
-3. Click **Ignore Violation** and configure an ignore rule using one of the following criteria:
-   * **Based on Secret Type** – Ignore a specific type of secret (e.g., API Key, SSH Private Key).
-   * **Based on File Path** – Ignore secrets found in a specific file or directory.
-   * **Based on Artifact Name** – Ignore secrets detected in a particular artifact version.
-4. Save the ignore rule to apply it to future scans.
+1. Navigate to **Scans List** and open the **Secrets Violation** you want to ignore.
+2. Click **Ignore Violation** to open the **Secrets Ignore Rule** dialog.
+3. Select what to ignore under **Ignore violation of**:
+   * **Specific secret** – Ignore this exact secret value
+   * **Specific scanner** – Ignore all violations detected by a specific secret-detection rule
+   * **All Secrets violations** – Ignore all secret findings
+4. Define the **Location** scope:
+   * **In this specific file** – Ignore the secret only when found in the selected file
+   * **All files** – Apply the ignore rule across any file
+5. Define the:
 
-| Ignore Rule                                  | Description                                                                                                                                                                        |
-| -------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Based on the Exposure**                    |                                                                                                                                                                                    |
-| Exposure Scanner                             | Ignores all violations for the specific scanner. Take note, if this is checked, all exposure violations related to this scanner will be ignored.                                   |
-| For any Exposure of the following categories | Ignores all violations of the specific exposures category. If all categories are selected, no violations will be created for Exposures for the specified scope in the ignore rule. |
-| **Based on file path**                       |                                                                                                                                                                                    |
-| Specific File path                           | The rule will be applied on the specific path within the specified artifact scope.                                                                                                 |
-| For any file                                 | The rule will be applied for any file path within the specified artifact scope.                                                                                                    |
-| **Based on Artifact**                        |                                                                                                                                                                                    |
-| Artifact name selected current version       | The rule will be applied on the specific artifact for that specific version of the Docker image.                                                                                   |
-| Artifact name selected any version           | The rule will be applied on the specific artifact for all versions of the Docker image.                                                                                            |
-| For any Artifact                             | The rule will be applied on all artifacts that contain that violation in the Docker image.                                                                                         |
+* **Artifact**:&#x20;
+  * **In this specific version**
+  * **All versions of**
+  * **All Artifacts - Ignore across all Artifacts**
+* **Build**
+  * **In this specific version**
+  * **All versions of**
+  * **All Builds**
+* **Release Bundle (V2)**:
+  * **In this specific version**
+  * **All versions of \<bundle>**
+  * **All Release Bundle V2s**

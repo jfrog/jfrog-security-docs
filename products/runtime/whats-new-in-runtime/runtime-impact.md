@@ -85,3 +85,20 @@ Helm Chart Published to the JFrog GitHub Repository.
 #### Automatic Registration Token Updates Without Manual Restarts
 
 Registration tokens mounted from Kubernetes secrets are now refreshed automatically across sensors and controller when the secret changes, eliminating the need for manual restarts.
+
+### 1.10
+
+#### Support for Custom Self-Signed Certificates in runtime-service
+
+Added Helm support for custom self-signed CA certificates in the runtime-service. Certificates from a Kubernetes Secret are appended to the system CA bundle and `SSL_CERT_FILE` is set so outbound TLS trusts internal CAs.
+
+#### Helm Chart Distribution Path Updated
+
+Updated the runtime Helm chart distribution URL from `https://charts.jfrog.io/runtime/` to the root `https://charts.jfrog.io/` repository.
+
+#### Token Expiration Alerts in Cluster Management
+
+Added token expiration alerts to the Cluster Management page, including:
+
+* **Pre-expiration warning** – displayed 3 months before a cluster token expires, giving users time to rotate credentials.
+* **Post-expiration alert** – displayed after the token has expired, indicating that the cluster is no longer authenticated and may stop functioning correctly.

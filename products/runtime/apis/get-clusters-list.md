@@ -6,9 +6,9 @@
 
 **Usage:** `POST/runtime/api/v1/clusters`
 
-**Consumes:** `application/json`
+**Consumes:** `application`/`json`
 
-**Produces:** `application/json`
+**Produces:** `application`/`json`
 
 #### Request body <a href="#d928slqmiyka" id="d928slqmiyka"></a>
 

@@ -4,9 +4,9 @@
 
 **Security:** Admin
 
-**Usage:** GET /runtime/api/v1/cluster/{id}
+**Usage:** `GET /runtime/api/v1/cluster/{id}`
 
-**Produces:** application/json
+**Produces:** `application`/`json`
 
 #### Response body <a href="#id-52825iys1ugq" id="id-52825iys1ugq"></a>
 

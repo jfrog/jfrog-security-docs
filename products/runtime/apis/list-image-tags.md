@@ -4,8 +4,8 @@
 **Note**: The API returns vulnerabilities only if the image comes from a trusted registry. Filters by CVE and by components will only return images from trusted registries.\
 **Security:** Requires a valid user with a "Read" permission\
 **Usage:** POST `/runtime/api/v1/images/tags`\
-**Consumes:** `application/json`\
-**Produces:** `application/json`
+**Consumes:** `application`/`json`\
+**Produces:** `application`/`json`
 
 #### Request body
 

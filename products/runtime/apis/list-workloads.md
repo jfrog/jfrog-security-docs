@@ -6,9 +6,9 @@
 
 **Usage:** `POST /runtime/api/v1/workloads`
 
-**Consumes:** `application/json`
+**Consumes:** `application`/`json`
 
-**Produces:** `application/json`
+**Produces:** `application`/`json`
 
 **Request Body:**
 

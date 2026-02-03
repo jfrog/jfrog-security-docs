@@ -6,7 +6,7 @@
 
 **Usage:** `DELETE /runtime/api/v1/registration_token/{token}`
 
-**Produces:** `application/json`
+**Produces:** `application`/`json`
 
 #### Request Path Parameters
 

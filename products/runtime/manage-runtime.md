@@ -43,3 +43,25 @@ Enable automatic security scanning for any container image detected through Runt
 4. The **Scan Configuration** window opens.
 5. In the Scan Configuration window, select the scanners you want to enable for the cluster, including **SCA** and any **Advanced Security** scanners such as Vulnerabilities Contextual Analysis, Secrets, Applications, Services, or IaC.
 6. Click **Apply** to save the configuration.
+
+### Runtime Scope
+
+Runtime Scope ensures that every image detected by Runtime sensors in your Kubernetes, OpenShift, or Fargate environments is automatically scanned by Xray and Advanced Security.
+
+This configuration eliminates manual steps and guarantees that all running images are systematically evaluated for vulnerabilities, secrets, and exposures as soon as they are observed in your clusters.
+
+#### Configure Runtime Scope for a Cluster
+
+1. Navigate to **Administration** > **Runtime** > **Cluster Management**.
+2. In the **Cluster Inventory table**, locate the cluster you want to configure.
+3. From the menu, select **Configure**.\
+   The **Scan Configurations** window opens.
+4. Select which security scans to enable (SCA, Secrets, Contextual Analysis, Exposures, etc.) and set retention.
+5. Click **Apply**.
+
+#### Batch Configuration
+
+1. In **Cluster Management**, select multiple clusters.
+2. Click **Batch Configure** and apply scanners/retention settings to all selected clusters.
+
+A coverage summary appears in the **Clusters Configuration Security Coverage** panel, showing how many clusters are configured with each type of scanner.

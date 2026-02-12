@@ -6,11 +6,11 @@ Public repositories supported by Curation and curation-audit cli support.
 
 **Operating System Package Ecosystems**
 
-| Package Type | Name / Ecosystem      | Catalog Version / Requirements | Source URLs                                                                                                                                                 |
-| ------------ | --------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Alpine       | Alpine Linux packages | Xray ≥ 3.136 Catalog UI ≥ 1.28 | ​[http://dl-cdn.alpinelinux.org](http://dl-cdn.alpinelinux.org/)​                                                                                           |
-| Debian       | Debian packages       | Xray ≥ 3.137 Catalog UI ≥ 1.28 | ​[https://deb.debian.org/debian](https://deb.debian.org/debian) [https://security.debian.org/debian-security](https://security.debian.org/debian-security)​ |
-| Ubuntu (deb) | Ubuntu packages       | Xray ≥ 3.137 Catalog UI ≥ 1.28 | ​[http://archive.ubuntu.com/ubuntu](http://archive.ubuntu.com/ubuntu) [http://security.ubuntu.com/ubuntu](http://security.ubuntu.com/ubuntu)​               |
+| Public repository name | Public repository URLs supported (configure in Artifactory remote repository)                                                                            | Minimal Artifactory Version | Minimal Curation Version (aka Xray Version) | Minimal JFrog CLI version (for curation-audit) | Catalog Support (UI & API) |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ------------------------------------------- | ---------------------------------------------- | -------------------------- |
+| Alpine Linux packages  | [http://dl-cdn.alpinelinux.org](http://dl-cdn.alpinelinux.org/)                                                                                          | N/A                         | Xray ≥ 3.136                                | N/A                                            | Yes                        |
+| Debian packages        | [https://deb.debian.org/debian](https://deb.debian.org/debian)[https://security.debian.org/debian-security](https://security.debian.org/debian-security) | N/A                         | Xray ≥ 3.137                                | N/A                                            | Yes                        |
+| Ubuntu packages (deb)  | [http://archive.ubuntu.com/ubuntu](http://archive.ubuntu.com/ubuntu)[http://security.ubuntu.com/ubuntu](http://security.ubuntu.com/ubuntu)               | N/A                         | Xray ≥ 3.137                                | N/A                                            | Yes                        |
 
 **Note**: To support Curation for remote Gradle plugins, you must use a virtual repository configured in a specific order:
 

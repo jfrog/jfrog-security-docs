@@ -106,6 +106,8 @@
     * [Supported Technologies](products/advanced-security/supported-technologies.md)
     * [Features and Capabilities](products/advanced-security/features-and-capabilities/README.md)
       * [Contextual Analysis of CVEs](products/advanced-security/features-and-capabilities/contextual-analysis-of-cves.md)
+      * [Advanced Remediation](products/advanced-security/features-and-capabilities/advanced-remediation/README.md)
+        * [Version Selection Strategies](products/advanced-security/features-and-capabilities/advanced-remediation/version-selection-strategies.md)
       * [Secrets Scans](products/advanced-security/features-and-capabilities/secrets-scans/README.md)
         * [Custom Secrets Scanner](products/advanced-security/features-and-capabilities/secrets-scans/custom-secrets-scanner.md)
       * [Misconfigurations Scans](products/advanced-security/features-and-capabilities/misconfigurations-scans.md)
